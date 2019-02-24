@@ -1,0 +1,47 @@
+2018-04-03 12:30:00,113 INFO  DownloadService - Downloading "https://github.com/Mindera/gradle-slack-plugin/archive/master.zip", attempt 3
+2018-04-03 12:31:00,739 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 12:31:01,615 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 12:31:01,615 INFO  DownloadService - Downloading "https://github.com/Mindera/gradle-slack-plugin/archive/master.zip", attempt 3
+2018-04-03 12:32:03,191 DEBUG FullProcessService - Repository https://github.com/Mindera/gradle-slack-plugin available: true
+2018-04-03 12:32:03,191 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 12:32:03,191 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Mindera/gradle-slack-plugin, /tmp/rdisk/2191/src]
+2018-04-03 12:32:07,816 INFO  SysUtils - 
+2018-04-03 12:32:07,825 INFO  GitService - Deleted "/tmp/rdisk/2191/src/.git": true
+2018-04-03 12:32:07,826 INFO  FullProcessService - Size of directory with sources: 137 KB
+2018-04-03 12:32:07,826 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2191/src]
+2018-04-03 12:32:07,837 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2191/src/.git/
+
+2018-04-03 12:32:07,838 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2191/src/gradlew /tmp/rdisk/2191/src/gradle/gradlew
+2018-04-03 12:32:07,840 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2191/src/build.gradle
+2018-04-03 12:32:07,841 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2191/src/settings.gradle /tmp/rdisk/2191/src/build.gradle
+2018-04-03 12:32:07,841 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 12:32:07,841 INFO  ProjectFixService - Fixing project...
+2018-04-03 12:32:07,845 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2191/src/local.properties
+2018-04-03 12:32:07,845 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2-bin.zip
+2018-04-03 12:32:07,846 INFO  ProjectFixService - Build info for "/tmp/rdisk/2191/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 12:32:07,846 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2191/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 12:32:07,847 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 12:32:07,847 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:32:07,847 INFO  SysUtils - Execute command: [/tmp/rdisk/2191/src/gradlew, -b, /tmp/rdisk/2191/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:32:14,113 INFO  ProjectTaskService - Detected possible tasks: 45
+2018-04-03 12:32:14,113 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-03 12:32:14,113 INFO  SysUtils - Execute command: [/tmp/rdisk/2191/src/gradlew, -b, /tmp/rdisk/2191/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-03 12:32:20,962 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:compileGroovy
+:processResources
+:classes
+:jar
+:javadocJar
+:sourcesJar
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.408 secs
+
+2018-04-03 12:32:20,965 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 12:32:20,968 ERROR FullProcessService - Could not find generated or existed APK file

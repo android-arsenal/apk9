@@ -1,0 +1,267 @@
+2018-04-03 11:27:55,703 INFO  DownloadService - Downloading "https://github.com/martin-stone/hsv-alpha-color-picker-android/archive/master.zip", attempt 3
+2018-04-03 11:28:56,191 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 11:28:56,821 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 11:28:56,821 INFO  DownloadService - Downloading "https://github.com/martin-stone/hsv-alpha-color-picker-android/archive/master.zip", attempt 3
+2018-04-03 11:29:58,064 DEBUG FullProcessService - Repository https://github.com/martin-stone/hsv-alpha-color-picker-android available: true
+2018-04-03 11:29:58,064 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 11:29:58,064 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/martin-stone/hsv-alpha-color-picker-android, /tmp/rdisk/2213/src]
+2018-04-03 11:29:59,699 INFO  SysUtils - 
+2018-04-03 11:29:59,713 INFO  GitService - Deleted "/tmp/rdisk/2213/src/.git": true
+2018-04-03 11:29:59,715 INFO  FullProcessService - Size of directory with sources: 247 KB
+2018-04-03 11:29:59,715 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2213/src]
+2018-04-03 11:29:59,720 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2213/src/.git/
+
+2018-04-03 11:29:59,722 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2213/src/gradlew
+2018-04-03 11:29:59,725 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2213/src/colorpicker/build.gradle /tmp/rdisk/2213/src/demo_app/build.gradle /tmp/rdisk/2213/src/build.gradle
+2018-04-03 11:29:59,727 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2213/src/settings.gradle /tmp/rdisk/2213/src/demo_app/build.gradle /tmp/rdisk/2213/src/colorpicker/install.gradle /tmp/rdisk/2213/src/colorpicker/build.gradle /tmp/rdisk/2213/src/colorpicker/bintray.gradle /tmp/rdisk/2213/src/build.gradle
+2018-04-03 11:29:59,727 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 11:29:59,727 INFO  ProjectFixService - Fixing project...
+2018-04-03 11:29:59,734 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2213/src/colorpicker/local.properties
+2018-04-03 11:29:59,735 INFO  ProjectFixService - Build info for "/tmp/rdisk/2213/src/colorpicker/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=22]
+2018-04-03 11:29:59,735 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2213/src/colorpicker/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=22]
+2018-04-03 11:29:59,736 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2213/src/demo_app/local.properties
+2018-04-03 11:29:59,737 INFO  ProjectFixService - Build info for "/tmp/rdisk/2213/src/demo_app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=22]
+2018-04-03 11:29:59,737 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2213/src/demo_app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=22]
+2018-04-03 11:29:59,738 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2213/src/local.properties
+2018-04-03 11:29:59,738 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-03 11:29:59,738 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-03 11:29:59,740 INFO  ProjectFixService - Build info for "/tmp/rdisk/2213/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=22]
+2018-04-03 11:29:59,740 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2213/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=22]
+2018-04-03 11:29:59,741 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 11:29:59,741 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:29:59,741 INFO  SysUtils - Execute command: [/tmp/rdisk/2213/src/gradlew, -b, /tmp/rdisk/2213/src/colorpicker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:30:09,817 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-03 11:30:09,817 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 11:30:09,818 INFO  SysUtils - Execute command: [/tmp/rdisk/2213/src/gradlew, -b, /tmp/rdisk/2213/src/colorpicker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 11:30:25,002 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':colorpicker' is deprecated. Use 'implementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:colorpicker:preBuild UP-TO-DATE
+:colorpicker:preDebugBuild UP-TO-DATE
+:colorpicker:compileDebugAidl
+:colorpicker:compileDebugNdk NO-SOURCE
+:colorpicker:compileDebugRenderscript
+:colorpicker:checkDebugManifest
+:colorpicker:generateDebugBuildConfig
+:colorpicker:prepareLintJar
+:colorpicker:generateDebugResValues
+:colorpicker:generateDebugResources
+:colorpicker:packageDebugResources
+:colorpicker:platformAttrExtractor
+:colorpicker:processDebugManifest
+:colorpicker:javaPreCompileDebug
+:colorpicker:processDebugResources
+:colorpicker:generateDebugSources
+:colorpicker:compileDebugJavaWithJavac
+:colorpicker:extractDebugAnnotations
+:colorpicker:mergeDebugShaders
+:colorpicker:compileDebugShaders
+:colorpicker:generateDebugAssets
+:colorpicker:mergeDebugAssets
+:colorpicker:mergeDebugConsumerProguardFiles
+:colorpicker:packageDebugRenderscript NO-SOURCE
+:colorpicker:processDebugJavaRes NO-SOURCE
+:colorpicker:transformResourcesWithMergeJavaResForDebug
+:colorpicker:transformClassesAndResourcesWithSyncLibJarsForDebug
+:colorpicker:mergeDebugJniLibFolders
+:colorpicker:transformNativeLibsWithMergeJniLibsForDebug
+:colorpicker:transformNativeLibsWithStripDebugSymbolForDebug
+:colorpicker:transformNativeLibsWithSyncJniLibsForDebug
+:colorpicker:bundleDebug
+:colorpicker:compileDebugSources
+:colorpicker:assembleDebug
+:colorpicker:preReleaseBuild UP-TO-DATE
+:colorpicker:compileReleaseAidl
+:colorpicker:compileReleaseNdk NO-SOURCE
+:colorpicker:compileReleaseRenderscript
+:colorpicker:checkReleaseManifest
+:colorpicker:generateReleaseBuildConfig
+:colorpicker:generateReleaseResValues
+:colorpicker:generateReleaseResources
+:colorpicker:packageReleaseResources
+:colorpicker:processReleaseManifest
+:colorpicker:processReleaseResources
+:colorpicker:generateReleaseSources
+:colorpicker:javaPreCompileRelease
+:colorpicker:compileReleaseJavaWithJavac
+:colorpicker:extractReleaseAnnotations
+:colorpicker:mergeReleaseShaders
+:colorpicker:compileReleaseShaders
+:colorpicker:generateReleaseAssets
+:colorpicker:mergeReleaseAssets
+:colorpicker:mergeReleaseConsumerProguardFiles
+:colorpicker:packageReleaseRenderscript NO-SOURCE
+:colorpicker:processReleaseJavaRes NO-SOURCE
+:colorpicker:transformResourcesWithMergeJavaResForRelease
+:colorpicker:transformClassesAndResourcesWithSyncLibJarsForRelease
+:colorpicker:mergeReleaseJniLibFolders
+:colorpicker:transformNativeLibsWithMergeJniLibsForRelease
+:colorpicker:transformNativeLibsWithStripDebugSymbolForRelease
+:colorpicker:transformNativeLibsWithSyncJniLibsForRelease
+:colorpicker:bundleRelease
+:colorpicker:compileReleaseSources
+:colorpicker:mergeReleaseResources
+:colorpicker:verifyReleaseResources
+:colorpicker:assembleRelease
+:colorpicker:javadoc/tmp/rdisk/2213/src/colorpicker/src/main/java/com/rarepebble/colorpicker/ColorPickerView.java:73: warning: no @return
+	public int getColor() {
+	           ^
+/tmp/rdisk/2213/src/colorpicker/src/main/java/com/rarepebble/colorpicker/ColorPickerView.java:78: warning: no @param for color
+	public void setColor(int color) {
+	            ^
+/tmp/rdisk/2213/src/colorpicker/src/main/java/com/rarepebble/colorpicker/ColorPickerView.java:84: warning: no @param for color
+	public void setOriginalColor(int color) {
+	            ^
+/tmp/rdisk/2213/src/colorpicker/src/main/java/com/rarepebble/colorpicker/ColorPickerView.java:89: warning: no @param for color
+	public void setCurrentColor(int color) {
+	            ^
+
+4 warnings
+:colorpicker:javadocJar
+:colorpicker:sourcesJar
+:colorpicker:assemble
+:colorpicker:build
+
+BUILD SUCCESSFUL in 14s
+51 actionable tasks: 51 executed
+
+2018-04-03 11:30:25,012 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:30:25,012 INFO  SysUtils - Execute command: [/tmp/rdisk/2213/src/gradlew, -b, /tmp/rdisk/2213/src/demo_app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:30:32,839 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-03 11:30:32,840 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 11:30:32,840 INFO  SysUtils - Execute command: [/tmp/rdisk/2213/src/gradlew, -b, /tmp/rdisk/2213/src/demo_app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 11:30:48,496 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':demo_app' is deprecated. Use 'implementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Configuration 'compile' in project ':colorpicker' is deprecated. Use 'implementation' instead.
+:colorpicker:preBuild UP-TO-DATE
+:colorpicker:preDebugBuild UP-TO-DATE
+:colorpicker:compileDebugAidl UP-TO-DATE
+:colorpicker:compileDebugRenderscript UP-TO-DATE
+:colorpicker:checkDebugManifest UP-TO-DATE
+:colorpicker:generateDebugBuildConfig UP-TO-DATE
+:colorpicker:prepareLintJar UP-TO-DATE
+:colorpicker:generateDebugResValues UP-TO-DATE
+:colorpicker:generateDebugResources UP-TO-DATE
+:colorpicker:packageDebugResources UP-TO-DATE
+:colorpicker:platformAttrExtractor UP-TO-DATE
+:colorpicker:processDebugManifest UP-TO-DATE
+:colorpicker:processDebugResources UP-TO-DATE
+:colorpicker:generateDebugSources UP-TO-DATE
+:colorpicker:javaPreCompileDebug UP-TO-DATE
+:colorpicker:compileDebugJavaWithJavac UP-TO-DATE
+:colorpicker:processDebugJavaRes NO-SOURCE
+:colorpicker:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:demo_app:preBuild UP-TO-DATE
+:demo_app:preDebugBuild
+:demo_app:compileDebugAidl
+:colorpicker:packageDebugRenderscript NO-SOURCE
+:demo_app:compileDebugRenderscript
+:demo_app:checkDebugManifest
+:demo_app:generateDebugBuildConfig
+:demo_app:prepareLintJar
+:demo_app:generateDebugResValues
+:demo_app:generateDebugResources
+:demo_app:mergeDebugResources
+:demo_app:createDebugCompatibleScreenManifests
+:demo_app:processDebugManifest
+:demo_app:splitsDiscoveryTaskDebug
+:demo_app:processDebugResources
+:demo_app:generateDebugSources
+:demo_app:javaPreCompileDebug
+:demo_app:compileDebugJavaWithJavacNote: /tmp/rdisk/2213/src/demo_app/src/main/java/com/rarepebble/colorpickerdemo/NonDeveloperMessage.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo_app:compileDebugNdk NO-SOURCE
+:demo_app:compileDebugSources
+:colorpicker:mergeDebugShaders UP-TO-DATE
+:colorpicker:compileDebugShaders UP-TO-DATE
+:colorpicker:generateDebugAssets UP-TO-DATE
+:colorpicker:mergeDebugAssets UP-TO-DATE
+:demo_app:mergeDebugShaders
+:demo_app:compileDebugShaders
+:demo_app:generateDebugAssets
+:demo_app:mergeDebugAssets
+:demo_app:transformClassesWithDexBuilderForDebug
+:demo_app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:demo_app:transformDexArchiveWithDexMergerForDebug
+:colorpicker:compileDebugNdk NO-SOURCE
+:colorpicker:mergeDebugJniLibFolders UP-TO-DATE
+:colorpicker:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:colorpicker:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:colorpicker:transformNativeLibsWithIntermediateJniLibsForDebug
+:demo_app:mergeDebugJniLibFolders
+:demo_app:transformNativeLibsWithMergeJniLibsForDebug
+:demo_app:transformNativeLibsWithStripDebugSymbolForDebug
+:demo_app:processDebugJavaRes NO-SOURCE
+:demo_app:transformResourcesWithMergeJavaResForDebug
+:demo_app:validateSigningDebug
+:demo_app:packageDebug
+:demo_app:assembleDebug
+:colorpicker:preReleaseBuild UP-TO-DATE
+:colorpicker:compileReleaseAidl UP-TO-DATE
+:colorpicker:compileReleaseRenderscript UP-TO-DATE
+:colorpicker:checkReleaseManifest UP-TO-DATE
+:colorpicker:generateReleaseBuildConfig UP-TO-DATE
+:colorpicker:generateReleaseResValues UP-TO-DATE
+:colorpicker:generateReleaseResources UP-TO-DATE
+:colorpicker:packageReleaseResources UP-TO-DATE
+:colorpicker:processReleaseManifest UP-TO-DATE
+:colorpicker:processReleaseResources UP-TO-DATE
+:colorpicker:generateReleaseSources UP-TO-DATE
+:colorpicker:javaPreCompileRelease UP-TO-DATE
+:colorpicker:compileReleaseJavaWithJavac UP-TO-DATE
+:colorpicker:processReleaseJavaRes NO-SOURCE
+:colorpicker:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:demo_app:preReleaseBuild
+:demo_app:compileReleaseAidl
+:colorpicker:packageReleaseRenderscript NO-SOURCE
+:demo_app:compileReleaseRenderscript
+:demo_app:checkReleaseManifest
+:demo_app:generateReleaseBuildConfig
+:demo_app:generateReleaseResValues
+:demo_app:generateReleaseResources
+:demo_app:mergeReleaseResources
+:demo_app:createReleaseCompatibleScreenManifests
+:demo_app:processReleaseManifest
+:demo_app:splitsDiscoveryTaskRelease
+:demo_app:processReleaseResources
+:demo_app:generateReleaseSources
+:demo_app:javaPreCompileRelease
+:demo_app:compileReleaseJavaWithJavacNote: /tmp/rdisk/2213/src/demo_app/src/main/java/com/rarepebble/colorpickerdemo/NonDeveloperMessage.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo_app:compileReleaseNdk NO-SOURCE
+:demo_app:compileReleaseSources
+:demo_app:lintVitalRelease
+:colorpicker:mergeReleaseShaders UP-TO-DATE
+:colorpicker:compileReleaseShaders UP-TO-DATE
+:colorpicker:generateReleaseAssets UP-TO-DATE
+:colorpicker:mergeReleaseAssets UP-TO-DATE
+:demo_app:mergeReleaseShaders
+:demo_app:compileReleaseShaders
+:demo_app:generateReleaseAssets
+:demo_app:mergeReleaseAssets
+:demo_app:transformClassesWithPreDexForRelease
+:demo_app:transformDexWithDexForRelease
+:colorpicker:compileReleaseNdk NO-SOURCE
+:colorpicker:mergeReleaseJniLibFolders UP-TO-DATE
+:colorpicker:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:colorpicker:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:colorpicker:transformNativeLibsWithIntermediateJniLibsForRelease
+:demo_app:mergeReleaseJniLibFolders
+:demo_app:transformNativeLibsWithMergeJniLibsForRelease
+:demo_app:transformNativeLibsWithStripDebugSymbolForRelease
+:demo_app:processReleaseJavaRes NO-SOURCE
+:demo_app:transformResourcesWithMergeJavaResForRelease
+:demo_app:packageRelease
+:demo_app:assembleRelease
+:demo_app:assemble
+:demo_app:build
+
+BUILD SUCCESSFUL in 15s
+88 actionable tasks: 54 executed, 34 up-to-date
+
+2018-04-03 11:30:48,517 INFO  FullProcessService - Found APK file: /tmp/rdisk/2213/src/demo_app/build/outputs/apk/release/demo_app-release-unsigned.apk

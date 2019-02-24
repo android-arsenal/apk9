@@ -1,0 +1,463 @@
+2018-04-03 21:50:44,893 INFO  DownloadService - Downloading "https://github.com/ophio/secure-preferences/archive/master.zip", attempt 3
+2018-04-03 21:51:45,409 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 21:51:46,082 INFO  GithubDownloadService - Default branch of this repository: develop
+2018-04-03 21:51:46,082 INFO  DownloadService - Downloading "https://github.com/ophio/secure-preferences/archive/develop.zip", attempt 3
+2018-04-03 21:52:47,289 DEBUG FullProcessService - Repository https://github.com/ophio/secure-preferences available: true
+2018-04-03 21:52:47,289 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 21:52:47,289 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ophio/secure-preferences, /tmp/rdisk/2051/src]
+2018-04-03 21:52:48,935 INFO  SysUtils - 
+2018-04-03 21:52:48,939 INFO  GitService - Deleted "/tmp/rdisk/2051/src/.git": true
+2018-04-03 21:52:48,942 INFO  FullProcessService - Size of directory with sources: 159 KB
+2018-04-03 21:52:48,942 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2051/src]
+2018-04-03 21:52:48,947 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2051/src/.git/
+
+2018-04-03 21:52:48,949 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2051/src/gradlew
+2018-04-03 21:52:48,952 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2051/src/library/build.gradle /tmp/rdisk/2051/src/sample/build.gradle /tmp/rdisk/2051/src/build.gradle
+2018-04-03 21:52:48,955 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2051/src/version.gradle /tmp/rdisk/2051/src/settings.gradle /tmp/rdisk/2051/src/sample/build.gradle /tmp/rdisk/2051/src/library/build.gradle /tmp/rdisk/2051/src/libraries.gradle /tmp/rdisk/2051/src/checkstyle_android_library.gradle /tmp/rdisk/2051/src/checkstyle.gradle /tmp/rdisk/2051/src/build.gradle
+2018-04-03 21:52:48,956 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 21:52:48,956 INFO  ProjectFixService - Fixing project...
+2018-04-03 21:52:48,963 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2051/src/library/local.properties
+2018-04-03 21:52:48,963 INFO  ProjectFixService - Build info for "/tmp/rdisk/2051/src/library/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=18,targetSdkVersion=23]
+2018-04-03 21:52:48,963 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2051/src/sample/local.properties
+2018-04-03 21:52:48,964 INFO  ProjectFixService - Build info for "/tmp/rdisk/2051/src/sample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=18,targetSdkVersion=23]
+2018-04-03 21:52:48,964 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2051/src/local.properties
+2018-04-03 21:52:48,964 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-03 21:52:48,964 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-03 21:52:48,966 INFO  ProjectFixService - Build info for "/tmp/rdisk/2051/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=18,targetSdkVersion=23]
+2018-04-03 21:52:48,966 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 21:52:48,966 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 21:52:48,966 INFO  SysUtils - Execute command: [/tmp/rdisk/2051/src/gradlew, -b, /tmp/rdisk/2051/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 21:53:00,006 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 21:53:00,006 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 21:53:00,006 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 21:53:00,006 INFO  SysUtils - Execute command: [/tmp/rdisk/2051/src/gradlew, -b, /tmp/rdisk/2051/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 21:53:18,960 INFO  SysUtils - Configuration on demand is an incubating feature.
+PREDEX ENABLED
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugProguardFiles
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJava/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:20: warning: [deprecation] KeyPairGeneratorSpec in android.security has been deprecated
+import android.security.KeyPairGeneratorSpec;
+                       ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:77: warning: [deprecation] KeyPairGeneratorSpec in android.security has been deprecated
+        final KeyPairGeneratorSpec spec = new KeyPairGeneratorSpec.Builder(context)
+              ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:77: warning: [deprecation] KeyPairGeneratorSpec in android.security has been deprecated
+        final KeyPairGeneratorSpec spec = new KeyPairGeneratorSpec.Builder(context)
+                                              ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:77: warning: [deprecation] Builder in KeyPairGeneratorSpec has been deprecated
+        final KeyPairGeneratorSpec spec = new KeyPairGeneratorSpec.Builder(context)
+                                                                  ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/core/KeyStoreKeyGenerator.java:41: warning: [deprecation] isBoundKeyAlgorithm(String) in KeyChain has been deprecated
+        this.isHardwareBacked = KeyChain.isBoundKeyAlgorithm("RSA");
+                                        ^
+5 warnings
+
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:20: warning: [deprecation] KeyPairGeneratorSpec in android.security has been deprecated
+import android.security.KeyPairGeneratorSpec;
+                       ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:77: warning: [deprecation] KeyPairGeneratorSpec in android.security has been deprecated
+        final KeyPairGeneratorSpec spec = new KeyPairGeneratorSpec.Builder(context)
+              ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:77: warning: [deprecation] KeyPairGeneratorSpec in android.security has been deprecated
+        final KeyPairGeneratorSpec spec = new KeyPairGeneratorSpec.Builder(context)
+                                              ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:77: warning: [deprecation] Builder in KeyPairGeneratorSpec has been deprecated
+        final KeyPairGeneratorSpec spec = new KeyPairGeneratorSpec.Builder(context)
+                                                                  ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/core/KeyStoreKeyGenerator.java:41: warning: [deprecation] isBoundKeyAlgorithm(String) in KeyChain has been deprecated
+        this.isHardwareBacked = KeyChain.isBoundKeyAlgorithm("RSA");
+                                        ^
+5 warnings
+
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:javadoc/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:98: warning: no @param for key
+    public byte[] wrap(SecretKey key) throws GeneralSecurityException {
+                  ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:98: warning: no @throws for java.security.GeneralSecurityException
+    public byte[] wrap(SecretKey key) throws GeneralSecurityException {
+                  ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:110: warning: no @return
+    public SecretKey unwrap(byte[] blob) throws GeneralSecurityException {
+                     ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:110: warning: no @throws for java.security.GeneralSecurityException
+    public SecretKey unwrap(byte[] blob) throws GeneralSecurityException {
+                     ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:53: warning: no @param for context
+    public SecretKeyWrapper(Context context, String alias)
+           ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:53: warning: no @param for alias
+    public SecretKeyWrapper(Context context, String alias)
+           ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:53: warning: no @throws for java.security.GeneralSecurityException
+    public SecretKeyWrapper(Context context, String alias)
+           ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:53: warning: no @throws for java.io.IOException
+    public SecretKeyWrapper(Context context, String alias)
+           ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/core/ObscuredSharedPreferences.java:105: warning: no description for @return
+     * @return
+       ^
+
+9 warnings
+:library:javadocJar
+:library:sourcesJar
+:library:assemble
+:library:checkstyleDebug
+:library:checkstyleRelease
+:library:lint
+Ran lint on variant debug: 5 issues found
+Ran lint on variant release: 5 issues found
+Wrote HTML report to file:/tmp/rdisk/2051/src/library/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2051/src/library/build/outputs/lint-results.xml
+:library:preCompileDebugUnitTestJava
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:prepareDebugUnitTestDependencies
+:library:processDebugUnitTestJavaRes UP-TO-DATE
+:library:compileDebugUnitTestJava UP-TO-DATE
+:library:compileDebugUnitTestSources UP-TO-DATE
+:library:mockableAndroidJar
+:library:assembleDebugUnitTest
+:library:testDebug
+:library:preCompileReleaseUnitTestJava
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareReleaseUnitTestDependencies
+:library:processReleaseUnitTestJavaRes UP-TO-DATE
+:library:compileReleaseUnitTestJava UP-TO-DATE
+:library:compileReleaseUnitTestSources UP-TO-DATE
+:library:assembleReleaseUnitTest
+:library:testRelease
+:library:test
+:library:check
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.528 secs
+
+2018-04-03 21:53:18,969 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 21:53:18,969 INFO  SysUtils - Execute command: [/tmp/rdisk/2051/src/gradlew, -b, /tmp/rdisk/2051/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 21:53:26,059 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-03 21:53:26,059 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 21:53:26,059 INFO  SysUtils - Execute command: [/tmp/rdisk/2051/src/gradlew, -b, /tmp/rdisk/2051/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 21:53:52,023 INFO  SysUtils - Configuration on demand is an incubating feature.
+PREDEX ENABLED
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugProguardFiles UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJava UP-TO-DATE
+:library:packageDebugJar UP-TO-DATE
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:library:javadoc UP-TO-DATE
+:library:javadocJar UP-TO-DATE
+:library:mavenAndroidJavadocs/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:98: warning: no @param for key
+    public byte[] wrap(SecretKey key) throws GeneralSecurityException {
+                  ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:98: warning: no @throws for java.security.GeneralSecurityException
+    public byte[] wrap(SecretKey key) throws GeneralSecurityException {
+                  ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:110: warning: no @return
+    public SecretKey unwrap(byte[] blob) throws GeneralSecurityException {
+                     ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:110: warning: no @throws for java.security.GeneralSecurityException
+    public SecretKey unwrap(byte[] blob) throws GeneralSecurityException {
+                     ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:53: warning: no @param for context
+    public SecretKeyWrapper(Context context, String alias)
+           ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:53: warning: no @param for alias
+    public SecretKeyWrapper(Context context, String alias)
+           ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:53: warning: no @throws for java.security.GeneralSecurityException
+    public SecretKeyWrapper(Context context, String alias)
+           ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/vault/SecretKeyWrapper.java:53: warning: no @throws for java.io.IOException
+    public SecretKeyWrapper(Context context, String alias)
+           ^
+/tmp/rdisk/2051/src/library/src/main/java/in/co/ophio/secure/core/ObscuredSharedPreferences.java:105: warning: no description for @return
+     * @return
+       ^
+
+9 warnings
+:library:mavenAndroidJavadocsJar
+:library:mavenAndroidSourcesJar
+:library:sourcesJar
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72220Library
+:sample:prepareComAndroidSupportSupportV42220Library
+:sample:prepareInCoOphioLibraryUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+Warning: /tmp/rdisk/2051/src/sample/src/main/AndroidManifest.xml:6:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:6 to replace other declarations but no other declaration present
+/tmp/rdisk/2051/src/sample/src/main/AndroidManifest.xml:6:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:6 to replace other declarations but no other declaration present
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavawarning: No processor claimed any of these annotations: javax.inject.Inject,dagger.Module,dagger.Component,android.support.annotation.Nullable,javax.inject.Singleton,dagger.Provides
+warning: No processor claimed any of these annotations: javax.annotation.Generated
+/tmp/rdisk/2051/src/sample/src/main/java/in/co/ophio/secure/sample/view/MainFragment.java:45: warning: [deprecation] onAttach(Activity) in Fragment has been deprecated
+    public void onAttach(Activity activity) {
+                ^
+/tmp/rdisk/2051/src/sample/src/main/java/in/co/ophio/secure/sample/view/MainFragment.java:52: warning: [deprecation] onAttach(Activity) in Fragment has been deprecated
+        super.onAttach(activity);
+             ^
+/tmp/rdisk/2051/src/sample/src/main/java/in/co/ophio/secure/sample/view/LoggedInFragment.java:33: warning: [deprecation] onAttach(Activity) in Fragment has been deprecated
+    public void onAttach(Activity activity) {
+                ^
+/tmp/rdisk/2051/src/sample/src/main/java/in/co/ophio/secure/sample/view/LoggedInFragment.java:40: warning: [deprecation] onAttach(Activity) in Fragment has been deprecated
+        super.onAttach(activity);
+             ^
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/debug/in/co/ophio/secure/sample/module/DaggerAppComponent.java:42: warning: [unchecked] unchecked method invocation: method create in class MainFragment_MembersInjector is applied to given types
+    this.mainFragmentMembersInjector = MainFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider, provideKeyGeneratorProvider);
+                                                                          ^
+  required: MembersInjector<Fragment>,Provider<AccountUtils>,Provider<KeyGenerator>
+  found: MembersInjector,Provider<AccountUtils>,Provider<KeyGenerator>
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/debug/in/co/ophio/secure/sample/module/DaggerAppComponent.java:42: warning: [unchecked] unchecked conversion
+    this.mainFragmentMembersInjector = MainFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider, provideKeyGeneratorProvider);
+                                                                           ^
+  required: MembersInjector<Fragment>
+  found:    MembersInjector
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/debug/in/co/ophio/secure/sample/module/DaggerAppComponent.java:42: warning: [unchecked] unchecked conversion
+    this.mainFragmentMembersInjector = MainFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider, provideKeyGeneratorProvider);
+                                                                          ^
+  required: MembersInjector<MainFragment>
+  found:    MembersInjector
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/debug/in/co/ophio/secure/sample/module/DaggerAppComponent.java:43: warning: [unchecked] unchecked method invocation: method create in class MainActivity_MembersInjector is applied to given types
+    this.mainActivityMembersInjector = MainActivity_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                          ^
+  required: MembersInjector<AppCompatActivity>,Provider<AccountUtils>
+  found: MembersInjector,Provider<AccountUtils>
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/debug/in/co/ophio/secure/sample/module/DaggerAppComponent.java:43: warning: [unchecked] unchecked conversion
+    this.mainActivityMembersInjector = MainActivity_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                           ^
+  required: MembersInjector<AppCompatActivity>
+  found:    MembersInjector
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/debug/in/co/ophio/secure/sample/module/DaggerAppComponent.java:43: warning: [unchecked] unchecked conversion
+    this.mainActivityMembersInjector = MainActivity_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                          ^
+  required: MembersInjector<MainActivity>
+  found:    MembersInjector
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/debug/in/co/ophio/secure/sample/module/DaggerAppComponent.java:44: warning: [unchecked] unchecked method invocation: method create in class LoggedInFragment_MembersInjector is applied to given types
+    this.loggedInFragmentMembersInjector = LoggedInFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                                  ^
+  required: MembersInjector<Fragment>,Provider<AccountUtils>
+  found: MembersInjector,Provider<AccountUtils>
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/debug/in/co/ophio/secure/sample/module/DaggerAppComponent.java:44: warning: [unchecked] unchecked conversion
+    this.loggedInFragmentMembersInjector = LoggedInFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                                   ^
+  required: MembersInjector<Fragment>
+  found:    MembersInjector
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/debug/in/co/ophio/secure/sample/module/DaggerAppComponent.java:44: warning: [unchecked] unchecked conversion
+    this.loggedInFragmentMembersInjector = LoggedInFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                                  ^
+  required: MembersInjector<LoggedInFragment>
+  found:    MembersInjector
+15 warnings
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+Warning: /tmp/rdisk/2051/src/sample/src/main/AndroidManifest.xml:6:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:6 to replace other declarations but no other declaration present
+/tmp/rdisk/2051/src/sample/src/main/AndroidManifest.xml:6:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:6 to replace other declarations but no other declaration present
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavawarning: No processor claimed any of these annotations: javax.inject.Inject,dagger.Module,dagger.Component,android.support.annotation.Nullable,javax.inject.Singleton,dagger.Provides
+warning: No processor claimed any of these annotations: javax.annotation.Generated
+/tmp/rdisk/2051/src/sample/src/main/java/in/co/ophio/secure/sample/view/MainFragment.java:45: warning: [deprecation] onAttach(Activity) in Fragment has been deprecated
+    public void onAttach(Activity activity) {
+                ^
+/tmp/rdisk/2051/src/sample/src/main/java/in/co/ophio/secure/sample/view/MainFragment.java:52: warning: [deprecation] onAttach(Activity) in Fragment has been deprecated
+        super.onAttach(activity);
+             ^
+/tmp/rdisk/2051/src/sample/src/main/java/in/co/ophio/secure/sample/view/LoggedInFragment.java:33: warning: [deprecation] onAttach(Activity) in Fragment has been deprecated
+    public void onAttach(Activity activity) {
+                ^
+/tmp/rdisk/2051/src/sample/src/main/java/in/co/ophio/secure/sample/view/LoggedInFragment.java:40: warning: [deprecation] onAttach(Activity) in Fragment has been deprecated
+        super.onAttach(activity);
+             ^
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/release/in/co/ophio/secure/sample/module/DaggerAppComponent.java:42: warning: [unchecked] unchecked method invocation: method create in class MainFragment_MembersInjector is applied to given types
+    this.mainFragmentMembersInjector = MainFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider, provideKeyGeneratorProvider);
+                                                                          ^
+  required: MembersInjector<Fragment>,Provider<AccountUtils>,Provider<KeyGenerator>
+  found: MembersInjector,Provider<AccountUtils>,Provider<KeyGenerator>
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/release/in/co/ophio/secure/sample/module/DaggerAppComponent.java:42: warning: [unchecked] unchecked conversion
+    this.mainFragmentMembersInjector = MainFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider, provideKeyGeneratorProvider);
+                                                                           ^
+  required: MembersInjector<Fragment>
+  found:    MembersInjector
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/release/in/co/ophio/secure/sample/module/DaggerAppComponent.java:42: warning: [unchecked] unchecked conversion
+    this.mainFragmentMembersInjector = MainFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider, provideKeyGeneratorProvider);
+                                                                          ^
+  required: MembersInjector<MainFragment>
+  found:    MembersInjector
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/release/in/co/ophio/secure/sample/module/DaggerAppComponent.java:43: warning: [unchecked] unchecked method invocation: method create in class MainActivity_MembersInjector is applied to given types
+    this.mainActivityMembersInjector = MainActivity_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                          ^
+  required: MembersInjector<AppCompatActivity>,Provider<AccountUtils>
+  found: MembersInjector,Provider<AccountUtils>
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/release/in/co/ophio/secure/sample/module/DaggerAppComponent.java:43: warning: [unchecked] unchecked conversion
+    this.mainActivityMembersInjector = MainActivity_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                           ^
+  required: MembersInjector<AppCompatActivity>
+  found:    MembersInjector
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/release/in/co/ophio/secure/sample/module/DaggerAppComponent.java:43: warning: [unchecked] unchecked conversion
+    this.mainActivityMembersInjector = MainActivity_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                          ^
+  required: MembersInjector<MainActivity>
+  found:    MembersInjector
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/release/in/co/ophio/secure/sample/module/DaggerAppComponent.java:44: warning: [unchecked] unchecked method invocation: method create in class LoggedInFragment_MembersInjector is applied to given types
+    this.loggedInFragmentMembersInjector = LoggedInFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                                  ^
+  required: MembersInjector<Fragment>,Provider<AccountUtils>
+  found: MembersInjector,Provider<AccountUtils>
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/release/in/co/ophio/secure/sample/module/DaggerAppComponent.java:44: warning: [unchecked] unchecked conversion
+    this.loggedInFragmentMembersInjector = LoggedInFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                                   ^
+  required: MembersInjector<Fragment>
+  found:    MembersInjector
+/tmp/rdisk/2051/src/sample/build/generated/source/apt/release/in/co/ophio/secure/sample/module/DaggerAppComponent.java:44: warning: [unchecked] unchecked conversion
+    this.loggedInFragmentMembersInjector = LoggedInFragment_MembersInjector.create((MembersInjector) MembersInjectors.noOp(), provideAccountUtilsProvider);
+                                                                                  ^
+  required: MembersInjector<LoggedInFragment>
+  found:    MembersInjector
+15 warnings
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.548 secs
+
+2018-04-03 21:53:52,062 INFO  FullProcessService - Found APK file: /tmp/rdisk/2051/src/sample/build/outputs/apk/sample-release-unsigned.apk

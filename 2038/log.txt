@@ -1,0 +1,107 @@
+2018-04-03 22:22:25,219 INFO  DownloadService - Downloading "https://github.com/intuit/sdp/archive/master.zip", attempt 3
+2018-04-03 22:23:25,695 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 22:23:26,349 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 22:23:26,349 INFO  DownloadService - Downloading "https://github.com/intuit/sdp/archive/master.zip", attempt 3
+2018-04-03 22:24:27,551 DEBUG FullProcessService - Repository https://github.com/intuit/sdp available: true
+2018-04-03 22:24:27,551 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 22:24:27,551 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/intuit/sdp, /tmp/rdisk/2038/src]
+2018-04-03 22:24:29,337 INFO  SysUtils - 
+2018-04-03 22:24:29,350 INFO  GitService - Deleted "/tmp/rdisk/2038/src/.git": true
+2018-04-03 22:24:29,352 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-03 22:24:29,352 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2038/src]
+2018-04-03 22:24:29,357 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2038/src/.git/
+
+2018-04-03 22:24:29,359 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2038/src/sdp-android/gradlew
+2018-04-03 22:24:29,361 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2038/src/sdp-android/build.gradle
+2018-04-03 22:24:29,363 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2038/src/sdp-android/build.gradle
+2018-04-03 22:24:29,363 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 22:24:29,363 INFO  ProjectFixService - Fixing project...
+2018-04-03 22:24:29,373 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2038/src/sdp-android/local.properties
+2018-04-03 22:24:29,374 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-03 22:24:29,374 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-03 22:24:29,374 INFO  ProjectFixService - Build info for "/tmp/rdisk/2038/src/sdp-android/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-03 22:24:29,374 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 22:24:29,374 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:24:29,374 INFO  SysUtils - Execute command: [/tmp/rdisk/2038/src/sdp-android/gradlew, -b, /tmp/rdisk/2038/src/sdp-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:24:36,815 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-03 22:24:36,815 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 22:24:36,815 INFO  SysUtils - Execute command: [/tmp/rdisk/2038/src/sdp-android/gradlew, -b, /tmp/rdisk/2038/src/sdp-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 22:24:49,038 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:preBuild UP-TO-DATE
+:preDebugBuild UP-TO-DATE
+:compileDebugAidl
+:compileDebugNdk NO-SOURCE
+:compileDebugRenderscript
+:checkDebugManifest
+:generateDebugBuildConfig
+:prepareLintJar
+:generateDebugResValues
+:generateDebugResources
+:packageDebugResources
+:platformAttrExtractor
+:processDebugManifest
+:javaPreCompileDebug
+:processDebugResources
+:generateDebugSources
+:compileDebugJavaWithJavac
+:extractDebugAnnotations
+:mergeDebugShaders
+:compileDebugShaders
+:generateDebugAssets
+:mergeDebugAssets
+:mergeDebugConsumerProguardFiles
+:packageDebugRenderscript NO-SOURCE
+:processDebugJavaRes NO-SOURCE
+:transformResourcesWithMergeJavaResForDebug
+:transformClassesAndResourcesWithSyncLibJarsForDebug
+:mergeDebugJniLibFolders
+:transformNativeLibsWithMergeJniLibsForDebug
+:transformNativeLibsWithStripDebugSymbolForDebug
+:transformNativeLibsWithSyncJniLibsForDebug
+:bundleDebug
+:compileDebugSources
+:assembleDebug
+:preReleaseBuild UP-TO-DATE
+:compileReleaseAidl
+:compileReleaseNdk NO-SOURCE
+:compileReleaseRenderscript
+:checkReleaseManifest
+:generateReleaseBuildConfig
+:generateReleaseResValues
+:generateReleaseResources
+:packageReleaseResources
+:processReleaseManifest
+:processReleaseResources
+:generateReleaseSources
+:javaPreCompileRelease
+:compileReleaseJavaWithJavac
+:extractReleaseAnnotations
+:mergeReleaseShaders
+:compileReleaseShaders
+:generateReleaseAssets
+:mergeReleaseAssets
+:mergeReleaseConsumerProguardFiles
+:packageReleaseRenderscript NO-SOURCE
+:processReleaseJavaRes NO-SOURCE
+:transformResourcesWithMergeJavaResForRelease
+:transformClassesAndResourcesWithSyncLibJarsForRelease
+:mergeReleaseJniLibFolders
+:transformNativeLibsWithMergeJniLibsForRelease
+:transformNativeLibsWithStripDebugSymbolForRelease
+:transformNativeLibsWithSyncJniLibsForRelease
+:bundleRelease
+:compileReleaseSources
+:mergeReleaseResources
+:verifyReleaseResources
+:assembleRelease
+:signArchives SKIPPED
+:assemble
+:build
+
+BUILD SUCCESSFUL in 11s
+48 actionable tasks: 48 executed
+
+2018-04-03 22:24:49,052 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 22:24:49,065 ERROR FullProcessService - Could not find generated or existed APK file

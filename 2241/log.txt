@@ -1,0 +1,134 @@
+2018-04-02 15:36:46,360 INFO  DownloadService - Downloading "https://github.com/bowyer-app/fab-toolbar/archive/master.zip", attempt 3
+2018-04-02 15:37:47,046 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 15:37:48,114 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 15:37:48,114 INFO  DownloadService - Downloading "https://github.com/bowyer-app/fab-toolbar/archive/master.zip", attempt 3
+2018-04-02 15:38:49,388 DEBUG FullProcessService - Repository https://github.com/bowyer-app/fab-toolbar available: true
+2018-04-02 15:38:49,388 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 15:38:49,388 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/bowyer-app/fab-toolbar, /tmp/rdisk/2241/src]
+2018-04-02 15:38:51,780 INFO  SysUtils - 
+2018-04-02 15:38:51,785 INFO  GitService - Deleted "/tmp/rdisk/2241/src/.git": true
+2018-04-02 15:38:51,788 INFO  FullProcessService - Size of directory with sources: 699 KB
+2018-04-02 15:38:51,788 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2241/src]
+2018-04-02 15:38:51,793 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2241/src/.git/
+
+2018-04-02 15:38:51,796 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2241/src/gradlew
+2018-04-02 15:38:51,799 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2241/src/app/build.gradle /tmp/rdisk/2241/src/fabtoolbar/build.gradle /tmp/rdisk/2241/src/build.gradle
+2018-04-02 15:38:51,802 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2241/src/settings.gradle /tmp/rdisk/2241/src/fabtoolbar/build.gradle /tmp/rdisk/2241/src/fabtoolbar/bintray-publish.gradle /tmp/rdisk/2241/src/build.gradle /tmp/rdisk/2241/src/app/build.gradle
+2018-04-02 15:38:51,802 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 15:38:51,802 INFO  ProjectFixService - Fixing project...
+2018-04-02 15:38:51,809 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2241/src/app/local.properties
+2018-04-02 15:38:51,812 INFO  ProjectFixService - Build info for "/tmp/rdisk/2241/src/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 15:38:51,812 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2241/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 15:38:51,813 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2241/src/fabtoolbar/local.properties
+2018-04-02 15:38:51,815 INFO  ProjectFixService - Build info for "/tmp/rdisk/2241/src/fabtoolbar/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 15:38:51,815 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2241/src/fabtoolbar/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 15:38:51,816 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2241/src/local.properties
+2018-04-02 15:38:51,816 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 15:38:51,816 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 15:38:51,819 INFO  ProjectFixService - Build info for "/tmp/rdisk/2241/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 15:38:51,819 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2241/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 15:38:51,819 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 15:38:51,819 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:38:51,819 INFO  SysUtils - Execute command: [/tmp/rdisk/2241/src/gradlew, -b, /tmp/rdisk/2241/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:39:06,465 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-02 15:39:06,465 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 15:39:06,465 INFO  SysUtils - Execute command: [/tmp/rdisk/2241/src/gradlew, -b, /tmp/rdisk/2241/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 15:39:35,920 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:fabtoolbar:compileLint
+:fabtoolbar:copyReleaseLint UP-TO-DATE
+:fabtoolbar:preBuild UP-TO-DATE
+:fabtoolbar:preReleaseBuild UP-TO-DATE
+:fabtoolbar:checkReleaseManifest
+:fabtoolbar:preDebugAndroidTestBuild UP-TO-DATE
+:fabtoolbar:preDebugBuild UP-TO-DATE
+:fabtoolbar:preDebugUnitTestBuild UP-TO-DATE
+:fabtoolbar:preReleaseUnitTestBuild UP-TO-DATE
+:fabtoolbar:prepareComAndroidSupportAppcompatV72301Library
+:fabtoolbar:prepareComAndroidSupportSupportV42301Library
+:fabtoolbar:prepareComGithubOzodrukhCircularReveal111Library
+:fabtoolbar:prepareReleaseDependencies
+:fabtoolbar:compileReleaseAidl
+:fabtoolbar:compileReleaseRenderscript
+:fabtoolbar:generateReleaseBuildConfig
+:fabtoolbar:generateReleaseAssets UP-TO-DATE
+:fabtoolbar:mergeReleaseAssets
+:fabtoolbar:generateReleaseResValues
+:fabtoolbar:generateReleaseResources
+:fabtoolbar:mergeReleaseResources
+:fabtoolbar:processReleaseManifest
+:fabtoolbar:processReleaseResources
+:fabtoolbar:generateReleaseSources
+:fabtoolbar:processReleaseJavaRes UP-TO-DATE
+:fabtoolbar:compileReleaseJavaWithJavac
+:fabtoolbar:extractReleaseAnnotations
+Warning: /tmp/rdisk/2241/src/fabtoolbar/src/main/java/com/bowyer/app/fabtoolbar/FabToolbar.java: The typedef annotation com.bowyer.app.fabtoolbar.FabToolbar.Fab should have @Retention(RetentionPolicy.SOURCE)
+:fabtoolbar:mergeReleaseProguardFiles
+:fabtoolbar:packageReleaseJar
+:fabtoolbar:compileReleaseNdk UP-TO-DATE
+:fabtoolbar:packageReleaseJniLibs UP-TO-DATE
+:fabtoolbar:packageReleaseLocalJar UP-TO-DATE
+:fabtoolbar:packageReleaseRenderscript UP-TO-DATE
+:fabtoolbar:packageReleaseResources
+:fabtoolbar:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72301Library
+:app:prepareComAndroidSupportDesign2301Library
+:app:prepareComAndroidSupportRecyclerviewV72100Library
+:app:prepareComAndroidSupportSupportV42301Library
+:app:prepareComGithubKsoichiroAndroidObservablescrollview151Library
+:app:prepareComGithubOzodrukhCircularReveal111Library
+:app:prepareSrcFabtoolbarUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.999 secs
+
+2018-04-02 15:39:35,979 INFO  FullProcessService - Found APK file: /tmp/rdisk/2241/src/app/build/outputs/apk/app-debug.apk

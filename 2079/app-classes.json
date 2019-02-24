@@ -1,0 +1,6 @@
+{
+  "ch.haclyon.driveimageview" : [ "BuildConfig", "DriveImageModel", "DriveImageView", "DriveImageView$1", "DriveImageView$2", "DriveImageViewLayout", "R", "R$drawable", "R$id", "R$layout" ],
+  "ch.haclyon.driveimageview.example" : [ "BuildConfig", "DisplayItemAdapter", "DisplayItemAdapter$1", "MainActivity", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$menu", "R$mipmap", "R$string" ],
+  "ch.haclyon.driveimageview.example.dialogs" : [ "AboutDialog", "AboutDialog$1" ],
+  "ch.haclyon.driveimageview.example.fragments" : [ "DetailFragment", "DetailFragment$1", "DetailFragment$2", "DetailFragment$3", "DetailFragment$4", "DetailFragment$5", "DetailFragment$6", "DetailFragment$7", "MainFragment" ]
+}

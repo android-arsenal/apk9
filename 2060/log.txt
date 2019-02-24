@@ -1,0 +1,101 @@
+2018-04-03 21:33:47,778 INFO  DownloadService - Downloading "https://github.com/06peng/FrescoDemo/archive/master.zip", attempt 3
+2018-04-03 21:34:48,245 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 21:34:48,917 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 21:34:48,917 INFO  DownloadService - Downloading "https://github.com/06peng/FrescoDemo/archive/master.zip", attempt 3
+2018-04-03 21:35:50,209 DEBUG FullProcessService - Repository https://github.com/06peng/FrescoDemo available: true
+2018-04-03 21:35:50,209 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 21:35:50,209 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/06peng/FrescoDemo, /tmp/rdisk/2060/src]
+2018-04-03 21:35:52,825 INFO  SysUtils - 
+2018-04-03 21:35:52,832 INFO  GitService - Deleted "/tmp/rdisk/2060/src/.git": true
+2018-04-03 21:35:52,836 INFO  FullProcessService - Size of directory with sources: 12 MB
+2018-04-03 21:35:52,836 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2060/src]
+2018-04-03 21:35:52,841 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2060/src/.git/
+
+2018-04-03 21:35:52,845 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2060/src/gradlew
+2018-04-03 21:35:52,848 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2060/src/app/build.gradle /tmp/rdisk/2060/src/build.gradle
+2018-04-03 21:35:52,851 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2060/src/settings.gradle /tmp/rdisk/2060/src/build.gradle /tmp/rdisk/2060/src/app/build.gradle
+2018-04-03 21:35:52,851 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 21:35:52,851 INFO  ProjectFixService - Fixing project...
+2018-04-03 21:35:52,859 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2060/src/app/local.properties
+2018-04-03 21:35:52,860 INFO  ProjectFixService - Build info for "/tmp/rdisk/2060/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 21:35:52,860 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2060/src/local.properties
+2018-04-03 21:35:52,860 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 21:35:52,860 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 21:35:52,861 INFO  ProjectFixService - Build info for "/tmp/rdisk/2060/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 21:35:52,861 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 21:35:52,861 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 21:35:52,861 INFO  SysUtils - Execute command: [/tmp/rdisk/2060/src/gradlew, -b, /tmp/rdisk/2060/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 21:36:13,424 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-03 21:36:13,424 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 21:36:13,424 INFO  SysUtils - Execute command: [/tmp/rdisk/2060/src/gradlew, -b, /tmp/rdisk/2060/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 21:36:52,029 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportCardviewV72220Library
+:app:prepareComAndroidSupportDesign2220Library
+:app:prepareComAndroidSupportRecyclerviewV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareComFacebookFrescoDrawee052Library
+:app:prepareComFacebookFrescoFbcore052Library
+:app:prepareComFacebookFrescoFresco052Library
+:app:prepareComFacebookFrescoImagepipeline052Library
+:app:preparePlDroidsonroidsGifAndroidGifDrawable117Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaNote: /tmp/rdisk/2060/src/app/src/main/java/com/davemorrissey/labs/subscaleview/SubsamplingScaleImageView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: /tmp/rdisk/2060/src/app/src/main/java/com/davemorrissey/labs/subscaleview/SubsamplingScaleImageView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 38.183 secs
+
+2018-04-03 21:36:52,072 INFO  FullProcessService - Found APK file: /tmp/rdisk/2060/src/app/build/outputs/apk/app-debug.apk

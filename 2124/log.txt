@@ -1,0 +1,40 @@
+2016-11-10 09:17:34,739 INFO  DownloadService - Downloading "https://github.com/immutables/immutables/archive/master.zip", attempt 3
+2016-11-10 09:17:34,740 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2016-11-10 09:17:34,741 INFO  GithubDownloadService - Default branch of this repository: null
+2016-11-10 09:17:34,741 ERROR GithubDownloadService - Could not detect default branch for Github repository
+2016-11-10 09:17:34,741 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2016-11-10 09:17:34,741 INFO  SysUtils - Execute command: [git, clone, https://github.com/immutables/immutables, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1478747854736-0/src]
+2016-11-10 09:17:34,787 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 128 (Exit value: 128)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:72)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:46)
+	at com.github.vbauer.apkmaster.service.git.GitService.clone(GitService.java:50)
+	at com.github.vbauer.apkmaster.service.git.GithubService.clone(GithubService.java:35)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:59)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:33)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:32)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:202)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$createTasks$12(BuildProcessorServiceImpl.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-11-10 09:17:34,787 INFO  SysUtils - Cloning into '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1478747854736-0/src'...
+fatal: unable to access 'https://github.com/immutables/immutables/': Could not resolve host: github.com
+
+2016-11-10 09:17:34,788 INFO  GitService - Deleted "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1478747854736-0/src/.git": false
+2016-11-10 09:17:34,788 ERROR FullProcessService - Could not find directory with sources
+2016-11-10 09:17:34,788 ERROR FullProcessService - Project will not be processed
+2016-11-10 09:17:34,788 ERROR FullProcessService - Project build has not produced APK file
+2016-11-10 09:17:34,788 ERROR FullProcessService - Could not find generated or existed APK file

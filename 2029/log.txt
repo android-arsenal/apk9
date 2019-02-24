@@ -1,0 +1,45 @@
+2018-04-03 22:36:29,857 INFO  DownloadService - Downloading "https://github.com/robolectric/robolectric-gradle-plugin/archive/master.zip", attempt 3
+2018-04-03 22:37:30,327 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 22:37:30,993 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 22:37:30,993 INFO  DownloadService - Downloading "https://github.com/robolectric/robolectric-gradle-plugin/archive/master.zip", attempt 3
+2018-04-03 22:38:32,187 DEBUG FullProcessService - Repository https://github.com/robolectric/robolectric-gradle-plugin available: true
+2018-04-03 22:38:32,187 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 22:38:32,187 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/robolectric/robolectric-gradle-plugin, /tmp/rdisk/2029/src]
+2018-04-03 22:38:33,701 INFO  SysUtils - 
+2018-04-03 22:38:33,710 INFO  GitService - Deleted "/tmp/rdisk/2029/src/.git": true
+2018-04-03 22:38:33,712 INFO  FullProcessService - Size of directory with sources: 84 KB
+2018-04-03 22:38:33,712 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2029/src]
+2018-04-03 22:38:33,716 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2029/src/.git/
+
+2018-04-03 22:38:33,718 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2029/src/gradlew
+2018-04-03 22:38:33,719 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2029/src/build.gradle
+2018-04-03 22:38:33,721 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2029/src/build.gradle
+2018-04-03 22:38:33,721 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 22:38:33,721 INFO  ProjectFixService - Fixing project...
+2018-04-03 22:38:33,724 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2029/src/local.properties
+2018-04-03 22:38:33,724 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-03 22:38:33,725 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-03 22:38:33,725 INFO  ProjectFixService - Build info for "/tmp/rdisk/2029/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 22:38:33,725 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2029/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 22:38:33,726 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 22:38:33,726 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:38:33,726 INFO  SysUtils - Execute command: [/tmp/rdisk/2029/src/gradlew, -b, /tmp/rdisk/2029/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:38:39,162 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-03 22:38:39,162 INFO  ProjectTaskService - Excluded tasks (5): javadocJar javadoc sourcesJar test check
+2018-04-03 22:38:39,162 INFO  SysUtils - Execute command: [/tmp/rdisk/2029/src/gradlew, -b, /tmp/rdisk/2029/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadocJar, -x, javadoc, -x, sourcesJar, -x, test, -x, check, build]
+2018-04-03 22:38:46,466 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJava UP-TO-DATE
+:compileGroovy
+:processResources
+:classes
+:jar
+:signArchives SKIPPED
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.836 secs
+
+2018-04-03 22:38:46,468 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 22:38:46,470 ERROR FullProcessService - Could not find generated or existed APK file

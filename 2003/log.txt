@@ -1,0 +1,225 @@
+2018-04-03 23:44:35,524 INFO  DownloadService - Downloading "https://github.com/javiersantos/MLManager/archive/master.zip", attempt 3
+2018-04-03 23:45:35,987 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 23:45:36,666 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 23:45:36,666 INFO  DownloadService - Downloading "https://github.com/javiersantos/MLManager/archive/master.zip", attempt 3
+2018-04-03 23:46:37,965 DEBUG FullProcessService - Repository https://github.com/javiersantos/MLManager available: true
+2018-04-03 23:46:37,965 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 23:46:37,965 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/javiersantos/MLManager, /tmp/rdisk/2003/src]
+2018-04-03 23:46:40,644 INFO  SysUtils - 
+2018-04-03 23:46:40,651 INFO  GitService - Deleted "/tmp/rdisk/2003/src/.git": true
+2018-04-03 23:46:40,657 INFO  FullProcessService - Size of directory with sources: 4 MB
+2018-04-03 23:46:40,657 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2003/src]
+2018-04-03 23:46:40,665 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2003/src/.git/
+
+2018-04-03 23:46:40,670 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2003/src/gradlew
+2018-04-03 23:46:40,674 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2003/src/app/build.gradle /tmp/rdisk/2003/src/build.gradle
+2018-04-03 23:46:40,678 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2003/src/settings.gradle /tmp/rdisk/2003/src/build.gradle /tmp/rdisk/2003/src/app/build.gradle
+2018-04-03 23:46:40,678 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 23:46:40,678 INFO  ProjectFixService - Fixing project...
+2018-04-03 23:46:40,697 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2003/src/app/local.properties
+2018-04-03 23:46:40,697 INFO  ProjectFixService - Build info for "/tmp/rdisk/2003/src/app/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-03 23:46:40,697 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2003/src/local.properties
+2018-04-03 23:46:40,698 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 23:46:40,698 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 23:46:40,699 INFO  ProjectFixService - Build info for "/tmp/rdisk/2003/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-03 23:46:40,699 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 23:46:40,699 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 23:46:40,699 INFO  SysUtils - Execute command: [/tmp/rdisk/2003/src/gradlew, -b, /tmp/rdisk/2003/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 23:46:54,700 INFO  ProjectTaskService - Detected possible tasks: 87
+2018-04-03 23:46:54,700 INFO  ProjectTaskService - Excluded tasks (9): mockableAndroidJar deviceCheck lint deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest
+2018-04-03 23:46:54,700 INFO  SysUtils - Execute command: [/tmp/rdisk/2003/src/gradlew, -b, /tmp/rdisk/2003/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, build]
+2018-04-03 23:48:05,041 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preBasicDebugBuild UP-TO-DATE
+:app:checkBasicDebugManifest
+:app:preBasicReleaseBuild UP-TO-DATE
+:app:preProDebugBuild UP-TO-DATE
+:app:preProReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2321Library
+:app:prepareComAndroidSupportAppcompatV72321Library
+:app:prepareComAndroidSupportCardviewV72321Library
+:app:prepareComAndroidSupportRecyclerviewV72321Library
+:app:prepareComAndroidSupportSupportV42321Library
+:app:prepareComAndroidSupportSupportVectorDrawable2321Library
+:app:prepareComGetbaseFloatingactionbutton1101Library
+:app:prepareComGithubAfollestadMaterialDialogsCommons0853Library
+:app:prepareComGithubAfollestadMaterialDialogsCore0853Library
+:app:prepareComGithubNavasmdcMaterialDesign15Library
+:app:prepareComGithubYukukuAmbilwarna201Library
+:app:prepareComMikepenzAboutlibraries521Library
+:app:prepareComMikepenzGoogleMaterialTypeface1201Library
+:app:prepareComMikepenzIconicsCore252Library
+:app:prepareComMikepenzMaterialdrawer461Library
+:app:prepareComMikepenzMaterialize051Library
+:app:prepareComPnikosisMaterialishProgress17Library
+:app:prepareComYalantisPhoenix122Library
+:app:prepareMeZhanghaiAndroidMaterialprogressbarLibrary114Library
+:app:prepareNetRdreiAndroidDirchooserLibrary30Library
+:app:prepareXyzDanozRecyclerviewfastscroller013Library
+:app:prepareBasicDebugDependencies
+:app:compileBasicDebugAidl
+:app:compileBasicDebugRenderscript
+:app:generateBasicDebugBuildConfig
+:app:generateBasicDebugAssets UP-TO-DATE
+:app:mergeBasicDebugAssets
+:app:generateBasicDebugResValues
+:app:generateBasicDebugResources
+:app:mergeBasicDebugResources
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-mdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/src/main/res/drawable/banner_troll.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-xxhdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/net.rdrei.android.dirchooser/library/3.0/res/drawable-xhdpi/navigation_up.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-ldpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-xhdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-hdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processBasicDebugManifest
+:app:processBasicDebugResources
+:app:generateBasicDebugSources
+:app:compileBasicDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2003/src/app/src/main/java/com/javiersantos/mlmanager/adapters/AppAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileBasicDebugNdk UP-TO-DATE
+:app:compileBasicDebugSources
+:app:transformClassesWithDexForBasicDebugwarning: Ignoring InnerClasses attribute for an anonymous inner class
+(autovalue.shaded.org.apache.commons.lang.builder.HashCodeBuilder$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(autovalue.shaded.org.apache.commons.lang.builder.ToStringStyle$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+
+:app:mergeBasicDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForBasicDebug
+:app:processBasicDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForBasicDebug
+:app:validateDebugSigning
+:app:packageBasicDebug
+:app:zipalignBasicDebug
+:app:assembleBasicDebug
+:app:checkProDebugManifest
+:app:prepareProDebugDependencies
+:app:compileProDebugAidl
+:app:compileProDebugRenderscript
+:app:generateProDebugBuildConfig
+:app:generateProDebugAssets UP-TO-DATE
+:app:mergeProDebugAssets
+:app:generateProDebugResValues
+:app:generateProDebugResources
+:app:mergeProDebugResources
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-mdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-xxhdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/src/main/res/drawable/banner_troll.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/net.rdrei.android.dirchooser/library/3.0/res/drawable-xhdpi/navigation_up.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-ldpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-xhdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-hdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processProDebugManifest
+:app:processProDebugResources
+:app:generateProDebugSources
+:app:compileProDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2003/src/app/src/main/java/com/javiersantos/mlmanager/adapters/AppAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileProDebugNdk UP-TO-DATE
+:app:compileProDebugSources
+:app:transformClassesWithDexForProDebug
+:app:mergeProDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForProDebug
+:app:processProDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForProDebug
+:app:packageProDebug
+:app:zipalignProDebug
+:app:assembleProDebug
+:app:assembleDebug
+:app:checkBasicReleaseManifest
+:app:prepareBasicReleaseDependencies
+:app:compileBasicReleaseAidl
+:app:compileBasicReleaseRenderscript
+:app:generateBasicReleaseBuildConfig
+:app:generateBasicReleaseAssets UP-TO-DATE
+:app:mergeBasicReleaseAssets
+:app:generateBasicReleaseResValues
+:app:generateBasicReleaseResources
+:app:mergeBasicReleaseResources
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-mdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/src/main/res/drawable/banner_troll.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-xxhdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-ldpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/net.rdrei.android.dirchooser/library/3.0/res/drawable-xhdpi/navigation_up.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-xhdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-hdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processBasicReleaseManifest
+:app:processBasicReleaseResources
+:app:generateBasicReleaseSources
+:app:compileBasicReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2003/src/app/src/main/java/com/javiersantos/mlmanager/adapters/AppAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileBasicReleaseNdk UP-TO-DATE
+:app:compileBasicReleaseSources
+:app:lintVitalBasicRelease
+:app:transformClassesWithDexForBasicRelease
+:app:mergeBasicReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForBasicRelease
+:app:processBasicReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForBasicRelease
+:app:packageBasicRelease
+:app:assembleBasicRelease
+:app:checkProReleaseManifest
+:app:prepareProReleaseDependencies
+:app:compileProReleaseAidl
+:app:compileProReleaseRenderscript
+:app:generateProReleaseBuildConfig
+:app:generateProReleaseAssets UP-TO-DATE
+:app:mergeProReleaseAssets
+:app:generateProReleaseResValues
+:app:generateProReleaseResources
+:app:mergeProReleaseResources
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-mdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/src/main/res/drawable/banner_troll.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-xxhdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/net.rdrei.android.dirchooser/library/3.0/res/drawable-xhdpi/navigation_up.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-ldpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-xhdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2003/src/app/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.5/res/drawable-hdpi-v4/sprite_check.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processProReleaseManifest
+:app:processProReleaseResources
+:app:generateProReleaseSources
+:app:compileProReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2003/src/app/src/main/java/com/javiersantos/mlmanager/adapters/AppAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileProReleaseNdk UP-TO-DATE
+:app:compileProReleaseSources
+:app:lintVitalProRelease
+:app:transformClassesWithDexForProRelease
+:app:mergeProReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForProRelease
+:app:processProReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForProRelease
+:app:packageProRelease
+:app:assembleProRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 1 mins 9.885 secs
+
+2018-04-03 23:48:05,164 INFO  FullProcessService - Found APK file: /tmp/rdisk/2003/src/app/build/outputs/apk/app-pro-release-unsigned.apk

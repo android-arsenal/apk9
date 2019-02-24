@@ -1,0 +1,208 @@
+2018-04-03 18:32:03,481 INFO  DownloadService - Downloading "https://github.com/yongjhih/RecyclerList/archive/master.zip", attempt 3
+2018-04-03 18:33:04,165 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:33:05,016 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:33:05,017 INFO  DownloadService - Downloading "https://github.com/yongjhih/RecyclerList/archive/master.zip", attempt 3
+2018-04-03 18:34:06,258 DEBUG FullProcessService - Repository https://github.com/yongjhih/RecyclerList available: true
+2018-04-03 18:34:06,258 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 18:34:06,259 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/yongjhih/RecyclerList, /tmp/rdisk/2151/src]
+2018-04-03 18:34:09,551 INFO  SysUtils - 
+2018-04-03 18:34:09,558 INFO  GitService - Deleted "/tmp/rdisk/2151/src/.git": true
+2018-04-03 18:34:09,559 INFO  FullProcessService - Size of directory with sources: 83 KB
+2018-04-03 18:34:09,559 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2151/src]
+2018-04-03 18:34:09,563 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2151/src/.git/
+
+2018-04-03 18:34:09,564 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2151/src/gradlew
+2018-04-03 18:34:09,566 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2151/src/recyclerlist/build.gradle /tmp/rdisk/2151/src/build.gradle
+2018-04-03 18:34:09,567 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2151/src/settings.gradle /tmp/rdisk/2151/src/recyclerlist/build.gradle /tmp/rdisk/2151/src/recyclerlist/android-javadoc.gradle /tmp/rdisk/2151/src/build.gradle
+2018-04-03 18:34:09,567 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 18:34:09,567 INFO  ProjectFixService - Fixing project...
+2018-04-03 18:34:09,570 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2151/src/recyclerlist/local.properties
+2018-04-03 18:34:09,570 INFO  ProjectFixService - Build info for "/tmp/rdisk/2151/src/recyclerlist/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:34:09,571 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2151/src/local.properties
+2018-04-03 18:34:09,571 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.8-all.zip
+2018-04-03 18:34:09,590 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.8-bin.zip)
+2018-04-03 18:34:09,591 INFO  ProjectFixService - Build info for "/tmp/rdisk/2151/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:34:09,591 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 18:34:09,591 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:34:09,591 INFO  SysUtils - Execute command: [/tmp/rdisk/2151/src/gradlew, -b, /tmp/rdisk/2151/src/recyclerlist/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:34:19,480 INFO  ProjectTaskService - Detected possible tasks: 75
+2018-04-03 18:34:19,481 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 18:34:19,481 INFO  SysUtils - Execute command: [/tmp/rdisk/2151/src/gradlew, -b, /tmp/rdisk/2151/src/recyclerlist/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 18:34:31,720 INFO  SysUtils - Configuration on demand is an incubating feature.
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+:recyclerlist:compileLint
+:recyclerlist:copyDebugLint UP-TO-DATE
+:recyclerlist:preBuild UP-TO-DATE
+:recyclerlist:preDebugBuild UP-TO-DATE
+:recyclerlist:checkDebugManifest
+:recyclerlist:preDebugAndroidTestBuild UP-TO-DATE
+:recyclerlist:preDebugUnitTestBuild UP-TO-DATE
+:recyclerlist:preReleaseBuild UP-TO-DATE
+:recyclerlist:preReleaseUnitTestBuild UP-TO-DATE
+:recyclerlist:prepareComAndroidSupportAppcompatV72301Library
+:recyclerlist:prepareComAndroidSupportRecyclerviewV72301Library
+:recyclerlist:prepareComAndroidSupportSupportV42301Library
+:recyclerlist:prepareDebugDependencies
+:recyclerlist:compileDebugAidl
+:recyclerlist:compileDebugRenderscript
+:recyclerlist:generateDebugBuildConfig
+:recyclerlist:generateDebugAssets UP-TO-DATE
+:recyclerlist:mergeDebugAssets
+:recyclerlist:generateDebugResValues
+:recyclerlist:generateDebugResources
+:recyclerlist:mergeDebugResources
+:recyclerlist:processDebugManifest
+:recyclerlist:processDebugResources
+:recyclerlist:generateDebugSources
+:recyclerlist:processDebugJavaRes UP-TO-DATE
+:recyclerlist:compileDebugJavaWithJavac
+:recyclerlist:compileRetrolambdaDebug
+:recyclerlist:extractDebugAnnotations
+:recyclerlist:mergeDebugProguardFiles
+:recyclerlist:packageDebugJar
+:recyclerlist:compileDebugNdk UP-TO-DATE
+:recyclerlist:packageDebugJniLibs UP-TO-DATE
+:recyclerlist:packageDebugLocalJar UP-TO-DATE
+:recyclerlist:packageDebugRenderscript UP-TO-DATE
+:recyclerlist:packageDebugResources
+:recyclerlist:bundleDebug
+:recyclerlist:compileDebugSources
+:recyclerlist:assembleDebug
+:recyclerlist:copyReleaseLint UP-TO-DATE
+:recyclerlist:checkReleaseManifest
+:recyclerlist:prepareReleaseDependencies
+:recyclerlist:compileReleaseAidl
+:recyclerlist:compileReleaseRenderscript
+:recyclerlist:generateReleaseBuildConfig
+:recyclerlist:generateReleaseAssets UP-TO-DATE
+:recyclerlist:mergeReleaseAssets
+:recyclerlist:generateReleaseResValues
+:recyclerlist:generateReleaseResources
+:recyclerlist:mergeReleaseResources
+:recyclerlist:processReleaseManifest
+:recyclerlist:processReleaseResources
+:recyclerlist:generateReleaseSources
+:recyclerlist:processReleaseJavaRes UP-TO-DATE
+:recyclerlist:compileReleaseJavaWithJavac
+:recyclerlist:compileRetrolambdaRelease
+:recyclerlist:extractReleaseAnnotations
+:recyclerlist:mergeReleaseProguardFiles
+:recyclerlist:packageReleaseJar
+:recyclerlist:compileReleaseNdk UP-TO-DATE
+:recyclerlist:packageReleaseJniLibs UP-TO-DATE
+:recyclerlist:packageReleaseLocalJar UP-TO-DATE
+:recyclerlist:packageReleaseRenderscript UP-TO-DATE
+:recyclerlist:packageReleaseResources
+:recyclerlist:bundleRelease
+:recyclerlist:compileReleaseSources
+:recyclerlist:assembleRelease
+:recyclerlist:javadoc/tmp/rdisk/2151/src/recyclerlist/src/main/java/com/infstory/v7/widget/Presenter.java:20: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2151/src/recyclerlist/src/main/java/com/infstory/v7/widget/Presenter.java:22: error: package RecyclerView does not exist
+public abstract class Presenter<T> extends RecyclerView.ViewHolder {
+                                                       ^
+/tmp/rdisk/2151/src/recyclerlist/src/main/java/com/infstory/v7/widget/ListRecyclerAdapter.java:21: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2151/src/recyclerlist/src/main/java/com/infstory/v7/widget/ListRecyclerAdapter.java:27: error: package RecyclerView does not exist
+public class ListRecyclerAdapter<T, VH extends Presenter<T>> extends RecyclerView.Adapter<VH> {
+                                                                                 ^
+
+4 warnings
+:recyclerlist:javadocJar
+:recyclerlist:sourcesJar
+:recyclerlist:assemble
+:recyclerlist:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.814 secs
+
+2018-04-03 18:34:31,754 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:34:31,754 INFO  SysUtils - Execute command: [/tmp/rdisk/2151/src/gradlew, -b, /tmp/rdisk/2151/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:34:38,499 INFO  ProjectTaskService - Detected possible tasks: 75
+2018-04-03 18:34:38,500 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 18:34:38,500 INFO  SysUtils - Execute command: [/tmp/rdisk/2151/src/gradlew, -b, /tmp/rdisk/2151/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 18:34:45,527 INFO  SysUtils - Configuration on demand is an incubating feature.
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+:recyclerlist:compileLint
+:recyclerlist:copyDebugLint UP-TO-DATE
+:recyclerlist:preBuild UP-TO-DATE
+:recyclerlist:preDebugBuild UP-TO-DATE
+:recyclerlist:checkDebugManifest
+:recyclerlist:preDebugAndroidTestBuild UP-TO-DATE
+:recyclerlist:preDebugUnitTestBuild UP-TO-DATE
+:recyclerlist:preReleaseBuild UP-TO-DATE
+:recyclerlist:preReleaseUnitTestBuild UP-TO-DATE
+:recyclerlist:prepareComAndroidSupportAppcompatV72301Library UP-TO-DATE
+:recyclerlist:prepareComAndroidSupportRecyclerviewV72301Library UP-TO-DATE
+:recyclerlist:prepareComAndroidSupportSupportV42301Library UP-TO-DATE
+:recyclerlist:prepareDebugDependencies
+:recyclerlist:compileDebugAidl UP-TO-DATE
+:recyclerlist:compileDebugRenderscript UP-TO-DATE
+:recyclerlist:generateDebugBuildConfig UP-TO-DATE
+:recyclerlist:generateDebugAssets UP-TO-DATE
+:recyclerlist:mergeDebugAssets UP-TO-DATE
+:recyclerlist:generateDebugResValues UP-TO-DATE
+:recyclerlist:generateDebugResources UP-TO-DATE
+:recyclerlist:mergeDebugResources UP-TO-DATE
+:recyclerlist:processDebugManifest UP-TO-DATE
+:recyclerlist:processDebugResources UP-TO-DATE
+:recyclerlist:generateDebugSources UP-TO-DATE
+:recyclerlist:processDebugJavaRes UP-TO-DATE
+:recyclerlist:compileDebugJavaWithJavac UP-TO-DATE
+:recyclerlist:compileRetrolambdaDebug UP-TO-DATE
+:recyclerlist:extractDebugAnnotations UP-TO-DATE
+:recyclerlist:mergeDebugProguardFiles UP-TO-DATE
+:recyclerlist:packageDebugJar UP-TO-DATE
+:recyclerlist:compileDebugNdk UP-TO-DATE
+:recyclerlist:packageDebugJniLibs UP-TO-DATE
+:recyclerlist:packageDebugLocalJar UP-TO-DATE
+:recyclerlist:packageDebugRenderscript UP-TO-DATE
+:recyclerlist:packageDebugResources UP-TO-DATE
+:recyclerlist:bundleDebug UP-TO-DATE
+:recyclerlist:compileDebugSources UP-TO-DATE
+:recyclerlist:assembleDebug UP-TO-DATE
+:recyclerlist:copyReleaseLint UP-TO-DATE
+:recyclerlist:checkReleaseManifest
+:recyclerlist:prepareReleaseDependencies
+:recyclerlist:compileReleaseAidl UP-TO-DATE
+:recyclerlist:compileReleaseRenderscript UP-TO-DATE
+:recyclerlist:generateReleaseBuildConfig UP-TO-DATE
+:recyclerlist:generateReleaseAssets UP-TO-DATE
+:recyclerlist:mergeReleaseAssets UP-TO-DATE
+:recyclerlist:generateReleaseResValues UP-TO-DATE
+:recyclerlist:generateReleaseResources UP-TO-DATE
+:recyclerlist:mergeReleaseResources UP-TO-DATE
+:recyclerlist:processReleaseManifest UP-TO-DATE
+:recyclerlist:processReleaseResources UP-TO-DATE
+:recyclerlist:generateReleaseSources UP-TO-DATE
+:recyclerlist:processReleaseJavaRes UP-TO-DATE
+:recyclerlist:compileReleaseJavaWithJavac UP-TO-DATE
+:recyclerlist:compileRetrolambdaRelease UP-TO-DATE
+:recyclerlist:extractReleaseAnnotations UP-TO-DATE
+:recyclerlist:mergeReleaseProguardFiles UP-TO-DATE
+:recyclerlist:packageReleaseJar UP-TO-DATE
+:recyclerlist:compileReleaseNdk UP-TO-DATE
+:recyclerlist:packageReleaseJniLibs UP-TO-DATE
+:recyclerlist:packageReleaseLocalJar UP-TO-DATE
+:recyclerlist:packageReleaseRenderscript UP-TO-DATE
+:recyclerlist:packageReleaseResources UP-TO-DATE
+:recyclerlist:bundleRelease UP-TO-DATE
+:recyclerlist:compileReleaseSources UP-TO-DATE
+:recyclerlist:assembleRelease UP-TO-DATE
+:recyclerlist:javadoc UP-TO-DATE
+:recyclerlist:javadocJar UP-TO-DATE
+:recyclerlist:sourcesJar UP-TO-DATE
+:recyclerlist:assemble UP-TO-DATE
+:recyclerlist:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.535 secs
+
+2018-04-03 18:34:45,560 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 18:34:45,591 ERROR FullProcessService - Could not find generated or existed APK file

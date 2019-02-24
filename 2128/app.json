@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.jakewharton.processphoenix.sample",
+    "label" : "Process Phoenix",
+    "icon" : null,
+    "versionName" : "2.0.1-SNAPSHOT",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "11",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 57,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"2.0.1-SNAPSHOT\" package=\"com.jakewharton.processphoenix.sample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"11\" android:targetSdkVersion=\"25\" />\n\t<application android:label=\"Process Phoenix\">\n\t\t<activity android:name=\"com.jakewharton.processphoenix.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" android:name=\"com.jakewharton.processphoenix.ProcessPhoenix\" android:process=\":phoenix\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 31393,
+  "crc32" : 1844534228,
+  "sha256" : "773dce94669505118dec322501efbae7596edba8c87843c40d8d3fbf5016a1ff",
+  "buildTime" : 1521301104000
+}

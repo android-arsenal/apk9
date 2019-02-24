@@ -1,0 +1,49 @@
+2018-04-03 23:42:10,925 INFO  DownloadService - Downloading "https://github.com/stevesaliman/gradle-properties-plugin/archive/master.zip", attempt 3
+2018-04-03 23:43:11,573 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 23:43:12,418 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 23:43:12,418 INFO  DownloadService - Downloading "https://github.com/stevesaliman/gradle-properties-plugin/archive/master.zip", attempt 3
+2018-04-03 23:44:13,699 DEBUG FullProcessService - Repository https://github.com/stevesaliman/gradle-properties-plugin available: true
+2018-04-03 23:44:13,699 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 23:44:13,699 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/stevesaliman/gradle-properties-plugin, /tmp/rdisk/2004/src]
+2018-04-03 23:44:15,286 INFO  SysUtils - 
+2018-04-03 23:44:15,296 INFO  GitService - Deleted "/tmp/rdisk/2004/src/.git": true
+2018-04-03 23:44:15,298 INFO  FullProcessService - Size of directory with sources: 270 KB
+2018-04-03 23:44:15,298 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2004/src]
+2018-04-03 23:44:15,303 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2004/src/.git/
+
+2018-04-03 23:44:15,304 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2004/src/gradlew
+2018-04-03 23:44:15,306 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2004/src/build.gradle
+2018-04-03 23:44:15,308 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2004/src/settings.gradle /tmp/rdisk/2004/src/build.gradle
+2018-04-03 23:44:15,308 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 23:44:15,308 INFO  ProjectFixService - Fixing project...
+2018-04-03 23:44:15,312 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2004/src/local.properties
+2018-04-03 23:44:15,313 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14-bin.zip
+2018-04-03 23:44:15,315 INFO  ProjectFixService - Build info for "/tmp/rdisk/2004/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 23:44:15,315 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2004/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 23:44:15,316 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 23:44:15,316 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 23:44:15,316 INFO  SysUtils - Execute command: [/tmp/rdisk/2004/src/gradlew, -b, /tmp/rdisk/2004/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 23:44:24,263 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-03 23:44:24,263 INFO  ProjectTaskService - Excluded tasks (4): javadoc cobertura test check
+2018-04-03 23:44:24,263 INFO  SysUtils - Execute command: [/tmp/rdisk/2004/src/gradlew, -b, /tmp/rdisk/2004/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, cobertura, -x, test, -x, check, build]
+2018-04-03 23:44:35,499 INFO  SysUtils - Configuration on demand is an incubating feature.
+using staging
+:compileJava UP-TO-DATE
+:compileGroovy
+:processResources
+:classes
+:groovydoc
+Trying to override old definition of task fileScanner
+:groovydocJar
+:jar
+:sourceJar
+:signArchives SKIPPED
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.747 secs
+
+2018-04-03 23:44:35,503 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 23:44:35,507 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "paperdb.io.paperdb",
+    "label" : "paper db",
+    "icon" : "res/mipmap-hdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "26",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-hdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1959,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"paperdb.io.paperdb\" platformBuildVersionCode=\"26\" platformBuildVersionName=\"8.0.0\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"26\" />\n\t<application android:theme=\"resourceId:0x7f0800ac\" android:label=\"paper db\" android:icon=\"res/mipmap-hdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"paper db\" android:name=\"paperdb.io.paperdb.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<meta-data android:name=\"android.support.VERSION\" android:value=\"26.1.0\" />\n\t\t<meta-data android:name=\"android.arch.lifecycle.VERSION\" android:value=\"27.0.0-SNAPSHOT\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1731528,
+  "crc32" : 3201161693,
+  "sha256" : "f0213e54613c66681fa1b4d65e16be632aa26f531de1dd13ee19f08f4247337e",
+  "buildTime" : 1522788699000
+}

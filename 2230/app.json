@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.sora.util.akatsuki.app",
+    "label" : "Akatsuki demo",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABX1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQAAAAAAAAAAAAAAAAODg5JSUk+Pj4iIiIDAwMAAABMTEyKioplZWUPDw8AAAANDQ1ycnK5ublZWVkICAjT09NKSkrY2NiUlJQQEBASEhKlpaXa2to9PT08PDzg4OCjo6Nqamrz8/NoaGgCAgKQkJDs7Ow/Pz/h4eErKyukpKTd3d0hISFxcXHq6uopKSlCQkIXFxfl5eViYmKwsLCbm5tXV1fU1NQKCgrf3980NDSDg4OIiIgVFRULCwuFhYVYWFgBAQGTk5MfHx9aWloHBwdDQ0MFBQUkJCQMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAuER8AAAAdXRSTlMAAwQCEx4dCpbo7Zj/mwEU6vn96xkl7//wKibu//////8r/////yz/////////////////////////////////////////////////////////////////////////////KC0c7CIIqq4JsfGyIUNNRAYLDgXNeCn/AAABaklEQVRIx73WV1PCQBQF4E0CUrwWUEk0FlA0oCAWBBEVe8FeEOyKFREV9P+PGYgQGMnmvnCedjPnS3nZG0IaFYalhKmqcxz9luqOvDQYmzRjNBRrf32T2WKlxGI2lQVHmkFHWloVwJC2drDZKbFBRycpfTlLuhxg17w5D3JB6JarJdAjaoDevv4BZxG4KqDuE5yDQ+7h4koGI1QgebyjvLLWAcY8Pjdf3tGBfzwwodrSwOTUdLDqAgXMhMISIMBsZK72DbVAdH5hERCAD8eWAAGiyyurgAGB0H/9+mBtfQMwYDMSBAzY2o4DCuzsAgrs7R+ggHR4BChwfAIocOpL4MBZElAg4U3hQNwPOHCewoGLS8CB5BUSXAMO3NwiwR1ggEg5vaHmML536AJpBTDk4VHPQLE+KYBwzy96RtZrpjzjGNebmBWyGhGy4nuaqYzRTO7jk5KvXEY9qPOFb0oK+erhz/5QwjbsL+YXCc+ifKcblnIAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1650,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.sora.util.akatsuki.app\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f08007e\" android:label=\"Akatsuki demo\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Akatsuki demo\" android:name=\"com.sora.util.akatsuki.app.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1136483,
+  "crc32" : 3933355323,
+  "sha256" : "4195bdd9be3679b7e813184d8d1066dde9a9826d95ce1ea516dd52326df50727",
+  "buildTime" : 1522685185000
+}

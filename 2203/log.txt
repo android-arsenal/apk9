@@ -1,0 +1,830 @@
+2018-04-03 11:57:39,174 INFO  DownloadService - Downloading "https://github.com/davidbeloo/CitiesAutoComplete/archive/master.zip", attempt 3
+2018-04-03 11:58:39,830 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 11:58:40,675 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 11:58:40,675 INFO  DownloadService - Downloading "https://github.com/davidbeloo/CitiesAutoComplete/archive/master.zip", attempt 3
+2018-04-03 11:59:41,941 DEBUG FullProcessService - Repository https://github.com/davidbeloo/CitiesAutoComplete available: true
+2018-04-03 11:59:41,941 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 11:59:41,941 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/davidbeloo/CitiesAutoComplete, /tmp/rdisk/2203/src]
+2018-04-03 11:59:43,408 INFO  SysUtils - 
+2018-04-03 11:59:43,421 INFO  GitService - Deleted "/tmp/rdisk/2203/src/.git": true
+2018-04-03 11:59:43,424 INFO  FullProcessService - Size of directory with sources: 124 KB
+2018-04-03 11:59:43,424 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2203/src]
+2018-04-03 11:59:43,429 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2203/src/.git/
+
+2018-04-03 11:59:43,431 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2203/src/gradlew
+2018-04-03 11:59:43,433 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2203/src/app/build.gradle /tmp/rdisk/2203/src/build.gradle
+2018-04-03 11:59:43,435 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2203/src/settings.gradle /tmp/rdisk/2203/src/build.gradle /tmp/rdisk/2203/src/app/build.gradle
+2018-04-03 11:59:43,436 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 11:59:43,436 INFO  ProjectFixService - Fixing project...
+2018-04-03 11:59:43,441 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2203/src/app/local.properties
+2018-04-03 11:59:43,441 INFO  ProjectFixService - Build info for "/tmp/rdisk/2203/src/app/build.gradle": [buildToolsVersion=23.0.0 rc2,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-03 11:59:43,442 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2203/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-03 11:59:43,442 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2203/src/local.properties
+2018-04-03 11:59:43,443 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-03 11:59:43,443 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-03 11:59:43,444 INFO  ProjectFixService - Build info for "/tmp/rdisk/2203/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-03 11:59:43,444 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 11:59:43,444 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:59:43,444 INFO  SysUtils - Execute command: [/tmp/rdisk/2203/src/gradlew, -b, /tmp/rdisk/2203/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:59:51,166 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-03 11:59:51,166 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 11:59:51,167 INFO  SysUtils - Execute command: [/tmp/rdisk/2203/src/gradlew, -b, /tmp/rdisk/2203/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 12:00:36,295 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportDesign2220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:35: warning: Parceler: Reflection is required to modify private field: ArrayList mTypes, consider using non-private.
+    private ArrayList<String> mTypes;
+                              ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to modify private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:32: warning: Parceler: Reflection is required to modify private field: ArrayList mTerms, consider using non-private.
+    private ArrayList<Terms> mTerms;
+                             ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:26: warning: Parceler: Reflection is required to modify private field: String mPlaceID, consider using non-private.
+    private String mPlaceID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:20: warning: Parceler: Reflection is required to modify private field: String mID, consider using non-private.
+    private String mID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to modify private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:23: warning: Parceler: Reflection is required to modify private field: ArrayList mMatchedSubstrings, consider using non-private.
+    private ArrayList<MatchedSubstring> mMatchedSubstrings;
+                                        ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:29: warning: Parceler: Reflection is required to modify private field: String mReference, consider using non-private.
+    private String mReference;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:17: warning: Parceler: Reflection is required to modify private field: String mDescription, consider using non-private.
+    private String mDescription;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/PredictionResponse.java:18: warning: Parceler: Reflection is required to modify private field: ArrayList mPredictionList, consider using non-private.
+    private ArrayList<Prediction> mPredictionList;
+                                  ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/BaseResponse.java:17: warning: Parceler: Reflection is required to modify private field: String mErrorMessage, consider using non-private.
+    private String mErrorMessage;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/BaseResponse.java:14: warning: Parceler: Reflection is required to modify private field: String mStatus, consider using non-private.
+    private String mStatus;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/PredictionResponse.java:18: warning: Parceler: Reflection is required to access private field: ArrayList mPredictionList, consider using non-private.
+    private ArrayList<Prediction> mPredictionList;
+                                  ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:35: warning: Parceler: Reflection is required to access private field: ArrayList mTypes, consider using non-private.
+    private ArrayList<String> mTypes;
+                              ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:32: warning: Parceler: Reflection is required to access private field: ArrayList mTerms, consider using non-private.
+    private ArrayList<Terms> mTerms;
+                             ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to access private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:26: warning: Parceler: Reflection is required to access private field: String mPlaceID, consider using non-private.
+    private String mPlaceID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:20: warning: Parceler: Reflection is required to access private field: String mID, consider using non-private.
+    private String mID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:23: warning: Parceler: Reflection is required to access private field: ArrayList mMatchedSubstrings, consider using non-private.
+    private ArrayList<MatchedSubstring> mMatchedSubstrings;
+                                        ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to access private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:29: warning: Parceler: Reflection is required to access private field: String mReference, consider using non-private.
+    private String mReference;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:17: warning: Parceler: Reflection is required to access private field: String mDescription, consider using non-private.
+    private String mDescription;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/BaseResponse.java:17: warning: Parceler: Reflection is required to access private field: String mErrorMessage, consider using non-private.
+    private String mErrorMessage;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/BaseResponse.java:14: warning: Parceler: Reflection is required to access private field: String mStatus, consider using non-private.
+    private String mStatus;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to modify private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to access private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:35: warning: Parceler: Reflection is required to modify private field: ArrayList mTypes, consider using non-private.
+    private ArrayList<String> mTypes;
+                              ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to modify private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:32: warning: Parceler: Reflection is required to modify private field: ArrayList mTerms, consider using non-private.
+    private ArrayList<Terms> mTerms;
+                             ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:26: warning: Parceler: Reflection is required to modify private field: String mPlaceID, consider using non-private.
+    private String mPlaceID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:20: warning: Parceler: Reflection is required to modify private field: String mID, consider using non-private.
+    private String mID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to modify private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:23: warning: Parceler: Reflection is required to modify private field: ArrayList mMatchedSubstrings, consider using non-private.
+    private ArrayList<MatchedSubstring> mMatchedSubstrings;
+                                        ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:29: warning: Parceler: Reflection is required to modify private field: String mReference, consider using non-private.
+    private String mReference;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:17: warning: Parceler: Reflection is required to modify private field: String mDescription, consider using non-private.
+    private String mDescription;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:35: warning: Parceler: Reflection is required to access private field: ArrayList mTypes, consider using non-private.
+    private ArrayList<String> mTypes;
+                              ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:32: warning: Parceler: Reflection is required to access private field: ArrayList mTerms, consider using non-private.
+    private ArrayList<Terms> mTerms;
+                             ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to access private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:26: warning: Parceler: Reflection is required to access private field: String mPlaceID, consider using non-private.
+    private String mPlaceID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:20: warning: Parceler: Reflection is required to access private field: String mID, consider using non-private.
+    private String mID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:23: warning: Parceler: Reflection is required to access private field: ArrayList mMatchedSubstrings, consider using non-private.
+    private ArrayList<MatchedSubstring> mMatchedSubstrings;
+                                        ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to access private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:29: warning: Parceler: Reflection is required to access private field: String mReference, consider using non-private.
+    private String mReference;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:17: warning: Parceler: Reflection is required to access private field: String mDescription, consider using non-private.
+    private String mDescription;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to modify private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to access private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+58 warnings
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebugwarning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BeanMap$11) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BeanMap$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BeanMap$4) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BeanMap$5) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BeanMap$6) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BeanMap$10) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BeanMap$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BeanMap$7) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BeanMap$8) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BeanMap$9) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BeanMap$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BinaryHeap$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.BoundedFifoBuffer$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$4$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$5) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$6) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$6$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$1$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$2$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$3$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$4) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.DoubleOrderedMap$5$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.ReferenceMap$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.ReferenceMap$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.ReferenceMap$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.SequencedHashMap$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.SequencedHashMap$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.SequencedHashMap$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.UnboundedFifoBuffer$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.buffer.BoundedFifoBuffer$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.buffer.PriorityBuffer$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.buffer.UnboundedFifoBuffer$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.map.ListOrderedMap$KeySetView$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.collections.map.ListOrderedMap$ValuesView$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.logging.LogFactory$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.logging.LogFactory$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.logging.LogFactory$4) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.logging.LogFactory$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.logging.LogFactory$5) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.logging.LogFactory$6) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.logging.impl.SimpleLog$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.logging.impl.WeakHashtable$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.logging.impl.LogFactoryImpl$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.logging.impl.LogFactoryImpl$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(org.parceler.apache.commons.logging.impl.LogFactoryImpl$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:35: warning: Parceler: Reflection is required to modify private field: ArrayList mTypes, consider using non-private.
+    private ArrayList<String> mTypes;
+                              ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to modify private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:32: warning: Parceler: Reflection is required to modify private field: ArrayList mTerms, consider using non-private.
+    private ArrayList<Terms> mTerms;
+                             ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:26: warning: Parceler: Reflection is required to modify private field: String mPlaceID, consider using non-private.
+    private String mPlaceID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:20: warning: Parceler: Reflection is required to modify private field: String mID, consider using non-private.
+    private String mID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to modify private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:23: warning: Parceler: Reflection is required to modify private field: ArrayList mMatchedSubstrings, consider using non-private.
+    private ArrayList<MatchedSubstring> mMatchedSubstrings;
+                                        ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:29: warning: Parceler: Reflection is required to modify private field: String mReference, consider using non-private.
+    private String mReference;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:17: warning: Parceler: Reflection is required to modify private field: String mDescription, consider using non-private.
+    private String mDescription;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/PredictionResponse.java:18: warning: Parceler: Reflection is required to modify private field: ArrayList mPredictionList, consider using non-private.
+    private ArrayList<Prediction> mPredictionList;
+                                  ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/BaseResponse.java:17: warning: Parceler: Reflection is required to modify private field: String mErrorMessage, consider using non-private.
+    private String mErrorMessage;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/BaseResponse.java:14: warning: Parceler: Reflection is required to modify private field: String mStatus, consider using non-private.
+    private String mStatus;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/PredictionResponse.java:18: warning: Parceler: Reflection is required to access private field: ArrayList mPredictionList, consider using non-private.
+    private ArrayList<Prediction> mPredictionList;
+                                  ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:35: warning: Parceler: Reflection is required to access private field: ArrayList mTypes, consider using non-private.
+    private ArrayList<String> mTypes;
+                              ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:32: warning: Parceler: Reflection is required to access private field: ArrayList mTerms, consider using non-private.
+    private ArrayList<Terms> mTerms;
+                             ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to access private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:26: warning: Parceler: Reflection is required to access private field: String mPlaceID, consider using non-private.
+    private String mPlaceID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:20: warning: Parceler: Reflection is required to access private field: String mID, consider using non-private.
+    private String mID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:23: warning: Parceler: Reflection is required to access private field: ArrayList mMatchedSubstrings, consider using non-private.
+    private ArrayList<MatchedSubstring> mMatchedSubstrings;
+                                        ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to access private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:29: warning: Parceler: Reflection is required to access private field: String mReference, consider using non-private.
+    private String mReference;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:17: warning: Parceler: Reflection is required to access private field: String mDescription, consider using non-private.
+    private String mDescription;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/BaseResponse.java:17: warning: Parceler: Reflection is required to access private field: String mErrorMessage, consider using non-private.
+    private String mErrorMessage;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/responses/BaseResponse.java:14: warning: Parceler: Reflection is required to access private field: String mStatus, consider using non-private.
+    private String mStatus;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to modify private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to access private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:35: warning: Parceler: Reflection is required to modify private field: ArrayList mTypes, consider using non-private.
+    private ArrayList<String> mTypes;
+                              ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to modify private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:32: warning: Parceler: Reflection is required to modify private field: ArrayList mTerms, consider using non-private.
+    private ArrayList<Terms> mTerms;
+                             ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:26: warning: Parceler: Reflection is required to modify private field: String mPlaceID, consider using non-private.
+    private String mPlaceID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:20: warning: Parceler: Reflection is required to modify private field: String mID, consider using non-private.
+    private String mID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to modify private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:23: warning: Parceler: Reflection is required to modify private field: ArrayList mMatchedSubstrings, consider using non-private.
+    private ArrayList<MatchedSubstring> mMatchedSubstrings;
+                                        ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:29: warning: Parceler: Reflection is required to modify private field: String mReference, consider using non-private.
+    private String mReference;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:17: warning: Parceler: Reflection is required to modify private field: String mDescription, consider using non-private.
+    private String mDescription;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:35: warning: Parceler: Reflection is required to access private field: ArrayList mTypes, consider using non-private.
+    private ArrayList<String> mTypes;
+                              ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:32: warning: Parceler: Reflection is required to access private field: ArrayList mTerms, consider using non-private.
+    private ArrayList<Terms> mTerms;
+                             ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:15: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Terms.java:18: warning: Parceler: Reflection is required to access private field: String mValue, consider using non-private.
+    private String mValue;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:26: warning: Parceler: Reflection is required to access private field: String mPlaceID, consider using non-private.
+    private String mPlaceID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:20: warning: Parceler: Reflection is required to access private field: String mID, consider using non-private.
+    private String mID;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:23: warning: Parceler: Reflection is required to access private field: ArrayList mMatchedSubstrings, consider using non-private.
+    private ArrayList<MatchedSubstring> mMatchedSubstrings;
+                                        ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to access private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:29: warning: Parceler: Reflection is required to access private field: String mReference, consider using non-private.
+    private String mReference;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/Prediction.java:17: warning: Parceler: Reflection is required to access private field: String mDescription, consider using non-private.
+    private String mDescription;
+                   ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to modify private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to modify private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:18: warning: Parceler: Reflection is required to access private field: int mOffset, consider using non-private.
+    private int mOffset;
+                ^
+/tmp/rdisk/2203/src/app/src/main/java/com/thepinkandroid/citiesautocomplete/rest/model/MatchedSubstring.java:15: warning: Parceler: Reflection is required to access private field: int mLength, consider using non-private.
+    private int mLength;
+                ^
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+58 warnings
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 44.673 secs
+
+2018-04-03 12:00:36,332 INFO  FullProcessService - Found APK file: /tmp/rdisk/2203/src/app/build/outputs/apk/app-debug.apk

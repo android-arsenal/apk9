@@ -1,0 +1,124 @@
+2018-04-03 18:52:08,713 INFO  DownloadService - Downloading "https://github.com/LyndonChin/AndroidCheckableButton/archive/master.zip", attempt 3
+2018-04-03 18:53:09,350 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:53:10,184 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:53:10,185 INFO  DownloadService - Downloading "https://github.com/LyndonChin/AndroidCheckableButton/archive/master.zip", attempt 3
+2018-04-03 18:54:11,635 DEBUG FullProcessService - Repository https://github.com/LyndonChin/AndroidCheckableButton available: true
+2018-04-03 18:54:11,635 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 18:54:11,635 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/LyndonChin/AndroidCheckableButton, /tmp/rdisk/2143/src]
+2018-04-03 18:54:13,340 INFO  SysUtils - 
+2018-04-03 18:54:13,354 INFO  GitService - Deleted "/tmp/rdisk/2143/src/.git": true
+2018-04-03 18:54:13,356 INFO  FullProcessService - Size of directory with sources: 143 KB
+2018-04-03 18:54:13,356 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2143/src]
+2018-04-03 18:54:13,361 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2143/src/.git/
+
+2018-04-03 18:54:13,363 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2143/src/gradlew
+2018-04-03 18:54:13,366 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2143/src/app/build.gradle /tmp/rdisk/2143/src/library/build.gradle /tmp/rdisk/2143/src/build.gradle
+2018-04-03 18:54:13,368 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2143/src/settings.gradle /tmp/rdisk/2143/src/library/build.gradle /tmp/rdisk/2143/src/build.gradle /tmp/rdisk/2143/src/app/build.gradle
+2018-04-03 18:54:13,368 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 18:54:13,368 INFO  ProjectFixService - Fixing project...
+2018-04-03 18:54:13,374 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2143/src/app/local.properties
+2018-04-03 18:54:13,374 INFO  ProjectFixService - Build info for "/tmp/rdisk/2143/src/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 18:54:13,374 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2143/src/library/local.properties
+2018-04-03 18:54:13,374 INFO  ProjectFixService - Build info for "/tmp/rdisk/2143/src/library/build.gradle": [buildToolsVersion=23.0.0 rc3,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 18:54:13,375 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2143/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 18:54:13,375 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2143/src/local.properties
+2018-04-03 18:54:13,375 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 18:54:13,375 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 18:54:13,376 INFO  ProjectFixService - Build info for "/tmp/rdisk/2143/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 18:54:13,376 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 18:54:13,377 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:54:13,377 INFO  SysUtils - Execute command: [/tmp/rdisk/2143/src/gradlew, -b, /tmp/rdisk/2143/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:54:23,098 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-03 18:54:23,099 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-03 18:54:23,099 INFO  SysUtils - Execute command: [/tmp/rdisk/2143/src/gradlew, -b, /tmp/rdisk/2143/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-03 18:54:47,302 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72220Library
+:library:prepareComAndroidSupportSupportV42220Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72221Library
+:app:prepareComAndroidSupportSupportV42221Library
+:app:prepareComLiangfeizcFlowlayout100Library
+:app:prepareSrcLibraryUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.785 secs
+
+2018-04-03 18:54:47,354 INFO  FullProcessService - Found APK file: /tmp/rdisk/2143/src/app/build/outputs/apk/app-debug.apk

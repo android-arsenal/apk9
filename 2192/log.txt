@@ -1,0 +1,234 @@
+2018-05-11 11:27:33,175 INFO  DownloadService - Downloading "https://github.com/wasabeef/Blurry/archive/master.zip", attempt 3
+2018-05-11 11:27:35,315 INFO  DownloadService - Downloaded https://github.com/wasabeef/Blurry/archive/master.zip, attempt 3
+2018-05-11 11:27:35,315 INFO  DownloadService - Size of file "/tmp/rdisk/2192/master.zip": 1 MB
+2018-05-11 11:27:35,315 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:27:35,315 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2192/master.zip: true
+2018-05-11 11:27:35,316 DEBUG ZipUtil - Extracting '/tmp/rdisk/2192/master.zip' into '/tmp/rdisk/2192/src'.
+2018-05-11 11:27:35,336 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-11 11:27:35,336 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2192/src]
+2018-05-11 11:27:35,346 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2192/src/.git/
+
+2018-05-11 11:27:35,347 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2192/src/Blurry-master/gradlew
+2018-05-11 11:27:35,350 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2192/src/Blurry-master/blurry/build.gradle /tmp/rdisk/2192/src/Blurry-master/example/build.gradle /tmp/rdisk/2192/src/Blurry-master/build.gradle
+2018-05-11 11:27:35,351 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2192/src/Blurry-master/settings.gradle /tmp/rdisk/2192/src/Blurry-master/example/build.gradle /tmp/rdisk/2192/src/Blurry-master/build.gradle /tmp/rdisk/2192/src/Blurry-master/blurry/build.gradle
+2018-05-11 11:27:35,352 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:27:35,352 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:27:35,359 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2192/src/Blurry-master/blurry/local.properties
+2018-05-11 11:27:35,360 INFO  ProjectFixService - Build info for "/tmp/rdisk/2192/src/Blurry-master/blurry/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:27:35,360 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2192/src/Blurry-master/blurry/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:27:35,361 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2192/src/Blurry-master/example/local.properties
+2018-05-11 11:27:35,363 INFO  ProjectFixService - Build info for "/tmp/rdisk/2192/src/Blurry-master/example/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:27:35,363 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2192/src/Blurry-master/example/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:27:35,364 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2192/src/Blurry-master/local.properties
+2018-05-11 11:27:35,364 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-bin.zip
+2018-05-11 11:27:35,366 INFO  ProjectFixService - Build info for "/tmp/rdisk/2192/src/Blurry-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-11 11:27:35,366 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2192/src/Blurry-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-11 11:27:35,366 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:27:35,366 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:27:35,366 INFO  SysUtils - Execute command: [/tmp/rdisk/2192/src/Blurry-master/gradlew, -b, /tmp/rdisk/2192/src/Blurry-master/blurry/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:27:44,067 INFO  ProjectTaskService - Detected possible tasks: 73
+2018-05-11 11:27:44,068 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-11 11:27:44,068 INFO  SysUtils - Execute command: [/tmp/rdisk/2192/src/Blurry-master/gradlew, -b, /tmp/rdisk/2192/src/Blurry-master/blurry/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-11 11:27:53,331 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:blurry:preBuild UP-TO-DATE
+:blurry:preDebugBuild UP-TO-DATE
+:blurry:checkDebugManifest
+:blurry:prepareDebugDependencies
+:blurry:compileDebugAidl
+:blurry:compileDebugNdk UP-TO-DATE
+:blurry:compileLint
+:blurry:copyDebugLint UP-TO-DATE
+:blurry:mergeDebugShaders
+:blurry:compileDebugShaders
+:blurry:generateDebugAssets
+:blurry:mergeDebugAssets
+:blurry:mergeDebugProguardFiles
+:blurry:packageDebugRenderscript UP-TO-DATE
+:blurry:compileDebugRenderscript
+:blurry:generateDebugResValues
+:blurry:generateDebugResources
+:blurry:packageDebugResources
+:blurry:processDebugManifest
+:blurry:generateDebugBuildConfig
+:blurry:processDebugResources
+:blurry:generateDebugSources
+:blurry:incrementalDebugJavaCompilationSafeguard
+:blurry:javaPreCompileDebug
+:blurry:compileDebugJavaWithJavac
+:blurry:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2192/src/Blurry-master/blurry/src/main/java/jp/wasabeef/blurry/internal/Helper.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:blurry:processDebugJavaRes UP-TO-DATE
+:blurry:transformResourcesWithMergeJavaResForDebug
+:blurry:transformClassesAndResourcesWithSyncLibJarsForDebug
+:blurry:mergeDebugJniLibFolders
+:blurry:transformNativeLibsWithMergeJniLibsForDebug
+:blurry:transformNativeLibsWithStripDebugSymbolForDebug
+:blurry:transformNativeLibsWithSyncJniLibsForDebug
+:blurry:bundleDebug
+:blurry:compileDebugSources
+:blurry:assembleDebug
+:blurry:preReleaseBuild UP-TO-DATE
+:blurry:checkReleaseManifest
+:blurry:prepareReleaseDependencies
+:blurry:compileReleaseAidl
+:blurry:compileReleaseNdk UP-TO-DATE
+:blurry:copyReleaseLint UP-TO-DATE
+:blurry:mergeReleaseShaders
+:blurry:compileReleaseShaders
+:blurry:generateReleaseAssets
+:blurry:mergeReleaseAssets
+:blurry:mergeReleaseProguardFiles
+:blurry:packageReleaseRenderscript UP-TO-DATE
+:blurry:compileReleaseRenderscript
+:blurry:generateReleaseResValues
+:blurry:generateReleaseResources
+:blurry:packageReleaseResources
+:blurry:processReleaseManifest
+:blurry:generateReleaseBuildConfig
+:blurry:processReleaseResources
+:blurry:generateReleaseSources
+:blurry:incrementalReleaseJavaCompilationSafeguard
+:blurry:javaPreCompileRelease
+:blurry:compileReleaseJavaWithJavac
+:blurry:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2192/src/Blurry-master/blurry/src/main/java/jp/wasabeef/blurry/internal/Helper.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:blurry:processReleaseJavaRes UP-TO-DATE
+:blurry:transformResourcesWithMergeJavaResForRelease
+:blurry:transformClassesAndResourcesWithSyncLibJarsForRelease
+:blurry:mergeReleaseJniLibFolders
+:blurry:transformNativeLibsWithMergeJniLibsForRelease
+:blurry:transformNativeLibsWithStripDebugSymbolForRelease
+:blurry:transformNativeLibsWithSyncJniLibsForRelease
+:blurry:bundleRelease
+:blurry:compileReleaseSources
+:blurry:assembleRelease
+:blurry:assemble
+:blurry:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.979 secs
+
+2018-05-11 11:27:53,339 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:27:53,340 INFO  SysUtils - Execute command: [/tmp/rdisk/2192/src/Blurry-master/gradlew, -b, /tmp/rdisk/2192/src/Blurry-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:28:00,975 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 11:28:00,975 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 11:28:00,976 INFO  SysUtils - Execute command: [/tmp/rdisk/2192/src/Blurry-master/gradlew, -b, /tmp/rdisk/2192/src/Blurry-master/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 11:28:19,665 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:blurry:preBuild UP-TO-DATE
+:blurry:preReleaseBuild UP-TO-DATE
+:blurry:checkReleaseManifest
+:blurry:prepareReleaseDependencies
+:blurry:compileReleaseAidl UP-TO-DATE
+:blurry:compileReleaseNdk UP-TO-DATE
+:blurry:compileLint UP-TO-DATE
+:blurry:copyReleaseLint UP-TO-DATE
+:blurry:mergeReleaseShaders UP-TO-DATE
+:blurry:compileReleaseShaders UP-TO-DATE
+:blurry:generateReleaseAssets UP-TO-DATE
+:blurry:mergeReleaseAssets UP-TO-DATE
+:blurry:mergeReleaseProguardFiles UP-TO-DATE
+:blurry:packageReleaseRenderscript UP-TO-DATE
+:blurry:compileReleaseRenderscript UP-TO-DATE
+:blurry:generateReleaseResValues UP-TO-DATE
+:blurry:generateReleaseResources UP-TO-DATE
+:blurry:packageReleaseResources UP-TO-DATE
+:blurry:processReleaseManifest UP-TO-DATE
+:blurry:generateReleaseBuildConfig UP-TO-DATE
+:blurry:processReleaseResources UP-TO-DATE
+:blurry:generateReleaseSources UP-TO-DATE
+:blurry:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:blurry:javaPreCompileRelease
+:blurry:compileReleaseJavaWithJavac UP-TO-DATE
+:blurry:processReleaseJavaRes UP-TO-DATE
+:blurry:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:blurry:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:blurry:mergeReleaseJniLibFolders UP-TO-DATE
+:blurry:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:blurry:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:blurry:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:blurry:bundleRelease UP-TO-DATE
+:example:preBuild UP-TO-DATE
+:example:preDebugBuild UP-TO-DATE
+:example:checkDebugManifest
+:example:preReleaseBuild UP-TO-DATE
+:example:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:example:prepareComAndroidSupportAppcompatV72530Library
+:example:prepareComAndroidSupportSupportCompat2530Library
+:example:prepareComAndroidSupportSupportCoreUi2530Library
+:example:prepareComAndroidSupportSupportCoreUtils2530Library
+:example:prepareComAndroidSupportSupportFragment2530Library
+:example:prepareComAndroidSupportSupportMediaCompat2530Library
+:example:prepareComAndroidSupportSupportV42530Library
+:example:prepareComAndroidSupportSupportVectorDrawable2530Library
+:example:prepareDebugDependencies
+:example:compileDebugAidl
+:example:compileDebugRenderscript
+:example:generateDebugBuildConfig
+:example:generateDebugResValues
+:example:generateDebugResources
+:example:mergeDebugResources
+:example:processDebugManifest
+:example:processDebugResources
+:example:generateDebugSources
+:example:incrementalDebugJavaCompilationSafeguard
+:example:javaPreCompileDebug
+:example:compileDebugJavaWithJavac
+:example:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example:compileDebugNdk UP-TO-DATE
+:example:compileDebugSources
+:example:mergeDebugShaders
+:example:compileDebugShaders
+:example:generateDebugAssets
+:example:mergeDebugAssets
+:example:transformClassesWithDexForDebug
+:example:mergeDebugJniLibFolders
+:example:transformNativeLibsWithMergeJniLibsForDebug
+:example:transformNativeLibsWithStripDebugSymbolForDebug
+:example:processDebugJavaRes UP-TO-DATE
+:example:transformResourcesWithMergeJavaResForDebug
+:example:validateSigningDebug
+:example:packageDebug
+:example:assembleDebug
+:example:checkReleaseManifest
+:example:prepareReleaseDependencies
+:example:compileReleaseAidl
+:example:compileReleaseRenderscript
+:example:generateReleaseBuildConfig
+:example:generateReleaseResValues
+:example:generateReleaseResources
+:example:mergeReleaseResources
+:example:processReleaseManifest
+:example:processReleaseResources
+:example:generateReleaseSources
+:example:incrementalReleaseJavaCompilationSafeguard
+:example:javaPreCompileRelease
+:example:compileReleaseJavaWithJavac
+:example:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example:compileReleaseNdk UP-TO-DATE
+:example:compileReleaseSources
+:example:lintVitalRelease
+:example:mergeReleaseShaders
+:example:compileReleaseShaders
+:example:generateReleaseAssets
+:example:mergeReleaseAssets
+:example:transformClassesWithDexForRelease
+:example:mergeReleaseJniLibFolders
+:example:transformNativeLibsWithMergeJniLibsForRelease
+:example:transformNativeLibsWithStripDebugSymbolForRelease
+:example:processReleaseJavaRes UP-TO-DATE
+:example:transformResourcesWithMergeJavaResForRelease
+:example:packageRelease
+:example:assembleRelease
+:example:assemble
+:example:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.389 secs
+
+2018-05-11 11:28:19,713 INFO  FullProcessService - Found APK file: /tmp/rdisk/2192/src/Blurry-master/example/build/outputs/apk/example-release-unsigned.apk

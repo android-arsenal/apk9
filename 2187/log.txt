@@ -1,0 +1,122 @@
+2018-04-03 12:39:13,053 INFO  DownloadService - Downloading "https://github.com/cr5315/android-socialbuttons/archive/master.zip", attempt 3
+2018-04-03 12:40:13,519 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 12:40:14,250 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 12:40:14,250 INFO  DownloadService - Downloading "https://github.com/cr5315/android-socialbuttons/archive/master.zip", attempt 3
+2018-04-03 12:41:15,512 DEBUG FullProcessService - Repository https://github.com/cr5315/android-socialbuttons available: true
+2018-04-03 12:41:15,512 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 12:41:15,512 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/cr5315/android-socialbuttons, /tmp/rdisk/2187/src]
+2018-04-03 12:41:17,181 INFO  SysUtils - 
+2018-04-03 12:41:17,186 INFO  GitService - Deleted "/tmp/rdisk/2187/src/.git": true
+2018-04-03 12:41:17,189 INFO  FullProcessService - Size of directory with sources: 148 KB
+2018-04-03 12:41:17,189 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2187/src]
+2018-04-03 12:41:17,193 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2187/src/.git/
+
+2018-04-03 12:41:17,196 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2187/src/gradlew
+2018-04-03 12:41:17,199 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2187/src/sample/build.gradle /tmp/rdisk/2187/src/socialbuttons/build.gradle /tmp/rdisk/2187/src/build.gradle
+2018-04-03 12:41:17,202 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2187/src/socialbuttons/build.gradle /tmp/rdisk/2187/src/settings.gradle /tmp/rdisk/2187/src/sample/build.gradle /tmp/rdisk/2187/src/install.gradle /tmp/rdisk/2187/src/build.gradle /tmp/rdisk/2187/src/bintray.gradle
+2018-04-03 12:41:17,203 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 12:41:17,203 INFO  ProjectFixService - Fixing project...
+2018-04-03 12:41:17,210 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2187/src/sample/local.properties
+2018-04-03 12:41:17,210 INFO  ProjectFixService - Build info for "/tmp/rdisk/2187/src/sample/build.gradle": [buildToolsVersion=23.0.0 rc3,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 12:41:17,211 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2187/src/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 12:41:17,211 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2187/src/socialbuttons/local.properties
+2018-04-03 12:41:17,211 INFO  ProjectFixService - Build info for "/tmp/rdisk/2187/src/socialbuttons/build.gradle": [buildToolsVersion=23.0.0 rc3,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 12:41:17,211 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2187/src/socialbuttons/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 12:41:17,212 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2187/src/local.properties
+2018-04-03 12:41:17,212 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-03 12:41:17,212 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-03 12:41:17,213 INFO  ProjectFixService - Build info for "/tmp/rdisk/2187/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 12:41:17,213 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 12:41:17,213 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:41:17,213 INFO  SysUtils - Execute command: [/tmp/rdisk/2187/src/gradlew, -b, /tmp/rdisk/2187/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:41:27,454 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-03 12:41:27,454 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 12:41:27,454 INFO  SysUtils - Execute command: [/tmp/rdisk/2187/src/gradlew, -b, /tmp/rdisk/2187/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 12:41:51,892 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:socialbuttons:compileLint
+:socialbuttons:copyReleaseLint UP-TO-DATE
+:socialbuttons:mergeReleaseProguardFiles
+:socialbuttons:preBuild UP-TO-DATE
+:socialbuttons:preReleaseBuild UP-TO-DATE
+:socialbuttons:checkReleaseManifest
+:socialbuttons:prepareReleaseDependencies
+:socialbuttons:compileReleaseAidl
+:socialbuttons:compileReleaseRenderscript
+:socialbuttons:generateReleaseBuildConfig
+:socialbuttons:generateReleaseAssets UP-TO-DATE
+:socialbuttons:mergeReleaseAssets
+:socialbuttons:generateReleaseResValues
+:socialbuttons:generateReleaseResources
+:socialbuttons:packageReleaseResources
+:socialbuttons:processReleaseManifest
+:socialbuttons:processReleaseResources
+:socialbuttons:generateReleaseSources
+:socialbuttons:processReleaseJavaRes UP-TO-DATE
+:socialbuttons:compileReleaseJavaNote: /tmp/rdisk/2187/src/socialbuttons/src/main/java/com/cr5315/socialbuttons/ShareButton.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:socialbuttons:packageReleaseJar
+:socialbuttons:compileReleaseNdk UP-TO-DATE
+:socialbuttons:packageReleaseJniLibs UP-TO-DATE
+:socialbuttons:packageReleaseLocalJar UP-TO-DATE
+:socialbuttons:packageReleaseRenderscript UP-TO-DATE
+:socialbuttons:bundleRelease
+:sample:prepareComAndroidSupportAppcompatV72221Library
+:sample:prepareComAndroidSupportSupportV42221Library
+:sample:prepareComCr5315Socialbuttons020Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJava
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJava
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.005 secs
+
+2018-04-03 12:41:51,931 INFO  FullProcessService - Found APK file: /tmp/rdisk/2187/src/sample/build/outputs/apk/sample-release-unsigned.apk

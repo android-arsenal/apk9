@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "in.co.ophio.secure.sample",
+    "label" : "Keystore-preferences",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "18",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABVlBMVEUAAAAKCgoJCQkODg4GEgYJFAYJEwYJFgMLEgMKFAUEDgQJFAUKFAYKEwUZGRkJFAUEDgQPDw8IEgUJEwUKEwd/f38JFAUIEgUDCgMJEwYKEwYKEgYJEwUKFAUJFAUJEwUKEwUDCgMqKioIEQUJEwUJEwUJFAYLFQcKFAUKEwUJFAYJCQkIEgYJFAUIEgY/Pz8JEwUJEwUJFAUSEhIKEwUKFAUKFAYJFAUKFAUKEwYKEwUIEwgKFAVBSj2jqKGFjIIaJRYJFAUJEwYTHQ/e4N3y8vLx8fGFjYKGjYITHQ4JEwUKFAUbJRXt7u2ip58ZJBULFAYLFQeHjYPq6+nR1M86RDWGjIMKFAYMFggaJBYUHg8KFAUFEQUKFAYKEQMJFQMJDwMIFAIIDgIIDgIMFAQKFAYKFAYMFQQJEQUKFAUJEQMVFRUCCAIFCQEFCQEFCQEICAIfHx9vc15yAAAAcnRSTlMADA0JFd3jKCLQG/X/pAXzGgih+lYBRqAk5dY/e5nFfNQjA275/pE26vCSDrv3ugJ9/HcHo5pq+Gs88i7R/////8Bj//////////3S/////zf///////+B////zRbmJSopKywrH+noHnrrYQYuQUNCLgSeilwDAAABdElEQVRIx2NgGOGAkQm7ODMjdnEWVjZ2bOIcnKwsWDVwcfPw8mEK8/Hy8Atg1SAoxCMsAuOIisJYYsI84oJYNYhKSPJIAb3BJC0jKwcEsvLSIJ4Cj6SiKHZPKCmrqKqp82qo8kCBqqaWupqqirISrmDS1uHR5eZBAdy6PHraOMNV38CQBwMYGujjUs8sy82DBXAbMWNXb2yiyoMVGJpi97SZIQ8OYG6BTb2lLg9OYGWNqZ7JBixla2fvgFDoYG9nC2Y4YiYzJ7CDnF1c3dwRGjzcXF08QQwvJ4wU4w1W4ePr6uqH0ODn6urrD2Z5o6eyAHOweGBQcEgoQkNoSHBYIMTfAWgawqFKIiKjkH0bFRkBZYWjJbxoHgIgGjUuYiQJaYiNQdEQZ05Ig3kcioZ4YUIaVBJQNCQS1CCciKIhibCGpFENoxqwJ75kFA0pqYQ0pKWjlqoZmSp4QWoWWgmbnZObhw7yESC3IBuj5C7EC/RHdHMBADi9drvaTfrQAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1378,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"in.co.ophio.secure.sample\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"18\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f09002e\" android:label=\"Keystore-preferences\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"in.co.ophio.secure.sample.KeystoreApplication\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Home\" android:name=\"in.co.ophio.secure.sample.view.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1072920,
+  "crc32" : 1448105970,
+  "sha256" : "69399ef8a7124d54eeca6bc548c6a20f5b221db62d5e6747c87fd75aec86e28f",
+  "buildTime" : 1522792431000
+}

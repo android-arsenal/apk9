@@ -1,0 +1,74 @@
+2018-04-03 19:14:26,985 INFO  DownloadService - Downloading "https://github.com/lukaspili/processor-workflow/archive/master.zip", attempt 3
+2018-04-03 19:15:27,643 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 19:15:28,458 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 19:15:28,458 INFO  DownloadService - Downloading "https://github.com/lukaspili/processor-workflow/archive/master.zip", attempt 3
+2018-04-03 19:16:29,704 DEBUG FullProcessService - Repository https://github.com/lukaspili/processor-workflow available: true
+2018-04-03 19:16:29,704 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 19:16:29,704 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/lukaspili/processor-workflow, /tmp/rdisk/2114/src]
+2018-04-03 19:16:31,181 INFO  SysUtils - 
+2018-04-03 19:16:31,188 INFO  GitService - Deleted "/tmp/rdisk/2114/src/.git": true
+2018-04-03 19:16:31,189 INFO  FullProcessService - Size of directory with sources: 75 KB
+2018-04-03 19:16:31,189 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2114/src]
+2018-04-03 19:16:31,198 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2114/src/.git/
+
+2018-04-03 19:16:31,199 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2114/src/gradlew
+2018-04-03 19:16:31,200 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2114/src/build.gradle /tmp/rdisk/2114/src/lib/build.gradle
+2018-04-03 19:16:31,201 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2114/src/settings.gradle /tmp/rdisk/2114/src/mvn-publish.gradle /tmp/rdisk/2114/src/lib/build.gradle /tmp/rdisk/2114/src/build.gradle
+2018-04-03 19:16:31,201 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 19:16:31,201 INFO  ProjectFixService - Fixing project...
+2018-04-03 19:16:31,206 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2114/src/local.properties
+2018-04-03 19:16:31,206 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.8-all.zip
+2018-04-03 19:16:31,206 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.8-bin.zip)
+2018-04-03 19:16:31,208 INFO  ProjectFixService - Build info for "/tmp/rdisk/2114/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 19:16:31,208 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2114/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 19:16:31,209 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2114/src/lib/local.properties
+2018-04-03 19:16:31,211 INFO  ProjectFixService - Build info for "/tmp/rdisk/2114/src/lib/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 19:16:31,211 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2114/src/lib/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 19:16:31,211 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 19:16:31,211 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:16:31,211 INFO  SysUtils - Execute command: [/tmp/rdisk/2114/src/gradlew, -b, /tmp/rdisk/2114/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:16:37,669 INFO  ProjectTaskService - Detected possible tasks: 46
+2018-04-03 19:16:37,669 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-03 19:16:37,669 INFO  SysUtils - Execute command: [/tmp/rdisk/2114/src/gradlew, -b, /tmp/rdisk/2114/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-03 19:16:45,681 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lib:compileJava
+Download https://jcenter.bintray.com/com/google/auto/auto-common/0.5/auto-common-0.5.pom
+Download https://jcenter.bintray.com/com/google/auto/auto-common/0.5/auto-common-0.5.jar
+warning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:lib:processResources UP-TO-DATE
+:lib:classes
+:lib:jar
+:lib:javadocJar
+:lib:sourcesJar
+:lib:signArchives SKIPPED
+:lib:assemble
+:lib:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.612 secs
+
+2018-04-03 19:16:45,683 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:16:45,683 INFO  SysUtils - Execute command: [/tmp/rdisk/2114/src/gradlew, -b, /tmp/rdisk/2114/src/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:16:49,562 INFO  ProjectTaskService - Detected possible tasks: 46
+2018-04-03 19:16:49,563 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-03 19:16:49,563 INFO  SysUtils - Execute command: [/tmp/rdisk/2114/src/gradlew, -b, /tmp/rdisk/2114/src/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-03 19:16:53,769 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lib:compileJava UP-TO-DATE
+:lib:processResources UP-TO-DATE
+:lib:classes UP-TO-DATE
+:lib:jar UP-TO-DATE
+:lib:javadocJar UP-TO-DATE
+:lib:sourcesJar UP-TO-DATE
+:lib:signArchives SKIPPED
+:lib:assemble UP-TO-DATE
+:lib:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.784 secs
+
+2018-04-03 19:16:53,771 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 19:16:53,772 ERROR FullProcessService - Could not find generated or existed APK file

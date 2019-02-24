@@ -1,0 +1,231 @@
+2018-04-03 19:45:44,916 INFO  DownloadService - Downloading "https://github.com/thomsonreuters/RippleDecoratorView/archive/master.zip", attempt 3
+2018-04-03 19:46:45,524 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 19:46:46,358 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 19:46:46,358 INFO  DownloadService - Downloading "https://github.com/thomsonreuters/RippleDecoratorView/archive/master.zip", attempt 3
+2018-04-03 19:47:47,688 DEBUG FullProcessService - Repository https://github.com/thomsonreuters/RippleDecoratorView available: true
+2018-04-03 19:47:47,688 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 19:47:47,688 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/thomsonreuters/RippleDecoratorView, /tmp/rdisk/2104/src]
+2018-04-03 19:47:51,753 INFO  SysUtils - 
+2018-04-03 19:47:51,765 INFO  GitService - Deleted "/tmp/rdisk/2104/src/.git": true
+2018-04-03 19:47:51,767 INFO  FullProcessService - Size of directory with sources: 682 KB
+2018-04-03 19:47:51,767 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2104/src]
+2018-04-03 19:47:51,771 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2104/src/.git/
+
+2018-04-03 19:47:51,773 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2104/src/gradlew
+2018-04-03 19:47:51,775 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2104/src/RippleDecoratorView-example/build.gradle /tmp/rdisk/2104/src/RippleDecoratorView-lib/build.gradle /tmp/rdisk/2104/src/build.gradle
+2018-04-03 19:47:51,777 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2104/src/settings.gradle /tmp/rdisk/2104/src/build.gradle /tmp/rdisk/2104/src/RippleDecoratorView-lib/build.gradle /tmp/rdisk/2104/src/RippleDecoratorView-example/build.gradle
+2018-04-03 19:47:51,778 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-03 19:47:52,241 INFO  DownloadService - Downloaded https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-04-03 19:47:52,241 INFO  ProjectBuildService - Remote scripts: https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle
+2018-04-03 19:47:52,241 INFO  ProjectFixService - Fixing project...
+2018-04-03 19:47:52,257 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2104/src/RippleDecoratorView-example/local.properties
+2018-04-03 19:47:52,257 INFO  ProjectFixService - Build info for "/tmp/rdisk/2104/src/RippleDecoratorView-example/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 19:47:52,257 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2104/src/RippleDecoratorView-lib/local.properties
+2018-04-03 19:47:52,257 INFO  ProjectFixService - Build info for "/tmp/rdisk/2104/src/RippleDecoratorView-lib/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 19:47:52,258 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2104/src/local.properties
+2018-04-03 19:47:52,258 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 19:47:52,258 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 19:47:52,259 INFO  ProjectFixService - Build info for "/tmp/rdisk/2104/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 19:47:52,259 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 19:47:52,259 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:47:52,259 INFO  SysUtils - Execute command: [/tmp/rdisk/2104/src/gradlew, -b, /tmp/rdisk/2104/src/RippleDecoratorView-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:48:02,017 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-03 19:48:02,017 INFO  ProjectTaskService - Excluded tasks (22): lintDebug mockableAndroidJar androidJavadocs deviceCheck lint androidSourcesJar uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll androidJavadocsJar testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 19:48:02,017 INFO  SysUtils - Execute command: [/tmp/rdisk/2104/src/gradlew, -b, /tmp/rdisk/2104/src/RippleDecoratorView-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 19:48:10,053 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 19:48:10,054 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'androidJavadocs' not found in project ':RippleDecoratorView-example'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'androidJavadocs' not found in project ':RippleDecoratorView-example'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:101)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:64)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+
+BUILD FAILED
+
+Total time: 7.614 secs
+
+2018-04-03 19:48:10,054 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-03 19:48:10,054 INFO  SysUtils - Execute command: [/tmp/rdisk/2104/src/gradlew, -b, /tmp/rdisk/2104/src/RippleDecoratorView-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:48:40,678 INFO  SysUtils - Configuration on demand is an incubating feature.
+:RippleDecoratorView-example:preBuild UP-TO-DATE
+:RippleDecoratorView-example:preDebugBuild UP-TO-DATE
+:RippleDecoratorView-example:checkDebugManifest
+:RippleDecoratorView-example:preReleaseBuild UP-TO-DATE
+:RippleDecoratorView-lib:compileLint
+:RippleDecoratorView-lib:copyReleaseLint UP-TO-DATE
+:RippleDecoratorView-lib:mergeReleaseProguardFiles
+:RippleDecoratorView-lib:preBuild UP-TO-DATE
+:RippleDecoratorView-lib:preReleaseBuild UP-TO-DATE
+:RippleDecoratorView-lib:checkReleaseManifest
+:RippleDecoratorView-lib:prepareReleaseDependencies
+:RippleDecoratorView-lib:compileReleaseAidl
+:RippleDecoratorView-lib:compileReleaseRenderscript
+:RippleDecoratorView-lib:generateReleaseBuildConfig
+:RippleDecoratorView-lib:generateReleaseAssets UP-TO-DATE
+:RippleDecoratorView-lib:mergeReleaseAssets
+:RippleDecoratorView-lib:generateReleaseResValues
+:RippleDecoratorView-lib:generateReleaseResources
+:RippleDecoratorView-lib:packageReleaseResources
+:RippleDecoratorView-lib:processReleaseManifest
+:RippleDecoratorView-lib:processReleaseResources
+:RippleDecoratorView-lib:generateReleaseSources
+:RippleDecoratorView-lib:processReleaseJavaRes UP-TO-DATE
+:RippleDecoratorView-lib:compileReleaseJava
+:RippleDecoratorView-lib:packageReleaseJar
+:RippleDecoratorView-lib:compileReleaseNdk UP-TO-DATE
+:RippleDecoratorView-lib:packageReleaseJniLibs UP-TO-DATE
+:RippleDecoratorView-lib:packageReleaseLocalJar UP-TO-DATE
+:RippleDecoratorView-lib:packageReleaseRenderscript UP-TO-DATE
+:RippleDecoratorView-lib:bundleRelease
+:RippleDecoratorView-example:prepareComAndroidSupportAppcompatV72220Library
+:RippleDecoratorView-example:prepareComAndroidSupportSupportV42220Library
+:RippleDecoratorView-example:prepareComThomsonreutersRippleDecoratorViewLib102Library
+:RippleDecoratorView-example:prepareDebugDependencies
+:RippleDecoratorView-example:compileDebugAidl
+:RippleDecoratorView-example:compileDebugRenderscript
+:RippleDecoratorView-example:generateDebugBuildConfig
+:RippleDecoratorView-example:generateDebugAssets UP-TO-DATE
+:RippleDecoratorView-example:mergeDebugAssets
+:RippleDecoratorView-example:generateDebugResValues
+:RippleDecoratorView-example:generateDebugResources
+:RippleDecoratorView-example:mergeDebugResources
+:RippleDecoratorView-example:processDebugManifest
+:RippleDecoratorView-example:processDebugResources
+:RippleDecoratorView-example:generateDebugSources
+:RippleDecoratorView-example:processDebugJavaRes UP-TO-DATE
+:RippleDecoratorView-example:compileDebugJavaNote: /tmp/rdisk/2104/src/RippleDecoratorView-example/src/main/java/com/thomsonreuters/rippledecoratorviewexample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:RippleDecoratorView-example:compileDebugNdk UP-TO-DATE
+:RippleDecoratorView-example:compileDebugSources
+:RippleDecoratorView-example:preDexDebug
+:RippleDecoratorView-example:dexDebug
+:RippleDecoratorView-example:validateDebugSigning
+:RippleDecoratorView-example:packageDebug
+:RippleDecoratorView-example:zipalignDebug
+:RippleDecoratorView-example:assembleDebug
+:RippleDecoratorView-example:checkReleaseManifest
+:RippleDecoratorView-example:prepareReleaseDependencies
+:RippleDecoratorView-example:compileReleaseAidl
+:RippleDecoratorView-example:compileReleaseRenderscript
+:RippleDecoratorView-example:generateReleaseBuildConfig
+:RippleDecoratorView-example:generateReleaseAssets UP-TO-DATE
+:RippleDecoratorView-example:mergeReleaseAssets
+:RippleDecoratorView-example:generateReleaseResValues
+:RippleDecoratorView-example:generateReleaseResources
+:RippleDecoratorView-example:mergeReleaseResources
+:RippleDecoratorView-example:processReleaseManifest
+:RippleDecoratorView-example:processReleaseResources
+:RippleDecoratorView-example:generateReleaseSources
+:RippleDecoratorView-example:processReleaseJavaRes UP-TO-DATE
+:RippleDecoratorView-example:compileReleaseJavaNote: /tmp/rdisk/2104/src/RippleDecoratorView-example/src/main/java/com/thomsonreuters/rippledecoratorviewexample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:RippleDecoratorView-example:compileReleaseNdk UP-TO-DATE
+:RippleDecoratorView-example:compileReleaseSources
+:RippleDecoratorView-example:lintVitalRelease SKIPPED
+:RippleDecoratorView-example:preDexRelease
+:RippleDecoratorView-example:dexRelease
+:RippleDecoratorView-example:packageRelease
+:RippleDecoratorView-example:assembleRelease
+:RippleDecoratorView-example:assemble
+:RippleDecoratorView-example:compileLint
+:RippleDecoratorView-example:lint
+Ran lint on variant debug: 13 issues found
+Ran lint on variant release: 13 issues found
+Wrote HTML report to file:/tmp/rdisk/2104/src/RippleDecoratorView-example/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2104/src/RippleDecoratorView-example/build/outputs/lint-results.xml
+:RippleDecoratorView-example:preCompileDebugUnitTestJava
+:RippleDecoratorView-example:preDebugUnitTestBuild UP-TO-DATE
+:RippleDecoratorView-example:prepareDebugUnitTestDependencies
+:RippleDecoratorView-example:processDebugUnitTestJavaRes UP-TO-DATE
+:RippleDecoratorView-example:compileDebugUnitTestJava UP-TO-DATE
+:RippleDecoratorView-example:compileDebugUnitTestSources UP-TO-DATE
+:RippleDecoratorView-example:mockableAndroidJar
+:RippleDecoratorView-example:assembleDebugUnitTest
+:RippleDecoratorView-example:testDebug
+:RippleDecoratorView-example:preCompileReleaseUnitTestJava
+:RippleDecoratorView-example:preReleaseUnitTestBuild UP-TO-DATE
+:RippleDecoratorView-example:prepareReleaseUnitTestDependencies
+:RippleDecoratorView-example:processReleaseUnitTestJavaRes UP-TO-DATE
+:RippleDecoratorView-example:compileReleaseUnitTestJava UP-TO-DATE
+:RippleDecoratorView-example:compileReleaseUnitTestSources UP-TO-DATE
+:RippleDecoratorView-example:assembleReleaseUnitTest
+:RippleDecoratorView-example:testRelease
+:RippleDecoratorView-example:test
+:RippleDecoratorView-example:check
+:RippleDecoratorView-example:build
+
+BUILD SUCCESSFUL
+
+Total time: 30.204 secs
+
+2018-04-03 19:48:40,713 INFO  FullProcessService - Found APK file: /tmp/rdisk/2104/src/RippleDecoratorView-example/build/outputs/apk/RippleDecoratorView-example-release-unsigned.apk

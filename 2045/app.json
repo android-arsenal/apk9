@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.yqritc.scalablevideoview.sample",
+    "label" : "ScalableVideoView",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.4",
+    "versionCode" : 5,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAt1BMVEUAAAAEBAQEBAQFBQUEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQFBQUEBAQDAwMEBAQFBQUDAwMFBQUAAAAFBQUFBQUEBAQEBAQFBQUEBAQEBAQEBAQFBQUEBAQEBAQAAAAAAAADAwMEBAQDAwMAAAAAAAAAAAAGBgYFBQUEBAQEBAQAAAAEBAQFBQUGBgYFBQUEBAQEBAQFBQUEBAQEBAQAAAAEBAQFBQUEBAQGBgYFBQUAAAAnq9doAAAAPXRSTlMAgYD//P/+/Yw5R/uOOEhb+V5aYQRk0bG3l0RFfmpGdAcDUnJQAQIULjPwjRD43Fov87o09foN6mi7W9IFY4cffQAAAWpJREFUSMetVmlXwjAQ3JJsShtuymFRoWqVw/tW+P+/y01RHtCmZHnOp3nbN91km84EgAuvUvEyVDwnAoIJkEwAosIMyokgKF9UgzAMqkKLWr3RqNeIWCu+AiVF02y+KVqibUibSMdWkZmgC1EEXar2DOkRsVZIQOvqD4bDQR+lA1FoNr2el3IimeB3BG4AlOIkCONRbDAi2EgcBqf0ckAtzlyP0TnSWKnDGCZRlBzEBC6yDlJcQuLy/gSueILIKkgTniCl7tcMQQo3U3qaOgsSmM0Xt+a5s2B6J+4f8uuyCx6f6Og8v+w3KRG84psvWot3SJ0FSmkUH5/wLwLNXZIu3vRX4aZ961i/OWOdzWucD1d6NPxjDp/mHm/N+YH8437RtQlEB7AxgSNsZsvI4hLyZ2SbRHG1SrYZb9n9MufyywK73wmU1Wo/UHYrEk0CZXHUyQVUpziykBeK1IEXu4of7Oyrg8cE+/bzAxaNRG0tvvhPAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1693,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"5\" android:versionName=\"1.0.4\" package=\"com.yqritc.scalablevideoview.sample\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f0a008a\" android:label=\"ScalableVideoView\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"ScalableVideoView\" android:name=\"com.yqritc.scalablevideoview.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.yqritc.scalablevideoview.sample.SampleActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 6030232,
+  "crc32" : 427494108,
+  "sha256" : "688f4170a619a27aad808288b4336ffc823b2f2d2af107c401694ef7456c7876",
+  "buildTime" : 1522793446000
+}

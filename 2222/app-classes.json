@@ -1,0 +1,4 @@
+{
+  "com.getkeepsafe.android.multistateanimation" : [ "BuildConfig", "MultiStateAnimation", "MultiStateAnimation$AnimationDrawableLoader", "MultiStateAnimation$AnimationSection", "MultiStateAnimation$AnimationSeriesListener", "MultiStateAnimation$Builder", "MultiStateAnimation$SectionBuilder", "MultiStateAnimation$TransitionBuilder", "NotifyingAnimationDrawable", "NotifyingAnimationDrawable$OnAnimationFinishedListener" ],
+  "com.getkeepsafe.android.multistateanimation.samples" : [ "BuildConfig", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$menu", "R$raw", "R$string", "R$style", "ThreeStateSampleActivity" ]
+}

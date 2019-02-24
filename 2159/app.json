@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.stylingandroid.prism.sample.palette",
+    "label" : "Prism Palette",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.READ_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1478,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.stylingandroid.prism.sample.palette\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f08002f\" android:label=\"Prism Palette\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\" android:supportsRtl=\"false\">\n\t\t<activity android:label=\"Prism Palette\" android:name=\"com.stylingandroid.prism.sample.palette.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1219905,
+  "crc32" : 2557424186,
+  "sha256" : "6c9b7d458864262f209b42fa103c2f36d96366baaf7282bb083417a3cca9d593",
+  "buildTime" : 1522779086000
+}

@@ -1,0 +1,137 @@
+2018-04-14 14:12:39,562 INFO  DownloadService - Downloading "https://github.com/facebook/device-year-class/archive/master.zip", attempt 3
+2018-04-14 14:12:41,219 INFO  DownloadService - Downloaded https://github.com/facebook/device-year-class/archive/master.zip, attempt 3
+2018-04-14 14:12:41,219 INFO  DownloadService - Size of file "/tmp/rdisk/2239/master.zip": 417 KB
+2018-04-14 14:12:41,219 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-14 14:12:41,220 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2239/master.zip: true
+2018-04-14 14:12:41,220 DEBUG ZipUtil - Extracting '/tmp/rdisk/2239/master.zip' into '/tmp/rdisk/2239/src'.
+2018-04-14 14:12:41,230 INFO  FullProcessService - Size of directory with sources: 468 KB
+2018-04-14 14:12:41,230 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2239/src]
+2018-04-14 14:12:41,235 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2239/src/.git/
+
+2018-04-14 14:12:41,238 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2239/src/device-year-class-master/gradlew
+2018-04-14 14:12:41,241 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2239/src/device-year-class-master/yearclass-sample/build.gradle /tmp/rdisk/2239/src/device-year-class-master/yearclass/build.gradle /tmp/rdisk/2239/src/device-year-class-master/build.gradle
+2018-04-14 14:12:41,243 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2239/src/device-year-class-master/yearclass/build.gradle /tmp/rdisk/2239/src/device-year-class-master/yearclass-sample/build.gradle /tmp/rdisk/2239/src/device-year-class-master/settings.gradle /tmp/rdisk/2239/src/device-year-class-master/release.gradle /tmp/rdisk/2239/src/device-year-class-master/build.gradle
+2018-04-14 14:12:41,244 INFO  ProjectBuildService - Remote scripts: none
+2018-04-14 14:12:41,244 INFO  ProjectFixService - Fixing project...
+2018-04-14 14:12:41,251 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2239/src/device-year-class-master/yearclass-sample/local.properties
+2018-04-14 14:12:41,252 INFO  ProjectFixService - Build info for "/tmp/rdisk/2239/src/device-year-class-master/yearclass-sample/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=25]
+2018-04-14 14:12:41,252 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2239/src/device-year-class-master/yearclass/local.properties
+2018-04-14 14:12:41,253 INFO  ProjectFixService - Build info for "/tmp/rdisk/2239/src/device-year-class-master/yearclass/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-04-14 14:12:41,253 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2239/src/device-year-class-master/local.properties
+2018-04-14 14:12:41,254 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.5-all.zip
+2018-04-14 14:12:41,254 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.5-bin.zip)
+2018-04-14 14:12:41,255 INFO  ProjectFixService - Build info for "/tmp/rdisk/2239/src/device-year-class-master/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-04-14 14:12:41,255 INFO  ProjectFixService - Project was maybe fixed
+2018-04-14 14:12:41,255 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-14 14:12:41,255 INFO  SysUtils - Execute command: [/tmp/rdisk/2239/src/device-year-class-master/gradlew, -b, /tmp/rdisk/2239/src/device-year-class-master/yearclass-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-14 14:12:49,907 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-14 14:12:49,908 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-14 14:12:49,908 INFO  SysUtils - Execute command: [/tmp/rdisk/2239/src/device-year-class-master/gradlew, -b, /tmp/rdisk/2239/src/device-year-class-master/yearclass-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-14 14:13:01,921 INFO  SysUtils - Configuration on demand is an incubating feature.
+:yearclass:preBuild UP-TO-DATE
+:yearclass:preReleaseBuild UP-TO-DATE
+:yearclass:checkReleaseManifest
+:yearclass:prepareReleaseDependencies
+:yearclass:compileReleaseAidl
+:yearclass:compileReleaseNdk NO-SOURCE
+:yearclass:compileLint
+:yearclass:copyReleaseLint NO-SOURCE
+:yearclass:mergeReleaseShaders
+:yearclass:compileReleaseShaders
+:yearclass:generateReleaseAssets
+:yearclass:mergeReleaseAssets
+:yearclass:mergeReleaseProguardFiles
+:yearclass:packageReleaseRenderscript NO-SOURCE
+:yearclass:compileReleaseRenderscript
+:yearclass:generateReleaseResValues
+:yearclass:generateReleaseResources
+:yearclass:packageReleaseResources
+:yearclass:processReleaseManifest
+:yearclass:generateReleaseBuildConfig
+:yearclass:processReleaseResources
+:yearclass:generateReleaseSources
+:yearclass:incrementalReleaseJavaCompilationSafeguard
+:yearclass:javaPreCompileRelease
+:yearclass:compileReleaseJavaWithJavac
+:yearclass:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2239/src/device-year-class-master/yearclass/src/main/java/com/facebook/device/yearclass/DeviceInfo.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:yearclass:processReleaseJavaRes NO-SOURCE
+:yearclass:transformResourcesWithMergeJavaResForRelease
+:yearclass:transformClassesAndResourcesWithSyncLibJarsForRelease
+:yearclass:mergeReleaseJniLibFolders
+:yearclass:transformNativeLibsWithMergeJniLibsForRelease
+:yearclass:transformNativeLibsWithStripDebugSymbolForRelease
+:yearclass:transformNativeLibsWithSyncJniLibsForRelease
+:yearclass:bundleRelease
+:yearclass-sample:preBuild UP-TO-DATE
+:yearclass-sample:preDebugBuild UP-TO-DATE
+:yearclass-sample:checkDebugManifest
+:yearclass-sample:prepareDebugDependencies
+:yearclass-sample:compileDebugAidl
+:yearclass-sample:compileDebugRenderscript
+:yearclass-sample:generateDebugBuildConfig
+:yearclass-sample:generateDebugResValues
+:yearclass-sample:generateDebugResources
+:yearclass-sample:mergeDebugResources
+:yearclass-sample:processDebugManifest
+:yearclass-sample:processDebugResources
+:yearclass-sample:generateDebugSources
+:yearclass-sample:incrementalDebugJavaCompilationSafeguard
+:yearclass-sample:javaPreCompileDebug
+:yearclass-sample:compileDebugJavaWithJavac
+:yearclass-sample:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:yearclass-sample:compileDebugNdk NO-SOURCE
+:yearclass-sample:compileDebugSources
+:yearclass-sample:mergeDebugShaders
+:yearclass-sample:compileDebugShaders
+:yearclass-sample:generateDebugAssets
+:yearclass-sample:mergeDebugAssets
+:yearclass-sample:transformClassesWithDexForDebug
+:yearclass-sample:mergeDebugJniLibFolders
+:yearclass-sample:transformNativeLibsWithMergeJniLibsForDebug
+:yearclass-sample:transformNativeLibsWithStripDebugSymbolForDebug
+:yearclass-sample:processDebugJavaRes NO-SOURCE
+:yearclass-sample:transformResourcesWithMergeJavaResForDebug
+:yearclass-sample:validateSigningDebug
+:yearclass-sample:packageDebug
+:yearclass-sample:assembleDebug
+:yearclass-sample:preReleaseBuild UP-TO-DATE
+:yearclass-sample:checkReleaseManifest
+:yearclass-sample:prepareReleaseDependencies
+:yearclass-sample:compileReleaseAidl
+:yearclass-sample:compileReleaseRenderscript
+:yearclass-sample:generateReleaseBuildConfig
+:yearclass-sample:generateReleaseResValues
+:yearclass-sample:generateReleaseResources
+:yearclass-sample:mergeReleaseResources
+:yearclass-sample:processReleaseManifest
+:yearclass-sample:processReleaseResources
+:yearclass-sample:generateReleaseSources
+:yearclass-sample:incrementalReleaseJavaCompilationSafeguard
+:yearclass-sample:javaPreCompileRelease
+:yearclass-sample:compileReleaseJavaWithJavac
+:yearclass-sample:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:yearclass-sample:compileReleaseNdk NO-SOURCE
+:yearclass-sample:compileReleaseSources
+:yearclass-sample:lintVitalRelease
+:yearclass-sample:mergeReleaseShaders
+:yearclass-sample:compileReleaseShaders
+:yearclass-sample:generateReleaseAssets
+:yearclass-sample:mergeReleaseAssets
+:yearclass-sample:transformClassesWithDexForRelease
+:yearclass-sample:mergeReleaseJniLibFolders
+:yearclass-sample:transformNativeLibsWithMergeJniLibsForRelease
+:yearclass-sample:transformNativeLibsWithStripDebugSymbolForRelease
+:yearclass-sample:processReleaseJavaRes NO-SOURCE
+:yearclass-sample:transformResourcesWithMergeJavaResForRelease
+:yearclass-sample:packageRelease
+:yearclass-sample:assembleRelease
+:yearclass-sample:assemble
+:yearclass-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.618 secs
+
+2018-04-14 14:13:01,935 INFO  FullProcessService - Found APK file: /tmp/rdisk/2239/src/device-year-class-master/yearclass-sample/build/outputs/apk/yearclass-sample-release-unsigned.apk

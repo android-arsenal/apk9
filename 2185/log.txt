@@ -1,0 +1,1157 @@
+2018-04-03 12:44:00,884 INFO  DownloadService - Downloading "https://github.com/Skykai521/StickerCamera/archive/master.zip", attempt 3
+2018-04-03 12:45:01,359 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 12:45:02,381 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 12:45:02,381 INFO  DownloadService - Downloading "https://github.com/Skykai521/StickerCamera/archive/master.zip", attempt 3
+2018-04-03 12:46:03,920 DEBUG FullProcessService - Repository https://github.com/Skykai521/StickerCamera available: true
+2018-04-03 12:46:03,920 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 12:46:03,920 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Skykai521/StickerCamera, /tmp/rdisk/2185/src]
+2018-04-03 12:46:09,119 INFO  SysUtils - 
+2018-04-03 12:46:09,127 INFO  GitService - Deleted "/tmp/rdisk/2185/src/.git": true
+2018-04-03 12:46:09,136 INFO  FullProcessService - Size of directory with sources: 10 MB
+2018-04-03 12:46:09,136 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2185/src]
+2018-04-03 12:46:09,141 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2185/src/.git/
+
+2018-04-03 12:46:09,147 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2185/src/gradlew
+2018-04-03 12:46:09,154 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2185/src/Gpu-Image/build.gradle /tmp/rdisk/2185/src/ImageViewTouch/build.gradle /tmp/rdisk/2185/src/app/build.gradle /tmp/rdisk/2185/src/build.gradle
+2018-04-03 12:46:09,160 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2185/src/settings.gradle /tmp/rdisk/2185/src/build.gradle /tmp/rdisk/2185/src/app/build.gradle /tmp/rdisk/2185/src/ImageViewTouch/build.gradle /tmp/rdisk/2185/src/Gpu-Image/build.gradle
+2018-04-03 12:46:09,161 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 12:46:09,161 INFO  ProjectFixService - Fixing project...
+2018-04-03 12:46:09,175 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2185/src/Gpu-Image/local.properties
+2018-04-03 12:46:09,175 INFO  ProjectFixService - Build info for "/tmp/rdisk/2185/src/Gpu-Image/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-03 12:46:09,175 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2185/src/ImageViewTouch/local.properties
+2018-04-03 12:46:09,176 INFO  ProjectFixService - Build info for "/tmp/rdisk/2185/src/ImageViewTouch/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-03 12:46:09,176 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2185/src/app/local.properties
+2018-04-03 12:46:09,176 INFO  ProjectFixService - Build info for "/tmp/rdisk/2185/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-03 12:46:09,176 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2185/src/local.properties
+2018-04-03 12:46:09,177 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-03 12:46:09,177 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-03 12:46:09,177 INFO  ProjectFixService - Build info for "/tmp/rdisk/2185/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-03 12:46:09,178 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 12:46:09,178 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:46:09,178 INFO  SysUtils - Execute command: [/tmp/rdisk/2185/src/gradlew, -b, /tmp/rdisk/2185/src/Gpu-Image/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:46:21,180 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 12:46:21,180 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 12:46:21,180 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 12:46:21,180 INFO  SysUtils - Execute command: [/tmp/rdisk/2185/src/gradlew, -b, /tmp/rdisk/2185/src/Gpu-Image/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 12:46:37,997 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Gpu-Image:compileLint
+:Gpu-Image:copyDebugLint UP-TO-DATE
+:Gpu-Image:mergeDebugProguardFiles
+:Gpu-Image:preBuild UP-TO-DATE
+:Gpu-Image:preDebugBuild UP-TO-DATE
+:Gpu-Image:checkDebugManifest
+:Gpu-Image:prepareDebugDependencies
+:Gpu-Image:compileDebugAidl
+:Gpu-Image:compileDebugRenderscript
+:Gpu-Image:generateDebugBuildConfig
+:Gpu-Image:generateDebugAssets UP-TO-DATE
+:Gpu-Image:mergeDebugAssets
+:Gpu-Image:generateDebugResValues
+:Gpu-Image:generateDebugResources
+:Gpu-Image:packageDebugResources
+:Gpu-Image:processDebugManifest
+:Gpu-Image:processDebugResources
+:Gpu-Image:generateDebugSources
+:Gpu-Image:processDebugJavaRes UP-TO-DATE
+:Gpu-Image:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:Gpu-Image:packageDebugJar
+:Gpu-Image:compileDebugNdk UP-TO-DATE
+:Gpu-Image:packageDebugJniLibs UP-TO-DATE
+:Gpu-Image:packageDebugLocalJar UP-TO-DATE
+:Gpu-Image:packageDebugRenderscript UP-TO-DATE
+:Gpu-Image:bundleDebug
+:Gpu-Image:compileDebugSources
+:Gpu-Image:assembleDebug
+:Gpu-Image:copyReleaseLint UP-TO-DATE
+:Gpu-Image:mergeReleaseProguardFiles
+:Gpu-Image:preReleaseBuild UP-TO-DATE
+:Gpu-Image:checkReleaseManifest
+:Gpu-Image:prepareReleaseDependencies
+:Gpu-Image:compileReleaseAidl
+:Gpu-Image:compileReleaseRenderscript
+:Gpu-Image:generateReleaseBuildConfig
+:Gpu-Image:generateReleaseAssets UP-TO-DATE
+:Gpu-Image:mergeReleaseAssets
+:Gpu-Image:generateReleaseResValues
+:Gpu-Image:generateReleaseResources
+:Gpu-Image:packageReleaseResources
+:Gpu-Image:processReleaseManifest
+:Gpu-Image:processReleaseResources
+:Gpu-Image:generateReleaseSources
+:Gpu-Image:processReleaseJavaRes UP-TO-DATE
+:Gpu-Image:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:Gpu-Image:packageReleaseJar
+:Gpu-Image:compileReleaseNdk UP-TO-DATE
+:Gpu-Image:packageReleaseJniLibs UP-TO-DATE
+:Gpu-Image:packageReleaseLocalJar UP-TO-DATE
+:Gpu-Image:packageReleaseRenderscript UP-TO-DATE
+:Gpu-Image:bundleRelease
+:Gpu-Image:compileReleaseSources
+:Gpu-Image:assembleRelease
+:Gpu-Image:assemble
+:Gpu-Image:lint
+Ran lint on variant release: 1 issues found
+Ran lint on variant debug: 1 issues found
+Wrote HTML report to file:/tmp/rdisk/2185/src/Gpu-Image/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2185/src/Gpu-Image/build/outputs/lint-results.xml
+:Gpu-Image:preCompileDebugUnitTestJava
+:Gpu-Image:preDebugUnitTestBuild UP-TO-DATE
+:Gpu-Image:prepareDebugUnitTestDependencies
+:Gpu-Image:processDebugUnitTestJavaRes UP-TO-DATE
+:Gpu-Image:compileDebugUnitTestJava UP-TO-DATE
+:Gpu-Image:compileDebugUnitTestSources UP-TO-DATE
+:Gpu-Image:mockableAndroidJar
+:Gpu-Image:assembleDebugUnitTest
+:Gpu-Image:testDebug
+:Gpu-Image:preCompileReleaseUnitTestJava
+:Gpu-Image:preReleaseUnitTestBuild UP-TO-DATE
+:Gpu-Image:prepareReleaseUnitTestDependencies
+:Gpu-Image:processReleaseUnitTestJavaRes UP-TO-DATE
+:Gpu-Image:compileReleaseUnitTestJava UP-TO-DATE
+:Gpu-Image:compileReleaseUnitTestSources UP-TO-DATE
+:Gpu-Image:assembleReleaseUnitTest
+:Gpu-Image:testRelease
+:Gpu-Image:test
+:Gpu-Image:check
+:Gpu-Image:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.395 secs
+
+2018-04-03 12:46:38,011 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:46:38,011 INFO  SysUtils - Execute command: [/tmp/rdisk/2185/src/gradlew, -b, /tmp/rdisk/2185/src/ImageViewTouch/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:46:44,645 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 12:46:44,645 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 12:46:44,645 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 12:46:44,645 INFO  SysUtils - Execute command: [/tmp/rdisk/2185/src/gradlew, -b, /tmp/rdisk/2185/src/ImageViewTouch/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 12:47:02,999 INFO  SysUtils - Configuration on demand is an incubating feature.
+:ImageViewTouch:compileLint
+:ImageViewTouch:copyDebugLint UP-TO-DATE
+:ImageViewTouch:preBuild UP-TO-DATE
+:ImageViewTouch:preDebugBuild UP-TO-DATE
+:ImageViewTouch:checkDebugManifest
+:ImageViewTouch:preDebugAndroidTestBuild UP-TO-DATE
+:ImageViewTouch:preDebugUnitTestBuild UP-TO-DATE
+:ImageViewTouch:preReleaseBuild UP-TO-DATE
+:ImageViewTouch:preReleaseUnitTestBuild UP-TO-DATE
+:ImageViewTouch:prepareComAndroidSupportAppcompatV72220Library
+:ImageViewTouch:prepareComAndroidSupportSupportV42220Library
+:ImageViewTouch:prepareDebugDependencies
+:ImageViewTouch:compileDebugAidl
+:ImageViewTouch:compileDebugRenderscript
+:ImageViewTouch:generateDebugBuildConfig
+:ImageViewTouch:generateDebugAssets UP-TO-DATE
+:ImageViewTouch:mergeDebugAssets
+:ImageViewTouch:generateDebugResValues
+:ImageViewTouch:generateDebugResources
+:ImageViewTouch:mergeDebugResources
+:ImageViewTouch:processDebugManifest
+:ImageViewTouch:processDebugResources
+:ImageViewTouch:generateDebugSources
+:ImageViewTouch:processDebugJavaRes UP-TO-DATE
+:ImageViewTouch:compileDebugJavaNote: /tmp/rdisk/2185/src/ImageViewTouch/src/main/java/com/imagezoom/ImageViewTouchBase.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:ImageViewTouch:extractDebugAnnotations
+:ImageViewTouch:mergeDebugProguardFiles
+:ImageViewTouch:packageDebugJar
+:ImageViewTouch:compileDebugNdk UP-TO-DATE
+:ImageViewTouch:packageDebugJniLibs UP-TO-DATE
+:ImageViewTouch:packageDebugLocalJar UP-TO-DATE
+:ImageViewTouch:packageDebugRenderscript UP-TO-DATE
+:ImageViewTouch:packageDebugResources
+:ImageViewTouch:bundleDebug
+:ImageViewTouch:compileDebugSources
+:ImageViewTouch:assembleDebug
+:ImageViewTouch:copyReleaseLint UP-TO-DATE
+:ImageViewTouch:checkReleaseManifest
+:ImageViewTouch:prepareReleaseDependencies
+:ImageViewTouch:compileReleaseAidl
+:ImageViewTouch:compileReleaseRenderscript
+:ImageViewTouch:generateReleaseBuildConfig
+:ImageViewTouch:generateReleaseAssets UP-TO-DATE
+:ImageViewTouch:mergeReleaseAssets
+:ImageViewTouch:generateReleaseResValues
+:ImageViewTouch:generateReleaseResources
+:ImageViewTouch:mergeReleaseResources
+:ImageViewTouch:processReleaseManifest
+:ImageViewTouch:processReleaseResources
+:ImageViewTouch:generateReleaseSources
+:ImageViewTouch:processReleaseJavaRes UP-TO-DATE
+:ImageViewTouch:compileReleaseJavaNote: /tmp/rdisk/2185/src/ImageViewTouch/src/main/java/com/imagezoom/ImageViewTouchBase.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:ImageViewTouch:extractReleaseAnnotations
+:ImageViewTouch:mergeReleaseProguardFiles
+:ImageViewTouch:packageReleaseJar
+:ImageViewTouch:compileReleaseNdk UP-TO-DATE
+:ImageViewTouch:packageReleaseJniLibs UP-TO-DATE
+:ImageViewTouch:packageReleaseLocalJar UP-TO-DATE
+:ImageViewTouch:packageReleaseRenderscript UP-TO-DATE
+:ImageViewTouch:packageReleaseResources
+:ImageViewTouch:bundleRelease
+:ImageViewTouch:compileReleaseSources
+:ImageViewTouch:assembleRelease
+:ImageViewTouch:assemble
+:ImageViewTouch:lint
+Ran lint on variant release: 2 issues found
+Ran lint on variant debug: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/2185/src/ImageViewTouch/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2185/src/ImageViewTouch/build/outputs/lint-results.xml
+:ImageViewTouch:preCompileDebugUnitTestJava
+:ImageViewTouch:prepareDebugUnitTestDependencies
+:ImageViewTouch:processDebugUnitTestJavaRes UP-TO-DATE
+:ImageViewTouch:compileDebugUnitTestJava UP-TO-DATE
+:ImageViewTouch:compileDebugUnitTestSources UP-TO-DATE
+:ImageViewTouch:mockableAndroidJar
+:ImageViewTouch:assembleDebugUnitTest
+:ImageViewTouch:testDebug
+:ImageViewTouch:preCompileReleaseUnitTestJava
+:ImageViewTouch:prepareReleaseUnitTestDependencies
+:ImageViewTouch:processReleaseUnitTestJavaRes UP-TO-DATE
+:ImageViewTouch:compileReleaseUnitTestJava UP-TO-DATE
+:ImageViewTouch:compileReleaseUnitTestSources UP-TO-DATE
+:ImageViewTouch:assembleReleaseUnitTest
+:ImageViewTouch:testRelease
+:ImageViewTouch:test
+:ImageViewTouch:check
+:ImageViewTouch:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.95 secs
+
+2018-04-03 12:47:03,048 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:47:03,049 INFO  SysUtils - Execute command: [/tmp/rdisk/2185/src/gradlew, -b, /tmp/rdisk/2185/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:47:09,916 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-03 12:47:09,916 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 12:47:09,917 INFO  SysUtils - Execute command: [/tmp/rdisk/2185/src/gradlew, -b, /tmp/rdisk/2185/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 12:47:22,654 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 12:47:22,654 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Gpu-Image:compileLint
+:Gpu-Image:copyReleaseLint UP-TO-DATE
+:Gpu-Image:mergeReleaseProguardFiles UP-TO-DATE
+:Gpu-Image:preBuild UP-TO-DATE
+:Gpu-Image:preReleaseBuild UP-TO-DATE
+:Gpu-Image:checkReleaseManifest
+:Gpu-Image:prepareReleaseDependencies
+:Gpu-Image:compileReleaseAidl UP-TO-DATE
+:Gpu-Image:compileReleaseRenderscript UP-TO-DATE
+:Gpu-Image:generateReleaseBuildConfig UP-TO-DATE
+:Gpu-Image:generateReleaseAssets UP-TO-DATE
+:Gpu-Image:mergeReleaseAssets UP-TO-DATE
+:Gpu-Image:generateReleaseResValues UP-TO-DATE
+:Gpu-Image:generateReleaseResources UP-TO-DATE
+:Gpu-Image:packageReleaseResources UP-TO-DATE
+:Gpu-Image:processReleaseManifest UP-TO-DATE
+:Gpu-Image:processReleaseResources UP-TO-DATE
+:Gpu-Image:generateReleaseSources UP-TO-DATE
+:Gpu-Image:processReleaseJavaRes UP-TO-DATE
+:Gpu-Image:compileReleaseJava UP-TO-DATE
+:Gpu-Image:packageReleaseJar UP-TO-DATE
+:Gpu-Image:compileReleaseNdk UP-TO-DATE
+:Gpu-Image:packageReleaseJniLibs UP-TO-DATE
+:Gpu-Image:packageReleaseLocalJar UP-TO-DATE
+:Gpu-Image:packageReleaseRenderscript UP-TO-DATE
+:Gpu-Image:bundleRelease UP-TO-DATE
+:ImageViewTouch:compileLint
+:ImageViewTouch:copyReleaseLint UP-TO-DATE
+:ImageViewTouch:preBuild UP-TO-DATE
+:ImageViewTouch:preReleaseBuild UP-TO-DATE
+:ImageViewTouch:checkReleaseManifest
+:ImageViewTouch:preDebugAndroidTestBuild UP-TO-DATE
+:ImageViewTouch:preDebugBuild UP-TO-DATE
+:ImageViewTouch:preDebugUnitTestBuild UP-TO-DATE
+:ImageViewTouch:preReleaseUnitTestBuild UP-TO-DATE
+:ImageViewTouch:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:ImageViewTouch:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:ImageViewTouch:prepareReleaseDependencies
+:ImageViewTouch:compileReleaseAidl UP-TO-DATE
+:ImageViewTouch:compileReleaseRenderscript UP-TO-DATE
+:ImageViewTouch:generateReleaseBuildConfig UP-TO-DATE
+:ImageViewTouch:generateReleaseAssets UP-TO-DATE
+:ImageViewTouch:mergeReleaseAssets UP-TO-DATE
+:ImageViewTouch:generateReleaseResValues UP-TO-DATE
+:ImageViewTouch:generateReleaseResources UP-TO-DATE
+:ImageViewTouch:mergeReleaseResources UP-TO-DATE
+:ImageViewTouch:processReleaseManifest UP-TO-DATE
+:ImageViewTouch:processReleaseResources UP-TO-DATE
+:ImageViewTouch:generateReleaseSources UP-TO-DATE
+:ImageViewTouch:processReleaseJavaRes UP-TO-DATE
+:ImageViewTouch:compileReleaseJava UP-TO-DATE
+:ImageViewTouch:extractReleaseAnnotations UP-TO-DATE
+:ImageViewTouch:mergeReleaseProguardFiles UP-TO-DATE
+:ImageViewTouch:packageReleaseJar UP-TO-DATE
+:ImageViewTouch:compileReleaseNdk UP-TO-DATE
+:ImageViewTouch:packageReleaseJniLibs UP-TO-DATE
+:ImageViewTouch:packageReleaseLocalJar UP-TO-DATE
+:ImageViewTouch:packageReleaseRenderscript UP-TO-DATE
+:ImageViewTouch:packageReleaseResources UP-TO-DATE
+:ImageViewTouch:bundleRelease UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportCardviewV72220Library
+:app:prepareComAndroidSupportRecyclerviewV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareComMelnykovFloatingactionbutton130Library
+:app:prepareComRengwuxianMaterialedittextLibrary213Library
+:app:prepareItSephirothAndroidLibraryHorizontallistviewHlistview122Library
+:app:prepareSrcGpuImageUnspecifiedLibrary
+:app:prepareSrcImageViewTouchUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/2185/src/app/build/intermediates/exploded-aar/it.sephiroth.android.library.horizontallistview/hlistview/1.2.2/res/drawable-xhdpi/hlv_overscroll_edge.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2185/src/app/build/intermediates/exploded-aar/it.sephiroth.android.library.horizontallistview/hlistview/1.2.2/res/drawable-ldpi/hlv_overscroll_edge.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2185/src/app/build/intermediates/exploded-aar/it.sephiroth.android.library.horizontallistview/hlistview/1.2.2/res/drawable-xhdpi/hlv_overscroll_glow.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileRetrolambdaDebug FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileRetrolambdaDebug'.
+> Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileRetrolambdaDebug'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultJavaExecAction.execute(DefaultJavaExecAction.java:31)
+	at org.gradle.api.internal.file.DefaultFileOperations.javaexec(DefaultFileOperations.java:148)
+	at org.gradle.api.internal.project.AbstractProject.javaexec(AbstractProject.java:779)
+	at org.gradle.api.internal.project.AbstractProject.javaexec(AbstractProject.java:775)
+	at org.gradle.api.Project$javaexec$11.call(Unknown Source)
+	at me.tatarka.RetrolambdaTask.execute(RetrolambdaTask.groovy:69)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:243)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:230)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 49 more
+
+
+BUILD FAILED
+
+Total time: 12.324 secs
+
+2018-04-03 12:47:22,724 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:47:22,724 INFO  SysUtils - Execute command: [/tmp/rdisk/2185/src/gradlew, -b, /tmp/rdisk/2185/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:47:29,652 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-03 12:47:29,652 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 12:47:29,652 INFO  SysUtils - Execute command: [/tmp/rdisk/2185/src/gradlew, -b, /tmp/rdisk/2185/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 12:48:09,700 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Gpu-Image:compileLint
+:Gpu-Image:copyDebugLint UP-TO-DATE
+:Gpu-Image:mergeDebugProguardFiles UP-TO-DATE
+:Gpu-Image:preBuild UP-TO-DATE
+:Gpu-Image:preDebugBuild UP-TO-DATE
+:Gpu-Image:checkDebugManifest
+:Gpu-Image:prepareDebugDependencies
+:Gpu-Image:compileDebugAidl UP-TO-DATE
+:Gpu-Image:compileDebugRenderscript UP-TO-DATE
+:Gpu-Image:generateDebugBuildConfig UP-TO-DATE
+:Gpu-Image:generateDebugAssets UP-TO-DATE
+:Gpu-Image:mergeDebugAssets UP-TO-DATE
+:Gpu-Image:generateDebugResValues UP-TO-DATE
+:Gpu-Image:generateDebugResources UP-TO-DATE
+:Gpu-Image:packageDebugResources UP-TO-DATE
+:Gpu-Image:processDebugManifest UP-TO-DATE
+:Gpu-Image:processDebugResources UP-TO-DATE
+:Gpu-Image:generateDebugSources UP-TO-DATE
+:Gpu-Image:processDebugJavaRes UP-TO-DATE
+:Gpu-Image:compileDebugJava UP-TO-DATE
+:Gpu-Image:packageDebugJar UP-TO-DATE
+:Gpu-Image:compileDebugNdk UP-TO-DATE
+:Gpu-Image:packageDebugJniLibs UP-TO-DATE
+:Gpu-Image:packageDebugLocalJar UP-TO-DATE
+:Gpu-Image:packageDebugRenderscript UP-TO-DATE
+:Gpu-Image:bundleDebug UP-TO-DATE
+:Gpu-Image:compileDebugSources UP-TO-DATE
+:Gpu-Image:assembleDebug UP-TO-DATE
+:Gpu-Image:copyReleaseLint UP-TO-DATE
+:Gpu-Image:mergeReleaseProguardFiles UP-TO-DATE
+:Gpu-Image:preReleaseBuild UP-TO-DATE
+:Gpu-Image:checkReleaseManifest
+:Gpu-Image:prepareReleaseDependencies
+:Gpu-Image:compileReleaseAidl UP-TO-DATE
+:Gpu-Image:compileReleaseRenderscript UP-TO-DATE
+:Gpu-Image:generateReleaseBuildConfig UP-TO-DATE
+:Gpu-Image:generateReleaseAssets UP-TO-DATE
+:Gpu-Image:mergeReleaseAssets UP-TO-DATE
+:Gpu-Image:generateReleaseResValues UP-TO-DATE
+:Gpu-Image:generateReleaseResources UP-TO-DATE
+:Gpu-Image:packageReleaseResources UP-TO-DATE
+:Gpu-Image:processReleaseManifest UP-TO-DATE
+:Gpu-Image:processReleaseResources UP-TO-DATE
+:Gpu-Image:generateReleaseSources UP-TO-DATE
+:Gpu-Image:processReleaseJavaRes UP-TO-DATE
+:Gpu-Image:compileReleaseJava UP-TO-DATE
+:Gpu-Image:packageReleaseJar UP-TO-DATE
+:Gpu-Image:compileReleaseNdk UP-TO-DATE
+:Gpu-Image:packageReleaseJniLibs UP-TO-DATE
+:Gpu-Image:packageReleaseLocalJar UP-TO-DATE
+:Gpu-Image:packageReleaseRenderscript UP-TO-DATE
+:Gpu-Image:bundleRelease UP-TO-DATE
+:Gpu-Image:compileReleaseSources UP-TO-DATE
+:Gpu-Image:assembleRelease UP-TO-DATE
+:Gpu-Image:assemble UP-TO-DATE
+:Gpu-Image:build
+:ImageViewTouch:compileLint
+:ImageViewTouch:copyDebugLint UP-TO-DATE
+:ImageViewTouch:preBuild UP-TO-DATE
+:ImageViewTouch:preDebugBuild UP-TO-DATE
+:ImageViewTouch:checkDebugManifest
+:ImageViewTouch:preDebugAndroidTestBuild UP-TO-DATE
+:ImageViewTouch:preDebugUnitTestBuild UP-TO-DATE
+:ImageViewTouch:preReleaseBuild UP-TO-DATE
+:ImageViewTouch:preReleaseUnitTestBuild UP-TO-DATE
+:ImageViewTouch:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:ImageViewTouch:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:ImageViewTouch:prepareDebugDependencies
+:ImageViewTouch:compileDebugAidl UP-TO-DATE
+:ImageViewTouch:compileDebugRenderscript UP-TO-DATE
+:ImageViewTouch:generateDebugBuildConfig UP-TO-DATE
+:ImageViewTouch:generateDebugAssets UP-TO-DATE
+:ImageViewTouch:mergeDebugAssets UP-TO-DATE
+:ImageViewTouch:generateDebugResValues UP-TO-DATE
+:ImageViewTouch:generateDebugResources UP-TO-DATE
+:ImageViewTouch:mergeDebugResources UP-TO-DATE
+:ImageViewTouch:processDebugManifest UP-TO-DATE
+:ImageViewTouch:processDebugResources UP-TO-DATE
+:ImageViewTouch:generateDebugSources UP-TO-DATE
+:ImageViewTouch:processDebugJavaRes UP-TO-DATE
+:ImageViewTouch:compileDebugJava UP-TO-DATE
+:ImageViewTouch:extractDebugAnnotations UP-TO-DATE
+:ImageViewTouch:mergeDebugProguardFiles UP-TO-DATE
+:ImageViewTouch:packageDebugJar UP-TO-DATE
+:ImageViewTouch:compileDebugNdk UP-TO-DATE
+:ImageViewTouch:packageDebugJniLibs UP-TO-DATE
+:ImageViewTouch:packageDebugLocalJar UP-TO-DATE
+:ImageViewTouch:packageDebugRenderscript UP-TO-DATE
+:ImageViewTouch:packageDebugResources UP-TO-DATE
+:ImageViewTouch:bundleDebug UP-TO-DATE
+:ImageViewTouch:compileDebugSources UP-TO-DATE
+:ImageViewTouch:assembleDebug UP-TO-DATE
+:ImageViewTouch:copyReleaseLint UP-TO-DATE
+:ImageViewTouch:checkReleaseManifest
+:ImageViewTouch:prepareReleaseDependencies
+:ImageViewTouch:compileReleaseAidl UP-TO-DATE
+:ImageViewTouch:compileReleaseRenderscript UP-TO-DATE
+:ImageViewTouch:generateReleaseBuildConfig UP-TO-DATE
+:ImageViewTouch:generateReleaseAssets UP-TO-DATE
+:ImageViewTouch:mergeReleaseAssets UP-TO-DATE
+:ImageViewTouch:generateReleaseResValues UP-TO-DATE
+:ImageViewTouch:generateReleaseResources UP-TO-DATE
+:ImageViewTouch:mergeReleaseResources UP-TO-DATE
+:ImageViewTouch:processReleaseManifest UP-TO-DATE
+:ImageViewTouch:processReleaseResources UP-TO-DATE
+:ImageViewTouch:generateReleaseSources UP-TO-DATE
+:ImageViewTouch:processReleaseJavaRes UP-TO-DATE
+:ImageViewTouch:compileReleaseJava UP-TO-DATE
+:ImageViewTouch:extractReleaseAnnotations UP-TO-DATE
+:ImageViewTouch:mergeReleaseProguardFiles UP-TO-DATE
+:ImageViewTouch:packageReleaseJar UP-TO-DATE
+:ImageViewTouch:compileReleaseNdk UP-TO-DATE
+:ImageViewTouch:packageReleaseJniLibs UP-TO-DATE
+:ImageViewTouch:packageReleaseLocalJar UP-TO-DATE
+:ImageViewTouch:packageReleaseRenderscript UP-TO-DATE
+:ImageViewTouch:packageReleaseResources UP-TO-DATE
+:ImageViewTouch:bundleRelease UP-TO-DATE
+:ImageViewTouch:compileReleaseSources UP-TO-DATE
+:ImageViewTouch:assembleRelease UP-TO-DATE
+:ImageViewTouch:assemble UP-TO-DATE
+:ImageViewTouch:build
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:app:prepareComAndroidSupportCardviewV72220Library UP-TO-DATE
+:app:prepareComAndroidSupportRecyclerviewV72220Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:app:prepareComMelnykovFloatingactionbutton130Library UP-TO-DATE
+:app:prepareComRengwuxianMaterialedittextLibrary213Library UP-TO-DATE
+:app:prepareItSephirothAndroidLibraryHorizontallistviewHlistview122Library UP-TO-DATE
+:app:prepareSrcGpuImageUnspecifiedLibrary UP-TO-DATE
+:app:prepareSrcImageViewTouchUnspecifiedLibrary UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:compileRetrolambdaDebug
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources UP-TO-DATE
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/2185/src/app/build/intermediates/exploded-aar/it.sephiroth.android.library.horizontallistview/hlistview/1.2.2/res/drawable-ldpi/hlv_overscroll_edge.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2185/src/app/build/intermediates/exploded-aar/it.sephiroth.android.library.horizontallistview/hlistview/1.2.2/res/drawable-xhdpi/hlv_overscroll_edge.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2185/src/app/build/intermediates/exploded-aar/it.sephiroth.android.library.horizontallistview/hlistview/1.2.2/res/drawable-xhdpi/hlv_overscroll_glow.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileRetrolambdaRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalReleaseFailed converting ECJ parse tree to Lombok for file /tmp/rdisk/2185/src/app/src/main/java/com/stickercamera/app/ui/MainActivity.java
+java.lang.UnsupportedOperationException: Unknown ASTNode child: LambdaExpression
+	at lombok.ast.ecj.EcjTreeVisitor.visitOther(EcjTreeVisitor.java:368)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:364)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMessageSend(EcjTreeConverter.java:1042)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:156)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.toBlock(EcjTreeConverter.java:397)
+	at lombok.ast.ecj.EcjTreeConverter.access$1500(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMethodDeclaration(EcjTreeConverter.java:1241)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:152)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.createNormalTypeBody(EcjTreeConverter.java:563)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitTypeDeclaration(EcjTreeConverter.java:486)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:48)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitCompilationUnitDeclaration(EcjTreeConverter.java:441)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:264)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at com.android.tools.lint.EcjParser.parseJava(EcjParser.java:411)
+	at com.android.tools.lint.client.api.JavaVisitor.visitFile(JavaVisitor.java:236)
+	at com.android.tools.lint.client.api.LintDriver.checkJava(LintDriver.java:1491)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1026)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:882)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:433)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:374)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:129)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:112)
+	at com.android.build.gradle.internal.LintGradleClient$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at com.android.build.gradle.tasks.Lint.runLint(Lint.groovy:198)
+	at com.android.build.gradle.tasks.Lint.this$4$runLint(Lint.groovy)
+	at com.android.build.gradle.tasks.Lint$this$4$runLint$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+	at com.android.build.gradle.tasks.Lint.lintSingleVariant(Lint.groovy:173)
+	at com.android.build.gradle.tasks.Lint$lintSingleVariant$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Failed converting ECJ parse tree to Lombok for file /tmp/rdisk/2185/src/app/src/main/java/com/stickercamera/app/camera/ui/PhotoProcessActivity.java
+java.lang.UnsupportedOperationException: Unknown ASTNode child: LambdaExpression
+	at lombok.ast.ecj.EcjTreeVisitor.visitOther(EcjTreeVisitor.java:368)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:364)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMessageSend(EcjTreeConverter.java:1042)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:156)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.toBlock(EcjTreeConverter.java:397)
+	at lombok.ast.ecj.EcjTreeConverter.access$1500(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMethodDeclaration(EcjTreeConverter.java:1241)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:152)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.createNormalTypeBody(EcjTreeConverter.java:563)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitTypeDeclaration(EcjTreeConverter.java:486)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:48)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitCompilationUnitDeclaration(EcjTreeConverter.java:441)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:264)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at com.android.tools.lint.EcjParser.parseJava(EcjParser.java:411)
+	at com.android.tools.lint.client.api.JavaVisitor.visitFile(JavaVisitor.java:236)
+	at com.android.tools.lint.client.api.LintDriver.checkJava(LintDriver.java:1491)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1026)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:882)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:433)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:374)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:129)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:112)
+	at com.android.build.gradle.internal.LintGradleClient$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at com.android.build.gradle.tasks.Lint.runLint(Lint.groovy:198)
+	at com.android.build.gradle.tasks.Lint.this$4$runLint(Lint.groovy)
+	at com.android.build.gradle.tasks.Lint$this$4$runLint$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+	at com.android.build.gradle.tasks.Lint.lintSingleVariant(Lint.groovy:173)
+	at com.android.build.gradle.tasks.Lint$lintSingleVariant$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Failed converting ECJ parse tree to Lombok for file /tmp/rdisk/2185/src/app/src/main/java/com/stickercamera/app/camera/ui/CropPhotoActivity.java
+java.lang.UnsupportedOperationException: Unknown ASTNode child: LambdaExpression
+	at lombok.ast.ecj.EcjTreeVisitor.visitOther(EcjTreeVisitor.java:368)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:364)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMessageSend(EcjTreeConverter.java:1042)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:156)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.toBlock(EcjTreeConverter.java:397)
+	at lombok.ast.ecj.EcjTreeConverter.access$1500(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMethodDeclaration(EcjTreeConverter.java:1241)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:152)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.createNormalTypeBody(EcjTreeConverter.java:563)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitTypeDeclaration(EcjTreeConverter.java:486)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:48)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitCompilationUnitDeclaration(EcjTreeConverter.java:441)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:264)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at com.android.tools.lint.EcjParser.parseJava(EcjParser.java:411)
+	at com.android.tools.lint.client.api.JavaVisitor.visitFile(JavaVisitor.java:236)
+	at com.android.tools.lint.client.api.LintDriver.checkJava(LintDriver.java:1491)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1026)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:882)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:433)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:374)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:129)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:112)
+	at com.android.build.gradle.internal.LintGradleClient$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at com.android.build.gradle.tasks.Lint.runLint(Lint.groovy:198)
+	at com.android.build.gradle.tasks.Lint.this$4$runLint(Lint.groovy)
+	at com.android.build.gradle.tasks.Lint$this$4$runLint$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+	at com.android.build.gradle.tasks.Lint.lintSingleVariant(Lint.groovy:173)
+	at com.android.build.gradle.tasks.Lint$lintSingleVariant$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Failed converting ECJ parse tree to Lombok for file /tmp/rdisk/2185/src/app/src/main/java/com/stickercamera/app/camera/ui/CameraActivity.java
+java.lang.UnsupportedOperationException: Unknown ASTNode child: LambdaExpression
+	at lombok.ast.ecj.EcjTreeVisitor.visitOther(EcjTreeVisitor.java:368)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:364)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMessageSend(EcjTreeConverter.java:1042)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:156)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.toBlock(EcjTreeConverter.java:397)
+	at lombok.ast.ecj.EcjTreeConverter.access$1500(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMethodDeclaration(EcjTreeConverter.java:1241)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:152)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.createNormalTypeBody(EcjTreeConverter.java:563)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitTypeDeclaration(EcjTreeConverter.java:486)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:48)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:141)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitCompilationUnitDeclaration(EcjTreeConverter.java:441)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:264)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+	at com.android.tools.lint.EcjParser.parseJava(EcjParser.java:411)
+	at com.android.tools.lint.client.api.JavaVisitor.visitFile(JavaVisitor.java:236)
+	at com.android.tools.lint.client.api.LintDriver.checkJava(LintDriver.java:1491)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1026)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:882)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:433)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:374)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:129)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:112)
+	at com.android.build.gradle.internal.LintGradleClient$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at com.android.build.gradle.tasks.Lint.runLint(Lint.groovy:198)
+	at com.android.build.gradle.tasks.Lint.this$4$runLint(Lint.groovy)
+	at com.android.build.gradle.tasks.Lint$this$4$runLint$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+	at com.android.build.gradle.tasks.Lint.lintSingleVariant(Lint.groovy:173)
+	at com.android.build.gradle.tasks.Lint$lintSingleVariant$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 39.608 secs
+
+2018-04-03 12:48:09,791 INFO  FullProcessService - Found APK file: /tmp/rdisk/2185/src/app/build/outputs/apk/app-debug.apk

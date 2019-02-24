@@ -1,0 +1,9 @@
+2018-04-03 12:50:58,565 INFO  DownloadService - Downloading "https://github.com/iammert/RadioPlayerService/archive/master.zip", attempt 3
+2018-04-03 12:50:58,566 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 12:50:58,961 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 12:50:58,961 INFO  DownloadService - Downloading "https://github.com/iammert/RadioPlayerService/archive/master.zip", attempt 3
+2018-04-03 12:50:58,965 DEBUG FullProcessService - Repository https://github.com/iammert/RadioPlayerService available: false
+2018-04-03 12:50:58,966 ERROR FullProcessService - Could not find directory with sources
+2018-04-03 12:50:58,966 ERROR FullProcessService - Project will not be processed
+2018-04-03 12:50:58,966 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 12:50:58,966 ERROR FullProcessService - Could not find generated or existed APK file

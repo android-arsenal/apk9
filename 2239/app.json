@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.facebook.device.yearclass.sample",
+    "label" : "YearClass Sample",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "11",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 15,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.facebook.device.yearclass.sample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"11\" android:targetSdkVersion=\"25\" />\n\t<application android:label=\"YearClass Sample\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"YearClass Sample\" android:name=\"com.facebook.device.yearclass.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 30704,
+  "crc32" : 1479278334,
+  "sha256" : "f1a46249e5929766c84578e57726a43751e39b77395a8be87a9d293db8be9c2f",
+  "buildTime" : 1523715181000
+}

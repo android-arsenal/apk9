@@ -1,0 +1,2194 @@
+2018-04-03 19:26:22,321 INFO  DownloadService - Downloading "https://github.com/williamwebb/debugdrawer/archive/master.zip", attempt 3
+2018-04-03 19:27:22,891 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 19:27:23,831 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 19:27:23,831 INFO  DownloadService - Downloading "https://github.com/williamwebb/debugdrawer/archive/master.zip", attempt 3
+2018-04-03 19:28:30,196 DEBUG FullProcessService - Repository https://github.com/williamwebb/debugdrawer available: true
+2018-04-03 19:28:30,196 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 19:28:30,196 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/williamwebb/debugdrawer, /tmp/rdisk/2109/src]
+2018-04-03 19:28:34,485 INFO  SysUtils - 
+2018-04-03 19:28:34,495 INFO  GitService - Deleted "/tmp/rdisk/2109/src/.git": true
+2018-04-03 19:28:34,504 INFO  FullProcessService - Size of directory with sources: 10 MB
+2018-04-03 19:28:34,504 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2109/src]
+2018-04-03 19:28:34,509 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2109/src/.git/
+
+2018-04-03 19:28:34,516 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2109/src/gradlew
+2018-04-03 19:28:34,524 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2109/src/debugdrawer/build.gradle /tmp/rdisk/2109/src/modules/animation-speed-module/build.gradle /tmp/rdisk/2109/src/modules/build-module/build.gradle /tmp/rdisk/2109/src/modules/device-info-module/build.gradle /tmp/rdisk/2109/src/modules/leakcanary-module/build.gradle /tmp/rdisk/2109/src/modules/madge-module/build.gradle /tmp/rdisk/2109/src/modules/riseandshine-module/build.gradle /tmp/rdisk/2109/src/modules/scalpe-module/build.gradle /tmp/rdisk/2109/src/modules/telescope-module/build.gradle /tmp/rdisk/2109/src/modules/timber-module/build.gradle /tmp/rdisk/2109/src/sample/build.gradle /tmp/rdisk/2109/src/build.gradle /tmp/rdisk/2109/src/debugdrawer-noop/build.gradle /tmp/rdisk/2109/src/modules/build.gradle
+2018-04-03 19:28:34,531 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2109/src/settings.gradle /tmp/rdisk/2109/src/sample/build.gradle /tmp/rdisk/2109/src/modules/timber-module/build.gradle /tmp/rdisk/2109/src/modules/telescope-module/build.gradle /tmp/rdisk/2109/src/modules/scalpe-module/build.gradle /tmp/rdisk/2109/src/modules/riseandshine-module/build.gradle /tmp/rdisk/2109/src/modules/madge-module/build.gradle /tmp/rdisk/2109/src/modules/leakcanary-module/build.gradle /tmp/rdisk/2109/src/modules/device-info-module/build.gradle /tmp/rdisk/2109/src/modules/build.gradle /tmp/rdisk/2109/src/modules/build-module/build.gradle /tmp/rdisk/2109/src/modules/animation-speed-module/build.gradle /tmp/rdisk/2109/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2109/src/debugdrawer/build.gradle /tmp/rdisk/2109/src/debugdrawer-noop/build.gradle /tmp/rdisk/2109/src/build.gradle
+2018-04-03 19:28:34,532 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 19:28:34,532 INFO  ProjectFixService - Fixing project...
+2018-04-03 19:28:34,556 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/debugdrawer/local.properties
+2018-04-03 19:28:34,557 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/debugdrawer/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,557 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/modules/animation-speed-module/local.properties
+2018-04-03 19:28:34,557 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/modules/animation-speed-module/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,557 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/modules/build-module/local.properties
+2018-04-03 19:28:34,558 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/modules/build-module/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,558 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/modules/device-info-module/local.properties
+2018-04-03 19:28:34,558 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/modules/device-info-module/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,558 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/modules/leakcanary-module/local.properties
+2018-04-03 19:28:34,559 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/modules/leakcanary-module/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,559 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/modules/madge-module/local.properties
+2018-04-03 19:28:34,559 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/modules/madge-module/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,559 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/modules/riseandshine-module/local.properties
+2018-04-03 19:28:34,560 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/modules/riseandshine-module/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,560 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/modules/scalpe-module/local.properties
+2018-04-03 19:28:34,560 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/modules/scalpe-module/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,560 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/modules/telescope-module/local.properties
+2018-04-03 19:28:34,560 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/modules/telescope-module/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,561 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/modules/timber-module/local.properties
+2018-04-03 19:28:34,561 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/modules/timber-module/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,561 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/sample/local.properties
+2018-04-03 19:28:34,562 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/sample/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,562 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/local.properties
+2018-04-03 19:28:34,562 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.11-all.zip
+2018-04-03 19:28:34,562 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.11-bin.zip)
+2018-04-03 19:28:34,563 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,564 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/debugdrawer-noop/local.properties
+2018-04-03 19:28:34,564 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/debugdrawer-noop/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,568 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2109/src/modules/local.properties
+2018-04-03 19:28:34,568 INFO  ProjectFixService - Build info for "/tmp/rdisk/2109/src/modules/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-03 19:28:34,568 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 19:28:34,568 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:28:34,569 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/debugdrawer/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:29:03,386 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:29:03,387 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:29:03,387 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:29:03,387 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/debugdrawer/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:29:28,584 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:debugdrawer:androidSourcesJar
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:compileDebugNdk UP-TO-DATE
+:debugdrawer:compileLint
+:debugdrawer:copyDebugLint UP-TO-DATE
+:debugdrawer:checkDebugManifest
+:debugdrawer:preDebugAndroidTestBuild UP-TO-DATE
+:debugdrawer:preDebugUnitTestBuild UP-TO-DATE
+:debugdrawer:preReleaseBuild UP-TO-DATE
+:debugdrawer:preReleaseUnitTestBuild UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportAppcompatV72320Library
+:debugdrawer:prepareComAndroidSupportDesign2320Library
+:debugdrawer:prepareComAndroidSupportSupportV42320Library
+:debugdrawer:prepareComJug6ernautSaberSaberRuntime060Library
+:debugdrawer:prepareDebugDependencies
+:debugdrawer:compileDebugAidl
+:debugdrawer:compileDebugRenderscript
+:debugdrawer:generateDebugBuildConfig
+:debugdrawer:mergeDebugShaders
+:debugdrawer:compileDebugShaders
+:debugdrawer:generateDebugAssets
+:debugdrawer:mergeDebugAssets
+:debugdrawer:generateDebugResValues
+:debugdrawer:generateDebugResources
+:debugdrawer:mergeDebugResources
+:debugdrawer:processDebugManifest
+:debugdrawer:processDebugResources
+:debugdrawer:generateDebugSources
+:debugdrawer:incrementalDebugJavaCompilationSafeguard
+:debugdrawer:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:debugdrawer:extractDebugAnnotations
+:debugdrawer:mergeDebugProguardFiles
+:debugdrawer:packageDebugRenderscript UP-TO-DATE
+:debugdrawer:packageDebugResources
+:debugdrawer:processDebugJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForDebug
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForDebug
+:debugdrawer:mergeDebugJniLibFolders
+:debugdrawer:transformNative_libsWithMergeJniLibsForDebug
+:debugdrawer:transformNative_libsWithSyncJniLibsForDebug
+:debugdrawer:bundleDebug
+:debugdrawer:compileDebugSources
+:debugdrawer:assembleDebug
+:debugdrawer:compileReleaseNdk UP-TO-DATE
+:debugdrawer:copyReleaseLint UP-TO-DATE
+:debugdrawer:checkReleaseManifest
+:debugdrawer:prepareReleaseDependencies
+:debugdrawer:compileReleaseAidl
+:debugdrawer:compileReleaseRenderscript
+:debugdrawer:generateReleaseBuildConfig
+:debugdrawer:mergeReleaseShaders
+:debugdrawer:compileReleaseShaders
+:debugdrawer:generateReleaseAssets
+:debugdrawer:mergeReleaseAssets
+:debugdrawer:generateReleaseResValues
+:debugdrawer:generateReleaseResources
+:debugdrawer:mergeReleaseResources
+:debugdrawer:processReleaseManifest
+:debugdrawer:processReleaseResources
+:debugdrawer:generateReleaseSources
+:debugdrawer:incrementalReleaseJavaCompilationSafeguard
+:debugdrawer:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:debugdrawer:extractReleaseAnnotations
+:debugdrawer:mergeReleaseProguardFiles
+:debugdrawer:packageReleaseRenderscript UP-TO-DATE
+:debugdrawer:packageReleaseResources
+:debugdrawer:processReleaseJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForRelease
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForRelease
+:debugdrawer:mergeReleaseJniLibFolders
+:debugdrawer:transformNative_libsWithMergeJniLibsForRelease
+:debugdrawer:transformNative_libsWithSyncJniLibsForRelease
+:debugdrawer:bundleRelease
+:debugdrawer:compileReleaseSources
+:debugdrawer:assembleRelease
+:debugdrawer:signArchives SKIPPED
+:debugdrawer:assemble
+:debugdrawer:lint
+Ran lint on variant debug: 71 issues found
+Ran lint on variant release: 71 issues found
+Wrote HTML report to file:///tmp/rdisk/2109/src/debugdrawer/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2109/src/debugdrawer/build/outputs/lint-results-debug.xml
+:debugdrawer:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:prepareDebugUnitTestDependencies
+:debugdrawer:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:debugdrawer:processDebugUnitTestJavaRes UP-TO-DATE
+:debugdrawer:compileDebugUnitTestSources UP-TO-DATE
+:debugdrawer:mockableAndroidJar
+:debugdrawer:assembleDebugUnitTest
+:debugdrawer:testDebugUnitTest
+:debugdrawer:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:prepareReleaseUnitTestDependencies
+:debugdrawer:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:debugdrawer:processReleaseUnitTestJavaRes UP-TO-DATE
+:debugdrawer:compileReleaseUnitTestSources UP-TO-DATE
+:debugdrawer:assembleReleaseUnitTest
+:debugdrawer:testReleaseUnitTest
+:debugdrawer:test
+:debugdrawer:check
+:debugdrawer:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.711 secs
+
+2018-04-03 19:29:28,631 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:29:28,631 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/animation-speed-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:29:40,162 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:29:40,162 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:29:40,162 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:29:40,162 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/animation-speed-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:30:00,813 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:modules:animation-speed-module:androidSourcesJar
+:modules:animation-speed-module:preBuild UP-TO-DATE
+:modules:animation-speed-module:preDebugBuild UP-TO-DATE
+:modules:animation-speed-module:compileDebugNdk UP-TO-DATE
+:modules:animation-speed-module:compileLint
+:modules:animation-speed-module:copyDebugLint UP-TO-DATE
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preReleaseBuild UP-TO-DATE
+:debugdrawer:compileReleaseNdk UP-TO-DATE
+:debugdrawer:compileLint
+:debugdrawer:copyReleaseLint UP-TO-DATE
+:debugdrawer:checkReleaseManifest
+:debugdrawer:preDebugAndroidTestBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:preDebugUnitTestBuild UP-TO-DATE
+:debugdrawer:preReleaseUnitTestBuild UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:debugdrawer:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:debugdrawer:prepareReleaseDependencies
+:debugdrawer:compileReleaseAidl UP-TO-DATE
+:debugdrawer:compileReleaseRenderscript UP-TO-DATE
+:debugdrawer:generateReleaseBuildConfig UP-TO-DATE
+:debugdrawer:mergeReleaseShaders UP-TO-DATE
+:debugdrawer:compileReleaseShaders UP-TO-DATE
+:debugdrawer:generateReleaseAssets UP-TO-DATE
+:debugdrawer:mergeReleaseAssets UP-TO-DATE
+:debugdrawer:generateReleaseResValues UP-TO-DATE
+:debugdrawer:generateReleaseResources UP-TO-DATE
+:debugdrawer:mergeReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseManifest UP-TO-DATE
+:debugdrawer:processReleaseResources UP-TO-DATE
+:debugdrawer:generateReleaseSources UP-TO-DATE
+:debugdrawer:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:debugdrawer:extractReleaseAnnotations UP-TO-DATE
+:debugdrawer:mergeReleaseProguardFiles UP-TO-DATE
+:debugdrawer:packageReleaseRenderscript UP-TO-DATE
+:debugdrawer:packageReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForRelease
+:debugdrawer:mergeReleaseJniLibFolders UP-TO-DATE
+:debugdrawer:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:debugdrawer:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:debugdrawer:bundleRelease
+:modules:animation-speed-module:checkDebugManifest
+:modules:animation-speed-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:animation-speed-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:animation-speed-module:preReleaseBuild UP-TO-DATE
+:modules:animation-speed-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:animation-speed-module:prepareComAndroidSupportAppcompatV72320Library
+:modules:animation-speed-module:prepareComAndroidSupportDesign2320Library
+:modules:animation-speed-module:prepareComAndroidSupportSupportV42320Library
+:modules:animation-speed-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library
+:modules:animation-speed-module:prepareComJug6ernautSaberSaberRuntime060Library
+:modules:animation-speed-module:prepareDebugDependencies
+:modules:animation-speed-module:compileDebugAidl
+:modules:animation-speed-module:compileDebugRenderscript
+:modules:animation-speed-module:generateDebugBuildConfig
+:modules:animation-speed-module:mergeDebugShaders
+:modules:animation-speed-module:compileDebugShaders
+:modules:animation-speed-module:generateDebugAssets
+:modules:animation-speed-module:mergeDebugAssets
+:modules:animation-speed-module:generateDebugResValues
+:modules:animation-speed-module:generateDebugResources
+:modules:animation-speed-module:mergeDebugResources
+:modules:animation-speed-module:processDebugManifest
+:modules:animation-speed-module:processDebugResources
+:modules:animation-speed-module:generateDebugSources
+:modules:animation-speed-module:incrementalDebugJavaCompilationSafeguard
+:modules:animation-speed-module:compileDebugJavaWithJavac
+:modules:animation-speed-module:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:animation-speed-module:extractDebugAnnotations
+:modules:animation-speed-module:mergeDebugProguardFiles
+:modules:animation-speed-module:packageDebugRenderscript UP-TO-DATE
+:modules:animation-speed-module:packageDebugResources
+:modules:animation-speed-module:processDebugJavaRes UP-TO-DATE
+:modules:animation-speed-module:transformResourcesWithMergeJavaResForDebug
+:modules:animation-speed-module:transformClassesAndResourcesWithSyncLibJarsForDebug
+:modules:animation-speed-module:mergeDebugJniLibFolders
+:modules:animation-speed-module:transformNative_libsWithMergeJniLibsForDebug
+:modules:animation-speed-module:transformNative_libsWithSyncJniLibsForDebug
+:modules:animation-speed-module:bundleDebug
+:modules:animation-speed-module:compileDebugSources
+:modules:animation-speed-module:assembleDebug
+:modules:animation-speed-module:compileReleaseNdk UP-TO-DATE
+:modules:animation-speed-module:copyReleaseLint UP-TO-DATE
+:modules:animation-speed-module:checkReleaseManifest
+:modules:animation-speed-module:prepareReleaseDependencies
+:modules:animation-speed-module:compileReleaseAidl
+:modules:animation-speed-module:compileReleaseRenderscript
+:modules:animation-speed-module:generateReleaseBuildConfig
+:modules:animation-speed-module:mergeReleaseShaders
+:modules:animation-speed-module:compileReleaseShaders
+:modules:animation-speed-module:generateReleaseAssets
+:modules:animation-speed-module:mergeReleaseAssets
+:modules:animation-speed-module:generateReleaseResValues
+:modules:animation-speed-module:generateReleaseResources
+:modules:animation-speed-module:mergeReleaseResources
+:modules:animation-speed-module:processReleaseManifest
+:modules:animation-speed-module:processReleaseResources
+:modules:animation-speed-module:generateReleaseSources
+:modules:animation-speed-module:incrementalReleaseJavaCompilationSafeguard
+:modules:animation-speed-module:compileReleaseJavaWithJavac
+:modules:animation-speed-module:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:animation-speed-module:extractReleaseAnnotations
+:modules:animation-speed-module:mergeReleaseProguardFiles
+:modules:animation-speed-module:packageReleaseRenderscript UP-TO-DATE
+:modules:animation-speed-module:packageReleaseResources
+:modules:animation-speed-module:processReleaseJavaRes UP-TO-DATE
+:modules:animation-speed-module:transformResourcesWithMergeJavaResForRelease
+:modules:animation-speed-module:transformClassesAndResourcesWithSyncLibJarsForRelease
+:modules:animation-speed-module:mergeReleaseJniLibFolders
+:modules:animation-speed-module:transformNative_libsWithMergeJniLibsForRelease
+:modules:animation-speed-module:transformNative_libsWithSyncJniLibsForRelease
+:modules:animation-speed-module:bundleRelease
+:modules:animation-speed-module:compileReleaseSources
+:modules:animation-speed-module:assembleRelease
+:modules:animation-speed-module:signArchives SKIPPED
+:modules:animation-speed-module:assemble
+:modules:animation-speed-module:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:///tmp/rdisk/2109/src/modules/animation-speed-module/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2109/src/modules/animation-speed-module/build/outputs/lint-results-debug.xml
+:modules:animation-speed-module:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:animation-speed-module:prepareDebugUnitTestDependencies
+:modules:animation-speed-module:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:modules:animation-speed-module:processDebugUnitTestJavaRes UP-TO-DATE
+:modules:animation-speed-module:compileDebugUnitTestSources UP-TO-DATE
+:modules:animation-speed-module:mockableAndroidJar
+:modules:animation-speed-module:assembleDebugUnitTest
+:modules:animation-speed-module:testDebugUnitTest
+:modules:animation-speed-module:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:animation-speed-module:prepareReleaseUnitTestDependencies
+:modules:animation-speed-module:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:modules:animation-speed-module:processReleaseUnitTestJavaRes UP-TO-DATE
+:modules:animation-speed-module:compileReleaseUnitTestSources UP-TO-DATE
+:modules:animation-speed-module:assembleReleaseUnitTest
+:modules:animation-speed-module:testReleaseUnitTest
+:modules:animation-speed-module:test
+:modules:animation-speed-module:check
+:modules:animation-speed-module:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.218 secs
+
+2018-04-03 19:30:00,928 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:30:00,929 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/build-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:30:12,170 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:30:12,170 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:30:12,170 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:30:12,170 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/build-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:30:31,047 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:modules:build-module:androidSourcesJar
+:modules:build-module:preBuild UP-TO-DATE
+:modules:build-module:preDebugBuild UP-TO-DATE
+:modules:build-module:compileDebugNdk UP-TO-DATE
+:modules:build-module:compileLint
+:modules:build-module:copyDebugLint UP-TO-DATE
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preReleaseBuild UP-TO-DATE
+:debugdrawer:compileReleaseNdk UP-TO-DATE
+:debugdrawer:compileLint
+:debugdrawer:copyReleaseLint UP-TO-DATE
+:debugdrawer:checkReleaseManifest
+:debugdrawer:preDebugAndroidTestBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:preDebugUnitTestBuild UP-TO-DATE
+:debugdrawer:preReleaseUnitTestBuild UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:debugdrawer:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:debugdrawer:prepareReleaseDependencies
+:debugdrawer:compileReleaseAidl UP-TO-DATE
+:debugdrawer:compileReleaseRenderscript UP-TO-DATE
+:debugdrawer:generateReleaseBuildConfig UP-TO-DATE
+:debugdrawer:mergeReleaseShaders UP-TO-DATE
+:debugdrawer:compileReleaseShaders UP-TO-DATE
+:debugdrawer:generateReleaseAssets UP-TO-DATE
+:debugdrawer:mergeReleaseAssets UP-TO-DATE
+:debugdrawer:generateReleaseResValues UP-TO-DATE
+:debugdrawer:generateReleaseResources UP-TO-DATE
+:debugdrawer:mergeReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseManifest UP-TO-DATE
+:debugdrawer:processReleaseResources UP-TO-DATE
+:debugdrawer:generateReleaseSources UP-TO-DATE
+:debugdrawer:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:compileReleaseJavaWithJavac UP-TO-DATE
+:debugdrawer:extractReleaseAnnotations UP-TO-DATE
+:debugdrawer:mergeReleaseProguardFiles UP-TO-DATE
+:debugdrawer:packageReleaseRenderscript UP-TO-DATE
+:debugdrawer:packageReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:debugdrawer:mergeReleaseJniLibFolders UP-TO-DATE
+:debugdrawer:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:debugdrawer:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:debugdrawer:bundleRelease UP-TO-DATE
+:modules:build-module:checkDebugManifest
+:modules:build-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:build-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:build-module:preReleaseBuild UP-TO-DATE
+:modules:build-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:build-module:prepareComAndroidSupportAppcompatV72320Library
+:modules:build-module:prepareComAndroidSupportDesign2320Library
+:modules:build-module:prepareComAndroidSupportSupportV42320Library
+:modules:build-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library
+:modules:build-module:prepareComJug6ernautSaberSaberRuntime060Library
+:modules:build-module:prepareDebugDependencies
+:modules:build-module:compileDebugAidl
+:modules:build-module:compileDebugRenderscript
+:modules:build-module:generateDebugBuildConfig
+:modules:build-module:mergeDebugShaders
+:modules:build-module:compileDebugShaders
+:modules:build-module:generateDebugAssets
+:modules:build-module:mergeDebugAssets
+:modules:build-module:generateDebugResValues
+:modules:build-module:generateDebugResources
+:modules:build-module:mergeDebugResources
+:modules:build-module:processDebugManifest
+:modules:build-module:processDebugResources
+:modules:build-module:generateDebugSources
+:modules:build-module:incrementalDebugJavaCompilationSafeguard
+:modules:build-module:compileDebugJavaWithJavac
+:modules:build-module:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:build-module:extractDebugAnnotations
+:modules:build-module:mergeDebugProguardFiles
+:modules:build-module:packageDebugRenderscript UP-TO-DATE
+:modules:build-module:packageDebugResources
+:modules:build-module:processDebugJavaRes UP-TO-DATE
+:modules:build-module:transformResourcesWithMergeJavaResForDebug
+:modules:build-module:transformClassesAndResourcesWithSyncLibJarsForDebug
+:modules:build-module:mergeDebugJniLibFolders
+:modules:build-module:transformNative_libsWithMergeJniLibsForDebug
+:modules:build-module:transformNative_libsWithSyncJniLibsForDebug
+:modules:build-module:bundleDebug
+:modules:build-module:compileDebugSources
+:modules:build-module:assembleDebug
+:modules:build-module:compileReleaseNdk UP-TO-DATE
+:modules:build-module:copyReleaseLint UP-TO-DATE
+:modules:build-module:checkReleaseManifest
+:modules:build-module:prepareReleaseDependencies
+:modules:build-module:compileReleaseAidl
+:modules:build-module:compileReleaseRenderscript
+:modules:build-module:generateReleaseBuildConfig
+:modules:build-module:mergeReleaseShaders
+:modules:build-module:compileReleaseShaders
+:modules:build-module:generateReleaseAssets
+:modules:build-module:mergeReleaseAssets
+:modules:build-module:generateReleaseResValues
+:modules:build-module:generateReleaseResources
+:modules:build-module:mergeReleaseResources
+:modules:build-module:processReleaseManifest
+:modules:build-module:processReleaseResources
+:modules:build-module:generateReleaseSources
+:modules:build-module:incrementalReleaseJavaCompilationSafeguard
+:modules:build-module:compileReleaseJavaWithJavac
+:modules:build-module:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:build-module:extractReleaseAnnotations
+:modules:build-module:mergeReleaseProguardFiles
+:modules:build-module:packageReleaseRenderscript UP-TO-DATE
+:modules:build-module:packageReleaseResources
+:modules:build-module:processReleaseJavaRes UP-TO-DATE
+:modules:build-module:transformResourcesWithMergeJavaResForRelease
+:modules:build-module:transformClassesAndResourcesWithSyncLibJarsForRelease
+:modules:build-module:mergeReleaseJniLibFolders
+:modules:build-module:transformNative_libsWithMergeJniLibsForRelease
+:modules:build-module:transformNative_libsWithSyncJniLibsForRelease
+:modules:build-module:bundleRelease
+:modules:build-module:compileReleaseSources
+:modules:build-module:assembleRelease
+:modules:build-module:signArchives SKIPPED
+:modules:build-module:assemble
+:modules:build-module:lint
+Ran lint on variant debug: 4 issues found
+Ran lint on variant release: 4 issues found
+Wrote HTML report to file:///tmp/rdisk/2109/src/modules/build-module/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2109/src/modules/build-module/build/outputs/lint-results-debug.xml
+:modules:build-module:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:build-module:prepareDebugUnitTestDependencies
+:modules:build-module:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:modules:build-module:processDebugUnitTestJavaRes UP-TO-DATE
+:modules:build-module:compileDebugUnitTestSources UP-TO-DATE
+:modules:build-module:mockableAndroidJar
+:modules:build-module:assembleDebugUnitTest
+:modules:build-module:testDebugUnitTest
+:modules:build-module:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:build-module:prepareReleaseUnitTestDependencies
+:modules:build-module:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:modules:build-module:processReleaseUnitTestJavaRes UP-TO-DATE
+:modules:build-module:compileReleaseUnitTestSources UP-TO-DATE
+:modules:build-module:assembleReleaseUnitTest
+:modules:build-module:testReleaseUnitTest
+:modules:build-module:test
+:modules:build-module:check
+:modules:build-module:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.413 secs
+
+2018-04-03 19:30:31,202 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:30:31,202 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/device-info-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:30:40,421 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:30:40,421 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:30:40,421 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:30:40,421 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/device-info-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:30:59,029 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:modules:device-info-module:androidSourcesJar
+:modules:device-info-module:preBuild UP-TO-DATE
+:modules:device-info-module:preDebugBuild UP-TO-DATE
+:modules:device-info-module:compileDebugNdk UP-TO-DATE
+:modules:device-info-module:compileLint
+:modules:device-info-module:copyDebugLint UP-TO-DATE
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preReleaseBuild UP-TO-DATE
+:debugdrawer:compileReleaseNdk UP-TO-DATE
+:debugdrawer:compileLint
+:debugdrawer:copyReleaseLint UP-TO-DATE
+:debugdrawer:checkReleaseManifest
+:debugdrawer:preDebugAndroidTestBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:preDebugUnitTestBuild UP-TO-DATE
+:debugdrawer:preReleaseUnitTestBuild UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:debugdrawer:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:debugdrawer:prepareReleaseDependencies
+:debugdrawer:compileReleaseAidl UP-TO-DATE
+:debugdrawer:compileReleaseRenderscript UP-TO-DATE
+:debugdrawer:generateReleaseBuildConfig UP-TO-DATE
+:debugdrawer:mergeReleaseShaders UP-TO-DATE
+:debugdrawer:compileReleaseShaders UP-TO-DATE
+:debugdrawer:generateReleaseAssets UP-TO-DATE
+:debugdrawer:mergeReleaseAssets UP-TO-DATE
+:debugdrawer:generateReleaseResValues UP-TO-DATE
+:debugdrawer:generateReleaseResources UP-TO-DATE
+:debugdrawer:mergeReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseManifest UP-TO-DATE
+:debugdrawer:processReleaseResources UP-TO-DATE
+:debugdrawer:generateReleaseSources UP-TO-DATE
+:debugdrawer:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:compileReleaseJavaWithJavac UP-TO-DATE
+:debugdrawer:extractReleaseAnnotations UP-TO-DATE
+:debugdrawer:mergeReleaseProguardFiles UP-TO-DATE
+:debugdrawer:packageReleaseRenderscript UP-TO-DATE
+:debugdrawer:packageReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:debugdrawer:mergeReleaseJniLibFolders UP-TO-DATE
+:debugdrawer:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:debugdrawer:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:debugdrawer:bundleRelease UP-TO-DATE
+:modules:device-info-module:checkDebugManifest
+:modules:device-info-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:device-info-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:device-info-module:preReleaseBuild UP-TO-DATE
+:modules:device-info-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:device-info-module:prepareComAndroidSupportAppcompatV72320Library
+:modules:device-info-module:prepareComAndroidSupportDesign2320Library
+:modules:device-info-module:prepareComAndroidSupportSupportV42320Library
+:modules:device-info-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library
+:modules:device-info-module:prepareComJug6ernautSaberSaberRuntime060Library
+:modules:device-info-module:prepareDebugDependencies
+:modules:device-info-module:compileDebugAidl
+:modules:device-info-module:compileDebugRenderscript
+:modules:device-info-module:generateDebugBuildConfig
+:modules:device-info-module:mergeDebugShaders
+:modules:device-info-module:compileDebugShaders
+:modules:device-info-module:generateDebugAssets
+:modules:device-info-module:mergeDebugAssets
+:modules:device-info-module:generateDebugResValues
+:modules:device-info-module:generateDebugResources
+:modules:device-info-module:mergeDebugResources
+:modules:device-info-module:processDebugManifest
+:modules:device-info-module:processDebugResources
+:modules:device-info-module:generateDebugSources
+:modules:device-info-module:incrementalDebugJavaCompilationSafeguard
+:modules:device-info-module:compileDebugJavaWithJavac
+:modules:device-info-module:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:device-info-module:extractDebugAnnotations
+:modules:device-info-module:mergeDebugProguardFiles
+:modules:device-info-module:packageDebugRenderscript UP-TO-DATE
+:modules:device-info-module:packageDebugResources
+:modules:device-info-module:processDebugJavaRes UP-TO-DATE
+:modules:device-info-module:transformResourcesWithMergeJavaResForDebug
+:modules:device-info-module:transformClassesAndResourcesWithSyncLibJarsForDebug
+:modules:device-info-module:mergeDebugJniLibFolders
+:modules:device-info-module:transformNative_libsWithMergeJniLibsForDebug
+:modules:device-info-module:transformNative_libsWithSyncJniLibsForDebug
+:modules:device-info-module:bundleDebug
+:modules:device-info-module:compileDebugSources
+:modules:device-info-module:assembleDebug
+:modules:device-info-module:compileReleaseNdk UP-TO-DATE
+:modules:device-info-module:copyReleaseLint UP-TO-DATE
+:modules:device-info-module:checkReleaseManifest
+:modules:device-info-module:prepareReleaseDependencies
+:modules:device-info-module:compileReleaseAidl
+:modules:device-info-module:compileReleaseRenderscript
+:modules:device-info-module:generateReleaseBuildConfig
+:modules:device-info-module:mergeReleaseShaders
+:modules:device-info-module:compileReleaseShaders
+:modules:device-info-module:generateReleaseAssets
+:modules:device-info-module:mergeReleaseAssets
+:modules:device-info-module:generateReleaseResValues
+:modules:device-info-module:generateReleaseResources
+:modules:device-info-module:mergeReleaseResources
+:modules:device-info-module:processReleaseManifest
+:modules:device-info-module:processReleaseResources
+:modules:device-info-module:generateReleaseSources
+:modules:device-info-module:incrementalReleaseJavaCompilationSafeguard
+:modules:device-info-module:compileReleaseJavaWithJavac
+:modules:device-info-module:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:device-info-module:extractReleaseAnnotations
+:modules:device-info-module:mergeReleaseProguardFiles
+:modules:device-info-module:packageReleaseRenderscript UP-TO-DATE
+:modules:device-info-module:packageReleaseResources
+:modules:device-info-module:processReleaseJavaRes UP-TO-DATE
+:modules:device-info-module:transformResourcesWithMergeJavaResForRelease
+:modules:device-info-module:transformClassesAndResourcesWithSyncLibJarsForRelease
+:modules:device-info-module:mergeReleaseJniLibFolders
+:modules:device-info-module:transformNative_libsWithMergeJniLibsForRelease
+:modules:device-info-module:transformNative_libsWithSyncJniLibsForRelease
+:modules:device-info-module:bundleRelease
+:modules:device-info-module:compileReleaseSources
+:modules:device-info-module:assembleRelease
+:modules:device-info-module:signArchives SKIPPED
+:modules:device-info-module:assemble
+:modules:device-info-module:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:///tmp/rdisk/2109/src/modules/device-info-module/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2109/src/modules/device-info-module/build/outputs/lint-results-debug.xml
+:modules:device-info-module:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:device-info-module:prepareDebugUnitTestDependencies
+:modules:device-info-module:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:modules:device-info-module:processDebugUnitTestJavaRes UP-TO-DATE
+:modules:device-info-module:compileDebugUnitTestSources UP-TO-DATE
+:modules:device-info-module:mockableAndroidJar
+:modules:device-info-module:assembleDebugUnitTest
+:modules:device-info-module:testDebugUnitTest
+:modules:device-info-module:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:device-info-module:prepareReleaseUnitTestDependencies
+:modules:device-info-module:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:modules:device-info-module:processReleaseUnitTestJavaRes UP-TO-DATE
+:modules:device-info-module:compileReleaseUnitTestSources UP-TO-DATE
+:modules:device-info-module:assembleReleaseUnitTest
+:modules:device-info-module:testReleaseUnitTest
+:modules:device-info-module:test
+:modules:device-info-module:check
+:modules:device-info-module:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.183 secs
+
+2018-04-03 19:30:59,220 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:30:59,220 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/leakcanary-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:31:10,111 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:31:10,111 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:31:10,111 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:31:10,111 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/leakcanary-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:31:29,065 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:modules:leakcanary-module:androidSourcesJar
+:modules:leakcanary-module:preBuild UP-TO-DATE
+:modules:leakcanary-module:preDebugBuild UP-TO-DATE
+:modules:leakcanary-module:compileDebugNdk UP-TO-DATE
+:modules:leakcanary-module:compileLint
+:modules:leakcanary-module:copyDebugLint UP-TO-DATE
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preReleaseBuild UP-TO-DATE
+:debugdrawer:compileReleaseNdk UP-TO-DATE
+:debugdrawer:compileLint
+:debugdrawer:copyReleaseLint UP-TO-DATE
+:debugdrawer:checkReleaseManifest
+:debugdrawer:preDebugAndroidTestBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:preDebugUnitTestBuild UP-TO-DATE
+:debugdrawer:preReleaseUnitTestBuild UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:debugdrawer:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:debugdrawer:prepareReleaseDependencies
+:debugdrawer:compileReleaseAidl UP-TO-DATE
+:debugdrawer:compileReleaseRenderscript UP-TO-DATE
+:debugdrawer:generateReleaseBuildConfig UP-TO-DATE
+:debugdrawer:mergeReleaseShaders UP-TO-DATE
+:debugdrawer:compileReleaseShaders UP-TO-DATE
+:debugdrawer:generateReleaseAssets UP-TO-DATE
+:debugdrawer:mergeReleaseAssets UP-TO-DATE
+:debugdrawer:generateReleaseResValues UP-TO-DATE
+:debugdrawer:generateReleaseResources UP-TO-DATE
+:debugdrawer:mergeReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseManifest UP-TO-DATE
+:debugdrawer:processReleaseResources UP-TO-DATE
+:debugdrawer:generateReleaseSources UP-TO-DATE
+:debugdrawer:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:compileReleaseJavaWithJavac UP-TO-DATE
+:debugdrawer:extractReleaseAnnotations UP-TO-DATE
+:debugdrawer:mergeReleaseProguardFiles UP-TO-DATE
+:debugdrawer:packageReleaseRenderscript UP-TO-DATE
+:debugdrawer:packageReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:debugdrawer:mergeReleaseJniLibFolders UP-TO-DATE
+:debugdrawer:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:debugdrawer:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:debugdrawer:bundleRelease UP-TO-DATE
+:modules:leakcanary-module:checkDebugManifest
+:modules:leakcanary-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:leakcanary-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:leakcanary-module:preReleaseBuild UP-TO-DATE
+:modules:leakcanary-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:leakcanary-module:prepareComAndroidSupportAppcompatV72320Library
+:modules:leakcanary-module:prepareComAndroidSupportDesign2320Library
+:modules:leakcanary-module:prepareComAndroidSupportSupportV42320Library
+:modules:leakcanary-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library
+:modules:leakcanary-module:prepareComJug6ernautSaberSaberRuntime060Library
+:modules:leakcanary-module:prepareComSquareupLeakcanaryLeakcanaryAndroid131Library
+:modules:leakcanary-module:prepareDebugDependencies
+:modules:leakcanary-module:compileDebugAidl
+:modules:leakcanary-module:compileDebugRenderscript
+:modules:leakcanary-module:generateDebugBuildConfig
+:modules:leakcanary-module:mergeDebugShaders
+:modules:leakcanary-module:compileDebugShaders
+:modules:leakcanary-module:generateDebugAssets
+:modules:leakcanary-module:mergeDebugAssets
+:modules:leakcanary-module:generateDebugResValues
+:modules:leakcanary-module:generateDebugResources
+:modules:leakcanary-module:mergeDebugResources
+:modules:leakcanary-module:processDebugManifest
+:modules:leakcanary-module:processDebugResources
+:modules:leakcanary-module:generateDebugSources
+:modules:leakcanary-module:incrementalDebugJavaCompilationSafeguard
+:modules:leakcanary-module:compileDebugJavaWithJavac
+:modules:leakcanary-module:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:leakcanary-module:extractDebugAnnotations
+:modules:leakcanary-module:mergeDebugProguardFiles
+:modules:leakcanary-module:packageDebugRenderscript UP-TO-DATE
+:modules:leakcanary-module:packageDebugResources
+:modules:leakcanary-module:processDebugJavaRes UP-TO-DATE
+:modules:leakcanary-module:transformResourcesWithMergeJavaResForDebug
+:modules:leakcanary-module:transformClassesAndResourcesWithSyncLibJarsForDebug
+:modules:leakcanary-module:mergeDebugJniLibFolders
+:modules:leakcanary-module:transformNative_libsWithMergeJniLibsForDebug
+:modules:leakcanary-module:transformNative_libsWithSyncJniLibsForDebug
+:modules:leakcanary-module:bundleDebug
+:modules:leakcanary-module:compileDebugSources
+:modules:leakcanary-module:assembleDebug
+:modules:leakcanary-module:compileReleaseNdk UP-TO-DATE
+:modules:leakcanary-module:copyReleaseLint UP-TO-DATE
+:modules:leakcanary-module:checkReleaseManifest
+:modules:leakcanary-module:prepareReleaseDependencies
+:modules:leakcanary-module:compileReleaseAidl
+:modules:leakcanary-module:compileReleaseRenderscript
+:modules:leakcanary-module:generateReleaseBuildConfig
+:modules:leakcanary-module:mergeReleaseShaders
+:modules:leakcanary-module:compileReleaseShaders
+:modules:leakcanary-module:generateReleaseAssets
+:modules:leakcanary-module:mergeReleaseAssets
+:modules:leakcanary-module:generateReleaseResValues
+:modules:leakcanary-module:generateReleaseResources
+:modules:leakcanary-module:mergeReleaseResources
+:modules:leakcanary-module:processReleaseManifest
+:modules:leakcanary-module:processReleaseResources
+:modules:leakcanary-module:generateReleaseSources
+:modules:leakcanary-module:incrementalReleaseJavaCompilationSafeguard
+:modules:leakcanary-module:compileReleaseJavaWithJavac
+:modules:leakcanary-module:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:leakcanary-module:extractReleaseAnnotations
+:modules:leakcanary-module:mergeReleaseProguardFiles
+:modules:leakcanary-module:packageReleaseRenderscript UP-TO-DATE
+:modules:leakcanary-module:packageReleaseResources
+:modules:leakcanary-module:processReleaseJavaRes UP-TO-DATE
+:modules:leakcanary-module:transformResourcesWithMergeJavaResForRelease
+:modules:leakcanary-module:transformClassesAndResourcesWithSyncLibJarsForRelease
+:modules:leakcanary-module:mergeReleaseJniLibFolders
+:modules:leakcanary-module:transformNative_libsWithMergeJniLibsForRelease
+:modules:leakcanary-module:transformNative_libsWithSyncJniLibsForRelease
+:modules:leakcanary-module:bundleRelease
+:modules:leakcanary-module:compileReleaseSources
+:modules:leakcanary-module:assembleRelease
+:modules:leakcanary-module:signArchives SKIPPED
+:modules:leakcanary-module:assemble
+:modules:leakcanary-module:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:///tmp/rdisk/2109/src/modules/leakcanary-module/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2109/src/modules/leakcanary-module/build/outputs/lint-results-debug.xml
+:modules:leakcanary-module:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:leakcanary-module:prepareDebugUnitTestDependencies
+:modules:leakcanary-module:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:modules:leakcanary-module:processDebugUnitTestJavaRes UP-TO-DATE
+:modules:leakcanary-module:compileDebugUnitTestSources UP-TO-DATE
+:modules:leakcanary-module:mockableAndroidJar
+:modules:leakcanary-module:assembleDebugUnitTest
+:modules:leakcanary-module:testDebugUnitTest
+:modules:leakcanary-module:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:leakcanary-module:prepareReleaseUnitTestDependencies
+:modules:leakcanary-module:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:modules:leakcanary-module:processReleaseUnitTestJavaRes UP-TO-DATE
+:modules:leakcanary-module:compileReleaseUnitTestSources UP-TO-DATE
+:modules:leakcanary-module:assembleReleaseUnitTest
+:modules:leakcanary-module:testReleaseUnitTest
+:modules:leakcanary-module:test
+:modules:leakcanary-module:check
+:modules:leakcanary-module:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.504 secs
+
+2018-04-03 19:31:29,312 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:31:29,313 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/madge-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:31:42,159 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:31:42,159 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:31:42,160 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:31:42,160 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/madge-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:32:01,176 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:modules:madge-module:androidSourcesJar
+:modules:madge-module:preBuild UP-TO-DATE
+:modules:madge-module:preDebugBuild UP-TO-DATE
+:modules:madge-module:compileDebugNdk UP-TO-DATE
+:modules:madge-module:compileLint
+:modules:madge-module:copyDebugLint UP-TO-DATE
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preReleaseBuild UP-TO-DATE
+:debugdrawer:compileReleaseNdk UP-TO-DATE
+:debugdrawer:compileLint
+:debugdrawer:copyReleaseLint UP-TO-DATE
+:debugdrawer:checkReleaseManifest
+:debugdrawer:preDebugAndroidTestBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:preDebugUnitTestBuild UP-TO-DATE
+:debugdrawer:preReleaseUnitTestBuild UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:debugdrawer:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:debugdrawer:prepareReleaseDependencies
+:debugdrawer:compileReleaseAidl UP-TO-DATE
+:debugdrawer:compileReleaseRenderscript UP-TO-DATE
+:debugdrawer:generateReleaseBuildConfig UP-TO-DATE
+:debugdrawer:mergeReleaseShaders UP-TO-DATE
+:debugdrawer:compileReleaseShaders UP-TO-DATE
+:debugdrawer:generateReleaseAssets UP-TO-DATE
+:debugdrawer:mergeReleaseAssets UP-TO-DATE
+:debugdrawer:generateReleaseResValues UP-TO-DATE
+:debugdrawer:generateReleaseResources UP-TO-DATE
+:debugdrawer:mergeReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseManifest UP-TO-DATE
+:debugdrawer:processReleaseResources UP-TO-DATE
+:debugdrawer:generateReleaseSources UP-TO-DATE
+:debugdrawer:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:compileReleaseJavaWithJavac UP-TO-DATE
+:debugdrawer:extractReleaseAnnotations UP-TO-DATE
+:debugdrawer:mergeReleaseProguardFiles UP-TO-DATE
+:debugdrawer:packageReleaseRenderscript UP-TO-DATE
+:debugdrawer:packageReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:debugdrawer:mergeReleaseJniLibFolders UP-TO-DATE
+:debugdrawer:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:debugdrawer:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:debugdrawer:bundleRelease UP-TO-DATE
+:modules:madge-module:checkDebugManifest
+:modules:madge-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:madge-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:madge-module:preReleaseBuild UP-TO-DATE
+:modules:madge-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:madge-module:prepareComAndroidSupportAppcompatV72320Library
+:modules:madge-module:prepareComAndroidSupportDesign2320Library
+:modules:madge-module:prepareComAndroidSupportSupportV42320Library
+:modules:madge-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library
+:modules:madge-module:prepareComJug6ernautSaberSaberRuntime060Library
+:modules:madge-module:prepareDebugDependencies
+:modules:madge-module:compileDebugAidl
+:modules:madge-module:compileDebugRenderscript
+:modules:madge-module:generateDebugBuildConfig
+:modules:madge-module:mergeDebugShaders
+:modules:madge-module:compileDebugShaders
+:modules:madge-module:generateDebugAssets
+:modules:madge-module:mergeDebugAssets
+:modules:madge-module:generateDebugResValues
+:modules:madge-module:generateDebugResources
+:modules:madge-module:mergeDebugResources
+:modules:madge-module:processDebugManifest
+:modules:madge-module:processDebugResources
+:modules:madge-module:generateDebugSources
+:modules:madge-module:incrementalDebugJavaCompilationSafeguard
+:modules:madge-module:compileDebugJavaWithJavac
+:modules:madge-module:extractDebugAnnotations
+:modules:madge-module:mergeDebugProguardFiles
+:modules:madge-module:packageDebugRenderscript UP-TO-DATE
+:modules:madge-module:packageDebugResources
+:modules:madge-module:processDebugJavaRes UP-TO-DATE
+:modules:madge-module:transformResourcesWithMergeJavaResForDebug
+:modules:madge-module:transformClassesAndResourcesWithSyncLibJarsForDebug
+:modules:madge-module:mergeDebugJniLibFolders
+:modules:madge-module:transformNative_libsWithMergeJniLibsForDebug
+:modules:madge-module:transformNative_libsWithSyncJniLibsForDebug
+:modules:madge-module:bundleDebug
+:modules:madge-module:compileDebugSources
+:modules:madge-module:assembleDebug
+:modules:madge-module:compileReleaseNdk UP-TO-DATE
+:modules:madge-module:copyReleaseLint UP-TO-DATE
+:modules:madge-module:checkReleaseManifest
+:modules:madge-module:prepareReleaseDependencies
+:modules:madge-module:compileReleaseAidl
+:modules:madge-module:compileReleaseRenderscript
+:modules:madge-module:generateReleaseBuildConfig
+:modules:madge-module:mergeReleaseShaders
+:modules:madge-module:compileReleaseShaders
+:modules:madge-module:generateReleaseAssets
+:modules:madge-module:mergeReleaseAssets
+:modules:madge-module:generateReleaseResValues
+:modules:madge-module:generateReleaseResources
+:modules:madge-module:mergeReleaseResources
+:modules:madge-module:processReleaseManifest
+:modules:madge-module:processReleaseResources
+:modules:madge-module:generateReleaseSources
+:modules:madge-module:incrementalReleaseJavaCompilationSafeguard
+:modules:madge-module:compileReleaseJavaWithJavac
+:modules:madge-module:extractReleaseAnnotations
+:modules:madge-module:mergeReleaseProguardFiles
+:modules:madge-module:packageReleaseRenderscript UP-TO-DATE
+:modules:madge-module:packageReleaseResources
+:modules:madge-module:processReleaseJavaRes UP-TO-DATE
+:modules:madge-module:transformResourcesWithMergeJavaResForRelease
+:modules:madge-module:transformClassesAndResourcesWithSyncLibJarsForRelease
+:modules:madge-module:mergeReleaseJniLibFolders
+:modules:madge-module:transformNative_libsWithMergeJniLibsForRelease
+:modules:madge-module:transformNative_libsWithSyncJniLibsForRelease
+:modules:madge-module:bundleRelease
+:modules:madge-module:compileReleaseSources
+:modules:madge-module:assembleRelease
+:modules:madge-module:signArchives SKIPPED
+:modules:madge-module:assemble
+:modules:madge-module:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:///tmp/rdisk/2109/src/modules/madge-module/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2109/src/modules/madge-module/build/outputs/lint-results-debug.xml
+:modules:madge-module:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:madge-module:prepareDebugUnitTestDependencies
+:modules:madge-module:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:modules:madge-module:processDebugUnitTestJavaRes UP-TO-DATE
+:modules:madge-module:compileDebugUnitTestSources UP-TO-DATE
+:modules:madge-module:mockableAndroidJar
+:modules:madge-module:assembleDebugUnitTest
+:modules:madge-module:testDebugUnitTest
+:modules:madge-module:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:madge-module:prepareReleaseUnitTestDependencies
+:modules:madge-module:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:modules:madge-module:processReleaseUnitTestJavaRes UP-TO-DATE
+:modules:madge-module:compileReleaseUnitTestSources UP-TO-DATE
+:modules:madge-module:assembleReleaseUnitTest
+:modules:madge-module:testReleaseUnitTest
+:modules:madge-module:test
+:modules:madge-module:check
+:modules:madge-module:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.541 secs
+
+2018-04-03 19:32:01,450 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:32:01,450 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/riseandshine-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:32:12,446 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:32:12,446 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:32:12,446 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:32:12,447 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/riseandshine-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:32:31,749 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:modules:riseandshine-module:androidSourcesJar
+:modules:riseandshine-module:preBuild UP-TO-DATE
+:modules:riseandshine-module:preDebugBuild UP-TO-DATE
+:modules:riseandshine-module:compileDebugNdk UP-TO-DATE
+:modules:riseandshine-module:compileLint
+:modules:riseandshine-module:copyDebugLint UP-TO-DATE
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preReleaseBuild UP-TO-DATE
+:debugdrawer:compileReleaseNdk UP-TO-DATE
+:debugdrawer:compileLint
+:debugdrawer:copyReleaseLint UP-TO-DATE
+:debugdrawer:checkReleaseManifest
+:debugdrawer:preDebugAndroidTestBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:preDebugUnitTestBuild UP-TO-DATE
+:debugdrawer:preReleaseUnitTestBuild UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:debugdrawer:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:debugdrawer:prepareReleaseDependencies
+:debugdrawer:compileReleaseAidl UP-TO-DATE
+:debugdrawer:compileReleaseRenderscript UP-TO-DATE
+:debugdrawer:generateReleaseBuildConfig UP-TO-DATE
+:debugdrawer:mergeReleaseShaders UP-TO-DATE
+:debugdrawer:compileReleaseShaders UP-TO-DATE
+:debugdrawer:generateReleaseAssets UP-TO-DATE
+:debugdrawer:mergeReleaseAssets UP-TO-DATE
+:debugdrawer:generateReleaseResValues UP-TO-DATE
+:debugdrawer:generateReleaseResources UP-TO-DATE
+:debugdrawer:mergeReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseManifest UP-TO-DATE
+:debugdrawer:processReleaseResources UP-TO-DATE
+:debugdrawer:generateReleaseSources UP-TO-DATE
+:debugdrawer:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:compileReleaseJavaWithJavac UP-TO-DATE
+:debugdrawer:extractReleaseAnnotations UP-TO-DATE
+:debugdrawer:mergeReleaseProguardFiles UP-TO-DATE
+:debugdrawer:packageReleaseRenderscript UP-TO-DATE
+:debugdrawer:packageReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:debugdrawer:mergeReleaseJniLibFolders UP-TO-DATE
+:debugdrawer:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:debugdrawer:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:debugdrawer:bundleRelease UP-TO-DATE
+:modules:riseandshine-module:checkDebugManifest
+:modules:riseandshine-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:riseandshine-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:riseandshine-module:preReleaseBuild UP-TO-DATE
+:modules:riseandshine-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:riseandshine-module:prepareComAndroidSupportAppcompatV72320Library
+:modules:riseandshine-module:prepareComAndroidSupportDesign2320Library
+:modules:riseandshine-module:prepareComAndroidSupportSupportV42320Library
+:modules:riseandshine-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library
+:modules:riseandshine-module:prepareComJug6ernautSaberSaberRuntime060Library
+:modules:riseandshine-module:prepareDebugDependencies
+:modules:riseandshine-module:compileDebugAidl
+:modules:riseandshine-module:compileDebugRenderscript
+:modules:riseandshine-module:generateDebugBuildConfig
+:modules:riseandshine-module:mergeDebugShaders
+:modules:riseandshine-module:compileDebugShaders
+:modules:riseandshine-module:generateDebugAssets
+:modules:riseandshine-module:mergeDebugAssets
+:modules:riseandshine-module:generateDebugResValues
+:modules:riseandshine-module:generateDebugResources
+:modules:riseandshine-module:mergeDebugResources
+:modules:riseandshine-module:processDebugManifest
+:modules:riseandshine-module:processDebugResources
+:modules:riseandshine-module:generateDebugSources
+:modules:riseandshine-module:incrementalDebugJavaCompilationSafeguard
+:modules:riseandshine-module:compileDebugJavaWithJavac
+:modules:riseandshine-module:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2109/src/modules/riseandshine-module/src/main/java/com/jug6ernaut/debugdrawer/modules/RiseAndShineElement.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:modules:riseandshine-module:extractDebugAnnotations
+:modules:riseandshine-module:mergeDebugProguardFiles
+:modules:riseandshine-module:packageDebugRenderscript UP-TO-DATE
+:modules:riseandshine-module:packageDebugResources
+:modules:riseandshine-module:processDebugJavaRes UP-TO-DATE
+:modules:riseandshine-module:transformResourcesWithMergeJavaResForDebug
+:modules:riseandshine-module:transformClassesAndResourcesWithSyncLibJarsForDebug
+:modules:riseandshine-module:mergeDebugJniLibFolders
+:modules:riseandshine-module:transformNative_libsWithMergeJniLibsForDebug
+:modules:riseandshine-module:transformNative_libsWithSyncJniLibsForDebug
+:modules:riseandshine-module:bundleDebug
+:modules:riseandshine-module:compileDebugSources
+:modules:riseandshine-module:assembleDebug
+:modules:riseandshine-module:compileReleaseNdk UP-TO-DATE
+:modules:riseandshine-module:copyReleaseLint UP-TO-DATE
+:modules:riseandshine-module:checkReleaseManifest
+:modules:riseandshine-module:prepareReleaseDependencies
+:modules:riseandshine-module:compileReleaseAidl
+:modules:riseandshine-module:compileReleaseRenderscript
+:modules:riseandshine-module:generateReleaseBuildConfig
+:modules:riseandshine-module:mergeReleaseShaders
+:modules:riseandshine-module:compileReleaseShaders
+:modules:riseandshine-module:generateReleaseAssets
+:modules:riseandshine-module:mergeReleaseAssets
+:modules:riseandshine-module:generateReleaseResValues
+:modules:riseandshine-module:generateReleaseResources
+:modules:riseandshine-module:mergeReleaseResources
+:modules:riseandshine-module:processReleaseManifest
+:modules:riseandshine-module:processReleaseResources
+:modules:riseandshine-module:generateReleaseSources
+:modules:riseandshine-module:incrementalReleaseJavaCompilationSafeguard
+:modules:riseandshine-module:compileReleaseJavaWithJavac
+:modules:riseandshine-module:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2109/src/modules/riseandshine-module/src/main/java/com/jug6ernaut/debugdrawer/modules/RiseAndShineElement.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:modules:riseandshine-module:extractReleaseAnnotations
+:modules:riseandshine-module:mergeReleaseProguardFiles
+:modules:riseandshine-module:packageReleaseRenderscript UP-TO-DATE
+:modules:riseandshine-module:packageReleaseResources
+:modules:riseandshine-module:processReleaseJavaRes UP-TO-DATE
+:modules:riseandshine-module:transformResourcesWithMergeJavaResForRelease
+:modules:riseandshine-module:transformClassesAndResourcesWithSyncLibJarsForRelease
+:modules:riseandshine-module:mergeReleaseJniLibFolders
+:modules:riseandshine-module:transformNative_libsWithMergeJniLibsForRelease
+:modules:riseandshine-module:transformNative_libsWithSyncJniLibsForRelease
+:modules:riseandshine-module:bundleRelease
+:modules:riseandshine-module:compileReleaseSources
+:modules:riseandshine-module:assembleRelease
+:modules:riseandshine-module:signArchives SKIPPED
+:modules:riseandshine-module:assemble
+:modules:riseandshine-module:lint
+Ran lint on variant release: 2 issues found
+Ran lint on variant debug: 2 issues found
+Wrote HTML report to file:///tmp/rdisk/2109/src/modules/riseandshine-module/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2109/src/modules/riseandshine-module/build/outputs/lint-results-debug.xml
+:modules:riseandshine-module:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:riseandshine-module:prepareDebugUnitTestDependencies
+:modules:riseandshine-module:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:modules:riseandshine-module:processDebugUnitTestJavaRes UP-TO-DATE
+:modules:riseandshine-module:compileDebugUnitTestSources UP-TO-DATE
+:modules:riseandshine-module:mockableAndroidJar
+:modules:riseandshine-module:assembleDebugUnitTest
+:modules:riseandshine-module:testDebugUnitTest
+:modules:riseandshine-module:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:riseandshine-module:prepareReleaseUnitTestDependencies
+:modules:riseandshine-module:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:modules:riseandshine-module:processReleaseUnitTestJavaRes UP-TO-DATE
+:modules:riseandshine-module:compileReleaseUnitTestSources UP-TO-DATE
+:modules:riseandshine-module:assembleReleaseUnitTest
+:modules:riseandshine-module:testReleaseUnitTest
+:modules:riseandshine-module:test
+:modules:riseandshine-module:check
+:modules:riseandshine-module:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.827 secs
+
+2018-04-03 19:32:32,071 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:32:32,071 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/scalpe-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:32:44,672 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:32:44,672 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:32:44,672 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:32:44,672 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/scalpe-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:33:03,530 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:modules:scalpe-module:androidSourcesJar
+:modules:scalpe-module:preBuild UP-TO-DATE
+:modules:scalpe-module:preDebugBuild UP-TO-DATE
+:modules:scalpe-module:compileDebugNdk UP-TO-DATE
+:modules:scalpe-module:compileLint
+:modules:scalpe-module:copyDebugLint UP-TO-DATE
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preReleaseBuild UP-TO-DATE
+:debugdrawer:compileReleaseNdk UP-TO-DATE
+:debugdrawer:compileLint
+:debugdrawer:copyReleaseLint UP-TO-DATE
+:debugdrawer:checkReleaseManifest
+:debugdrawer:preDebugAndroidTestBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:preDebugUnitTestBuild UP-TO-DATE
+:debugdrawer:preReleaseUnitTestBuild UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:debugdrawer:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:debugdrawer:prepareReleaseDependencies
+:debugdrawer:compileReleaseAidl UP-TO-DATE
+:debugdrawer:compileReleaseRenderscript UP-TO-DATE
+:debugdrawer:generateReleaseBuildConfig UP-TO-DATE
+:debugdrawer:mergeReleaseShaders UP-TO-DATE
+:debugdrawer:compileReleaseShaders UP-TO-DATE
+:debugdrawer:generateReleaseAssets UP-TO-DATE
+:debugdrawer:mergeReleaseAssets UP-TO-DATE
+:debugdrawer:generateReleaseResValues UP-TO-DATE
+:debugdrawer:generateReleaseResources UP-TO-DATE
+:debugdrawer:mergeReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseManifest UP-TO-DATE
+:debugdrawer:processReleaseResources UP-TO-DATE
+:debugdrawer:generateReleaseSources UP-TO-DATE
+:debugdrawer:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:compileReleaseJavaWithJavac UP-TO-DATE
+:debugdrawer:extractReleaseAnnotations UP-TO-DATE
+:debugdrawer:mergeReleaseProguardFiles UP-TO-DATE
+:debugdrawer:packageReleaseRenderscript UP-TO-DATE
+:debugdrawer:packageReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:debugdrawer:mergeReleaseJniLibFolders UP-TO-DATE
+:debugdrawer:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:debugdrawer:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:debugdrawer:bundleRelease UP-TO-DATE
+:modules:scalpe-module:checkDebugManifest
+:modules:scalpe-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:scalpe-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:scalpe-module:preReleaseBuild UP-TO-DATE
+:modules:scalpe-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:scalpe-module:prepareComAndroidSupportAppcompatV72320Library
+:modules:scalpe-module:prepareComAndroidSupportDesign2320Library
+:modules:scalpe-module:prepareComAndroidSupportSupportV42320Library
+:modules:scalpe-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library
+:modules:scalpe-module:prepareComJug6ernautSaberSaberRuntime060Library
+:modules:scalpe-module:prepareDebugDependencies
+:modules:scalpe-module:compileDebugAidl
+:modules:scalpe-module:compileDebugRenderscript
+:modules:scalpe-module:generateDebugBuildConfig
+:modules:scalpe-module:mergeDebugShaders
+:modules:scalpe-module:compileDebugShaders
+:modules:scalpe-module:generateDebugAssets
+:modules:scalpe-module:mergeDebugAssets
+:modules:scalpe-module:generateDebugResValues
+:modules:scalpe-module:generateDebugResources
+:modules:scalpe-module:mergeDebugResources
+:modules:scalpe-module:processDebugManifest
+:modules:scalpe-module:processDebugResources
+:modules:scalpe-module:generateDebugSources
+:modules:scalpe-module:incrementalDebugJavaCompilationSafeguard
+:modules:scalpe-module:compileDebugJavaWithJavac
+:modules:scalpe-module:extractDebugAnnotations
+:modules:scalpe-module:mergeDebugProguardFiles
+:modules:scalpe-module:packageDebugRenderscript UP-TO-DATE
+:modules:scalpe-module:packageDebugResources
+:modules:scalpe-module:processDebugJavaRes UP-TO-DATE
+:modules:scalpe-module:transformResourcesWithMergeJavaResForDebug
+:modules:scalpe-module:transformClassesAndResourcesWithSyncLibJarsForDebug
+:modules:scalpe-module:mergeDebugJniLibFolders
+:modules:scalpe-module:transformNative_libsWithMergeJniLibsForDebug
+:modules:scalpe-module:transformNative_libsWithSyncJniLibsForDebug
+:modules:scalpe-module:bundleDebug
+:modules:scalpe-module:compileDebugSources
+:modules:scalpe-module:assembleDebug
+:modules:scalpe-module:compileReleaseNdk UP-TO-DATE
+:modules:scalpe-module:copyReleaseLint UP-TO-DATE
+:modules:scalpe-module:checkReleaseManifest
+:modules:scalpe-module:prepareReleaseDependencies
+:modules:scalpe-module:compileReleaseAidl
+:modules:scalpe-module:compileReleaseRenderscript
+:modules:scalpe-module:generateReleaseBuildConfig
+:modules:scalpe-module:mergeReleaseShaders
+:modules:scalpe-module:compileReleaseShaders
+:modules:scalpe-module:generateReleaseAssets
+:modules:scalpe-module:mergeReleaseAssets
+:modules:scalpe-module:generateReleaseResValues
+:modules:scalpe-module:generateReleaseResources
+:modules:scalpe-module:mergeReleaseResources
+:modules:scalpe-module:processReleaseManifest
+:modules:scalpe-module:processReleaseResources
+:modules:scalpe-module:generateReleaseSources
+:modules:scalpe-module:incrementalReleaseJavaCompilationSafeguard
+:modules:scalpe-module:compileReleaseJavaWithJavac
+:modules:scalpe-module:extractReleaseAnnotations
+:modules:scalpe-module:mergeReleaseProguardFiles
+:modules:scalpe-module:packageReleaseRenderscript UP-TO-DATE
+:modules:scalpe-module:packageReleaseResources
+:modules:scalpe-module:processReleaseJavaRes UP-TO-DATE
+:modules:scalpe-module:transformResourcesWithMergeJavaResForRelease
+:modules:scalpe-module:transformClassesAndResourcesWithSyncLibJarsForRelease
+:modules:scalpe-module:mergeReleaseJniLibFolders
+:modules:scalpe-module:transformNative_libsWithMergeJniLibsForRelease
+:modules:scalpe-module:transformNative_libsWithSyncJniLibsForRelease
+:modules:scalpe-module:bundleRelease
+:modules:scalpe-module:compileReleaseSources
+:modules:scalpe-module:assembleRelease
+:modules:scalpe-module:signArchives SKIPPED
+:modules:scalpe-module:assemble
+:modules:scalpe-module:lint
+Ran lint on variant release: 2 issues found
+Ran lint on variant debug: 2 issues found
+Wrote HTML report to file:///tmp/rdisk/2109/src/modules/scalpe-module/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2109/src/modules/scalpe-module/build/outputs/lint-results-debug.xml
+:modules:scalpe-module:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:scalpe-module:prepareDebugUnitTestDependencies
+:modules:scalpe-module:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:modules:scalpe-module:processDebugUnitTestJavaRes UP-TO-DATE
+:modules:scalpe-module:compileDebugUnitTestSources UP-TO-DATE
+:modules:scalpe-module:mockableAndroidJar
+:modules:scalpe-module:assembleDebugUnitTest
+:modules:scalpe-module:testDebugUnitTest
+:modules:scalpe-module:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:scalpe-module:prepareReleaseUnitTestDependencies
+:modules:scalpe-module:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:modules:scalpe-module:processReleaseUnitTestJavaRes UP-TO-DATE
+:modules:scalpe-module:compileReleaseUnitTestSources UP-TO-DATE
+:modules:scalpe-module:assembleReleaseUnitTest
+:modules:scalpe-module:testReleaseUnitTest
+:modules:scalpe-module:test
+:modules:scalpe-module:check
+:modules:scalpe-module:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.399 secs
+
+2018-04-03 19:33:03,884 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:33:03,885 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/telescope-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:33:15,181 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:33:15,181 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:33:15,181 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:33:15,182 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/telescope-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:33:37,505 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:modules:telescope-module:androidSourcesJar
+:modules:telescope-module:preBuild UP-TO-DATE
+:modules:telescope-module:preDebugBuild UP-TO-DATE
+:modules:telescope-module:compileDebugNdk UP-TO-DATE
+:modules:telescope-module:compileLint
+:modules:telescope-module:copyDebugLint UP-TO-DATE
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preReleaseBuild UP-TO-DATE
+:debugdrawer:compileReleaseNdk UP-TO-DATE
+:debugdrawer:compileLint
+:debugdrawer:copyReleaseLint UP-TO-DATE
+:debugdrawer:checkReleaseManifest
+:debugdrawer:preDebugAndroidTestBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:preDebugUnitTestBuild UP-TO-DATE
+:debugdrawer:preReleaseUnitTestBuild UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:debugdrawer:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:debugdrawer:prepareReleaseDependencies
+:debugdrawer:compileReleaseAidl UP-TO-DATE
+:debugdrawer:compileReleaseRenderscript UP-TO-DATE
+:debugdrawer:generateReleaseBuildConfig UP-TO-DATE
+:debugdrawer:mergeReleaseShaders UP-TO-DATE
+:debugdrawer:compileReleaseShaders UP-TO-DATE
+:debugdrawer:generateReleaseAssets UP-TO-DATE
+:debugdrawer:mergeReleaseAssets UP-TO-DATE
+:debugdrawer:generateReleaseResValues UP-TO-DATE
+:debugdrawer:generateReleaseResources UP-TO-DATE
+:debugdrawer:mergeReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseManifest UP-TO-DATE
+:debugdrawer:processReleaseResources UP-TO-DATE
+:debugdrawer:generateReleaseSources UP-TO-DATE
+:debugdrawer:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:compileReleaseJavaWithJavac UP-TO-DATE
+:debugdrawer:extractReleaseAnnotations UP-TO-DATE
+:debugdrawer:mergeReleaseProguardFiles UP-TO-DATE
+:debugdrawer:packageReleaseRenderscript UP-TO-DATE
+:debugdrawer:packageReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:debugdrawer:mergeReleaseJniLibFolders UP-TO-DATE
+:debugdrawer:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:debugdrawer:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:debugdrawer:bundleRelease UP-TO-DATE
+:modules:telescope-module:checkDebugManifest
+:modules:telescope-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:telescope-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:telescope-module:preReleaseBuild UP-TO-DATE
+:modules:telescope-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:timber-module:preBuild UP-TO-DATE
+:modules:timber-module:preReleaseBuild UP-TO-DATE
+:modules:timber-module:compileReleaseNdk UP-TO-DATE
+:modules:timber-module:compileLint
+:modules:timber-module:copyReleaseLint UP-TO-DATE
+:modules:timber-module:checkReleaseManifest
+:modules:timber-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:timber-module:preDebugBuild UP-TO-DATE
+:modules:timber-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:timber-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:timber-module:prepareComAndroidSupportAppcompatV72320Library
+:modules:timber-module:prepareComAndroidSupportDesign2320Library
+:modules:timber-module:prepareComAndroidSupportSupportV42320Library
+:modules:timber-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library
+:modules:timber-module:prepareComJug6ernautSaberSaberRuntime060Library
+:modules:timber-module:prepareReleaseDependencies
+:modules:timber-module:compileReleaseAidl
+:modules:timber-module:compileReleaseRenderscript
+:modules:timber-module:generateReleaseBuildConfig
+:modules:timber-module:mergeReleaseShaders
+:modules:timber-module:compileReleaseShaders
+:modules:timber-module:generateReleaseAssets
+:modules:timber-module:mergeReleaseAssets
+:modules:timber-module:generateReleaseResValues
+:modules:timber-module:generateReleaseResources
+:modules:timber-module:mergeReleaseResources
+:modules:timber-module:processReleaseManifest
+:modules:timber-module:processReleaseResources
+:modules:timber-module:generateReleaseSources
+:modules:timber-module:incrementalReleaseJavaCompilationSafeguard
+:modules:timber-module:compileReleaseJavaWithJavac
+:modules:timber-module:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:timber-module:extractReleaseAnnotations
+:modules:timber-module:mergeReleaseProguardFiles
+:modules:timber-module:packageReleaseRenderscript UP-TO-DATE
+:modules:timber-module:packageReleaseResources
+:modules:timber-module:processReleaseJavaRes UP-TO-DATE
+:modules:timber-module:transformResourcesWithMergeJavaResForRelease
+:modules:timber-module:transformClassesAndResourcesWithSyncLibJarsForRelease
+:modules:timber-module:mergeReleaseJniLibFolders
+:modules:timber-module:transformNative_libsWithMergeJniLibsForRelease
+:modules:timber-module:transformNative_libsWithSyncJniLibsForRelease
+:modules:timber-module:bundleRelease
+:modules:telescope-module:prepareComAndroidSupportAppcompatV72320Library
+:modules:telescope-module:prepareComAndroidSupportDesign2320Library
+:modules:telescope-module:prepareComAndroidSupportSupportV42320Library
+:modules:telescope-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library
+:modules:telescope-module:prepareComJug6ernautDebugdrawerTimberModule070Library
+:modules:telescope-module:prepareComJug6ernautSaberSaberRuntime060Library
+:modules:telescope-module:prepareComMattpreciousTelescopeTelescope200Library
+:modules:telescope-module:prepareDebugDependencies
+:modules:telescope-module:compileDebugAidl
+:modules:telescope-module:compileDebugRenderscript
+:modules:telescope-module:generateDebugBuildConfig
+:modules:telescope-module:mergeDebugShaders
+:modules:telescope-module:compileDebugShaders
+:modules:telescope-module:generateDebugAssets
+:modules:telescope-module:mergeDebugAssets
+:modules:telescope-module:generateDebugResValues
+:modules:telescope-module:generateDebugResources
+:modules:telescope-module:mergeDebugResources
+:modules:telescope-module:processDebugManifest
+:modules:telescope-module:processDebugResources
+:modules:telescope-module:generateDebugSources
+:modules:telescope-module:incrementalDebugJavaCompilationSafeguard
+:modules:telescope-module:compileDebugJavaWithJavac
+:modules:telescope-module:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:telescope-module:extractDebugAnnotations
+:modules:telescope-module:mergeDebugProguardFiles
+:modules:telescope-module:packageDebugRenderscript UP-TO-DATE
+:modules:telescope-module:packageDebugResources
+:modules:telescope-module:processDebugJavaRes UP-TO-DATE
+:modules:telescope-module:transformResourcesWithMergeJavaResForDebug
+:modules:telescope-module:transformClassesAndResourcesWithSyncLibJarsForDebug
+:modules:telescope-module:mergeDebugJniLibFolders
+:modules:telescope-module:transformNative_libsWithMergeJniLibsForDebug
+:modules:telescope-module:transformNative_libsWithSyncJniLibsForDebug
+:modules:telescope-module:bundleDebug
+:modules:telescope-module:compileDebugSources
+:modules:telescope-module:assembleDebug
+:modules:telescope-module:compileReleaseNdk UP-TO-DATE
+:modules:telescope-module:copyReleaseLint UP-TO-DATE
+:modules:telescope-module:checkReleaseManifest
+:modules:telescope-module:prepareReleaseDependencies
+:modules:telescope-module:compileReleaseAidl
+:modules:telescope-module:compileReleaseRenderscript
+:modules:telescope-module:generateReleaseBuildConfig
+:modules:telescope-module:mergeReleaseShaders
+:modules:telescope-module:compileReleaseShaders
+:modules:telescope-module:generateReleaseAssets
+:modules:telescope-module:mergeReleaseAssets
+:modules:telescope-module:generateReleaseResValues
+:modules:telescope-module:generateReleaseResources
+:modules:telescope-module:mergeReleaseResources
+:modules:telescope-module:processReleaseManifest
+:modules:telescope-module:processReleaseResources
+:modules:telescope-module:generateReleaseSources
+:modules:telescope-module:incrementalReleaseJavaCompilationSafeguard
+:modules:telescope-module:compileReleaseJavaWithJavac
+:modules:telescope-module:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:telescope-module:extractReleaseAnnotations
+:modules:telescope-module:mergeReleaseProguardFiles
+:modules:telescope-module:packageReleaseRenderscript UP-TO-DATE
+:modules:telescope-module:packageReleaseResources
+:modules:telescope-module:processReleaseJavaRes UP-TO-DATE
+:modules:telescope-module:transformResourcesWithMergeJavaResForRelease
+:modules:telescope-module:transformClassesAndResourcesWithSyncLibJarsForRelease
+:modules:telescope-module:mergeReleaseJniLibFolders
+:modules:telescope-module:transformNative_libsWithMergeJniLibsForRelease
+:modules:telescope-module:transformNative_libsWithSyncJniLibsForRelease
+:modules:telescope-module:bundleRelease
+:modules:telescope-module:compileReleaseSources
+:modules:telescope-module:assembleRelease
+:modules:telescope-module:signArchives SKIPPED
+:modules:telescope-module:assemble
+:modules:telescope-module:lint
+Ran lint on variant debug: 8 issues found
+Ran lint on variant release: 8 issues found
+Wrote HTML report to file:///tmp/rdisk/2109/src/modules/telescope-module/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2109/src/modules/telescope-module/build/outputs/lint-results-debug.xml
+:modules:telescope-module:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:telescope-module:prepareDebugUnitTestDependencies
+:modules:telescope-module:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:modules:telescope-module:processDebugUnitTestJavaRes UP-TO-DATE
+:modules:telescope-module:compileDebugUnitTestSources UP-TO-DATE
+:modules:telescope-module:mockableAndroidJar
+:modules:telescope-module:assembleDebugUnitTest
+:modules:telescope-module:testDebugUnitTest
+:modules:telescope-module:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:telescope-module:prepareReleaseUnitTestDependencies
+:modules:telescope-module:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:modules:telescope-module:processReleaseUnitTestJavaRes UP-TO-DATE
+:modules:telescope-module:compileReleaseUnitTestSources UP-TO-DATE
+:modules:telescope-module:assembleReleaseUnitTest
+:modules:telescope-module:testReleaseUnitTest
+:modules:telescope-module:test
+:modules:telescope-module:check
+:modules:telescope-module:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.888 secs
+
+2018-04-03 19:33:37,940 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:33:37,940 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/timber-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:33:49,352 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:33:49,352 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:33:49,352 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:33:49,352 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/modules/timber-module/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:34:07,377 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:modules:timber-module:androidSourcesJar
+:modules:timber-module:preBuild UP-TO-DATE
+:modules:timber-module:preDebugBuild UP-TO-DATE
+:modules:timber-module:compileDebugNdk UP-TO-DATE
+:modules:timber-module:compileLint
+:modules:timber-module:copyDebugLint UP-TO-DATE
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preReleaseBuild UP-TO-DATE
+:debugdrawer:compileReleaseNdk UP-TO-DATE
+:debugdrawer:compileLint
+:debugdrawer:copyReleaseLint UP-TO-DATE
+:debugdrawer:checkReleaseManifest
+:debugdrawer:preDebugAndroidTestBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:preDebugUnitTestBuild UP-TO-DATE
+:debugdrawer:preReleaseUnitTestBuild UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:debugdrawer:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:debugdrawer:prepareReleaseDependencies
+:debugdrawer:compileReleaseAidl UP-TO-DATE
+:debugdrawer:compileReleaseRenderscript UP-TO-DATE
+:debugdrawer:generateReleaseBuildConfig UP-TO-DATE
+:debugdrawer:mergeReleaseShaders UP-TO-DATE
+:debugdrawer:compileReleaseShaders UP-TO-DATE
+:debugdrawer:generateReleaseAssets UP-TO-DATE
+:debugdrawer:mergeReleaseAssets UP-TO-DATE
+:debugdrawer:generateReleaseResValues UP-TO-DATE
+:debugdrawer:generateReleaseResources UP-TO-DATE
+:debugdrawer:mergeReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseManifest UP-TO-DATE
+:debugdrawer:processReleaseResources UP-TO-DATE
+:debugdrawer:generateReleaseSources UP-TO-DATE
+:debugdrawer:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:compileReleaseJavaWithJavac UP-TO-DATE
+:debugdrawer:extractReleaseAnnotations UP-TO-DATE
+:debugdrawer:mergeReleaseProguardFiles UP-TO-DATE
+:debugdrawer:packageReleaseRenderscript UP-TO-DATE
+:debugdrawer:packageReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:debugdrawer:mergeReleaseJniLibFolders UP-TO-DATE
+:debugdrawer:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:debugdrawer:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:debugdrawer:bundleRelease UP-TO-DATE
+:modules:timber-module:checkDebugManifest
+:modules:timber-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:timber-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:timber-module:preReleaseBuild UP-TO-DATE
+:modules:timber-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:timber-module:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:modules:timber-module:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:modules:timber-module:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:modules:timber-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library UP-TO-DATE
+:modules:timber-module:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:modules:timber-module:prepareDebugDependencies
+:modules:timber-module:compileDebugAidl
+:modules:timber-module:compileDebugRenderscript
+:modules:timber-module:generateDebugBuildConfig
+:modules:timber-module:mergeDebugShaders
+:modules:timber-module:compileDebugShaders
+:modules:timber-module:generateDebugAssets
+:modules:timber-module:mergeDebugAssets
+:modules:timber-module:generateDebugResValues
+:modules:timber-module:generateDebugResources
+:modules:timber-module:mergeDebugResources
+:modules:timber-module:processDebugManifest
+:modules:timber-module:processDebugResources
+:modules:timber-module:generateDebugSources
+:modules:timber-module:incrementalDebugJavaCompilationSafeguard
+:modules:timber-module:compileDebugJavaWithJavac
+:modules:timber-module:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:modules:timber-module:extractDebugAnnotations
+:modules:timber-module:mergeDebugProguardFiles
+:modules:timber-module:packageDebugRenderscript UP-TO-DATE
+:modules:timber-module:packageDebugResources
+:modules:timber-module:processDebugJavaRes UP-TO-DATE
+:modules:timber-module:transformResourcesWithMergeJavaResForDebug
+:modules:timber-module:transformClassesAndResourcesWithSyncLibJarsForDebug
+:modules:timber-module:mergeDebugJniLibFolders
+:modules:timber-module:transformNative_libsWithMergeJniLibsForDebug
+:modules:timber-module:transformNative_libsWithSyncJniLibsForDebug
+:modules:timber-module:bundleDebug
+:modules:timber-module:compileDebugSources
+:modules:timber-module:assembleDebug
+:modules:timber-module:compileReleaseNdk UP-TO-DATE
+:modules:timber-module:copyReleaseLint UP-TO-DATE
+:modules:timber-module:checkReleaseManifest
+:modules:timber-module:prepareReleaseDependencies
+:modules:timber-module:compileReleaseAidl UP-TO-DATE
+:modules:timber-module:compileReleaseRenderscript UP-TO-DATE
+:modules:timber-module:generateReleaseBuildConfig UP-TO-DATE
+:modules:timber-module:mergeReleaseShaders UP-TO-DATE
+:modules:timber-module:compileReleaseShaders UP-TO-DATE
+:modules:timber-module:generateReleaseAssets UP-TO-DATE
+:modules:timber-module:mergeReleaseAssets UP-TO-DATE
+:modules:timber-module:generateReleaseResValues UP-TO-DATE
+:modules:timber-module:generateReleaseResources UP-TO-DATE
+:modules:timber-module:mergeReleaseResources UP-TO-DATE
+:modules:timber-module:processReleaseManifest UP-TO-DATE
+:modules:timber-module:processReleaseResources UP-TO-DATE
+:modules:timber-module:generateReleaseSources UP-TO-DATE
+:modules:timber-module:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:modules:timber-module:compileReleaseJavaWithJavac UP-TO-DATE
+:modules:timber-module:extractReleaseAnnotations UP-TO-DATE
+:modules:timber-module:mergeReleaseProguardFiles UP-TO-DATE
+:modules:timber-module:packageReleaseRenderscript UP-TO-DATE
+:modules:timber-module:packageReleaseResources UP-TO-DATE
+:modules:timber-module:processReleaseJavaRes UP-TO-DATE
+:modules:timber-module:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:modules:timber-module:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:modules:timber-module:mergeReleaseJniLibFolders UP-TO-DATE
+:modules:timber-module:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:modules:timber-module:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:modules:timber-module:bundleRelease UP-TO-DATE
+:modules:timber-module:compileReleaseSources UP-TO-DATE
+:modules:timber-module:assembleRelease UP-TO-DATE
+:modules:timber-module:signArchives SKIPPED
+:modules:timber-module:assemble
+:modules:timber-module:lint
+Ran lint on variant release: 4 issues found
+Ran lint on variant debug: 4 issues found
+Wrote HTML report to file:///tmp/rdisk/2109/src/modules/timber-module/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2109/src/modules/timber-module/build/outputs/lint-results-debug.xml
+:modules:timber-module:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:timber-module:prepareDebugUnitTestDependencies
+:modules:timber-module:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:modules:timber-module:processDebugUnitTestJavaRes UP-TO-DATE
+:modules:timber-module:compileDebugUnitTestSources UP-TO-DATE
+:modules:timber-module:mockableAndroidJar
+:modules:timber-module:assembleDebugUnitTest
+:modules:timber-module:testDebugUnitTest
+:modules:timber-module:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:modules:timber-module:prepareReleaseUnitTestDependencies
+:modules:timber-module:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:modules:timber-module:processReleaseUnitTestJavaRes UP-TO-DATE
+:modules:timber-module:compileReleaseUnitTestSources UP-TO-DATE
+:modules:timber-module:assembleReleaseUnitTest
+:modules:timber-module:testReleaseUnitTest
+:modules:timber-module:test
+:modules:timber-module:check
+:modules:timber-module:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.512 secs
+
+2018-04-03 19:34:07,847 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:34:07,848 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:34:18,696 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:34:18,696 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:34:18,696 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:34:18,696 INFO  SysUtils - Execute command: [/tmp/rdisk/2109/src/gradlew, -b, /tmp/rdisk/2109/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:35:05,834 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:debugdrawer:preBuild UP-TO-DATE
+:debugdrawer:preReleaseBuild UP-TO-DATE
+:debugdrawer:compileReleaseNdk UP-TO-DATE
+:debugdrawer:compileLint
+:debugdrawer:copyReleaseLint UP-TO-DATE
+:debugdrawer:checkReleaseManifest
+:debugdrawer:preDebugAndroidTestBuild UP-TO-DATE
+:debugdrawer:preDebugBuild UP-TO-DATE
+:debugdrawer:preDebugUnitTestBuild UP-TO-DATE
+:debugdrawer:preReleaseUnitTestBuild UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:debugdrawer:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:debugdrawer:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:debugdrawer:prepareReleaseDependencies
+:debugdrawer:compileReleaseAidl UP-TO-DATE
+:debugdrawer:compileReleaseRenderscript UP-TO-DATE
+:debugdrawer:generateReleaseBuildConfig UP-TO-DATE
+:debugdrawer:mergeReleaseShaders UP-TO-DATE
+:debugdrawer:compileReleaseShaders UP-TO-DATE
+:debugdrawer:generateReleaseAssets UP-TO-DATE
+:debugdrawer:mergeReleaseAssets UP-TO-DATE
+:debugdrawer:generateReleaseResValues UP-TO-DATE
+:debugdrawer:generateReleaseResources UP-TO-DATE
+:debugdrawer:mergeReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseManifest UP-TO-DATE
+:debugdrawer:processReleaseResources UP-TO-DATE
+:debugdrawer:generateReleaseSources UP-TO-DATE
+:debugdrawer:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:debugdrawer:compileReleaseJavaWithJavac UP-TO-DATE
+:debugdrawer:extractReleaseAnnotations UP-TO-DATE
+:debugdrawer:mergeReleaseProguardFiles UP-TO-DATE
+:debugdrawer:packageReleaseRenderscript UP-TO-DATE
+:debugdrawer:packageReleaseResources UP-TO-DATE
+:debugdrawer:processReleaseJavaRes UP-TO-DATE
+:debugdrawer:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:debugdrawer:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:debugdrawer:mergeReleaseJniLibFolders UP-TO-DATE
+:debugdrawer:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:debugdrawer:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:debugdrawer:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:debugdrawer-noop:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:debugdrawer-noop:processResources UP-TO-DATE
+:debugdrawer-noop:classes
+:debugdrawer-noop:jar
+:sample:preReleaseBuild UP-TO-DATE
+:modules:animation-speed-module:preBuild UP-TO-DATE
+:modules:animation-speed-module:preReleaseBuild UP-TO-DATE
+:modules:animation-speed-module:compileReleaseNdk UP-TO-DATE
+:modules:animation-speed-module:compileLint
+:modules:animation-speed-module:copyReleaseLint UP-TO-DATE
+:modules:animation-speed-module:checkReleaseManifest
+:modules:animation-speed-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:animation-speed-module:preDebugBuild UP-TO-DATE
+:modules:animation-speed-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:animation-speed-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:animation-speed-module:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:modules:animation-speed-module:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:modules:animation-speed-module:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:modules:animation-speed-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library UP-TO-DATE
+:modules:animation-speed-module:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:modules:animation-speed-module:prepareReleaseDependencies
+:modules:animation-speed-module:compileReleaseAidl UP-TO-DATE
+:modules:animation-speed-module:compileReleaseRenderscript UP-TO-DATE
+:modules:animation-speed-module:generateReleaseBuildConfig UP-TO-DATE
+:modules:animation-speed-module:mergeReleaseShaders UP-TO-DATE
+:modules:animation-speed-module:compileReleaseShaders UP-TO-DATE
+:modules:animation-speed-module:generateReleaseAssets UP-TO-DATE
+:modules:animation-speed-module:mergeReleaseAssets UP-TO-DATE
+:modules:animation-speed-module:generateReleaseResValues UP-TO-DATE
+:modules:animation-speed-module:generateReleaseResources UP-TO-DATE
+:modules:animation-speed-module:mergeReleaseResources UP-TO-DATE
+:modules:animation-speed-module:processReleaseManifest UP-TO-DATE
+:modules:animation-speed-module:processReleaseResources UP-TO-DATE
+:modules:animation-speed-module:generateReleaseSources UP-TO-DATE
+:modules:animation-speed-module:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:modules:animation-speed-module:compileReleaseJavaWithJavac UP-TO-DATE
+:modules:animation-speed-module:extractReleaseAnnotations UP-TO-DATE
+:modules:animation-speed-module:mergeReleaseProguardFiles UP-TO-DATE
+:modules:animation-speed-module:packageReleaseRenderscript UP-TO-DATE
+:modules:animation-speed-module:packageReleaseResources UP-TO-DATE
+:modules:animation-speed-module:processReleaseJavaRes UP-TO-DATE
+:modules:animation-speed-module:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:modules:animation-speed-module:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:modules:animation-speed-module:mergeReleaseJniLibFolders UP-TO-DATE
+:modules:animation-speed-module:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:modules:animation-speed-module:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:modules:animation-speed-module:bundleRelease UP-TO-DATE
+:modules:build-module:preBuild UP-TO-DATE
+:modules:build-module:preReleaseBuild UP-TO-DATE
+:modules:build-module:compileReleaseNdk UP-TO-DATE
+:modules:build-module:compileLint
+:modules:build-module:copyReleaseLint UP-TO-DATE
+:modules:build-module:checkReleaseManifest
+:modules:build-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:build-module:preDebugBuild UP-TO-DATE
+:modules:build-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:build-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:build-module:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:modules:build-module:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:modules:build-module:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:modules:build-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library UP-TO-DATE
+:modules:build-module:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:modules:build-module:prepareReleaseDependencies
+:modules:build-module:compileReleaseAidl UP-TO-DATE
+:modules:build-module:compileReleaseRenderscript UP-TO-DATE
+:modules:build-module:generateReleaseBuildConfig UP-TO-DATE
+:modules:build-module:mergeReleaseShaders UP-TO-DATE
+:modules:build-module:compileReleaseShaders UP-TO-DATE
+:modules:build-module:generateReleaseAssets UP-TO-DATE
+:modules:build-module:mergeReleaseAssets UP-TO-DATE
+:modules:build-module:generateReleaseResValues UP-TO-DATE
+:modules:build-module:generateReleaseResources UP-TO-DATE
+:modules:build-module:mergeReleaseResources UP-TO-DATE
+:modules:build-module:processReleaseManifest UP-TO-DATE
+:modules:build-module:processReleaseResources UP-TO-DATE
+:modules:build-module:generateReleaseSources UP-TO-DATE
+:modules:build-module:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:modules:build-module:compileReleaseJavaWithJavac UP-TO-DATE
+:modules:build-module:extractReleaseAnnotations UP-TO-DATE
+:modules:build-module:mergeReleaseProguardFiles UP-TO-DATE
+:modules:build-module:packageReleaseRenderscript UP-TO-DATE
+:modules:build-module:packageReleaseResources UP-TO-DATE
+:modules:build-module:processReleaseJavaRes UP-TO-DATE
+:modules:build-module:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:modules:build-module:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:modules:build-module:mergeReleaseJniLibFolders UP-TO-DATE
+:modules:build-module:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:modules:build-module:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:modules:build-module:bundleRelease UP-TO-DATE
+:modules:device-info-module:preBuild UP-TO-DATE
+:modules:device-info-module:preReleaseBuild UP-TO-DATE
+:modules:device-info-module:compileReleaseNdk UP-TO-DATE
+:modules:device-info-module:compileLint
+:modules:device-info-module:copyReleaseLint UP-TO-DATE
+:modules:device-info-module:checkReleaseManifest
+:modules:device-info-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:device-info-module:preDebugBuild UP-TO-DATE
+:modules:device-info-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:device-info-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:device-info-module:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:modules:device-info-module:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:modules:device-info-module:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:modules:device-info-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library UP-TO-DATE
+:modules:device-info-module:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:modules:device-info-module:prepareReleaseDependencies
+:modules:device-info-module:compileReleaseAidl UP-TO-DATE
+:modules:device-info-module:compileReleaseRenderscript UP-TO-DATE
+:modules:device-info-module:generateReleaseBuildConfig UP-TO-DATE
+:modules:device-info-module:mergeReleaseShaders UP-TO-DATE
+:modules:device-info-module:compileReleaseShaders UP-TO-DATE
+:modules:device-info-module:generateReleaseAssets UP-TO-DATE
+:modules:device-info-module:mergeReleaseAssets UP-TO-DATE
+:modules:device-info-module:generateReleaseResValues UP-TO-DATE
+:modules:device-info-module:generateReleaseResources UP-TO-DATE
+:modules:device-info-module:mergeReleaseResources UP-TO-DATE
+:modules:device-info-module:processReleaseManifest UP-TO-DATE
+:modules:device-info-module:processReleaseResources UP-TO-DATE
+:modules:device-info-module:generateReleaseSources UP-TO-DATE
+:modules:device-info-module:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:modules:device-info-module:compileReleaseJavaWithJavac UP-TO-DATE
+:modules:device-info-module:extractReleaseAnnotations UP-TO-DATE
+:modules:device-info-module:mergeReleaseProguardFiles UP-TO-DATE
+:modules:device-info-module:packageReleaseRenderscript UP-TO-DATE
+:modules:device-info-module:packageReleaseResources UP-TO-DATE
+:modules:device-info-module:processReleaseJavaRes UP-TO-DATE
+:modules:device-info-module:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:modules:device-info-module:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:modules:device-info-module:mergeReleaseJniLibFolders UP-TO-DATE
+:modules:device-info-module:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:modules:device-info-module:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:modules:device-info-module:bundleRelease UP-TO-DATE
+:modules:leakcanary-module:preBuild UP-TO-DATE
+:modules:leakcanary-module:preReleaseBuild UP-TO-DATE
+:modules:leakcanary-module:compileReleaseNdk UP-TO-DATE
+:modules:leakcanary-module:compileLint
+:modules:leakcanary-module:copyReleaseLint UP-TO-DATE
+:modules:leakcanary-module:checkReleaseManifest
+:modules:leakcanary-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:leakcanary-module:preDebugBuild UP-TO-DATE
+:modules:leakcanary-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:leakcanary-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:leakcanary-module:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:modules:leakcanary-module:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:modules:leakcanary-module:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:modules:leakcanary-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library UP-TO-DATE
+:modules:leakcanary-module:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:modules:leakcanary-module:prepareComSquareupLeakcanaryLeakcanaryAndroid131Library UP-TO-DATE
+:modules:leakcanary-module:prepareReleaseDependencies
+:modules:leakcanary-module:compileReleaseAidl UP-TO-DATE
+:modules:leakcanary-module:compileReleaseRenderscript UP-TO-DATE
+:modules:leakcanary-module:generateReleaseBuildConfig UP-TO-DATE
+:modules:leakcanary-module:mergeReleaseShaders UP-TO-DATE
+:modules:leakcanary-module:compileReleaseShaders UP-TO-DATE
+:modules:leakcanary-module:generateReleaseAssets UP-TO-DATE
+:modules:leakcanary-module:mergeReleaseAssets UP-TO-DATE
+:modules:leakcanary-module:generateReleaseResValues UP-TO-DATE
+:modules:leakcanary-module:generateReleaseResources UP-TO-DATE
+:modules:leakcanary-module:mergeReleaseResources UP-TO-DATE
+:modules:leakcanary-module:processReleaseManifest UP-TO-DATE
+:modules:leakcanary-module:processReleaseResources UP-TO-DATE
+:modules:leakcanary-module:generateReleaseSources UP-TO-DATE
+:modules:leakcanary-module:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:modules:leakcanary-module:compileReleaseJavaWithJavac UP-TO-DATE
+:modules:leakcanary-module:extractReleaseAnnotations UP-TO-DATE
+:modules:leakcanary-module:mergeReleaseProguardFiles UP-TO-DATE
+:modules:leakcanary-module:packageReleaseRenderscript UP-TO-DATE
+:modules:leakcanary-module:packageReleaseResources UP-TO-DATE
+:modules:leakcanary-module:processReleaseJavaRes UP-TO-DATE
+:modules:leakcanary-module:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:modules:leakcanary-module:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:modules:leakcanary-module:mergeReleaseJniLibFolders UP-TO-DATE
+:modules:leakcanary-module:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:modules:leakcanary-module:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:modules:leakcanary-module:bundleRelease UP-TO-DATE
+:modules:madge-module:preBuild UP-TO-DATE
+:modules:madge-module:preReleaseBuild UP-TO-DATE
+:modules:madge-module:compileReleaseNdk UP-TO-DATE
+:modules:madge-module:compileLint
+:modules:madge-module:copyReleaseLint UP-TO-DATE
+:modules:madge-module:checkReleaseManifest
+:modules:madge-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:madge-module:preDebugBuild UP-TO-DATE
+:modules:madge-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:madge-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:madge-module:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:modules:madge-module:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:modules:madge-module:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:modules:madge-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library UP-TO-DATE
+:modules:madge-module:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:modules:madge-module:prepareReleaseDependencies
+:modules:madge-module:compileReleaseAidl UP-TO-DATE
+:modules:madge-module:compileReleaseRenderscript UP-TO-DATE
+:modules:madge-module:generateReleaseBuildConfig UP-TO-DATE
+:modules:madge-module:mergeReleaseShaders UP-TO-DATE
+:modules:madge-module:compileReleaseShaders UP-TO-DATE
+:modules:madge-module:generateReleaseAssets UP-TO-DATE
+:modules:madge-module:mergeReleaseAssets UP-TO-DATE
+:modules:madge-module:generateReleaseResValues UP-TO-DATE
+:modules:madge-module:generateReleaseResources UP-TO-DATE
+:modules:madge-module:mergeReleaseResources UP-TO-DATE
+:modules:madge-module:processReleaseManifest UP-TO-DATE
+:modules:madge-module:processReleaseResources UP-TO-DATE
+:modules:madge-module:generateReleaseSources UP-TO-DATE
+:modules:madge-module:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:modules:madge-module:compileReleaseJavaWithJavac
+:modules:madge-module:extractReleaseAnnotations UP-TO-DATE
+:modules:madge-module:mergeReleaseProguardFiles UP-TO-DATE
+:modules:madge-module:packageReleaseRenderscript UP-TO-DATE
+:modules:madge-module:packageReleaseResources UP-TO-DATE
+:modules:madge-module:processReleaseJavaRes UP-TO-DATE
+:modules:madge-module:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:modules:madge-module:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:modules:madge-module:mergeReleaseJniLibFolders UP-TO-DATE
+:modules:madge-module:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:modules:madge-module:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:modules:madge-module:bundleRelease UP-TO-DATE
+:modules:riseandshine-module:preBuild UP-TO-DATE
+:modules:riseandshine-module:preReleaseBuild UP-TO-DATE
+:modules:riseandshine-module:compileReleaseNdk UP-TO-DATE
+:modules:riseandshine-module:compileLint
+:modules:riseandshine-module:copyReleaseLint UP-TO-DATE
+:modules:riseandshine-module:checkReleaseManifest
+:modules:riseandshine-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:riseandshine-module:preDebugBuild UP-TO-DATE
+:modules:riseandshine-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:riseandshine-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:riseandshine-module:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:modules:riseandshine-module:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:modules:riseandshine-module:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:modules:riseandshine-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library UP-TO-DATE
+:modules:riseandshine-module:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:modules:riseandshine-module:prepareReleaseDependencies
+:modules:riseandshine-module:compileReleaseAidl UP-TO-DATE
+:modules:riseandshine-module:compileReleaseRenderscript UP-TO-DATE
+:modules:riseandshine-module:generateReleaseBuildConfig UP-TO-DATE
+:modules:riseandshine-module:mergeReleaseShaders UP-TO-DATE
+:modules:riseandshine-module:compileReleaseShaders UP-TO-DATE
+:modules:riseandshine-module:generateReleaseAssets UP-TO-DATE
+:modules:riseandshine-module:mergeReleaseAssets UP-TO-DATE
+:modules:riseandshine-module:generateReleaseResValues UP-TO-DATE
+:modules:riseandshine-module:generateReleaseResources UP-TO-DATE
+:modules:riseandshine-module:mergeReleaseResources UP-TO-DATE
+:modules:riseandshine-module:processReleaseManifest UP-TO-DATE
+:modules:riseandshine-module:processReleaseResources UP-TO-DATE
+:modules:riseandshine-module:generateReleaseSources UP-TO-DATE
+:modules:riseandshine-module:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:modules:riseandshine-module:compileReleaseJavaWithJavac UP-TO-DATE
+:modules:riseandshine-module:extractReleaseAnnotations UP-TO-DATE
+:modules:riseandshine-module:mergeReleaseProguardFiles UP-TO-DATE
+:modules:riseandshine-module:packageReleaseRenderscript UP-TO-DATE
+:modules:riseandshine-module:packageReleaseResources UP-TO-DATE
+:modules:riseandshine-module:processReleaseJavaRes UP-TO-DATE
+:modules:riseandshine-module:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:modules:riseandshine-module:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:modules:riseandshine-module:mergeReleaseJniLibFolders UP-TO-DATE
+:modules:riseandshine-module:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:modules:riseandshine-module:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:modules:riseandshine-module:bundleRelease UP-TO-DATE
+:modules:scalpe-module:preBuild UP-TO-DATE
+:modules:scalpe-module:preReleaseBuild UP-TO-DATE
+:modules:scalpe-module:compileReleaseNdk UP-TO-DATE
+:modules:scalpe-module:compileLint
+:modules:scalpe-module:copyReleaseLint UP-TO-DATE
+:modules:scalpe-module:checkReleaseManifest
+:modules:scalpe-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:scalpe-module:preDebugBuild UP-TO-DATE
+:modules:scalpe-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:scalpe-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:scalpe-module:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:modules:scalpe-module:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:modules:scalpe-module:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:modules:scalpe-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library UP-TO-DATE
+:modules:scalpe-module:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:modules:scalpe-module:prepareReleaseDependencies
+:modules:scalpe-module:compileReleaseAidl UP-TO-DATE
+:modules:scalpe-module:compileReleaseRenderscript UP-TO-DATE
+:modules:scalpe-module:generateReleaseBuildConfig UP-TO-DATE
+:modules:scalpe-module:mergeReleaseShaders UP-TO-DATE
+:modules:scalpe-module:compileReleaseShaders UP-TO-DATE
+:modules:scalpe-module:generateReleaseAssets UP-TO-DATE
+:modules:scalpe-module:mergeReleaseAssets UP-TO-DATE
+:modules:scalpe-module:generateReleaseResValues UP-TO-DATE
+:modules:scalpe-module:generateReleaseResources UP-TO-DATE
+:modules:scalpe-module:mergeReleaseResources UP-TO-DATE
+:modules:scalpe-module:processReleaseManifest UP-TO-DATE
+:modules:scalpe-module:processReleaseResources UP-TO-DATE
+:modules:scalpe-module:generateReleaseSources UP-TO-DATE
+:modules:scalpe-module:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:modules:scalpe-module:compileReleaseJavaWithJavac
+:modules:scalpe-module:extractReleaseAnnotations UP-TO-DATE
+:modules:scalpe-module:mergeReleaseProguardFiles UP-TO-DATE
+:modules:scalpe-module:packageReleaseRenderscript UP-TO-DATE
+:modules:scalpe-module:packageReleaseResources UP-TO-DATE
+:modules:scalpe-module:processReleaseJavaRes UP-TO-DATE
+:modules:scalpe-module:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:modules:scalpe-module:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:modules:scalpe-module:mergeReleaseJniLibFolders UP-TO-DATE
+:modules:scalpe-module:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:modules:scalpe-module:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:modules:scalpe-module:bundleRelease UP-TO-DATE
+:modules:telescope-module:preBuild UP-TO-DATE
+:modules:telescope-module:preReleaseBuild UP-TO-DATE
+:modules:telescope-module:compileReleaseNdk UP-TO-DATE
+:modules:telescope-module:compileLint
+:modules:telescope-module:copyReleaseLint UP-TO-DATE
+:modules:telescope-module:checkReleaseManifest
+:modules:telescope-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:telescope-module:preDebugBuild UP-TO-DATE
+:modules:telescope-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:telescope-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:timber-module:preBuild UP-TO-DATE
+:modules:timber-module:preReleaseBuild UP-TO-DATE
+:modules:timber-module:compileReleaseNdk UP-TO-DATE
+:modules:timber-module:compileLint
+:modules:timber-module:copyReleaseLint UP-TO-DATE
+:modules:timber-module:checkReleaseManifest
+:modules:timber-module:preDebugAndroidTestBuild UP-TO-DATE
+:modules:timber-module:preDebugBuild UP-TO-DATE
+:modules:timber-module:preDebugUnitTestBuild UP-TO-DATE
+:modules:timber-module:preReleaseUnitTestBuild UP-TO-DATE
+:modules:timber-module:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:modules:timber-module:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:modules:timber-module:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:modules:timber-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library UP-TO-DATE
+:modules:timber-module:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:modules:timber-module:prepareReleaseDependencies
+:modules:timber-module:compileReleaseAidl UP-TO-DATE
+:modules:timber-module:compileReleaseRenderscript UP-TO-DATE
+:modules:timber-module:generateReleaseBuildConfig UP-TO-DATE
+:modules:timber-module:mergeReleaseShaders UP-TO-DATE
+:modules:timber-module:compileReleaseShaders UP-TO-DATE
+:modules:timber-module:generateReleaseAssets UP-TO-DATE
+:modules:timber-module:mergeReleaseAssets UP-TO-DATE
+:modules:timber-module:generateReleaseResValues UP-TO-DATE
+:modules:timber-module:generateReleaseResources UP-TO-DATE
+:modules:timber-module:mergeReleaseResources UP-TO-DATE
+:modules:timber-module:processReleaseManifest UP-TO-DATE
+:modules:timber-module:processReleaseResources UP-TO-DATE
+:modules:timber-module:generateReleaseSources UP-TO-DATE
+:modules:timber-module:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:modules:timber-module:compileReleaseJavaWithJavac UP-TO-DATE
+:modules:timber-module:extractReleaseAnnotations UP-TO-DATE
+:modules:timber-module:mergeReleaseProguardFiles UP-TO-DATE
+:modules:timber-module:packageReleaseRenderscript UP-TO-DATE
+:modules:timber-module:packageReleaseResources UP-TO-DATE
+:modules:timber-module:processReleaseJavaRes UP-TO-DATE
+:modules:timber-module:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:modules:timber-module:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:modules:timber-module:mergeReleaseJniLibFolders UP-TO-DATE
+:modules:timber-module:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:modules:timber-module:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:modules:timber-module:bundleRelease UP-TO-DATE
+:modules:telescope-module:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:modules:telescope-module:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:modules:telescope-module:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:modules:telescope-module:prepareComJug6ernautDebugdrawerDebugdrawer070Library UP-TO-DATE
+:modules:telescope-module:prepareComJug6ernautDebugdrawerTimberModule070Library UP-TO-DATE
+:modules:telescope-module:prepareComJug6ernautSaberSaberRuntime060Library UP-TO-DATE
+:modules:telescope-module:prepareComMattpreciousTelescopeTelescope200Library UP-TO-DATE
+:modules:telescope-module:prepareReleaseDependencies
+:modules:telescope-module:compileReleaseAidl UP-TO-DATE
+:modules:telescope-module:compileReleaseRenderscript UP-TO-DATE
+:modules:telescope-module:generateReleaseBuildConfig UP-TO-DATE
+:modules:telescope-module:mergeReleaseShaders UP-TO-DATE
+:modules:telescope-module:compileReleaseShaders UP-TO-DATE
+:modules:telescope-module:generateReleaseAssets UP-TO-DATE
+:modules:telescope-module:mergeReleaseAssets UP-TO-DATE
+:modules:telescope-module:generateReleaseResValues UP-TO-DATE
+:modules:telescope-module:generateReleaseResources UP-TO-DATE
+:modules:telescope-module:mergeReleaseResources UP-TO-DATE
+:modules:telescope-module:processReleaseManifest UP-TO-DATE
+:modules:telescope-module:processReleaseResources UP-TO-DATE
+:modules:telescope-module:generateReleaseSources UP-TO-DATE
+:modules:telescope-module:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:modules:telescope-module:compileReleaseJavaWithJavac UP-TO-DATE
+:modules:telescope-module:extractReleaseAnnotations UP-TO-DATE
+:modules:telescope-module:mergeReleaseProguardFiles UP-TO-DATE
+:modules:telescope-module:packageReleaseRenderscript UP-TO-DATE
+:modules:telescope-module:packageReleaseResources UP-TO-DATE
+:modules:telescope-module:processReleaseJavaRes UP-TO-DATE
+:modules:telescope-module:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:modules:telescope-module:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:modules:telescope-module:mergeReleaseJniLibFolders UP-TO-DATE
+:modules:telescope-module:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:modules:telescope-module:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:modules:telescope-module:bundleRelease UP-TO-DATE
+:sample:prepareComAndroidSupportAnimatedVectorDrawable2320Library
+:sample:prepareComAndroidSupportAppcompatV72320Library
+:sample:prepareComAndroidSupportDesign2320Library
+:sample:prepareComAndroidSupportSupportV42320Library
+:sample:prepareComAndroidSupportSupportVectorDrawable2320Library
+:sample:prepareComJug6ernautDebugdrawerAnimationSpeedModule070Library
+:sample:prepareComJug6ernautDebugdrawerBuildModule070Library
+:sample:prepareComJug6ernautDebugdrawerDebugdrawer070Library
+:sample:prepareComJug6ernautDebugdrawerDeviceInfoModule070Library
+:sample:prepareComJug6ernautDebugdrawerLeakcanaryModule070Library
+:sample:prepareComJug6ernautDebugdrawerMadgeModule070Library
+:sample:prepareComJug6ernautDebugdrawerRiseandshineModule070Library
+:sample:prepareComJug6ernautDebugdrawerScalpeModule070Library
+:sample:prepareComJug6ernautDebugdrawerTelescopeModule070Library
+:sample:prepareComJug6ernautDebugdrawerTimberModule070Library
+:sample:prepareComJug6ernautSaberSaberRuntime060Library
+:sample:prepareComMattpreciousTelescopeTelescope200Library
+:sample:prepareComSquareupLeakcanaryLeakcanaryAndroid131Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:incrementalDebugJavaCompilationSafeguard
+:sample:compileDebugJavaWithJavacNote: /tmp/rdisk/2109/src/sample/src/debug/java/com/jug6ernaut/debugdrawer/di/NetworkWatcher.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2109/src/sample/build/generated/source/apt/debug/com/jug6ernaut/debugdrawer/sample/DaggerDemoActivityComponent.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:prePackageMarkerForDebug
+:sample:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:sample:mergeDebugJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:incrementalReleaseJavaCompilationSafeguard
+:sample:compileReleaseJavaWithJavacNote: /tmp/rdisk/2109/src/sample/build/generated/source/apt/release/com/jug6ernaut/debugdrawer/sample/DaggerDemoActivityComponent.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:prePackageMarkerForRelease
+:sample:transformClassesWithDexForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:compileLint
+:sample:lint
+Ran lint on variant debug: 13 issues found
+Ran lint on variant release: 13 issues found
+Wrote HTML report to file:///tmp/rdisk/2109/src/sample/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2109/src/sample/build/outputs/lint-results-debug.xml
+:sample:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:sample:preDebugUnitTestBuild UP-TO-DATE
+:sample:prepareDebugUnitTestDependencies
+:sample:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:sample:processDebugUnitTestJavaRes UP-TO-DATE
+:sample:compileDebugUnitTestSources UP-TO-DATE
+:sample:mockableAndroidJar
+:sample:assembleDebugUnitTest
+:sample:testDebugUnitTest
+:sample:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:sample:preReleaseUnitTestBuild UP-TO-DATE
+:sample:prepareReleaseUnitTestDependencies
+:sample:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:sample:processReleaseUnitTestJavaRes UP-TO-DATE
+:sample:compileReleaseUnitTestSources UP-TO-DATE
+:sample:assembleReleaseUnitTest
+:sample:testReleaseUnitTest
+:sample:test
+:sample:check
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 46.677 secs
+
+2018-04-03 19:35:06,331 INFO  FullProcessService - Found APK file: /tmp/rdisk/2109/src/sample/build/outputs/apk/sample-release-unsigned.apk

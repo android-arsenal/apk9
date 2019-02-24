@@ -1,0 +1,548 @@
+2018-04-03 21:07:03,716 INFO  DownloadService - Downloading "https://github.com/mobiledeeplinking/mobiledeeplinking-android/archive/master.zip", attempt 3
+2018-04-03 21:08:04,164 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 21:08:04,833 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 21:08:04,833 INFO  DownloadService - Downloading "https://github.com/mobiledeeplinking/mobiledeeplinking-android/archive/master.zip", attempt 3
+2018-04-03 21:09:06,145 DEBUG FullProcessService - Repository https://github.com/mobiledeeplinking/mobiledeeplinking-android available: true
+2018-04-03 21:09:06,145 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 21:09:06,145 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/mobiledeeplinking/mobiledeeplinking-android, /tmp/rdisk/2073/src]
+2018-04-03 21:09:09,649 INFO  SysUtils - 
+2018-04-03 21:09:09,664 INFO  GitService - Deleted "/tmp/rdisk/2073/src/.git": true
+2018-04-03 21:09:09,667 INFO  FullProcessService - Size of directory with sources: 460 KB
+2018-04-03 21:09:09,667 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2073/src]
+2018-04-03 21:09:09,671 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2073/src/.git/
+
+2018-04-03 21:09:09,673 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2073/src/gradlew
+2018-04-03 21:09:09,676 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2073/src/MobileDeepLinking-Android-Demo/build.gradle /tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/build.gradle /tmp/rdisk/2073/src/build.gradle
+2018-04-03 21:09:09,679 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2073/src/settings.gradle /tmp/rdisk/2073/src/build.gradle /tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/build.gradle /tmp/rdisk/2073/src/MobileDeepLinking-Android-Demo/build.gradle
+2018-04-03 21:09:09,679 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 21:09:09,679 INFO  ProjectFixService - Fixing project...
+2018-04-03 21:09:09,685 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2073/src/MobileDeepLinking-Android-Demo/local.properties
+2018-04-03 21:09:09,685 INFO  ProjectFixService - Build info for "/tmp/rdisk/2073/src/MobileDeepLinking-Android-Demo/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=16]
+2018-04-03 21:09:09,685 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/local.properties
+2018-04-03 21:09:09,685 INFO  ProjectFixService - Build info for "/tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=16]
+2018-04-03 21:09:09,686 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2073/src/local.properties
+2018-04-03 21:09:09,686 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.13-all.zip
+2018-04-03 21:09:09,686 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.13-bin.zip)
+2018-04-03 21:09:09,687 INFO  ProjectFixService - Build info for "/tmp/rdisk/2073/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=16]
+2018-04-03 21:09:09,687 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 21:09:09,687 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 21:09:09,687 INFO  SysUtils - Execute command: [/tmp/rdisk/2073/src/gradlew, -b, /tmp/rdisk/2073/src/MobileDeepLinking-Android-Demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 21:09:17,453 INFO  ProjectTaskService - Detected possible tasks: 74
+2018-04-03 21:09:17,453 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 21:09:17,453 INFO  SysUtils - Execute command: [/tmp/rdisk/2073/src/gradlew, -b, /tmp/rdisk/2073/src/MobileDeepLinking-Android-Demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 21:09:26,375 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 21:09:26,375 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:MobileDeepLinking-Android-Demo:preBuild UP-TO-DATE
+:MobileDeepLinking-Android-Demo:preDebugBuild UP-TO-DATE
+:MobileDeepLinking-Android-Demo:checkDebugManifest
+:MobileDeepLinking-Android-Demo:preReleaseBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preReleaseBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:compileReleaseNdk UP-TO-DATE
+:MobileDeepLinking-Android-SDK:compileLint
+:MobileDeepLinking-Android-SDK:copyReleaseLint UP-TO-DATE
+:MobileDeepLinking-Android-SDK:checkReleaseManifest
+:MobileDeepLinking-Android-SDK:preDebugAndroidTestBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preDebugBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preDebugUnitTestBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preReleaseUnitTestBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportAnimatedVectorDrawable2600Alpha1Library
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportAppcompatV72600Alpha1Library
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportCompat2600Alpha1Library
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportCoreUi2600Alpha1Library
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportCoreUtils2600Alpha1Library
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportFragment2600Alpha1Library
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportMediaCompat2600Alpha1Library
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportV42600Alpha1Library
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportVectorDrawable2600Alpha1Library
+:MobileDeepLinking-Android-SDK:prepareReleaseDependencies
+:MobileDeepLinking-Android-SDK:compileReleaseAidl
+:MobileDeepLinking-Android-SDK:compileReleaseRenderscript
+:MobileDeepLinking-Android-SDK:generateReleaseBuildConfig
+:MobileDeepLinking-Android-SDK:mergeReleaseShaders
+:MobileDeepLinking-Android-SDK:compileReleaseShaders
+:MobileDeepLinking-Android-SDK:generateReleaseAssets
+:MobileDeepLinking-Android-SDK:mergeReleaseAssets
+:MobileDeepLinking-Android-SDK:generateReleaseResValues
+:MobileDeepLinking-Android-SDK:generateReleaseResources
+:MobileDeepLinking-Android-SDK:mergeReleaseResources
+:MobileDeepLinking-Android-SDK:processReleaseManifest
+:MobileDeepLinking-Android-SDK:processReleaseResources/tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/build/intermediates/res/merged/release/values-v24/values-v24.xml:3: AAPT: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Borderless.Colored'.
+    
+/tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/build/intermediates/res/merged/release/values-v24/values-v24.xml:4: AAPT: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Colored'.
+    
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':MobileDeepLinking-Android-SDK:processReleaseResources'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':MobileDeepLinking-Android-SDK:processReleaseResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:68)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:66)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:81)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:46)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:241)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:214)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:207)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:55)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:36)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.java:207)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:82)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:245)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:221)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:232)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:210)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+Caused by: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:43)
+	at com.android.builder.core.AndroidBuilder.processResources(AndroidBuilder.java:983)
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.java:163)
+	... 68 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:367)
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:41)
+	... 70 more
+
+
+BUILD FAILED
+
+Total time: 8.48 secs
+
+2018-04-03 21:09:26,403 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 21:09:26,404 INFO  SysUtils - Execute command: [/tmp/rdisk/2073/src/gradlew, -b, /tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 21:09:33,363 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 21:09:33,363 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 21:09:33,363 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 21:09:33,363 INFO  SysUtils - Execute command: [/tmp/rdisk/2073/src/gradlew, -b, /tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 21:09:41,360 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 21:09:41,360 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:MobileDeepLinking-Android-SDK:preBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preDebugBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:compileDebugNdk UP-TO-DATE
+:MobileDeepLinking-Android-SDK:compileLint
+:MobileDeepLinking-Android-SDK:copyDebugLint UP-TO-DATE
+:MobileDeepLinking-Android-SDK:checkDebugManifest
+:MobileDeepLinking-Android-SDK:preDebugAndroidTestBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preDebugUnitTestBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preReleaseBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preReleaseUnitTestBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportAnimatedVectorDrawable2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportAppcompatV72600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportCompat2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportCoreUi2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportCoreUtils2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportFragment2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportMediaCompat2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportV42600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportVectorDrawable2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareDebugDependencies
+:MobileDeepLinking-Android-SDK:compileDebugAidl
+:MobileDeepLinking-Android-SDK:compileDebugRenderscript
+:MobileDeepLinking-Android-SDK:generateDebugBuildConfig
+:MobileDeepLinking-Android-SDK:mergeDebugShaders
+:MobileDeepLinking-Android-SDK:compileDebugShaders
+:MobileDeepLinking-Android-SDK:generateDebugAssets
+:MobileDeepLinking-Android-SDK:mergeDebugAssets
+:MobileDeepLinking-Android-SDK:generateDebugResValues
+:MobileDeepLinking-Android-SDK:generateDebugResources
+:MobileDeepLinking-Android-SDK:mergeDebugResources
+:MobileDeepLinking-Android-SDK:processDebugManifest
+:MobileDeepLinking-Android-SDK:processDebugResources/tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/build/intermediates/res/merged/debug/values-v24/values-v24.xml:3: AAPT: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Borderless.Colored'.
+    
+/tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/build/intermediates/res/merged/debug/values-v24/values-v24.xml:4: AAPT: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Colored'.
+    
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':MobileDeepLinking-Android-SDK:processDebugResources'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':MobileDeepLinking-Android-SDK:processDebugResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:68)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:66)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:81)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:46)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:241)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:214)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:207)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:55)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:36)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.java:207)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:82)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:245)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:221)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:232)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:210)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+Caused by: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:43)
+	at com.android.builder.core.AndroidBuilder.processResources(AndroidBuilder.java:983)
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.java:163)
+	... 68 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:367)
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:41)
+	... 70 more
+
+
+BUILD FAILED
+
+Total time: 7.553 secs
+
+2018-04-03 21:09:41,400 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 21:09:41,400 INFO  SysUtils - Execute command: [/tmp/rdisk/2073/src/gradlew, -b, /tmp/rdisk/2073/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 21:09:48,441 INFO  ProjectTaskService - Detected possible tasks: 73
+2018-04-03 21:09:48,441 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 21:09:48,441 INFO  SysUtils - Execute command: [/tmp/rdisk/2073/src/gradlew, -b, /tmp/rdisk/2073/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 21:09:56,125 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 21:09:56,125 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:MobileDeepLinking-Android-Demo:preBuild UP-TO-DATE
+:MobileDeepLinking-Android-Demo:preDebugBuild UP-TO-DATE
+:MobileDeepLinking-Android-Demo:checkDebugManifest
+:MobileDeepLinking-Android-Demo:preReleaseBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preReleaseBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:compileReleaseNdk UP-TO-DATE
+:MobileDeepLinking-Android-SDK:compileLint
+:MobileDeepLinking-Android-SDK:copyReleaseLint UP-TO-DATE
+:MobileDeepLinking-Android-SDK:checkReleaseManifest
+:MobileDeepLinking-Android-SDK:preDebugAndroidTestBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preDebugBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preDebugUnitTestBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:preReleaseUnitTestBuild UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportAnimatedVectorDrawable2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportAppcompatV72600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportCompat2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportCoreUi2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportCoreUtils2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportFragment2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportMediaCompat2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportV42600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareComAndroidSupportSupportVectorDrawable2600Alpha1Library UP-TO-DATE
+:MobileDeepLinking-Android-SDK:prepareReleaseDependencies
+:MobileDeepLinking-Android-SDK:compileReleaseAidl UP-TO-DATE
+:MobileDeepLinking-Android-SDK:compileReleaseRenderscript UP-TO-DATE
+:MobileDeepLinking-Android-SDK:generateReleaseBuildConfig UP-TO-DATE
+:MobileDeepLinking-Android-SDK:mergeReleaseShaders UP-TO-DATE
+:MobileDeepLinking-Android-SDK:compileReleaseShaders UP-TO-DATE
+:MobileDeepLinking-Android-SDK:generateReleaseAssets UP-TO-DATE
+:MobileDeepLinking-Android-SDK:mergeReleaseAssets UP-TO-DATE
+:MobileDeepLinking-Android-SDK:generateReleaseResValues UP-TO-DATE
+:MobileDeepLinking-Android-SDK:generateReleaseResources UP-TO-DATE
+:MobileDeepLinking-Android-SDK:mergeReleaseResources UP-TO-DATE
+:MobileDeepLinking-Android-SDK:processReleaseManifest UP-TO-DATE
+:MobileDeepLinking-Android-SDK:processReleaseResources/tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/build/intermediates/res/merged/release/values-v24/values-v24.xml:3: AAPT: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Borderless.Colored'.
+    
+/tmp/rdisk/2073/src/MobileDeepLinking-Android-SDK/build/intermediates/res/merged/release/values-v24/values-v24.xml:4: AAPT: Error retrieving parent for item: No resource found that matches the given name 'android:TextAppearance.Material.Widget.Button.Colored'.
+    
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':MobileDeepLinking-Android-SDK:processReleaseResources'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':MobileDeepLinking-Android-SDK:processReleaseResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:68)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:66)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:81)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:46)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:241)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:214)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:207)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:55)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:36)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.java:207)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:82)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:245)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:221)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:232)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:210)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+Caused by: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:43)
+	at com.android.builder.core.AndroidBuilder.processResources(AndroidBuilder.java:983)
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.java:163)
+	... 68 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:367)
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:41)
+	... 70 more
+
+
+BUILD FAILED
+
+Total time: 7.247 secs
+
+2018-04-03 21:09:56,165 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 21:09:56,204 ERROR FullProcessService - Could not find generated or existed APK file

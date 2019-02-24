@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "kaichunlin.transition.app",
+    "label" : "Transition",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.6",
+    "versionCode" : 8,
+    "installLocation" : null,
+    "minSdkVersion" : "11",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2042,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"8\" android:versionName=\"1.0.6\" package=\"kaichunlin.transition.app\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"11\" android:targetSdkVersion=\"21\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:theme=\"resourceId:0x7f0800a7\" android:label=\"Transition\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Transition\" android:name=\"com.kaichunlin.transition.app.MainActivity\" android:screenOrientation=\"portrait\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.kaichunlin.transition.app.DrawerMenuItemActivity\" android:screenOrientation=\"portrait\" />\n\t\t<activity android:name=\"com.kaichunlin.transition.app.DrawerViewActivity\" android:screenOrientation=\"portrait\" />\n\t\t<activity android:name=\"com.kaichunlin.transition.app.DrawerGradientActivity\" android:screenOrientation=\"portrait\" />\n\t\t<activity android:name=\"com.kaichunlin.transition.app.SlidingUpPanelActivity\" android:screenOrientation=\"portrait\" />\n\t\t<activity android:name=\"com.kaichunlin.transition.app.SlidingUpPanelRotateActivity\" android:screenOrientation=\"portrait\" />\n\t\t<activity android:label=\"View Pager (In Progress)\" android:name=\"com.kaichunlin.transition.app.ViewPagerActivity\" android:screenOrientation=\"portrait\" />\n\t\t<activity android:name=\"com.kaichunlin.transition.app.ObservableScrollViewActivity\" android:screenOrientation=\"portrait\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2365473,
+  "crc32" : 2966721150,
+  "sha256" : "62da8749cad240ffe189319d1c47462130e0921406f89844be2f64274bbd4ae2",
+  "buildTime" : 1526038718000
+}

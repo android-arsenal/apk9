@@ -1,0 +1,21 @@
+2018-04-02 15:50:58,148 INFO  DownloadService - Downloading "https://github.com/tosslife/FlyTxtView/archive/master.zip", attempt 3
+2018-04-02 15:51:58,759 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 15:51:59,637 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 15:51:59,637 INFO  DownloadService - Downloading "https://github.com/tosslife/FlyTxtView/archive/master.zip", attempt 3
+2018-04-02 15:53:01,074 DEBUG FullProcessService - Repository https://github.com/tosslife/FlyTxtView available: true
+2018-04-02 15:53:01,074 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 15:53:01,074 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/tosslife/FlyTxtView, /tmp/rdisk/2236/src]
+2018-04-02 15:53:05,435 INFO  SysUtils - 
+2018-04-02 15:53:05,444 INFO  GitService - Deleted "/tmp/rdisk/2236/src/.git": true
+2018-04-02 15:53:05,446 INFO  FullProcessService - Size of directory with sources: 824 KB
+2018-04-02 15:53:05,446 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2236/src]
+2018-04-02 15:53:05,450 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2236/src/.git/
+
+2018-04-02 15:53:05,452 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-02 15:53:05,452 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-02 15:53:05,453 INFO  ProjectBuildService - Build script(s): none
+2018-04-02 15:53:05,455 INFO  ProjectBuildService - All script(s): none
+2018-04-02 15:53:05,455 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 15:53:05,455 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-02 15:53:05,455 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 15:53:05,456 ERROR FullProcessService - Could not find generated or existed APK file

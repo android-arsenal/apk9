@@ -1,0 +1,169 @@
+2018-04-03 12:14:25,533 INFO  DownloadService - Downloading "https://github.com/RomainPiel/guava-light/archive/master.zip", attempt 3
+2018-04-03 12:15:26,142 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 12:15:26,996 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 12:15:26,996 INFO  DownloadService - Downloading "https://github.com/RomainPiel/guava-light/archive/master.zip", attempt 3
+2018-04-03 12:16:28,281 DEBUG FullProcessService - Repository https://github.com/RomainPiel/guava-light available: true
+2018-04-03 12:16:28,281 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 12:16:28,281 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/RomainPiel/guava-light, /tmp/rdisk/2197/src]
+2018-04-03 12:16:29,872 INFO  SysUtils - 
+2018-04-03 12:16:29,876 INFO  GitService - Deleted "/tmp/rdisk/2197/src/.git": true
+2018-04-03 12:16:29,880 INFO  FullProcessService - Size of directory with sources: 815 KB
+2018-04-03 12:16:29,880 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2197/src]
+2018-04-03 12:16:29,884 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2197/src/.git/
+
+2018-04-03 12:16:29,887 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2197/src/gradlew
+2018-04-03 12:16:29,891 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2197/src/build.gradle /tmp/rdisk/2197/src/guava-base/build.gradle /tmp/rdisk/2197/src/guava-collect-base/build.gradle /tmp/rdisk/2197/src/guava-math/build.gradle /tmp/rdisk/2197/src/guava-primitives/build.gradle
+2018-04-03 12:16:29,894 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2197/src/settings.gradle /tmp/rdisk/2197/src/guava-primitives/build.gradle /tmp/rdisk/2197/src/guava-math/build.gradle /tmp/rdisk/2197/src/guava-collect-base/build.gradle /tmp/rdisk/2197/src/guava-base/build.gradle /tmp/rdisk/2197/src/build.gradle
+2018-04-03 12:16:29,894 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 12:16:29,894 INFO  ProjectFixService - Fixing project...
+2018-04-03 12:16:29,903 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2197/src/local.properties
+2018-04-03 12:16:29,904 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-03 12:16:29,904 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-03 12:16:29,905 INFO  ProjectFixService - Build info for "/tmp/rdisk/2197/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 12:16:29,906 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2197/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 12:16:29,906 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2197/src/guava-base/local.properties
+2018-04-03 12:16:29,907 INFO  ProjectFixService - Build info for "/tmp/rdisk/2197/src/guava-base/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 12:16:29,908 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2197/src/guava-base/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 12:16:29,908 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2197/src/guava-collect-base/local.properties
+2018-04-03 12:16:29,909 INFO  ProjectFixService - Build info for "/tmp/rdisk/2197/src/guava-collect-base/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 12:16:29,910 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2197/src/guava-collect-base/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 12:16:29,910 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2197/src/guava-math/local.properties
+2018-04-03 12:16:29,911 INFO  ProjectFixService - Build info for "/tmp/rdisk/2197/src/guava-math/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 12:16:29,912 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2197/src/guava-math/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 12:16:29,912 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2197/src/guava-primitives/local.properties
+2018-04-03 12:16:29,913 INFO  ProjectFixService - Build info for "/tmp/rdisk/2197/src/guava-primitives/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 12:16:29,913 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2197/src/guava-primitives/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 12:16:29,914 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 12:16:29,914 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:16:29,914 INFO  SysUtils - Execute command: [/tmp/rdisk/2197/src/gradlew, -b, /tmp/rdisk/2197/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:16:36,545 INFO  ProjectTaskService - Detected possible tasks: 37
+2018-04-03 12:16:36,545 INFO  ProjectTaskService - Excluded tasks (3): test check javadoc
+2018-04-03 12:16:36,545 INFO  SysUtils - Execute command: [/tmp/rdisk/2197/src/gradlew, -b, /tmp/rdisk/2197/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2018-04-03 12:16:44,650 INFO  SysUtils - Configuration on demand is an incubating feature.
+:guava-base:compileJavaNote: /tmp/rdisk/2197/src/guava-base/src/main/java/com/romainpiel/guava/base/Predicates.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:guava-base:processResources UP-TO-DATE
+:guava-base:classes
+:guava-base:jar
+:guava-base:assemble
+:guava-base:build
+:guava-primitives:compileJava
+:guava-primitives:processResources UP-TO-DATE
+:guava-primitives:classes
+:guava-primitives:jar
+:guava-math:compileJava
+:guava-math:processResources UP-TO-DATE
+:guava-math:classes
+:guava-math:jar
+:guava-collect-base:compileJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:guava-collect-base:processResources UP-TO-DATE
+:guava-collect-base:classes
+:guava-collect-base:jar
+:guava-collect-base:assemble
+:guava-collect-base:build
+:guava-math:assemble
+:guava-math:build
+:guava-primitives:assemble
+:guava-primitives:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.657 secs
+
+2018-04-03 12:16:44,658 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:16:44,658 INFO  SysUtils - Execute command: [/tmp/rdisk/2197/src/gradlew, -b, /tmp/rdisk/2197/src/guava-base/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:16:48,832 INFO  ProjectTaskService - Detected possible tasks: 37
+2018-04-03 12:16:48,832 INFO  ProjectTaskService - Excluded tasks (3): test check javadoc
+2018-04-03 12:16:48,832 INFO  SysUtils - Execute command: [/tmp/rdisk/2197/src/gradlew, -b, /tmp/rdisk/2197/src/guava-base/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2018-04-03 12:16:52,631 INFO  SysUtils - Configuration on demand is an incubating feature.
+:guava-base:compileJava UP-TO-DATE
+:guava-base:processResources UP-TO-DATE
+:guava-base:classes UP-TO-DATE
+:guava-base:jar UP-TO-DATE
+:guava-base:assemble UP-TO-DATE
+:guava-base:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.375 secs
+
+2018-04-03 12:16:52,639 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:16:52,639 INFO  SysUtils - Execute command: [/tmp/rdisk/2197/src/gradlew, -b, /tmp/rdisk/2197/src/guava-collect-base/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:16:56,631 INFO  ProjectTaskService - Detected possible tasks: 37
+2018-04-03 12:16:56,631 INFO  ProjectTaskService - Excluded tasks (3): test check javadoc
+2018-04-03 12:16:56,631 INFO  SysUtils - Execute command: [/tmp/rdisk/2197/src/gradlew, -b, /tmp/rdisk/2197/src/guava-collect-base/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2018-04-03 12:17:00,760 INFO  SysUtils - Configuration on demand is an incubating feature.
+:guava-base:compileJava UP-TO-DATE
+:guava-base:processResources UP-TO-DATE
+:guava-base:classes UP-TO-DATE
+:guava-base:jar UP-TO-DATE
+:guava-primitives:compileJava UP-TO-DATE
+:guava-primitives:processResources UP-TO-DATE
+:guava-primitives:classes UP-TO-DATE
+:guava-primitives:jar UP-TO-DATE
+:guava-math:compileJava UP-TO-DATE
+:guava-math:processResources UP-TO-DATE
+:guava-math:classes UP-TO-DATE
+:guava-math:jar UP-TO-DATE
+:guava-collect-base:compileJava UP-TO-DATE
+:guava-collect-base:processResources UP-TO-DATE
+:guava-collect-base:classes UP-TO-DATE
+:guava-collect-base:jar UP-TO-DATE
+:guava-collect-base:assemble UP-TO-DATE
+:guava-collect-base:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.712 secs
+
+2018-04-03 12:17:00,768 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:17:00,768 INFO  SysUtils - Execute command: [/tmp/rdisk/2197/src/gradlew, -b, /tmp/rdisk/2197/src/guava-math/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:17:04,730 INFO  ProjectTaskService - Detected possible tasks: 37
+2018-04-03 12:17:04,730 INFO  ProjectTaskService - Excluded tasks (3): test check javadoc
+2018-04-03 12:17:04,730 INFO  SysUtils - Execute command: [/tmp/rdisk/2197/src/gradlew, -b, /tmp/rdisk/2197/src/guava-math/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2018-04-03 12:17:08,690 INFO  SysUtils - Configuration on demand is an incubating feature.
+:guava-base:compileJava UP-TO-DATE
+:guava-base:processResources UP-TO-DATE
+:guava-base:classes UP-TO-DATE
+:guava-base:jar UP-TO-DATE
+:guava-primitives:compileJava UP-TO-DATE
+:guava-primitives:processResources UP-TO-DATE
+:guava-primitives:classes UP-TO-DATE
+:guava-primitives:jar UP-TO-DATE
+:guava-math:compileJava UP-TO-DATE
+:guava-math:processResources UP-TO-DATE
+:guava-math:classes UP-TO-DATE
+:guava-math:jar UP-TO-DATE
+:guava-math:assemble UP-TO-DATE
+:guava-math:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.545 secs
+
+2018-04-03 12:17:08,698 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:17:08,698 INFO  SysUtils - Execute command: [/tmp/rdisk/2197/src/gradlew, -b, /tmp/rdisk/2197/src/guava-primitives/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:17:12,536 INFO  ProjectTaskService - Detected possible tasks: 37
+2018-04-03 12:17:12,536 INFO  ProjectTaskService - Excluded tasks (3): test check javadoc
+2018-04-03 12:17:12,536 INFO  SysUtils - Execute command: [/tmp/rdisk/2197/src/gradlew, -b, /tmp/rdisk/2197/src/guava-primitives/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2018-04-03 12:17:16,678 INFO  SysUtils - Configuration on demand is an incubating feature.
+:guava-base:compileJava UP-TO-DATE
+:guava-base:processResources UP-TO-DATE
+:guava-base:classes UP-TO-DATE
+:guava-base:jar UP-TO-DATE
+:guava-primitives:compileJava UP-TO-DATE
+:guava-primitives:processResources UP-TO-DATE
+:guava-primitives:classes UP-TO-DATE
+:guava-primitives:jar UP-TO-DATE
+:guava-primitives:assemble UP-TO-DATE
+:guava-primitives:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.538 secs
+
+2018-04-03 12:17:16,685 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 12:17:16,692 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,167 @@
+2018-04-03 23:22:16,925 INFO  DownloadService - Downloading "https://github.com/Genymobile/genymotion-gradle-plugin/archive/master.zip", attempt 3
+2018-04-03 23:23:17,494 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 23:23:18,173 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 23:23:18,173 INFO  DownloadService - Downloading "https://github.com/Genymobile/genymotion-gradle-plugin/archive/master.zip", attempt 3
+2018-04-03 23:24:19,450 DEBUG FullProcessService - Repository https://github.com/Genymobile/genymotion-gradle-plugin available: true
+2018-04-03 23:24:19,450 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 23:24:19,450 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Genymobile/genymotion-gradle-plugin, /tmp/rdisk/2010/src]
+2018-04-03 23:24:21,487 INFO  SysUtils - 
+2018-04-03 23:24:21,493 INFO  GitService - Deleted "/tmp/rdisk/2010/src/.git": true
+2018-04-03 23:24:21,497 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-03 23:24:21,497 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2010/src]
+2018-04-03 23:24:21,501 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2010/src/.git/
+
+2018-04-03 23:24:21,505 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2010/src/samples/helloworld/gradlew /tmp/rdisk/2010/src/gradlew
+2018-04-03 23:24:21,510 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2010/src/samples/helloworld/app/build.gradle /tmp/rdisk/2010/src/build.gradle /tmp/rdisk/2010/src/samples/helloworld/build.gradle /tmp/rdisk/2010/src/plugin/build.gradle
+2018-04-03 23:24:21,513 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2010/src/settings.gradle /tmp/rdisk/2010/src/samples/helloworld/settings.gradle /tmp/rdisk/2010/src/samples/helloworld/build.gradle /tmp/rdisk/2010/src/samples/helloworld/app/build.gradle /tmp/rdisk/2010/src/plugin/settings.gradle /tmp/rdisk/2010/src/plugin/build.gradle /tmp/rdisk/2010/src/build.gradle
+2018-04-03 23:24:21,514 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 23:24:21,514 INFO  ProjectFixService - Fixing project...
+2018-04-03 23:24:21,524 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2010/src/samples/helloworld/app/local.properties
+2018-04-03 23:24:21,524 INFO  ProjectFixService - Build info for "/tmp/rdisk/2010/src/samples/helloworld/app/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=24,minSdkVersion=16,targetSdkVersion=24]
+2018-04-03 23:24:21,529 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2010/src/local.properties
+2018-04-03 23:24:21,529 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions-snapshots/gradle-4.0-20170417000025+0000-bin.zip
+2018-04-03 23:24:21,531 INFO  ProjectFixService - Build info for "/tmp/rdisk/2010/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=24,minSdkVersion=16,targetSdkVersion=24]
+2018-04-03 23:24:21,531 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2010/src/samples/helloworld/local.properties
+2018-04-03 23:24:21,531 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-03 23:24:21,531 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-03 23:24:21,532 INFO  ProjectFixService - Build info for "/tmp/rdisk/2010/src/samples/helloworld/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=24,minSdkVersion=16,targetSdkVersion=24]
+2018-04-03 23:24:21,533 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2010/src/plugin/local.properties
+2018-04-03 23:24:21,535 INFO  ProjectFixService - Build info for "/tmp/rdisk/2010/src/plugin/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=24,minSdkVersion=16,targetSdkVersion=24]
+2018-04-03 23:24:21,535 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 23:24:21,535 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 23:24:21,535 INFO  SysUtils - Execute command: [/tmp/rdisk/2010/src/samples/helloworld/gradlew, -b, /tmp/rdisk/2010/src/samples/helloworld/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 23:24:31,280 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 23:24:31,280 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 23:24:31,280 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 23:24:31,280 INFO  SysUtils - Execute command: [/tmp/rdisk/2010/src/samples/helloworld/gradlew, -b, /tmp/rdisk/2010/src/samples/helloworld/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 23:24:38,665 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 23:24:38,665 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':app'.
+> Failed to notify project evaluation listener.
+   > gmtool command not found. You have to specify the Genymotion path with the genymotion.config.genymotionPath parameter. Current value: 
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':app'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:540)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:93)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:42)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:84)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:75)
+	at org.gradle.execution.commandline.CommandLineTaskParser.parseTasks(CommandLineTaskParser.java:42)
+	at org.gradle.execution.TaskNameResolvingBuildConfigurationAction.configure(TaskNameResolvingBuildConfigurationAction.java:44)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.access$000(DefaultBuildConfigurationActionExecuter.java:25)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter$1.proceed(DefaultBuildConfigurationActionExecuter.java:54)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.access$000(DefaultBuildConfigurationActionExecuter.java:25)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter$1.proceed(DefaultBuildConfigurationActionExecuter.java:54)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:47)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$3.run(DefaultGradleLauncher.java:142)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:91)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:53)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:139)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:98)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:92)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:91)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:63)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:92)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:83)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:99)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:48)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:81)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:46)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:239)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:212)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:205)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:55)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:36)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: org.gradle.internal.event.ListenerNotificationException: Failed to notify project evaluation listener.
+	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:55)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:79)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:30)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy11.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 57 more
+Caused by: java.io.FileNotFoundException: gmtool command not found. You have to specify the Genymotion path with the genymotion.config.genymotionPath parameter. Current value: 
+	at com.genymotion.tools.GMTool.cmd(GMTool.groovy:893)
+	at com.genymotion.tools.GMTool$cmd$1.callCurrent(Unknown Source)
+	at com.genymotion.tools.GMTool.getVersion(GMTool.groovy:74)
+	at com.genymotion.tools.GMTool$getVersion$0.call(Unknown Source)
+	at com.genymotion.GenymotionPluginExtension.processConfiguration(GenymotionPluginExtension.groovy:247)
+	at com.genymotion.GenymotionPluginExtension.processConfiguration(GenymotionPluginExtension.groovy:244)
+	at com.genymotion.GenymotionPluginExtension$processConfiguration.call(Unknown Source)
+	at com.genymotion.GenymotionGradlePlugin$_apply_closure3.doCall(GenymotionGradlePlugin.groovy:78)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:44)
+	... 62 more
+
+
+BUILD FAILED
+
+Total time: 6.851 secs
+
+2018-04-03 23:24:38,670 INFO  FullProcessService - Found APK file: /tmp/rdisk/2010/src/plugin/src/integTest/res/test/test2.apk

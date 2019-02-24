@@ -1,0 +1,97 @@
+2018-04-03 22:17:10,124 INFO  DownloadService - Downloading "https://github.com/Glurt/EdenYouTube/archive/master.zip", attempt 3
+2018-04-03 22:18:10,777 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 22:18:11,478 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 22:18:11,478 INFO  DownloadService - Downloading "https://github.com/Glurt/EdenYouTube/archive/master.zip", attempt 3
+2018-04-03 22:19:12,702 DEBUG FullProcessService - Repository https://github.com/Glurt/EdenYouTube available: true
+2018-04-03 22:19:12,702 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 22:19:12,702 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Glurt/EdenYouTube, /tmp/rdisk/2040/src]
+2018-04-03 22:19:15,137 INFO  SysUtils - 
+2018-04-03 22:19:15,143 INFO  GitService - Deleted "/tmp/rdisk/2040/src/.git": true
+2018-04-03 22:19:15,146 INFO  FullProcessService - Size of directory with sources: 7 MB
+2018-04-03 22:19:15,146 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2040/src]
+2018-04-03 22:19:15,149 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2040/src/.git/
+
+2018-04-03 22:19:15,152 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2040/src/gradlew
+2018-04-03 22:19:15,155 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2040/src/app/build.gradle /tmp/rdisk/2040/src/build.gradle
+2018-04-03 22:19:15,157 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2040/src/settings.gradle /tmp/rdisk/2040/src/build.gradle /tmp/rdisk/2040/src/app/build.gradle
+2018-04-03 22:19:15,157 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 22:19:15,157 INFO  ProjectFixService - Fixing project...
+2018-04-03 22:19:15,163 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2040/src/app/local.properties
+2018-04-03 22:19:15,163 INFO  ProjectFixService - Build info for "/tmp/rdisk/2040/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-03 22:19:15,163 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2040/src/local.properties
+2018-04-03 22:19:15,164 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 22:19:15,164 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 22:19:15,164 INFO  ProjectFixService - Build info for "/tmp/rdisk/2040/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-03 22:19:15,165 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 22:19:15,165 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:19:15,165 INFO  SysUtils - Execute command: [/tmp/rdisk/2040/src/gradlew, -b, /tmp/rdisk/2040/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:19:22,075 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-03 22:19:22,075 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 22:19:22,075 INFO  SysUtils - Execute command: [/tmp/rdisk/2040/src/gradlew, -b, /tmp/rdisk/2040/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 22:19:45,162 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72311Library
+:app:prepareComAndroidSupportSupportV42311Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaWithJavacNote: /tmp/rdisk/2040/src/app/src/main/java/com/eden/youtubesample/YouTubeFragmentActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaWithJavacNote: /tmp/rdisk/2040/src/app/src/main/java/com/eden/youtubesample/YouTubeFragmentActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.65 secs
+
+2018-04-03 22:19:45,201 INFO  FullProcessService - Found APK file: /tmp/rdisk/2040/src/app/build/outputs/apk/app-debug.apk

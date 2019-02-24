@@ -1,0 +1,305 @@
+2018-04-03 23:02:27,210 INFO  DownloadService - Downloading "https://github.com/yazeed44/MultiImagePicker/archive/master.zip", attempt 3
+2018-04-03 23:03:27,789 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 23:03:28,445 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 23:03:28,445 INFO  DownloadService - Downloading "https://github.com/yazeed44/MultiImagePicker/archive/master.zip", attempt 3
+2018-04-03 23:04:29,634 DEBUG FullProcessService - Repository https://github.com/yazeed44/MultiImagePicker available: true
+2018-04-03 23:04:29,634 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 23:04:29,634 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/yazeed44/MultiImagePicker, /tmp/rdisk/2019/src]
+2018-04-03 23:04:31,523 INFO  SysUtils - 
+2018-04-03 23:04:31,528 INFO  GitService - Deleted "/tmp/rdisk/2019/src/.git": true
+2018-04-03 23:04:31,531 INFO  FullProcessService - Size of directory with sources: 944 KB
+2018-04-03 23:04:31,531 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2019/src]
+2018-04-03 23:04:31,535 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2019/src/.git/
+
+2018-04-03 23:04:31,539 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2019/src/imagepicker/gradlew /tmp/rdisk/2019/src/gradlew
+2018-04-03 23:04:31,542 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2019/src/imagepicker/build.gradle /tmp/rdisk/2019/src/app/build.gradle /tmp/rdisk/2019/src/build.gradle
+2018-04-03 23:04:31,545 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2019/src/settings.gradle /tmp/rdisk/2019/src/imagepicker/build.gradle /tmp/rdisk/2019/src/build.gradle /tmp/rdisk/2019/src/app/build.gradle
+2018-04-03 23:04:31,546 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-03 23:04:31,873 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle, attempt 3
+2018-04-03 23:04:31,873 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle", attempt 3
+2018-04-03 23:04:32,011 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle, attempt 3
+2018-04-03 23:04:32,012 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle
+2018-04-03 23:04:32,012 INFO  ProjectFixService - Fixing project...
+2018-04-03 23:04:32,020 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2019/src/imagepicker/local.properties
+2018-04-03 23:04:32,020 INFO  ProjectFixService - Build info for "/tmp/rdisk/2019/src/imagepicker/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-03 23:04:32,020 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2019/src/app/local.properties
+2018-04-03 23:04:32,021 INFO  ProjectFixService - Build info for "/tmp/rdisk/2019/src/app/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-03 23:04:32,021 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2019/src/local.properties
+2018-04-03 23:04:32,021 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.5-all.zip
+2018-04-03 23:04:32,021 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.5-bin.zip)
+2018-04-03 23:04:32,022 INFO  ProjectFixService - Build info for "/tmp/rdisk/2019/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-03 23:04:32,022 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 23:04:32,022 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 23:04:32,023 INFO  SysUtils - Execute command: [/tmp/rdisk/2019/src/imagepicker/gradlew, -b, /tmp/rdisk/2019/src/imagepicker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 23:04:32,138 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 23:04:32,138 INFO  ProjectTaskService - Detected possible tasks: 3
+2018-04-03 23:04:32,138 INFO  ProjectTaskService - Excluded tasks (3): sourcesJar javadocJar javadoc
+2018-04-03 23:04:32,138 INFO  SysUtils - Execute command: [/tmp/rdisk/2019/src/imagepicker/gradlew, -b, /tmp/rdisk/2019/src/imagepicker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, sourcesJar, -x, javadocJar, -x, javadoc, build]
+2018-04-03 23:04:32,245 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 23:04:32,245 INFO  SysUtils - Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain
+
+2018-04-03 23:04:32,248 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 23:04:32,248 INFO  SysUtils - Execute command: [/tmp/rdisk/2019/src/gradlew, -b, /tmp/rdisk/2019/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 23:04:58,422 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-03 23:04:58,422 INFO  ProjectTaskService - Excluded tasks (22): lintDebug mockableAndroidJar javadocJar deviceCheck lint testReleaseUnitTest javadoc uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll sourcesJar test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 23:04:58,422 INFO  SysUtils - Execute command: [/tmp/rdisk/2019/src/gradlew, -b, /tmp/rdisk/2019/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, javadocJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, javadoc, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, sourcesJar, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 23:05:06,050 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 23:05:06,050 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'javadocJar' not found in project ':app'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'javadocJar' not found in project ':app'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:100)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:63)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher$5.run(DefaultGradleLauncher.java:162)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:47)
+	at org.gradle.initialization.DefaultGradleLauncher.runBuildOperation(DefaultGradleLauncher.java:189)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:159)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:104)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:97)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.runRootBuildOperation(DefaultGradleLauncher.java:184)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:97)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:93)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:27)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:72)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:44)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+
+BUILD FAILED
+
+Total time: 7.159 secs
+
+2018-04-03 23:05:06,050 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-03 23:05:06,050 INFO  SysUtils - Execute command: [/tmp/rdisk/2019/src/gradlew, -b, /tmp/rdisk/2019/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 23:06:03,345 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:imagepicker:compileLint
+:imagepicker:copyReleaseLint UP-TO-DATE
+:imagepicker:preBuild UP-TO-DATE
+:imagepicker:preReleaseBuild UP-TO-DATE
+:imagepicker:checkReleaseManifest
+:imagepicker:preDebugAndroidTestBuild UP-TO-DATE
+:imagepicker:preDebugBuild UP-TO-DATE
+:imagepicker:preDebugUnitTestBuild UP-TO-DATE
+:imagepicker:preReleaseUnitTestBuild UP-TO-DATE
+:imagepicker:prepareComAndroidSupportAppcompatV72311Library
+:imagepicker:prepareComAndroidSupportDesign2311Library
+:imagepicker:prepareComAndroidSupportRecyclerviewV72311Library
+:imagepicker:prepareComAndroidSupportSupportV42311Library
+:imagepicker:prepareComCommonswareCwacCam2023Library
+:imagepicker:prepareComGithubChrisbanesPhotoviewLibrary123Library
+:imagepicker:prepareComGithubClansFab161Library
+:imagepicker:prepareComMelnykovFloatingactionbutton130Library
+:imagepicker:prepareReleaseDependencies
+:imagepicker:compileReleaseAidl
+:imagepicker:compileReleaseRenderscript
+:imagepicker:generateReleaseBuildConfig
+:imagepicker:generateReleaseAssets UP-TO-DATE
+:imagepicker:mergeReleaseAssets
+:imagepicker:generateReleaseResValues
+:imagepicker:generateReleaseResources
+:imagepicker:mergeReleaseResources
+:imagepicker:processReleaseManifest
+:imagepicker:processReleaseResources
+:imagepicker:generateReleaseSources
+:imagepicker:processReleaseJavaRes UP-TO-DATE
+:imagepicker:compileReleaseJavaWithJavacNote: /tmp/rdisk/2019/src/imagepicker/src/main/java/net/yazeed44/imagepicker/ui/AlbumsFragment.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:imagepicker:extractReleaseAnnotations
+:imagepicker:mergeReleaseProguardFiles
+:imagepicker:packageReleaseJar
+:imagepicker:compileReleaseNdk UP-TO-DATE
+:imagepicker:packageReleaseJniLibs UP-TO-DATE
+:imagepicker:packageReleaseLocalJar UP-TO-DATE
+:imagepicker:packageReleaseRenderscript UP-TO-DATE
+:imagepicker:packageReleaseResources
+:imagepicker:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2320Library
+:app:prepareComAndroidSupportAppcompatV72320Library
+:app:prepareComAndroidSupportDesign2311Library
+:app:prepareComAndroidSupportRecyclerviewV72320Library
+:app:prepareComAndroidSupportSupportV42320Library
+:app:prepareComAndroidSupportSupportVectorDrawable2320Library
+:app:prepareComCommonswareCwacCam2023Library
+:app:prepareComGithubAfollestadMaterialDialogsCore0853Library
+:app:prepareComGithubChrisbanesPhotoviewLibrary123Library
+:app:prepareComGithubClansFab161Library
+:app:prepareComMelnykovFloatingactionbutton130Library
+:app:prepareMeZhanghaiAndroidMaterialprogressbarLibrary114Library
+:app:prepareNetYazeed44ImagepickerImagepicker131Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:compileLint
+:app:lintUnexpected failure during lint analysis of MainActivity.java (this is a bug in lint or one of the libraries it depends on)
+TypeSystem.getUnannotatedType(TypeSystem.java:180)->TypeSystem.getParameterizedType(TypeSystem.java:238)->TypeSystem.getParameterizedType(TypeSystem.java:261)->LookupEnvironment.createParameterizedType(LookupEnvironment.java:949)
+Unexpected failure during lint analysis of MainActivity.java (this is a bug in lint or one of the libraries it depends on)
+TypeSystem.getUnannotatedType(TypeSystem.java:180)->TypeSystem.getParameterizedType(TypeSystem.java:238)->TypeSystem.getParameterizedType(TypeSystem.java:261)->LookupEnvironment.createParameterizedType(LookupEnvironment.java:949)
+
+Ran lint on variant release: 6 issues found
+Ran lint on variant debug: 6 issues found
+Wrote HTML report to file:/tmp/rdisk/2019/src/app/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2019/src/app/build/outputs/lint-results.xml
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:prepareDebugUnitTestDependencies
+:app:processDebugUnitTestJavaRes UP-TO-DATE
+:app:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:app:compileDebugUnitTestSources UP-TO-DATE
+:app:mockableAndroidJar
+:app:assembleDebugUnitTest
+:app:testDebugUnitTest
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:prepareReleaseUnitTestDependencies
+:app:processReleaseUnitTestJavaRes UP-TO-DATE
+:app:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:app:compileReleaseUnitTestSources UP-TO-DATE
+:app:assembleReleaseUnitTest
+:app:testReleaseUnitTest
+:app:test
+:app:check
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 56.843 secs
+
+2018-04-03 23:06:03,423 INFO  FullProcessService - Found APK file: /tmp/rdisk/2019/src/app/build/outputs/apk/app-debug.apk

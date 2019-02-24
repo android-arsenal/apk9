@@ -1,0 +1,21 @@
+2018-04-03 18:04:24,191 INFO  DownloadService - Downloading "https://github.com/ezaquarii/MobileStringsToolkit/archive/master.zip", attempt 3
+2018-04-03 18:05:24,878 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:05:25,718 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:05:25,718 INFO  DownloadService - Downloading "https://github.com/ezaquarii/MobileStringsToolkit/archive/master.zip", attempt 3
+2018-04-03 18:06:27,121 DEBUG FullProcessService - Repository https://github.com/ezaquarii/MobileStringsToolkit available: true
+2018-04-03 18:06:27,121 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 18:06:27,121 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ezaquarii/MobileStringsToolkit, /tmp/rdisk/2160/src]
+2018-04-03 18:06:28,589 INFO  SysUtils - 
+2018-04-03 18:06:28,599 INFO  GitService - Deleted "/tmp/rdisk/2160/src/.git": true
+2018-04-03 18:06:28,601 INFO  FullProcessService - Size of directory with sources: 193 KB
+2018-04-03 18:06:28,601 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2160/src]
+2018-04-03 18:06:28,605 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2160/src/.git/
+
+2018-04-03 18:06:28,610 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-03 18:06:28,610 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-03 18:06:28,612 INFO  ProjectBuildService - Build script(s): none
+2018-04-03 18:06:28,613 INFO  ProjectBuildService - All script(s): none
+2018-04-03 18:06:28,613 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 18:06:28,613 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-03 18:06:28,613 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 18:06:28,614 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,132 @@
+2018-04-03 18:20:17,947 INFO  DownloadService - Downloading "https://github.com/yongjhih/AutoJson/archive/master.zip", attempt 3
+2018-04-03 18:21:18,581 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:21:19,402 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:21:19,402 INFO  DownloadService - Downloading "https://github.com/yongjhih/AutoJson/archive/master.zip", attempt 3
+2018-04-03 18:22:20,700 DEBUG FullProcessService - Repository https://github.com/yongjhih/AutoJson available: true
+2018-04-03 18:22:20,700 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 18:22:20,700 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/yongjhih/AutoJson, /tmp/rdisk/2155/src]
+2018-04-03 18:22:22,495 INFO  SysUtils - 
+2018-04-03 18:22:22,499 INFO  GitService - Deleted "/tmp/rdisk/2155/src/.git": true
+2018-04-03 18:22:22,503 INFO  FullProcessService - Size of directory with sources: 696 KB
+2018-04-03 18:22:22,503 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2155/src]
+2018-04-03 18:22:22,507 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2155/src/.git/
+
+2018-04-03 18:22:22,510 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2155/src/gradlew
+2018-04-03 18:22:22,513 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2155/src/auto-json-sample/build.gradle /tmp/rdisk/2155/src/build.gradle /tmp/rdisk/2155/src/auto-json-processor/build.gradle /tmp/rdisk/2155/src/auto-json/build.gradle
+2018-04-03 18:22:22,515 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2155/src/settings.gradle /tmp/rdisk/2155/src/build.gradle /tmp/rdisk/2155/src/auto-json/deploy.gradle /tmp/rdisk/2155/src/auto-json/build.gradle /tmp/rdisk/2155/src/auto-json-sample/build.gradle /tmp/rdisk/2155/src/auto-json-processor/deploy.gradle /tmp/rdisk/2155/src/auto-json-processor/build.gradle
+2018-04-03 18:22:22,516 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 18:22:22,516 INFO  ProjectFixService - Fixing project...
+2018-04-03 18:22:22,526 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2155/src/auto-json-sample/local.properties
+2018-04-03 18:22:22,527 INFO  ProjectFixService - Build info for "/tmp/rdisk/2155/src/auto-json-sample/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 18:22:22,527 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2155/src/local.properties
+2018-04-03 18:22:22,527 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-03 18:22:22,527 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-03 18:22:22,530 INFO  ProjectFixService - Build info for "/tmp/rdisk/2155/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 18:22:22,530 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2155/src/auto-json-processor/local.properties
+2018-04-03 18:22:22,534 INFO  ProjectFixService - Build info for "/tmp/rdisk/2155/src/auto-json-processor/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 18:22:22,534 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2155/src/auto-json/local.properties
+2018-04-03 18:22:22,537 INFO  ProjectFixService - Build info for "/tmp/rdisk/2155/src/auto-json/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 18:22:22,537 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 18:22:22,537 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:22:22,537 INFO  SysUtils - Execute command: [/tmp/rdisk/2155/src/gradlew, -b, /tmp/rdisk/2155/src/auto-json-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:22:44,721 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-03 18:22:44,721 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 18:22:44,721 INFO  SysUtils - Execute command: [/tmp/rdisk/2155/src/gradlew, -b, /tmp/rdisk/2155/src/auto-json-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 18:23:05,584 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-json:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:auto-json:processResources UP-TO-DATE
+:auto-json:classes
+:auto-json:jar
+:auto-json:javadoc/tmp/rdisk/2155/src/auto-json/src/main/java/auto/json/AutoJson.java:50: warning: no @return
+    String[] name() default {};
+             ^
+/tmp/rdisk/2155/src/auto-json/src/main/java/auto/json/AutoJson.java:53: warning: no @return
+    Class typeConverter() default void.class;
+          ^
+/tmp/rdisk/2155/src/auto-json/src/main/java/auto/json/AutoJson.java:61: warning: no @return
+    String[] name() default {};
+             ^
+/tmp/rdisk/2155/src/auto-json/src/main/java/auto/json/AutoJson.java:64: warning: no @return
+    Class typeConverter() default void.class;
+          ^
+
+4 warnings
+:auto-json:javadocsJar
+:auto-json:sourcesJar
+:auto-json-processor:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+
+:auto-json-processor:processResources
+:auto-json-processor:classes
+:auto-json-processor:jar
+:auto-json-processor:javadoc/tmp/rdisk/2155/src/auto-json-processor/src/main/java/auto/json/processor/AutoJsonProcessor.java:409: warning: no @return
+    public String getName() {
+                  ^
+/tmp/rdisk/2155/src/auto-json-processor/src/main/java/auto/json/processor/AutoJsonProcessor.java:421: warning: no @return
+    public String getGetter() {
+                  ^
+
+2 warnings
+:auto-json-processor:javadocsJar
+:auto-json-processor:sourcesJar
+:auto-json-sample:preBuild UP-TO-DATE
+:auto-json-sample:preDebugBuild UP-TO-DATE
+:auto-json-sample:checkDebugManifest
+:auto-json-sample:prepareDebugDependencies
+:auto-json-sample:compileDebugAidl
+:auto-json-sample:compileDebugRenderscript
+:auto-json-sample:generateDebugBuildConfig
+:auto-json-sample:generateDebugAssets UP-TO-DATE
+:auto-json-sample:mergeDebugAssets
+:auto-json-sample:generateDebugResValues
+:auto-json-sample:generateDebugResources
+:auto-json-sample:mergeDebugResources
+:auto-json-sample:processDebugManifest
+:auto-json-sample:processDebugResources
+:auto-json-sample:generateDebugSources
+:auto-json-sample:processDebugJavaRes UP-TO-DATE
+:auto-json-sample:compileDebugJavaNote: /tmp/rdisk/2155/src/auto-json-sample/build/generated/source/apt/debug/model3/AutoJson_Person.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:auto-json-sample:compileDebugNdk UP-TO-DATE
+:auto-json-sample:compileDebugSources
+:auto-json-sample:preDexDebug
+:auto-json-sample:dexDebug
+:auto-json-sample:validateDebugSigning
+:auto-json-sample:packageDebug
+:auto-json-sample:zipalignDebug
+:auto-json-sample:assembleDebug
+:auto-json-sample:preReleaseBuild UP-TO-DATE
+:auto-json-sample:checkReleaseManifest
+:auto-json-sample:prepareReleaseDependencies
+:auto-json-sample:compileReleaseAidl
+:auto-json-sample:compileReleaseRenderscript
+:auto-json-sample:generateReleaseBuildConfig
+:auto-json-sample:generateReleaseAssets UP-TO-DATE
+:auto-json-sample:mergeReleaseAssets
+:auto-json-sample:generateReleaseResValues
+:auto-json-sample:generateReleaseResources
+:auto-json-sample:mergeReleaseResources
+:auto-json-sample:processReleaseManifest
+:auto-json-sample:processReleaseResources
+:auto-json-sample:generateReleaseSources
+:auto-json-sample:processReleaseJavaRes UP-TO-DATE
+:auto-json-sample:compileReleaseJavaNote: /tmp/rdisk/2155/src/auto-json-sample/build/generated/source/apt/release/model3/AutoJson_Person.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:auto-json-sample:compileReleaseNdk UP-TO-DATE
+:auto-json-sample:compileReleaseSources
+:auto-json-sample:lintVitalRelease
+:auto-json-sample:preDexRelease
+:auto-json-sample:dexRelease
+:auto-json-sample:packageRelease
+:auto-json-sample:assembleRelease
+:auto-json-sample:assemble
+:auto-json-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.45 secs
+
+2018-04-03 18:23:05,596 INFO  FullProcessService - Found APK file: /tmp/rdisk/2155/src/auto-json-sample/build/outputs/apk/auto-json-sample-release-unsigned.apk

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "json2notification.app",
+    "label" : "json2notification",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : null,
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.VIBRATE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2277,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"json2notification.app\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.VIBRATE\" />\n\t<application android:theme=\"resourceId:0x7f08007e\" android:label=\"json2notification\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"json2notification.app.App\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"json2notification\" android:name=\"json2notification.app.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1728674,
+  "crc32" : 454578573,
+  "sha256" : "30480abc025937479436d0f0af3111a0a8e5d095beda756b6e1ea7758ac4d70d",
+  "buildTime" : 1508146611000
+}

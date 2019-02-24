@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "me.kartikarora.potato.sample",
+    "label" : "Potato Sample",
+    "icon" : "res/mipmap-anydpi-v26/ic_launcher.xml",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "23",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.CALL_PHONE", "android.permission.SEND_SMS", "android.permission.ACCESS_NETWORK_STATE", "android.permission.INTERNET", "android.permission.BLUETOOTH_ADMIN", "android.permission.BLUETOOTH", "android.permission.ACCESS_WIFI_STATE", "android.permission.CHANGE_WIFI_STATE", "android.permission.READ_EXTERNAL_STORAGE", "android.permission.USE_FINGERPRINT" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 160,
+    "data" : "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"
+  },
+  "dexClasses" : 1612,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "en_CA", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "en_XC", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"me.kartikarora.potato.sample\">\n\t<uses-sdk android:minSdkVersion=\"23\" android:targetSdkVersion=\"27\" />\n\t<uses-permission android:name=\"android.permission.CALL_PHONE\" />\n\t<uses-permission android:name=\"android.permission.SEND_SMS\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />\n\t<uses-permission android:name=\"android.permission.BLUETOOTH\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n\t<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.USE_FINGERPRINT\" />\n\t<application android:theme=\"resourceId:0x7f0c0005\" android:label=\"Potato Sample\" android:icon=\"res/mipmap-anydpi-v26/ic_launcher.xml\" android:allowBackup=\"true\" android:supportsRtl=\"true\" android:roundIcon=\"res/mipmap-anydpi-v26/ic_launcher_round.xml\">\n\t\t<activity android:name=\"me.kartikarora.potato.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"me.kartikarora.potato.sample.SamplerActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1469878,
+  "crc32" : 4083171147,
+  "sha256" : "6f41dcbb44b2fd5de7604ebd3a1fc6955842a4aed28f0fab323471939c799d98",
+  "buildTime" : 1522756488000
+}

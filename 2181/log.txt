@@ -1,0 +1,9 @@
+2018-04-03 12:50:52,245 INFO  DownloadService - Downloading "https://github.com/florent37/AndroidParallax/archive/master.zip", attempt 3
+2018-04-03 12:50:52,245 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 12:50:52,617 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 12:50:52,617 INFO  DownloadService - Downloading "https://github.com/florent37/AndroidParallax/archive/master.zip", attempt 3
+2018-04-03 12:50:52,618 DEBUG FullProcessService - Repository https://github.com/florent37/AndroidParallax available: false
+2018-04-03 12:50:52,618 ERROR FullProcessService - Could not find directory with sources
+2018-04-03 12:50:52,618 ERROR FullProcessService - Project will not be processed
+2018-04-03 12:50:52,618 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 12:50:52,618 ERROR FullProcessService - Could not find generated or existed APK file

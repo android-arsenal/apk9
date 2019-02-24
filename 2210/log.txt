@@ -1,0 +1,1229 @@
+2018-04-03 11:36:17,544 INFO  DownloadService - Downloading "https://github.com/trello/RxLifecycle/archive/master.zip", attempt 3
+2018-04-03 11:37:18,148 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 11:37:19,000 INFO  GithubDownloadService - Default branch of this repository: 2.x
+2018-04-03 11:37:19,001 INFO  DownloadService - Downloading "https://github.com/trello/RxLifecycle/archive/2.x.zip", attempt 3
+2018-04-03 11:38:20,316 DEBUG FullProcessService - Repository https://github.com/trello/RxLifecycle available: true
+2018-04-03 11:38:20,317 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 11:38:20,317 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/trello/RxLifecycle, /tmp/rdisk/2210/src]
+2018-04-03 11:38:21,954 INFO  SysUtils - 
+2018-04-03 11:38:21,961 INFO  GitService - Deleted "/tmp/rdisk/2210/src/.git": true
+2018-04-03 11:38:21,968 INFO  FullProcessService - Size of directory with sources: 330 KB
+2018-04-03 11:38:21,968 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2210/src]
+2018-04-03 11:38:21,975 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2210/src/.git/
+
+2018-04-03 11:38:21,981 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2210/src/gradlew
+2018-04-03 11:38:21,987 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2210/src/rxlifecycle-android-lifecycle-kotlin/build.gradle /tmp/rdisk/2210/src/rxlifecycle-android-lifecycle/build.gradle /tmp/rdisk/2210/src/rxlifecycle-android/build.gradle /tmp/rdisk/2210/src/rxlifecycle-components-preference/build.gradle /tmp/rdisk/2210/src/rxlifecycle-components/build.gradle /tmp/rdisk/2210/src/rxlifecycle-kotlin/build.gradle /tmp/rdisk/2210/src/rxlifecycle-navi/build.gradle /tmp/rdisk/2210/src/rxlifecycle-sample/build.gradle /tmp/rdisk/2210/src/build.gradle /tmp/rdisk/2210/src/rxlifecycle/build.gradle
+2018-04-03 11:38:21,993 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2210/src/settings.gradle /tmp/rdisk/2210/src/rxlifecycle/build.gradle /tmp/rdisk/2210/src/rxlifecycle-sample/build.gradle /tmp/rdisk/2210/src/rxlifecycle-navi/build.gradle /tmp/rdisk/2210/src/rxlifecycle-kotlin/build.gradle /tmp/rdisk/2210/src/rxlifecycle-components/build.gradle /tmp/rdisk/2210/src/rxlifecycle-components-preference/build.gradle /tmp/rdisk/2210/src/rxlifecycle-android/build.gradle /tmp/rdisk/2210/src/rxlifecycle-android-lifecycle/build.gradle /tmp/rdisk/2210/src/rxlifecycle-android-lifecycle-kotlin/build.gradle /tmp/rdisk/2210/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2210/src/gradle/artifacts.gradle /tmp/rdisk/2210/src/build.gradle
+2018-04-03 11:38:21,994 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 11:38:21,994 INFO  ProjectFixService - Fixing project...
+2018-04-03 11:38:22,013 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2210/src/rxlifecycle-android-lifecycle-kotlin/local.properties
+2018-04-03 11:38:22,020 INFO  ProjectFixService - Build info for "/tmp/rdisk/2210/src/rxlifecycle-android-lifecycle-kotlin/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 11:38:22,020 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2210/src/rxlifecycle-android-lifecycle-kotlin/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 11:38:22,020 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2210/src/rxlifecycle-android-lifecycle/local.properties
+2018-04-03 11:38:22,026 INFO  ProjectFixService - Build info for "/tmp/rdisk/2210/src/rxlifecycle-android-lifecycle/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 11:38:22,026 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2210/src/rxlifecycle-android-lifecycle/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 11:38:22,027 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2210/src/rxlifecycle-android/local.properties
+2018-04-03 11:38:22,033 INFO  ProjectFixService - Build info for "/tmp/rdisk/2210/src/rxlifecycle-android/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 11:38:22,033 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2210/src/rxlifecycle-android/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 11:38:22,033 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2210/src/rxlifecycle-components-preference/local.properties
+2018-04-03 11:38:22,039 INFO  ProjectFixService - Build info for "/tmp/rdisk/2210/src/rxlifecycle-components-preference/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 11:38:22,040 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2210/src/rxlifecycle-components-preference/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 11:38:22,040 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2210/src/rxlifecycle-components/local.properties
+2018-04-03 11:38:22,046 INFO  ProjectFixService - Build info for "/tmp/rdisk/2210/src/rxlifecycle-components/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 11:38:22,046 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2210/src/rxlifecycle-components/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 11:38:22,046 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2210/src/rxlifecycle-kotlin/local.properties
+2018-04-03 11:38:22,053 INFO  ProjectFixService - Build info for "/tmp/rdisk/2210/src/rxlifecycle-kotlin/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 11:38:22,053 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2210/src/rxlifecycle-kotlin/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 11:38:22,053 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2210/src/rxlifecycle-navi/local.properties
+2018-04-03 11:38:22,059 INFO  ProjectFixService - Build info for "/tmp/rdisk/2210/src/rxlifecycle-navi/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 11:38:22,059 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2210/src/rxlifecycle-navi/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 11:38:22,059 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2210/src/rxlifecycle-sample/local.properties
+2018-04-03 11:38:22,066 INFO  ProjectFixService - Build info for "/tmp/rdisk/2210/src/rxlifecycle-sample/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 11:38:22,066 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2210/src/rxlifecycle-sample/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 11:38:22,066 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2210/src/local.properties
+2018-04-03 11:38:22,066 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-03 11:38:22,066 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-03 11:38:22,068 INFO  ProjectFixService - Build info for "/tmp/rdisk/2210/src/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 11:38:22,068 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2210/src/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 11:38:22,069 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2210/src/rxlifecycle/local.properties
+2018-04-03 11:38:22,075 INFO  ProjectFixService - Build info for "/tmp/rdisk/2210/src/rxlifecycle/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 11:38:22,075 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2210/src/rxlifecycle/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 11:38:22,075 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 11:38:22,075 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:38:22,075 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-android-lifecycle-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:38:31,511 INFO  ProjectTaskService - Detected possible tasks: 76
+2018-04-03 11:38:31,511 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 11:38:31,511 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-android-lifecycle-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 11:38:54,040 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':rxlifecycle-android-lifecycle-kotlin' is deprecated. Use 'implementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Configuration 'compile' in project ':rxlifecycle-android-lifecycle' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-android-lifecycle' is deprecated. Use 'testImplementation' instead.
+:rxlifecycle-android-lifecycle:preBuild UP-TO-DATE
+:rxlifecycle-android-lifecycle:preDebugBuild UP-TO-DATE
+:rxlifecycle-android-lifecycle:compileDebugAidl
+:rxlifecycle-android-lifecycle-kotlin:preBuild UP-TO-DATE
+:rxlifecycle-android-lifecycle-kotlin:preDebugBuild UP-TO-DATE
+:rxlifecycle-android-lifecycle-kotlin:compileDebugAidl
+:rxlifecycle-android-lifecycle-kotlin:compileDebugNdk NO-SOURCE
+:rxlifecycle:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:rxlifecycle:processResources NO-SOURCE
+:rxlifecycle:classes
+:rxlifecycle:jar
+:rxlifecycle-android-lifecycle:compileDebugRenderscript
+:rxlifecycle-android-lifecycle:checkDebugManifest
+:rxlifecycle-android-lifecycle:generateDebugBuildConfig
+:rxlifecycle-android-lifecycle:prepareLintJar
+:rxlifecycle-android-lifecycle:generateDebugResValues
+:rxlifecycle-android-lifecycle:generateDebugResources
+:rxlifecycle-android-lifecycle:packageDebugResources
+:rxlifecycle-android-lifecycle:platformAttrExtractor
+:rxlifecycle-android-lifecycle:processDebugManifest
+:rxlifecycle-android-lifecycle:javaPreCompileDebug
+:rxlifecycle-android-lifecycle:processDebugJavaRes NO-SOURCE
+:rxlifecycle-android-lifecycle:processDebugResources
+:rxlifecycle-android-lifecycle:generateDebugSources
+:rxlifecycle-android-lifecycle:compileDebugJavaWithJavac
+:rxlifecycle-android-lifecycle:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:rxlifecycle-android-lifecycle:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-android-lifecycle-kotlin:compileDebugRenderscript
+:rxlifecycle-android-lifecycle-kotlin:checkDebugManifest
+:rxlifecycle-android-lifecycle-kotlin:generateDebugBuildConfig
+:rxlifecycle-android-lifecycle-kotlin:generateDebugResValues
+:rxlifecycle-android-lifecycle-kotlin:generateDebugResources
+:rxlifecycle-android-lifecycle-kotlin:packageDebugResources
+:rxlifecycle-android-lifecycle-kotlin:platformAttrExtractor
+:rxlifecycle-android-lifecycle-kotlin:processDebugManifest
+:rxlifecycle-android-lifecycle-kotlin:prepareLintJar
+:rxlifecycle-android-lifecycle-kotlin:mergeDebugShaders
+:rxlifecycle-android-lifecycle-kotlin:compileDebugShaders
+:rxlifecycle-android-lifecycle-kotlin:generateDebugAssets
+:rxlifecycle-android-lifecycle-kotlin:mergeDebugAssets
+:rxlifecycle-android-lifecycle-kotlin:mergeDebugConsumerProguardFiles
+:rxlifecycle-android-lifecycle-kotlin:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-android-lifecycle-kotlin:processDebugJavaRes NO-SOURCE
+:rxlifecycle-android-lifecycle-kotlin:mergeDebugJniLibFolders
+:rxlifecycle-android-lifecycle-kotlin:transformNativeLibsWithMergeJniLibsForDebug
+:rxlifecycle-android-lifecycle-kotlin:transformNativeLibsWithStripDebugSymbolForDebug
+:rxlifecycle-android-lifecycle-kotlin:transformNativeLibsWithSyncJniLibsForDebug
+:rxlifecycle-android-lifecycle:preReleaseBuild UP-TO-DATE
+:rxlifecycle-android-lifecycle:compileReleaseAidl
+:rxlifecycle-android-lifecycle-kotlin:preReleaseBuild UP-TO-DATE
+:rxlifecycle-android-lifecycle-kotlin:compileReleaseAidl
+:rxlifecycle-android-lifecycle-kotlin:compileReleaseNdk NO-SOURCE
+:rxlifecycle-android-lifecycle:compileReleaseRenderscript
+:rxlifecycle-android-lifecycle:checkReleaseManifest
+:rxlifecycle-android-lifecycle:generateReleaseBuildConfig
+:rxlifecycle-android-lifecycle:generateReleaseResValues
+:rxlifecycle-android-lifecycle:generateReleaseResources
+:rxlifecycle-android-lifecycle:packageReleaseResources
+:rxlifecycle-android-lifecycle:processReleaseManifest
+:rxlifecycle-android-lifecycle:processReleaseResources
+:rxlifecycle-android-lifecycle:generateReleaseSources
+:rxlifecycle-android-lifecycle:javaPreCompileRelease
+:rxlifecycle-android-lifecycle:compileReleaseJavaWithJavac
+:rxlifecycle-android-lifecycle:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-android-lifecycle-kotlin:processDebugResources
+:rxlifecycle-android-lifecycle-kotlin:compileDebugKotlin
+Using kotlin incremental compilation
+:rxlifecycle-android-lifecycle-kotlin:generateDebugSources
+:rxlifecycle-android-lifecycle-kotlin:javaPreCompileDebug
+:rxlifecycle-android-lifecycle-kotlin:compileDebugJavaWithJavac
+:rxlifecycle-android-lifecycle-kotlin:extractDebugAnnotations
+:rxlifecycle-android-lifecycle-kotlin:transformResourcesWithMergeJavaResForDebug
+:rxlifecycle-android-lifecycle-kotlin:transformClassesAndResourcesWithSyncLibJarsForDebug
+:rxlifecycle-android-lifecycle-kotlin:bundleDebug
+:rxlifecycle-android-lifecycle-kotlin:compileDebugSources
+:rxlifecycle-android-lifecycle-kotlin:assembleDebug
+:rxlifecycle-android-lifecycle:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:rxlifecycle-android-lifecycle:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-android-lifecycle-kotlin:compileReleaseRenderscript
+:rxlifecycle-android-lifecycle-kotlin:checkReleaseManifest
+:rxlifecycle-android-lifecycle-kotlin:generateReleaseBuildConfig
+:rxlifecycle-android-lifecycle-kotlin:generateReleaseResValues
+:rxlifecycle-android-lifecycle-kotlin:generateReleaseResources
+:rxlifecycle-android-lifecycle-kotlin:packageReleaseResources
+:rxlifecycle-android-lifecycle-kotlin:processReleaseManifest
+:rxlifecycle-android-lifecycle-kotlin:processReleaseResources
+:rxlifecycle-android-lifecycle-kotlin:compileReleaseKotlin
+Using kotlin incremental compilation
+:rxlifecycle-android-lifecycle-kotlin:generateReleaseSources
+:rxlifecycle-android-lifecycle-kotlin:javaPreCompileRelease
+:rxlifecycle-android-lifecycle-kotlin:compileReleaseJavaWithJavac
+:rxlifecycle-android-lifecycle-kotlin:extractReleaseAnnotations
+:rxlifecycle-android-lifecycle-kotlin:mergeReleaseShaders
+:rxlifecycle-android-lifecycle-kotlin:compileReleaseShaders
+:rxlifecycle-android-lifecycle-kotlin:generateReleaseAssets
+:rxlifecycle-android-lifecycle-kotlin:mergeReleaseAssets
+:rxlifecycle-android-lifecycle-kotlin:mergeReleaseConsumerProguardFiles
+:rxlifecycle-android-lifecycle-kotlin:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-android-lifecycle-kotlin:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-android-lifecycle-kotlin:transformResourcesWithMergeJavaResForRelease
+:rxlifecycle-android-lifecycle-kotlin:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rxlifecycle-android-lifecycle-kotlin:mergeReleaseJniLibFolders
+:rxlifecycle-android-lifecycle-kotlin:transformNativeLibsWithMergeJniLibsForRelease
+:rxlifecycle-android-lifecycle-kotlin:transformNativeLibsWithStripDebugSymbolForRelease
+:rxlifecycle-android-lifecycle-kotlin:transformNativeLibsWithSyncJniLibsForRelease
+:rxlifecycle-android-lifecycle-kotlin:bundleRelease
+:rxlifecycle-android-lifecycle-kotlin:compileReleaseSources
+:rxlifecycle-android-lifecycle-kotlin:mergeReleaseResources
+:rxlifecycle-android-lifecycle-kotlin:verifyReleaseResources
+:rxlifecycle-android-lifecycle-kotlin:assembleRelease
+:rxlifecycle-android-lifecycle-kotlin:generateReleaseJavadoc NO-SOURCE
+:rxlifecycle-android-lifecycle-kotlin:generateReleaseJavadocJar
+:rxlifecycle-android-lifecycle-kotlin:generateReleaseSourcesJar
+:rxlifecycle-android-lifecycle-kotlin:signArchives SKIPPED
+:rxlifecycle-android-lifecycle-kotlin:assemble
+:rxlifecycle-android-lifecycle-kotlin:build
+
+BUILD SUCCESSFUL in 21s
+78 actionable tasks: 78 executed
+
+2018-04-03 11:38:54,064 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:38:54,064 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-android-lifecycle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:39:02,450 INFO  ProjectTaskService - Detected possible tasks: 76
+2018-04-03 11:39:02,451 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 11:39:02,451 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-android-lifecycle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 11:39:14,940 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':rxlifecycle-android-lifecycle' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-android-lifecycle' is deprecated. Use 'testImplementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:rxlifecycle-android-lifecycle:preBuild UP-TO-DATE
+:rxlifecycle-android-lifecycle:preDebugBuild UP-TO-DATE
+:rxlifecycle-android-lifecycle:compileDebugAidl UP-TO-DATE
+:rxlifecycle-android-lifecycle:compileDebugNdk NO-SOURCE
+:rxlifecycle:compileJava UP-TO-DATE
+:rxlifecycle:processResources NO-SOURCE
+:rxlifecycle:classes UP-TO-DATE
+:rxlifecycle:jar UP-TO-DATE
+:rxlifecycle-android-lifecycle:compileDebugRenderscript UP-TO-DATE
+:rxlifecycle-android-lifecycle:checkDebugManifest UP-TO-DATE
+:rxlifecycle-android-lifecycle:generateDebugBuildConfig UP-TO-DATE
+:rxlifecycle-android-lifecycle:prepareLintJar UP-TO-DATE
+:rxlifecycle-android-lifecycle:generateDebugResValues UP-TO-DATE
+:rxlifecycle-android-lifecycle:generateDebugResources UP-TO-DATE
+:rxlifecycle-android-lifecycle:packageDebugResources UP-TO-DATE
+:rxlifecycle-android-lifecycle:platformAttrExtractor UP-TO-DATE
+:rxlifecycle-android-lifecycle:processDebugManifest UP-TO-DATE
+:rxlifecycle-android-lifecycle:processDebugResources UP-TO-DATE
+:rxlifecycle-android-lifecycle:generateDebugSources UP-TO-DATE
+:rxlifecycle-android-lifecycle:javaPreCompileDebug UP-TO-DATE
+:rxlifecycle-android-lifecycle:compileDebugJavaWithJavac UP-TO-DATE
+:rxlifecycle-android-lifecycle:extractDebugAnnotations
+:rxlifecycle-android-lifecycle:mergeDebugShaders
+:rxlifecycle-android-lifecycle:compileDebugShaders
+:rxlifecycle-android-lifecycle:generateDebugAssets
+:rxlifecycle-android-lifecycle:mergeDebugAssets
+:rxlifecycle-android-lifecycle:mergeDebugConsumerProguardFiles
+:rxlifecycle-android-lifecycle:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-android-lifecycle:processDebugJavaRes NO-SOURCE
+:rxlifecycle-android-lifecycle:transformResourcesWithMergeJavaResForDebug
+:rxlifecycle-android-lifecycle:transformClassesAndResourcesWithSyncLibJarsForDebug
+:rxlifecycle-android-lifecycle:mergeDebugJniLibFolders
+:rxlifecycle-android-lifecycle:transformNativeLibsWithMergeJniLibsForDebug
+:rxlifecycle-android-lifecycle:transformNativeLibsWithStripDebugSymbolForDebug
+:rxlifecycle-android-lifecycle:transformNativeLibsWithSyncJniLibsForDebug
+:rxlifecycle-android-lifecycle:bundleDebug
+:rxlifecycle-android-lifecycle:compileDebugSources UP-TO-DATE
+:rxlifecycle-android-lifecycle:assembleDebug
+:rxlifecycle-android-lifecycle:preReleaseBuild UP-TO-DATE
+:rxlifecycle-android-lifecycle:compileReleaseAidl UP-TO-DATE
+:rxlifecycle-android-lifecycle:compileReleaseNdk NO-SOURCE
+:rxlifecycle-android-lifecycle:compileReleaseRenderscript UP-TO-DATE
+:rxlifecycle-android-lifecycle:checkReleaseManifest UP-TO-DATE
+:rxlifecycle-android-lifecycle:generateReleaseBuildConfig UP-TO-DATE
+:rxlifecycle-android-lifecycle:generateReleaseResValues UP-TO-DATE
+:rxlifecycle-android-lifecycle:generateReleaseResources UP-TO-DATE
+:rxlifecycle-android-lifecycle:packageReleaseResources UP-TO-DATE
+:rxlifecycle-android-lifecycle:processReleaseManifest UP-TO-DATE
+:rxlifecycle-android-lifecycle:processReleaseResources UP-TO-DATE
+:rxlifecycle-android-lifecycle:generateReleaseSources UP-TO-DATE
+:rxlifecycle-android-lifecycle:javaPreCompileRelease UP-TO-DATE
+:rxlifecycle-android-lifecycle:compileReleaseJavaWithJavac UP-TO-DATE
+:rxlifecycle-android-lifecycle:extractReleaseAnnotations
+:rxlifecycle-android-lifecycle:mergeReleaseShaders
+:rxlifecycle-android-lifecycle:compileReleaseShaders
+:rxlifecycle-android-lifecycle:generateReleaseAssets
+:rxlifecycle-android-lifecycle:mergeReleaseAssets
+:rxlifecycle-android-lifecycle:mergeReleaseConsumerProguardFiles
+:rxlifecycle-android-lifecycle:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-android-lifecycle:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-android-lifecycle:transformResourcesWithMergeJavaResForRelease
+:rxlifecycle-android-lifecycle:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rxlifecycle-android-lifecycle:mergeReleaseJniLibFolders
+:rxlifecycle-android-lifecycle:transformNativeLibsWithMergeJniLibsForRelease
+:rxlifecycle-android-lifecycle:transformNativeLibsWithStripDebugSymbolForRelease
+:rxlifecycle-android-lifecycle:transformNativeLibsWithSyncJniLibsForRelease
+:rxlifecycle-android-lifecycle:bundleRelease
+:rxlifecycle-android-lifecycle:compileReleaseSources UP-TO-DATE
+:rxlifecycle-android-lifecycle:mergeReleaseResources
+:rxlifecycle-android-lifecycle:verifyReleaseResources
+:rxlifecycle-android-lifecycle:assembleRelease
+:rxlifecycle-android-lifecycle:generateReleaseJavadocjavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+/tmp/rdisk/2210/src/rxlifecycle-android-lifecycle/src/main/java/com/trello/lifecycle2/android/lifecycle/RxLifecycleAndroidLifecycle.java:35: warning: no @param for <T>
+    public static <T> LifecycleTransformer<T> bindLifecycle(@NonNull Observable<Lifecycle.Event> lifecycle) {
+                                              ^
+
+2 warnings
+:rxlifecycle-android-lifecycle:generateReleaseJavadocJar
+:rxlifecycle-android-lifecycle:generateReleaseSourcesJar
+:rxlifecycle-android-lifecycle:signArchives SKIPPED
+:rxlifecycle-android-lifecycle:assemble
+:rxlifecycle-android-lifecycle:build
+
+BUILD SUCCESSFUL in 12s
+53 actionable tasks: 29 executed, 24 up-to-date
+
+2018-04-03 11:39:14,966 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:39:14,967 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:39:22,887 INFO  ProjectTaskService - Detected possible tasks: 76
+2018-04-03 11:39:22,887 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 11:39:22,887 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 11:39:36,249 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':rxlifecycle-android' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-android' is deprecated. Use 'testImplementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:rxlifecycle-android:preBuild UP-TO-DATE
+:rxlifecycle-android:preDebugBuild UP-TO-DATE
+:rxlifecycle-android:compileDebugAidl
+:rxlifecycle-android:compileDebugNdk NO-SOURCE
+:rxlifecycle:compileJava UP-TO-DATE
+:rxlifecycle:processResources NO-SOURCE
+:rxlifecycle:classes UP-TO-DATE
+:rxlifecycle:jar UP-TO-DATE
+:rxlifecycle-android:compileDebugRenderscript
+:rxlifecycle-android:checkDebugManifest
+:rxlifecycle-android:generateDebugBuildConfig
+:rxlifecycle-android:prepareLintJar
+:rxlifecycle-android:generateDebugResValues
+:rxlifecycle-android:generateDebugResources
+:rxlifecycle-android:packageDebugResources
+:rxlifecycle-android:platformAttrExtractor
+:rxlifecycle-android:processDebugManifest
+:rxlifecycle-android:javaPreCompileDebug
+:rxlifecycle-android:mergeDebugShaders
+:rxlifecycle-android:compileDebugShaders
+:rxlifecycle-android:generateDebugAssets
+:rxlifecycle-android:mergeDebugAssets
+:rxlifecycle-android:mergeDebugConsumerProguardFiles
+:rxlifecycle-android:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-android:processDebugJavaRes NO-SOURCE
+:rxlifecycle-android:mergeDebugJniLibFolders
+:rxlifecycle-android:transformNativeLibsWithMergeJniLibsForDebug
+:rxlifecycle-android:transformNativeLibsWithStripDebugSymbolForDebug
+:rxlifecycle-android:transformNativeLibsWithSyncJniLibsForDebug
+:rxlifecycle-android:preReleaseBuild UP-TO-DATE
+:rxlifecycle-android:compileReleaseAidl
+:rxlifecycle-android:compileReleaseNdk NO-SOURCE
+:rxlifecycle-android:compileReleaseRenderscript
+:rxlifecycle-android:checkReleaseManifest
+:rxlifecycle-android:generateReleaseBuildConfig
+:rxlifecycle-android:generateReleaseResValues
+:rxlifecycle-android:generateReleaseResources
+:rxlifecycle-android:packageReleaseResources
+:rxlifecycle-android:processReleaseManifest
+:rxlifecycle-android:javaPreCompileRelease
+:rxlifecycle-android:mergeReleaseShaders
+:rxlifecycle-android:compileReleaseShaders
+:rxlifecycle-android:generateReleaseAssets
+:rxlifecycle-android:mergeReleaseAssets
+:rxlifecycle-android:mergeReleaseConsumerProguardFiles
+:rxlifecycle-android:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-android:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-android:mergeReleaseJniLibFolders
+:rxlifecycle-android:transformNativeLibsWithMergeJniLibsForRelease
+:rxlifecycle-android:transformNativeLibsWithStripDebugSymbolForRelease
+:rxlifecycle-android:transformNativeLibsWithSyncJniLibsForRelease
+:rxlifecycle-android:mergeReleaseResources
+:rxlifecycle-android:verifyReleaseResources
+:rxlifecycle-android:processDebugResources
+:rxlifecycle-android:generateDebugSources
+:rxlifecycle-android:compileDebugJavaWithJavac
+:rxlifecycle-android:extractDebugAnnotations
+:rxlifecycle-android:transformResourcesWithMergeJavaResForDebug
+:rxlifecycle-android:transformClassesAndResourcesWithSyncLibJarsForDebug
+:rxlifecycle-android:bundleDebug
+:rxlifecycle-android:compileDebugSources
+:rxlifecycle-android:assembleDebug
+:rxlifecycle-android:processReleaseResources
+:rxlifecycle-android:generateReleaseSources
+:rxlifecycle-android:compileReleaseJavaWithJavac
+:rxlifecycle-android:extractReleaseAnnotations
+:rxlifecycle-android:transformResourcesWithMergeJavaResForRelease
+:rxlifecycle-android:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rxlifecycle-android:bundleRelease
+:rxlifecycle-android:compileReleaseSources
+:rxlifecycle-android:assembleRelease
+:rxlifecycle-android:generateReleaseJavadocjavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+/tmp/rdisk/2210/src/rxlifecycle-android/src/main/java/com/trello/rxlifecycle2/android/RxLifecycleAndroid.java:51: warning: no @param for <T>
+    public static <T> LifecycleTransformer<T> bindActivity(@NonNull final Observable<ActivityEvent> lifecycle) {
+                                              ^
+/tmp/rdisk/2210/src/rxlifecycle-android/src/main/java/com/trello/rxlifecycle2/android/RxLifecycleAndroid.java:72: warning: no @param for <T>
+    public static <T> LifecycleTransformer<T> bindFragment(@NonNull final Observable<FragmentEvent> lifecycle) {
+                                              ^
+/tmp/rdisk/2210/src/rxlifecycle-android/src/main/java/com/trello/rxlifecycle2/android/RxLifecycleAndroid.java:89: warning: no @param for <T>
+    public static <T> LifecycleTransformer<T> bindView(@NonNull final View view) {
+                                              ^
+
+4 warnings
+:rxlifecycle-android:generateReleaseJavadocJar
+:rxlifecycle-android:generateReleaseSourcesJar
+:rxlifecycle-android:signArchives SKIPPED
+:rxlifecycle-android:assemble
+:rxlifecycle-android:build
+
+BUILD SUCCESSFUL in 12s
+53 actionable tasks: 51 executed, 2 up-to-date
+
+2018-04-03 11:39:36,282 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:39:36,282 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-components-preference/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:39:44,228 INFO  ProjectTaskService - Detected possible tasks: 76
+2018-04-03 11:39:44,229 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 11:39:44,229 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-components-preference/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 11:40:03,686 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':rxlifecycle-components-preference' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-components-preference' is deprecated. Use 'testImplementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Configuration 'compile' in project ':rxlifecycle-android' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-android' is deprecated. Use 'testImplementation' instead.
+:rxlifecycle-android:preBuild UP-TO-DATE
+:rxlifecycle-android:preDebugBuild UP-TO-DATE
+:rxlifecycle-android:compileDebugAidl UP-TO-DATE
+:rxlifecycle-components-preference:preBuild UP-TO-DATE
+:rxlifecycle-components-preference:preDebugBuild UP-TO-DATE
+:rxlifecycle-components-preference:compileDebugAidl
+:rxlifecycle-components-preference:compileDebugNdk NO-SOURCE
+:rxlifecycle:compileJava UP-TO-DATE
+:rxlifecycle:processResources NO-SOURCE
+:rxlifecycle:classes UP-TO-DATE
+:rxlifecycle:jar UP-TO-DATE
+:rxlifecycle-android:compileDebugRenderscript UP-TO-DATE
+:rxlifecycle-android:checkDebugManifest UP-TO-DATE
+:rxlifecycle-android:generateDebugBuildConfig UP-TO-DATE
+:rxlifecycle-android:prepareLintJar UP-TO-DATE
+:rxlifecycle-android:generateDebugResValues UP-TO-DATE
+:rxlifecycle-android:generateDebugResources UP-TO-DATE
+:rxlifecycle-android:packageDebugResources UP-TO-DATE
+:rxlifecycle-android:platformAttrExtractor UP-TO-DATE
+:rxlifecycle-android:processDebugManifest UP-TO-DATE
+:rxlifecycle-android:processDebugResources UP-TO-DATE
+:rxlifecycle-android:generateDebugSources UP-TO-DATE
+:rxlifecycle-android:javaPreCompileDebug UP-TO-DATE
+:rxlifecycle-android:compileDebugJavaWithJavac UP-TO-DATE
+:rxlifecycle-android:processDebugJavaRes NO-SOURCE
+:rxlifecycle-android:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:rxlifecycle-android:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-components-preference:compileDebugRenderscript
+:rxlifecycle-components-preference:checkDebugManifest
+:rxlifecycle-components-preference:generateDebugBuildConfig
+:rxlifecycle-components-preference:prepareLintJar
+:rxlifecycle-components-preference:generateDebugResValues
+:rxlifecycle-components-preference:generateDebugResources
+:rxlifecycle-components-preference:packageDebugResources
+:rxlifecycle-components-preference:platformAttrExtractor
+:rxlifecycle-components-preference:processDebugManifest
+:rxlifecycle-components-preference:javaPreCompileDebug
+:rxlifecycle-components-preference:mergeDebugShaders
+:rxlifecycle-components-preference:compileDebugShaders
+:rxlifecycle-components-preference:generateDebugAssets
+:rxlifecycle-components-preference:mergeDebugAssets
+:rxlifecycle-components-preference:mergeDebugConsumerProguardFiles
+:rxlifecycle-components-preference:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-components-preference:processDebugJavaRes NO-SOURCE
+:rxlifecycle-components-preference:mergeDebugJniLibFolders
+:rxlifecycle-components-preference:transformNativeLibsWithMergeJniLibsForDebug
+:rxlifecycle-components-preference:transformNativeLibsWithStripDebugSymbolForDebug
+:rxlifecycle-components-preference:transformNativeLibsWithSyncJniLibsForDebug
+:rxlifecycle-android:preReleaseBuild UP-TO-DATE
+:rxlifecycle-android:compileReleaseAidl UP-TO-DATE
+:rxlifecycle-components-preference:preReleaseBuild UP-TO-DATE
+:rxlifecycle-components-preference:compileReleaseAidl
+:rxlifecycle-components-preference:compileReleaseNdk NO-SOURCE
+:rxlifecycle-android:compileReleaseRenderscript UP-TO-DATE
+:rxlifecycle-android:checkReleaseManifest UP-TO-DATE
+:rxlifecycle-android:generateReleaseBuildConfig UP-TO-DATE
+:rxlifecycle-android:generateReleaseResValues UP-TO-DATE
+:rxlifecycle-android:generateReleaseResources UP-TO-DATE
+:rxlifecycle-android:packageReleaseResources UP-TO-DATE
+:rxlifecycle-android:processReleaseManifest UP-TO-DATE
+:rxlifecycle-android:processReleaseResources UP-TO-DATE
+:rxlifecycle-android:generateReleaseSources UP-TO-DATE
+:rxlifecycle-android:javaPreCompileRelease UP-TO-DATE
+:rxlifecycle-android:compileReleaseJavaWithJavac UP-TO-DATE
+:rxlifecycle-android:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-android:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:rxlifecycle-android:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-components-preference:compileReleaseRenderscript
+:rxlifecycle-components-preference:checkReleaseManifest
+:rxlifecycle-components-preference:generateReleaseBuildConfig
+:rxlifecycle-components-preference:generateReleaseResValues
+:rxlifecycle-components-preference:generateReleaseResources
+:rxlifecycle-components-preference:packageReleaseResources
+:rxlifecycle-components-preference:processReleaseManifest
+:rxlifecycle-components-preference:javaPreCompileRelease
+:rxlifecycle-components-preference:mergeReleaseShaders
+:rxlifecycle-components-preference:compileReleaseShaders
+:rxlifecycle-components-preference:generateReleaseAssets
+:rxlifecycle-components-preference:mergeReleaseAssets
+:rxlifecycle-components-preference:mergeReleaseConsumerProguardFiles
+:rxlifecycle-components-preference:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-components-preference:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-components-preference:mergeReleaseJniLibFolders
+:rxlifecycle-components-preference:transformNativeLibsWithMergeJniLibsForRelease
+:rxlifecycle-components-preference:transformNativeLibsWithStripDebugSymbolForRelease
+:rxlifecycle-components-preference:transformNativeLibsWithSyncJniLibsForRelease
+:rxlifecycle-components-preference:mergeReleaseResources
+:rxlifecycle-components-preference:verifyReleaseResources
+:rxlifecycle-components-preference:processDebugResources
+:rxlifecycle-components-preference:generateDebugSources
+:rxlifecycle-components-preference:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:rxlifecycle-components-preference:extractDebugAnnotations
+:rxlifecycle-components-preference:transformResourcesWithMergeJavaResForDebug
+:rxlifecycle-components-preference:transformClassesAndResourcesWithSyncLibJarsForDebug
+:rxlifecycle-components-preference:bundleDebug
+:rxlifecycle-components-preference:compileDebugSources
+:rxlifecycle-components-preference:assembleDebug
+:rxlifecycle-components-preference:processReleaseResources
+:rxlifecycle-components-preference:generateReleaseSources
+:rxlifecycle-components-preference:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:rxlifecycle-components-preference:extractReleaseAnnotations
+:rxlifecycle-components-preference:transformResourcesWithMergeJavaResForRelease
+:rxlifecycle-components-preference:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rxlifecycle-components-preference:bundleRelease
+:rxlifecycle-components-preference:compileReleaseSources
+:rxlifecycle-components-preference:assembleRelease
+:rxlifecycle-components-preference:generateReleaseJavadocjavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+
+1 warning
+:rxlifecycle-components-preference:generateReleaseJavadocJar
+:rxlifecycle-components-preference:generateReleaseSourcesJar
+:rxlifecycle-components-preference:signArchives SKIPPED
+:rxlifecycle-components-preference:assemble
+:rxlifecycle-components-preference:build
+
+BUILD SUCCESSFUL in 18s
+77 actionable tasks: 53 executed, 24 up-to-date
+
+2018-04-03 11:40:03,760 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:40:03,760 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-components/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:40:11,962 INFO  ProjectTaskService - Detected possible tasks: 76
+2018-04-03 11:40:11,962 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 11:40:11,962 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-components/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 11:40:29,354 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':rxlifecycle-components' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-components' is deprecated. Use 'testImplementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Configuration 'compile' in project ':rxlifecycle-android' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-android' is deprecated. Use 'testImplementation' instead.
+:rxlifecycle-android:preBuild UP-TO-DATE
+:rxlifecycle-android:preDebugBuild UP-TO-DATE
+:rxlifecycle-android:compileDebugAidl UP-TO-DATE
+:rxlifecycle-components:preBuild UP-TO-DATE
+:rxlifecycle-components:preDebugBuild UP-TO-DATE
+:rxlifecycle-components:compileDebugAidl
+:rxlifecycle-components:compileDebugNdk NO-SOURCE
+:rxlifecycle:compileJava UP-TO-DATE
+:rxlifecycle:processResources NO-SOURCE
+:rxlifecycle:classes UP-TO-DATE
+:rxlifecycle:jar UP-TO-DATE
+:rxlifecycle-android:compileDebugRenderscript UP-TO-DATE
+:rxlifecycle-android:checkDebugManifest UP-TO-DATE
+:rxlifecycle-android:generateDebugBuildConfig UP-TO-DATE
+:rxlifecycle-android:prepareLintJar UP-TO-DATE
+:rxlifecycle-android:generateDebugResValues UP-TO-DATE
+:rxlifecycle-android:generateDebugResources UP-TO-DATE
+:rxlifecycle-android:packageDebugResources UP-TO-DATE
+:rxlifecycle-android:platformAttrExtractor UP-TO-DATE
+:rxlifecycle-android:processDebugManifest UP-TO-DATE
+:rxlifecycle-android:processDebugResources UP-TO-DATE
+:rxlifecycle-android:generateDebugSources UP-TO-DATE
+:rxlifecycle-android:javaPreCompileDebug UP-TO-DATE
+:rxlifecycle-android:compileDebugJavaWithJavac UP-TO-DATE
+:rxlifecycle-android:processDebugJavaRes NO-SOURCE
+:rxlifecycle-android:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:rxlifecycle-android:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-components:compileDebugRenderscript
+:rxlifecycle-components:checkDebugManifest
+:rxlifecycle-components:generateDebugBuildConfig
+:rxlifecycle-components:prepareLintJar
+:rxlifecycle-components:generateDebugResValues
+:rxlifecycle-components:generateDebugResources
+:rxlifecycle-components:packageDebugResources
+:rxlifecycle-components:platformAttrExtractor
+:rxlifecycle-components:processDebugManifest
+:rxlifecycle-components:javaPreCompileDebug
+:rxlifecycle-components:processDebugResources
+:rxlifecycle-components:generateDebugSources
+:rxlifecycle-components:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:rxlifecycle-components:extractDebugAnnotations
+:rxlifecycle-components:mergeDebugShaders
+:rxlifecycle-components:compileDebugShaders
+:rxlifecycle-components:generateDebugAssets
+:rxlifecycle-components:mergeDebugAssets
+:rxlifecycle-components:mergeDebugConsumerProguardFiles
+:rxlifecycle-components:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-components:processDebugJavaRes NO-SOURCE
+:rxlifecycle-components:transformResourcesWithMergeJavaResForDebug
+:rxlifecycle-components:transformClassesAndResourcesWithSyncLibJarsForDebug
+:rxlifecycle-components:mergeDebugJniLibFolders
+:rxlifecycle-components:transformNativeLibsWithMergeJniLibsForDebug
+:rxlifecycle-components:transformNativeLibsWithStripDebugSymbolForDebug
+:rxlifecycle-components:transformNativeLibsWithSyncJniLibsForDebug
+:rxlifecycle-components:bundleDebug
+:rxlifecycle-components:compileDebugSources
+:rxlifecycle-components:assembleDebug
+:rxlifecycle-android:preReleaseBuild UP-TO-DATE
+:rxlifecycle-android:compileReleaseAidl UP-TO-DATE
+:rxlifecycle-components:preReleaseBuild UP-TO-DATE
+:rxlifecycle-components:compileReleaseAidl
+:rxlifecycle-components:compileReleaseNdk NO-SOURCE
+:rxlifecycle-android:compileReleaseRenderscript UP-TO-DATE
+:rxlifecycle-android:checkReleaseManifest UP-TO-DATE
+:rxlifecycle-android:generateReleaseBuildConfig UP-TO-DATE
+:rxlifecycle-android:generateReleaseResValues UP-TO-DATE
+:rxlifecycle-android:generateReleaseResources UP-TO-DATE
+:rxlifecycle-android:packageReleaseResources UP-TO-DATE
+:rxlifecycle-android:processReleaseManifest UP-TO-DATE
+:rxlifecycle-android:processReleaseResources UP-TO-DATE
+:rxlifecycle-android:generateReleaseSources UP-TO-DATE
+:rxlifecycle-android:javaPreCompileRelease UP-TO-DATE
+:rxlifecycle-android:compileReleaseJavaWithJavac UP-TO-DATE
+:rxlifecycle-android:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-android:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:rxlifecycle-android:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-components:compileReleaseRenderscript
+:rxlifecycle-components:checkReleaseManifest
+:rxlifecycle-components:generateReleaseBuildConfig
+:rxlifecycle-components:generateReleaseResValues
+:rxlifecycle-components:generateReleaseResources
+:rxlifecycle-components:packageReleaseResources
+:rxlifecycle-components:processReleaseManifest
+:rxlifecycle-components:processReleaseResources
+:rxlifecycle-components:generateReleaseSources
+:rxlifecycle-components:javaPreCompileRelease
+:rxlifecycle-components:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:rxlifecycle-components:extractReleaseAnnotations
+:rxlifecycle-components:mergeReleaseShaders
+:rxlifecycle-components:compileReleaseShaders
+:rxlifecycle-components:generateReleaseAssets
+:rxlifecycle-components:mergeReleaseAssets
+:rxlifecycle-components:mergeReleaseConsumerProguardFiles
+:rxlifecycle-components:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-components:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-components:transformResourcesWithMergeJavaResForRelease
+:rxlifecycle-components:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rxlifecycle-components:mergeReleaseJniLibFolders
+:rxlifecycle-components:transformNativeLibsWithMergeJniLibsForRelease
+:rxlifecycle-components:transformNativeLibsWithStripDebugSymbolForRelease
+:rxlifecycle-components:transformNativeLibsWithSyncJniLibsForRelease
+:rxlifecycle-components:bundleRelease
+:rxlifecycle-components:compileReleaseSources
+:rxlifecycle-components:mergeReleaseResources
+:rxlifecycle-components:verifyReleaseResources
+:rxlifecycle-components:assembleRelease
+:rxlifecycle-components:generateReleaseJavadocjavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+
+1 warning
+:rxlifecycle-components:generateReleaseJavadocJar
+:rxlifecycle-components:generateReleaseSourcesJar
+:rxlifecycle-components:signArchives SKIPPED
+:rxlifecycle-components:assemble
+:rxlifecycle-components:build
+
+BUILD SUCCESSFUL in 16s
+77 actionable tasks: 51 executed, 26 up-to-date
+
+2018-04-03 11:40:29,454 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:40:29,454 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:40:37,371 INFO  ProjectTaskService - Detected possible tasks: 76
+2018-04-03 11:40:37,372 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 11:40:37,372 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 11:40:54,991 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':rxlifecycle-kotlin' is deprecated. Use 'implementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Configuration 'compile' in project ':rxlifecycle-android' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-android' is deprecated. Use 'testImplementation' instead.
+:rxlifecycle-android:preBuild UP-TO-DATE
+:rxlifecycle-android:preDebugBuild UP-TO-DATE
+:rxlifecycle-android:compileDebugAidl UP-TO-DATE
+:rxlifecycle-kotlin:preBuild UP-TO-DATE
+:rxlifecycle-kotlin:preDebugBuild UP-TO-DATE
+:rxlifecycle-kotlin:compileDebugAidl
+:rxlifecycle-kotlin:compileDebugNdk NO-SOURCE
+:rxlifecycle:compileJava UP-TO-DATE
+:rxlifecycle:processResources NO-SOURCE
+:rxlifecycle:classes UP-TO-DATE
+:rxlifecycle:jar UP-TO-DATE
+:rxlifecycle-android:compileDebugRenderscript UP-TO-DATE
+:rxlifecycle-android:checkDebugManifest UP-TO-DATE
+:rxlifecycle-android:generateDebugBuildConfig UP-TO-DATE
+:rxlifecycle-android:prepareLintJar UP-TO-DATE
+:rxlifecycle-android:generateDebugResValues UP-TO-DATE
+:rxlifecycle-android:generateDebugResources UP-TO-DATE
+:rxlifecycle-android:packageDebugResources UP-TO-DATE
+:rxlifecycle-android:platformAttrExtractor UP-TO-DATE
+:rxlifecycle-android:processDebugManifest UP-TO-DATE
+:rxlifecycle-android:processDebugResources UP-TO-DATE
+:rxlifecycle-android:generateDebugSources UP-TO-DATE
+:rxlifecycle-android:javaPreCompileDebug UP-TO-DATE
+:rxlifecycle-android:compileDebugJavaWithJavac UP-TO-DATE
+:rxlifecycle-android:processDebugJavaRes NO-SOURCE
+:rxlifecycle-android:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:rxlifecycle-android:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-kotlin:compileDebugRenderscript
+:rxlifecycle-kotlin:checkDebugManifest
+:rxlifecycle-kotlin:generateDebugBuildConfig
+:rxlifecycle-kotlin:generateDebugResValues
+:rxlifecycle-kotlin:generateDebugResources
+:rxlifecycle-kotlin:packageDebugResources
+:rxlifecycle-kotlin:platformAttrExtractor
+:rxlifecycle-kotlin:processDebugManifest
+:rxlifecycle-kotlin:prepareLintJar
+:rxlifecycle-kotlin:processDebugResources
+:rxlifecycle-kotlin:compileDebugKotlin
+Using kotlin incremental compilation
+:rxlifecycle-kotlin:generateDebugSources
+:rxlifecycle-kotlin:javaPreCompileDebug
+:rxlifecycle-kotlin:compileDebugJavaWithJavac
+:rxlifecycle-kotlin:extractDebugAnnotations
+:rxlifecycle-kotlin:mergeDebugShaders
+:rxlifecycle-kotlin:compileDebugShaders
+:rxlifecycle-kotlin:generateDebugAssets
+:rxlifecycle-kotlin:mergeDebugAssets
+:rxlifecycle-kotlin:mergeDebugConsumerProguardFiles
+:rxlifecycle-kotlin:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-kotlin:processDebugJavaRes NO-SOURCE
+:rxlifecycle-kotlin:transformResourcesWithMergeJavaResForDebug
+:rxlifecycle-kotlin:transformClassesAndResourcesWithSyncLibJarsForDebug
+:rxlifecycle-kotlin:mergeDebugJniLibFolders
+:rxlifecycle-kotlin:transformNativeLibsWithMergeJniLibsForDebug
+:rxlifecycle-kotlin:transformNativeLibsWithStripDebugSymbolForDebug
+:rxlifecycle-kotlin:transformNativeLibsWithSyncJniLibsForDebug
+:rxlifecycle-kotlin:bundleDebug
+:rxlifecycle-kotlin:compileDebugSources
+:rxlifecycle-kotlin:assembleDebug
+:rxlifecycle-android:preReleaseBuild UP-TO-DATE
+:rxlifecycle-android:compileReleaseAidl UP-TO-DATE
+:rxlifecycle-kotlin:preReleaseBuild UP-TO-DATE
+:rxlifecycle-kotlin:compileReleaseAidl
+:rxlifecycle-kotlin:compileReleaseNdk NO-SOURCE
+:rxlifecycle-android:compileReleaseRenderscript UP-TO-DATE
+:rxlifecycle-android:checkReleaseManifest UP-TO-DATE
+:rxlifecycle-android:generateReleaseBuildConfig UP-TO-DATE
+:rxlifecycle-android:generateReleaseResValues UP-TO-DATE
+:rxlifecycle-android:generateReleaseResources UP-TO-DATE
+:rxlifecycle-android:packageReleaseResources UP-TO-DATE
+:rxlifecycle-android:processReleaseManifest UP-TO-DATE
+:rxlifecycle-android:processReleaseResources UP-TO-DATE
+:rxlifecycle-android:generateReleaseSources UP-TO-DATE
+:rxlifecycle-android:javaPreCompileRelease UP-TO-DATE
+:rxlifecycle-android:compileReleaseJavaWithJavac UP-TO-DATE
+:rxlifecycle-android:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-android:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:rxlifecycle-android:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-kotlin:compileReleaseRenderscript
+:rxlifecycle-kotlin:checkReleaseManifest
+:rxlifecycle-kotlin:generateReleaseBuildConfig
+:rxlifecycle-kotlin:generateReleaseResValues
+:rxlifecycle-kotlin:generateReleaseResources
+:rxlifecycle-kotlin:packageReleaseResources
+:rxlifecycle-kotlin:processReleaseManifest
+:rxlifecycle-kotlin:processReleaseResources
+:rxlifecycle-kotlin:compileReleaseKotlin
+Using kotlin incremental compilation
+:rxlifecycle-kotlin:generateReleaseSources
+:rxlifecycle-kotlin:javaPreCompileRelease
+:rxlifecycle-kotlin:compileReleaseJavaWithJavac
+:rxlifecycle-kotlin:extractReleaseAnnotations
+:rxlifecycle-kotlin:mergeReleaseShaders
+:rxlifecycle-kotlin:compileReleaseShaders
+:rxlifecycle-kotlin:generateReleaseAssets
+:rxlifecycle-kotlin:mergeReleaseAssets
+:rxlifecycle-kotlin:mergeReleaseConsumerProguardFiles
+:rxlifecycle-kotlin:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-kotlin:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-kotlin:transformResourcesWithMergeJavaResForRelease
+:rxlifecycle-kotlin:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rxlifecycle-kotlin:mergeReleaseJniLibFolders
+:rxlifecycle-kotlin:transformNativeLibsWithMergeJniLibsForRelease
+:rxlifecycle-kotlin:transformNativeLibsWithStripDebugSymbolForRelease
+:rxlifecycle-kotlin:transformNativeLibsWithSyncJniLibsForRelease
+:rxlifecycle-kotlin:bundleRelease
+:rxlifecycle-kotlin:compileReleaseSources
+:rxlifecycle-kotlin:mergeReleaseResources
+:rxlifecycle-kotlin:verifyReleaseResources
+:rxlifecycle-kotlin:assembleRelease
+:rxlifecycle-kotlin:generateReleaseJavadoc NO-SOURCE
+:rxlifecycle-kotlin:generateReleaseJavadocJar
+:rxlifecycle-kotlin:generateReleaseSourcesJar
+:rxlifecycle-kotlin:signArchives SKIPPED
+:rxlifecycle-kotlin:assemble
+:rxlifecycle-kotlin:build
+
+BUILD SUCCESSFUL in 16s
+78 actionable tasks: 52 executed, 26 up-to-date
+
+2018-04-03 11:40:55,100 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:40:55,100 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-navi/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:41:02,727 INFO  ProjectTaskService - Detected possible tasks: 76
+2018-04-03 11:41:02,728 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 11:41:02,728 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-navi/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 11:41:15,947 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':rxlifecycle-navi' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-navi' is deprecated. Use 'testImplementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Configuration 'compile' in project ':rxlifecycle-android' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-android' is deprecated. Use 'testImplementation' instead.
+:rxlifecycle-android:preBuild UP-TO-DATE
+:rxlifecycle-android:preDebugBuild UP-TO-DATE
+:rxlifecycle-android:compileDebugAidl UP-TO-DATE
+:rxlifecycle-navi:preBuild UP-TO-DATE
+:rxlifecycle-navi:preDebugBuild UP-TO-DATE
+:rxlifecycle-navi:compileDebugAidl
+:rxlifecycle-navi:compileDebugNdk NO-SOURCE
+:rxlifecycle:compileJava UP-TO-DATE
+:rxlifecycle:processResources NO-SOURCE
+:rxlifecycle:classes UP-TO-DATE
+:rxlifecycle:jar UP-TO-DATE
+:rxlifecycle-android:compileDebugRenderscript UP-TO-DATE
+:rxlifecycle-android:checkDebugManifest UP-TO-DATE
+:rxlifecycle-android:generateDebugBuildConfig UP-TO-DATE
+:rxlifecycle-android:prepareLintJar UP-TO-DATE
+:rxlifecycle-android:generateDebugResValues UP-TO-DATE
+:rxlifecycle-android:generateDebugResources UP-TO-DATE
+:rxlifecycle-android:packageDebugResources UP-TO-DATE
+:rxlifecycle-android:platformAttrExtractor UP-TO-DATE
+:rxlifecycle-android:processDebugManifest UP-TO-DATE
+:rxlifecycle-android:processDebugResources UP-TO-DATE
+:rxlifecycle-android:generateDebugSources UP-TO-DATE
+:rxlifecycle-android:javaPreCompileDebug UP-TO-DATE
+:rxlifecycle-android:compileDebugJavaWithJavac UP-TO-DATE
+:rxlifecycle-android:processDebugJavaRes NO-SOURCE
+:rxlifecycle-android:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:rxlifecycle-android:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-navi:compileDebugRenderscript
+:rxlifecycle-navi:checkDebugManifest
+:rxlifecycle-navi:generateDebugBuildConfig
+:rxlifecycle-navi:prepareLintJar
+:rxlifecycle-navi:generateDebugResValues
+:rxlifecycle-navi:generateDebugResources
+:rxlifecycle-navi:packageDebugResources
+:rxlifecycle-navi:platformAttrExtractor
+:rxlifecycle-navi:processDebugManifest
+:rxlifecycle-navi:javaPreCompileDebug
+:rxlifecycle-navi:mergeDebugShaders
+:rxlifecycle-navi:compileDebugShaders
+:rxlifecycle-navi:generateDebugAssets
+:rxlifecycle-navi:mergeDebugAssets
+:rxlifecycle-navi:mergeDebugConsumerProguardFiles
+:rxlifecycle-navi:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-navi:processDebugJavaRes NO-SOURCE
+:rxlifecycle-navi:mergeDebugJniLibFolders
+:rxlifecycle-navi:transformNativeLibsWithMergeJniLibsForDebug
+:rxlifecycle-navi:transformNativeLibsWithStripDebugSymbolForDebug
+:rxlifecycle-navi:transformNativeLibsWithSyncJniLibsForDebug
+:rxlifecycle-android:preReleaseBuild UP-TO-DATE
+:rxlifecycle-android:compileReleaseAidl UP-TO-DATE
+:rxlifecycle-navi:preReleaseBuild UP-TO-DATE
+:rxlifecycle-navi:compileReleaseAidl
+:rxlifecycle-navi:compileReleaseNdk NO-SOURCE
+:rxlifecycle-android:compileReleaseRenderscript UP-TO-DATE
+:rxlifecycle-android:checkReleaseManifest UP-TO-DATE
+:rxlifecycle-android:generateReleaseBuildConfig UP-TO-DATE
+:rxlifecycle-android:generateReleaseResValues UP-TO-DATE
+:rxlifecycle-android:generateReleaseResources UP-TO-DATE
+:rxlifecycle-android:packageReleaseResources UP-TO-DATE
+:rxlifecycle-android:processReleaseManifest UP-TO-DATE
+:rxlifecycle-android:processReleaseResources UP-TO-DATE
+:rxlifecycle-android:generateReleaseSources UP-TO-DATE
+:rxlifecycle-android:javaPreCompileRelease UP-TO-DATE
+:rxlifecycle-android:compileReleaseJavaWithJavac UP-TO-DATE
+:rxlifecycle-android:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-android:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:rxlifecycle-android:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-navi:compileReleaseRenderscript
+:rxlifecycle-navi:checkReleaseManifest
+:rxlifecycle-navi:generateReleaseBuildConfig
+:rxlifecycle-navi:generateReleaseResValues
+:rxlifecycle-navi:generateReleaseResources
+:rxlifecycle-navi:packageReleaseResources
+:rxlifecycle-navi:processReleaseManifest
+:rxlifecycle-navi:javaPreCompileRelease
+:rxlifecycle-navi:mergeReleaseShaders
+:rxlifecycle-navi:compileReleaseShaders
+:rxlifecycle-navi:generateReleaseAssets
+:rxlifecycle-navi:mergeReleaseAssets
+:rxlifecycle-navi:mergeReleaseConsumerProguardFiles
+:rxlifecycle-navi:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-navi:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-navi:mergeReleaseJniLibFolders
+:rxlifecycle-navi:transformNativeLibsWithMergeJniLibsForRelease
+:rxlifecycle-navi:transformNativeLibsWithStripDebugSymbolForRelease
+:rxlifecycle-navi:transformNativeLibsWithSyncJniLibsForRelease
+:rxlifecycle-navi:mergeReleaseResources
+:rxlifecycle-navi:verifyReleaseResources
+:rxlifecycle-navi:processDebugResources
+:rxlifecycle-navi:generateDebugSources
+:rxlifecycle-navi:compileDebugJavaWithJavac
+:rxlifecycle-navi:extractDebugAnnotations
+:rxlifecycle-navi:transformResourcesWithMergeJavaResForDebug
+:rxlifecycle-navi:transformClassesAndResourcesWithSyncLibJarsForDebug
+:rxlifecycle-navi:bundleDebug
+:rxlifecycle-navi:compileDebugSources
+:rxlifecycle-navi:assembleDebug
+:rxlifecycle-navi:processReleaseResources
+:rxlifecycle-navi:generateReleaseSources
+:rxlifecycle-navi:compileReleaseJavaWithJavac
+:rxlifecycle-navi:extractReleaseAnnotations
+:rxlifecycle-navi:transformResourcesWithMergeJavaResForRelease
+:rxlifecycle-navi:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rxlifecycle-navi:bundleRelease
+:rxlifecycle-navi:compileReleaseSources
+:rxlifecycle-navi:assembleRelease
+:rxlifecycle-navi:generateReleaseJavadocjavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+
+1 warning
+:rxlifecycle-navi:generateReleaseJavadocJar
+:rxlifecycle-navi:generateReleaseSourcesJar
+:rxlifecycle-navi:signArchives SKIPPED
+:rxlifecycle-navi:assemble
+:rxlifecycle-navi:build
+
+BUILD SUCCESSFUL in 12s
+77 actionable tasks: 51 executed, 26 up-to-date
+
+2018-04-03 11:41:16,065 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:41:16,065 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:41:23,918 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-03 11:41:23,918 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 11:41:23,918 INFO  SysUtils - Execute command: [/tmp/rdisk/2210/src/gradlew, -b, /tmp/rdisk/2210/src/rxlifecycle-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 11:42:06,680 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':rxlifecycle-sample' is deprecated. Use 'implementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Configuration 'compile' in project ':rxlifecycle-components' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-components' is deprecated. Use 'testImplementation' instead.
+Configuration 'compile' in project ':rxlifecycle-kotlin' is deprecated. Use 'implementation' instead.
+Configuration 'compile' in project ':rxlifecycle-android' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':rxlifecycle-android' is deprecated. Use 'testImplementation' instead.
+:rxlifecycle:compileJava UP-TO-DATE
+:rxlifecycle:processResources NO-SOURCE
+:rxlifecycle:classes UP-TO-DATE
+:rxlifecycle:jar UP-TO-DATE
+:rxlifecycle-android:preBuild UP-TO-DATE
+:rxlifecycle-android:preDebugBuild UP-TO-DATE
+:rxlifecycle-android:compileDebugAidl UP-TO-DATE
+:rxlifecycle-android:compileDebugRenderscript UP-TO-DATE
+:rxlifecycle-android:checkDebugManifest UP-TO-DATE
+:rxlifecycle-android:generateDebugBuildConfig UP-TO-DATE
+:rxlifecycle-android:prepareLintJar UP-TO-DATE
+:rxlifecycle-android:generateDebugResValues UP-TO-DATE
+:rxlifecycle-android:generateDebugResources UP-TO-DATE
+:rxlifecycle-android:packageDebugResources UP-TO-DATE
+:rxlifecycle-android:platformAttrExtractor UP-TO-DATE
+:rxlifecycle-android:processDebugManifest UP-TO-DATE
+:rxlifecycle-android:processDebugResources UP-TO-DATE
+:rxlifecycle-android:generateDebugSources UP-TO-DATE
+:rxlifecycle-android:javaPreCompileDebug UP-TO-DATE
+:rxlifecycle-android:compileDebugJavaWithJavac UP-TO-DATE
+:rxlifecycle-android:processDebugJavaRes NO-SOURCE
+:rxlifecycle-android:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:rxlifecycle-components:preBuild UP-TO-DATE
+:rxlifecycle-components:preDebugBuild UP-TO-DATE
+:rxlifecycle-components:compileDebugAidl UP-TO-DATE
+:rxlifecycle-android:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-components:compileDebugRenderscript UP-TO-DATE
+:rxlifecycle-components:checkDebugManifest UP-TO-DATE
+:rxlifecycle-components:generateDebugBuildConfig UP-TO-DATE
+:rxlifecycle-components:prepareLintJar UP-TO-DATE
+:rxlifecycle-components:generateDebugResValues UP-TO-DATE
+:rxlifecycle-components:generateDebugResources UP-TO-DATE
+:rxlifecycle-components:packageDebugResources UP-TO-DATE
+:rxlifecycle-components:platformAttrExtractor UP-TO-DATE
+:rxlifecycle-components:processDebugManifest UP-TO-DATE
+:rxlifecycle-components:processDebugResources UP-TO-DATE
+:rxlifecycle-components:generateDebugSources UP-TO-DATE
+:rxlifecycle-components:javaPreCompileDebug UP-TO-DATE
+:rxlifecycle-components:compileDebugJavaWithJavac UP-TO-DATE
+:rxlifecycle-components:processDebugJavaRes NO-SOURCE
+:rxlifecycle-components:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:rxlifecycle-kotlin:preBuild UP-TO-DATE
+:rxlifecycle-kotlin:preDebugBuild UP-TO-DATE
+:rxlifecycle-kotlin:compileDebugAidl UP-TO-DATE
+:rxlifecycle-kotlin:compileDebugRenderscript UP-TO-DATE
+:rxlifecycle-kotlin:checkDebugManifest UP-TO-DATE
+:rxlifecycle-kotlin:generateDebugBuildConfig UP-TO-DATE
+:rxlifecycle-kotlin:generateDebugResValues UP-TO-DATE
+:rxlifecycle-kotlin:generateDebugResources UP-TO-DATE
+:rxlifecycle-kotlin:packageDebugResources UP-TO-DATE
+:rxlifecycle-kotlin:platformAttrExtractor UP-TO-DATE
+:rxlifecycle-kotlin:processDebugManifest UP-TO-DATE
+:rxlifecycle-kotlin:processDebugResources UP-TO-DATE
+:rxlifecycle-kotlin:compileDebugKotlin UP-TO-DATE
+:rxlifecycle-kotlin:prepareLintJar UP-TO-DATE
+:rxlifecycle-kotlin:generateDebugSources UP-TO-DATE
+:rxlifecycle-kotlin:javaPreCompileDebug UP-TO-DATE
+:rxlifecycle-kotlin:compileDebugJavaWithJavac UP-TO-DATE
+:rxlifecycle-kotlin:processDebugJavaRes NO-SOURCE
+:rxlifecycle-kotlin:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:rxlifecycle-sample:preBuild UP-TO-DATE
+:rxlifecycle-sample:preDebugBuild
+:rxlifecycle-sample:compileDebugAidl
+:rxlifecycle-components:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-kotlin:packageDebugRenderscript NO-SOURCE
+:rxlifecycle-sample:compileDebugRenderscript
+:rxlifecycle-sample:checkDebugManifest
+:rxlifecycle-sample:generateDebugBuildConfig
+:rxlifecycle-sample:generateDebugResValues
+:rxlifecycle-sample:generateDebugResources
+:rxlifecycle-sample:mergeDebugResources
+:rxlifecycle-sample:createDebugCompatibleScreenManifests
+:rxlifecycle-sample:processDebugManifest
+:rxlifecycle-sample:splitsDiscoveryTaskDebug
+:rxlifecycle-sample:processDebugResources
+:rxlifecycle-sample:compileDebugKotlin
+Using kotlin incremental compilation
+:rxlifecycle-sample:prepareLintJar
+:rxlifecycle-sample:generateDebugSources
+:rxlifecycle-sample:javaPreCompileDebug
+:rxlifecycle-sample:compileDebugJavaWithJavac
+:rxlifecycle-sample:compileDebugNdk NO-SOURCE
+:rxlifecycle-sample:compileDebugSources
+:rxlifecycle-android:mergeDebugShaders UP-TO-DATE
+:rxlifecycle-android:compileDebugShaders UP-TO-DATE
+:rxlifecycle-android:generateDebugAssets UP-TO-DATE
+:rxlifecycle-android:mergeDebugAssets UP-TO-DATE
+:rxlifecycle-components:mergeDebugShaders UP-TO-DATE
+:rxlifecycle-components:compileDebugShaders UP-TO-DATE
+:rxlifecycle-components:generateDebugAssets UP-TO-DATE
+:rxlifecycle-components:mergeDebugAssets UP-TO-DATE
+:rxlifecycle-kotlin:mergeDebugShaders UP-TO-DATE
+:rxlifecycle-kotlin:compileDebugShaders UP-TO-DATE
+:rxlifecycle-kotlin:generateDebugAssets UP-TO-DATE
+:rxlifecycle-kotlin:mergeDebugAssets UP-TO-DATE
+:rxlifecycle-sample:mergeDebugShaders
+:rxlifecycle-sample:compileDebugShaders
+:rxlifecycle-sample:generateDebugAssets
+:rxlifecycle-sample:mergeDebugAssets
+:rxlifecycle-sample:transformClassesWithDexBuilderForDebug
+:rxlifecycle-sample:transformDexArchiveWithExternalLibsDexMergerForDebug
+:rxlifecycle-sample:transformDexArchiveWithDexMergerForDebug
+:rxlifecycle-android:compileDebugNdk NO-SOURCE
+:rxlifecycle-android:mergeDebugJniLibFolders UP-TO-DATE
+:rxlifecycle-android:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:rxlifecycle-android:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:rxlifecycle-android:transformNativeLibsWithIntermediateJniLibsForDebug
+:rxlifecycle-components:compileDebugNdk NO-SOURCE
+:rxlifecycle-components:mergeDebugJniLibFolders UP-TO-DATE
+:rxlifecycle-components:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:rxlifecycle-components:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:rxlifecycle-components:transformNativeLibsWithIntermediateJniLibsForDebug
+:rxlifecycle-kotlin:compileDebugNdk NO-SOURCE
+:rxlifecycle-kotlin:mergeDebugJniLibFolders UP-TO-DATE
+:rxlifecycle-kotlin:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:rxlifecycle-kotlin:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:rxlifecycle-kotlin:transformNativeLibsWithIntermediateJniLibsForDebug
+:rxlifecycle-sample:mergeDebugJniLibFolders
+:rxlifecycle-sample:transformNativeLibsWithMergeJniLibsForDebug
+:rxlifecycle-sample:transformNativeLibsWithStripDebugSymbolForDebug
+:rxlifecycle-sample:processDebugJavaRes NO-SOURCE
+:rxlifecycle-sample:transformResourcesWithMergeJavaResForDebug
+:rxlifecycle-sample:validateSigningDebug
+:rxlifecycle-sample:packageDebug
+:rxlifecycle-sample:assembleDebug
+:rxlifecycle-android:preReleaseBuild UP-TO-DATE
+:rxlifecycle-android:compileReleaseAidl UP-TO-DATE
+:rxlifecycle-android:compileReleaseRenderscript UP-TO-DATE
+:rxlifecycle-android:checkReleaseManifest UP-TO-DATE
+:rxlifecycle-android:generateReleaseBuildConfig UP-TO-DATE
+:rxlifecycle-android:generateReleaseResValues UP-TO-DATE
+:rxlifecycle-android:generateReleaseResources UP-TO-DATE
+:rxlifecycle-android:packageReleaseResources UP-TO-DATE
+:rxlifecycle-android:processReleaseManifest UP-TO-DATE
+:rxlifecycle-android:processReleaseResources UP-TO-DATE
+:rxlifecycle-android:generateReleaseSources UP-TO-DATE
+:rxlifecycle-android:javaPreCompileRelease UP-TO-DATE
+:rxlifecycle-android:compileReleaseJavaWithJavac UP-TO-DATE
+:rxlifecycle-android:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-android:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:rxlifecycle-components:preReleaseBuild UP-TO-DATE
+:rxlifecycle-components:compileReleaseAidl UP-TO-DATE
+:rxlifecycle-android:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-components:compileReleaseRenderscript UP-TO-DATE
+:rxlifecycle-components:checkReleaseManifest UP-TO-DATE
+:rxlifecycle-components:generateReleaseBuildConfig UP-TO-DATE
+:rxlifecycle-components:generateReleaseResValues UP-TO-DATE
+:rxlifecycle-components:generateReleaseResources UP-TO-DATE
+:rxlifecycle-components:packageReleaseResources UP-TO-DATE
+:rxlifecycle-components:processReleaseManifest UP-TO-DATE
+:rxlifecycle-components:processReleaseResources UP-TO-DATE
+:rxlifecycle-components:generateReleaseSources UP-TO-DATE
+:rxlifecycle-components:javaPreCompileRelease UP-TO-DATE
+:rxlifecycle-components:compileReleaseJavaWithJavac UP-TO-DATE
+:rxlifecycle-components:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-components:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:rxlifecycle-kotlin:preReleaseBuild UP-TO-DATE
+:rxlifecycle-kotlin:compileReleaseAidl UP-TO-DATE
+:rxlifecycle-kotlin:compileReleaseRenderscript UP-TO-DATE
+:rxlifecycle-kotlin:checkReleaseManifest UP-TO-DATE
+:rxlifecycle-kotlin:generateReleaseBuildConfig UP-TO-DATE
+:rxlifecycle-kotlin:generateReleaseResValues UP-TO-DATE
+:rxlifecycle-kotlin:generateReleaseResources UP-TO-DATE
+:rxlifecycle-kotlin:packageReleaseResources UP-TO-DATE
+:rxlifecycle-kotlin:processReleaseManifest UP-TO-DATE
+:rxlifecycle-kotlin:processReleaseResources UP-TO-DATE
+:rxlifecycle-kotlin:compileReleaseKotlin UP-TO-DATE
+:rxlifecycle-kotlin:generateReleaseSources UP-TO-DATE
+:rxlifecycle-kotlin:javaPreCompileRelease UP-TO-DATE
+:rxlifecycle-kotlin:compileReleaseJavaWithJavac UP-TO-DATE
+:rxlifecycle-kotlin:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-kotlin:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:rxlifecycle-sample:preReleaseBuild
+:rxlifecycle-sample:compileReleaseAidl
+:rxlifecycle-components:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-kotlin:packageReleaseRenderscript NO-SOURCE
+:rxlifecycle-sample:compileReleaseRenderscript
+:rxlifecycle-sample:checkReleaseManifest
+:rxlifecycle-sample:generateReleaseBuildConfig
+:rxlifecycle-sample:generateReleaseResValues
+:rxlifecycle-sample:generateReleaseResources
+:rxlifecycle-sample:mergeReleaseResources
+:rxlifecycle-sample:createReleaseCompatibleScreenManifests
+:rxlifecycle-sample:processReleaseManifest
+:rxlifecycle-sample:splitsDiscoveryTaskRelease
+:rxlifecycle-sample:processReleaseResources
+:rxlifecycle-sample:compileReleaseKotlin
+Using kotlin incremental compilation
+:rxlifecycle-sample:generateReleaseSources
+:rxlifecycle-sample:javaPreCompileRelease
+:rxlifecycle-sample:compileReleaseJavaWithJavac
+:rxlifecycle-sample:compileReleaseNdk NO-SOURCE
+:rxlifecycle-sample:compileReleaseSources
+:rxlifecycle-android:mergeReleaseShaders UP-TO-DATE
+:rxlifecycle-android:compileReleaseShaders UP-TO-DATE
+:rxlifecycle-android:generateReleaseAssets UP-TO-DATE
+:rxlifecycle-android:mergeReleaseAssets UP-TO-DATE
+:rxlifecycle-components:mergeReleaseShaders UP-TO-DATE
+:rxlifecycle-components:compileReleaseShaders UP-TO-DATE
+:rxlifecycle-components:generateReleaseAssets UP-TO-DATE
+:rxlifecycle-components:mergeReleaseAssets UP-TO-DATE
+:rxlifecycle-kotlin:mergeReleaseShaders UP-TO-DATE
+:rxlifecycle-kotlin:compileReleaseShaders UP-TO-DATE
+:rxlifecycle-kotlin:generateReleaseAssets UP-TO-DATE
+:rxlifecycle-kotlin:mergeReleaseAssets UP-TO-DATE
+:rxlifecycle-sample:mergeReleaseShaders
+:rxlifecycle-sample:compileReleaseShaders
+:rxlifecycle-sample:generateReleaseAssets
+:rxlifecycle-sample:mergeReleaseAssets
+:rxlifecycle-sample:transformClassesWithPreDexForRelease
+:rxlifecycle-sample:transformDexWithDexForRelease
+:rxlifecycle-android:compileReleaseNdk NO-SOURCE
+:rxlifecycle-android:mergeReleaseJniLibFolders UP-TO-DATE
+:rxlifecycle-android:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:rxlifecycle-android:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:rxlifecycle-android:transformNativeLibsWithIntermediateJniLibsForRelease
+:rxlifecycle-components:compileReleaseNdk NO-SOURCE
+:rxlifecycle-components:mergeReleaseJniLibFolders UP-TO-DATE
+:rxlifecycle-components:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:rxlifecycle-components:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:rxlifecycle-components:transformNativeLibsWithIntermediateJniLibsForRelease
+:rxlifecycle-kotlin:compileReleaseNdk NO-SOURCE
+:rxlifecycle-kotlin:mergeReleaseJniLibFolders UP-TO-DATE
+:rxlifecycle-kotlin:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:rxlifecycle-kotlin:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:rxlifecycle-kotlin:transformNativeLibsWithIntermediateJniLibsForRelease
+:rxlifecycle-sample:mergeReleaseJniLibFolders
+:rxlifecycle-sample:transformNativeLibsWithMergeJniLibsForRelease
+:rxlifecycle-sample:transformNativeLibsWithStripDebugSymbolForRelease
+:rxlifecycle-sample:processReleaseJavaRes NO-SOURCE
+:rxlifecycle-sample:transformResourcesWithMergeJavaResForRelease
+:rxlifecycle-sample:packageRelease
+:rxlifecycle-sample:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+	at org.gradle.api.internal.tasks.DefaultSourceSetOutput.getClassesDir(DefaultSourceSetOutput.java:80)
+	at org.gradle.api.internal.tasks.DefaultSourceSetOutput_Decorated.getClassesDir(Unknown Source)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:839)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:981)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:784)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:981)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:784)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:981)
+	at com.android.build.gradle.internal.LintGradleProject$ProjectSearch.getProject(LintGradleProject.java:784)
+	at com.android.build.gradle.internal.LintGradleClient.createLintRequest(LintGradleClient.java:182)
+	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:149)
+	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:197)
+	at com.android.build.gradle.tasks.LintBaseTask.runLint(LintBaseTask.java:199)
+	at com.android.build.gradle.tasks.LintPerVariantTask.lintSingleVariant(LintPerVariantTask.java:53)
+	at com.android.build.gradle.tasks.LintPerVariantTask.lint(LintPerVariantTask.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.doExecute(DefaultTaskClassInfoStore.java:141)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:121)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:731)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:705)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:122)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:197)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:107)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:111)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:63)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:197)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:107)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:124)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:105)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:99)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:625)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:580)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:99)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+:rxlifecycle-sample:assembleRelease
+:rxlifecycle-sample:assemble
+:rxlifecycle-sample:build
+
+BUILD SUCCESSFUL in 41s
+170 actionable tasks: 62 executed, 108 up-to-date
+
+2018-04-03 11:42:06,848 INFO  FullProcessService - Found APK file: /tmp/rdisk/2210/src/rxlifecycle-sample/build/outputs/apk/release/rxlifecycle-sample-release-unsigned.apk

@@ -1,0 +1,309 @@
+2018-05-11 11:33:35,839 INFO  DownloadService - Downloading "https://github.com/ahmedrizwan/SeekBarCompat/archive/master.zip", attempt 3
+2018-05-11 11:33:36,240 INFO  DownloadService - Downloaded https://github.com/ahmedrizwan/SeekBarCompat/archive/master.zip, attempt 3
+2018-05-11 11:33:36,241 INFO  DownloadService - Size of file "/tmp/rdisk/2084/master.zip": 140 KB
+2018-05-11 11:33:36,241 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:33:36,241 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2084/master.zip: true
+2018-05-11 11:33:36,241 DEBUG ZipUtil - Extracting '/tmp/rdisk/2084/master.zip' into '/tmp/rdisk/2084/src'.
+2018-05-11 11:33:36,253 INFO  FullProcessService - Size of directory with sources: 185 KB
+2018-05-11 11:33:36,253 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2084/src]
+2018-05-11 11:33:36,257 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2084/src/.git/
+
+2018-05-11 11:33:36,261 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2084/src/SeekBarCompat-master/gradlew
+2018-05-11 11:33:36,264 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2084/src/SeekBarCompat-master/app/build.gradle /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/build.gradle /tmp/rdisk/2084/src/SeekBarCompat-master/build.gradle
+2018-05-11 11:33:36,267 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2084/src/SeekBarCompat-master/settings.gradle /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/build.gradle /tmp/rdisk/2084/src/SeekBarCompat-master/build.gradle /tmp/rdisk/2084/src/SeekBarCompat-master/app/build.gradle
+2018-05-11 11:33:36,267 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/attwellBrian/JCenter/master/installv1.gradle", attempt 3
+2018-05-11 11:33:36,479 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/attwellBrian/JCenter/master/installv1.gradle, attempt 3
+2018-05-11 11:33:36,479 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/attwellBrian/JCenter/master/bintrayv1.gradle", attempt 3
+2018-05-11 11:33:36,648 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/attwellBrian/JCenter/master/bintrayv1.gradle, attempt 3
+2018-05-11 11:33:36,648 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/attwellBrian/JCenter/master/installv1.gradle https://raw.githubusercontent.com/attwellBrian/JCenter/master/bintrayv1.gradle
+2018-05-11 11:33:36,648 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:33:36,655 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2084/src/SeekBarCompat-master/app/local.properties
+2018-05-11 11:33:36,656 INFO  ProjectFixService - Build info for "/tmp/rdisk/2084/src/SeekBarCompat-master/app/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 11:33:36,656 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/local.properties
+2018-05-11 11:33:36,656 INFO  ProjectFixService - Build info for "/tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 11:33:36,657 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2084/src/SeekBarCompat-master/local.properties
+2018-05-11 11:33:36,657 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-11 11:33:36,657 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-11 11:33:36,658 INFO  ProjectFixService - Build info for "/tmp/rdisk/2084/src/SeekBarCompat-master/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 11:33:36,658 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:33:36,658 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:33:36,659 INFO  SysUtils - Execute command: [/tmp/rdisk/2084/src/SeekBarCompat-master/gradlew, -b, /tmp/rdisk/2084/src/SeekBarCompat-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:33:48,634 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-05-11 11:33:48,635 INFO  ProjectTaskService - Excluded tasks (22): lintDebug mockableAndroidJar javadocJar deviceCheck lint testReleaseUnitTest javadoc uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll sourcesJar test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 11:33:48,635 INFO  SysUtils - Execute command: [/tmp/rdisk/2084/src/SeekBarCompat-master/gradlew, -b, /tmp/rdisk/2084/src/SeekBarCompat-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, javadocJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, javadoc, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, sourcesJar, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 11:33:55,846 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-11 11:33:55,846 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'javadocJar' not found in project ':app'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'javadocJar' not found in project ':app'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:116)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:66)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$CalculateTaskGraph.run(DefaultGradleLauncher.java:268)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.initialization.DefaultGradleLauncher.constructTaskGraph(DefaultGradleLauncher.java:175)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:130)
+	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:109)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:78)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:75)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:100)
+	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:75)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$1.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:40)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:57)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:69)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:30)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:45)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:291)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:264)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:257)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:191)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 6s
+
+2018-05-11 11:33:55,846 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-05-11 11:33:55,846 INFO  SysUtils - Execute command: [/tmp/rdisk/2084/src/SeekBarCompat-master/gradlew, -b, /tmp/rdisk/2084/src/SeekBarCompat-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-11 11:35:04,006 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:seekbar-compat:preBuild UP-TO-DATE
+:seekbar-compat:preDebugBuild UP-TO-DATE
+:seekbar-compat:checkDebugManifest
+:seekbar-compat:processDebugManifest
+:app:preDebugBuild
+:seekbar-compat:compileDebugAidl
+:app:compileDebugAidl
+:seekbar-compat:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:mainApkListPersistenceDebug
+:app:generateDebugResValues
+:app:generateDebugResources
+:seekbar-compat:compileDebugRenderscript
+:seekbar-compat:generateDebugResValues
+:seekbar-compat:generateDebugResources
+:seekbar-compat:packageDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:seekbar-compat:platformAttrExtractor
+:seekbar-compat:generateDebugBuildConfig
+:seekbar-compat:prepareLintJar
+:seekbar-compat:processDebugJavaRes NO-SOURCE
+:app:prepareLintJar
+:app:compileDebugNdk NO-SOURCE
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:seekbar-compat:mergeDebugShaders
+:seekbar-compat:compileDebugShaders
+:seekbar-compat:generateDebugAssets
+:seekbar-compat:packageDebugAssets
+:app:mergeDebugAssets
+:app:mergeDebugJniLibFolders
+:seekbar-compat:compileDebugNdk NO-SOURCE
+:seekbar-compat:mergeDebugJniLibFolders
+:seekbar-compat:transformNativeLibsWithMergeJniLibsForDebug
+:seekbar-compat:transformNativeLibsWithStripDebugSymbolForDebug
+:seekbar-compat:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:validateSigningDebug
+:seekbar-compat:preReleaseBuild UP-TO-DATE
+:seekbar-compat:checkReleaseManifest
+:seekbar-compat:processReleaseManifest
+:app:preReleaseBuild
+:seekbar-compat:compileReleaseAidl
+:app:compileReleaseAidl
+:seekbar-compat:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:mainApkListPersistenceRelease
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:seekbar-compat:compileReleaseRenderscript
+:seekbar-compat:generateReleaseResValues
+:seekbar-compat:generateReleaseResources
+:seekbar-compat:packageReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:seekbar-compat:generateReleaseBuildConfig
+:seekbar-compat:processReleaseJavaRes NO-SOURCE
+:app:compileReleaseNdk NO-SOURCE
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:seekbar-compat:mergeReleaseShaders
+:seekbar-compat:compileReleaseShaders
+:seekbar-compat:generateReleaseAssets
+:seekbar-compat:packageReleaseAssets
+:app:mergeReleaseAssets
+:app:mergeReleaseJniLibFolders
+:seekbar-compat:compileReleaseNdk NO-SOURCE
+:seekbar-compat:mergeReleaseJniLibFolders
+:seekbar-compat:transformNativeLibsWithMergeJniLibsForRelease
+:seekbar-compat:transformNativeLibsWithStripDebugSymbolForRelease
+:seekbar-compat:transformNativeLibsWithIntermediateJniLibsForRelease
+:app:processReleaseJavaRes NO-SOURCE
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:mockableAndroidJar
+:app:processDebugUnitTestJavaRes NO-SOURCE
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:processReleaseUnitTestJavaRes NO-SOURCE
+:seekbar-compat:generateDebugRFile
+:app:processDebugResources
+:seekbar-compat:compileDebugKotlin
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (204, 13): 'setBackgroundDrawable(Drawable!): Unit' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (287, 38): 'setDither(Boolean): Unit' is deprecated. Overrides deprecated member in 'android.graphics.drawable.Drawable'. Deprecated in Java
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (296, 38): 'setDither(Boolean): Unit' is deprecated. Overrides deprecated member in 'android.graphics.drawable.Drawable'. Deprecated in Java
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (340, 34): 'setDither(Boolean): Unit' is deprecated. Overrides deprecated member in 'android.graphics.drawable.Drawable'. Deprecated in Java
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (359, 21): 'setBackgroundDrawable(Drawable!): Unit' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (400, 47): 'removeGlobalOnLayoutListener(ViewTreeObserver.OnGlobalLayoutListener!): Unit' is deprecated. Deprecated in Java
+:seekbar-compat:generateDebugSources
+:seekbar-compat:javaPreCompileDebug
+:seekbar-compat:compileDebugJavaWithJavac
+:seekbar-compat:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:compileDebugKotlin
+:app:generateDebugSources
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugSources
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:transformResourcesWithMergeJavaResForDebug
+:app:packageDebug
+:app:assembleDebug
+:seekbar-compat:generateReleaseRFile
+:app:processReleaseResources
+:seekbar-compat:compileReleaseKotlin
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (204, 13): 'setBackgroundDrawable(Drawable!): Unit' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (287, 38): 'setDither(Boolean): Unit' is deprecated. Overrides deprecated member in 'android.graphics.drawable.Drawable'. Deprecated in Java
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (296, 38): 'setDither(Boolean): Unit' is deprecated. Overrides deprecated member in 'android.graphics.drawable.Drawable'. Deprecated in Java
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (340, 34): 'setDither(Boolean): Unit' is deprecated. Overrides deprecated member in 'android.graphics.drawable.Drawable'. Deprecated in Java
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (359, 21): 'setBackgroundDrawable(Drawable!): Unit' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2084/src/SeekBarCompat-master/seekbar-compat/src/main/java/app/minimize/com/seek_bar_compat/SeekBarCompat.kt: (400, 47): 'removeGlobalOnLayoutListener(ViewTreeObserver.OnGlobalLayoutListener!): Unit' is deprecated. Deprecated in Java
+:seekbar-compat:generateReleaseSources
+:seekbar-compat:javaPreCompileRelease
+:seekbar-compat:compileReleaseJavaWithJavac
+:seekbar-compat:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:compileReleaseKotlin
+:app:generateReleaseSources
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseSources
+:app:lintVitalRelease SKIPPED
+:app:transformClassesWithDexBuilderForRelease
+:app:transformDexArchiveWithExternalLibsDexMergerForRelease
+:app:transformDexArchiveWithDexMergerForRelease
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:lint
+Ran lint on variant debug: 15 issues found
+Ran lint on variant release: 15 issues found
+Wrote HTML report to file:///tmp/rdisk/2084/src/SeekBarCompat-master/app/build/reports/lint-results.html
+Wrote XML report to file:///tmp/rdisk/2084/src/SeekBarCompat-master/app/build/reports/lint-results.xml
+:app:compileDebugUnitTestKotlin NO-SOURCE
+:app:javaPreCompileDebugUnitTest
+:app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+:app:testDebugUnitTest NO-SOURCE
+:app:compileReleaseUnitTestKotlin NO-SOURCE
+:app:javaPreCompileReleaseUnitTest
+:app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+:app:testReleaseUnitTest NO-SOURCE
+:app:test UP-TO-DATE
+:app:check
+:app:build
+
+BUILD SUCCESSFUL in 1m 7s
+98 actionable tasks: 98 executed
+
+2018-05-11 11:35:04,067 INFO  FullProcessService - Found APK file: /tmp/rdisk/2084/src/SeekBarCompat-master/app/build/outputs/apk/debug/app-debug.apk

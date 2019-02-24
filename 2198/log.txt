@@ -1,0 +1,119 @@
+2018-05-11 11:25:42,140 INFO  DownloadService - Downloading "https://github.com/hongyangAndroid/Android-StickyNavLayout/archive/master.zip", attempt 3
+2018-05-11 11:25:42,559 INFO  DownloadService - Downloaded https://github.com/hongyangAndroid/Android-StickyNavLayout/archive/master.zip, attempt 3
+2018-05-11 11:25:42,559 INFO  DownloadService - Size of file "/tmp/rdisk/2198/master.zip": 338 KB
+2018-05-11 11:25:42,559 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:25:42,560 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2198/master.zip: true
+2018-05-11 11:25:42,560 DEBUG ZipUtil - Extracting '/tmp/rdisk/2198/master.zip' into '/tmp/rdisk/2198/src'.
+2018-05-11 11:25:42,572 INFO  FullProcessService - Size of directory with sources: 422 KB
+2018-05-11 11:25:42,572 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2198/src]
+2018-05-11 11:25:42,583 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2198/src/.git/
+
+2018-05-11 11:25:42,585 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2198/src/Android-StickyNavLayout-master/gradlew
+2018-05-11 11:25:42,588 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2198/src/Android-StickyNavLayout-master/app/build.gradle /tmp/rdisk/2198/src/Android-StickyNavLayout-master/build.gradle
+2018-05-11 11:25:42,590 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2198/src/Android-StickyNavLayout-master/settings.gradle /tmp/rdisk/2198/src/Android-StickyNavLayout-master/build.gradle /tmp/rdisk/2198/src/Android-StickyNavLayout-master/app/build.gradle
+2018-05-11 11:25:42,591 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:25:42,591 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:25:42,599 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2198/src/Android-StickyNavLayout-master/app/local.properties
+2018-05-11 11:25:42,600 INFO  ProjectFixService - Build info for "/tmp/rdisk/2198/src/Android-StickyNavLayout-master/app/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=25]
+2018-05-11 11:25:42,600 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2198/src/Android-StickyNavLayout-master/local.properties
+2018-05-11 11:25:42,608 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-05-11 11:25:42,609 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-05-11 11:25:42,610 INFO  ProjectFixService - Build info for "/tmp/rdisk/2198/src/Android-StickyNavLayout-master/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=25]
+2018-05-11 11:25:42,610 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:25:42,610 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:25:42,610 INFO  SysUtils - Execute command: [/tmp/rdisk/2198/src/Android-StickyNavLayout-master/gradlew, -b, /tmp/rdisk/2198/src/Android-StickyNavLayout-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:25:52,323 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-05-11 11:25:52,323 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 11:25:52,323 INFO  SysUtils - Execute command: [/tmp/rdisk/2198/src/Android-StickyNavLayout-master/gradlew, -b, /tmp/rdisk/2198/src/Android-StickyNavLayout-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 11:26:23,386 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:app:prepareComAndroidSupportAppcompatV72531Library
+:app:prepareComAndroidSupportRecyclerviewV72531Library
+:app:prepareComAndroidSupportSupportCompat2531Library
+:app:prepareComAndroidSupportSupportCoreUi2531Library
+:app:prepareComAndroidSupportSupportCoreUtils2531Library
+:app:prepareComAndroidSupportSupportFragment2531Library
+:app:prepareComAndroidSupportSupportMediaCompat2531Library
+:app:prepareComAndroidSupportSupportV42531Library
+:app:prepareComAndroidSupportSupportVectorDrawable2531Library
+:app:prepareComZhyBaseAdapter200Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2198/src/Android-StickyNavLayout-master/app/src/main/java/com/zhy/stickynavlayout/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:prePackageMarkerForDebug
+:app:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2198/src/Android-StickyNavLayout-master/app/src/main/java/com/zhy/stickynavlayout/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:prePackageMarkerForRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 30.572 secs
+
+2018-05-11 11:26:23,440 INFO  FullProcessService - Found APK file: /tmp/rdisk/2198/src/Android-StickyNavLayout-master/app/build/outputs/apk/app-debug.apk

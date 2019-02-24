@@ -1,0 +1,128 @@
+2018-04-03 22:59:35,934 INFO  DownloadService - Downloading "https://github.com/alorma/GithubContributorsLib/archive/master.zip", attempt 3
+2018-04-03 23:00:36,362 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 23:00:37,141 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 23:00:37,141 INFO  DownloadService - Downloading "https://github.com/alorma/GithubContributorsLib/archive/master.zip", attempt 3
+2018-04-03 23:01:38,364 DEBUG FullProcessService - Repository https://github.com/alorma/GithubContributorsLib available: true
+2018-04-03 23:01:38,364 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 23:01:38,364 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/alorma/GithubContributorsLib, /tmp/rdisk/2020/src]
+2018-04-03 23:01:40,245 INFO  SysUtils - 
+2018-04-03 23:01:40,250 INFO  GitService - Deleted "/tmp/rdisk/2020/src/.git": true
+2018-04-03 23:01:40,253 INFO  FullProcessService - Size of directory with sources: 708 KB
+2018-04-03 23:01:40,253 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2020/src]
+2018-04-03 23:01:40,257 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2020/src/.git/
+
+2018-04-03 23:01:40,260 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2020/src/gradlew
+2018-04-03 23:01:40,262 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2020/src/app/build.gradle /tmp/rdisk/2020/src/library/build.gradle /tmp/rdisk/2020/src/build.gradle
+2018-04-03 23:01:40,265 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2020/src/settings.gradle /tmp/rdisk/2020/src/library/gradle-mvn-push.gradle /tmp/rdisk/2020/src/library/build.gradle /tmp/rdisk/2020/src/build.gradle /tmp/rdisk/2020/src/app/build.gradle
+2018-04-03 23:01:40,265 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 23:01:40,265 INFO  ProjectFixService - Fixing project...
+2018-04-03 23:01:40,274 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2020/src/app/local.properties
+2018-04-03 23:01:40,274 INFO  ProjectFixService - Build info for "/tmp/rdisk/2020/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-03 23:01:40,274 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2020/src/library/local.properties
+2018-04-03 23:01:40,274 INFO  ProjectFixService - Build info for "/tmp/rdisk/2020/src/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-03 23:01:40,275 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2020/src/local.properties
+2018-04-03 23:01:40,275 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 23:01:40,275 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 23:01:40,293 INFO  ProjectFixService - Build info for "/tmp/rdisk/2020/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-03 23:01:40,293 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 23:01:40,293 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 23:01:40,293 INFO  SysUtils - Execute command: [/tmp/rdisk/2020/src/gradlew, -b, /tmp/rdisk/2020/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 23:01:53,405 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-03 23:01:53,405 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 23:01:53,405 INFO  SysUtils - Execute command: [/tmp/rdisk/2020/src/gradlew, -b, /tmp/rdisk/2020/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 23:02:21,800 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72220Library
+:library:prepareComAndroidSupportSupportV42220Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaNote: /tmp/rdisk/2020/src/library/src/main/java/com/alorma/github/libs/contributors/ui/activity/ContributorsActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareSrcLibraryUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.949 secs
+
+2018-04-03 23:02:21,852 INFO  FullProcessService - Found APK file: /tmp/rdisk/2020/src/app/build/outputs/apk/app-debug.apk

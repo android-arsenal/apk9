@@ -1,0 +1,4 @@
+{
+  "android.lib.widget.verticalmarqueetextview" : [ "BuildConfig", "R", "R$attr", "R$id", "R$styleable", "VerticalMarqueeTextView", "VerticalMarqueeTextView$1", "VerticalMarqueeTextView$MarqueeRunnable" ],
+  "android.lib.widget.verticalmarqueetextview.demo" : [ "BuildConfig", "ExampleActivity", "R", "R$attr", "R$id", "R$layout", "R$styleable" ]
+}

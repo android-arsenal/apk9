@@ -1,0 +1,279 @@
+2018-04-02 15:39:41,594 INFO  DownloadService - Downloading "https://github.com/alexfacciorusso/urc/archive/master.zip", attempt 3
+2018-04-02 15:40:42,262 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 15:40:42,936 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 15:40:42,936 INFO  DownloadService - Downloading "https://github.com/alexfacciorusso/urc/archive/master.zip", attempt 3
+2018-04-02 15:41:44,151 DEBUG FullProcessService - Repository https://github.com/alexfacciorusso/urc available: true
+2018-04-02 15:41:44,151 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 15:41:44,151 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/alexfacciorusso/urc, /tmp/rdisk/2240/src]
+2018-04-02 15:41:45,660 INFO  SysUtils - 
+2018-04-02 15:41:45,672 INFO  GitService - Deleted "/tmp/rdisk/2240/src/.git": true
+2018-04-02 15:41:45,675 INFO  FullProcessService - Size of directory with sources: 105 KB
+2018-04-02 15:41:45,675 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2240/src]
+2018-04-02 15:41:45,679 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2240/src/.git/
+
+2018-04-02 15:41:45,681 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2240/src/gradlew
+2018-04-02 15:41:45,689 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2240/src/library/build.gradle /tmp/rdisk/2240/src/sample/build.gradle /tmp/rdisk/2240/src/build.gradle
+2018-04-02 15:41:45,691 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2240/src/settings.gradle /tmp/rdisk/2240/src/sample/build.gradle /tmp/rdisk/2240/src/library/build.gradle /tmp/rdisk/2240/src/build.gradle
+2018-04-02 15:41:45,691 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 15:41:45,691 INFO  ProjectFixService - Fixing project...
+2018-04-02 15:41:45,696 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2240/src/library/local.properties
+2018-04-02 15:41:45,697 INFO  ProjectFixService - Build info for "/tmp/rdisk/2240/src/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-02 15:41:45,697 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2240/src/sample/local.properties
+2018-04-02 15:41:45,697 INFO  ProjectFixService - Build info for "/tmp/rdisk/2240/src/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-02 15:41:45,698 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2240/src/local.properties
+2018-04-02 15:41:45,698 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 15:41:45,698 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 15:41:45,699 INFO  ProjectFixService - Build info for "/tmp/rdisk/2240/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-02 15:41:45,699 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 15:41:45,699 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:41:45,699 INFO  SysUtils - Execute command: [/tmp/rdisk/2240/src/gradlew, -b, /tmp/rdisk/2240/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:41:54,273 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 15:41:54,273 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 15:41:54,273 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 15:41:54,273 INFO  SysUtils - Execute command: [/tmp/rdisk/2240/src/gradlew, -b, /tmp/rdisk/2240/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 15:42:11,758 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugProguardFiles
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJavaWithJavac
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaWithJavac
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:javadoc/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:13: error: self-closing element not allowed
+ * Uniform Resource Creator. A class that helps user to create URLs for RESTful apis.<br />
+                                                                                     ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:98: warning: no @param for key
+        public UrcGenerator addQueryParameter(String key, int value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:98: warning: no @param for value
+        public UrcGenerator addQueryParameter(String key, int value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:98: warning: no @return
+        public UrcGenerator addQueryParameter(String key, int value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:107: warning: no @param for key
+        public UrcGenerator addQueryParameter(String key, Object value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:107: warning: no @param for value
+        public UrcGenerator addQueryParameter(String key, Object value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:107: warning: no @return
+        public UrcGenerator addQueryParameter(String key, Object value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:129: warning: no @param for key
+        public UrcGenerator addPathParameter(String key, int value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:129: warning: no @param for value
+        public UrcGenerator addPathParameter(String key, int value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:129: warning: no @return
+        public UrcGenerator addPathParameter(String key, int value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:137: warning: no @param for key
+        public UrcGenerator addPathParameter(String key, Object value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:137: warning: no @param for value
+        public UrcGenerator addPathParameter(String key, Object value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:137: warning: no @return
+        public UrcGenerator addPathParameter(String key, Object value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:164: warning: no @param for key
+        public UrcGenerator addParameter(String key, int value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:164: warning: no @param for value
+        public UrcGenerator addParameter(String key, int value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:164: warning: no @return
+        public UrcGenerator addParameter(String key, int value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:171: warning: no @param for key
+        public UrcGenerator addParameter(String key, Object value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:171: warning: no @param for value
+        public UrcGenerator addParameter(String key, Object value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:171: warning: no @return
+        public UrcGenerator addParameter(String key, Object value) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:182: warning: no @param for enabled
+        public UrcGenerator setQueryParametersEnabled(boolean enabled) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:182: warning: no @return
+        public UrcGenerator setQueryParametersEnabled(boolean enabled) {
+                            ^
+/tmp/rdisk/2240/src/library/src/main/java/com/alexfacciorusso/urc/Urc.java:194: warning: no @return
+        public UrcGenerator ignoreUnmatchedParameters() {
+                            ^
+
+1 error
+21 warnings
+:library:javadocJar
+:library:sourcesJar
+:library:assemble
+:library:lint
+Ran lint on variant debug: 1 issues found
+Ran lint on variant release: 1 issues found
+Wrote HTML report to file:/tmp/rdisk/2240/src/library/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2240/src/library/build/outputs/lint-results.xml
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:prepareDebugUnitTestDependencies
+:library:processDebugUnitTestJavaRes UP-TO-DATE
+:library:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:library:compileDebugUnitTestSources UP-TO-DATE
+:library:mockableAndroidJar
+:library:assembleDebugUnitTest
+:library:testDebugUnitTest
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareReleaseUnitTestDependencies
+:library:processReleaseUnitTestJavaRes UP-TO-DATE
+:library:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:library:compileReleaseUnitTestSources UP-TO-DATE
+:library:assembleReleaseUnitTest
+:library:testReleaseUnitTest
+:library:test
+:library:check
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.034 secs
+
+2018-04-02 15:42:11,765 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:42:11,765 INFO  SysUtils - Execute command: [/tmp/rdisk/2240/src/gradlew, -b, /tmp/rdisk/2240/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:42:18,435 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-02 15:42:18,436 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 15:42:18,436 INFO  SysUtils - Execute command: [/tmp/rdisk/2240/src/gradlew, -b, /tmp/rdisk/2240/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 15:42:40,514 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72221Library
+:sample:prepareComAndroidSupportDesign2221Library
+:sample:prepareComAndroidSupportSupportV42221Library
+:sample:prepareSrcLibraryUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.632 secs
+
+2018-04-02 15:42:40,553 INFO  FullProcessService - Found APK file: /tmp/rdisk/2240/src/sample/build/outputs/apk/sample-release-unsigned.apk

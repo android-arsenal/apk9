@@ -1,0 +1,10 @@
+2018-01-03 21:48:37,242 INFO  DownloadService - Downloading "https://github.com/google/liquidfun/archive/master.zip", attempt 3
+2018-01-03 21:48:40,081 INFO  DownloadService - Downloaded https://github.com/google/liquidfun/archive/master.zip, attempt 3
+2018-01-03 21:48:40,082 INFO  DownloadService - Size of file "/tmp/1515016117239-0/master.zip": 10 MB
+2018-01-03 21:48:40,082 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-01-03 21:48:40,085 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/1515016117239-0/master.zip: false
+2018-01-03 21:48:40,085 INFO  FullProcessService - Archive with sources does not contain any build script
+2018-01-03 21:48:40,085 ERROR FullProcessService - Could not find directory with sources
+2018-01-03 21:48:40,085 ERROR FullProcessService - Project will not be processed
+2018-01-03 21:48:40,085 ERROR FullProcessService - Project build has not produced APK file
+2018-01-03 21:48:40,086 ERROR FullProcessService - Could not find generated or existed APK file

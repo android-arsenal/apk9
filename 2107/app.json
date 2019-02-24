@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.golshadi.orientationSensor",
+    "label" : "orientationSensor",
+    "icon" : "res/drawable/icon.png",
+    "versionName" : null,
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "18",
+    "targetSdkVersion" : null,
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable/icon.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABjFBMVEX///9/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxF/qxHhfjMQAAAAhHRSTlMAAHCaiYMm+TAi+DWVuqcW8Ub3fdACCUqHtdfu2biMTgy/jgrlufD/8xMNk/v9lxAj4Swt6jcY4x+wIB7BG627TCEXKlbLEST6zjG0FKscqDOC50XPzUJDOzY5t/Xv8gUPsrY/ysY9PsfIBnjsrFT+WukpS5Z+U0GPGVCpgGwE32XmiAhtBlhiAAAB5UlEQVRYw+3W90/CQBQHcM+FgDgAFZw4aEHFiXvgFtyACwUcqLj33uMfl17b6ClcX6OJRnm/8F7b7ydNSO8uIeGXFCIqMQlFqeQUcqYAqYq0z3mlSg0GULrmM5CRgeBAZlb2x7xaq5QBIJ0+JzfPYMwv0KoKCouKS0yotAzJAcorzAz7rixGxioHqKyqZj+UraYWDtQVslGqvgEKNNrZqMU0wYDmFjZG2VtBQBt+WNPe0SYGO+u6unHjgAA9fKgXoT4R6Eeo1oa7AQAwyIcibzskAsOR/8WJO5c0MCKERses4yKgmRiaFNopScDNUsstCTjogEMS8NABjyTgpAMq4McEqW8GvNPamVnuMitR3DNzLq3LSwLz3Oer8MGAJkXk17lAABp80wgDFnFjJgA/vhaAAUF+kSKAt7sAQOiiA0tfBZbjQBz434BF/JwhAH/0CBKAGV9bgQFG3KwSAF6lFGoYoMYP+8hFNbTGrG8gGIDCm8xWKMayvm0DANR9Qf9VYIeeD0oCy7tUYE96a9s/oOQDqYC98fAoVty/cgzcXA1C4pAbToThVMbuHAf+BHAmZM654UIYLmUAYT7ivOIGE7/esddyjnk3OHLLD3f8ITdHDnCve7DlP4rTgL766fmFek78wXoFR48ynbmm4mUAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 18,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"com.golshadi.orientationSensor\">\n\t<uses-sdk android:minSdkVersion=\"18\" />\n\t<application android:label=\"orientationSensor\" android:icon=\"res/drawable/icon.png\" android:debuggable=\"true\">\n\t\t<activity android:label=\"orientationSensor\" android:name=\".TestActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 12410,
+  "crc32" : 471772799,
+  "sha256" : "1da21507a5df7acf7f6ce8db46c12c3d20e8134d11252722301287de9d299c0b",
+  "buildTime" : 1496784474000
+}

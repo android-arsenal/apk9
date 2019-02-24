@@ -1,0 +1,125 @@
+2018-04-03 22:04:49,959 INFO  DownloadService - Downloading "https://github.com/albinmathew/PhotoCrop/archive/master.zip", attempt 3
+2018-04-03 22:05:50,632 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 22:05:51,264 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 22:05:51,264 INFO  DownloadService - Downloading "https://github.com/albinmathew/PhotoCrop/archive/master.zip", attempt 3
+2018-04-03 22:06:52,430 DEBUG FullProcessService - Repository https://github.com/albinmathew/PhotoCrop available: true
+2018-04-03 22:06:52,430 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 22:06:52,430 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/albinmathew/PhotoCrop, /tmp/rdisk/2046/src]
+2018-04-03 22:06:54,172 INFO  SysUtils - 
+2018-04-03 22:06:54,176 INFO  GitService - Deleted "/tmp/rdisk/2046/src/.git": true
+2018-04-03 22:06:54,179 INFO  FullProcessService - Size of directory with sources: 405 KB
+2018-04-03 22:06:54,179 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2046/src]
+2018-04-03 22:06:54,190 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2046/src/.git/
+
+2018-04-03 22:06:54,194 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2046/src/gradlew
+2018-04-03 22:06:54,197 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2046/src/app/build.gradle /tmp/rdisk/2046/src/photo-crop-library/build.gradle /tmp/rdisk/2046/src/build.gradle
+2018-04-03 22:06:54,199 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2046/src/settings.gradle /tmp/rdisk/2046/src/photo-crop-library/build.gradle /tmp/rdisk/2046/src/build.gradle /tmp/rdisk/2046/src/app/build.gradle
+2018-04-03 22:06:54,200 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 22:06:54,200 INFO  ProjectFixService - Fixing project...
+2018-04-03 22:06:54,206 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2046/src/app/local.properties
+2018-04-03 22:06:54,206 INFO  ProjectFixService - Build info for "/tmp/rdisk/2046/src/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-03 22:06:54,207 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2046/src/photo-crop-library/local.properties
+2018-04-03 22:06:54,207 INFO  ProjectFixService - Build info for "/tmp/rdisk/2046/src/photo-crop-library/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-03 22:06:54,207 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2046/src/local.properties
+2018-04-03 22:06:54,207 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-03 22:06:54,207 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-03 22:06:54,208 INFO  ProjectFixService - Build info for "/tmp/rdisk/2046/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-03 22:06:54,208 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 22:06:54,208 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:06:54,208 INFO  SysUtils - Execute command: [/tmp/rdisk/2046/src/gradlew, -b, /tmp/rdisk/2046/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:07:03,139 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-03 22:07:03,140 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 22:07:03,140 INFO  SysUtils - Execute command: [/tmp/rdisk/2046/src/gradlew, -b, /tmp/rdisk/2046/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 22:07:26,681 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:photo-crop-library:compileLint
+:photo-crop-library:copyReleaseLint UP-TO-DATE
+:photo-crop-library:preBuild UP-TO-DATE
+:photo-crop-library:preReleaseBuild UP-TO-DATE
+:photo-crop-library:checkReleaseManifest
+:photo-crop-library:preDebugAndroidTestBuild UP-TO-DATE
+:photo-crop-library:preDebugBuild UP-TO-DATE
+:photo-crop-library:preDebugUnitTestBuild UP-TO-DATE
+:photo-crop-library:preReleaseUnitTestBuild UP-TO-DATE
+:photo-crop-library:prepareComAndroidSupportAppcompatV72310Library
+:photo-crop-library:prepareComAndroidSupportSupportV42310Library
+:photo-crop-library:prepareReleaseDependencies
+:photo-crop-library:compileReleaseAidl
+:photo-crop-library:compileReleaseRenderscript
+:photo-crop-library:generateReleaseBuildConfig
+:photo-crop-library:generateReleaseAssets UP-TO-DATE
+:photo-crop-library:mergeReleaseAssets
+:photo-crop-library:generateReleaseResValues
+:photo-crop-library:generateReleaseResources
+:photo-crop-library:mergeReleaseResources
+:photo-crop-library:processReleaseManifest
+:photo-crop-library:processReleaseResources
+:photo-crop-library:generateReleaseSources
+:photo-crop-library:processReleaseJavaRes UP-TO-DATE
+:photo-crop-library:compileReleaseJavaWithJavac
+:photo-crop-library:extractReleaseAnnotations
+:photo-crop-library:mergeReleaseProguardFiles
+:photo-crop-library:packageReleaseJar
+:photo-crop-library:compileReleaseNdk UP-TO-DATE
+:photo-crop-library:packageReleaseJniLibs UP-TO-DATE
+:photo-crop-library:packageReleaseLocalJar UP-TO-DATE
+:photo-crop-library:packageReleaseRenderscript UP-TO-DATE
+:photo-crop-library:packageReleaseResources
+:photo-crop-library:bundleRelease
+:app:prepareComAlbinmathewPhotoCropLibrary103Library
+:app:prepareComAndroidSupportAppcompatV72310Library
+:app:prepareComAndroidSupportSupportV42310Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.114 secs
+
+2018-04-03 22:07:26,742 INFO  FullProcessService - Found APK file: /tmp/rdisk/2046/src/app/build/outputs/apk/app-debug.apk

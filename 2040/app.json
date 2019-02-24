@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.eden.youtubesample",
+    "label" : "Eden - YouTube Example",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.4",
+    "versionCode" : 5,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAulBMVEUAAAC8WFjFcHDPiIjLfn6/YGDCaGjRjY3MgIDLfX3TkJDFb2/Xm5u/YWHDaWnEa2vHdHTCZ2fGcHDNg4PQiorEbGzFbm7OhITAY2PMf3/Vl5fIdnbEbG3OhobPh4fRi4vAYmK9WlrYnZ2+Xl7JeHi8WVnJeXnBZWW/X1++XV3CZmbDaGjDamrGcnLHc3P47u747e3FbW2+XFy9WVrBY2PDa2vGcXHHdXXIdXX////+/PzBZWbku7vfr6+Rzh/RAAAAPnRSTlMA/////////////////////////////////////////////////////////////////////////////////9FL+n4AAADaSURBVEjH7dPZDoIwEAVQB1s3BApI3QUX3Km74vb/v2UtvKCm+kgikzRNmp7pTSbN5VJZ8HNlIAN/ApQ8QpjvhSIqlcVJBSH1uVc1AN14A8SMmhgWgCmEHbe1awAOlQKoJ0Cj+RHUokgCiLutOJIN7c63F7qJFwB6lhRorvcC+oN3gJtRpGEJjXxxMo4jTfgyp9/mQLF8Dv4MN+aLpUNVK2CMkNZqPSaEscBSN86yMPGm2yTYzfB+rh8cqhwDRk6he77QMCQsOKqUgysHvjQSvt2z/5CB/wQpqwdsihalfV1xqwAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 1570,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"5\" android:versionName=\"1.4\" package=\"com.eden.youtubesample\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f090022\" android:label=\"Eden - YouTube Example\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\">\n\t\t<activity android:label=\"Eden - YouTube Example\" android:name=\"com.eden.youtubesample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.eden.youtubesample.YouTubeFragmentActivity\" />\n\t\t<activity android:name=\"com.eden.youtubesample.YouTubeActivity\" android:screenOrientation=\"portrait\" android:configChanges=\"0x4a0\" />\n\t\t<activity android:theme=\"resourceId:0x7f090085\" android:name=\"com.eden.youtubesample.CustomLightboxActivity\" android:configChanges=\"0x4a0\" />\n\t\t<activity android:name=\"com.eden.youtubesample.CustomYouTubeControlsActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1235267,
+  "crc32" : 737357122,
+  "sha256" : "54ac1b24a89d6142c18d06ea2df91c59ff0c81ee778b3fc1aa18752e87bdc6d3",
+  "buildTime" : 1522793979000
+}

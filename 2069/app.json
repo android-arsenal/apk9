@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.deange.ropeprogress.sample",
+    "label" : "RopeProgressBar",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "16",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAACc1BMVEUAAAD////////////////////////////////+/v7+/v7+/v7+/v79/f38/Pz+/v79/f3w8PAAAAD8/Pz8/Pz9/f38/Pzx8fG/v7/W1tb7+/v9/f3x8fGwsLDIyMj7+/v9/f3x8fGqqqrq9vQbq6EIpJonrqVkxb+95eH7/f3w8PDY2Njb29v7+/ud2tYAopctsKdnwrt7zsfX7u719fXZ2dnt7e3y8vLx+fdVu7QIpZsGpJk9taxOvbWb2dbz+fn7+/vg4ODz8/Py8vLn5+fZ4+Oj09BpwrwusKcCo5gZqqFVvLVgw7265OD5+/vd3d3y8vLz8/P09PTo6Ojp6enO4eCTz8tTvLQXqp8pr6dpw71/zcnh8vDj4+Pa2trv7+/z8/Pq6urq6urp6urD3t2Dy8ZJubENppwFpJk4tKxDubKU19Lx9/fs7OykpKTr6+vh6eis2NVxxsA2tKsEpJkVqZ9QvLVawrut2dbV19f09PTt7e3Y5+aa1NBewLocq6IorKPF09Ll5eXr6+vu7u7s7u7B4N6GzslJurIPp52k0s709PT29vbm7eyx3NlzyMI0s6pLu7Pm7u319fXx8fHs7Oz19fX39/f29vb29vb4+Pjv7+/w8PDx8fH39/f39/ft7e3Ly8v5+fmmpqawsLD6+vrw8PDx8fH39/f6+vrn5+eDg4MAAADb29v////GxsYAAAA3NzfJycno6Oju7u7u7u7j4+Pk5OTl5eXm5ubo6Ojp6enq6urj4+PBwcE0NDSAgIAAAAAAAABISEhfX19cXFxbW1tZWVlWVlZXV1dcXFxGRkZmZmYAAAAAAACqqqq/v7+PWaMcAAAA0XRSTlMAAwQCEx4dCpbm6+rnlpj//5oB6Pn8/OkYJe7+7iol7fvtKv7////////////+/v/////////+//7////////////+/P////////////////78////////////////////7v///////////////yr///////////////z//////////+7//////////v/////////8/+7+//z+//7+/vz+7Sf/Kx3r/Pz5/+wjCKn/rgMqsOzv7u/v7+/v7u/ssiwCCSBDTktMTU1MTkIFCw4DBLqYHrIAAAKhSURBVEjHY2AYqYCRiSjACFXOzEyswRCVQIKFlY0IwMoCVszMwM7BycXNRRBwc/HwsgOVMzPw8QsQCwSFQO4RFhARFSMCiIrwi0sA/SApJSAqIC0AQriBtDRQXpRfRhaoQU5eQAHEJ6hBWoFfUQmkQUpADMgDieAGYAVi/DJQDUQ4SQDiJIQN+NULCEhjaCAI6K1BWUVVTV1DE6dqLW0dXRQNevogYGBoZIxVvYmptraZObIGC0srsBZ9axtbO3t09Q462tqOTubOyH5wcXVz9/CEaPLy9vH1Q9bgr63trxVgHhiE7GmX4OCQ0LDwCIge/cio6BiY+lht7bh484CEwKBE5FACaggJSUpOSU1Lh+jJyMzKzgGqD9bWNs01N3dKCDRJzEMOVpD6pKT8/PyCwqLiEoim0rLyikpt7RBz8wSnhCo0DQJQ9bm5udXVNbV19VDXNTQ2AdUnOAVVmTSjahBAqK9uaWlpbWvv6ATp6AKpT+gOqupB1yCArD4+Pl5Lq7evf8LESSD1Qd1BkzE1CKCp15oyZYo52PygoG6TyT1TMTQI4FQfNM1k8nQsGgRwqTeZZjIDRQNcCy7zp/UgNKBmUezqTWb2zJiFZANyITB79uw5c+bMnTs3ICDAycmpu7sbaP7MmT3zoBrkBcTQihkM9wPV98ycP2PWApCGhVhKDXT1JkDz50+ft2jBYqCGJUv5MYvKZcuWLV++3NnZOTAwsKqqavLkyTNmzFuxctVqYOm9Zu2idZgAanJPT8/06dNnzZq1aNGilSsT1q8Blt4bNm7avGXrFnSwbdv27dt37Nixc+fOXWCwe8/effs3HABacfDQ4SNHjx07jgZOoICTJ4+eOn3oIKQKOnP2HFHg7JkD0Lrr/AWiwPkR22oAAOcxrD6No7DjAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1546,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.deange.ropeprogress.sample\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"16\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f09008a\" android:label=\"RopeProgressBar\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"RopeProgressBar\" android:name=\"com.deange.ropeprogress.ChooserActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"Static Height\" android:name=\"com.deange.ropeprogress.StaticHeightRopeActivity\" />\n\t\t<activity android:label=\"Dynamic Height\" android:name=\"com.deange.ropeprogress.DynamicHeightRopeActivity\" />\n\t\t<activity android:label=\"Themed\" android:name=\"com.deange.ropeprogress.ThemedRopeActivity\" />\n\t\t<activity android:label=\"Custom Text\" android:name=\"com.deange.ropeprogress.CustomTextRopeActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1172330,
+  "crc32" : 3398332262,
+  "sha256" : "962b6fc36e7d6a698096a668c21bcd746f54c955902d08e2e8492197631f078f",
+  "buildTime" : 1522790534000
+}

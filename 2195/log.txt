@@ -1,0 +1,221 @@
+2016-07-05 06:16:48,835 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/andretietz/retroauth/archive/master.zip", attempt 3
+2016-07-05 06:16:51,343 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/andretietz/retroauth/archive/master.zip, attempt 3
+2016-07-05 06:16:52,093 DEBUG o.z.z.ZipUtil - Extracting '/tmp/rdisk/2195/master.zip' into '/tmp/rdisk/2195/src'.
+2016-07-05 06:16:52,221 INFO  c.g.v.a.s.FullProcessService - Size of directory with sources: 277 KB
+2016-07-05 06:16:52,276 INFO  c.g.v.a.s.a.ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2195/src/retroauth-master/gradlew
+2016-07-05 06:16:52,295 INFO  c.g.v.a.s.a.ProjectBuildService - Build script(s): /tmp/rdisk/2195/src/retroauth-master/build.gradle /tmp/rdisk/2195/src/retroauth-master/demoandroid/build.gradle /tmp/rdisk/2195/src/retroauth-master/demojava/build.gradle /tmp/rdisk/2195/src/retroauth-master/retroauth-android/build.gradle /tmp/rdisk/2195/src/retroauth-master/retroauth-core/build.gradle
+2016-07-05 06:16:52,310 INFO  c.g.v.a.s.a.ProjectBuildService - All script(s): /tmp/rdisk/2195/src/retroauth-master/build.gradle /tmp/rdisk/2195/src/retroauth-master/demoandroid/build.gradle /tmp/rdisk/2195/src/retroauth-master/demojava/build.gradle /tmp/rdisk/2195/src/retroauth-master/retroauth-android/bintray-publish.gradle /tmp/rdisk/2195/src/retroauth-master/retroauth-android/build.gradle /tmp/rdisk/2195/src/retroauth-master/retroauth-android/jfrog-publish.gradle /tmp/rdisk/2195/src/retroauth-master/retroauth-core/bintray-publish.gradle /tmp/rdisk/2195/src/retroauth-master/retroauth-core/build.gradle /tmp/rdisk/2195/src/retroauth-master/retroauth-core/jfrog-publish.gradle /tmp/rdisk/2195/src/retroauth-master/settings.gradle
+2016-07-05 06:16:52,324 INFO  c.g.v.a.s.a.ProjectBuildService - Remote scripts: none
+2016-07-05 06:16:52,326 INFO  c.g.v.a.s.a.ProjectFixService - Fixing project...
+2016-07-05 06:16:52,423 INFO  c.g.v.a.s.AndroidToolsService - ANDROID_HOME: /Users/vbauer/Library/Android/sdk
+2016-07-05 06:16:52,423 INFO  c.g.v.a.s.AndroidToolsService - NDK_HOME: /Users/vbauer/Library/Android/ndk
+2016-07-05 06:16:52,426 INFO  c.g.v.a.s.AndroidToolsService - Available build tools: 19.1.0 20.0.0 21.1.1 21.1.2 22.0.0 22.0.1 23.0.1 23.0.2 23.0.3 24.0.0
+2016-07-05 06:16:52,429 INFO  c.g.v.a.s.AndroidToolsService - Available build tools after clean up: 19.1.0 20.0.0 21.1.1 21.1.2 22.0.0 22.0.1 23.0.1 23.0.2 23.0.3 24.0.0
+2016-07-05 06:16:52,433 INFO  c.g.v.a.s.AndroidToolsService - Available platforms: 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 7 8 9 24
+2016-07-05 06:16:52,436 INFO  c.g.v.a.s.AndroidToolsService - Available platforms after clean up: 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+2016-07-05 06:16:52,438 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /tmp/rdisk/2195/src/retroauth-master/local.properties
+2016-07-05 06:16:52,458 INFO  c.g.v.a.s.a.f.WrapperPropertiesFixService - Project uses full gradle wrapper: true (https://services.gradle.org/distributions/gradle-2.10-all.zip)
+2016-07-05 06:16:52,459 INFO  c.g.v.a.s.a.f.WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2016-07-05 06:16:52,479 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/tmp/rdisk/2195/src/retroauth-master/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2016-07-05 06:16:52,491 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /tmp/rdisk/2195/src/retroauth-master/demoandroid/local.properties
+2016-07-05 06:16:52,492 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/tmp/rdisk/2195/src/retroauth-master/demoandroid/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2016-07-05 06:16:52,494 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /tmp/rdisk/2195/src/retroauth-master/demojava/local.properties
+2016-07-05 06:16:52,501 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/tmp/rdisk/2195/src/retroauth-master/demojava/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2016-07-05 06:16:52,503 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /tmp/rdisk/2195/src/retroauth-master/retroauth-android/local.properties
+2016-07-05 06:16:52,504 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/tmp/rdisk/2195/src/retroauth-master/retroauth-android/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2016-07-05 06:16:52,506 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /tmp/rdisk/2195/src/retroauth-master/retroauth-core/local.properties
+2016-07-05 06:16:52,514 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/tmp/rdisk/2195/src/retroauth-master/retroauth-core/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2016-07-05 06:16:52,514 INFO  c.g.v.a.s.a.ProjectFixService - Project was maybe fixed
+2016-07-05 06:16:52,522 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-05 06:16:52,525 INFO  c.g.v.a.u.SysUtils - Execute command: [/tmp/rdisk/2195/src/retroauth-master/gradlew, -b, /tmp/rdisk/2195/src/retroauth-master/build.gradle, tasks]
+2016-07-05 06:18:31,710 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 88
+2016-07-05 06:18:31,716 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: lintDebug deviceCheck lint testReleaseUnitTest javadoc deviceAndroidTest connectedCheck checkstyle test check testDebugUnitTest connectedAndroidTest lintRelease
+2016-07-05 06:18:31,717 INFO  c.g.v.a.u.SysUtils - Execute command: [/tmp/rdisk/2195/src/retroauth-master/gradlew, -b, /tmp/rdisk/2195/src/retroauth-master/build.gradle, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, javadoc, -x, deviceAndroidTest, -x, connectedCheck, -x, checkstyle, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2016-07-05 06:21:21,702 INFO  c.g.v.a.s.a.ProjectBuildService - Incremental java compilation is an incubating feature.
+:demoandroid:preBuild UP-TO-DATE
+:demoandroid:preDebugBuild UP-TO-DATE
+:demoandroid:checkDebugManifest
+:demoandroid:preReleaseBuild UP-TO-DATE
+:retroauth-android:preBuild UP-TO-DATE
+:retroauth-android:preReleaseBuild UP-TO-DATE
+:retroauth-android:compileReleaseNdk UP-TO-DATE
+:retroauth-android:compileLint
+:retroauth-android:copyReleaseLint UP-TO-DATE
+:retroauth-android:checkReleaseManifest
+:retroauth-android:preDebugAndroidTestBuild UP-TO-DATE
+:retroauth-android:preDebugBuild UP-TO-DATE
+:retroauth-android:preDebugUnitTestBuild UP-TO-DATE
+:retroauth-android:preReleaseUnitTestBuild UP-TO-DATE
+:retroauth-android:prepareComAndroidSupportAnimatedVectorDrawable2340Library
+:retroauth-android:prepareComAndroidSupportAppcompatV72340Library
+:retroauth-android:prepareComAndroidSupportSupportV42340Library
+:retroauth-android:prepareComAndroidSupportSupportVectorDrawable2340Library
+:retroauth-android:prepareReleaseDependencies
+:retroauth-android:compileReleaseAidl
+:retroauth-android:compileReleaseRenderscript
+:retroauth-android:generateReleaseBuildConfig
+:retroauth-android:mergeReleaseShaders
+:retroauth-android:compileReleaseShaders
+:retroauth-android:generateReleaseAssets
+:retroauth-android:mergeReleaseAssets
+:retroauth-android:generateReleaseResValues
+:retroauth-android:generateReleaseResources
+:retroauth-android:mergeReleaseResources
+:retroauth-android:processReleaseManifest
+:retroauth-android:processReleaseResources
+:retroauth-android:generateReleaseSources
+:retroauth-android:incrementalReleaseJavaCompilationSafeguard
+:retroauth-android:compileReleaseJavaWithJavac
+:retroauth-android:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:retroauth-android:extractReleaseAnnotations
+:retroauth-android:mergeReleaseProguardFiles
+:retroauth-android:packageReleaseRenderscript UP-TO-DATE
+:retroauth-android:packageReleaseResources
+:retroauth-android:processReleaseJavaRes UP-TO-DATE
+:retroauth-android:transformResourcesWithMergeJavaResForRelease
+:retroauth-android:transformClassesAndResourcesWithSyncLibJarsForRelease
+:retroauth-android:mergeReleaseJniLibFolders
+:retroauth-android:transformNative_libsWithMergeJniLibsForRelease
+:retroauth-android:transformNative_libsWithSyncJniLibsForRelease
+:retroauth-android:bundleRelease
+:demoandroid:prepareComAndroidSupportAnimatedVectorDrawable2340Library
+:demoandroid:prepareComAndroidSupportAppcompatV72340Library
+:demoandroid:prepareComAndroidSupportSupportV42340Library
+:demoandroid:prepareComAndroidSupportSupportVectorDrawable2340Library
+:demoandroid:prepareRetroauthMasterRetroauthAndroidUnspecifiedLibrary
+:demoandroid:prepareDebugDependencies
+:demoandroid:compileDebugAidl
+:demoandroid:compileDebugRenderscript
+:demoandroid:generateDebugBuildConfig
+:demoandroid:mergeDebugShaders
+:demoandroid:compileDebugShaders
+:demoandroid:generateDebugAssets
+:demoandroid:mergeDebugAssets
+:demoandroid:generateDebugResValues
+:demoandroid:generateDebugResources
+:demoandroid:mergeDebugResources
+:demoandroid:processDebugManifest
+:demoandroid:processDebugResources
+:demoandroid:generateDebugSources
+:demoandroid:incrementalDebugJavaCompilationSafeguard
+:demoandroid:compileDebugJavaWithJavac
+:demoandroid:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /private/tmp/rdisk/2195/src/retroauth-master/demoandroid/src/main/java/com/andretietz/retroauth/demo/LoginActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:demoandroid:compileDebugNdk UP-TO-DATE
+:demoandroid:compileDebugSources
+:demoandroid:prePackageMarkerForDebug
+:demoandroid:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 910 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:demoandroid:mergeDebugJniLibFolders
+:demoandroid:transformNative_libsWithMergeJniLibsForDebug
+:demoandroid:processDebugJavaRes UP-TO-DATE
+:demoandroid:transformResourcesWithMergeJavaResForDebug
+:demoandroid:validateDebugSigning
+:demoandroid:packageDebug
+:demoandroid:zipalignDebug
+:demoandroid:assembleDebug
+:demoandroid:checkReleaseManifest
+:demoandroid:prepareReleaseDependencies
+:demoandroid:compileReleaseAidl
+:demoandroid:compileReleaseRenderscript
+:demoandroid:generateReleaseBuildConfig
+:demoandroid:mergeReleaseShaders
+:demoandroid:compileReleaseShaders
+:demoandroid:generateReleaseAssets
+:demoandroid:mergeReleaseAssets
+:demoandroid:generateReleaseResValues
+:demoandroid:generateReleaseResources
+:demoandroid:mergeReleaseResources
+:demoandroid:processReleaseManifest
+:demoandroid:processReleaseResources
+:demoandroid:generateReleaseSources
+:demoandroid:incrementalReleaseJavaCompilationSafeguard
+:demoandroid:compileReleaseJavaWithJavac
+:demoandroid:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /private/tmp/rdisk/2195/src/retroauth-master/demoandroid/src/main/java/com/andretietz/retroauth/demo/LoginActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:demoandroid:compileReleaseNdk UP-TO-DATE
+:demoandroid:compileReleaseSources
+:demoandroid:lintVitalRelease
+:demoandroid:prePackageMarkerForRelease
+:demoandroid:transformClassesWithDexForRelease
+:demoandroid:mergeReleaseJniLibFolders
+:demoandroid:transformNative_libsWithMergeJniLibsForRelease
+:demoandroid:processReleaseJavaRes UP-TO-DATE
+:demoandroid:transformResourcesWithMergeJavaResForRelease
+:demoandroid:packageRelease
+:demoandroid:assembleRelease
+:demoandroid:assemble
+:demoandroid:build
+:retroauth-core:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:retroauth-core:processResources UP-TO-DATE
+:retroauth-core:classes
+:retroauth-core:jar
+:demojava:compileJava
+Download https://jcenter.bintray.com/io/reactivex/rxjavafx/0.0.5/rxjavafx-0.0.5.pom
+Download https://jcenter.bintray.com/io/reactivex/rxjavafx/0.0.5/rxjavafx-0.0.5.jar
+:demojava:processResources UP-TO-DATE
+:demojava:classes
+:demojava:jar
+:demojava:startScripts
+:demojava:distTar
+:demojava:distZip
+:demojava:assemble
+:demojava:build
+:retroauth-android:compileDebugNdk UP-TO-DATE
+:retroauth-android:copyDebugLint UP-TO-DATE
+:retroauth-android:checkDebugManifest
+:retroauth-android:prepareDebugDependencies
+:retroauth-android:compileDebugAidl
+:retroauth-android:compileDebugRenderscript
+:retroauth-android:generateDebugBuildConfig
+:retroauth-android:mergeDebugShaders
+:retroauth-android:compileDebugShaders
+:retroauth-android:generateDebugAssets
+:retroauth-android:mergeDebugAssets
+:retroauth-android:generateDebugResValues
+:retroauth-android:generateDebugResources
+:retroauth-android:mergeDebugResources
+:retroauth-android:processDebugManifest
+:retroauth-android:processDebugResources
+:retroauth-android:generateDebugSources
+:retroauth-android:incrementalDebugJavaCompilationSafeguard
+:retroauth-android:compileDebugJavaWithJavac
+:retroauth-android:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:retroauth-android:extractDebugAnnotations
+:retroauth-android:mergeDebugProguardFiles
+:retroauth-android:packageDebugRenderscript UP-TO-DATE
+:retroauth-android:packageDebugResources
+:retroauth-android:processDebugJavaRes UP-TO-DATE
+:retroauth-android:transformResourcesWithMergeJavaResForDebug
+:retroauth-android:transformClassesAndResourcesWithSyncLibJarsForDebug
+:retroauth-android:mergeDebugJniLibFolders
+:retroauth-android:transformNative_libsWithMergeJniLibsForDebug
+:retroauth-android:transformNative_libsWithSyncJniLibsForDebug
+:retroauth-android:bundleDebug
+:retroauth-android:compileDebugSources
+:retroauth-android:assembleDebug
+:retroauth-android:compileReleaseSources
+:retroauth-android:assembleRelease
+:retroauth-android:assemble
+:retroauth-android:build
+:retroauth-core:assemble
+:retroauth-core:build
+
+BUILD SUCCESSFUL
+
+Total time: 2 mins 49.217 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+

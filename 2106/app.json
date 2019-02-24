@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "cn.bingoogolapple.badgeview.demo",
+    "label" : "BGABadgeViewDemo",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.1.8",
+    "versionCode" : 118,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.SYSTEM_ALERT_WINDOW" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAACmUlEQVRYw+1Xz2sTQRT+pgkJqMR6iB7iQS8WC1pvEfyBoQdPipfQ1BwVNND4DwjiHyD12BTUmxjMxQoJ6sXetCJWeqhWPdTQKCrYNNRCS5rPQyfLzu7sZjfd9NR3mnkz7/vmx5s37wG70kGE2mUMWVzGIGLo84nUQgPzeI7HouE4h2kucbtSY9oJPs8Wg5AW8/rVBwO/RZG23AFjmEfCYFtBEdP4jZbH8+9DHClksN/Q1DCo3AVzJv4yE934CxMsm1By6mDFBB/u1iUZNlFU1KFFqa53t3rTLuoSaXFL015t+/SKoqY17McQBnAIeyGwhj9YwKz4q3lWNRZxQ0GUAG3ejA06xjxn2LR5yibf8xZjtvmZ9lnoCYYt07OsdXhWVy0Ww+4EKUV715PP31FsUp4JjM2a5R9XNdqMM4FbSDui0T3CQ432qDOIP59fwz0Q17HHu4m/oFwQ30UVE35Mwp7W/QkA0MQ4AOA+zkq745334oUgitvipfkx4TQA8CLKwRxRCEWetD2oE3iCUFB30I8S4wp8HCUcCPKSj2FS6U9gIGgvarn0AiF4o/TeBkEwZ4XkEJ+yxFM2go+dPwpdLBKcNqJNnUlOybSgxSkmDQvyRZfBDmCSm1K/bvkRmlyXrQ3Vhf0EO4gZPJDNiMXnQ4jI1riY8/KXancAcB8/uP4GrxmxWPjZASBWMYKfjsPfkBUb23RT8RVXsKId+oVL4kcA70C8QwpVm3oB58Vn/+9ASyhmcQavFNUznBNffCzZOW0xZoSYk8l9ldcoHOc5pC3LUl1w9bUoRznKqOucgkRa3qHU0Z78VnqT/JrT9woPB5C+33QrQBq+C5CDuIARlwKkdyWUmWIssCJwrJdl7JK6+p0txHdFJ/8B5O1sIB4XyNEAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1047,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "en_CA", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "en_XC", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"118\" android:versionName=\"1.1.8\" package=\"cn.bingoogolapple.badgeview.demo\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"27\" />\n\t<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\" />\n\t<application android:theme=\"resourceId:0x7f0d0006\" android:label=\"BGABadgeViewDemo\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"BGABadgeViewDemo\" android:name=\"cn.bingoogolapple.badgeview.demo.activity.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1064949,
+  "crc32" : 2602495094,
+  "sha256" : "256af37d7dd96ae6783730c566784b425da19248202b89c36593d7774dbf3400",
+  "buildTime" : 1523343253000
+}

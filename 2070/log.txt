@@ -1,0 +1,121 @@
+2018-04-03 21:15:39,401 INFO  DownloadService - Downloading "https://github.com/eure/citrus/archive/master.zip", attempt 3
+2018-04-03 21:16:39,882 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 21:16:40,620 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 21:16:40,620 INFO  DownloadService - Downloading "https://github.com/eure/citrus/archive/master.zip", attempt 3
+2018-04-03 21:17:41,967 DEBUG FullProcessService - Repository https://github.com/eure/citrus available: true
+2018-04-03 21:17:41,967 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 21:17:41,967 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/eure/citrus, /tmp/rdisk/2070/src]
+2018-04-03 21:17:45,394 INFO  SysUtils - 
+2018-04-03 21:17:45,401 INFO  GitService - Deleted "/tmp/rdisk/2070/src/.git": true
+2018-04-03 21:17:45,405 INFO  FullProcessService - Size of directory with sources: 26 MB
+2018-04-03 21:17:45,405 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2070/src]
+2018-04-03 21:17:45,410 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2070/src/.git/
+
+2018-04-03 21:17:45,413 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2070/src/gradlew
+2018-04-03 21:17:45,416 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2070/src/app/build.gradle /tmp/rdisk/2070/src/build.gradle
+2018-04-03 21:17:45,419 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2070/src/settings.gradle /tmp/rdisk/2070/src/build.gradle /tmp/rdisk/2070/src/app/build.gradle
+2018-04-03 21:17:45,420 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 21:17:45,420 INFO  ProjectFixService - Fixing project...
+2018-04-03 21:17:45,427 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2070/src/app/local.properties
+2018-04-03 21:17:45,427 INFO  ProjectFixService - Build info for "/tmp/rdisk/2070/src/app/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 21:17:45,427 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2070/src/local.properties
+2018-04-03 21:17:45,428 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-03 21:17:45,428 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-03 21:17:45,428 INFO  ProjectFixService - Build info for "/tmp/rdisk/2070/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 21:17:45,429 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 21:17:45,429 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 21:17:45,429 INFO  SysUtils - Execute command: [/tmp/rdisk/2070/src/gradlew, -b, /tmp/rdisk/2070/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 21:17:58,199 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-03 21:17:58,199 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 21:17:58,199 INFO  SysUtils - Execute command: [/tmp/rdisk/2070/src/gradlew, -b, /tmp/rdisk/2070/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 21:18:42,453 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72311Library
+:app:prepareComAndroidSupportDesign2311Library
+:app:prepareComAndroidSupportRecyclerviewV72311Library
+:app:prepareComAndroidSupportSupportV42311Library
+:app:prepareComSquareupLeakcanaryLeakcanaryAndroid131Library
+:app:prepareDeHdodenhofCircleimageview200Library
+:app:prepareUkCoChrisjenxCalligraphy210Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/2070/src/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2070/src/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2070/src/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaWithJavacNote: Version 5.0.0 of Realm is now available: http://static.realm.io/downloads/java/latest
+Note: Processing class Task
+Note: Processing class Group
+Note: Creating DefaultRealmModule
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareComSquareupLeakcanaryLeakcanaryAndroidNoOp131Library
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/2070/src/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2070/src/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2070/src/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaWithJavacNote: Version 5.0.0 of Realm is now available: http://static.realm.io/downloads/java/latest
+Note: Processing class Task
+Note: Processing class Group
+Note: Creating DefaultRealmModule
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 43.765 secs
+
+2018-04-03 21:18:42,501 INFO  FullProcessService - Found APK file: /tmp/rdisk/2070/src/app/build/outputs/apk/app-debug.apk

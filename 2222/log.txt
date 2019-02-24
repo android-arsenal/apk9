@@ -1,0 +1,273 @@
+2018-04-02 16:27:22,924 INFO  DownloadService - Downloading "https://github.com/KeepSafe/MultiStateAnimation/archive/master.zip", attempt 3
+2018-04-02 16:28:23,533 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 16:28:24,224 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 16:28:24,224 INFO  DownloadService - Downloading "https://github.com/KeepSafe/MultiStateAnimation/archive/master.zip", attempt 3
+2018-04-02 16:29:25,455 DEBUG FullProcessService - Repository https://github.com/KeepSafe/MultiStateAnimation available: true
+2018-04-02 16:29:25,455 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 16:29:25,455 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/KeepSafe/MultiStateAnimation, /tmp/rdisk/2222/src]
+2018-04-02 16:29:27,179 INFO  SysUtils - 
+2018-04-02 16:29:27,184 INFO  GitService - Deleted "/tmp/rdisk/2222/src/.git": true
+2018-04-02 16:29:27,189 INFO  FullProcessService - Size of directory with sources: 443 KB
+2018-04-02 16:29:27,189 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2222/src]
+2018-04-02 16:29:27,194 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2222/src/.git/
+
+2018-04-02 16:29:27,198 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2222/src/gradlew
+2018-04-02 16:29:27,202 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2222/src/library/build.gradle /tmp/rdisk/2222/src/samples/build.gradle /tmp/rdisk/2222/src/build.gradle
+2018-04-02 16:29:27,206 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2222/src/settings.gradle /tmp/rdisk/2222/src/samples/build.gradle /tmp/rdisk/2222/src/library/build.gradle /tmp/rdisk/2222/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2222/src/build.gradle
+2018-04-02 16:29:27,206 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 16:29:27,206 INFO  ProjectFixService - Fixing project...
+2018-04-02 16:29:27,216 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2222/src/library/local.properties
+2018-04-02 16:29:27,216 INFO  ProjectFixService - Build info for "/tmp/rdisk/2222/src/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=1,targetSdkVersion=22]
+2018-04-02 16:29:27,217 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2222/src/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-02 16:29:27,217 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2222/src/samples/local.properties
+2018-04-02 16:29:27,217 INFO  ProjectFixService - Build info for "/tmp/rdisk/2222/src/samples/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=1,targetSdkVersion=22]
+2018-04-02 16:29:27,218 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2222/src/samples/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-02 16:29:27,218 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2222/src/local.properties
+2018-04-02 16:29:27,218 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 16:29:27,218 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 16:29:27,219 INFO  ProjectFixService - Build info for "/tmp/rdisk/2222/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-02 16:29:27,219 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 16:29:27,219 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 16:29:27,219 INFO  SysUtils - Execute command: [/tmp/rdisk/2222/src/gradlew, -b, /tmp/rdisk/2222/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 16:29:39,671 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 16:29:39,671 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 16:29:39,671 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 16:29:39,671 INFO  SysUtils - Execute command: [/tmp/rdisk/2222/src/gradlew, -b, /tmp/rdisk/2222/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 16:29:47,188 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 16:29:47,188 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs/tmp/rdisk/2222/src/library/src/main/java/com/getkeepsafe/android/multistateanimation/MultiStateAnimation.java:432: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2222/src/library/src/main/java/com/getkeepsafe/android/multistateanimation/MultiStateAnimation.java:487: warning: no description for @throws
+     * @throws RuntimeException
+       ^
+/tmp/rdisk/2222/src/library/src/main/java/com/getkeepsafe/android/multistateanimation/MultiStateAnimation.java:565: warning: no description for @throws
+     * @throws RuntimeException
+       ^
+/tmp/rdisk/2222/src/library/src/main/java/com/getkeepsafe/android/multistateanimation/MultiStateAnimation.java:583: warning: no @return
+    public AnimationSeriesListener getSeriesAnimationFinishedListener() {
+                                   ^
+/tmp/rdisk/2222/src/library/src/main/java/com/getkeepsafe/android/multistateanimation/MultiStateAnimation.java:613: warning: no @return
+    public AnimationDrawable getCurrentDrawable() {
+                             ^
+/tmp/rdisk/2222/src/library/src/main/java/com/getkeepsafe/android/multistateanimation/MultiStateAnimation.java:620: warning: no @return
+    public String getCurrentSectionId() {
+                  ^
+/tmp/rdisk/2222/src/library/src/main/java/com/getkeepsafe/android/multistateanimation/MultiStateAnimation.java:628: warning: no @return
+    public String getTransitioningFromId() {
+                  ^
+/tmp/rdisk/2222/src/library/src/main/java/com/getkeepsafe/android/multistateanimation/MultiStateAnimation.java:277: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2222/src/library/src/main/java/com/getkeepsafe/android/multistateanimation/MultiStateAnimation.java:226: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2222/src/library/src/main/java/com/getkeepsafe/android/multistateanimation/NotifyingAnimationDrawable.java:59: warning: no @return
+    public boolean isFinished() {
+                   ^
+
+3 errors
+7 warnings
+:library:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/2222/src/library/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':library:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/2222/src/library/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:55)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:140)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:128)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 7.104 secs
+
+2018-04-02 16:29:47,193 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 16:29:47,193 INFO  SysUtils - Execute command: [/tmp/rdisk/2222/src/gradlew, -b, /tmp/rdisk/2222/src/samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 16:29:54,189 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-02 16:29:54,189 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 16:29:54,189 INFO  SysUtils - Execute command: [/tmp/rdisk/2222/src/gradlew, -b, /tmp/rdisk/2222/src/samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 16:30:06,775 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaNote: /tmp/rdisk/2222/src/library/src/main/java/com/getkeepsafe/android/multistateanimation/MultiStateAnimation.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:samples:preBuild UP-TO-DATE
+:samples:preDebugBuild UP-TO-DATE
+:samples:checkDebugManifest
+:samples:preReleaseBuild UP-TO-DATE
+:samples:prepareComGetkeepsafeAndroidMultistateanimationLibrary111Library
+:samples:prepareDebugDependencies
+:samples:compileDebugAidl
+:samples:compileDebugRenderscript
+:samples:generateDebugBuildConfig
+:samples:generateDebugAssets UP-TO-DATE
+:samples:mergeDebugAssets
+:samples:generateDebugResValues
+:samples:generateDebugResources
+:samples:mergeDebugResources
+:samples:processDebugManifest
+:samples:processDebugResources
+:samples:generateDebugSources
+:samples:processDebugJavaRes UP-TO-DATE
+:samples:compileDebugJava
+:samples:compileDebugNdk UP-TO-DATE
+:samples:compileDebugSources
+:samples:preDexDebug
+:samples:dexDebug
+:samples:validateDebugSigning
+:samples:packageDebug
+:samples:zipalignDebug
+:samples:assembleDebug
+:samples:checkReleaseManifest
+:samples:prepareReleaseDependencies
+:samples:compileReleaseAidl
+:samples:compileReleaseRenderscript
+:samples:generateReleaseBuildConfig
+:samples:generateReleaseAssets UP-TO-DATE
+:samples:mergeReleaseAssets
+:samples:generateReleaseResValues
+:samples:generateReleaseResources
+:samples:mergeReleaseResources
+:samples:processReleaseManifest
+:samples:processReleaseResources
+:samples:generateReleaseSources
+:samples:processReleaseJavaRes UP-TO-DATE
+:samples:compileReleaseJava
+:samples:compileReleaseNdk UP-TO-DATE
+:samples:compileReleaseSources
+:samples:lintVitalRelease
+:samples:preDexRelease
+:samples:dexRelease
+:samples:packageRelease
+:samples:assembleRelease
+:samples:assemble
+:samples:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.166 secs
+
+2018-04-02 16:30:06,791 INFO  FullProcessService - Found APK file: /tmp/rdisk/2222/src/samples/build/outputs/apk/samples-release-unsigned.apk

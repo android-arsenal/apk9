@@ -1,0 +1,10 @@
+2018-01-03 22:50:36,566 INFO  DownloadService - Downloading "https://github.com/romannurik/AndroidSDKSearchExtension/archive/master.zip", attempt 3
+2018-01-03 22:50:37,719 INFO  DownloadService - Downloaded https://github.com/romannurik/AndroidSDKSearchExtension/archive/master.zip, attempt 3
+2018-01-03 22:50:37,719 INFO  DownloadService - Size of file "/tmp/1515019836563-0/master.zip": 1 MB
+2018-01-03 22:50:37,719 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-01-03 22:50:37,719 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/1515019836563-0/master.zip: false
+2018-01-03 22:50:37,719 INFO  FullProcessService - Archive with sources does not contain any build script
+2018-01-03 22:50:37,720 ERROR FullProcessService - Could not find directory with sources
+2018-01-03 22:50:37,720 ERROR FullProcessService - Project will not be processed
+2018-01-03 22:50:37,720 ERROR FullProcessService - Project build has not produced APK file
+2018-01-03 22:50:37,720 ERROR FullProcessService - Could not find generated or existed APK file

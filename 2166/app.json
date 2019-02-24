@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.github.ppamorim.prismview.sample",
+    "label" : "Prism",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.1",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2151,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"0.1\" package=\"com.github.ppamorim.prismview.sample\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f080077\" android:label=\"Prism\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"com.github.ppamorim.prismview.sample.VaporApplication\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Prism\" android:name=\"com.github.ppamorim.prismview.sample.ui.activity.BaseActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"RecyclerViewTestActivity\" android:name=\"android.support.v7.widget.TestActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 4487473,
+  "crc32" : 540190845,
+  "sha256" : "c135ee237acbd60ad8b9d22e4890fc33e65d7998e8ba4a4eb80a3942e5375ea8",
+  "buildTime" : 1508144325000
+}

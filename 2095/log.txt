@@ -1,0 +1,107 @@
+2018-04-03 20:08:23,789 INFO  DownloadService - Downloading "https://github.com/lukaspili/Auto-Dagger2/archive/master.zip", attempt 3
+2018-04-03 20:09:24,456 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 20:09:25,255 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 20:09:25,255 INFO  DownloadService - Downloading "https://github.com/lukaspili/Auto-Dagger2/archive/master.zip", attempt 3
+2018-04-03 20:10:26,548 DEBUG FullProcessService - Repository https://github.com/lukaspili/Auto-Dagger2 available: true
+2018-04-03 20:10:26,549 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 20:10:26,549 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/lukaspili/Auto-Dagger2, /tmp/rdisk/2095/src]
+2018-04-03 20:10:28,044 INFO  SysUtils - 
+2018-04-03 20:10:28,049 INFO  GitService - Deleted "/tmp/rdisk/2095/src/.git": true
+2018-04-03 20:10:28,053 INFO  FullProcessService - Size of directory with sources: 183 KB
+2018-04-03 20:10:28,053 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2095/src]
+2018-04-03 20:10:28,057 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2095/src/.git/
+
+2018-04-03 20:10:28,064 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2095/src/gradlew
+2018-04-03 20:10:28,068 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2095/src/example-kotlin/build.gradle /tmp/rdisk/2095/src/example/build.gradle /tmp/rdisk/2095/src/build.gradle /tmp/rdisk/2095/src/compiler-utils/build.gradle /tmp/rdisk/2095/src/compiler/build.gradle /tmp/rdisk/2095/src/library/build.gradle
+2018-04-03 20:10:28,071 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2095/src/settings.gradle /tmp/rdisk/2095/src/mvn-publish.gradle /tmp/rdisk/2095/src/library/build.gradle /tmp/rdisk/2095/src/example/build.gradle /tmp/rdisk/2095/src/example-kotlin/build.gradle /tmp/rdisk/2095/src/compiler/build.gradle /tmp/rdisk/2095/src/compiler-utils/build.gradle /tmp/rdisk/2095/src/build.gradle
+2018-04-03 20:10:28,072 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 20:10:28,072 INFO  ProjectFixService - Fixing project...
+2018-04-03 20:10:28,082 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2095/src/example-kotlin/local.properties
+2018-04-03 20:10:28,082 INFO  ProjectFixService - Build info for "/tmp/rdisk/2095/src/example-kotlin/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 20:10:28,082 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2095/src/example/local.properties
+2018-04-03 20:10:28,083 INFO  ProjectFixService - Build info for "/tmp/rdisk/2095/src/example/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 20:10:28,083 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2095/src/local.properties
+2018-04-03 20:10:28,083 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 20:10:28,083 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 20:10:28,086 INFO  ProjectFixService - Build info for "/tmp/rdisk/2095/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 20:10:28,089 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2095/src/compiler-utils/local.properties
+2018-04-03 20:10:28,091 INFO  ProjectFixService - Build info for "/tmp/rdisk/2095/src/compiler-utils/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 20:10:28,091 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2095/src/compiler/local.properties
+2018-04-03 20:10:28,094 INFO  ProjectFixService - Build info for "/tmp/rdisk/2095/src/compiler/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 20:10:28,094 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2095/src/library/local.properties
+2018-04-03 20:10:28,096 INFO  ProjectFixService - Build info for "/tmp/rdisk/2095/src/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 20:10:28,096 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 20:10:28,096 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:10:28,096 INFO  SysUtils - Execute command: [/tmp/rdisk/2095/src/gradlew, -b, /tmp/rdisk/2095/src/example-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:11:08,619 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-03 20:11:08,619 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 20:11:08,620 INFO  SysUtils - Execute command: [/tmp/rdisk/2095/src/gradlew, -b, /tmp/rdisk/2095/src/example-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 20:11:36,217 INFO  SysUtils - Configuration on demand is an incubating feature.
+:example-kotlin:preBuild UP-TO-DATE
+:example-kotlin:preDebugBuild UP-TO-DATE
+:example-kotlin:checkDebugManifest
+:example-kotlin:prepareDebugDependencies
+:example-kotlin:compileDebugAidl
+:example-kotlin:compileDebugRenderscript
+:example-kotlin:generateDebugBuildConfig
+:example-kotlin:generateDebugAssets UP-TO-DATE
+:example-kotlin:mergeDebugAssets
+:example-kotlin:generateDebugResValues
+:example-kotlin:generateDebugResources
+:example-kotlin:mergeDebugResources
+:example-kotlin:processDebugManifest
+:example-kotlin:processDebugResources
+:example-kotlin:generateDebugSources
+:example-kotlin:processDebugJavaRes UP-TO-DATE
+:library:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:library:processResources UP-TO-DATE
+:library:classes
+:library:jar
+:example-kotlin:compileDebugKotlin
+:example-kotlin:compileDebugJavawarning: The following options were not recognized by any processor: '[kapt.kotlin.generated]'
+
+:example-kotlin:compileDebugKotlinAfterJava
+:example-kotlin:compileDebugNdk UP-TO-DATE
+:example-kotlin:compileDebugSources
+:example-kotlin:preDexDebug
+:example-kotlin:dexDebug
+:example-kotlin:validateDebugSigning
+:example-kotlin:packageDebug
+:example-kotlin:zipalignDebug
+:example-kotlin:assembleDebug
+:example-kotlin:preReleaseBuild UP-TO-DATE
+:example-kotlin:checkReleaseManifest
+:example-kotlin:prepareReleaseDependencies
+:example-kotlin:compileReleaseAidl
+:example-kotlin:compileReleaseRenderscript
+:example-kotlin:generateReleaseBuildConfig
+:example-kotlin:generateReleaseAssets UP-TO-DATE
+:example-kotlin:mergeReleaseAssets
+:example-kotlin:generateReleaseResValues
+:example-kotlin:generateReleaseResources
+:example-kotlin:mergeReleaseResources
+:example-kotlin:processReleaseManifest
+:example-kotlin:processReleaseResources
+:example-kotlin:generateReleaseSources
+:example-kotlin:processReleaseJavaRes UP-TO-DATE
+:example-kotlin:compileReleaseKotlin
+:example-kotlin:compileReleaseJavawarning: The following options were not recognized by any processor: '[kapt.kotlin.generated]'
+
+:example-kotlin:compileReleaseKotlinAfterJava
+:example-kotlin:compileReleaseNdk UP-TO-DATE
+:example-kotlin:compileReleaseSources
+:example-kotlin:lintVitalRelease
+:example-kotlin:preDexRelease
+:example-kotlin:dexRelease
+:example-kotlin:packageRelease
+:example-kotlin:assembleRelease
+:example-kotlin:assemble
+:example-kotlin:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.325 secs
+
+2018-04-03 20:11:36,227 INFO  FullProcessService - Found APK file: /tmp/rdisk/2095/src/example-kotlin/build/outputs/apk/example-kotlin-release-unsigned.apk

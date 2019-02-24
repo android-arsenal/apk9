@@ -1,0 +1,39 @@
+{
+  "meta" : {
+    "packageName" : "me.iwf.PhotoPickerDemo",
+    "label" : "PhotoPicker Demo",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.9.7",
+    "versionCode" : 15,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "26",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE", "android.permission.CAMERA" ],
+    "usesFeatures" : [ {
+      "name" : "android.hardware.camera",
+      "required" : false
+    }, {
+      "name" : "android.hardware.camera.autofocus",
+      "required" : false
+    } ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2023,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "iw", "de", "en_IN", "es_US", "zh", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"15\" android:versionName=\"0.9.7\" package=\"me.iwf.PhotoPickerDemo\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"26\" />\n\t<uses-feature android:name=\"android.hardware.camera\" android:required=\"false\" />\n\t<uses-feature android:name=\"android.hardware.camera.autofocus\" android:required=\"false\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.CAMERA\" />\n\t<application android:theme=\"resourceId:0x7f0e0006\" android:label=\"PhotoPicker Demo\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"PhotoPicker Demo\" android:name=\"me.iwf.PhotoPickerDemo.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"resourceId:0x7f0e018c\" android:name=\"me.iwf.photopicker.PhotoPickerActivity\" />\n\t\t<activity android:theme=\"resourceId:0x7f0e0128\" android:name=\"me.iwf.photopicker.PhotoPagerActivity\" />\n\t\t<meta-data android:name=\"io.fabric.ApiKey\" android:value=\"423ff17515038a50c41085cc2dbd0087d2e51cbb\" />\n\t\t<provider android:name=\"me.iwf.photopicker.utils.PhotoFileProvider\" android:exported=\"false\" android:authorities=\"me.iwf.PhotoPickerDemo.provider\" android:grantUriPermissions=\"true\">\n\t\t\t<meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"res/xml/__picker_provider_paths.xml\" />\n\t\t</provider>\n\t\t<meta-data android:name=\"android.support.VERSION\" android:value=\"26.1.0\" />\n\t\t<meta-data android:name=\"android.arch.lifecycle.VERSION\" android:value=\"27.0.0-SNAPSHOT\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1406726,
+  "crc32" : 1442161089,
+  "sha256" : "9b6f786e27ff211e69d911ae6c70d249e78d8dc83010fb25772d730a0c1ab8c9",
+  "buildTime" : 1522787019000
+}

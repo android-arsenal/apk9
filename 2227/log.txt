@@ -1,0 +1,164 @@
+2018-04-02 16:12:59,814 INFO  DownloadService - Downloading "https://github.com/bowyer-app/ParseSendClient/archive/master.zip", attempt 3
+2018-04-02 16:14:00,449 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 16:14:01,425 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 16:14:01,425 INFO  DownloadService - Downloading "https://github.com/bowyer-app/ParseSendClient/archive/master.zip", attempt 3
+2018-04-02 16:15:02,959 DEBUG FullProcessService - Repository https://github.com/bowyer-app/ParseSendClient available: true
+2018-04-02 16:15:02,959 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 16:15:02,959 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/bowyer-app/ParseSendClient, /tmp/rdisk/2227/src]
+2018-04-02 16:15:09,756 INFO  SysUtils - 
+2018-04-02 16:15:09,762 INFO  GitService - Deleted "/tmp/rdisk/2227/src/.git": true
+2018-04-02 16:15:09,766 INFO  FullProcessService - Size of directory with sources: 5 MB
+2018-04-02 16:15:09,766 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2227/src]
+2018-04-02 16:15:09,771 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2227/src/.git/
+
+2018-04-02 16:15:09,775 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2227/src/gradlew
+2018-04-02 16:15:09,781 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2227/src/demo/build.gradle /tmp/rdisk/2227/src/parsesendclient/build.gradle /tmp/rdisk/2227/src/senddemo/build.gradle /tmp/rdisk/2227/src/build.gradle
+2018-04-02 16:15:09,786 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2227/src/settings.gradle /tmp/rdisk/2227/src/senddemo/build.gradle /tmp/rdisk/2227/src/parsesendclient/build.gradle /tmp/rdisk/2227/src/parsesendclient/bintray-publish.gradle /tmp/rdisk/2227/src/demo/build.gradle /tmp/rdisk/2227/src/build.gradle
+2018-04-02 16:15:09,787 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 16:15:09,787 INFO  ProjectFixService - Fixing project...
+2018-04-02 16:15:09,796 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2227/src/demo/local.properties
+2018-04-02 16:15:09,799 INFO  ProjectFixService - Build info for "/tmp/rdisk/2227/src/demo/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 16:15:09,799 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2227/src/demo/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 16:15:09,800 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2227/src/parsesendclient/local.properties
+2018-04-02 16:15:09,803 INFO  ProjectFixService - Build info for "/tmp/rdisk/2227/src/parsesendclient/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 16:15:09,803 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2227/src/parsesendclient/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 16:15:09,804 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2227/src/senddemo/local.properties
+2018-04-02 16:15:09,807 INFO  ProjectFixService - Build info for "/tmp/rdisk/2227/src/senddemo/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 16:15:09,807 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2227/src/senddemo/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 16:15:09,807 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2227/src/local.properties
+2018-04-02 16:15:09,808 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 16:15:09,808 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 16:15:09,815 INFO  ProjectFixService - Build info for "/tmp/rdisk/2227/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 16:15:09,815 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2227/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 16:15:09,815 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 16:15:09,816 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 16:15:09,816 INFO  SysUtils - Execute command: [/tmp/rdisk/2227/src/gradlew, -b, /tmp/rdisk/2227/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 16:15:26,862 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 16:15:26,862 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 16:15:26,862 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 16:15:26,862 INFO  SysUtils - Execute command: [/tmp/rdisk/2227/src/gradlew, -b, /tmp/rdisk/2227/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 16:16:14,786 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:parsesendclient:compileLint
+:parsesendclient:copyReleaseLint UP-TO-DATE
+:parsesendclient:preBuild UP-TO-DATE
+:parsesendclient:preReleaseBuild UP-TO-DATE
+:parsesendclient:checkReleaseManifest
+:parsesendclient:preDebugAndroidTestBuild UP-TO-DATE
+:parsesendclient:preDebugBuild UP-TO-DATE
+:parsesendclient:preDebugUnitTestBuild UP-TO-DATE
+:parsesendclient:preReleaseUnitTestBuild UP-TO-DATE
+:parsesendclient:prepareComAndroidSupportAppcompatV72221Library
+:parsesendclient:prepareComAndroidSupportSupportV42221Library
+:parsesendclient:prepareReleaseDependencies
+:parsesendclient:compileReleaseAidl
+:parsesendclient:compileReleaseRenderscript
+:parsesendclient:generateReleaseBuildConfig
+:parsesendclient:generateReleaseAssets UP-TO-DATE
+:parsesendclient:mergeReleaseAssets
+:parsesendclient:generateReleaseResValues
+:parsesendclient:generateReleaseResources
+:parsesendclient:mergeReleaseResources
+:parsesendclient:processReleaseManifest
+:parsesendclient:processReleaseResources
+:parsesendclient:generateReleaseSources
+:parsesendclient:processReleaseJavaRes UP-TO-DATE
+:parsesendclient:compileReleaseJava
+:parsesendclient:extractReleaseAnnotations
+:parsesendclient:mergeReleaseProguardFiles
+:parsesendclient:packageReleaseJar
+:parsesendclient:compileReleaseNdk UP-TO-DATE
+:parsesendclient:packageReleaseJniLibs UP-TO-DATE
+:parsesendclient:packageReleaseLocalJar UP-TO-DATE
+:parsesendclient:packageReleaseRenderscript UP-TO-DATE
+:parsesendclient:packageReleaseResources
+:parsesendclient:bundleRelease
+:demo:prepareComAndroidSupportAppcompatV72221Library
+:demo:prepareComAndroidSupportSupportV132100Library
+:demo:prepareComAndroidSupportSupportV42221Library
+:demo:prepareComGithubCituxDatetimepicker012Library
+:demo:prepareSrcParsesendclientUnspecifiedLibrary
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:processDebugJavaRes
+:demo:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:compileDebugNdk UP-TO-DATE
+:demo:compileDebugSources
+:demo:preDexDebug
+:demo:dexDebug
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:processReleaseJavaRes
+:demo:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:compileReleaseSources
+:demo:lintVitalRelease SKIPPED
+:demo:preDexRelease
+:demo:dexRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:compileLint
+:demo:lint
+Ran lint on variant release: 8 issues found
+Ran lint on variant debug: 8 issues found
+Wrote HTML report to file:/tmp/rdisk/2227/src/demo/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2227/src/demo/build/outputs/lint-results.xml
+:demo:preCompileDebugUnitTestJava
+:demo:preDebugUnitTestBuild UP-TO-DATE
+:demo:prepareDebugUnitTestDependencies
+:demo:processDebugUnitTestJavaRes UP-TO-DATE
+:demo:compileDebugUnitTestJava UP-TO-DATE
+:demo:compileDebugUnitTestSources UP-TO-DATE
+:demo:mockableAndroidJar
+:demo:assembleDebugUnitTest
+:demo:testDebug
+:demo:preCompileReleaseUnitTestJava
+:demo:preReleaseUnitTestBuild UP-TO-DATE
+:demo:prepareReleaseUnitTestDependencies
+:demo:processReleaseUnitTestJavaRes UP-TO-DATE
+:demo:compileReleaseUnitTestJava UP-TO-DATE
+:demo:compileReleaseUnitTestSources UP-TO-DATE
+:demo:assembleReleaseUnitTest
+:demo:testRelease
+:demo:test
+:demo:check
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 47.486 secs
+
+2018-04-02 16:16:14,850 INFO  FullProcessService - Found APK file: /tmp/rdisk/2227/src/demo/build/outputs/apk/demo-release-unsigned.apk

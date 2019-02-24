@@ -1,0 +1,316 @@
+2018-05-11 11:25:01,568 INFO  DownloadService - Downloading "https://github.com/jonfinerty/Once/archive/master.zip", attempt 3
+2018-05-11 11:25:01,978 INFO  DownloadService - Downloaded https://github.com/jonfinerty/Once/archive/master.zip, attempt 3
+2018-05-11 11:25:01,978 INFO  DownloadService - Size of file "/tmp/rdisk/2206/master.zip": 94 KB
+2018-05-11 11:25:01,978 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:25:01,978 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2206/master.zip: true
+2018-05-11 11:25:01,978 DEBUG ZipUtil - Extracting '/tmp/rdisk/2206/master.zip' into '/tmp/rdisk/2206/src'.
+2018-05-11 11:25:01,987 INFO  FullProcessService - Size of directory with sources: 138 KB
+2018-05-11 11:25:01,988 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2206/src]
+2018-05-11 11:25:02,000 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2206/src/.git/
+
+2018-05-11 11:25:02,002 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2206/src/Once-master/gradlew
+2018-05-11 11:25:02,004 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2206/src/Once-master/once-example/build.gradle /tmp/rdisk/2206/src/Once-master/once/build.gradle /tmp/rdisk/2206/src/Once-master/build.gradle
+2018-05-11 11:25:02,006 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2206/src/Once-master/settings.gradle /tmp/rdisk/2206/src/Once-master/once/build.gradle /tmp/rdisk/2206/src/Once-master/once-example/build.gradle /tmp/rdisk/2206/src/Once-master/build.gradle
+2018-05-11 11:25:02,007 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:25:02,007 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:25:02,012 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2206/src/Once-master/once-example/local.properties
+2018-05-11 11:25:02,013 INFO  ProjectFixService - Build info for "/tmp/rdisk/2206/src/Once-master/once-example/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-05-11 11:25:02,013 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2206/src/Once-master/once/local.properties
+2018-05-11 11:25:02,014 INFO  ProjectFixService - Build info for "/tmp/rdisk/2206/src/Once-master/once/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-05-11 11:25:02,014 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2206/src/Once-master/local.properties
+2018-05-11 11:25:02,015 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-05-11 11:25:02,015 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-05-11 11:25:02,016 INFO  ProjectFixService - Build info for "/tmp/rdisk/2206/src/Once-master/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-05-11 11:25:02,016 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:25:02,016 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:25:02,016 INFO  SysUtils - Execute command: [/tmp/rdisk/2206/src/Once-master/gradlew, -b, /tmp/rdisk/2206/src/Once-master/once-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:25:11,530 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-11 11:25:11,531 INFO  ProjectTaskService - Excluded tasks (20): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installRelease installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 11:25:11,531 INFO  SysUtils - Execute command: [/tmp/rdisk/2206/src/Once-master/gradlew, -b, /tmp/rdisk/2206/src/Once-master/once-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installRelease, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 11:25:36,127 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-11 11:25:36,128 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:once:preBuild UP-TO-DATE
+:once:preReleaseBuild UP-TO-DATE
+:once:checkReleaseManifest
+:once:prepareReleaseDependencies
+:once:compileReleaseAidl
+:once:compileReleaseNdk UP-TO-DATE
+:once:compileLint
+:once:copyReleaseLint UP-TO-DATE
+:once:compileReleaseRenderscript
+:once:generateReleaseBuildConfig
+:once:generateReleaseResValues
+:once:generateReleaseResources
+:once:packageReleaseResources
+:once:processReleaseManifest
+:once:processReleaseResources
+:once:generateReleaseSources
+:once:incrementalReleaseJavaCompilationSafeguard
+:once:javaPreCompileRelease
+:once:compileReleaseJavaWithJavac
+:once:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:once:extractReleaseAnnotations
+:once:mergeReleaseShaders
+:once:compileReleaseShaders
+:once:generateReleaseAssets
+:once:mergeReleaseAssets
+:once:mergeReleaseProguardFiles
+:once:packageReleaseRenderscript UP-TO-DATE
+:once:processReleaseJavaRes UP-TO-DATE
+:once:transformResourcesWithMergeJavaResForRelease
+:once:transformClassesAndResourcesWithSyncLibJarsForRelease
+:once:mergeReleaseJniLibFolders
+:once:transformNativeLibsWithMergeJniLibsForRelease
+:once:transformNativeLibsWithStripDebugSymbolForRelease
+:once:transformNativeLibsWithSyncJniLibsForRelease
+:once:bundleRelease
+:once-example:preBuild UP-TO-DATE
+:once-example:preDebugBuild UP-TO-DATE
+:once-example:checkDebugManifest
+:once-example:extractProguardFiles
+:once-example:preReleaseBuild
+:once-example:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:once-example:prepareComAndroidSupportAppcompatV72531Library
+:once-example:prepareComAndroidSupportSupportCompat2531Library
+:once-example:prepareComAndroidSupportSupportCoreUi2531Library
+:once-example:prepareComAndroidSupportSupportCoreUtils2531Library
+:once-example:prepareComAndroidSupportSupportFragment2531Library
+:once-example:prepareComAndroidSupportSupportMediaCompat2531Library
+:once-example:prepareComAndroidSupportSupportV42531Library
+:once-example:prepareComAndroidSupportSupportVectorDrawable2531Library
+:once-example:prepareDebugDependencies
+:once-example:compileDebugAidl
+:once-example:compileDebugRenderscript
+:once-example:generateDebugBuildConfig
+:once-example:generateDebugResValues
+:once-example:generateDebugResources
+:once-example:mergeDebugResources
+:once-example:processDebugManifest
+:once-example:processDebugResources
+:once-example:generateDebugSources
+:once-example:incrementalDebugJavaCompilationSafeguard
+:once-example:javaPreCompileDebug
+:once-example:compileDebugJavaWithJavac
+:once-example:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:once-example:compileDebugNdk UP-TO-DATE
+:once-example:compileDebugSources
+:once-example:mergeDebugShaders
+:once-example:compileDebugShaders
+:once-example:generateDebugAssets
+:once-example:mergeDebugAssets
+:once-example:transformClassesWithDexForDebug
+:once-example:mergeDebugJniLibFolders
+:once-example:transformNativeLibsWithMergeJniLibsForDebug
+:once-example:transformNativeLibsWithStripDebugSymbolForDebug
+:once-example:processDebugJavaRes UP-TO-DATE
+:once-example:transformResourcesWithMergeJavaResForDebug
+:once-example:validateSigningDebug
+:once-example:packageDebug
+:once-example:assembleDebug
+:once-example:checkReleaseManifest
+:once-example:prepareReleaseDependencies
+:once-example:compileReleaseAidl
+:once-example:compileReleaseRenderscript
+:once-example:generateReleaseBuildConfig
+:once-example:generateReleaseResValues
+:once-example:generateReleaseResources
+:once-example:mergeReleaseResources
+:once-example:processReleaseManifest
+:once-example:processReleaseResources
+:once-example:generateReleaseSources
+:once-example:incrementalReleaseJavaCompilationSafeguard
+:once-example:javaPreCompileRelease
+:once-example:compileReleaseJavaWithJavac
+:once-example:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:once-example:compileReleaseNdk UP-TO-DATE
+:once-example:compileReleaseSources
+:once-example:lintVitalRelease
+:once-example:mergeReleaseShaders
+:once-example:compileReleaseShaders
+:once-example:generateReleaseAssets
+:once-example:mergeReleaseAssets
+:once-example:processReleaseJavaRes UP-TO-DATE
+:once-example:transformResourcesWithMergeJavaResForRelease
+:once-example:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.3.2
+Reading input...
+Reading program jar [/root/.android/build-cache/edc6082b913ecbb7489bfdfe5ec5cb94012cc7e5/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/d037f003e0b71e6fb898a228c9dbcc4cc3a5a362/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/d48f51d05d563779628cf56adaa484a2e5754d49/output/jars/classes.jar] (filtered)
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar] (filtered)
+Reading program jar [/root/.android/build-cache/94b67ef6ab0ca04600749eaf13e4ef596a84ab3e/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/f568d10c7902ce186a0e8af2c51a15e9df5c94ac/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/00614ad4519da4927bdb26a08f9a1fe8db1ace3b/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/4de0d516d9f36107157f9a876791bb97e8756472/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/043579c699ba8895cf1a70abda82c2e7dcdc4b82/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/46727d0bcceedde7b9127db8688be3200f6898c7/output/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/2206/src/Once-master/once/build/intermediates/bundles/default/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/2206/src/Once-master/once-example/build/intermediates/classes/release] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4237
+  Final number of library classes:    983
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/2206/src/Once-master/once-example/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1702
+  Final number of program classes:    700
+Obfuscating...
+Printing mapping to [/tmp/rdisk/2206/src/Once-master/once-example/build/outputs/mapping/release/mapping.txt]...
+Writing output...
+Preparing output jar [/tmp/rdisk/2206/src/Once-master/once-example/build/intermediates/transforms/proguard/release/jars/3/1f/main.jar]
+  Copying resources from program jar [/root/.android/build-cache/edc6082b913ecbb7489bfdfe5ec5cb94012cc7e5/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/d037f003e0b71e6fb898a228c9dbcc4cc3a5a362/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/d48f51d05d563779628cf56adaa484a2e5754d49/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/94b67ef6ab0ca04600749eaf13e4ef596a84ab3e/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/f568d10c7902ce186a0e8af2c51a15e9df5c94ac/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/00614ad4519da4927bdb26a08f9a1fe8db1ace3b/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/4de0d516d9f36107157f9a876791bb97e8756472/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/043579c699ba8895cf1a70abda82c2e7dcdc4b82/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/46727d0bcceedde7b9127db8688be3200f6898c7/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2206/src/Once-master/once/build/intermediates/bundles/default/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2206/src/Once-master/once-example/build/intermediates/classes/release] (filtered)
+Printing classes to [/tmp/rdisk/2206/src/Once-master/once-example/build/outputs/mapping/release/dump.txt]...
+:once-example:transformClassesWithDexForRelease
+:once-example:mergeReleaseJniLibFolders
+:once-example:transformNativeLibsWithMergeJniLibsForRelease
+:once-example:transformNativeLibsWithStripDebugSymbolForRelease
+:once-example:validateSigningRelease FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':once-example:validateSigningRelease'.
+> Keystore file /tmp/rdisk/2206/src/Once-master/once-example/null not found for signing config 'release'.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':once-example:validateSigningRelease'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:84)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:236)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:215)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:77)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:58)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:32)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:113)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:196)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:193)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:193)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:29)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: java.lang.IllegalArgumentException: Keystore file /tmp/rdisk/2206/src/Once-master/once-example/null not found for signing config 'release'.
+	at com.android.build.gradle.internal.tasks.ValidateSigningTask.validate(ValidateSigningTask.java:107)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.doExecute(DefaultTaskClassInfoStore.java:141)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:123)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:632)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:615)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:95)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:76)
+	... 62 more
+
+
+BUILD FAILED
+
+Total time: 24.371 secs
+
+2018-05-11 11:25:36,176 INFO  FullProcessService - Found APK file: /tmp/rdisk/2206/src/Once-master/once-example/build/outputs/apk/once-example-debug.apk

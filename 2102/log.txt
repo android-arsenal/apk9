@@ -1,0 +1,21 @@
+2018-04-03 19:51:34,862 INFO  DownloadService - Downloading "https://github.com/ericleong/slickr/archive/master.zip", attempt 3
+2018-04-03 19:52:35,470 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 19:52:36,312 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 19:52:36,312 INFO  DownloadService - Downloading "https://github.com/ericleong/slickr/archive/master.zip", attempt 3
+2018-04-03 19:53:37,587 DEBUG FullProcessService - Repository https://github.com/ericleong/slickr available: true
+2018-04-03 19:53:37,587 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 19:53:37,587 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ericleong/slickr, /tmp/rdisk/2102/src]
+2018-04-03 19:53:38,892 INFO  SysUtils - 
+2018-04-03 19:53:38,896 INFO  GitService - Deleted "/tmp/rdisk/2102/src/.git": true
+2018-04-03 19:53:38,896 INFO  FullProcessService - Size of directory with sources: 18 KB
+2018-04-03 19:53:38,896 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2102/src]
+2018-04-03 19:53:38,900 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2102/src/.git/
+
+2018-04-03 19:53:38,901 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-03 19:53:38,901 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-03 19:53:38,902 INFO  ProjectBuildService - Build script(s): none
+2018-04-03 19:53:38,902 INFO  ProjectBuildService - All script(s): none
+2018-04-03 19:53:38,902 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 19:53:38,902 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-03 19:53:38,902 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 19:53:38,903 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,507 @@
+2018-04-03 19:10:32,376 INFO  DownloadService - Downloading "https://github.com/lukaspili/Mortar-architect-map-demo/archive/master.zip", attempt 3
+2018-04-03 19:11:32,977 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 19:11:33,852 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 19:11:33,852 INFO  DownloadService - Downloading "https://github.com/lukaspili/Mortar-architect-map-demo/archive/master.zip", attempt 3
+2018-04-03 19:12:35,080 DEBUG FullProcessService - Repository https://github.com/lukaspili/Mortar-architect-map-demo available: true
+2018-04-03 19:12:35,080 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 19:12:35,080 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/lukaspili/Mortar-architect-map-demo, /tmp/rdisk/2115/src]
+2018-04-03 19:12:36,558 INFO  SysUtils - 
+2018-04-03 19:12:36,571 INFO  GitService - Deleted "/tmp/rdisk/2115/src/.git": true
+2018-04-03 19:12:36,573 INFO  FullProcessService - Size of directory with sources: 105 KB
+2018-04-03 19:12:36,573 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2115/src]
+2018-04-03 19:12:36,578 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2115/src/.git/
+
+2018-04-03 19:12:36,580 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2115/src/gradlew
+2018-04-03 19:12:36,582 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2115/src/app/build.gradle /tmp/rdisk/2115/src/build.gradle
+2018-04-03 19:12:36,584 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2115/src/settings.gradle /tmp/rdisk/2115/src/build.gradle /tmp/rdisk/2115/src/app/build.gradle
+2018-04-03 19:12:36,584 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 19:12:36,584 INFO  ProjectFixService - Fixing project...
+2018-04-03 19:12:36,589 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2115/src/app/local.properties
+2018-04-03 19:12:36,590 INFO  ProjectFixService - Build info for "/tmp/rdisk/2115/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 19:12:36,590 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2115/src/local.properties
+2018-04-03 19:12:36,590 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-03 19:12:36,590 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-03 19:12:36,591 INFO  ProjectFixService - Build info for "/tmp/rdisk/2115/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-03 19:12:36,592 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 19:12:36,592 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:12:36,592 INFO  SysUtils - Execute command: [/tmp/rdisk/2115/src/gradlew, -b, /tmp/rdisk/2115/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:13:57,522 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:13:57,522 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:13:57,522 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:13:57,523 INFO  SysUtils - Execute command: [/tmp/rdisk/2115/src/gradlew, -b, /tmp/rdisk/2115/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:14:08,187 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 19:14:08,187 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':app'.
+> Could not resolve all dependencies for configuration ':app:apt'.
+   > Could not find com.google.dagger:dagger:2.1-SNAPSHOT.
+     Searched in the following locations:
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+     Required by:
+         src:app:unspecified
+         src:app:unspecified > com.google.dagger:dagger-compiler:2.0.1
+   > Could not find com.google.dagger:dagger:2.1-SNAPSHOT.
+     Searched in the following locations:
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+     Required by:
+         src:app:unspecified > com.github.lukaspili.mortar-architect:robot-compiler:0.13-SNAPSHOT
+   > Could not find com.google.dagger:dagger:2.1-SNAPSHOT.
+     Searched in the following locations:
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+     Required by:
+         src:app:unspecified > com.google.dagger:dagger-compiler:2.0.1 > com.google.dagger:dagger-producers:2.0-beta
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':app'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:487)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:85)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:42)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:84)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:75)
+	at org.gradle.execution.commandline.CommandLineTaskParser.parseTasks(CommandLineTaskParser.java:42)
+	at org.gradle.execution.TaskNameResolvingBuildConfigurationAction.configure(TaskNameResolvingBuildConfigurationAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:47)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.artifacts.ResolveException: Could not resolve all dependencies for configuration ':app:apt'.
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration.rethrowFailure(DefaultLenientConfiguration.java:52)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.rethrowFailure(DefaultResolvedConfiguration.java:36)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver$FilesAggregatingResolvedConfiguration.rethrowFailure(SelfResolvingDependencyResolver.java:110)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver$ErrorHandlingResolvedConfiguration.rethrowFailure(ErrorHandlingArtifactDependencyResolver.java:180)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationFileCollection.getFiles(DefaultConfiguration.java:467)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.getFiles(DefaultConfiguration.java:218)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getFiles(Unknown Source)
+	at org.gradle.api.internal.file.AbstractFileCollection.isEmpty(AbstractFileCollection.java:142)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.isEmpty(Unknown Source)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.getProperty(BeanDynamicObject.java:163)
+	at org.gradle.api.internal.BeanDynamicObject.getProperty(BeanDynamicObject.java:106)
+	at org.gradle.api.internal.CompositeDynamicObject.getProperty(CompositeDynamicObject.java:81)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getProperty(Unknown Source)
+	at com.neenbedankt.gradle.androidapt.AndroidAptPlugin.configureVariant(AndroidAptPlugin.groovy:34)
+	at com.neenbedankt.gradle.androidapt.AndroidAptPlugin$configureVariant.callStatic(Unknown Source)
+	at com.neenbedankt.gradle.androidapt.AndroidAptPlugin$_apply_closure1_closure4.doCall(AndroidAptPlugin.groovy:24)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:67)
+	at org.gradle.api.internal.DefaultDomainObjectCollection.all(DefaultDomainObjectCollection.java:110)
+	at org.gradle.api.internal.DefaultDomainObjectCollection.all(DefaultDomainObjectCollection.java:115)
+	at org.gradle.api.DomainObjectCollection$all$0.call(Unknown Source)
+	at com.neenbedankt.gradle.androidapt.AndroidAptPlugin$_apply_closure1.doCall(AndroidAptPlugin.groovy:23)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:87)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:31)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy11.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 46 more
+Caused by: org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find com.google.dagger:dagger:2.1-SNAPSHOT.
+Searched in the following locations:
+    https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+    https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+    https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+    http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+    http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+    http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+    file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+    file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+    file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+    file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+    file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+    file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+Required by:
+    src:app:unspecified
+    src:app:unspecified > com.google.dagger:dagger-compiler:2.0.1
+	at org.gradle.internal.resolve.result.DefaultBuildableComponentResolveResult.notFound(DefaultBuildableComponentResolveResult.java:35)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainDependencyResolver.resolve(RepositoryChainDependencyResolver.java:86)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainAdapter.resolve(RepositoryChainAdapter.java:69)
+	at org.gradle.api.internal.artifacts.ivyservice.clientmodule.ClientModuleResolver.resolve(ClientModuleResolver.java:44)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$ModuleVersionResolveState.resolve(DependencyGraphBuilder.java:576)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$ModuleVersionResolveState.getMetaData(DependencyGraphBuilder.java:586)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$DependencyEdge.calculateTargetConfigurations(DependencyGraphBuilder.java:271)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$DependencyEdge.attachToTargetConfigurations(DependencyGraphBuilder.java:245)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$DependencyEdge.restart(DependencyGraphBuilder.java:266)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$ConfigurationNode.restart(DependencyGraphBuilder.java:793)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$ModuleVersionResolveState.restart(DependencyGraphBuilder.java:550)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$ModuleResolveState.restart(DependencyGraphBuilder.java:477)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$2$1.execute(DependencyGraphBuilder.java:166)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$2$1.execute(DependencyGraphBuilder.java:161)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.conflicts.PotentialConflictFactory$1.withParticipatingModules(PotentialConflictFactory.java:34)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$2.execute(DependencyGraphBuilder.java:161)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$2.execute(DependencyGraphBuilder.java:159)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.conflicts.DefaultConflictHandler.resolveNextConflict(DefaultConflictHandler.java:67)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder.traverseGraph(DependencyGraphBuilder.java:159)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder.resolveDependencyGraph(DependencyGraphBuilder.java:93)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder.resolve(DependencyGraphBuilder.java:83)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.execute(DefaultDependencyResolver.java:125)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.execute(DefaultDependencyResolver.java:90)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:137)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultIvyContextManager.withIvy(DefaultIvyContextManager.java:61)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultIvyContextManager.withIvy(DefaultIvyContextManager.java:39)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver.resolve(DefaultDependencyResolver.java:90)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.run(CacheLockingArtifactDependencyResolver.java:42)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.cache.internal.DefaultCacheAccess.useCache(DefaultCacheAccess.java:192)
+	at org.gradle.cache.internal.DefaultCacheAccess.useCache(DefaultCacheAccess.java:175)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.useCache(DefaultPersistentDirectoryStore.java:106)
+	at org.gradle.cache.internal.DefaultCacheFactory$ReferenceTrackingCache.useCache(DefaultCacheFactory.java:187)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultCacheLockingManager.useCache(DefaultCacheLockingManager.java:64)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver.resolve(CacheLockingArtifactDependencyResolver.java:40)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver.resolve(SelfResolvingDependencyResolver.java:45)
+	at org.gradle.api.internal.artifacts.ivyservice.ShortcircuitEmptyConfigsArtifactDependencyResolver.resolve(ShortcircuitEmptyConfigsArtifactDependencyResolver.java:58)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver.resolve(ErrorHandlingArtifactDependencyResolver.java:47)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultConfigurationResolver.resolve(DefaultConfigurationResolver.java:46)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveNow(DefaultConfiguration.java:263)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.getResolvedConfiguration(DefaultConfiguration.java:253)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getResolvedConfiguration(Unknown Source)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationFileCollection.getFiles(DefaultConfiguration.java:465)
+	... 69 more
+
+
+BUILD FAILED
+
+Total time: 10.211 secs
+
+2018-04-03 19:14:08,189 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:14:08,190 INFO  SysUtils - Execute command: [/tmp/rdisk/2115/src/gradlew, -b, /tmp/rdisk/2115/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:14:17,356 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:14:17,356 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:14:17,356 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:14:17,356 INFO  SysUtils - Execute command: [/tmp/rdisk/2115/src/gradlew, -b, /tmp/rdisk/2115/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:14:26,968 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 19:14:26,968 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':app'.
+> Could not resolve all dependencies for configuration ':app:apt'.
+   > Could not find com.google.dagger:dagger:2.1-SNAPSHOT.
+     Searched in the following locations:
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+     Required by:
+         src:app:unspecified
+         src:app:unspecified > com.google.dagger:dagger-compiler:2.0.1
+   > Could not find com.google.dagger:dagger:2.1-SNAPSHOT.
+     Searched in the following locations:
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+     Required by:
+         src:app:unspecified > com.github.lukaspili.mortar-architect:robot-compiler:0.13-SNAPSHOT
+   > Could not find com.google.dagger:dagger:2.1-SNAPSHOT.
+     Searched in the following locations:
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+         file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+     Required by:
+         src:app:unspecified > com.google.dagger:dagger-compiler:2.0.1 > com.google.dagger:dagger-producers:2.0-beta
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':app'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:487)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:85)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:47)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:84)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:75)
+	at org.gradle.execution.commandline.CommandLineTaskParser.parseTasks(CommandLineTaskParser.java:42)
+	at org.gradle.execution.TaskNameResolvingBuildConfigurationAction.configure(TaskNameResolvingBuildConfigurationAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:47)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.artifacts.ResolveException: Could not resolve all dependencies for configuration ':app:apt'.
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration.rethrowFailure(DefaultLenientConfiguration.java:52)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.rethrowFailure(DefaultResolvedConfiguration.java:36)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver$FilesAggregatingResolvedConfiguration.rethrowFailure(SelfResolvingDependencyResolver.java:110)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver$ErrorHandlingResolvedConfiguration.rethrowFailure(ErrorHandlingArtifactDependencyResolver.java:180)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationFileCollection.getFiles(DefaultConfiguration.java:467)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.getFiles(DefaultConfiguration.java:218)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getFiles(Unknown Source)
+	at org.gradle.api.internal.file.AbstractFileCollection.isEmpty(AbstractFileCollection.java:142)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.isEmpty(Unknown Source)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.getProperty(BeanDynamicObject.java:163)
+	at org.gradle.api.internal.BeanDynamicObject.getProperty(BeanDynamicObject.java:106)
+	at org.gradle.api.internal.CompositeDynamicObject.getProperty(CompositeDynamicObject.java:81)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getProperty(Unknown Source)
+	at com.neenbedankt.gradle.androidapt.AndroidAptPlugin.configureVariant(AndroidAptPlugin.groovy:34)
+	at com.neenbedankt.gradle.androidapt.AndroidAptPlugin$configureVariant.callStatic(Unknown Source)
+	at com.neenbedankt.gradle.androidapt.AndroidAptPlugin$_apply_closure1_closure4.doCall(AndroidAptPlugin.groovy:24)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:67)
+	at org.gradle.api.internal.DefaultDomainObjectCollection.all(DefaultDomainObjectCollection.java:110)
+	at org.gradle.api.internal.DefaultDomainObjectCollection.all(DefaultDomainObjectCollection.java:115)
+	at org.gradle.api.DomainObjectCollection$all$0.call(Unknown Source)
+	at com.neenbedankt.gradle.androidapt.AndroidAptPlugin$_apply_closure1.doCall(AndroidAptPlugin.groovy:23)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:87)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:31)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy11.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 46 more
+Caused by: org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find com.google.dagger:dagger:2.1-SNAPSHOT.
+Searched in the following locations:
+    https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+    https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+    https://jcenter.bintray.com/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+    http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+    http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+    http://oss.sonatype.org/content/repositories/snapshots/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+    file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+    file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+    file:/root/Applications/android-sdk/extras/android/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+    file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/maven-metadata.xml
+    file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.pom
+    file:/root/Applications/android-sdk/extras/google/m2repository/com/google/dagger/dagger/2.1-SNAPSHOT/dagger-2.1-SNAPSHOT.jar
+Required by:
+    src:app:unspecified
+    src:app:unspecified > com.google.dagger:dagger-compiler:2.0.1
+	at org.gradle.internal.resolve.result.DefaultBuildableComponentResolveResult.notFound(DefaultBuildableComponentResolveResult.java:35)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainDependencyResolver.resolve(RepositoryChainDependencyResolver.java:86)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainAdapter.resolve(RepositoryChainAdapter.java:69)
+	at org.gradle.api.internal.artifacts.ivyservice.clientmodule.ClientModuleResolver.resolve(ClientModuleResolver.java:44)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$ModuleVersionResolveState.resolve(DependencyGraphBuilder.java:576)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$ModuleVersionResolveState.getMetaData(DependencyGraphBuilder.java:586)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$DependencyEdge.calculateTargetConfigurations(DependencyGraphBuilder.java:271)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$DependencyEdge.attachToTargetConfigurations(DependencyGraphBuilder.java:245)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$DependencyEdge.restart(DependencyGraphBuilder.java:266)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$ConfigurationNode.restart(DependencyGraphBuilder.java:793)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$ModuleVersionResolveState.restart(DependencyGraphBuilder.java:550)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$ModuleResolveState.restart(DependencyGraphBuilder.java:477)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$2$1.execute(DependencyGraphBuilder.java:166)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$2$1.execute(DependencyGraphBuilder.java:161)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.conflicts.PotentialConflictFactory$1.withParticipatingModules(PotentialConflictFactory.java:34)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$2.execute(DependencyGraphBuilder.java:161)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder$2.execute(DependencyGraphBuilder.java:159)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.conflicts.DefaultConflictHandler.resolveNextConflict(DefaultConflictHandler.java:67)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder.traverseGraph(DependencyGraphBuilder.java:159)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder.resolveDependencyGraph(DependencyGraphBuilder.java:93)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder.resolve(DependencyGraphBuilder.java:83)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.execute(DefaultDependencyResolver.java:125)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.execute(DefaultDependencyResolver.java:90)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:137)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultIvyContextManager.withIvy(DefaultIvyContextManager.java:61)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultIvyContextManager.withIvy(DefaultIvyContextManager.java:39)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver.resolve(DefaultDependencyResolver.java:90)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.run(CacheLockingArtifactDependencyResolver.java:42)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.cache.internal.DefaultCacheAccess.useCache(DefaultCacheAccess.java:192)
+	at org.gradle.cache.internal.DefaultCacheAccess.useCache(DefaultCacheAccess.java:175)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.useCache(DefaultPersistentDirectoryStore.java:106)
+	at org.gradle.cache.internal.DefaultCacheFactory$ReferenceTrackingCache.useCache(DefaultCacheFactory.java:187)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultCacheLockingManager.useCache(DefaultCacheLockingManager.java:64)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver.resolve(CacheLockingArtifactDependencyResolver.java:40)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver.resolve(SelfResolvingDependencyResolver.java:45)
+	at org.gradle.api.internal.artifacts.ivyservice.ShortcircuitEmptyConfigsArtifactDependencyResolver.resolve(ShortcircuitEmptyConfigsArtifactDependencyResolver.java:58)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver.resolve(ErrorHandlingArtifactDependencyResolver.java:47)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultConfigurationResolver.resolve(DefaultConfigurationResolver.java:46)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveNow(DefaultConfiguration.java:263)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.getResolvedConfiguration(DefaultConfiguration.java:253)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getResolvedConfiguration(Unknown Source)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationFileCollection.getFiles(DefaultConfiguration.java:465)
+	... 69 more
+
+
+BUILD FAILED
+
+Total time: 9.161 secs
+
+2018-04-03 19:14:26,971 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 19:14:26,973 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,91 @@
+2018-04-02 15:45:16,740 INFO  DownloadService - Downloading "https://github.com/dupengtao/BubbleTextView/archive/master.zip", attempt 3
+2018-04-02 15:46:17,208 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 15:46:17,927 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 15:46:17,927 INFO  DownloadService - Downloading "https://github.com/dupengtao/BubbleTextView/archive/master.zip", attempt 3
+2018-04-02 15:47:19,208 DEBUG FullProcessService - Repository https://github.com/dupengtao/BubbleTextView available: true
+2018-04-02 15:47:19,208 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 15:47:19,208 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/dupengtao/BubbleTextView, /tmp/rdisk/2238/src]
+2018-04-02 15:47:20,754 INFO  SysUtils - 
+2018-04-02 15:47:20,768 INFO  GitService - Deleted "/tmp/rdisk/2238/src/.git": true
+2018-04-02 15:47:20,770 INFO  FullProcessService - Size of directory with sources: 138 KB
+2018-04-02 15:47:20,770 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2238/src]
+2018-04-02 15:47:20,775 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2238/src/.git/
+
+2018-04-02 15:47:20,777 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2238/src/gradlew
+2018-04-02 15:47:20,786 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2238/src/app/build.gradle /tmp/rdisk/2238/src/build.gradle
+2018-04-02 15:47:20,789 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2238/src/settings.gradle /tmp/rdisk/2238/src/build.gradle /tmp/rdisk/2238/src/app/build.gradle
+2018-04-02 15:47:20,789 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 15:47:20,789 INFO  ProjectFixService - Fixing project...
+2018-04-02 15:47:20,794 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2238/src/app/local.properties
+2018-04-02 15:47:20,795 INFO  ProjectFixService - Build info for "/tmp/rdisk/2238/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=21,targetSdkVersion=22]
+2018-04-02 15:47:20,795 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2238/src/local.properties
+2018-04-02 15:47:20,795 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 15:47:20,795 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 15:47:20,796 INFO  ProjectFixService - Build info for "/tmp/rdisk/2238/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=21,targetSdkVersion=22]
+2018-04-02 15:47:20,796 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 15:47:20,796 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:47:20,796 INFO  SysUtils - Execute command: [/tmp/rdisk/2238/src/gradlew, -b, /tmp/rdisk/2238/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:47:28,080 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-02 15:47:28,080 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 15:47:28,080 INFO  SysUtils - Execute command: [/tmp/rdisk/2238/src/gradlew, -b, /tmp/rdisk/2238/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 15:47:38,321 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaNote: /tmp/rdisk/2238/src/app/src/main/java/com/example/dpt/bubbletextview/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:preReleaseBuild UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: /tmp/rdisk/2238/src/app/src/main/java/com/example/dpt/bubbletextview/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.817 secs
+
+2018-04-02 15:47:38,329 INFO  FullProcessService - Found APK file: /tmp/rdisk/2238/src/app/build/outputs/apk/app-debug.apk

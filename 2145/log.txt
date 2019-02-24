@@ -1,0 +1,158 @@
+2018-04-03 18:46:40,606 INFO  DownloadService - Downloading "https://github.com/stanfy/helium/archive/master.zip", attempt 3
+2018-04-03 18:47:41,260 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:47:42,134 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:47:42,134 INFO  DownloadService - Downloading "https://github.com/stanfy/helium/archive/master.zip", attempt 3
+2018-04-03 18:48:43,489 DEBUG FullProcessService - Repository https://github.com/stanfy/helium available: true
+2018-04-03 18:48:43,489 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 18:48:43,489 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/stanfy/helium, /tmp/rdisk/2145/src]
+2018-04-03 18:48:45,555 INFO  SysUtils - 
+2018-04-03 18:48:45,571 INFO  GitService - Deleted "/tmp/rdisk/2145/src/.git": true
+2018-04-03 18:48:45,594 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-03 18:48:45,594 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2145/src]
+2018-04-03 18:48:45,599 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2145/src/.git/
+
+2018-04-03 18:48:45,615 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2145/src/samples/tests-with-gradle/gradlew /tmp/rdisk/2145/src/gradlew
+2018-04-03 18:48:45,634 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2145/src/samples/android/build.gradle /tmp/rdisk/2145/src/build.gradle /tmp/rdisk/2145/src/samples/tests-with-gradle/build.gradle /tmp/rdisk/2145/src/codegen/build.gradle /tmp/rdisk/2145/src/codegen/java/java-constants/build.gradle /tmp/rdisk/2145/src/codegen/java/java-entities/build.gradle /tmp/rdisk/2145/src/codegen/java/java-handler/build.gradle /tmp/rdisk/2145/src/codegen/java/retrofit/build.gradle /tmp/rdisk/2145/src/codegen/json/json-schema/build.gradle /tmp/rdisk/2145/src/codegen/objc/objc-entities/build.gradle /tmp/rdisk/2145/src/codegen/swagger/build.gradle /tmp/rdisk/2145/src/codegen/swift/swift-entities/build.gradle /tmp/rdisk/2145/src/command-line/build.gradle /tmp/rdisk/2145/src/gradle-plugin/build.gradle /tmp/rdisk/2145/src/helium/build.gradle /tmp/rdisk/2145/src/samples/custom-data-types/build.gradle /tmp/rdisk/2145/src/samples/httpbin/build.gradle /tmp/rdisk/2145/src/samples/java-retrofit/build.gradle /tmp/rdisk/2145/src/samples/json-scheme/build.gradle /tmp/rdisk/2145/src/samples/multi-imports/build.gradle /tmp/rdisk/2145/src/samples/multiple-specs/build.gradle /tmp/rdisk/2145/src/samples/objc-gradle/build.gradle /tmp/rdisk/2145/src/samples/swagger/build.gradle /tmp/rdisk/2145/src/samples/unresolved-headers/build.gradle
+2018-04-03 18:48:45,649 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2145/src/settings.gradle /tmp/rdisk/2145/src/samples/unresolved-headers/build.gradle /tmp/rdisk/2145/src/samples/tests-with-gradle/build.gradle /tmp/rdisk/2145/src/samples/swagger/build.gradle /tmp/rdisk/2145/src/samples/objc-gradle/build.gradle /tmp/rdisk/2145/src/samples/multiple-specs/build.gradle /tmp/rdisk/2145/src/samples/multi-imports/build.gradle /tmp/rdisk/2145/src/samples/json-scheme/build.gradle /tmp/rdisk/2145/src/samples/java-retrofit/build.gradle /tmp/rdisk/2145/src/samples/httpbin/build.gradle /tmp/rdisk/2145/src/samples/custom-data-types/build.gradle /tmp/rdisk/2145/src/samples/android/build.gradle /tmp/rdisk/2145/src/helium/build.gradle /tmp/rdisk/2145/src/gradle/integration-tests.gradle /tmp/rdisk/2145/src/gradle/common.gradle /tmp/rdisk/2145/src/gradle-plugin/build.gradle /tmp/rdisk/2145/src/command-line/build.gradle /tmp/rdisk/2145/src/codegen/swift/swift-entities/build.gradle /tmp/rdisk/2145/src/codegen/swagger/build.gradle /tmp/rdisk/2145/src/codegen/objc/objc-entities/build.gradle /tmp/rdisk/2145/src/codegen/json/json-schema/build.gradle /tmp/rdisk/2145/src/codegen/java/retrofit/build.gradle /tmp/rdisk/2145/src/codegen/java/java-handler/build.gradle /tmp/rdisk/2145/src/codegen/java/java-entities/build.gradle /tmp/rdisk/2145/src/codegen/java/java-constants/build.gradle /tmp/rdisk/2145/src/codegen/build.gradle /tmp/rdisk/2145/src/build.gradle
+2018-04-03 18:48:45,651 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 18:48:45,651 INFO  ProjectFixService - Fixing project...
+2018-04-03 18:48:45,689 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/samples/android/local.properties
+2018-04-03 18:48:45,690 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/samples/android/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,690 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/local.properties
+2018-04-03 18:48:45,690 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.13-all.zip
+2018-04-03 18:48:45,691 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.13-bin.zip)
+2018-04-03 18:48:45,695 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,696 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/samples/tests-with-gradle/local.properties
+2018-04-03 18:48:45,696 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.11-all.zip
+2018-04-03 18:48:45,696 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.11-bin.zip)
+2018-04-03 18:48:45,701 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/samples/tests-with-gradle/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,701 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/codegen/local.properties
+2018-04-03 18:48:45,706 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/codegen/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,706 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/codegen/java/java-constants/local.properties
+2018-04-03 18:48:45,711 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/codegen/java/java-constants/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,711 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/codegen/java/java-entities/local.properties
+2018-04-03 18:48:45,716 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/codegen/java/java-entities/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,716 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/codegen/java/java-handler/local.properties
+2018-04-03 18:48:45,721 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/codegen/java/java-handler/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,721 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/codegen/java/retrofit/local.properties
+2018-04-03 18:48:45,726 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/codegen/java/retrofit/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,726 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/codegen/json/json-schema/local.properties
+2018-04-03 18:48:45,731 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/codegen/json/json-schema/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,731 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/codegen/objc/objc-entities/local.properties
+2018-04-03 18:48:45,736 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/codegen/objc/objc-entities/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,737 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/codegen/swagger/local.properties
+2018-04-03 18:48:45,742 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/codegen/swagger/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,742 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/codegen/swift/swift-entities/local.properties
+2018-04-03 18:48:45,747 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/codegen/swift/swift-entities/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,747 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/command-line/local.properties
+2018-04-03 18:48:45,752 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/command-line/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,753 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/gradle-plugin/local.properties
+2018-04-03 18:48:45,759 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/gradle-plugin/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,760 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/helium/local.properties
+2018-04-03 18:48:45,765 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/helium/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,765 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/samples/custom-data-types/local.properties
+2018-04-03 18:48:45,770 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/samples/custom-data-types/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,770 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/samples/httpbin/local.properties
+2018-04-03 18:48:45,774 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/samples/httpbin/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,775 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/samples/java-retrofit/local.properties
+2018-04-03 18:48:45,779 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/samples/java-retrofit/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,779 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/samples/json-scheme/local.properties
+2018-04-03 18:48:45,784 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/samples/json-scheme/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,784 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/samples/multi-imports/local.properties
+2018-04-03 18:48:45,789 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/samples/multi-imports/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,789 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/samples/multiple-specs/local.properties
+2018-04-03 18:48:45,794 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/samples/multiple-specs/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,794 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/samples/objc-gradle/local.properties
+2018-04-03 18:48:45,799 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/samples/objc-gradle/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,799 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/samples/swagger/local.properties
+2018-04-03 18:48:45,804 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/samples/swagger/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,804 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2145/src/samples/unresolved-headers/local.properties
+2018-04-03 18:48:45,809 INFO  ProjectFixService - Build info for "/tmp/rdisk/2145/src/samples/unresolved-headers/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:48:45,809 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 18:48:45,809 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:48:45,809 INFO  SysUtils - Execute command: [/tmp/rdisk/2145/src/gradlew, -b, /tmp/rdisk/2145/src/samples/android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:49:09,656 INFO  ProjectTaskService - Detected possible tasks: 79
+2018-04-03 18:49:09,656 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 18:49:09,656 INFO  SysUtils - Execute command: [/tmp/rdisk/2145/src/gradlew, -b, /tmp/rdisk/2145/src/samples/android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 18:49:25,585 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:preBuild UP-TO-DATE
+:preDebugBuild UP-TO-DATE
+:checkDebugManifest
+:prepareDebugDependencies
+:compileDebugAidl
+:compileDebugRenderscript
+:generateConstants
+:generateDebugBuildConfig
+:generateEntities
+:generateRetrofit
+:mergeDebugShaders
+:compileDebugShaders
+:generateDebugAssets
+:mergeDebugAssets
+:generateDebugResValues
+:generateDebugResources
+:mergeDebugResources
+:processDebugManifest
+:processDebugResources
+:generateDebugSources
+:incrementalDebugJavaCompilationSafeguard
+:compileDebugJavaWithJavac
+:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2145/src/samples/android/build/generated/source/helium/entities/twitter/com/stanfy/helium/sample/api/MessageWithCustomType.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:compileDebugNdk UP-TO-DATE
+:compileDebugSources
+:prePackageMarkerForDebug
+:transformClassesWithDexForDebug
+Running dex in-process requires build tools 23.0.2.
+For faster builds update this project to use the latest build tools.
+:mergeDebugJniLibFolders
+:transformNative_libsWithMergeJniLibsForDebug
+:processDebugJavaRes UP-TO-DATE
+:transformResourcesWithMergeJavaResForDebug
+:validateDebugSigning
+:packageDebug
+:zipalignDebug
+:assembleDebug
+:preReleaseBuild UP-TO-DATE
+:checkReleaseManifest
+:prepareReleaseDependencies
+:compileReleaseAidl
+:compileReleaseRenderscript
+:generateReleaseBuildConfig
+:mergeReleaseShaders
+:compileReleaseShaders
+:generateReleaseAssets
+:mergeReleaseAssets
+:generateReleaseResValues
+:generateReleaseResources
+:mergeReleaseResources
+:processReleaseManifest
+:processReleaseResources
+:generateReleaseSources
+:incrementalReleaseJavaCompilationSafeguard
+:compileReleaseJavaWithJavac
+:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2145/src/samples/android/build/generated/source/helium/entities/twitter/com/stanfy/helium/sample/api/MessageWithCustomType.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:compileReleaseNdk UP-TO-DATE
+:compileReleaseSources
+:lintVitalRelease
+:prePackageMarkerForRelease
+:transformClassesWithDexForRelease
+:mergeReleaseJniLibFolders
+:transformNative_libsWithMergeJniLibsForRelease
+:processReleaseJavaRes UP-TO-DATE
+:transformResourcesWithMergeJavaResForRelease
+:packageRelease
+:assembleRelease
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.497 secs
+
+2018-04-03 18:49:25,609 INFO  FullProcessService - Found APK file: /tmp/rdisk/2145/src/samples/android/build/outputs/apk/android-release-unsigned.apk

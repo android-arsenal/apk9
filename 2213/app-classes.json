@@ -1,0 +1,4 @@
+{
+  "com.rarepebble.colorpicker" : [ "AlphaView", "BuildConfig", "ColorObserver", "ColorPickerView", "ColorPreference", "ColorPreference$1", "ColorPreference$2", "HexEdit", "HexEdit$1", "HexEdit$1MultiObserver", "HexEdit$ColorPasteLengthFilter", "HueSatView", "ObservableColor", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$styleable", "Resources", "SliderViewBase", "SquareView", "SwatchView", "ValueView" ],
+  "com.rarepebble.colorpickerdemo" : [ "BuildConfig", "MainActivity", "MainActivity$DemoPreferenceFragment", "NonDeveloperMessage", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$mipmap", "R$string", "R$styleable", "R$xml", "ViewDemoActivity" ]
+}

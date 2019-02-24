@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "retrofacebook.app",
+    "label" : "RetroFacebook",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 5380,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"retrofacebook.app\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<application android:theme=\"resourceId:0x7f090078\" android:label=\"RetroFacebook\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"retrofacebook.app.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"retrofacebook.app.CheeseDetailActivity\" />\n\t\t<meta-data android:name=\"com.facebook.sdk.ApplicationId\" android:value=\"875877299126816\" />\n\t\t<activity android:name=\"com.facebook.LoginActivity\" />\n\t\t<activity android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" android:label=\"RetroFacebook\" android:name=\"com.facebook.FacebookActivity\" android:configChanges=\"0x5b0\" />\n\t\t<provider android:name=\"com.facebook.NativeAppCallContentProvider\" android:exported=\"true\" android:authorities=\"com.facebook.app.NativeAppCallContentProvider875877299126816\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 5395817,
+  "crc32" : 1609805741,
+  "sha256" : "397989934aed6981ce8ec42183e79b584ad600bba0d5e69ea0d414f44dfcc7dc",
+  "buildTime" : 1522798460000
+}

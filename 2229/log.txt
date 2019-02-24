@@ -1,0 +1,315 @@
+2018-05-11 11:23:16,767 INFO  DownloadService - Downloading "https://github.com/recruit-lifestyle/WaveSwipeRefreshLayout/archive/master.zip", attempt 3
+2018-05-11 11:23:19,387 INFO  DownloadService - Downloaded https://github.com/recruit-lifestyle/WaveSwipeRefreshLayout/archive/master.zip, attempt 3
+2018-05-11 11:23:19,388 INFO  DownloadService - Size of file "/tmp/rdisk/2229/master.zip": 3 MB
+2018-05-11 11:23:19,388 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:23:19,388 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2229/master.zip: true
+2018-05-11 11:23:19,388 DEBUG ZipUtil - Extracting '/tmp/rdisk/2229/master.zip' into '/tmp/rdisk/2229/src'.
+2018-05-11 11:23:19,423 INFO  FullProcessService - Size of directory with sources: 4 MB
+2018-05-11 11:23:19,423 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2229/src]
+2018-05-11 11:23:19,446 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2229/src/.git/
+
+2018-05-11 11:23:19,451 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/gradlew
+2018-05-11 11:23:19,454 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/build.gradle /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/sample/build.gradle /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/build.gradle
+2018-05-11 11:23:19,457 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/settings.gradle /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/sample/build.gradle /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/build.gradle /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/build.gradle
+2018-05-11 11:23:19,457 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:23:19,457 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:23:19,463 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/local.properties
+2018-05-11 11:23:19,465 INFO  ProjectFixService - Build info for "/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-05-11 11:23:19,469 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/sample/local.properties
+2018-05-11 11:23:19,471 INFO  ProjectFixService - Build info for "/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/sample/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-05-11 11:23:19,471 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/local.properties
+2018-05-11 11:23:19,472 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-05-11 11:23:19,472 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-05-11 11:23:19,473 INFO  ProjectFixService - Build info for "/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-05-11 11:23:19,473 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:23:19,473 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:23:19,473 INFO  SysUtils - Execute command: [/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/gradlew, -b, /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:23:26,857 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-11 11:23:26,857 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-11 11:23:26,858 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-11 11:23:26,858 INFO  SysUtils - Execute command: [/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/gradlew, -b, /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-11 11:23:49,292 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72220Library
+:library:prepareComAndroidSupportSupportV42220Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJava
+:library:extractDebugAnnotations
+Warning: /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/MaterialProgressDrawable.java: The typedef annotation jp.co.recruit_lifestyle.android.widget.MaterialProgressDrawable.ProgressDrawableSize should have @Retention(RetentionPolicy.SOURCE)
+:library:mergeDebugProguardFiles
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+Warning: /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/MaterialProgressDrawable.java: The typedef annotation jp.co.recruit_lifestyle.android.widget.MaterialProgressDrawable.ProgressDrawableSize should have @Retention(RetentionPolicy.SOURCE)
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:javadoc/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveView.java:26: error: package android.support.v4.view does not exist
+import android.support.v4.view.ViewCompat;
+                              ^
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:23: error: package android.support.annotation does not exist
+import android.support.annotation.IdRes;
+                                 ^
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:24: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:25: error: package android.support.v4.view does not exist
+import android.support.v4.view.MotionEventCompat;
+                              ^
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:26: error: package android.support.v4.view does not exist
+import android.support.v4.view.ViewCompat;
+                              ^
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/MaterialProgressDrawable.java:31: error: package android.support.annotation does not exist
+import android.support.annotation.IntDef;
+                                 ^
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/MaterialProgressDrawable.java:32: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/MaterialProgressDrawable.java:59: error: cannot find symbol
+    @IntDef({LARGE, DEFAULT})
+     ^
+  symbol:   class IntDef
+  location: class MaterialProgressDrawable
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:247: error: cannot find symbol
+  @Override public boolean onInterceptTouchEvent(@NonNull MotionEvent event) {
+                                                  ^
+  symbol:   class NonNull
+  location: class WaveSwipeRefreshLayout
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:312: error: cannot find symbol
+  private boolean onMoveTouchEvent(@NonNull MotionEvent event, int pointerIndex) {
+                                    ^
+  symbol:   class NonNull
+  location: class WaveSwipeRefreshLayout
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:411: error: cannot find symbol
+  @Override public boolean onTouchEvent(@NonNull MotionEvent event) {
+                                         ^
+  symbol:   class NonNull
+  location: class WaveSwipeRefreshLayout
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:455: error: cannot find symbol
+  private float getMotionEventY(@NonNull MotionEvent ev, int activePointerId) {
+                                 ^
+  symbol:   class NonNull
+  location: class WaveSwipeRefreshLayout
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:577: error: cannot find symbol
+  public void setColorSchemeResources(@IdRes int... colorResIds) {
+                                       ^
+  symbol:   class IdRes
+  location: class WaveSwipeRefreshLayout
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:796: error: cannot find symbol
+    public void setProgressColorSchemeColors(@NonNull int... colors) {
+                                              ^
+  symbol:   class NonNull
+  location: class WaveSwipeRefreshLayout.ProgressAnimationImageView
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:800: error: cannot find symbol
+    public void setProgressColorSchemeColorsFromResource(@IdRes int... resources) {
+                                                          ^
+  symbol:   class IdRes
+  location: class WaveSwipeRefreshLayout.ProgressAnimationImageView
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/MaterialProgressDrawable.java:511: error: cannot find symbol
+        public void setColors(@NonNull int[] colors) {
+                               ^
+  symbol:   class NonNull
+  location: class Ring
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/DropBounceInterpolator.java:41: warning: no description for @param
+     * @param v
+       ^
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/DropBounceInterpolator.java:42: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/MaterialProgressDrawable.java:185: warning: no @param for color
+    public void setBackgroundColor(int color) {
+                ^
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/MaterialProgressDrawable.java:194: warning: no description for @param
+     * @param colors
+       ^
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/MaterialProgressDrawable.java:50: error: unknown tag: hide
+ * @hide
+   ^
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/src/main/java/jp/co/recruit_lifestyle/android/widget/WaveSwipeRefreshLayout.java:675: warning: no @param for argbColor
+  public void setWaveColor(int argbColor) {
+              ^
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class IdRes not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+
+1 error
+31 warnings
+:library:javadocJar
+:library:sourcesJar
+:library:assemble
+:library:lint
+Ran lint on variant debug: 1 issues found
+Ran lint on variant release: 1 issues found
+Wrote HTML report to file:/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/library/build/outputs/lint-results.xml
+:library:preCompileDebugUnitTestJava
+:library:prepareDebugUnitTestDependencies
+:library:processDebugUnitTestJavaRes UP-TO-DATE
+:library:compileDebugUnitTestJava UP-TO-DATE
+:library:compileDebugUnitTestSources UP-TO-DATE
+:library:mockableAndroidJar
+:library:assembleDebugUnitTest
+:library:testDebug
+:library:preCompileReleaseUnitTestJava
+:library:prepareReleaseUnitTestDependencies
+:library:processReleaseUnitTestJavaRes UP-TO-DATE
+:library:compileReleaseUnitTestJava UP-TO-DATE
+:library:compileReleaseUnitTestSources UP-TO-DATE
+:library:assembleReleaseUnitTest
+:library:testRelease
+:library:test
+:library:check
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.017 secs
+
+2018-05-11 11:23:49,326 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:23:49,326 INFO  SysUtils - Execute command: [/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/gradlew, -b, /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:23:55,529 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-11 11:23:55,530 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-11 11:23:55,530 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-11 11:23:55,530 INFO  SysUtils - Execute command: [/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/gradlew, -b, /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-11 11:24:25,347 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72220Library
+:sample:prepareComAndroidSupportSupportV42220Library
+:sample:prepareComGithubRecruitLifestyleWaveSwipeRefreshLayout16Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJava
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJava
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease SKIPPED
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:compileLint
+:sample:lint
+Ran lint on variant release: 4 issues found
+Ran lint on variant debug: 4 issues found
+Wrote HTML report to file:/tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/sample/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/sample/build/outputs/lint-results.xml
+:sample:preCompileDebugUnitTestJava
+:sample:preDebugUnitTestBuild UP-TO-DATE
+:sample:prepareDebugUnitTestDependencies
+:sample:processDebugUnitTestJavaRes UP-TO-DATE
+:sample:compileDebugUnitTestJava UP-TO-DATE
+:sample:compileDebugUnitTestSources UP-TO-DATE
+:sample:mockableAndroidJar
+:sample:assembleDebugUnitTest
+:sample:testDebug
+:sample:preCompileReleaseUnitTestJava
+:sample:preReleaseUnitTestBuild UP-TO-DATE
+:sample:prepareReleaseUnitTestDependencies
+:sample:processReleaseUnitTestJavaRes UP-TO-DATE
+:sample:compileReleaseUnitTestJava UP-TO-DATE
+:sample:compileReleaseUnitTestSources UP-TO-DATE
+:sample:assembleReleaseUnitTest
+:sample:testRelease
+:sample:test
+:sample:check
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.398 secs
+
+2018-05-11 11:24:25,414 INFO  FullProcessService - Found APK file: /tmp/rdisk/2229/src/WaveSwipeRefreshLayout-master/sample/build/outputs/apk/sample-release-unsigned.apk

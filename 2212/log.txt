@@ -1,0 +1,100 @@
+2018-04-03 11:30:49,980 INFO  DownloadService - Downloading "https://github.com/toddway/MaterialTransitions/archive/master.zip", attempt 3
+2018-04-03 11:31:50,625 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 11:31:51,454 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 11:31:51,454 INFO  DownloadService - Downloading "https://github.com/toddway/MaterialTransitions/archive/master.zip", attempt 3
+2018-04-03 11:32:52,736 DEBUG FullProcessService - Repository https://github.com/toddway/MaterialTransitions available: true
+2018-04-03 11:32:52,736 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 11:32:52,736 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/toddway/MaterialTransitions, /tmp/rdisk/2212/src]
+2018-04-03 11:32:54,709 INFO  SysUtils - 
+2018-04-03 11:32:54,726 INFO  GitService - Deleted "/tmp/rdisk/2212/src/.git": true
+2018-04-03 11:32:54,729 INFO  FullProcessService - Size of directory with sources: 590 KB
+2018-04-03 11:32:54,729 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2212/src]
+2018-04-03 11:32:54,734 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2212/src/.git/
+
+2018-04-03 11:32:54,736 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2212/src/gradlew
+2018-04-03 11:32:54,739 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2212/src/app/build.gradle /tmp/rdisk/2212/src/build.gradle
+2018-04-03 11:32:54,741 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2212/src/settings.gradle /tmp/rdisk/2212/src/build.gradle /tmp/rdisk/2212/src/app/build.gradle
+2018-04-03 11:32:54,742 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 11:32:54,742 INFO  ProjectFixService - Fixing project...
+2018-04-03 11:32:54,748 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2212/src/app/local.properties
+2018-04-03 11:32:54,748 INFO  ProjectFixService - Build info for "/tmp/rdisk/2212/src/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=22,minSdkVersion=19,targetSdkVersion=22]
+2018-04-03 11:32:54,748 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2212/src/local.properties
+2018-04-03 11:32:54,749 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 11:32:54,749 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 11:32:54,750 INFO  ProjectFixService - Build info for "/tmp/rdisk/2212/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=22,minSdkVersion=19,targetSdkVersion=22]
+2018-04-03 11:32:54,750 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 11:32:54,750 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:32:54,750 INFO  SysUtils - Execute command: [/tmp/rdisk/2212/src/gradlew, -b, /tmp/rdisk/2212/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:33:03,519 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-03 11:33:03,519 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-03 11:33:03,519 INFO  SysUtils - Execute command: [/tmp/rdisk/2212/src/gradlew, -b, /tmp/rdisk/2212/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-03 11:33:31,860 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library
+:app:prepareComAndroidSupportCardviewV72200Library
+:app:prepareComAndroidSupportRecyclerviewV72200Library
+:app:prepareComAndroidSupportSupportV132221Library
+:app:prepareComAndroidSupportSupportV42221Library
+:app:prepareComBalysvMaterialmenuMaterialMenu151Library
+:app:prepareComBalysvMaterialmenuMaterialMenuToolbar151Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources/tmp/rdisk/2212/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources/tmp/rdisk/2212/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:lintVitalRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.903 secs
+
+2018-04-03 11:33:31,896 INFO  FullProcessService - Found APK file: /tmp/rdisk/2212/src/app/build/outputs/apk/app-debug.apk

@@ -1,0 +1,9 @@
+2018-04-03 18:54:57,271 INFO  DownloadService - Downloading "https://github.com/majidgolshadi/Android-Download-Manager-Pro/archive/master.zip", attempt 3
+2018-04-03 18:54:57,271 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:54:57,653 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:54:57,653 INFO  DownloadService - Downloading "https://github.com/majidgolshadi/Android-Download-Manager-Pro/archive/master.zip", attempt 3
+2018-04-03 18:54:57,654 DEBUG FullProcessService - Repository https://github.com/majidgolshadi/Android-Download-Manager-Pro available: false
+2018-04-03 18:54:57,654 ERROR FullProcessService - Could not find directory with sources
+2018-04-03 18:54:57,654 ERROR FullProcessService - Project will not be processed
+2018-04-03 18:54:57,654 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 18:54:57,654 ERROR FullProcessService - Could not find generated or existed APK file

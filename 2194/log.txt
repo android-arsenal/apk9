@@ -1,0 +1,581 @@
+2018-04-03 12:20:05,563 INFO  DownloadService - Downloading "https://github.com/pengwei1024/LogUtils/archive/master.zip", attempt 3
+2018-04-03 12:21:06,325 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 12:21:07,224 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 12:21:07,224 INFO  DownloadService - Downloading "https://github.com/pengwei1024/LogUtils/archive/master.zip", attempt 3
+2018-04-03 12:22:08,594 DEBUG FullProcessService - Repository https://github.com/pengwei1024/LogUtils available: true
+2018-04-03 12:22:08,594 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 12:22:08,594 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/pengwei1024/LogUtils, /tmp/rdisk/2194/src]
+2018-04-03 12:22:15,192 INFO  SysUtils - 
+2018-04-03 12:22:15,198 INFO  GitService - Deleted "/tmp/rdisk/2194/src/.git": true
+2018-04-03 12:22:15,204 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-03 12:22:15,204 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2194/src]
+2018-04-03 12:22:15,210 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2194/src/.git/
+
+2018-04-03 12:22:15,214 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2194/src/gradlew
+2018-04-03 12:22:15,218 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2194/src/library/build.gradle /tmp/rdisk/2194/src/log2file/build.gradle /tmp/rdisk/2194/src/logutils-no-op/build.gradle /tmp/rdisk/2194/src/sample/build.gradle /tmp/rdisk/2194/src/build.gradle
+2018-04-03 12:22:15,222 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2194/src/settings.gradle /tmp/rdisk/2194/src/sample/build.gradle /tmp/rdisk/2194/src/logutils-no-op/build.gradle /tmp/rdisk/2194/src/log2file/build.gradle /tmp/rdisk/2194/src/library/build.gradle /tmp/rdisk/2194/src/library/bintrayUpload.gradle /tmp/rdisk/2194/src/build.gradle
+2018-04-03 12:22:15,223 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 12:22:15,223 INFO  ProjectFixService - Fixing project...
+2018-04-03 12:22:15,233 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2194/src/library/local.properties
+2018-04-03 12:22:15,237 INFO  ProjectFixService - Build info for "/tmp/rdisk/2194/src/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 12:22:15,237 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2194/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 12:22:15,237 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2194/src/log2file/local.properties
+2018-04-03 12:22:15,241 INFO  ProjectFixService - Build info for "/tmp/rdisk/2194/src/log2file/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 12:22:15,241 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2194/src/log2file/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 12:22:15,241 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2194/src/logutils-no-op/local.properties
+2018-04-03 12:22:15,245 INFO  ProjectFixService - Build info for "/tmp/rdisk/2194/src/logutils-no-op/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 12:22:15,245 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2194/src/logutils-no-op/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 12:22:15,246 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2194/src/sample/local.properties
+2018-04-03 12:22:15,250 INFO  ProjectFixService - Build info for "/tmp/rdisk/2194/src/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 12:22:15,250 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2194/src/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 12:22:15,250 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2194/src/local.properties
+2018-04-03 12:22:15,251 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-03 12:22:15,251 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-03 12:22:15,254 INFO  ProjectFixService - Build info for "/tmp/rdisk/2194/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 12:22:15,254 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2194/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 12:22:15,255 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 12:22:15,255 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:22:15,255 INFO  SysUtils - Execute command: [/tmp/rdisk/2194/src/gradlew, -b, /tmp/rdisk/2194/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:22:27,249 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-03 12:22:27,249 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 12:22:27,250 INFO  SysUtils - Execute command: [/tmp/rdisk/2194/src/gradlew, -b, /tmp/rdisk/2194/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 12:22:39,774 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:mergeDebugAssets
+:library:mergeDebugProguardFiles
+:library:packageDebugRenderscript UP-TO-DATE
+:library:compileDebugRenderscript
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:generateDebugBuildConfig
+:library:processDebugResources
+:library:generateDebugSources
+:library:incrementalDebugJavaCompilationSafeguard
+:library:compileDebugJavaWithJavac
+:library:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:library:processDebugJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForDebug
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:library:mergeDebugJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForDebug
+:library:transformNative_libsWithSyncJniLibsForDebug
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseNdk UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:compileReleaseRenderscript
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:generateReleaseBuildConfig
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:incrementalReleaseJavaCompilationSafeguard
+:library:compileReleaseJavaWithJavac
+:library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForRelease
+:library:transformNative_libsWithSyncJniLibsForRelease
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:javadoc/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/annotation/IntDef.java:16: warning: no @return
+    boolean flag() default false;
+            ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/annotation/IntDef.java:13: warning: no @return
+    long[] value() default {};
+           ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/Constant.java:46: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:17: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:25: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:38: warning: no description for @param
+     * @param msg
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:39: warning: no description for @param
+     * @param args
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:53: warning: no description for @param
+     * @param msg
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:54: warning: no description for @param
+     * @param args
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:67: warning: no description for @param
+     * @param msg
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:68: warning: no description for @param
+     * @param args
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:81: warning: no description for @param
+     * @param msg
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:82: warning: no description for @param
+     * @param args
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:95: warning: no description for @param
+     * @param msg
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:96: warning: no description for @param
+     * @param args
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:109: warning: no description for @param
+     * @param msg
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:110: warning: no description for @param
+     * @param args
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:123: warning: no description for @param
+     * @param json
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/LogUtils.java:131: warning: no description for @param
+     * @param xml
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/ArrayUtil.java:15: warning: no description for @param
+     * @param object
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/ArrayUtil.java:16: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/ArrayUtil.java:33: warning: no description for @param
+     * @param object
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/ArrayUtil.java:34: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/ArrayUtil.java:44: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/ArrayUtil.java:121: warning: no description for @param
+     * @param array
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/ArrayUtil.java:122: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/ObjectUtil.java:21: warning: no description for @param
+     * @param object
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/ObjectUtil.java:22: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/ObjectUtil.java:31: warning: no description for @param
+     * @param cla
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/ObjectUtil.java:32: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/Utils.java:22: warning: no description for @param
+     * @param dir
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/Utils.java:23: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/Utils.java:45: warning: no description for @param
+     * @param msg
+       ^
+/tmp/rdisk/2194/src/library/src/main/java/com/apkfuns/logutils/utils/Utils.java:46: warning: no description for @return
+     * @return
+       ^
+
+34 warnings
+:library:javadocJar
+:library:sourcesJar
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.851 secs
+
+2018-04-03 12:22:39,787 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:22:39,787 INFO  SysUtils - Execute command: [/tmp/rdisk/2194/src/gradlew, -b, /tmp/rdisk/2194/src/log2file/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:22:48,583 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-03 12:22:48,583 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 12:22:48,583 INFO  SysUtils - Execute command: [/tmp/rdisk/2194/src/gradlew, -b, /tmp/rdisk/2194/src/log2file/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 12:22:58,401 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:log2file:preBuild UP-TO-DATE
+:log2file:preDebugBuild UP-TO-DATE
+:log2file:checkDebugManifest
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseShaders UP-TO-DATE
+:library:compileReleaseShaders UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:library:mergeReleaseJniLibFolders UP-TO-DATE
+:library:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:library:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:log2file:preDebugAndroidTestBuild UP-TO-DATE
+:log2file:preDebugUnitTestBuild UP-TO-DATE
+:log2file:preReleaseBuild UP-TO-DATE
+:log2file:preReleaseUnitTestBuild UP-TO-DATE
+:log2file:prepareComApkfunsLogutilsLibrary1511Library
+:log2file:prepareDebugDependencies
+:log2file:compileDebugAidl
+:log2file:compileDebugNdk UP-TO-DATE
+:log2file:compileLint
+:log2file:copyDebugLint UP-TO-DATE
+:log2file:mergeDebugShaders
+:log2file:compileDebugShaders
+:log2file:generateDebugAssets
+:log2file:mergeDebugAssets
+:log2file:mergeDebugProguardFiles
+:log2file:packageDebugRenderscript UP-TO-DATE
+:log2file:compileDebugRenderscript
+:log2file:generateDebugResValues
+:log2file:generateDebugResources
+:log2file:packageDebugResources
+:log2file:processDebugManifest
+:log2file:generateDebugBuildConfig
+:log2file:processDebugResources
+:log2file:generateDebugSources
+:log2file:incrementalDebugJavaCompilationSafeguard
+:log2file:compileDebugJavaWithJavac
+:log2file:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:log2file:processDebugJavaRes UP-TO-DATE
+:log2file:transformResourcesWithMergeJavaResForDebug
+:log2file:transformClassesAndResourcesWithSyncLibJarsForDebug
+:log2file:mergeDebugJniLibFolders
+:log2file:transformNative_libsWithMergeJniLibsForDebug
+:log2file:transformNative_libsWithSyncJniLibsForDebug
+:log2file:bundleDebug
+:log2file:compileDebugSources
+:log2file:assembleDebug
+:log2file:checkReleaseManifest
+:log2file:prepareReleaseDependencies
+:log2file:compileReleaseAidl
+:log2file:compileReleaseNdk UP-TO-DATE
+:log2file:copyReleaseLint UP-TO-DATE
+:log2file:mergeReleaseShaders
+:log2file:compileReleaseShaders
+:log2file:generateReleaseAssets
+:log2file:mergeReleaseAssets
+:log2file:mergeReleaseProguardFiles
+:log2file:packageReleaseRenderscript UP-TO-DATE
+:log2file:compileReleaseRenderscript
+:log2file:generateReleaseResValues
+:log2file:generateReleaseResources
+:log2file:packageReleaseResources
+:log2file:processReleaseManifest
+:log2file:generateReleaseBuildConfig
+:log2file:processReleaseResources
+:log2file:generateReleaseSources
+:log2file:incrementalReleaseJavaCompilationSafeguard
+:log2file:compileReleaseJavaWithJavac
+:log2file:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:log2file:processReleaseJavaRes UP-TO-DATE
+:log2file:transformResourcesWithMergeJavaResForRelease
+:log2file:transformClassesAndResourcesWithSyncLibJarsForRelease
+:log2file:mergeReleaseJniLibFolders
+:log2file:transformNative_libsWithMergeJniLibsForRelease
+:log2file:transformNative_libsWithSyncJniLibsForRelease
+:log2file:bundleRelease
+:log2file:compileReleaseSources
+:log2file:assembleRelease
+:log2file:assemble
+:log2file:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.271 secs
+
+2018-04-03 12:22:58,418 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:22:58,418 INFO  SysUtils - Execute command: [/tmp/rdisk/2194/src/gradlew, -b, /tmp/rdisk/2194/src/logutils-no-op/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:23:07,504 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-03 12:23:07,505 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 12:23:07,505 INFO  SysUtils - Execute command: [/tmp/rdisk/2194/src/gradlew, -b, /tmp/rdisk/2194/src/logutils-no-op/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 12:23:16,104 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:logutils-no-op:preBuild UP-TO-DATE
+:logutils-no-op:preDebugBuild UP-TO-DATE
+:logutils-no-op:checkDebugManifest
+:logutils-no-op:prepareDebugDependencies
+:logutils-no-op:compileDebugAidl
+:logutils-no-op:compileDebugNdk UP-TO-DATE
+:logutils-no-op:compileLint
+:logutils-no-op:copyDebugLint UP-TO-DATE
+:logutils-no-op:mergeDebugShaders
+:logutils-no-op:compileDebugShaders
+:logutils-no-op:generateDebugAssets
+:logutils-no-op:mergeDebugAssets
+:logutils-no-op:mergeDebugProguardFiles
+:logutils-no-op:packageDebugRenderscript UP-TO-DATE
+:logutils-no-op:compileDebugRenderscript
+:logutils-no-op:generateDebugResValues
+:logutils-no-op:generateDebugResources
+:logutils-no-op:packageDebugResources
+:logutils-no-op:processDebugManifest
+:logutils-no-op:generateDebugBuildConfig
+:logutils-no-op:processDebugResources
+:logutils-no-op:generateDebugSources
+:logutils-no-op:incrementalDebugJavaCompilationSafeguard
+:logutils-no-op:compileDebugJavaWithJavac
+:logutils-no-op:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:logutils-no-op:processDebugJavaRes UP-TO-DATE
+:logutils-no-op:transformResourcesWithMergeJavaResForDebug
+:logutils-no-op:transformClassesAndResourcesWithSyncLibJarsForDebug
+:logutils-no-op:mergeDebugJniLibFolders
+:logutils-no-op:transformNative_libsWithMergeJniLibsForDebug
+:logutils-no-op:transformNative_libsWithSyncJniLibsForDebug
+:logutils-no-op:bundleDebug
+:logutils-no-op:compileDebugSources
+:logutils-no-op:assembleDebug
+:logutils-no-op:preReleaseBuild UP-TO-DATE
+:logutils-no-op:checkReleaseManifest
+:logutils-no-op:prepareReleaseDependencies
+:logutils-no-op:compileReleaseAidl
+:logutils-no-op:compileReleaseNdk UP-TO-DATE
+:logutils-no-op:copyReleaseLint UP-TO-DATE
+:logutils-no-op:mergeReleaseShaders
+:logutils-no-op:compileReleaseShaders
+:logutils-no-op:generateReleaseAssets
+:logutils-no-op:mergeReleaseAssets
+:logutils-no-op:mergeReleaseProguardFiles
+:logutils-no-op:packageReleaseRenderscript UP-TO-DATE
+:logutils-no-op:compileReleaseRenderscript
+:logutils-no-op:generateReleaseResValues
+:logutils-no-op:generateReleaseResources
+:logutils-no-op:packageReleaseResources
+:logutils-no-op:processReleaseManifest
+:logutils-no-op:generateReleaseBuildConfig
+:logutils-no-op:processReleaseResources
+:logutils-no-op:generateReleaseSources
+:logutils-no-op:incrementalReleaseJavaCompilationSafeguard
+:logutils-no-op:compileReleaseJavaWithJavac
+:logutils-no-op:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:logutils-no-op:processReleaseJavaRes UP-TO-DATE
+:logutils-no-op:transformResourcesWithMergeJavaResForRelease
+:logutils-no-op:transformClassesAndResourcesWithSyncLibJarsForRelease
+:logutils-no-op:mergeReleaseJniLibFolders
+:logutils-no-op:transformNative_libsWithMergeJniLibsForRelease
+:logutils-no-op:transformNative_libsWithSyncJniLibsForRelease
+:logutils-no-op:bundleRelease
+:logutils-no-op:compileReleaseSources
+:logutils-no-op:assembleRelease
+:logutils-no-op:assemble
+:logutils-no-op:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.054 secs
+
+2018-04-03 12:23:16,126 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:23:16,126 INFO  SysUtils - Execute command: [/tmp/rdisk/2194/src/gradlew, -b, /tmp/rdisk/2194/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:23:24,842 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-03 12:23:24,842 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 12:23:24,842 INFO  SysUtils - Execute command: [/tmp/rdisk/2194/src/gradlew, -b, /tmp/rdisk/2194/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 12:23:43,467 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseShaders UP-TO-DATE
+:library:compileReleaseShaders UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:library:mergeReleaseJniLibFolders UP-TO-DATE
+:library:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:library:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:log2file:preBuild UP-TO-DATE
+:log2file:preReleaseBuild UP-TO-DATE
+:log2file:checkReleaseManifest
+:log2file:preDebugAndroidTestBuild UP-TO-DATE
+:log2file:preDebugBuild UP-TO-DATE
+:log2file:preDebugUnitTestBuild UP-TO-DATE
+:log2file:preReleaseUnitTestBuild UP-TO-DATE
+:log2file:prepareComApkfunsLogutilsLibrary1511Library UP-TO-DATE
+:log2file:prepareReleaseDependencies
+:log2file:compileReleaseAidl UP-TO-DATE
+:log2file:compileReleaseNdk UP-TO-DATE
+:log2file:compileLint UP-TO-DATE
+:log2file:copyReleaseLint UP-TO-DATE
+:log2file:mergeReleaseShaders UP-TO-DATE
+:log2file:compileReleaseShaders UP-TO-DATE
+:log2file:generateReleaseAssets UP-TO-DATE
+:log2file:mergeReleaseAssets UP-TO-DATE
+:log2file:mergeReleaseProguardFiles UP-TO-DATE
+:log2file:packageReleaseRenderscript UP-TO-DATE
+:log2file:compileReleaseRenderscript UP-TO-DATE
+:log2file:generateReleaseResValues UP-TO-DATE
+:log2file:generateReleaseResources UP-TO-DATE
+:log2file:packageReleaseResources UP-TO-DATE
+:log2file:processReleaseManifest UP-TO-DATE
+:log2file:generateReleaseBuildConfig UP-TO-DATE
+:log2file:processReleaseResources UP-TO-DATE
+:log2file:generateReleaseSources UP-TO-DATE
+:log2file:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:log2file:compileReleaseJavaWithJavac UP-TO-DATE
+:log2file:processReleaseJavaRes UP-TO-DATE
+:log2file:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:log2file:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:log2file:mergeReleaseJniLibFolders UP-TO-DATE
+:log2file:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:log2file:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:log2file:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComApkfunsLogutilsLibrary1511Library
+:sample:prepareComJakewhartonHugoHugoRuntime121Library
+:sample:prepareSrcLog2fileUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:incrementalDebugJavaCompilationSafeguard
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2194/src/sample/src/main/java/com/apkfuns/logutils/demo/App.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:transformClassesWithDexForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateSigningDebug
+:sample:packageDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:incrementalReleaseJavaCompilationSafeguard
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2194/src/sample/src/main/java/com/apkfuns/logutils/demo/App.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:sample:transformClassesWithDexForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.026 secs
+
+2018-04-03 12:23:43,496 INFO  FullProcessService - Found APK file: /tmp/rdisk/2194/src/sample/build/outputs/apk/sample-release-unsigned.apk

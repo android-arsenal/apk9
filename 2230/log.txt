@@ -1,0 +1,820 @@
+2018-04-02 16:03:04,657 INFO  DownloadService - Downloading "https://github.com/tom91136/Akatsuki/archive/master.zip", attempt 3
+2018-04-02 16:04:05,244 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 16:04:05,956 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 16:04:05,957 INFO  DownloadService - Downloading "https://github.com/tom91136/Akatsuki/archive/master.zip", attempt 3
+2018-04-02 16:05:07,231 DEBUG FullProcessService - Repository https://github.com/tom91136/Akatsuki available: true
+2018-04-02 16:05:07,231 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 16:05:07,231 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/tom91136/Akatsuki, /tmp/rdisk/2230/src]
+2018-04-02 16:05:11,446 INFO  SysUtils - 
+2018-04-02 16:05:11,452 INFO  GitService - Deleted "/tmp/rdisk/2230/src/.git": true
+2018-04-02 16:05:11,458 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-02 16:05:11,458 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2230/src]
+2018-04-02 16:05:11,463 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2230/src/.git/
+
+2018-04-02 16:05:11,467 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2230/src/gradlew
+2018-04-02 16:05:11,472 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2230/src/akatsuki-parceler/build.gradle /tmp/rdisk/2230/src/sample/build.gradle /tmp/rdisk/2230/src/build.gradle /tmp/rdisk/2230/src/akatsuki-api/build.gradle /tmp/rdisk/2230/src/akatsuki-compiler/build.gradle
+2018-04-02 16:05:11,476 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2230/src/settings.gradle /tmp/rdisk/2230/src/sample/build.gradle /tmp/rdisk/2230/src/deploy-sample.gradle /tmp/rdisk/2230/src/deploy-java.gradle /tmp/rdisk/2230/src/deploy-android.gradle /tmp/rdisk/2230/src/build.gradle /tmp/rdisk/2230/src/akatsuki-parceler/build.gradle /tmp/rdisk/2230/src/akatsuki-compiler/build.gradle /tmp/rdisk/2230/src/akatsuki-api/build.gradle
+2018-04-02 16:05:11,477 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 16:05:11,477 INFO  ProjectFixService - Fixing project...
+2018-04-02 16:05:11,488 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2230/src/akatsuki-parceler/local.properties
+2018-04-02 16:05:11,488 INFO  ProjectFixService - Build info for "/tmp/rdisk/2230/src/akatsuki-parceler/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 16:05:11,488 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2230/src/sample/local.properties
+2018-04-02 16:05:11,489 INFO  ProjectFixService - Build info for "/tmp/rdisk/2230/src/sample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 16:05:11,489 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2230/src/local.properties
+2018-04-02 16:05:11,490 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.5-bin.zip
+2018-04-02 16:05:11,491 INFO  ProjectFixService - Build info for "/tmp/rdisk/2230/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 16:05:11,492 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2230/src/akatsuki-api/local.properties
+2018-04-02 16:05:11,492 INFO  ProjectFixService - Build info for "/tmp/rdisk/2230/src/akatsuki-api/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 16:05:11,493 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2230/src/akatsuki-compiler/local.properties
+2018-04-02 16:05:11,494 INFO  ProjectFixService - Build info for "/tmp/rdisk/2230/src/akatsuki-compiler/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 16:05:11,494 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 16:05:11,494 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 16:05:11,494 INFO  SysUtils - Execute command: [/tmp/rdisk/2230/src/gradlew, -b, /tmp/rdisk/2230/src/akatsuki-parceler/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 16:05:26,980 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 16:05:26,980 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 16:05:26,980 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 16:05:26,981 INFO  SysUtils - Execute command: [/tmp/rdisk/2230/src/gradlew, -b, /tmp/rdisk/2230/src/akatsuki-parceler/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 16:05:44,809 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration archives specified but does not exist in project :akatsuki-compiler.
+Configuration(s) specified but the install task does not exist in project :akatsuki-compiler.
+Configuration archives specified but does not exist in project :sample.
+Configuration(s) specified but the install task does not exist in project :sample.
+:akatsuki-parceler:compileLint
+:akatsuki-parceler:copyDebugLint UP-TO-DATE
+:akatsuki-parceler:mergeDebugProguardFiles
+:akatsuki-api:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: /tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:akatsuki-api:processResources UP-TO-DATE
+:akatsuki-api:classes
+:akatsuki-api:jar
+:akatsuki-parceler:preBuild UP-TO-DATE
+:akatsuki-parceler:preDebugBuild UP-TO-DATE
+:akatsuki-parceler:checkDebugManifest
+:akatsuki-parceler:prepareDebugDependencies
+:akatsuki-parceler:compileDebugAidl
+:akatsuki-parceler:compileDebugRenderscript
+:akatsuki-parceler:generateDebugBuildConfig
+:akatsuki-parceler:generateDebugAssets UP-TO-DATE
+:akatsuki-parceler:mergeDebugAssets
+:akatsuki-parceler:generateDebugResValues
+:akatsuki-parceler:generateDebugResources
+:akatsuki-parceler:packageDebugResources
+:akatsuki-parceler:processDebugManifest
+:akatsuki-parceler:processDebugResources
+:akatsuki-parceler:generateDebugSources
+:akatsuki-parceler:processDebugJavaRes UP-TO-DATE
+:akatsuki-parceler:compileDebugJavaWithJavac
+:akatsuki-parceler:packageDebugJar
+:akatsuki-parceler:compileDebugNdk UP-TO-DATE
+:akatsuki-parceler:packageDebugJniLibs UP-TO-DATE
+:akatsuki-parceler:packageDebugLocalJar UP-TO-DATE
+:akatsuki-parceler:packageDebugRenderscript UP-TO-DATE
+:akatsuki-parceler:bundleDebug
+:akatsuki-parceler:compileDebugSources
+:akatsuki-parceler:assembleDebug
+:akatsuki-parceler:copyReleaseLint UP-TO-DATE
+:akatsuki-parceler:mergeReleaseProguardFiles
+:akatsuki-parceler:preReleaseBuild UP-TO-DATE
+:akatsuki-parceler:checkReleaseManifest
+:akatsuki-parceler:prepareReleaseDependencies
+:akatsuki-parceler:compileReleaseAidl
+:akatsuki-parceler:compileReleaseRenderscript
+:akatsuki-parceler:generateReleaseBuildConfig
+:akatsuki-parceler:generateReleaseAssets UP-TO-DATE
+:akatsuki-parceler:mergeReleaseAssets
+:akatsuki-parceler:generateReleaseResValues
+:akatsuki-parceler:generateReleaseResources
+:akatsuki-parceler:packageReleaseResources
+:akatsuki-parceler:processReleaseManifest
+:akatsuki-parceler:processReleaseResources
+:akatsuki-parceler:generateReleaseSources
+:akatsuki-parceler:processReleaseJavaRes UP-TO-DATE
+:akatsuki-parceler:compileReleaseJavaWithJavac
+:akatsuki-parceler:packageReleaseJar
+:akatsuki-parceler:compileReleaseNdk UP-TO-DATE
+:akatsuki-parceler:packageReleaseJniLibs UP-TO-DATE
+:akatsuki-parceler:packageReleaseLocalJar UP-TO-DATE
+:akatsuki-parceler:packageReleaseRenderscript UP-TO-DATE
+:akatsuki-parceler:bundleRelease
+:akatsuki-parceler:compileReleaseSources
+:akatsuki-parceler:assembleRelease
+:akatsuki-parceler:javadoc/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:5: error: cannot find symbol
+import com.sora.util.akatsuki.TransformationTemplate;
+                             ^
+  symbol:   class TransformationTemplate
+  location: package com.sora.util.akatsuki
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:6: error: package com.sora.util.akatsuki.TransformationTemplate does not exist
+import com.sora.util.akatsuki.TransformationTemplate.StatementTemplate;
+                                                    ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:7: error: package com.sora.util.akatsuki.TransformationTemplate.StatementTemplate does not exist
+import com.sora.util.akatsuki.TransformationTemplate.StatementTemplate.Type;
+                                                                      ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:8: error: cannot find symbol
+import com.sora.util.akatsuki.TypeConstraint;
+                             ^
+  symbol:   class TypeConstraint
+  location: package com.sora.util.akatsuki
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:9: error: package com.sora.util.akatsuki.TypeConstraint does not exist
+import com.sora.util.akatsuki.TypeConstraint.Bound;
+                                            ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:10: error: cannot find symbol
+import com.sora.util.akatsuki.TypeFilter;
+                             ^
+  symbol:   class TypeFilter
+  location: package com.sora.util.akatsuki
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:12: error: package org.parceler does not exist
+import org.parceler.Parcel;
+                   ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:13: error: package org.parceler does not exist
+import org.parceler.Parcels;
+                   ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:24: error: cannot find symbol
+@TransformationTemplate(
+ ^
+  symbol: class TransformationTemplate
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:28: error: duplicate element '<any?>' in annotation @<any?>.
+		restore = @StatementTemplate(type = Type.ASSIGNMENT,
+		                             ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:29: error: duplicate element '<any?>' in annotation @<any?>.
+				                     value = "org.parceler.Parcels.unwrap({{bundle}}.getParcelable({{keyName}}))",
+				                     ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:30: error: duplicate element '<any?>' in annotation @<any?>.
+				                     variable = "{{fieldName}}"),
+				                     ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:31: error: duplicate element '<any?>' in annotation @<any?>.
+		filters = {@TypeFilter(type = @TypeConstraint(type = Parcel.class)),
+		                                              ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:31: error: duplicate element '<any?>' in annotation @<any?>.
+		filters = {@TypeFilter(type = @TypeConstraint(type = Parcel.class)),
+		                       ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:32: error: duplicate element '<any?>' in annotation @<any?>.
+				   @TypeFilter(type = @TypeConstraint(type = List.class, bound = Bound.EXTENDS),
+				                                      ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:32: error: duplicate element '<any?>' in annotation @<any?>.
+				   @TypeFilter(type = @TypeConstraint(type = List.class, bound = Bound.EXTENDS),
+				                                                         ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:33: error: duplicate element '<any?>' in annotation @<any?>.
+						       parameters = @TypeConstraint(type = Parcel.class)),
+						                                    ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:32: error: duplicate element '<any?>' in annotation @<any?>.
+				   @TypeFilter(type = @TypeConstraint(type = List.class, bound = Bound.EXTENDS),
+				               ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:33: error: duplicate element '<any?>' in annotation @<any?>.
+						       parameters = @TypeConstraint(type = Parcel.class)),
+						       ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:34: error: duplicate element '<any?>' in annotation @<any?>.
+				   @TypeFilter(type = @TypeConstraint(type = Set.class, bound = Bound.EXTENDS),
+				                                      ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:34: error: duplicate element '<any?>' in annotation @<any?>.
+				   @TypeFilter(type = @TypeConstraint(type = Set.class, bound = Bound.EXTENDS),
+				                                                        ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:35: error: duplicate element '<any?>' in annotation @<any?>.
+				               parameters = @TypeConstraint(type = Parcel.class)),
+				                                            ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:34: error: duplicate element '<any?>' in annotation @<any?>.
+				   @TypeFilter(type = @TypeConstraint(type = Set.class, bound = Bound.EXTENDS),
+				               ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:35: error: duplicate element '<any?>' in annotation @<any?>.
+				               parameters = @TypeConstraint(type = Parcel.class)),
+				               ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:36: error: duplicate element '<any?>' in annotation @<any?>.
+				   @TypeFilter(type = @TypeConstraint(type = Map.class, bound = Bound.EXTENDS),
+				                                      ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:36: error: duplicate element '<any?>' in annotation @<any?>.
+				   @TypeFilter(type = @TypeConstraint(type = Map.class, bound = Bound.EXTENDS),
+				                                                        ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:37: error: duplicate element '<any?>' in annotation @<any?>.
+				               parameters = @TypeConstraint(type = Parcel.class))
+				                                            ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:36: error: duplicate element '<any?>' in annotation @<any?>.
+				   @TypeFilter(type = @TypeConstraint(type = Map.class, bound = Bound.EXTENDS),
+				               ^
+/tmp/rdisk/2230/src/akatsuki-parceler/src/main/java/com/sora/util/akatsuki/parceler/ParcelerSupport.java:37: error: duplicate element '<any?>' in annotation @<any?>.
+				               parameters = @TypeConstraint(type = Parcel.class))
+				               ^
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+javadoc: warning - Class TransformationTemplate not found.
+
+42 warnings
+:akatsuki-parceler:javadocJar
+:akatsuki-parceler:sourcesJar
+:akatsuki-parceler:assemble
+:akatsuki-parceler:lint
+Ran lint on variant debug: 3 issues found
+Ran lint on variant release: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/2230/src/akatsuki-parceler/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2230/src/akatsuki-parceler/build/outputs/lint-results.xml
+:akatsuki-parceler:preDebugUnitTestBuild UP-TO-DATE
+:akatsuki-parceler:prepareDebugUnitTestDependencies
+:akatsuki-parceler:processDebugUnitTestJavaRes UP-TO-DATE
+:akatsuki-parceler:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:akatsuki-parceler:compileDebugUnitTestSources UP-TO-DATE
+:akatsuki-parceler:mockableAndroidJar
+:akatsuki-parceler:assembleDebugUnitTest
+:akatsuki-parceler:testDebugUnitTest
+:akatsuki-parceler:preReleaseUnitTestBuild UP-TO-DATE
+:akatsuki-parceler:prepareReleaseUnitTestDependencies
+:akatsuki-parceler:processReleaseUnitTestJavaRes UP-TO-DATE
+:akatsuki-parceler:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:akatsuki-parceler:compileReleaseUnitTestSources UP-TO-DATE
+:akatsuki-parceler:assembleReleaseUnitTest
+:akatsuki-parceler:testReleaseUnitTest
+:akatsuki-parceler:test
+:akatsuki-parceler:check
+:akatsuki-parceler:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.415 secs
+
+2018-04-02 16:05:44,820 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 16:05:44,820 INFO  SysUtils - Execute command: [/tmp/rdisk/2230/src/gradlew, -b, /tmp/rdisk/2230/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 16:05:52,292 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-02 16:05:52,292 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 16:05:52,292 INFO  SysUtils - Execute command: [/tmp/rdisk/2230/src/gradlew, -b, /tmp/rdisk/2230/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 16:06:25,968 INFO  SysUtils - Configuration on demand is an incubating feature.
+:akatsuki-api:compileJava UP-TO-DATE
+:akatsuki-api:processResources UP-TO-DATE
+:akatsuki-api:classes UP-TO-DATE
+:akatsuki-api:jar UP-TO-DATE
+:akatsuki-api:javadoc/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:58: warning: no @param for level
+	public static void setLoggingLevel(LoggingLevel level) {
+	                   ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:137: warning: no description for @param
+	 * @param instance
+	   ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:138: warning: no description for @param
+	 * @param state
+	   ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:139: warning: no description for @param
+	 * @param argument
+	   ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:157: warning: empty <p> tag
+	 * <p>
+	   ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:189: warning: empty <p> tag
+	 * <p>
+	   ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:226: warning: no @param for instance
+	public static Bundle serialize(Object instance) {
+	                     ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:226: warning: no @return
+	public static Bundle serialize(Object instance) {
+	                     ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:245: warning: no @param for <T>
+	public static <T> T deserialize(T instance, Bundle bundle) {
+	                    ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:265: warning: no @param for <T>
+	public static <T> T deserialize(InstanceSupplier<T> supplier, Bundle bundle) {
+	                    ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:330: warning: no @param for <T>
+	public static <T> TypeConverter<T> converter(Class<? extends TypeConverter<T>> key) {
+	                                   ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:330: warning: no @return
+	public static <T> TypeConverter<T> converter(Class<? extends TypeConverter<T>> key) {
+	                                   ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Akatsuki.java:286: warning: no @return
+		T create();
+		  ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/AkatsukiConfig.java:111: warning: no @return
+	boolean allowTransient() default false;
+	        ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/AkatsukiConfig.java:116: warning: no @return
+	boolean allowVolatile() default false;
+	        ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/AkatsukiConfig.java:121: warning: no @return
+	ArgConfig argConfig() default @ArgConfig
+	          ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/AkatsukiConfig.java:143: warning: no @return
+	Flags[]flags() default {};
+	       ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/AkatsukiConfig.java:106: warning: no @return
+	LoggingLevel loggingLevel() default LoggingLevel.ERROR_ONLY;
+	             ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/AkatsukiConfig.java:135: warning: no @return
+	OptFlags[]optFlags() default { OptFlags.CLASS_LUT, OptFlags.VECTORIZE_INHERITANCE,
+	          ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/AkatsukiConfig.java:127: warning: no @return
+	RetainConfig retainConfig() default @RetainConfig
+	             ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Arg.java:32: warning: no @return
+	int index() default NO_INDEX;
+	    ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Arg.java:22: warning: no @return
+	boolean optional() default false;
+	        ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Arg.java:17: warning: no @return
+	boolean skip() default false;
+	        ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Arg.java:27: warning: no @return
+	 String value() default "";
+	        ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/ArgConfig.java:163: warning: no @return
+	boolean enabled() default true;
+	        ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/ArgConfig.java:156: warning: no @return
+	Order order() default Order.ASC;
+	      ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/ArgConfig.java:151: warning: no @return
+	Sort sort() default Sort.CODE;
+	     ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/ArgConfig.java:84: warning: no @return
+	BuilderType type() default BuilderType.CHAINED_CHECKED;
+	            ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/DeclaredConverter.java:37: warning: no @return
+	TypeFilter[]value();
+	            ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/MultiKeyTypeConverter.java:50: warning: no @return
+	protected abstract T restoreMultiple(Bundle bundle, T initializer, String[] keys);
+	                     ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/MultiKeyTypeConverter.java:55: warning: no @param for size
+	public static String[] generateKey(int size) {
+	                       ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/MultiKeyTypeConverter.java:55: warning: no @return
+	public static String[] generateKey(int size) {
+	                       ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/RetainConfig.java:27: warning: no @return
+	boolean enabled() default true;
+	        ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/RetainConfig.java:22: warning: no @return
+	RestorePolicy restorePolicy() default RestorePolicy.DEFAULT;
+	              ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Retained.java:47: warning: no @return
+	RestorePolicy restorePolicy() default RestorePolicy.DEFAULT;
+	              ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/Retained.java:40: warning: no @return
+	boolean skip() default false;
+	        ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/TransformationTemplate.java:69: warning: no @return
+	TypeFilter[]filters();
+	            ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/TransformationTemplate.java:62: warning: no @return
+	StatementTemplate restore();
+	                  ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/TransformationTemplate.java:49: warning: no @return
+	StatementTemplate save();
+	                  ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/TransformationTemplate.java:76: warning: no @return
+	Execution execution() default Execution.BEFORE;
+	          ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/TypeConstraint.java:35: warning: no @return
+	Class<?>type();
+	        ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/TypeConstraint.java:46: warning: no @return
+	Bound bound() default Bound.EXACTLY;
+	      ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/TypeFilter.java:19: warning: no @return
+	TypeConstraint type();
+	               ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/TypeFilter.java:25: warning: no @return
+	TypeConstraint[]parameters() default {};
+	                ^
+/tmp/rdisk/2230/src/akatsuki-api/src/main/java/com/sora/util/akatsuki/With.java:22: warning: no @return
+	Class<? extends TypeConverter<?>>value() default TypeConverter.DummyTypeConverter.class;
+	                                 ^
+
+45 warnings
+:akatsuki-api:javadocJar
+:akatsuki-api:sourceJar
+:akatsuki-compiler:compileJavaNote: /tmp/rdisk/2230/src/akatsuki-compiler/src/main/java/com/sora/util/akatsuki/AkatsukiProcessor.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:akatsuki-compiler:processResources UP-TO-DATE
+:akatsuki-compiler:classes
+:akatsuki-compiler:jar
+:akatsuki-compiler:javadoc
+:akatsuki-compiler:javadocJar
+:akatsuki-compiler:sourceJar
+:akatsuki-parceler:compileLint
+:akatsuki-parceler:copyDebugLint UP-TO-DATE
+:akatsuki-parceler:mergeDebugProguardFiles UP-TO-DATE
+:akatsuki-parceler:preBuild UP-TO-DATE
+:akatsuki-parceler:preDebugBuild UP-TO-DATE
+:akatsuki-parceler:checkDebugManifest
+:akatsuki-parceler:prepareDebugDependencies
+:akatsuki-parceler:compileDebugAidl UP-TO-DATE
+:akatsuki-parceler:compileDebugRenderscript UP-TO-DATE
+:akatsuki-parceler:generateDebugBuildConfig UP-TO-DATE
+:akatsuki-parceler:generateDebugAssets UP-TO-DATE
+:akatsuki-parceler:mergeDebugAssets UP-TO-DATE
+:akatsuki-parceler:generateDebugResValues UP-TO-DATE
+:akatsuki-parceler:generateDebugResources UP-TO-DATE
+:akatsuki-parceler:packageDebugResources UP-TO-DATE
+:akatsuki-parceler:processDebugManifest UP-TO-DATE
+:akatsuki-parceler:processDebugResources UP-TO-DATE
+:akatsuki-parceler:generateDebugSources UP-TO-DATE
+:akatsuki-parceler:processDebugJavaRes UP-TO-DATE
+:akatsuki-parceler:compileDebugJavaWithJavac UP-TO-DATE
+:akatsuki-parceler:packageDebugJar UP-TO-DATE
+:akatsuki-parceler:compileDebugNdk UP-TO-DATE
+:akatsuki-parceler:packageDebugJniLibs UP-TO-DATE
+:akatsuki-parceler:packageDebugLocalJar UP-TO-DATE
+:akatsuki-parceler:packageDebugRenderscript UP-TO-DATE
+:akatsuki-parceler:bundleDebug UP-TO-DATE
+:akatsuki-parceler:copyReleaseLint UP-TO-DATE
+:akatsuki-parceler:mergeReleaseProguardFiles UP-TO-DATE
+:akatsuki-parceler:preReleaseBuild UP-TO-DATE
+:akatsuki-parceler:checkReleaseManifest
+:akatsuki-parceler:prepareReleaseDependencies
+:akatsuki-parceler:compileReleaseAidl UP-TO-DATE
+:akatsuki-parceler:compileReleaseRenderscript UP-TO-DATE
+:akatsuki-parceler:generateReleaseBuildConfig UP-TO-DATE
+:akatsuki-parceler:generateReleaseAssets UP-TO-DATE
+:akatsuki-parceler:mergeReleaseAssets UP-TO-DATE
+:akatsuki-parceler:generateReleaseResValues UP-TO-DATE
+:akatsuki-parceler:generateReleaseResources UP-TO-DATE
+:akatsuki-parceler:packageReleaseResources UP-TO-DATE
+:akatsuki-parceler:processReleaseManifest UP-TO-DATE
+:akatsuki-parceler:processReleaseResources UP-TO-DATE
+:akatsuki-parceler:generateReleaseSources UP-TO-DATE
+:akatsuki-parceler:processReleaseJavaRes UP-TO-DATE
+:akatsuki-parceler:compileReleaseJavaWithJavac UP-TO-DATE
+:akatsuki-parceler:packageReleaseJar UP-TO-DATE
+:akatsuki-parceler:compileReleaseNdk UP-TO-DATE
+:akatsuki-parceler:packageReleaseJniLibs UP-TO-DATE
+:akatsuki-parceler:packageReleaseLocalJar UP-TO-DATE
+:akatsuki-parceler:packageReleaseRenderscript UP-TO-DATE
+:akatsuki-parceler:bundleRelease UP-TO-DATE
+:akatsuki-parceler:javadoc UP-TO-DATE
+:akatsuki-parceler:javadocJar UP-TO-DATE
+:akatsuki-parceler:sourcesJar UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72300Library
+:sample:prepareComAndroidSupportSupportV42300Library
+:sample:prepareComSoraUtilAkatsukiAkatsukiParceler020Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavacNote: Processor started
+Note: VERBOSE:Processor context created...
+Note: VERBOSE:Begin processing round, roots: [com.sora.util.akatsuki.app.SerializeExampleFragment, com.sora.util.akatsuki.app.MainActivityFragment, com.sora.util.akatsuki.app.MainActivity, com.sora.util.akatsuki.app.LotsOfTypes, com.sora.util.akatsuki.app.InheritedArgRetainedFragment, com.sora.util.akatsuki.app.EmptyArgRetainedFragment, com.sora.util.akatsuki.app.BaseRetainedFragment, com.sora.util.akatsuki.app.ArgRetainedFragment, android.support.v7.appcompat.R, akatsuki.util.sora.com.akatsuki.R, akatsuki.util.sora.com.akatsuki.BuildConfig]
+Note: VERBOSE:Verifying configuration...
+Note: VERBOSE:Configuration loaded: Configuration{config=null, optFlags=[CLASS_LUT, VECTORIZE_INHERITANCE, CACHE_INSTANCES, TREE_COMPACTION], flags=[]}
+Note: VERBOSE:Building source tree...
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/SerializeExampleFragment.java:72: Note: VERBOSE:Element marked
+		@Retained int answer;
+		              ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/MainActivityFragment.java:24: Note: VERBOSE:Element marked
+	@Retained int theValue;
+	              ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/MainActivity.java:29: Note: VERBOSE:Element marked
+	@Retained @Arg String myString;
+	                      ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/MainActivity.java:30: Note: VERBOSE:Element marked
+	@Retained Float myFloat = 3F;
+	                ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/InheritedArgRetainedFragment.java:7: Note: VERBOSE:Element marked
+	@Arg String someString;
+	            ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/BaseRetainedFragment.java:15: Note: VERBOSE:Element marked
+	@Retained EssentialStuff stuff;
+	                         ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:39: Note: VERBOSE:Element marked
+			@Arg int x;
+			         ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:36: Note: VERBOSE:Element marked
+		@Arg int a;
+		         ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:13: Note: VERBOSE:Element marked
+	@Arg int a;
+	         ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:14: Note: VERBOSE:Element marked
+	@Arg double b;
+	            ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:15: Note: VERBOSE:Element marked
+	@Arg double c;
+	            ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:16: Note: VERBOSE:Element marked
+	@Arg(optional = true) int d;
+	                          ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:17: Note: VERBOSE:Element marked
+	@Arg(optional = true) int e;
+	                          ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:18: Note: VERBOSE:Element marked
+	@Arg boolean f;
+	             ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:19: Note: VERBOSE:Element marked
+	@Arg(optional = true) boolean g;
+	                              ^
+Note: VERBOSE:Source tree built
+Note: VERBOSE:Tree = SourceTreeModel{models=[SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.MainActivity, parent=null, children=[], fields=[FieldModel{element=myString, flags=[]}, FieldModel{element=myFloat, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.SerializeExampleFragment.BaseBean, parent=null, children=[com.sora.util.akatsuki.app.SerializeExampleFragment.NarratedBean], fields=[FieldModel{element=answer, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.ArgRetainedFragment.Arg2, parent=null, children=[], fields=[FieldModel{element=a, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.BaseRetainedFragment, parent=null, children=[com.sora.util.akatsuki.app.MainActivityFragment], fields=[FieldModel{element=stuff, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.InheritedArgRetainedFragment, parent=com.sora.util.akatsuki.app.ArgRetainedFragment, children=[], fields=[FieldModel{element=someString, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.ArgRetainedFragment.Arg2.Arg3, parent=null, children=[], fields=[FieldModel{element=x, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.ArgRetainedFragment, parent=null, children=[com.sora.util.akatsuki.app.InheritedArgRetainedFragment, com.sora.util.akatsuki.app.EmptyArgRetainedFragment], fields=[FieldModel{element=a, flags=[]}, FieldModel{element=b, flags=[]}, FieldModel{element=c, flags=[]}, FieldModel{element=d, flags=[]}, FieldModel{element=e, flags=[]}, FieldModel{element=f, flags=[]}, FieldModel{element=g, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.MainActivityFragment, parent=com.sora.util.akatsuki.app.BaseRetainedFragment, children=[], fields=[FieldModel{element=theValue, flags=[]}]}]}
+Note: VERBOSE:Resolving @TransformationTemplate...
+Note: VERBOSE:Found 1
+Note: VERBOSE:Resolving @DeclaredConverter...
+Note: VERBOSE:Found 1
+Note: VERBOSE:TypeAnalyzerResolver created...
+Note: VERBOSE:Generating classes for @Retained...
+Note: VERBOSE:Generated 4:
+Note: VERBOSE:	MainActivity$$BundleRetainer
+Note: VERBOSE:	SerializeExampleFragment$BaseBean$$BundleRetainer
+Note: VERBOSE:	BaseRetainedFragment$$BundleRetainer
+Note: VERBOSE:	MainActivityFragment$$BundleRetainer
+Note: VERBOSE:SAVE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.Float, refinedMirror=java.lang.Float} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.Float, refinedMirror=java.lang.Float} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:ConverterAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=com.sora.util.akatsuki.app.BaseRetainedFragment.EssentialStuff, refinedMirror=com.sora.util.akatsuki.app.BaseRetainedFragment.EssentialStuff} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:ConverterAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=com.sora.util.akatsuki.app.BaseRetainedFragment.EssentialStuff, refinedMirror=com.sora.util.akatsuki.app.BaseRetainedFragment.EssentialStuff} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:Generating additional classes for OptFlags.CLASS_LUT...
+Note: VERBOSE:Generating classes for @Arg...
+Note: VERBOSE:Generated 10:
+Note: VERBOSE:	MainActivityBuilder
+Note: VERBOSE:	SerializeExampleFragment$NarratedBeanBuilder
+Note: VERBOSE:	SerializeExampleFragment$BaseBeanBuilder
+Note: VERBOSE:	ArgRetainedFragment$Arg2Builder
+Note: VERBOSE:	MainActivityFragmentBuilder
+Note: VERBOSE:	BaseRetainedFragmentBuilder
+Note: VERBOSE:	InheritedArgRetainedFragmentBuilder
+Note: VERBOSE:	ArgRetainedFragment$Arg2$Arg3Builder
+Note: VERBOSE:	EmptyArgRetainedFragmentBuilder
+Note: VERBOSE:	ArgRetainedFragmentBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:test write : MainActivityBuilder
+Note: VERBOSE:RESTORE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:write: MainActivityBuilder
+Note: VERBOSE:direct parent:Optional[SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.SerializeExampleFragment.BaseBean, parent=null, children=[com.sora.util.akatsuki.app.SerializeExampleFragment.NarratedBean], fields=[FieldModel{element=answer, flags=[]}]}]
+Note: VERBOSE:Class discarded: SerializeExampleFragment$NarratedBeanBuilder
+Note: VERBOSE:test write : SerializeExampleFragment$NarratedBeanBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:Class discarded: SerializeExampleFragment$BaseBeanBuilder
+Note: VERBOSE:test write : SerializeExampleFragment$BaseBeanBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:test write : ArgRetainedFragment$Arg2Builder
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:write: ArgRetainedFragment$Arg2Builder
+Note: VERBOSE:direct parent:Optional[SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.BaseRetainedFragment, parent=null, children=[com.sora.util.akatsuki.app.MainActivityFragment], fields=[FieldModel{element=stuff, flags=[]}]}]
+Note: VERBOSE:Class discarded: MainActivityFragmentBuilder
+Note: VERBOSE:test write : MainActivityFragmentBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:Class discarded: BaseRetainedFragmentBuilder
+Note: VERBOSE:test write : BaseRetainedFragmentBuilder
+Note: VERBOSE:direct parent:Optional[SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.ArgRetainedFragment, parent=null, children=[com.sora.util.akatsuki.app.InheritedArgRetainedFragment, com.sora.util.akatsuki.app.EmptyArgRetainedFragment], fields=[FieldModel{element=a, flags=[]}, FieldModel{element=b, flags=[]}, FieldModel{element=c, flags=[]}, FieldModel{element=d, flags=[]}, FieldModel{element=e, flags=[]}, FieldModel{element=f, flags=[]}, FieldModel{element=g, flags=[]}]}]
+Note: VERBOSE:test write : InheritedArgRetainedFragmentBuilder
+Note: VERBOSE:RESTORE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:write: InheritedArgRetainedFragmentBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:test write : ArgRetainedFragment$Arg2$Arg3Builder
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:write: ArgRetainedFragment$Arg2$Arg3Builder
+Note: VERBOSE:direct parent:Optional[SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.ArgRetainedFragment, parent=null, children=[com.sora.util.akatsuki.app.InheritedArgRetainedFragment, com.sora.util.akatsuki.app.EmptyArgRetainedFragment], fields=[FieldModel{element=a, flags=[]}, FieldModel{element=b, flags=[]}, FieldModel{element=c, flags=[]}, FieldModel{element=d, flags=[]}, FieldModel{element=e, flags=[]}, FieldModel{element=f, flags=[]}, FieldModel{element=g, flags=[]}]}]
+Note: VERBOSE:test write : EmptyArgRetainedFragmentBuilder
+Note: VERBOSE:write: EmptyArgRetainedFragmentBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:test write : ArgRetainedFragmentBuilder
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=double, refinedMirror=double} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=double, refinedMirror=double} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=boolean, refinedMirror=boolean} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=boolean, refinedMirror=boolean} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=double, refinedMirror=double} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=double, refinedMirror=double} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=boolean, refinedMirror=boolean} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=boolean, refinedMirror=boolean} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:write: ArgRetainedFragmentBuilder
+Note: VERBOSE:Round finished
+Note: VERBOSE:Begin processing round, roots: [com.sora.util.akatsuki.app.MainActivity$$BundleRetainer, com.sora.util.akatsuki.app.SerializeExampleFragment$BaseBean$$BundleRetainer, com.sora.util.akatsuki.app.BaseRetainedFragment$$BundleRetainer, com.sora.util.akatsuki.app.MainActivityFragment$$BundleRetainer, com.sora.util.akatsuki.AkatsukiMapping, com.sora.util.akatsuki.app.Builders, com.sora.util.akatsuki.app.SerializeExampleFragment$$ViewBinder, com.sora.util.akatsuki.app.MainActivityFragment$$ViewBinder, com.sora.util.akatsuki.app.MainActivity$$ViewBinder]
+Note: VERBOSE:Verifying configuration...
+Note: VERBOSE:Configuration loaded: Configuration{config=null, optFlags=[CLASS_LUT, VECTORIZE_INHERITANCE, CACHE_INSTANCES, TREE_COMPACTION], flags=[]}
+Note: VERBOSE:Building source tree...
+Note: VERBOSE:Round has no elements, classes possibly originated from another annotation processor
+Note: VERBOSE:Round finished
+Note: VERBOSE:Begin processing round, roots: []
+Note: VERBOSE:Verifying configuration...
+Note: VERBOSE:Configuration loaded: Configuration{config=null, optFlags=[CLASS_LUT, VECTORIZE_INHERITANCE, CACHE_INSTANCES, TREE_COMPACTION], flags=[]}
+Note: VERBOSE:Building source tree...
+Note: VERBOSE:Round has no elements, classes possibly originated from another annotation processor
+Note: VERBOSE:Round finished
+Note: /tmp/rdisk/2230/src/sample/build/generated/source/apt/debug/com/sora/util/akatsuki/app/Builders.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:proguardDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavacNote: Processor started
+Note: VERBOSE:Processor context created...
+Note: VERBOSE:Begin processing round, roots: [com.sora.util.akatsuki.app.SerializeExampleFragment, com.sora.util.akatsuki.app.MainActivityFragment, com.sora.util.akatsuki.app.MainActivity, com.sora.util.akatsuki.app.LotsOfTypes, com.sora.util.akatsuki.app.InheritedArgRetainedFragment, com.sora.util.akatsuki.app.EmptyArgRetainedFragment, com.sora.util.akatsuki.app.BaseRetainedFragment, com.sora.util.akatsuki.app.ArgRetainedFragment, android.support.v7.appcompat.R, akatsuki.util.sora.com.akatsuki.R, akatsuki.util.sora.com.akatsuki.BuildConfig]
+Note: VERBOSE:Verifying configuration...
+Note: VERBOSE:Configuration loaded: Configuration{config=null, optFlags=[CLASS_LUT, VECTORIZE_INHERITANCE, CACHE_INSTANCES, TREE_COMPACTION], flags=[]}
+Note: VERBOSE:Building source tree...
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/SerializeExampleFragment.java:72: Note: VERBOSE:Element marked
+		@Retained int answer;
+		              ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/MainActivityFragment.java:24: Note: VERBOSE:Element marked
+	@Retained int theValue;
+	              ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/MainActivity.java:29: Note: VERBOSE:Element marked
+	@Retained @Arg String myString;
+	                      ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/MainActivity.java:30: Note: VERBOSE:Element marked
+	@Retained Float myFloat = 3F;
+	                ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/InheritedArgRetainedFragment.java:7: Note: VERBOSE:Element marked
+	@Arg String someString;
+	            ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/BaseRetainedFragment.java:15: Note: VERBOSE:Element marked
+	@Retained EssentialStuff stuff;
+	                         ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:39: Note: VERBOSE:Element marked
+			@Arg int x;
+			         ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:36: Note: VERBOSE:Element marked
+		@Arg int a;
+		         ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:13: Note: VERBOSE:Element marked
+	@Arg int a;
+	         ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:14: Note: VERBOSE:Element marked
+	@Arg double b;
+	            ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:15: Note: VERBOSE:Element marked
+	@Arg double c;
+	            ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:16: Note: VERBOSE:Element marked
+	@Arg(optional = true) int d;
+	                          ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:17: Note: VERBOSE:Element marked
+	@Arg(optional = true) int e;
+	                          ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:18: Note: VERBOSE:Element marked
+	@Arg boolean f;
+	             ^
+/tmp/rdisk/2230/src/sample/src/main/java/com/sora/util/akatsuki/app/ArgRetainedFragment.java:19: Note: VERBOSE:Element marked
+	@Arg(optional = true) boolean g;
+	                              ^
+Note: VERBOSE:Source tree built
+Note: VERBOSE:Tree = SourceTreeModel{models=[SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.MainActivity, parent=null, children=[], fields=[FieldModel{element=myString, flags=[]}, FieldModel{element=myFloat, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.SerializeExampleFragment.BaseBean, parent=null, children=[com.sora.util.akatsuki.app.SerializeExampleFragment.NarratedBean], fields=[FieldModel{element=answer, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.ArgRetainedFragment.Arg2, parent=null, children=[], fields=[FieldModel{element=a, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.BaseRetainedFragment, parent=null, children=[com.sora.util.akatsuki.app.MainActivityFragment], fields=[FieldModel{element=stuff, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.InheritedArgRetainedFragment, parent=com.sora.util.akatsuki.app.ArgRetainedFragment, children=[], fields=[FieldModel{element=someString, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.ArgRetainedFragment.Arg2.Arg3, parent=null, children=[], fields=[FieldModel{element=x, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.ArgRetainedFragment, parent=null, children=[com.sora.util.akatsuki.app.EmptyArgRetainedFragment, com.sora.util.akatsuki.app.InheritedArgRetainedFragment], fields=[FieldModel{element=a, flags=[]}, FieldModel{element=b, flags=[]}, FieldModel{element=c, flags=[]}, FieldModel{element=d, flags=[]}, FieldModel{element=e, flags=[]}, FieldModel{element=f, flags=[]}, FieldModel{element=g, flags=[]}]}, SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.MainActivityFragment, parent=com.sora.util.akatsuki.app.BaseRetainedFragment, children=[], fields=[FieldModel{element=theValue, flags=[]}]}]}
+Note: VERBOSE:Resolving @TransformationTemplate...
+Note: VERBOSE:Found 1
+Note: VERBOSE:Resolving @DeclaredConverter...
+Note: VERBOSE:Found 1
+Note: VERBOSE:TypeAnalyzerResolver created...
+Note: VERBOSE:Generating classes for @Retained...
+Note: VERBOSE:Generated 4:
+Note: VERBOSE:	MainActivity$$BundleRetainer
+Note: VERBOSE:	SerializeExampleFragment$BaseBean$$BundleRetainer
+Note: VERBOSE:	BaseRetainedFragment$$BundleRetainer
+Note: VERBOSE:	MainActivityFragment$$BundleRetainer
+Note: VERBOSE:SAVE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.Float, refinedMirror=java.lang.Float} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.Float, refinedMirror=java.lang.Float} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:ConverterAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=com.sora.util.akatsuki.app.BaseRetainedFragment.EssentialStuff, refinedMirror=com.sora.util.akatsuki.app.BaseRetainedFragment.EssentialStuff} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:ConverterAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=com.sora.util.akatsuki.app.BaseRetainedFragment.EssentialStuff, refinedMirror=com.sora.util.akatsuki.app.BaseRetainedFragment.EssentialStuff} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:Generating additional classes for OptFlags.CLASS_LUT...
+Note: VERBOSE:Generating classes for @Arg...
+Note: VERBOSE:Generated 10:
+Note: VERBOSE:	MainActivityBuilder
+Note: VERBOSE:	SerializeExampleFragment$NarratedBeanBuilder
+Note: VERBOSE:	SerializeExampleFragment$BaseBeanBuilder
+Note: VERBOSE:	ArgRetainedFragment$Arg2Builder
+Note: VERBOSE:	MainActivityFragmentBuilder
+Note: VERBOSE:	BaseRetainedFragmentBuilder
+Note: VERBOSE:	InheritedArgRetainedFragmentBuilder
+Note: VERBOSE:	ArgRetainedFragment$Arg2$Arg3Builder
+Note: VERBOSE:	EmptyArgRetainedFragmentBuilder
+Note: VERBOSE:	ArgRetainedFragmentBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:test write : MainActivityBuilder
+Note: VERBOSE:RESTORE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:write: MainActivityBuilder
+Note: VERBOSE:direct parent:Optional[SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.SerializeExampleFragment.BaseBean, parent=null, children=[com.sora.util.akatsuki.app.SerializeExampleFragment.NarratedBean], fields=[FieldModel{element=answer, flags=[]}]}]
+Note: VERBOSE:Class discarded: SerializeExampleFragment$NarratedBeanBuilder
+Note: VERBOSE:test write : SerializeExampleFragment$NarratedBeanBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:Class discarded: SerializeExampleFragment$BaseBeanBuilder
+Note: VERBOSE:test write : SerializeExampleFragment$BaseBeanBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:test write : ArgRetainedFragment$Arg2Builder
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:write: ArgRetainedFragment$Arg2Builder
+Note: VERBOSE:direct parent:Optional[SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.BaseRetainedFragment, parent=null, children=[com.sora.util.akatsuki.app.MainActivityFragment], fields=[FieldModel{element=stuff, flags=[]}]}]
+Note: VERBOSE:Class discarded: MainActivityFragmentBuilder
+Note: VERBOSE:test write : MainActivityFragmentBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:Class discarded: BaseRetainedFragmentBuilder
+Note: VERBOSE:test write : BaseRetainedFragmentBuilder
+Note: VERBOSE:direct parent:Optional[SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.ArgRetainedFragment, parent=null, children=[com.sora.util.akatsuki.app.EmptyArgRetainedFragment, com.sora.util.akatsuki.app.InheritedArgRetainedFragment], fields=[FieldModel{element=a, flags=[]}, FieldModel{element=b, flags=[]}, FieldModel{element=c, flags=[]}, FieldModel{element=d, flags=[]}, FieldModel{element=e, flags=[]}, FieldModel{element=f, flags=[]}, FieldModel{element=g, flags=[]}]}]
+Note: VERBOSE:test write : InheritedArgRetainedFragmentBuilder
+Note: VERBOSE:RESTORE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:ObjectTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=java.lang.String, refinedMirror=java.lang.String} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:write: InheritedArgRetainedFragmentBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:test write : ArgRetainedFragment$Arg2$Arg3Builder
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:write: ArgRetainedFragment$Arg2$Arg3Builder
+Note: VERBOSE:direct parent:Optional[SourceClassModel{enclosingClass=com.sora.util.akatsuki.app.ArgRetainedFragment, parent=null, children=[com.sora.util.akatsuki.app.EmptyArgRetainedFragment, com.sora.util.akatsuki.app.InheritedArgRetainedFragment], fields=[FieldModel{element=a, flags=[]}, FieldModel{element=b, flags=[]}, FieldModel{element=c, flags=[]}, FieldModel{element=d, flags=[]}, FieldModel{element=e, flags=[]}, FieldModel{element=f, flags=[]}, FieldModel{element=g, flags=[]}]}]
+Note: VERBOSE:test write : EmptyArgRetainedFragmentBuilder
+Note: VERBOSE:write: EmptyArgRetainedFragmentBuilder
+Note: VERBOSE:direct parent:Optional.empty
+Note: VERBOSE:test write : ArgRetainedFragmentBuilder
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=double, refinedMirror=double} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=double, refinedMirror=double} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=boolean, refinedMirror=boolean} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:RESTORE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=boolean, refinedMirror=boolean} with SimpleBundleContext{sourceObjectName=source, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=double, refinedMirror=double} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=double, refinedMirror=double} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=int, refinedMirror=int} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=boolean, refinedMirror=boolean} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:SAVE>0\Cascade:PrimitiveTypeAnalyzer{targetMirror=null, strategy=AUTO_CAST, suffix=} -> Element{keyNameTransformations=0, accessorExpression=, fieldMirror=boolean, refinedMirror=boolean} with SimpleBundleContext{sourceObjectName=, bundleObjectName=bundle}
+Note: VERBOSE:write: ArgRetainedFragmentBuilder
+Note: VERBOSE:Round finished
+Note: VERBOSE:Begin processing round, roots: [com.sora.util.akatsuki.app.MainActivity$$BundleRetainer, com.sora.util.akatsuki.app.SerializeExampleFragment$BaseBean$$BundleRetainer, com.sora.util.akatsuki.app.BaseRetainedFragment$$BundleRetainer, com.sora.util.akatsuki.app.MainActivityFragment$$BundleRetainer, com.sora.util.akatsuki.AkatsukiMapping, com.sora.util.akatsuki.app.Builders, com.sora.util.akatsuki.app.SerializeExampleFragment$$ViewBinder, com.sora.util.akatsuki.app.MainActivityFragment$$ViewBinder, com.sora.util.akatsuki.app.MainActivity$$ViewBinder]
+Note: VERBOSE:Verifying configuration...
+Note: VERBOSE:Configuration loaded: Configuration{config=null, optFlags=[CLASS_LUT, VECTORIZE_INHERITANCE, CACHE_INSTANCES, TREE_COMPACTION], flags=[]}
+Note: VERBOSE:Building source tree...
+Note: VERBOSE:Round has no elements, classes possibly originated from another annotation processor
+Note: VERBOSE:Round finished
+Note: VERBOSE:Begin processing round, roots: []
+Note: VERBOSE:Verifying configuration...
+Note: VERBOSE:Configuration loaded: Configuration{config=null, optFlags=[CLASS_LUT, VECTORIZE_INHERITANCE, CACHE_INSTANCES, TREE_COMPACTION], flags=[]}
+Note: VERBOSE:Building source tree...
+Note: VERBOSE:Round has no elements, classes possibly originated from another annotation processor
+Note: VERBOSE:Round finished
+Note: /tmp/rdisk/2230/src/sample/build/generated/source/apt/release/com/sora/util/akatsuki/app/Builders.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 33.247 secs
+
+2018-04-02 16:06:26,023 INFO  FullProcessService - Found APK file: /tmp/rdisk/2230/src/sample/build/outputs/apk/sample-release-unsigned.apk

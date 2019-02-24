@@ -1,0 +1,210 @@
+2018-04-03 11:17:37,071 INFO  DownloadService - Downloading "https://github.com/blundell/QuickSand/archive/master.zip", attempt 3
+2018-04-03 11:18:37,702 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 11:18:38,485 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 11:18:38,485 INFO  DownloadService - Downloading "https://github.com/blundell/QuickSand/archive/master.zip", attempt 3
+2018-04-03 11:19:39,740 DEBUG FullProcessService - Repository https://github.com/blundell/QuickSand available: true
+2018-04-03 11:19:39,740 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 11:19:39,740 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/blundell/QuickSand, /tmp/rdisk/2217/src]
+2018-04-03 11:19:41,938 INFO  SysUtils - 
+2018-04-03 11:19:41,942 INFO  GitService - Deleted "/tmp/rdisk/2217/src/.git": true
+2018-04-03 11:19:41,946 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-03 11:19:41,946 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2217/src]
+2018-04-03 11:19:41,951 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2217/src/.git/
+
+2018-04-03 11:19:41,954 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2217/src/gradlew
+2018-04-03 11:19:41,957 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2217/src/core/build.gradle /tmp/rdisk/2217/src/demo/build.gradle /tmp/rdisk/2217/src/build.gradle
+2018-04-03 11:19:41,960 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2217/src/settings.gradle /tmp/rdisk/2217/src/demo/build.gradle /tmp/rdisk/2217/src/core/build.gradle /tmp/rdisk/2217/src/build.gradle
+2018-04-03 11:19:41,960 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 11:19:41,960 INFO  ProjectFixService - Fixing project...
+2018-04-03 11:19:41,967 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2217/src/core/local.properties
+2018-04-03 11:19:41,967 INFO  ProjectFixService - Build info for "/tmp/rdisk/2217/src/core/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=19,targetSdkVersion=22]
+2018-04-03 11:19:41,968 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2217/src/demo/local.properties
+2018-04-03 11:19:41,968 INFO  ProjectFixService - Build info for "/tmp/rdisk/2217/src/demo/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=19,targetSdkVersion=22]
+2018-04-03 11:19:41,968 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2217/src/local.properties
+2018-04-03 11:19:41,968 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.7-all.zip
+2018-04-03 11:19:41,969 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.7-bin.zip)
+2018-04-03 11:19:41,969 INFO  ProjectFixService - Build info for "/tmp/rdisk/2217/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=19,targetSdkVersion=22]
+2018-04-03 11:19:41,969 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 11:19:41,970 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:19:41,970 INFO  SysUtils - Execute command: [/tmp/rdisk/2217/src/gradlew, -b, /tmp/rdisk/2217/src/core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:19:53,538 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 11:19:53,538 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 11:19:53,538 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 11:19:53,538 INFO  SysUtils - Execute command: [/tmp/rdisk/2217/src/gradlew, -b, /tmp/rdisk/2217/src/core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 11:20:18,098 INFO  SysUtils - Configuration on demand is an incubating feature.
+:core:compileLint
+:core:copyDebugLint UP-TO-DATE
+:core:mergeDebugProguardFiles
+:core:preBuild UP-TO-DATE
+:core:preDebugBuild UP-TO-DATE
+:core:checkDebugManifest
+:core:prepareDebugDependencies
+:core:compileDebugAidl
+:core:compileDebugRenderscript
+:core:generateDebugBuildConfig
+:core:generateDebugAssets UP-TO-DATE
+:core:mergeDebugAssets
+:core:generateDebugResValues
+:core:generateDebugResources
+:core:packageDebugResources
+:core:processDebugManifest
+:core:processDebugResources
+:core:generateDebugSources
+:core:processDebugJavaRes UP-TO-DATE
+:core:compileDebugJavaWithJavac
+:core:packageDebugJar
+:core:compileDebugNdk UP-TO-DATE
+:core:packageDebugJniLibs UP-TO-DATE
+:core:packageDebugLocalJar UP-TO-DATE
+:core:packageDebugRenderscript UP-TO-DATE
+:core:bundleDebug
+:core:compileDebugSources
+:core:assembleDebug
+:core:copyReleaseLint UP-TO-DATE
+:core:mergeReleaseProguardFiles
+:core:preReleaseBuild UP-TO-DATE
+:core:checkReleaseManifest
+:core:prepareReleaseDependencies
+:core:compileReleaseAidl
+:core:compileReleaseRenderscript
+:core:generateReleaseBuildConfig
+:core:generateReleaseAssets UP-TO-DATE
+:core:mergeReleaseAssets
+:core:generateReleaseResValues
+:core:generateReleaseResources
+:core:packageReleaseResources
+:core:processReleaseManifest
+:core:processReleaseResources
+:core:generateReleaseSources
+:core:processReleaseJavaRes UP-TO-DATE
+:core:compileReleaseJavaWithJavac
+:core:packageReleaseJar
+:core:compileReleaseNdk UP-TO-DATE
+:core:packageReleaseJniLibs UP-TO-DATE
+:core:packageReleaseLocalJar UP-TO-DATE
+:core:packageReleaseRenderscript UP-TO-DATE
+:core:bundleRelease
+:core:compileReleaseSources
+:core:assembleRelease
+:core:assemble
+:core:lint
+Ran lint on variant release: 2 issues found
+Ran lint on variant debug: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/2217/src/core/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2217/src/core/build/outputs/lint-results.xml
+:core:preDebugUnitTestBuild UP-TO-DATE
+:core:prepareDebugUnitTestDependencies
+:core:processDebugUnitTestJavaRes UP-TO-DATE
+:core:compileDebugUnitTestJavaWithJavac
+:core:compileDebugUnitTestSources
+:core:mockableAndroidJar
+:core:assembleDebugUnitTest
+:core:testDebugUnitTest
+:core:preReleaseUnitTestBuild UP-TO-DATE
+:core:prepareReleaseUnitTestDependencies
+:core:processReleaseUnitTestJavaRes UP-TO-DATE
+:core:compileReleaseUnitTestJavaWithJavac
+:core:compileReleaseUnitTestSources
+:core:assembleReleaseUnitTest
+:core:testReleaseUnitTest
+:core:test
+:core:check
+:core:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.147 secs
+
+2018-04-03 11:20:18,108 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:20:18,108 INFO  SysUtils - Execute command: [/tmp/rdisk/2217/src/gradlew, -b, /tmp/rdisk/2217/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:20:24,716 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-03 11:20:24,716 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 11:20:24,716 INFO  SysUtils - Execute command: [/tmp/rdisk/2217/src/gradlew, -b, /tmp/rdisk/2217/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 11:20:43,325 INFO  SysUtils - Configuration on demand is an incubating feature.
+:core:compileLint
+:core:copyReleaseLint UP-TO-DATE
+:core:mergeReleaseProguardFiles UP-TO-DATE
+:core:preBuild UP-TO-DATE
+:core:preReleaseBuild UP-TO-DATE
+:core:checkReleaseManifest
+:core:prepareReleaseDependencies
+:core:compileReleaseAidl UP-TO-DATE
+:core:compileReleaseRenderscript UP-TO-DATE
+:core:generateReleaseBuildConfig UP-TO-DATE
+:core:generateReleaseAssets UP-TO-DATE
+:core:mergeReleaseAssets UP-TO-DATE
+:core:generateReleaseResValues UP-TO-DATE
+:core:generateReleaseResources UP-TO-DATE
+:core:packageReleaseResources UP-TO-DATE
+:core:processReleaseManifest UP-TO-DATE
+:core:processReleaseResources UP-TO-DATE
+:core:generateReleaseSources UP-TO-DATE
+:core:processReleaseJavaRes UP-TO-DATE
+:core:compileReleaseJavaWithJavac UP-TO-DATE
+:core:packageReleaseJar UP-TO-DATE
+:core:compileReleaseNdk UP-TO-DATE
+:core:packageReleaseJniLibs UP-TO-DATE
+:core:packageReleaseLocalJar UP-TO-DATE
+:core:packageReleaseRenderscript UP-TO-DATE
+:core:bundleRelease UP-TO-DATE
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:demo:prepareComAndroidSupportSupportV42221Library
+:demo:prepareSrcCoreUnspecifiedLibrary
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:compileDebugJavaWithJavacNote: /tmp/rdisk/2217/src/demo/src/main/java/com/blundell/quicksand/demo/activitytransition/FromHereActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:demo:compileDebugNdk UP-TO-DATE
+:demo:compileDebugSources
+:demo:preDexDebug
+:demo:dexDebug
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:compileReleaseJavaWithJavacNote: /tmp/rdisk/2217/src/demo/src/main/java/com/blundell/quicksand/demo/activitytransition/FromHereActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:compileReleaseSources
+:demo:preDexRelease
+:demo:dexRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.19 secs
+
+2018-04-03 11:20:43,342 INFO  FullProcessService - Found APK file: /tmp/rdisk/2217/src/demo/build/outputs/apk/demo-release-unsigned.apk

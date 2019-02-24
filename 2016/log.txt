@@ -1,0 +1,122 @@
+2017-10-30 21:48:08,087 INFO  DownloadService - Downloading "https://github.com/rheinfabrik/Heimdall.droid/archive/master.zip", attempt 3
+2017-10-30 21:48:09,711 INFO  DownloadService - Downloaded https://github.com/rheinfabrik/Heimdall.droid/archive/master.zip, attempt 3
+2017-10-30 21:48:09,711 INFO  DownloadService - Size of file "/tmp/rdisk/2016/master.zip": 119 KB
+2017-10-30 21:48:09,711 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2017-10-30 21:48:09,712 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2016/master.zip: true
+2017-10-30 21:48:09,712 DEBUG ZipUtil - Extracting '/tmp/rdisk/2016/master.zip' into '/tmp/rdisk/2016/src'.
+2017-10-30 21:48:09,718 INFO  FullProcessService - Size of directory with sources: 162 KB
+2017-10-30 21:48:09,718 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2016/src]
+2017-10-30 21:48:09,721 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2016/src/.git/
+
+2017-10-30 21:48:09,722 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2016/src/Heimdall.droid-master/gradlew
+2017-10-30 21:48:09,723 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2016/src/Heimdall.droid-master/sample/build.gradle /tmp/rdisk/2016/src/Heimdall.droid-master/build.gradle /tmp/rdisk/2016/src/Heimdall.droid-master/library/build.gradle
+2017-10-30 21:48:09,724 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2016/src/Heimdall.droid-master/settings.gradle /tmp/rdisk/2016/src/Heimdall.droid-master/sample/build.gradle /tmp/rdisk/2016/src/Heimdall.droid-master/library/build.gradle /tmp/rdisk/2016/src/Heimdall.droid-master/build.gradle
+2017-10-30 21:48:09,724 INFO  ProjectBuildService - Remote scripts: none
+2017-10-30 21:48:09,724 INFO  ProjectFixService - Fixing project...
+2017-10-30 21:48:09,727 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2016/src/Heimdall.droid-master/sample/local.properties
+2017-10-30 21:48:09,727 INFO  ProjectFixService - Build info for "/tmp/rdisk/2016/src/Heimdall.droid-master/sample/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2017-10-30 21:48:09,727 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2016/src/Heimdall.droid-master/local.properties
+2017-10-30 21:48:09,728 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2017-10-30 21:48:09,728 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2017-10-30 21:48:09,728 INFO  ProjectFixService - Build info for "/tmp/rdisk/2016/src/Heimdall.droid-master/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2017-10-30 21:48:09,728 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2016/src/Heimdall.droid-master/library/local.properties
+2017-10-30 21:48:09,729 INFO  ProjectFixService - Build info for "/tmp/rdisk/2016/src/Heimdall.droid-master/library/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2017-10-30 21:48:09,729 INFO  ProjectFixService - Project was maybe fixed
+2017-10-30 21:48:09,729 INFO  ProjectTaskService - Detecting possible tasks...
+2017-10-30 21:48:09,729 INFO  SysUtils - Execute command: [/tmp/rdisk/2016/src/Heimdall.droid-master/gradlew, -b, /tmp/rdisk/2016/src/Heimdall.droid-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2017-10-30 21:48:23,087 INFO  ProjectTaskService - Detected possible tasks: 68
+2017-10-30 21:48:23,087 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2017-10-30 21:48:23,087 INFO  SysUtils - Execute command: [/tmp/rdisk/2016/src/Heimdall.droid-master/gradlew, -b, /tmp/rdisk/2016/src/Heimdall.droid-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2017-10-30 21:48:48,999 INFO  SysUtils - Configuration on demand is an incubating feature.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+:library:compileJava
+:library:compileGroovy UP-TO-DATE
+:library:compileRetrolambdaGroovyMain
+:library:compileRetrolambdaMain
+:library:processResources UP-TO-DATE
+:library:classes
+:library:jar
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72311Library
+:sample:prepareComAndroidSupportCardviewV72311Library
+:sample:prepareComAndroidSupportRecyclerviewV72311Library
+:sample:prepareComAndroidSupportSupportV42311Library
+:sample:prepareComJakewhartonRxbindingRxbinding030Library
+:sample:prepareComTrelloRxlifecycle040Library
+:sample:prepareComTrelloRxlifecycleComponents040Library
+:sample:prepareIoReactivexRxandroid110Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:incrementalDebugJavaCompilationSafeguard
+:sample:javaPreCompileDebug
+:sample:compileDebugJavaWithJavacNote: /tmp/rdisk/2016/src/Heimdall.droid-master/sample/src/main/java/de/rheinfabrik/heimdalldroid/actvities/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:transformClassesWithRetrolambdaForDebug
+:sample:transformClassesWithDexForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForDebug
+:sample:transformNativeLibsWithStripDebugSymbolForDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateSigningDebug
+:sample:packageDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:incrementalReleaseJavaCompilationSafeguard
+:sample:javaPreCompileRelease
+:sample:compileReleaseJavaWithJavacNote: /tmp/rdisk/2016/src/Heimdall.droid-master/sample/src/main/java/de/rheinfabrik/heimdalldroid/actvities/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:sample:transformClassesWithRetrolambdaForRelease
+:sample:transformClassesWithDexForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForRelease
+:sample:transformNativeLibsWithStripDebugSymbolForRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.634 secs
+
+2017-10-30 21:48:49,017 INFO  FullProcessService - Found APK file: /tmp/rdisk/2016/src/Heimdall.droid-master/sample/build/outputs/apk/sample-release-unsigned.apk

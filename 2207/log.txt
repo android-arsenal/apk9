@@ -1,0 +1,77 @@
+2018-05-20 23:24:11,720 INFO  DownloadService - Downloading "https://github.com/davideas/FlexibleAdapter/archive/master.zip", attempt 3
+2018-05-20 23:25:12,191 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 23:25:12,913 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 23:25:12,913 INFO  DownloadService - Downloading "https://github.com/davideas/FlexibleAdapter/archive/master.zip", attempt 3
+2018-05-20 23:26:14,388 DEBUG FullProcessService - Repository https://github.com/davideas/FlexibleAdapter available: true
+2018-05-20 23:26:14,388 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 23:26:14,388 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/davideas/FlexibleAdapter, /tmp/rdisk/2207/src]
+2018-05-20 23:26:16,830 INFO  SysUtils - 
+2018-05-20 23:26:16,843 INFO  GitService - Deleted "/tmp/rdisk/2207/src/.git": true
+2018-05-20 23:26:16,863 INFO  FullProcessService - Size of directory with sources: 5 MB
+2018-05-20 23:26:16,863 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2207/src]
+2018-05-20 23:26:16,874 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2207/src/.git/
+
+2018-05-20 23:26:16,885 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2207/src/gradlew
+2018-05-20 23:26:16,896 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2207/src/flexible-adapter-app/build.gradle /tmp/rdisk/2207/src/flexible-adapter-databinding/build.gradle /tmp/rdisk/2207/src/flexible-adapter-livedata/build.gradle /tmp/rdisk/2207/src/flexible-adapter-ui/build.gradle /tmp/rdisk/2207/src/flexible-adapter/build.gradle /tmp/rdisk/2207/src/build.gradle
+2018-05-20 23:26:16,907 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2207/src/settings.gradle /tmp/rdisk/2207/src/maven-publish.gradle /tmp/rdisk/2207/src/maven-install.gradle /tmp/rdisk/2207/src/jfrog-bintray-publish.gradle /tmp/rdisk/2207/src/jfrog-artifactory-publish.gradle /tmp/rdisk/2207/src/flexible-adapter/build.gradle /tmp/rdisk/2207/src/flexible-adapter-ui/build.gradle /tmp/rdisk/2207/src/flexible-adapter-livedata/build.gradle /tmp/rdisk/2207/src/flexible-adapter-databinding/build.gradle /tmp/rdisk/2207/src/flexible-adapter-app/build.gradle /tmp/rdisk/2207/src/build.gradle
+2018-05-20 23:26:16,908 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 23:26:16,908 INFO  ProjectFixService - Fixing project...
+2018-05-20 23:26:16,934 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2207/src/flexible-adapter-app/local.properties
+2018-05-20 23:26:16,943 INFO  ProjectFixService - Build info for "/tmp/rdisk/2207/src/flexible-adapter-app/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,943 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2207/src/flexible-adapter-app/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,944 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2207/src/flexible-adapter-databinding/local.properties
+2018-05-20 23:26:16,952 INFO  ProjectFixService - Build info for "/tmp/rdisk/2207/src/flexible-adapter-databinding/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,952 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2207/src/flexible-adapter-databinding/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,952 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2207/src/flexible-adapter-livedata/local.properties
+2018-05-20 23:26:16,960 INFO  ProjectFixService - Build info for "/tmp/rdisk/2207/src/flexible-adapter-livedata/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,960 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2207/src/flexible-adapter-livedata/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,961 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2207/src/flexible-adapter-ui/local.properties
+2018-05-20 23:26:16,969 INFO  ProjectFixService - Build info for "/tmp/rdisk/2207/src/flexible-adapter-ui/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,969 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2207/src/flexible-adapter-ui/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,969 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2207/src/flexible-adapter/local.properties
+2018-05-20 23:26:16,978 INFO  ProjectFixService - Build info for "/tmp/rdisk/2207/src/flexible-adapter/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,978 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2207/src/flexible-adapter/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,978 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2207/src/local.properties
+2018-05-20 23:26:16,978 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.6-all.zip
+2018-05-20 23:26:16,978 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.6-bin.zip)
+2018-05-20 23:26:16,981 INFO  ProjectFixService - Build info for "/tmp/rdisk/2207/src/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,981 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2207/src/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:26:16,981 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 23:26:16,981 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:26:16,982 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/flexible-adapter-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:26:17,214 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-20 23:26:17,214 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-20 23:26:17,214 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/flexible-adapter-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-20 23:26:17,225 INFO  SysUtils - 
+2018-05-20 23:26:17,237 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:26:17,237 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/flexible-adapter-databinding/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:26:17,241 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-20 23:26:17,241 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-20 23:26:17,241 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/flexible-adapter-databinding/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-20 23:26:17,244 INFO  SysUtils - 
+2018-05-20 23:26:17,255 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:26:17,255 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/flexible-adapter-livedata/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:26:17,265 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-20 23:26:17,265 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-20 23:26:17,265 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/flexible-adapter-livedata/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-20 23:26:17,270 INFO  SysUtils - 
+2018-05-20 23:26:17,281 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:26:17,281 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/flexible-adapter-ui/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:26:17,291 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-20 23:26:17,291 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-20 23:26:17,291 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/flexible-adapter-ui/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-20 23:26:17,295 INFO  SysUtils - 
+2018-05-20 23:26:17,306 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:26:17,306 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/flexible-adapter/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:26:17,315 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-20 23:26:17,315 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-20 23:26:17,315 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/flexible-adapter/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-20 23:26:17,318 INFO  SysUtils - 
+2018-05-20 23:26:17,329 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:26:17,329 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:26:17,340 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-20 23:26:17,340 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-20 23:26:17,340 INFO  SysUtils - Execute command: [/tmp/rdisk/2207/src/gradlew, -b, /tmp/rdisk/2207/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-20 23:26:17,343 INFO  SysUtils - 
+2018-05-20 23:26:17,354 ERROR FullProcessService - Project build has not produced APK file
+2018-05-20 23:26:17,365 ERROR FullProcessService - Could not find generated or existed APK file

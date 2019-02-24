@@ -1,0 +1,208 @@
+2018-05-11 11:32:22,343 INFO  DownloadService - Downloading "https://github.com/JakeWharton/ThreeTenABP/archive/master.zip", attempt 3
+2018-05-11 11:32:23,958 INFO  DownloadService - Downloaded https://github.com/JakeWharton/ThreeTenABP/archive/master.zip, attempt 3
+2018-05-11 11:32:23,958 INFO  DownloadService - Size of file "/tmp/rdisk/2087/master.zip": 115 KB
+2018-05-11 11:32:23,958 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:32:23,958 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2087/master.zip: true
+2018-05-11 11:32:23,958 DEBUG ZipUtil - Extracting '/tmp/rdisk/2087/master.zip' into '/tmp/rdisk/2087/src'.
+2018-05-11 11:32:23,966 INFO  FullProcessService - Size of directory with sources: 188 KB
+2018-05-11 11:32:23,966 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2087/src]
+2018-05-11 11:32:23,979 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2087/src/.git/
+
+2018-05-11 11:32:23,981 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2087/src/ThreeTenABP-master/gradlew
+2018-05-11 11:32:23,983 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2087/src/ThreeTenABP-master/sample/build.gradle /tmp/rdisk/2087/src/ThreeTenABP-master/threetenabp/build.gradle /tmp/rdisk/2087/src/ThreeTenABP-master/build.gradle
+2018-05-11 11:32:23,985 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2087/src/ThreeTenABP-master/threetenabp/build.gradle /tmp/rdisk/2087/src/ThreeTenABP-master/settings.gradle /tmp/rdisk/2087/src/ThreeTenABP-master/sample/build.gradle /tmp/rdisk/2087/src/ThreeTenABP-master/gradle/gradle-mvn-push.gradle /tmp/rdisk/2087/src/ThreeTenABP-master/build.gradle
+2018-05-11 11:32:23,986 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:32:23,986 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:32:23,998 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2087/src/ThreeTenABP-master/sample/local.properties
+2018-05-11 11:32:24,000 INFO  ProjectFixService - Build info for "/tmp/rdisk/2087/src/ThreeTenABP-master/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 11:32:24,001 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2087/src/ThreeTenABP-master/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 11:32:24,001 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2087/src/ThreeTenABP-master/threetenabp/local.properties
+2018-05-11 11:32:24,004 INFO  ProjectFixService - Build info for "/tmp/rdisk/2087/src/ThreeTenABP-master/threetenabp/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 11:32:24,004 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2087/src/ThreeTenABP-master/threetenabp/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 11:32:24,004 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2087/src/ThreeTenABP-master/local.properties
+2018-05-11 11:32:24,005 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.7-bin.zip
+2018-05-11 11:32:24,006 INFO  ProjectFixService - Build info for "/tmp/rdisk/2087/src/ThreeTenABP-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 11:32:24,007 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2087/src/ThreeTenABP-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-11 11:32:24,007 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:32:24,007 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:32:24,007 INFO  SysUtils - Execute command: [/tmp/rdisk/2087/src/ThreeTenABP-master/gradlew, -b, /tmp/rdisk/2087/src/ThreeTenABP-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:32:31,428 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 11:32:31,429 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 11:32:31,429 INFO  SysUtils - Execute command: [/tmp/rdisk/2087/src/ThreeTenABP-master/gradlew, -b, /tmp/rdisk/2087/src/ThreeTenABP-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 11:32:58,046 INFO  SysUtils - Configuration on demand is an incubating feature.
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:extractProguardFiles
+> Task :threetenabp:preBuild UP-TO-DATE
+> Task :threetenabp:preDebugBuild UP-TO-DATE
+> Task :threetenabp:checkDebugManifest
+> Task :threetenabp:processDebugManifest
+> Task :sample:preDebugBuild
+> Task :threetenabp:compileDebugAidl
+> Task :sample:compileDebugAidl
+> Task :threetenabp:packageDebugRenderscript NO-SOURCE
+> Task :sample:compileDebugRenderscript
+> Task :sample:checkDebugManifest
+> Task :sample:generateDebugBuildConfig
+> Task :sample:prepareLintJar
+> Task :sample:mainApkListPersistenceDebug
+> Task :sample:generateDebugResValues
+> Task :sample:generateDebugResources
+> Task :threetenabp:compileDebugRenderscript
+> Task :threetenabp:generateDebugResValues
+> Task :threetenabp:generateDebugResources
+> Task :threetenabp:packageDebugResources
+> Task :sample:mergeDebugResources
+> Task :sample:createDebugCompatibleScreenManifests
+> Task :sample:processDebugManifest
+> Task :sample:splitsDiscoveryTaskDebug
+> Task :threetenabp:generateDebugBuildConfig SKIPPED
+> Task :threetenabp:prepareLintJar
+> Task :threetenabp:javaPreCompileDebug
+> Task :threetenabp:processDebugJavaRes NO-SOURCE
+> Task :sample:compileDebugNdk NO-SOURCE
+> Task :sample:mergeDebugShaders
+> Task :sample:compileDebugShaders
+> Task :sample:generateDebugAssets
+> Task :threetenabp:mergeDebugShaders
+> Task :threetenabp:compileDebugShaders
+> Task :threetenabp:generateDebugAssets
+> Task :threetenabp:packageDebugAssets
+> Task :sample:mergeDebugAssets
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :threetenabp:mergeDebugConsumerProguardFiles
+> Task :sample:mergeDebugJniLibFolders
+> Task :threetenabp:compileDebugNdk NO-SOURCE
+> Task :threetenabp:mergeDebugJniLibFolders
+> Task :threetenabp:transformNativeLibsWithMergeJniLibsForDebug
+> Task :threetenabp:transformNativeLibsWithStripDebugSymbolForDebug
+> Task :threetenabp:transformNativeLibsWithIntermediateJniLibsForDebug
+> Task :sample:validateSigningDebug
+> Task :threetenabp:preReleaseBuild UP-TO-DATE
+> Task :threetenabp:checkReleaseManifest
+> Task :threetenabp:processReleaseManifest
+> Task :sample:preReleaseBuild
+> Task :threetenabp:compileReleaseAidl
+> Task :sample:compileReleaseAidl
+> Task :threetenabp:packageReleaseRenderscript NO-SOURCE
+> Task :sample:compileReleaseRenderscript
+> Task :sample:checkReleaseManifest
+> Task :sample:generateReleaseBuildConfig
+> Task :sample:mainApkListPersistenceRelease
+> Task :sample:generateReleaseResValues
+> Task :sample:generateReleaseResources
+> Task :threetenabp:compileReleaseRenderscript
+> Task :threetenabp:generateReleaseResValues
+> Task :threetenabp:generateReleaseResources
+> Task :threetenabp:packageReleaseResources
+> Task :sample:mergeReleaseResources
+> Task :sample:createReleaseCompatibleScreenManifests
+> Task :sample:processReleaseManifest
+> Task :sample:splitsDiscoveryTaskRelease
+> Task :threetenabp:generateReleaseBuildConfig SKIPPED
+> Task :threetenabp:javaPreCompileRelease
+> Task :threetenabp:processReleaseJavaRes NO-SOURCE
+> Task :sample:compileReleaseNdk NO-SOURCE
+> Task :sample:mergeReleaseShaders
+> Task :sample:compileReleaseShaders
+> Task :sample:generateReleaseAssets
+> Task :threetenabp:mergeReleaseShaders
+> Task :threetenabp:compileReleaseShaders
+> Task :threetenabp:generateReleaseAssets
+> Task :threetenabp:packageReleaseAssets
+> Task :sample:mergeReleaseAssets
+> Task :sample:mergeReleaseJniLibFolders
+> Task :threetenabp:compileReleaseNdk NO-SOURCE
+> Task :threetenabp:mergeReleaseJniLibFolders
+> Task :threetenabp:transformNativeLibsWithMergeJniLibsForRelease
+> Task :threetenabp:transformNativeLibsWithStripDebugSymbolForRelease
+> Task :threetenabp:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :threetenabp:platformAttrExtractor
+> Task :threetenabp:generateDebugRFile
+> Task :sample:processDebugResources
+> Task :sample:generateDebugSources
+> Task :threetenabp:generateDebugSources
+> Task :threetenabp:compileDebugJavaWithJavac
+> Task :threetenabp:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+> Task :sample:javaPreCompileDebug
+> Task :sample:compileDebugJavaWithJavac
+> Task :sample:compileDebugSources
+> Task :sample:transformResourcesWithMergeJavaResForDebug
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/org.threeten/threetenbp/1.3.6/f1e223783a2046337be2d9333c304522854fde9b/threetenbp-1.3.6-no-tzdb.jar] (filtered)
+Reading program jar [/tmp/rdisk/2087/src/ThreeTenABP-master/threetenabp/build/intermediates/intermediate-jars/debug/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/2087/src/ThreeTenABP-master/sample/build/intermediates/classes/debug] (filtered)
+Reading program jar [/tmp/rdisk/2087/src/ThreeTenABP-master/sample/build/intermediates/transforms/mergeJavaRes/debug/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    425
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/2087/src/ThreeTenABP-master/sample/build/outputs/mapping/debug/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 209
+  Final number of program classes:    129
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [/tmp/rdisk/2087/src/ThreeTenABP-master/sample/build/outputs/mapping/debug/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/2087/src/ThreeTenABP-master/sample/build/intermediates/transforms/proguard/debug/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/org.threeten/threetenbp/1.3.6/f1e223783a2046337be2d9333c304522854fde9b/threetenbp-1.3.6-no-tzdb.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2087/src/ThreeTenABP-master/threetenabp/build/intermediates/intermediate-jars/debug/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2087/src/ThreeTenABP-master/sample/build/intermediates/classes/debug] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2087/src/ThreeTenABP-master/sample/build/intermediates/transforms/mergeJavaRes/debug/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/2087/src/ThreeTenABP-master/sample/build/outputs/mapping/debug/dump.txt]...
+
+> Task :sample:transformClassesAndResourcesWithProguardForDebug
+Request to incrementing alive workforce from 0. Current workforce (dead or alive) 0
+thread-pool size=4
+
+> Task :sample:transformClassesWithDexBuilderForDebug
+> Task :sample:transformDexArchiveWithDexMergerForDebug
+> Task :sample:transformNativeLibsWithMergeJniLibsForDebug
+> Task :sample:transformNativeLibsWithStripDebugSymbolForDebug
+> Task :sample:packageDebug
+> Task :sample:assembleDebug
+> Task :threetenabp:generateReleaseRFile
+> Task :sample:processReleaseResources
+> Task :sample:generateReleaseSources
+> Task :threetenabp:generateReleaseSources
+> Task :threetenabp:compileReleaseJavaWithJavac
+> Task :threetenabp:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+> Task :sample:javaPreCompileRelease
+> Task :sample:compileReleaseJavaWithJavac
+> Task :sample:compileReleaseSources
+> Task :sample:lintVitalRelease
+> Task :sample:transformClassesWithDexBuilderForRelease
+> Task :sample:transformDexArchiveWithExternalLibsDexMergerForRelease
+> Task :sample:transformDexArchiveWithDexMergerForRelease
+> Task :sample:transformNativeLibsWithMergeJniLibsForRelease
+> Task :sample:transformNativeLibsWithStripDebugSymbolForRelease
+> Task :sample:transformResourcesWithMergeJavaResForRelease
+> Task :sample:packageRelease
+> Task :sample:assembleRelease
+> Task :sample:assemble
+> Task :sample:build
+
+BUILD SUCCESSFUL in 26s
+91 actionable tasks: 91 executed
+
+2018-05-11 11:32:58,072 INFO  FullProcessService - Found APK file: /tmp/rdisk/2087/src/ThreeTenABP-master/sample/build/outputs/apk/release/sample-release-unsigned.apk

@@ -1,0 +1,7 @@
+{
+  "auto.cursor" : [ "AutoCursor", "AutoCursor$Builder", "AutoCursor$Column", "AutoCursor$Validate" ],
+  "auto.cursor.sample" : [ "BuildConfig", "DetailActivity", "MainActivity", "MainActivity$1", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$mipmap", "R$string", "R$style", "SampleData" ],
+  "model1" : [ "HeightBucket" ],
+  "model2" : [ "Address", "Address$Builder", "AutoCursor_Address", "AutoCursor_Address$1", "AutoCursor_Address$Builder" ],
+  "model3" : [ "AutoCursor_Person", "AutoCursor_Person$1", "AutoCursor_Person$Builder", "Person", "Person$Builder" ]
+}

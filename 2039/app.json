@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "io.kimo.faker",
+    "label" : "Faker",
+    "icon" : "res/mipmap-hdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.7",
+    "versionCode" : 8,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-hdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAABSlBMVEUAAAD/lgD/lwD/mAD/lQD/lwD/lQD/kQD/mAD/lwD/lQD/kwD/lwD/lwD/ZgD/lwD/lwD/lgD/iQD/kgD/lgD/gAD/lwD/mAD/mAD/lwD/lwD/lgD/kgD/lwD/mAD/lwD/lwD/mAD/lwD/mAD/jgD/lwD/mAD/mAD/VQD/kgD/lgD/lwD/lwD/lwD/mAD/lwD/lwD/lwD/mAD/lwD/lgD/AAD/lwD/lwD/lwD/mAD/lQD/mAD/mAD/mAD/lwD/lwD/lAD/lwD/lgD/lQD/lwD/lwD/mAD/lwD/mAD/jwD/lwD/mAD/lwD/kgD/jwD/lQD/lgD/mAD/lwD/gAD/kgD/lwD/lwD/lwD/lwD/lQD/mAD/lwD/mAD/iwD/mAD/lwD/lgD/gAD/lwD/lgD/lwD/lwD/lgD/mAD/lwD/lwD/kwD/mAD/lwD/mACWCnS7AAAAbnRSTlMAZHEqDFYkHv/zSCjb7AXg+18NIyIKR/CoFsV6HGey9vHZqV4JbvyPAweh3+q1+mWYUfXiPQGHgIJ+Uv73VHOzJpucGPjTr+f5GYTIyQ4QMDjeoAQV6Yx/e0a3/UoLiNBEAp+GkL1mJcyRGrmTL59emR4AAAIISURBVFjD7ZhXU8JAFIVXRb02JIrGjgVQsKJgVIwdxAKo2HuJXf//q8mWwYnR7KrjjDN7XnLvJveb2Z0tJ4uQlJRdJaVlzi885RUinEqAqmqnFzW1UOcVAHnrAXwKTRoa/U00bFYBWoS61toGAO2oo7OrPmBG0N3T2xdEoTBA/4DYIEWiZvkgvNfQMMDIqPh4j4GDYuKc8nEn0ERcEJOYBGeFNTHQFHyqaRHOTNIqmVVVXxHgU9VZ65nU+TmNVbh0DqH5ImgeoTkcjC9wgxbhKxAs8XKWV0hBKp1eLYJW0+kUiTJrPx9ponVO0IYbaJMTlHEDZfg4WXBVlm9W51yV+JPdNaJroTzuWr+rcNfyIU2PfORsbVvTf6eA0Jr7GJkTqbBjLaPtLTtnd498ss8L2ifR3q4NpLBtMMEHSgzRULGBNPaNhw/kYeHBb4E0CZIgCZIgrEPangzygYJJGh7aQEe0PcW71VIfAEc20MAxbj455QWdnuDo+IPJPTs3TdHFJeIFocsL09WfnzkcbFf+HEGG3ThhYuBz/quvj8prN9A1r6WN3RjGLauKGqaiLLs1jJuY0NF/x0qxY1xg2Z2wFZCg/wgaZaX3VnbPMvEfvzitDGB3FwnQNC4M8j6QykeSPpLswStuTp+ereX5UiBZ4cVays9P3/K5r4pe+e4uQFde5c2KlLPeAJGdlfllFuQFAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1735,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"8\" android:versionName=\"1.0.7\" package=\"io.kimo.faker\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f08003e\" android:label=\"Faker\" android:icon=\"res/mipmap-hdpi-v4/ic_launcher.png\" android:name=\"io.kimo.faker.FakerApp\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Faker\" android:name=\"io.kimo.faker.ui.activity.MainActivity\" android:screenOrientation=\"portrait\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.mikepenz.aboutlibraries.ui.LibsActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2200896,
+  "crc32" : 2383121584,
+  "sha256" : "13abbe1601becb827a947340a3d718b98d68ef569cf8ce8f872b2fef4ef3a156",
+  "buildTime" : 1503379249000
+}

@@ -1,0 +1,274 @@
+2018-04-02 15:47:39,483 INFO  DownloadService - Downloading "https://github.com/tosslife/PullLoadView/archive/master.zip", attempt 3
+2018-04-02 15:48:39,981 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 15:48:41,375 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 15:48:41,376 INFO  DownloadService - Downloading "https://github.com/tosslife/PullLoadView/archive/master.zip", attempt 3
+2018-04-02 15:49:42,614 DEBUG FullProcessService - Repository https://github.com/tosslife/PullLoadView available: true
+2018-04-02 15:49:42,614 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 15:49:42,614 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/tosslife/PullLoadView, /tmp/rdisk/2237/src]
+2018-04-02 15:49:44,290 INFO  SysUtils - 
+2018-04-02 15:49:44,305 INFO  GitService - Deleted "/tmp/rdisk/2237/src/.git": true
+2018-04-02 15:49:44,308 INFO  FullProcessService - Size of directory with sources: 590 KB
+2018-04-02 15:49:44,308 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2237/src]
+2018-04-02 15:49:44,312 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2237/src/.git/
+
+2018-04-02 15:49:44,315 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2237/src/gradlew
+2018-04-02 15:49:44,318 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2237/src/pullloadview/build.gradle /tmp/rdisk/2237/src/simple/build.gradle /tmp/rdisk/2237/src/build.gradle
+2018-04-02 15:49:44,320 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2237/src/simple/build.gradle /tmp/rdisk/2237/src/settings.gradle /tmp/rdisk/2237/src/pullloadview/build.gradle /tmp/rdisk/2237/src/build.gradle
+2018-04-02 15:49:44,320 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 15:49:44,320 INFO  ProjectFixService - Fixing project...
+2018-04-02 15:49:44,327 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2237/src/pullloadview/local.properties
+2018-04-02 15:49:44,327 INFO  ProjectFixService - Build info for "/tmp/rdisk/2237/src/pullloadview/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 15:49:44,328 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2237/src/simple/local.properties
+2018-04-02 15:49:44,328 INFO  ProjectFixService - Build info for "/tmp/rdisk/2237/src/simple/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 15:49:44,328 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2237/src/local.properties
+2018-04-02 15:49:44,328 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 15:49:44,328 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 15:49:44,329 INFO  ProjectFixService - Build info for "/tmp/rdisk/2237/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 15:49:44,329 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 15:49:44,329 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:49:44,329 INFO  SysUtils - Execute command: [/tmp/rdisk/2237/src/gradlew, -b, /tmp/rdisk/2237/src/pullloadview/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:49:53,423 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 15:49:53,423 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 15:49:53,423 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 15:49:53,424 INFO  SysUtils - Execute command: [/tmp/rdisk/2237/src/gradlew, -b, /tmp/rdisk/2237/src/pullloadview/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 15:50:14,965 INFO  SysUtils - Configuration on demand is an incubating feature.
+:pullloadview:compileLint
+:pullloadview:copyDebugLint UP-TO-DATE
+:pullloadview:preBuild UP-TO-DATE
+:pullloadview:preDebugBuild UP-TO-DATE
+:pullloadview:checkDebugManifest
+:pullloadview:preDebugAndroidTestBuild UP-TO-DATE
+:pullloadview:preDebugUnitTestBuild UP-TO-DATE
+:pullloadview:preReleaseBuild UP-TO-DATE
+:pullloadview:preReleaseUnitTestBuild UP-TO-DATE
+:pullloadview:prepareComAndroidSupportAppcompatV72220Library
+:pullloadview:prepareComAndroidSupportRecyclerviewV72220Library
+:pullloadview:prepareComAndroidSupportSupportV42220Library
+:pullloadview:prepareDebugDependencies
+:pullloadview:compileDebugAidl
+:pullloadview:compileDebugRenderscript
+:pullloadview:generateDebugBuildConfig
+:pullloadview:generateDebugAssets UP-TO-DATE
+:pullloadview:mergeDebugAssets
+:pullloadview:generateDebugResValues
+:pullloadview:generateDebugResources
+:pullloadview:mergeDebugResources
+:pullloadview:processDebugManifest
+:pullloadview:processDebugResources
+:pullloadview:generateDebugSources
+:pullloadview:processDebugJavaRes UP-TO-DATE
+:pullloadview:compileDebugJava
+:pullloadview:extractDebugAnnotations
+:pullloadview:mergeDebugProguardFiles
+:pullloadview:packageDebugJar
+:pullloadview:compileDebugNdk UP-TO-DATE
+:pullloadview:packageDebugJniLibs UP-TO-DATE
+:pullloadview:packageDebugLocalJar UP-TO-DATE
+:pullloadview:packageDebugRenderscript UP-TO-DATE
+:pullloadview:packageDebugResources
+:pullloadview:bundleDebug
+:pullloadview:compileDebugSources
+:pullloadview:assembleDebug
+:pullloadview:copyReleaseLint UP-TO-DATE
+:pullloadview:checkReleaseManifest
+:pullloadview:prepareReleaseDependencies
+:pullloadview:compileReleaseAidl
+:pullloadview:compileReleaseRenderscript
+:pullloadview:generateReleaseBuildConfig
+:pullloadview:generateReleaseAssets UP-TO-DATE
+:pullloadview:mergeReleaseAssets
+:pullloadview:generateReleaseResValues
+:pullloadview:generateReleaseResources
+:pullloadview:mergeReleaseResources
+:pullloadview:processReleaseManifest
+:pullloadview:processReleaseResources
+:pullloadview:generateReleaseSources
+:pullloadview:processReleaseJavaRes UP-TO-DATE
+:pullloadview:compileReleaseJava
+:pullloadview:extractReleaseAnnotations
+:pullloadview:mergeReleaseProguardFiles
+:pullloadview:packageReleaseJar
+:pullloadview:compileReleaseNdk UP-TO-DATE
+:pullloadview:packageReleaseJniLibs UP-TO-DATE
+:pullloadview:packageReleaseLocalJar UP-TO-DATE
+:pullloadview:packageReleaseRenderscript UP-TO-DATE
+:pullloadview:packageReleaseResources
+:pullloadview:bundleRelease
+:pullloadview:compileReleaseSources
+:pullloadview:assembleRelease
+:pullloadview:javadoc/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/RecyclerViewPositionHelper.java:3: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.OrientationHelper;
+                                ^
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/RecyclerViewPositionHelper.java:4: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/RecyclerViewPositionHelper.java:7: error: package android.support.v7.widget does not exist
+import static android.support.v7.widget.RecyclerView.NO_POSITION;
+                                       ^
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/RecyclerViewPositionHelper.java:7: error: static import only from classes and interfaces
+import static android.support.v7.widget.RecyclerView.NO_POSITION;
+^
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/RecyclerViewPositionHelper.java:17: error: cannot find symbol
+    final RecyclerView recyclerView;
+          ^
+  symbol:   class RecyclerView
+  location: class RecyclerViewPositionHelper
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/RecyclerViewPositionHelper.java:18: error: package RecyclerView does not exist
+    final RecyclerView.LayoutManager layoutManager;
+                      ^
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/RecyclerViewPositionHelper.java:20: error: cannot find symbol
+    RecyclerViewPositionHelper(RecyclerView recyclerView) {
+                               ^
+  symbol:   class RecyclerView
+  location: class RecyclerViewPositionHelper
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/RecyclerViewPositionHelper.java:25: error: cannot find symbol
+    public static RecyclerViewPositionHelper createHelper(RecyclerView recyclerView) {
+                                                          ^
+  symbol:   class RecyclerView
+  location: class RecyclerViewPositionHelper
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/PullToLoadView.java:4: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.SwipeRefreshLayout;
+                                ^
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/PullToLoadView.java:5: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/PullToLoadView.java:16: error: cannot find symbol
+    private SwipeRefreshLayout mSwipeRefreshLayout;
+            ^
+  symbol:   class SwipeRefreshLayout
+  location: class PullToLoadView
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/PullToLoadView.java:17: error: cannot find symbol
+    private RecyclerView mRecyclerView;
+            ^
+  symbol:   class RecyclerView
+  location: class PullToLoadView
+/tmp/rdisk/2237/src/pullloadview/src/main/java/com/srx/widget/PullToLoadView.java:130: error: cannot find symbol
+    public RecyclerView getRecyclerView() {
+           ^
+  symbol:   class RecyclerView
+  location: class PullToLoadView
+
+13 warnings
+:pullloadview:javadocJar
+:pullloadview:sourcesJar
+:pullloadview:assemble
+:pullloadview:lint
+Ran lint on variant release: 5 issues found
+Ran lint on variant debug: 5 issues found
+Wrote HTML report to file:/tmp/rdisk/2237/src/pullloadview/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2237/src/pullloadview/build/outputs/lint-results.xml
+:pullloadview:preCompileDebugUnitTestJava
+:pullloadview:prepareDebugUnitTestDependencies
+:pullloadview:processDebugUnitTestJavaRes UP-TO-DATE
+:pullloadview:compileDebugUnitTestJava UP-TO-DATE
+:pullloadview:compileDebugUnitTestSources UP-TO-DATE
+:pullloadview:mockableAndroidJar
+:pullloadview:assembleDebugUnitTest
+:pullloadview:testDebug
+:pullloadview:preCompileReleaseUnitTestJava
+:pullloadview:prepareReleaseUnitTestDependencies
+:pullloadview:processReleaseUnitTestJavaRes UP-TO-DATE
+:pullloadview:compileReleaseUnitTestJava UP-TO-DATE
+:pullloadview:compileReleaseUnitTestSources UP-TO-DATE
+:pullloadview:assembleReleaseUnitTest
+:pullloadview:testRelease
+:pullloadview:test
+:pullloadview:check
+:pullloadview:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.088 secs
+
+2018-04-02 15:50:14,999 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:50:14,999 INFO  SysUtils - Execute command: [/tmp/rdisk/2237/src/gradlew, -b, /tmp/rdisk/2237/src/simple/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:50:21,837 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 15:50:21,837 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 15:50:21,837 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 15:50:21,838 INFO  SysUtils - Execute command: [/tmp/rdisk/2237/src/gradlew, -b, /tmp/rdisk/2237/src/simple/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 15:50:52,518 INFO  SysUtils - Configuration on demand is an incubating feature.
+:simple:preBuild UP-TO-DATE
+:simple:preDebugBuild UP-TO-DATE
+:simple:checkDebugManifest
+:simple:preReleaseBuild UP-TO-DATE
+:simple:prepareComAndroidSupportAppcompatV72220Library
+:simple:prepareComAndroidSupportRecyclerviewV72220Library
+:simple:prepareComAndroidSupportSupportV42220Library
+:simple:prepareComGithubTosslifePullloadview102Library
+:simple:prepareDebugDependencies
+:simple:compileDebugAidl
+:simple:compileDebugRenderscript
+:simple:generateDebugBuildConfig
+:simple:generateDebugAssets UP-TO-DATE
+:simple:mergeDebugAssets
+:simple:generateDebugResValues
+:simple:generateDebugResources
+:simple:mergeDebugResources
+:simple:processDebugManifest
+:simple:processDebugResources
+:simple:generateDebugSources
+:simple:processDebugJavaRes UP-TO-DATE
+:simple:compileDebugJava
+:simple:compileDebugNdk UP-TO-DATE
+:simple:compileDebugSources
+:simple:preDexDebug
+:simple:dexDebug
+:simple:validateDebugSigning
+:simple:packageDebug
+:simple:zipalignDebug
+:simple:assembleDebug
+:simple:checkReleaseManifest
+:simple:prepareReleaseDependencies
+:simple:compileReleaseAidl
+:simple:compileReleaseRenderscript
+:simple:generateReleaseBuildConfig
+:simple:generateReleaseAssets UP-TO-DATE
+:simple:mergeReleaseAssets
+:simple:generateReleaseResValues
+:simple:generateReleaseResources
+:simple:mergeReleaseResources
+:simple:processReleaseManifest
+:simple:processReleaseResources
+:simple:generateReleaseSources
+:simple:processReleaseJavaRes UP-TO-DATE
+:simple:compileReleaseJava
+:simple:compileReleaseNdk UP-TO-DATE
+:simple:compileReleaseSources
+:simple:lintVitalRelease SKIPPED
+:simple:preDexRelease
+:simple:dexRelease
+:simple:packageRelease
+:simple:assembleRelease
+:simple:assemble
+:simple:compileLint
+:simple:lint
+Ran lint on variant release: 7 issues found
+Ran lint on variant debug: 7 issues found
+Wrote HTML report to file:/tmp/rdisk/2237/src/simple/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2237/src/simple/build/outputs/lint-results.xml
+:simple:preCompileDebugUnitTestJava
+:simple:preDebugUnitTestBuild UP-TO-DATE
+:simple:prepareDebugUnitTestDependencies
+:simple:processDebugUnitTestJavaRes UP-TO-DATE
+:simple:compileDebugUnitTestJava UP-TO-DATE
+:simple:compileDebugUnitTestSources UP-TO-DATE
+:simple:mockableAndroidJar
+:simple:assembleDebugUnitTest
+:simple:testDebug
+:simple:preCompileReleaseUnitTestJava
+:simple:preReleaseUnitTestBuild UP-TO-DATE
+:simple:prepareReleaseUnitTestDependencies
+:simple:processReleaseUnitTestJavaRes UP-TO-DATE
+:simple:compileReleaseUnitTestJava UP-TO-DATE
+:simple:compileReleaseUnitTestSources UP-TO-DATE
+:simple:assembleReleaseUnitTest
+:simple:testRelease
+:simple:test
+:simple:check
+:simple:build
+
+BUILD SUCCESSFUL
+
+Total time: 30.213 secs
+
+2018-04-02 15:50:52,584 INFO  FullProcessService - Found APK file: /tmp/rdisk/2237/src/simple/build/outputs/apk/simple-release-unsigned.apk

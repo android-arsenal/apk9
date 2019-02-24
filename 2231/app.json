@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.konifar.example.fabtransformation",
+    "label" : "FabTransformation",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.0",
+    "versionCode" : 4,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1726,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"4\" android:versionName=\"1.0.0\" package=\"com.konifar.example.fabtransformation\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"22\" />\n\t<application android:theme=\"resourceId:0x7f0800aa\" android:label=\"FabTransformation\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"FabTransformation\" android:name=\"com.konifar.example.fabtransformation.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"FabTransformation\" android:name=\"com.konifar.example.fabtransformation.TransformToSheetActivity\" android:configChanges=\"0x4b0\" />\n\t\t<activity android:label=\"FabTransformation\" android:name=\"com.konifar.example.fabtransformation.TransformToToolbarActivity\" android:configChanges=\"0x4b0\" />\n\t\t<activity android:label=\"FabTransformation\" android:name=\"com.konifar.example.fabtransformation.TransformToPlayerActivity\" android:configChanges=\"0x4b0\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2006251,
+  "crc32" : 576683976,
+  "sha256" : "c3e42ff29dd992bde4bd974bf9f1e415ea2fb3d72b458525fad58ebabcdd3ad3",
+  "buildTime" : 1496784475000
+}

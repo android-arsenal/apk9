@@ -1,0 +1,212 @@
+2018-05-11 11:31:08,760 INFO  DownloadService - Downloading "https://github.com/jd-alexander/Google-Directions-Android/archive/master.zip", attempt 3
+2018-05-11 11:31:09,581 INFO  DownloadService - Downloaded https://github.com/jd-alexander/Google-Directions-Android/archive/master.zip, attempt 3
+2018-05-11 11:31:09,581 INFO  DownloadService - Size of file "/tmp/rdisk/2090/master.zip": 2 MB
+2018-05-11 11:31:09,581 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:31:09,582 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2090/master.zip: true
+2018-05-11 11:31:09,582 DEBUG ZipUtil - Extracting '/tmp/rdisk/2090/master.zip' into '/tmp/rdisk/2090/src'.
+2018-05-11 11:31:09,610 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-05-11 11:31:09,610 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2090/src]
+2018-05-11 11:31:09,618 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2090/src/.git/
+
+2018-05-11 11:31:09,620 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2090/src/Google-Directions-Android-master/gradlew
+2018-05-11 11:31:09,622 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2090/src/Google-Directions-Android-master/library/build.gradle /tmp/rdisk/2090/src/Google-Directions-Android-master/sample/build.gradle /tmp/rdisk/2090/src/Google-Directions-Android-master/build.gradle
+2018-05-11 11:31:09,624 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2090/src/Google-Directions-Android-master/settings.gradle /tmp/rdisk/2090/src/Google-Directions-Android-master/sample/build.gradle /tmp/rdisk/2090/src/Google-Directions-Android-master/library/build.gradle /tmp/rdisk/2090/src/Google-Directions-Android-master/build.gradle
+2018-05-11 11:31:09,625 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:31:09,625 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:31:09,630 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2090/src/Google-Directions-Android-master/library/local.properties
+2018-05-11 11:31:09,631 INFO  ProjectFixService - Build info for "/tmp/rdisk/2090/src/Google-Directions-Android-master/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=10,targetSdkVersion=22]
+2018-05-11 11:31:09,631 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2090/src/Google-Directions-Android-master/sample/local.properties
+2018-05-11 11:31:09,631 INFO  ProjectFixService - Build info for "/tmp/rdisk/2090/src/Google-Directions-Android-master/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-05-11 11:31:09,632 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2090/src/Google-Directions-Android-master/local.properties
+2018-05-11 11:31:09,632 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-11 11:31:09,632 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-11 11:31:09,633 INFO  ProjectFixService - Build info for "/tmp/rdisk/2090/src/Google-Directions-Android-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-05-11 11:31:09,633 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:31:09,633 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:31:09,634 INFO  SysUtils - Execute command: [/tmp/rdisk/2090/src/Google-Directions-Android-master/gradlew, -b, /tmp/rdisk/2090/src/Google-Directions-Android-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:31:20,682 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-05-11 11:31:20,682 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-05-11 11:31:20,682 INFO  SysUtils - Execute command: [/tmp/rdisk/2090/src/Google-Directions-Android-master/gradlew, -b, /tmp/rdisk/2090/src/Google-Directions-Android-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-05-11 11:31:30,684 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42300Library
+:library:prepareComGoogleAndroidGmsPlayServicesBase840Library
+:library:prepareComGoogleAndroidGmsPlayServicesBasement840Library
+:library:prepareComGoogleAndroidGmsPlayServicesMaps840Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJava
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:library:assembleRelease
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.567 secs
+
+2018-05-11 11:31:30,712 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:31:30,713 INFO  SysUtils - Execute command: [/tmp/rdisk/2090/src/Google-Directions-Android-master/gradlew, -b, /tmp/rdisk/2090/src/Google-Directions-Android-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:31:37,032 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-05-11 11:31:37,032 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-05-11 11:31:37,032 INFO  SysUtils - Execute command: [/tmp/rdisk/2090/src/Google-Directions-Android-master/gradlew, -b, /tmp/rdisk/2090/src/Google-Directions-Android-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-05-11 11:32:14,103 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42300Library UP-TO-DATE
+:library:prepareComGoogleAndroidGmsPlayServicesBase840Library UP-TO-DATE
+:library:prepareComGoogleAndroidGmsPlayServicesBasement840Library UP-TO-DATE
+:library:prepareComGoogleAndroidGmsPlayServicesMaps840Library UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72220Library
+:sample:prepareComAndroidSupportCardviewV72102Library
+:sample:prepareComAndroidSupportSupportV42300Library
+:sample:prepareComGithubJdAlexanderLibrary109Library
+:sample:prepareComGoogleAndroidGmsPlayServicesBase840Library
+:sample:prepareComGoogleAndroidGmsPlayServicesBasement840Library
+:sample:prepareComGoogleAndroidGmsPlayServicesLocation750Library
+:sample:prepareComGoogleAndroidGmsPlayServicesMaps840Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources/tmp/rdisk/2090/src/Google-Directions-Android-master/sample/src/main/res/drawable-xhdpi/pushpin.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJavaNote: /tmp/rdisk/2090/src/Google-Directions-Android-master/sample/src/main/java/com/directions/sample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2090/src/Google-Directions-Android-master/sample/src/main/java/com/directions/sample/PlaceAutoCompleteAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources/tmp/rdisk/2090/src/Google-Directions-Android-master/sample/src/main/res/drawable-xhdpi/pushpin.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJavaNote: /tmp/rdisk/2090/src/Google-Directions-Android-master/sample/src/main/java/com/directions/sample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2090/src/Google-Directions-Android-master/sample/src/main/java/com/directions/sample/PlaceAutoCompleteAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:lintVitalRelease
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 36.642 secs
+
+2018-05-11 11:32:14,182 INFO  FullProcessService - Found APK file: /tmp/rdisk/2090/src/Google-Directions-Android-master/sample/build/outputs/apk/sample-release-unsigned.apk

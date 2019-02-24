@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "rebus.header.view.sample",
+    "label" : "Header View",
+    "icon" : "res/mipmap-anydpi-v26/ic_launcher.xml",
+    "versionName" : "2.0.1",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "26",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 160,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABgFBMVEUAAABVVapAQL8AgIBDUa48VbM+T7kzTbM/UrQ/ULQ9UbU/UrI+UbI7TakAAABATaY+UbM9ULI+UbM9UbI8Ta0zPYU3RZg+ULI8TawrPXkvPI0+T7IqNXcpNHQzQIwoOXEuN3Y+ULE7TKkmLVpAQIAAAAA2RZsyQJAAAAAAAAAMEioyQY85S6c7TKo6Tak6S6cxQIwLESgAAAATFy4aIUYXHkITFy0AKysAAAAAAAAzM5k/UbQ/ULRTY7yEkM6KldBkc8Lv8Pj9/f3u7/djccGnr9zq7PbN0uulrdqxuN+1vOFHWLevtt+yueBEVbZUZL1WZb1VZb1FV7dodsPc3/Dj5vPf4vJ0gMhue8X09fr8/P319vr09Pl5hcqBjM1tesVNXrrk5vRXZr5WZr2ao9aSnNNKW7lLXLlYZ77l6PRsesVOXrqBjc3r7fZ6h8rw8fh1gsjh5PLl5/Td4PFmdMNGV7dXZ76nsNzp6/XL0OpmdMJkcsKGkc9UZLw/UbU+T7FNIXOYAAAAO3RSTlMAAwQCEx4dCpbo7ZaYmwEU6vn9/esZJe/wKibuKywoLRzs7SIECKquCQMrse7x8O6yLSFDTU1EBgsOBS3Ps0cAAAF0SURBVEjHY2CgF2BkIgAYUZQzMxM2ElkNkMnCyoYXsLKAlcHUs3NwchEAnNzscB3MDDzWNoQBLx9UAyMDv4CNoJAwXiAkaC0iygDxORODmLiNMCHzha0lJIFKIRqkpInSIIPQQJwNskNCg62dPSaws8WpwcHRCRtwdsGlwdXJzR0TuDl54NLg6eTljQm8nHxwa/C18fMPCAgIDELyri9+DcEhoaGhYeHEa4iIjIqOcYwlRYNbXER8AikaEpNQo4zaGpJTUtPgatNTUwIJaUABGZmRWTTUkB0fkZNLioa8/JjoKFI0FBQWFRUVlxCvoTSprKws2Q+/Bq9STIAntZY7VVRiggrc+aEqH2uOc6zGmacDa7Dk6ZraIVEukVoYyxFngzxUAyODgqI14QqlTkmZQQVaZamq1ddZ1+EF1nX16hrwOk5TS1tHV08XD9DT1Tcw1ERUoxpGxiameIGJmZEGckVtbmFJAFiYo1b+KlYEgArdWjEAHBxxvaMvlF4AAAAASUVORK5CYII="
+  },
+  "dexClasses" : 2593,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"2.0.1\" package=\"rebus.header.view.sample\" platformBuildVersionCode=\"26\" platformBuildVersionName=\"8.0.0\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"26\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f09003b\" android:label=\"Header View\" android:icon=\"res/mipmap-anydpi-v26/ic_launcher.xml\" android:name=\"rebus.header.view.sample.CustomApplication\" android:allowBackup=\"true\" android:supportsRtl=\"true\" android:roundIcon=\"res/mipmap-anydpi-v26/ic_launcher_round.xml\">\n\t\t<activity android:name=\"rebus.header.view.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<meta-data android:name=\"android.support.VERSION\" android:value=\"26.1.0\" />\n\t\t<meta-data android:name=\"android.arch.lifecycle.VERSION\" android:value=\"27.0.0-SNAPSHOT\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 7394120,
+  "crc32" : 290710673,
+  "sha256" : "58b022c855819434d6eb50a69001a2f5c436b9411a7b7440f0e6589bf873258f",
+  "buildTime" : 1508146745000
+}

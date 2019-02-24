@@ -1,0 +1,402 @@
+2018-04-10 06:48:40,131 INFO  DownloadService - Downloading "https://github.com/bingoogolapple/BGABadgeView-Android/archive/master.zip", attempt 3
+2018-04-10 06:49:40,761 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-10 06:49:41,573 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-10 06:49:41,573 INFO  DownloadService - Downloading "https://github.com/bingoogolapple/BGABadgeView-Android/archive/master.zip", attempt 3
+2018-04-10 06:50:42,810 DEBUG FullProcessService - Repository https://github.com/bingoogolapple/BGABadgeView-Android available: true
+2018-04-10 06:50:42,810 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-10 06:50:42,810 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/bingoogolapple/BGABadgeView-Android, /tmp/rdisk/2106/src]
+2018-04-10 06:50:44,311 INFO  SysUtils - 
+2018-04-10 06:50:44,316 INFO  GitService - Deleted "/tmp/rdisk/2106/src/.git": true
+2018-04-10 06:50:44,319 INFO  FullProcessService - Size of directory with sources: 249 KB
+2018-04-10 06:50:44,320 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2106/src]
+2018-04-10 06:50:44,324 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2106/src/.git/
+
+2018-04-10 06:50:44,327 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2106/src/gradlew
+2018-04-10 06:50:44,339 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2106/src/api/build.gradle /tmp/rdisk/2106/src/demo/build.gradle /tmp/rdisk/2106/src/build.gradle /tmp/rdisk/2106/src/annotation/build.gradle /tmp/rdisk/2106/src/compiler/build.gradle
+2018-04-10 06:50:44,341 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2106/src/settings.gradle /tmp/rdisk/2106/src/demo/build.gradle /tmp/rdisk/2106/src/compiler/build.gradle /tmp/rdisk/2106/src/build.gradle /tmp/rdisk/2106/src/api/build.gradle /tmp/rdisk/2106/src/annotation/build.gradle
+2018-04-10 06:50:44,342 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/bingoogolapple/PublishAar/master/local-release.gradle", attempt 3
+2018-04-10 06:51:44,344 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/bingoogolapple/PublishAar/master/local-release.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-10 06:51:44,344 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/bingoogolapple/PublishAar/master/jcenter-release.gradle", attempt 3
+2018-04-10 06:52:44,345 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/bingoogolapple/PublishAar/master/jcenter-release.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-10 06:52:44,345 INFO  ProjectBuildService - Remote scripts: none
+2018-04-10 06:52:44,345 INFO  ProjectFixService - Fixing project...
+2018-04-10 06:52:44,354 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2106/src/api/local.properties
+2018-04-10 06:52:44,356 INFO  ProjectFixService - Build info for "/tmp/rdisk/2106/src/api/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 06:52:44,356 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2106/src/api/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 06:52:44,357 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2106/src/demo/local.properties
+2018-04-10 06:52:44,359 INFO  ProjectFixService - Build info for "/tmp/rdisk/2106/src/demo/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 06:52:44,359 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2106/src/demo/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 06:52:44,360 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2106/src/local.properties
+2018-04-10 06:52:44,360 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-10 06:52:44,361 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-10 06:52:44,363 INFO  ProjectFixService - Build info for "/tmp/rdisk/2106/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 06:52:44,363 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2106/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 06:52:44,363 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2106/src/annotation/local.properties
+2018-04-10 06:52:44,366 INFO  ProjectFixService - Build info for "/tmp/rdisk/2106/src/annotation/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 06:52:44,366 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2106/src/annotation/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 06:52:44,366 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2106/src/compiler/local.properties
+2018-04-10 06:52:44,369 INFO  ProjectFixService - Build info for "/tmp/rdisk/2106/src/compiler/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 06:52:44,369 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2106/src/compiler/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 06:52:44,369 INFO  ProjectFixService - Project was maybe fixed
+2018-04-10 06:52:44,369 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 06:52:44,369 INFO  SysUtils - Execute command: [/tmp/rdisk/2106/src/gradlew, -b, /tmp/rdisk/2106/src/api/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 06:52:55,177 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-10 06:52:55,177 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-10 06:52:55,177 INFO  SysUtils - Execute command: [/tmp/rdisk/2106/src/gradlew, -b, /tmp/rdisk/2106/src/api/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-10 06:53:12,019 INFO  SysUtils - Configuration on demand is an incubating feature.
+:api:preBuild UP-TO-DATE
+:api:preDebugBuild UP-TO-DATE
+:api:compileDebugAidl
+:api:compileDebugNdk NO-SOURCE
+:annotation:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:annotation:processResources NO-SOURCE
+:annotation:classes
+:annotation:jar
+:api:compileDebugRenderscript
+:api:checkDebugManifest
+:api:generateDebugBuildConfig
+:api:prepareLintJar
+:api:generateDebugResValues
+:api:generateDebugResources
+:api:packageDebugResources
+:api:platformAttrExtractor
+:api:processDebugManifest
+:api:javaPreCompileDebug
+:api:processDebugResources
+:api:generateDebugSources
+:api:compileDebugJavaWithJavacNote: /tmp/rdisk/2106/src/api/src/main/java/cn/bingoogolapple/badgeview/BGADragBadgeView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:api:extractDebugAnnotations
+:api:mergeDebugShaders
+:api:compileDebugShaders
+:api:generateDebugAssets
+:api:mergeDebugAssets
+:api:mergeDebugConsumerProguardFiles
+:api:packageDebugRenderscript NO-SOURCE
+:api:processDebugJavaRes NO-SOURCE
+:api:transformResourcesWithMergeJavaResForDebug
+:api:transformClassesAndResourcesWithSyncLibJarsForDebug
+:api:mergeDebugJniLibFolders
+:api:transformNativeLibsWithMergeJniLibsForDebug
+:api:transformNativeLibsWithStripDebugSymbolForDebug
+:api:transformNativeLibsWithSyncJniLibsForDebug
+:api:bundleDebug
+:api:compileDebugSources
+:api:assembleDebug
+:api:preReleaseBuild UP-TO-DATE
+:api:compileReleaseAidl
+:api:compileReleaseNdk NO-SOURCE
+:api:compileReleaseRenderscript
+:api:checkReleaseManifest
+:api:generateReleaseBuildConfig
+:api:generateReleaseResValues
+:api:generateReleaseResources
+:api:packageReleaseResources
+:api:processReleaseManifest
+:api:processReleaseResources
+:api:generateReleaseSources
+:api:javaPreCompileRelease
+:api:compileReleaseJavaWithJavacNote: /tmp/rdisk/2106/src/api/src/main/java/cn/bingoogolapple/badgeview/BGADragBadgeView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:api:extractReleaseAnnotations
+:api:mergeReleaseShaders
+:api:compileReleaseShaders
+:api:generateReleaseAssets
+:api:mergeReleaseAssets
+:api:mergeReleaseConsumerProguardFiles
+:api:packageReleaseRenderscript NO-SOURCE
+:api:processReleaseJavaRes NO-SOURCE
+:api:transformResourcesWithMergeJavaResForRelease
+:api:transformClassesAndResourcesWithSyncLibJarsForRelease
+:api:mergeReleaseJniLibFolders
+:api:transformNativeLibsWithMergeJniLibsForRelease
+:api:transformNativeLibsWithStripDebugSymbolForRelease
+:api:transformNativeLibsWithSyncJniLibsForRelease
+:api:bundleRelease
+:api:compileReleaseSources
+:api:mergeReleaseResources
+:api:verifyReleaseResources
+:api:assembleRelease
+:api:assemble
+:api:build
+
+BUILD SUCCESSFUL in 16s
+50 actionable tasks: 50 executed
+
+2018-04-10 06:53:12,030 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 06:53:12,030 INFO  SysUtils - Execute command: [/tmp/rdisk/2106/src/gradlew, -b, /tmp/rdisk/2106/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 06:53:21,074 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-10 06:53:21,074 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-10 06:53:21,074 INFO  SysUtils - Execute command: [/tmp/rdisk/2106/src/gradlew, -b, /tmp/rdisk/2106/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-10 06:54:14,509 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild
+Download https://jcenter.bintray.com/cn/bingoogolapple/bga-badgeview-api/1.1.8/bga-badgeview-api-1.1.8.pom
+Download https://jcenter.bintray.com/cn/bingoogolapple/bga-badgeview-annotation/1.1.8/bga-badgeview-annotation-1.1.8.pom
+Download https://jcenter.bintray.com/cn/bingoogolapple/bga-badgeview-api/1.1.8/bga-badgeview-api-1.1.8.aar
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:checkDebugManifest
+:demo:generateDebugBuildConfig
+:demo:prepareLintJar
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:createDebugCompatibleScreenManifests
+:demo:processDebugManifest
+:demo:splitsDiscoveryTaskDebug
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:javaPreCompileDebug
+Download https://jcenter.bintray.com/cn/bingoogolapple/bga-badgeview-compiler/1.1.8/bga-badgeview-compiler-1.1.8.pom
+Download https://jcenter.bintray.com/cn/bingoogolapple/bga-badgeview-compiler/1.1.8/bga-badgeview-compiler-1.1.8.jar
+Download https://jcenter.bintray.com/cn/bingoogolapple/bga-badgeview-annotation/1.1.8/bga-badgeview-annotation-1.1.8.jar
+:demo:compileDebugJavaWithJavacNote: ====================================== BGABadgeProcessor process START ======================================
+Note: 生成 8 个
+Note: android.widget.LinearLayout ====> BGABadgeLinearLayout
+Note: android.widget.TextView ====> BGABadgeTextView
+Note: android.support.design.widget.FloatingActionButton ====> BGABadgeFloatingActionButton
+Note: android.widget.ImageView ====> BGABadgeImageView
+Note: android.widget.RadioButton ====> BGABadgeRadioButton
+Note: android.widget.FrameLayout ====> BGABadgeFrameLayout
+Note: android.view.View ====> BGABadgeView
+Note: android.widget.RelativeLayout ====> BGABadgeRelativeLayout
+Note: ====================================== BGABadgeProcessor process END ======================================
+
+:demo:compileDebugNdk NO-SOURCE
+:demo:compileDebugSources
+:demo:mergeDebugShaders
+:demo:compileDebugShaders
+:demo:generateDebugAssets
+:demo:mergeDebugAssets
+:demo:transformClassesWithDexBuilderForDebug
+:demo:transformDexArchiveWithExternalLibsDexMergerForDebug
+:demo:transformDexArchiveWithDexMergerForDebug
+:demo:mergeDebugJniLibFolders
+:demo:transformNativeLibsWithMergeJniLibsForDebug
+:demo:transformNativeLibsWithStripDebugSymbolForDebug
+:demo:processDebugJavaRes NO-SOURCE
+:demo:transformResourcesWithMergeJavaResForDebug
+:demo:validateSigningDebug
+:demo:packageDebug
+:demo:assembleDebug
+:demo:extractProguardFiles
+:demo:preReleaseBuild
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:checkReleaseManifest
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:createReleaseCompatibleScreenManifests
+:demo:processReleaseManifest
+:demo:splitsDiscoveryTaskRelease
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:javaPreCompileRelease
+:demo:compileReleaseJavaWithJavacNote: ====================================== BGABadgeProcessor process START ======================================
+Note: 生成 8 个
+Note: android.widget.LinearLayout ====> BGABadgeLinearLayout
+Note: android.widget.TextView ====> BGABadgeTextView
+Note: android.support.design.widget.FloatingActionButton ====> BGABadgeFloatingActionButton
+Note: android.widget.ImageView ====> BGABadgeImageView
+Note: android.widget.RadioButton ====> BGABadgeRadioButton
+Note: android.widget.FrameLayout ====> BGABadgeFrameLayout
+Note: android.view.View ====> BGABadgeView
+Note: android.widget.RelativeLayout ====> BGABadgeRelativeLayout
+Note: ====================================== BGABadgeProcessor process END ======================================
+
+:demo:compileReleaseNdk NO-SOURCE
+:demo:compileReleaseSources
+:demo:lintVitalRelease
+:demo:mergeReleaseShaders
+:demo:compileReleaseShaders
+:demo:generateReleaseAssets
+:demo:mergeReleaseAssets
+:demo:processReleaseJavaRes NO-SOURCE
+:demo:transformResourcesWithMergeJavaResForRelease
+:demo:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/bga-badgeview-api-1.1.8.aar/95687c979621d99c9d4ccfbd2bb663ee/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/9703cf805dc20fad1be7122d603a2034/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/d17c40786a7e32e5a614f5eb961c066d/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/bga-baseadapter-1.2.9.aar/727fc16a70e949dc872be61ad36bab4f/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/cn.bingoogolapple/bga-badgeview-annotation/1.1.8/3794a80e09c7f3c82575bbef12b49c14d90191ab/bga-badgeview-annotation-1.1.8.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/adapters-1.3.1.aar/ed857d1f2070a502f74de07cb04fc423/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/b38e3cd8b7b44ea0c1f93d676ee224ee/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/8dcf1fcc0be84ebdee30085c14a05b9f/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/2b67f6876f6190679fbff5b1d35a9c9b/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/cdf9829b0b6186650400b56c4c83854c/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/79d894f6d2c72dd5fb62b3fb74ab7ad7/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/bfac18dd5efc6f6b6848a4a2cc478b79/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/0b1ae11e6d7a7395514587f6b23ab021/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/9903f7d1fdf6d2512c5d33144679a8a8/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/9a15d26b078e9c50c554967ed360bec0/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/94f6f8dacb75d6a08be5678599f4a2d8/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f0e24d47a76adf888e52587598a479b7/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.0.1/cc0483d84342e82c261aeb5fd0ef2f876b587489/baseLibrary-3.0.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/23a00be05709f1c83c7d712545241320/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar] (filtered)
+Reading program directory [/tmp/rdisk/2106/src/demo/build/intermediates/classes/release] (filtered)
+Reading program jar [/tmp/rdisk/2106/src/demo/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: cn.bingoogolapple.baseadapter.BGABaseAdapterUtil: can't find dynamically referenced class android.app.AppGlobals
+Note: cn.bingoogolapple.baseadapter.BGABaseAdapterUtil: can't find dynamically referenced class android.app.ActivityThread
+Note: the configuration keeps the entry point 'cn.bingoogolapple.badgeview.BGABadgeFloatingActionButton { void setDragDismissDelegate(cn.bingoogolapple.badgeview.BGADragDismissDelegate); }', but not the descriptor class 'cn.bingoogolapple.badgeview.BGADragDismissDelegate'
+Note: the configuration keeps the entry point 'cn.bingoogolapple.badgeview.BGABadgeFrameLayout { void setDragDismissDelegate(cn.bingoogolapple.badgeview.BGADragDismissDelegate); }', but not the descriptor class 'cn.bingoogolapple.badgeview.BGADragDismissDelegate'
+Note: the configuration keeps the entry point 'cn.bingoogolapple.badgeview.BGABadgeImageView { void setDragDismissDelegate(cn.bingoogolapple.badgeview.BGADragDismissDelegate); }', but not the descriptor class 'cn.bingoogolapple.badgeview.BGADragDismissDelegate'
+Note: the configuration keeps the entry point 'cn.bingoogolapple.badgeview.BGABadgeLinearLayout { void setDragDismissDelegate(cn.bingoogolapple.badgeview.BGADragDismissDelegate); }', but not the descriptor class 'cn.bingoogolapple.badgeview.BGADragDismissDelegate'
+Note: the configuration keeps the entry point 'cn.bingoogolapple.badgeview.BGABadgeRadioButton { void setDragDismissDelegate(cn.bingoogolapple.badgeview.BGADragDismissDelegate); }', but not the descriptor class 'cn.bingoogolapple.badgeview.BGADragDismissDelegate'
+Note: the configuration keeps the entry point 'cn.bingoogolapple.badgeview.BGABadgeRelativeLayout { void setDragDismissDelegate(cn.bingoogolapple.badgeview.BGADragDismissDelegate); }', but not the descriptor class 'cn.bingoogolapple.badgeview.BGADragDismissDelegate'
+Note: the configuration keeps the entry point 'cn.bingoogolapple.badgeview.BGABadgeTextView { void setDragDismissDelegate(cn.bingoogolapple.badgeview.BGADragDismissDelegate); }', but not the descriptor class 'cn.bingoogolapple.badgeview.BGADragDismissDelegate'
+Note: the configuration keeps the entry point 'cn.bingoogolapple.badgeview.BGABadgeView { void setDragDismissDelegate(cn.bingoogolapple.badgeview.BGADragDismissDelegate); }', but not the descriptor class 'cn.bingoogolapple.badgeview.BGADragDismissDelegate'
+Note: the configuration keeps the entry point 'cn.bingoogolapple.baseadapter.BGAEmptyView { void setDelegate(cn.bingoogolapple.baseadapter.BGAEmptyView$Delegate); }', but not the descriptor class 'cn.bingoogolapple.baseadapter.BGAEmptyView$Delegate'
+Note: there were 9 unkept descriptor classes in kept class members.
+      You should consider explicitly keeping the mentioned classes
+      (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+Note: there were 2 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    1141
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/2106/src/demo/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 2280
+  Final number of program classes:    1047
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [/tmp/rdisk/2106/src/demo/build/outputs/mapping/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/2106/src/demo/build/intermediates/transforms/proguard/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/bga-badgeview-api-1.1.8.aar/95687c979621d99c9d4ccfbd2bb663ee/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/9703cf805dc20fad1be7122d603a2034/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/d17c40786a7e32e5a614f5eb961c066d/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/bga-baseadapter-1.2.9.aar/727fc16a70e949dc872be61ad36bab4f/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/cn.bingoogolapple/bga-badgeview-annotation/1.1.8/3794a80e09c7f3c82575bbef12b49c14d90191ab/bga-badgeview-annotation-1.1.8.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/adapters-1.3.1.aar/ed857d1f2070a502f74de07cb04fc423/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/b38e3cd8b7b44ea0c1f93d676ee224ee/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/8dcf1fcc0be84ebdee30085c14a05b9f/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/2b67f6876f6190679fbff5b1d35a9c9b/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/cdf9829b0b6186650400b56c4c83854c/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/79d894f6d2c72dd5fb62b3fb74ab7ad7/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/bfac18dd5efc6f6b6848a4a2cc478b79/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/0b1ae11e6d7a7395514587f6b23ab021/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/9903f7d1fdf6d2512c5d33144679a8a8/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/9a15d26b078e9c50c554967ed360bec0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/94f6f8dacb75d6a08be5678599f4a2d8/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f0e24d47a76adf888e52587598a479b7/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.0.1/cc0483d84342e82c261aeb5fd0ef2f876b587489/baseLibrary-3.0.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/23a00be05709f1c83c7d712545241320/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2106/src/demo/build/intermediates/classes/release] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2106/src/demo/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/2106/src/demo/build/outputs/mapping/release/dump.txt]...
+:demo:transformClassesWithDexForRelease
+:demo:mergeReleaseJniLibFolders
+:demo:transformNativeLibsWithMergeJniLibsForRelease
+:demo:transformNativeLibsWithStripDebugSymbolForRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL in 52s
+51 actionable tasks: 51 executed
+
+2018-04-10 06:54:14,566 INFO  FullProcessService - Found APK file: /tmp/rdisk/2106/src/demo/build/outputs/apk/release/demo-release-unsigned.apk

@@ -1,0 +1,45 @@
+2016-08-24 01:44:39,532 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/aNNiMON/Lightweight-Stream-API/archive/master.zip", attempt 3
+2016-08-24 01:44:42,688 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/aNNiMON/Lightweight-Stream-API/archive/master.zip, attempt 3
+2016-08-24 01:44:43,288 DEBUG o.z.z.ZipUtil - Extracting '/tmp/rdisk/2184/master.zip' into '/tmp/rdisk/2184/src'.
+2016-08-24 01:44:43,386 INFO  c.g.v.a.s.FullProcessService - Size of directory with sources: 467 KB
+2016-08-24 01:44:43,393 INFO  c.g.v.a.u.SysUtils - Execute command: [git, init, /tmp/rdisk/2184/src]
+2016-08-24 01:44:43,568 INFO  c.g.v.a.s.a.ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2184/src/Lightweight-Stream-API-master/gradlew
+2016-08-24 01:44:43,587 INFO  c.g.v.a.s.a.ProjectBuildService - Build script(s): /tmp/rdisk/2184/src/Lightweight-Stream-API-master/build.gradle /tmp/rdisk/2184/src/Lightweight-Stream-API-master/stream/build.gradle /tmp/rdisk/2184/src/Lightweight-Stream-API-master/streamTest/build.gradle
+2016-08-24 01:44:43,605 INFO  c.g.v.a.s.a.ProjectBuildService - All script(s): /tmp/rdisk/2184/src/Lightweight-Stream-API-master/build.gradle /tmp/rdisk/2184/src/Lightweight-Stream-API-master/settings.gradle /tmp/rdisk/2184/src/Lightweight-Stream-API-master/stream/build.gradle /tmp/rdisk/2184/src/Lightweight-Stream-API-master/stream/signing.gradle /tmp/rdisk/2184/src/Lightweight-Stream-API-master/streamTest/build.gradle /tmp/rdisk/2184/src/Lightweight-Stream-API-master/streamTest/signing.gradle
+2016-08-24 01:44:43,619 INFO  c.g.v.a.s.a.ProjectBuildService - Remote scripts: none
+2016-08-24 01:44:43,620 INFO  c.g.v.a.s.a.ProjectFixService - Fixing project...
+2016-08-24 01:44:43,704 INFO  c.g.v.a.s.AndroidToolsService - ANDROID_HOME: /Users/vbauer/Library/Android/sdk
+2016-08-24 01:44:43,704 INFO  c.g.v.a.s.AndroidToolsService - NDK_HOME: /Users/vbauer/Library/Android/ndk
+2016-08-24 01:44:43,709 INFO  c.g.v.a.s.AndroidToolsService - Available build tools: 19.1.0 20.0.0 21.1.1 21.1.2 22.0.0 22.0.1 23.0.1 23.0.2 23.0.3 24.0.0 24.0.1
+2016-08-24 01:44:43,713 INFO  c.g.v.a.s.AndroidToolsService - Available build tools after clean up: 19.1.0 20.0.0 21.1.1 21.1.2 22.0.0 22.0.1 23.0.1 23.0.2 23.0.3 24.0.0 24.0.1
+2016-08-24 01:44:43,717 INFO  c.g.v.a.s.AndroidToolsService - Available platforms: 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 7 8 9 24
+2016-08-24 01:44:43,720 INFO  c.g.v.a.s.AndroidToolsService - Available platforms after clean up: 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+2016-08-24 01:44:43,725 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /tmp/rdisk/2184/src/Lightweight-Stream-API-master/local.properties
+2016-08-24 01:44:43,738 INFO  c.g.v.a.s.a.f.WrapperPropertiesFixService - Project uses full gradle wrapper: true (https://services.gradle.org/distributions/gradle-2.2.1-all.zip)
+2016-08-24 01:44:43,739 INFO  c.g.v.a.s.a.f.WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2016-08-24 01:44:43,768 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/tmp/rdisk/2184/src/Lightweight-Stream-API-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-08-24 01:44:43,804 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/tmp/rdisk/2184/src/Lightweight-Stream-API-master/build.gradle": [buildToolsVersion=24.0.1,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-08-24 01:44:43,810 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /tmp/rdisk/2184/src/Lightweight-Stream-API-master/stream/local.properties
+2016-08-24 01:44:43,825 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/tmp/rdisk/2184/src/Lightweight-Stream-API-master/stream/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-08-24 01:44:43,826 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/tmp/rdisk/2184/src/Lightweight-Stream-API-master/stream/build.gradle": [buildToolsVersion=24.0.1,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-08-24 01:44:43,830 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /tmp/rdisk/2184/src/Lightweight-Stream-API-master/streamTest/local.properties
+2016-08-24 01:44:43,838 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/tmp/rdisk/2184/src/Lightweight-Stream-API-master/streamTest/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-08-24 01:44:43,839 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/tmp/rdisk/2184/src/Lightweight-Stream-API-master/streamTest/build.gradle": [buildToolsVersion=24.0.1,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-08-24 01:44:43,841 INFO  c.g.v.a.s.a.ProjectFixService - Project was maybe fixed
+2016-08-24 01:44:43,853 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-08-24 01:44:43,853 INFO  c.g.v.a.u.SysUtils - Execute command: [/tmp/rdisk/2184/src/Lightweight-Stream-API-master/gradlew, -b, /tmp/rdisk/2184/src/Lightweight-Stream-API-master/build.gradle, tasks]
+2016-08-24 01:44:57,672 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 44
+2016-08-24 01:44:57,673 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: cobertura test check javadoc
+2016-08-24 01:44:57,674 INFO  c.g.v.a.u.SysUtils - Execute command: [/tmp/rdisk/2184/src/Lightweight-Stream-API-master/gradlew, -b, /tmp/rdisk/2184/src/Lightweight-Stream-API-master/build.gradle, --stacktrace, -x, cobertura, -x, test, -x, check, -x, javadoc, build]
+2016-08-24 01:45:11,203 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-08-24 01:45:11,204 INFO  c.g.v.a.u.SysUtils - Execute command: [/tmp/rdisk/2184/src/Lightweight-Stream-API-master/gradlew, -b, /tmp/rdisk/2184/src/Lightweight-Stream-API-master/stream/build.gradle, tasks]
+2016-08-24 01:45:20,000 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 40
+2016-08-24 01:45:20,001 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: cobertura test check javadoc
+2016-08-24 01:45:20,001 INFO  c.g.v.a.u.SysUtils - Execute command: [/tmp/rdisk/2184/src/Lightweight-Stream-API-master/gradlew, -b, /tmp/rdisk/2184/src/Lightweight-Stream-API-master/stream/build.gradle, --stacktrace, -x, cobertura, -x, test, -x, check, -x, javadoc, build]
+2016-08-24 01:45:28,993 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-08-24 01:45:28,994 INFO  c.g.v.a.u.SysUtils - Execute command: [/tmp/rdisk/2184/src/Lightweight-Stream-API-master/gradlew, -b, /tmp/rdisk/2184/src/Lightweight-Stream-API-master/streamTest/build.gradle, tasks]
+2016-08-24 01:45:38,021 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 40
+2016-08-24 01:45:38,022 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: cobertura test check javadoc
+2016-08-24 01:45:38,022 INFO  c.g.v.a.u.SysUtils - Execute command: [/tmp/rdisk/2184/src/Lightweight-Stream-API-master/gradlew, -b, /tmp/rdisk/2184/src/Lightweight-Stream-API-master/streamTest/build.gradle, --stacktrace, -x, cobertura, -x, test, -x, check, -x, javadoc, build]
+2016-08-24 01:45:46,737 ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+2016-08-24 01:45:46,750 ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

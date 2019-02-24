@@ -1,0 +1,5 @@
+{
+  "com.example.dpt.bubbletextview" : [ "BuildConfig", "MainActivity", "MainActivity$1", "MainActivity$2", "MainActivity$3", "MainActivity$4", "MainActivity$5", "MainActivity$6", "MainActivity$7", "MainActivity$8", "MainActivity2", "MainActivity2$1", "MainActivity3", "MainActivity3$1", "MainActivity3$2", "MainActivity3$3", "MainActivity3$4", "MainActivity3$5", "MainActivity3$6", "MainActivity3$7", "MainActivity3$8", "R", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$menu", "R$mipmap", "R$string", "R$style", "R$styleable" ],
+  "com.example.dpt.bubbletextview.helper" : [ "LeBubbleTextViewHelper", "LeBubbleTextViewHelper$1" ],
+  "com.example.dpt.bubbletextview.widget" : [ "LeBubbleTextView", "LeBubbleTitleTextView", "LeBubbleView", "LeBubbleView$1", "LeBubbleView$2", "LeBubbleView$ArrowDirection", "LeRoundRectDrawable2", "LeStateColorDrawable", "TintedBitmapDrawable" ]
+}

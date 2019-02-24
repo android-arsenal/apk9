@@ -1,0 +1,37 @@
+{
+  "meta" : {
+    "packageName" : "com.directions.sample",
+    "label" : "Google Directions Sample",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : {
+      "major" : 2,
+      "minor" : 0,
+      "required" : true
+    },
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.ACCESS_NETWORK_STATE", "android.permission.ACCESS_WIFI_STATE", "android.permission.INTERNET", "android.permission.ACCESS_FINE_LOCATION", "android.permission.ACCESS_COARSE_LOCATION", "com.google.android.providers.gsf.permission.READ_GSERVICES", "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAA7VBMVEUAAAAAmaoAlqcAlqcAl6gAl6cAl6cAmaMAl6gAl6cAl6cA//8AlqgAnbEAl6YAnZ0Al6cAgIAAl6cAl6cAmKYAl6cAl6cAl6cAj58Al6cAlqcAl6cAlqYAl6cAk6IAl6YAl6cAqqoAmKYAmKcAl6cAl6cAlagAl6cAl6cAl6cAlqcAl6cAlqcAl6cAmKgAmbMAl6gAl6cAl6cAmKYAl6UAqqoAl6cAmKcAmqgAlqcAl6cAmacAl6cAl6oAl6cAl6YAmZkAmKgAlKgAl6cAlqcAl6cAmKUAlqYAl6YAkrYAl6cAlqUAl6cAlqgAl6hinJyaAAAAT3RSTlMAD1qczOz8GYzt/wFmDacNwgKubm0g9poQ9a1/X7YhpL0GvqPT/Snwzf6o97ff7wq1ffs5RwPmiCY9ujepG/FzBc8y+HrFJVCQB+Az81V4l0WmKgAAAYRJREFUSMfVldd6gkAUhO3o2k3sYmIi4mLvFcXeff/HyWfishjOAl46l3Pmx0/YPWOzvYLsDqfL7fG4XU6H3UKc8/qQKp+XM4n7A5r4LxLwG+WDIaRTKMjOhyMIUCTMykdjCFQsygDeEEPvcD6eYAGJOAgkEVNJKJ9Kax6ZyWYzmh9MpwAgR+d8/mbkeerkAOBDnX4W/pzCl2p9A0CRDIUSsUoC8YoAIJJhmXpl4okAgMlQop5EPAwAFTKsUq9KvAoA1Miw3iBWo068GgA01VfSIlZLtZoAQKft+1vPtfXP0KhDPxOWuhzXlTB1OgDQ67PPUr8HHaYBGxiAp3UosPLCEL4QPAvgGTduxAJGrEs9hvNj5taYYCiPJ+w9M4WAqcEik2f6/Ew2Wn1zPTA33K3K4n9+oRhv4+XqMb9amq379SOwNu0HZaPNbxTzRtmKNC9urVTWTv18eGet5PYE2FtsxcP9b2wOVntUPt7yR9l6857OCJ1Pz3T1RRAuz7X79Wp7Gf0A7TE2PBrcJgkAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 2563,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.directions.sample\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />\n\t<uses-permission android:name=\"com.google.android.providers.gsf.permission.READ_GSERVICES\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-feature android:glEsVersion=\"0x20000\" android:required=\"true\" />\n\t<application android:theme=\"resourceId:0x7f0c0004\" android:label=\"Google Directions Sample\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<meta-data android:name=\"com.google.android.geo.API_KEY\" android:value=\"API_KEY_HERE\" />\n\t\t<activity android:label=\"Google Directions Sample\" android:name=\"com.directions.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<meta-data android:name=\"com.google.android.gms.version\" android:value=\"8487000\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2050699,
+  "crc32" : 2270638506,
+  "sha256" : "808df3422a7083c13f8c7aa06cb167fb1532b1a024252f0f0ba617d046974944",
+  "buildTime" : 1526038333000
+}

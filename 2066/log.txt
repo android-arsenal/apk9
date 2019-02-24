@@ -1,0 +1,7 @@
+2016-07-08 02:05:59,956 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/jOOQ/jOOR/archive/master.zip", attempt 3
+2016-07-08 02:06:04,342 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/jOOQ/jOOR/archive/master.zip, attempt 3
+2016-07-08 02:06:04,719 INFO  c.g.v.a.s.FullProcessService - Archive with sources does not contain any build script
+2016-07-08 02:06:04,720 ERROR c.g.v.a.s.FullProcessService - Could not find directory with sources
+2016-07-08 02:06:04,720 ERROR c.g.v.a.s.FullProcessService - Project will not be processed
+2016-07-08 02:06:04,720 ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+2016-07-08 02:06:04,794 ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

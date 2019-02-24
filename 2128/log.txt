@@ -1,0 +1,9 @@
+2018-04-03 18:54:58,048 INFO  DownloadService - Downloading "https://github.com/JakeWharton/ProcessPhoenix/archive/master.zip", attempt 3
+2018-04-03 18:54:58,048 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:54:58,431 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:54:58,431 INFO  DownloadService - Downloading "https://github.com/JakeWharton/ProcessPhoenix/archive/master.zip", attempt 3
+2018-04-03 18:54:58,432 DEBUG FullProcessService - Repository https://github.com/JakeWharton/ProcessPhoenix available: false
+2018-04-03 18:54:58,432 ERROR FullProcessService - Could not find directory with sources
+2018-04-03 18:54:58,432 ERROR FullProcessService - Project will not be processed
+2018-04-03 18:54:58,432 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 18:54:58,432 ERROR FullProcessService - Could not find generated or existed APK file

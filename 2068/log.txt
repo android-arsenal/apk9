@@ -1,0 +1,14 @@
+2018-04-03 21:22:20,309 INFO  DownloadService - Downloading "https://github.com/WantedTechnologies/xpresso/archive/master.zip", attempt 3
+2018-04-03 21:23:20,930 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 21:23:21,744 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 21:23:21,744 INFO  DownloadService - Downloading "https://github.com/WantedTechnologies/xpresso/archive/master.zip", attempt 3
+2018-04-03 21:24:23,043 DEBUG FullProcessService - Repository https://github.com/WantedTechnologies/xpresso available: true
+2018-04-03 21:24:23,044 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 21:24:23,044 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/WantedTechnologies/xpresso, /tmp/rdisk/2068/src]
+2018-04-03 21:24:27,455 INFO  SysUtils - 
+2018-04-03 21:24:27,525 INFO  GitService - Deleted "/tmp/rdisk/2068/src/.git": true
+2018-04-03 21:24:27,686 INFO  FullProcessService - Size of directory with sources: 109 MB
+2018-04-03 21:24:27,686 ERROR FullProcessService - Source directory should be less than 50 MB
+2018-04-03 21:24:27,686 ERROR FullProcessService - Project will not be processed
+2018-04-03 21:24:27,686 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 21:24:27,774 ERROR FullProcessService - Could not find generated or existed APK file

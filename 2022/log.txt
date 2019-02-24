@@ -1,0 +1,167 @@
+2018-04-03 22:55:12,720 INFO  DownloadService - Downloading "https://github.com/testfairy/testfairy-gradle-plugin/archive/master.zip", attempt 3
+2018-04-03 22:56:13,184 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 22:56:13,857 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 22:56:13,857 INFO  DownloadService - Downloading "https://github.com/testfairy/testfairy-gradle-plugin/archive/master.zip", attempt 3
+2018-04-03 22:57:15,174 DEBUG FullProcessService - Repository https://github.com/testfairy/testfairy-gradle-plugin available: true
+2018-04-03 22:57:15,174 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 22:57:15,175 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/testfairy/testfairy-gradle-plugin, /tmp/rdisk/2022/src]
+2018-04-03 22:57:16,845 INFO  SysUtils - 
+2018-04-03 22:57:16,860 INFO  GitService - Deleted "/tmp/rdisk/2022/src/.git": true
+2018-04-03 22:57:16,862 INFO  FullProcessService - Size of directory with sources: 311 KB
+2018-04-03 22:57:16,862 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2022/src]
+2018-04-03 22:57:16,866 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2022/src/.git/
+
+2018-04-03 22:57:16,869 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2022/src/gradlew /tmp/rdisk/2022/src/example/TestApplication/gradlew
+2018-04-03 22:57:16,872 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2022/src/example/TestApplication/app/build.gradle /tmp/rdisk/2022/src/build.gradle /tmp/rdisk/2022/src/example/TestApplication/build.gradle
+2018-04-03 22:57:16,874 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2022/src/settings.gradle /tmp/rdisk/2022/src/example/TestApplication/settings.gradle /tmp/rdisk/2022/src/example/TestApplication/build.gradle /tmp/rdisk/2022/src/example/TestApplication/app/build.gradle /tmp/rdisk/2022/src/build.gradle
+2018-04-03 22:57:16,874 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 22:57:16,874 INFO  ProjectFixService - Fixing project...
+2018-04-03 22:57:16,880 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2022/src/example/TestApplication/app/local.properties
+2018-04-03 22:57:16,881 INFO  ProjectFixService - Build info for "/tmp/rdisk/2022/src/example/TestApplication/app/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=19,targetSdkVersion=25]
+2018-04-03 22:57:16,881 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2022/src/local.properties
+2018-04-03 22:57:16,881 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.8-bin.zip
+2018-04-03 22:57:16,883 INFO  ProjectFixService - Build info for "/tmp/rdisk/2022/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=19,targetSdkVersion=25]
+2018-04-03 22:57:16,883 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2022/src/example/TestApplication/local.properties
+2018-04-03 22:57:16,883 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-03 22:57:16,883 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-03 22:57:16,884 INFO  ProjectFixService - Build info for "/tmp/rdisk/2022/src/example/TestApplication/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=19,targetSdkVersion=25]
+2018-04-03 22:57:16,884 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 22:57:16,884 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:57:16,885 INFO  SysUtils - Execute command: [/tmp/rdisk/2022/src/example/TestApplication/gradlew, -b, /tmp/rdisk/2022/src/example/TestApplication/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:57:31,047 INFO  ProjectTaskService - Detected possible tasks: 72
+2018-04-03 22:57:31,047 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 22:57:31,047 INFO  SysUtils - Execute command: [/tmp/rdisk/2022/src/example/TestApplication/gradlew, -b, /tmp/rdisk/2022/src/example/TestApplication/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 22:57:48,454 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:extractProguardFiles
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportConstraintConstraintLayout102Library
+:app:prepareTestfairyTestfairyAndroidSdk163Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:transformClassesAndResourcesWithProguardForDebug
+ProGuard, version 5.3.2
+Reading input...
+Reading program jar [/root/.android/build-cache/7f370a736cb0e960978d5249df48b04491706b4b/output/jars/classes.jar] (filtered)
+Reading program jar [/root/Applications/android-sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar] (filtered)
+Reading program jar [/root/.android/build-cache/71e864393ffa7501c7d6578a64115126dd855cb5/output/jars/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/2022/src/example/TestApplication/app/build/intermediates/classes/debug] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: com.testfairy.a.b: can't find dynamically referenced class android.app.ActivityThread
+Note: com.testfairy.d.d: can't find dynamically referenced class com.newrelic.agent.android.NewRelic
+Note: com.testfairy.a.b accesses a declared field 'mActivities' dynamically
+Note: com.testfairy.a.b accesses a declared field 'paused' dynamically
+Note: com.testfairy.a.b accesses a declared field 'activity' dynamically
+      Maybe this is library field 'android.app.ApplicationErrorReport$AnrInfo { java.lang.String activity; }'
+Note: com.testfairy.j.x accesses a declared field 'mViews' dynamically
+Note: com.testfairy.j.x accesses a declared field 'mPhoneWindow' dynamically
+Note: there were 2 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Note: there were 5 accesses to class members by means of introspection.
+      You should consider explicitly keeping the mentioned class members
+      (using '-keep' or '-keepclassmembers').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclassmember)
+Ignoring unused library classes...
+  Original number of library classes: 4237
+  Final number of library classes:    811
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/2022/src/example/TestApplication/app/build/outputs/mapping/debug/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 312
+  Final number of program classes:    241
+Obfuscating...
+Printing mapping to [/tmp/rdisk/2022/src/example/TestApplication/app/build/outputs/mapping/debug/mapping.txt]...
+Writing output...
+Preparing output jar [/tmp/rdisk/2022/src/example/TestApplication/app/build/intermediates/transforms/proguard/debug/jars/3/1f/main.jar]
+  Copying resources from program jar [/root/.android/build-cache/7f370a736cb0e960978d5249df48b04491706b4b/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/Applications/android-sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/71e864393ffa7501c7d6578a64115126dd855cb5/output/jars/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2022/src/example/TestApplication/app/build/intermediates/classes/debug] (filtered)
+Printing classes to [/tmp/rdisk/2022/src/example/TestApplication/app/build/outputs/mapping/debug/dump.txt]...
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.998 secs
+
+2018-04-03 22:57:48,470 INFO  FullProcessService - Found APK file: /tmp/rdisk/2022/src/example/TestApplication/app/build/outputs/apk/app-debug.apk

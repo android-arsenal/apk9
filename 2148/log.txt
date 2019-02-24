@@ -1,0 +1,149 @@
+2018-04-03 18:36:49,841 INFO  DownloadService - Downloading "https://github.com/mutualmobile/gradle-dexinfo-plugin/archive/master.zip", attempt 3
+2018-04-03 18:37:50,316 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:37:50,993 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:37:50,993 INFO  DownloadService - Downloading "https://github.com/mutualmobile/gradle-dexinfo-plugin/archive/master.zip", attempt 3
+2018-04-03 18:38:52,353 DEBUG FullProcessService - Repository https://github.com/mutualmobile/gradle-dexinfo-plugin available: true
+2018-04-03 18:38:52,353 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 18:38:52,353 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/mutualmobile/gradle-dexinfo-plugin, /tmp/rdisk/2148/src]
+2018-04-03 18:38:53,929 INFO  SysUtils - 
+2018-04-03 18:38:53,934 INFO  GitService - Deleted "/tmp/rdisk/2148/src/.git": true
+2018-04-03 18:38:53,937 INFO  FullProcessService - Size of directory with sources: 246 KB
+2018-04-03 18:38:53,937 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2148/src]
+2018-04-03 18:38:53,943 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2148/src/.git/
+
+2018-04-03 18:38:53,946 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2148/src/gradlew /tmp/rdisk/2148/src/examples/HelloWorld/gradlew
+2018-04-03 18:38:53,949 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2148/src/examples/HelloWorld/app/build.gradle /tmp/rdisk/2148/src/build.gradle /tmp/rdisk/2148/src/examples/HelloWorld/build.gradle
+2018-04-03 18:38:53,952 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2148/src/settings.gradle /tmp/rdisk/2148/src/gradle/bintrayUpload.gradle /tmp/rdisk/2148/src/examples/HelloWorld/settings.gradle /tmp/rdisk/2148/src/examples/HelloWorld/build.gradle /tmp/rdisk/2148/src/examples/HelloWorld/app/build.gradle /tmp/rdisk/2148/src/build.gradle
+2018-04-03 18:38:53,952 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 18:38:53,952 INFO  ProjectFixService - Fixing project...
+2018-04-03 18:38:53,961 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2148/src/examples/HelloWorld/app/local.properties
+2018-04-03 18:38:53,961 INFO  ProjectFixService - Build info for "/tmp/rdisk/2148/src/examples/HelloWorld/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:38:53,962 INFO  LocalPropertiesFixService - Updated fake /tmp/rdisk/2148/src/local.properties
+2018-04-03 18:38:53,962 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.0-all.zip
+2018-04-03 18:38:53,962 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.0-bin.zip)
+2018-04-03 18:38:53,965 INFO  ProjectFixService - Build info for "/tmp/rdisk/2148/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:38:53,966 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2148/src/examples/HelloWorld/local.properties
+2018-04-03 18:38:53,966 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 18:38:53,966 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 18:38:53,968 INFO  ProjectFixService - Build info for "/tmp/rdisk/2148/src/examples/HelloWorld/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 18:38:53,969 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 18:38:53,969 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:38:53,969 INFO  SysUtils - Execute command: [/tmp/rdisk/2148/src/examples/HelloWorld/gradlew, -b, /tmp/rdisk/2148/src/examples/HelloWorld/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:39:02,880 INFO  ProjectTaskService - Detected possible tasks: 92
+2018-04-03 18:39:02,880 INFO  ProjectTaskService - Excluded tasks (9): mockableAndroidJar deviceCheck lint deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest
+2018-04-03 18:39:02,881 INFO  SysUtils - Execute command: [/tmp/rdisk/2148/src/examples/HelloWorld/gradlew, -b, /tmp/rdisk/2148/src/examples/HelloWorld/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, build]
+2018-04-03 18:39:31,367 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDemoDebugBuild UP-TO-DATE
+:app:checkDemoDebugManifest
+:app:preDemoReleaseBuild UP-TO-DATE
+:app:preFullDebugBuild UP-TO-DATE
+:app:preFullReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareDemoDebugDependencies
+:app:compileDemoDebugAidl
+:app:compileDemoDebugRenderscript
+:app:generateDemoDebugBuildConfig
+:app:generateDemoDebugAssets UP-TO-DATE
+:app:mergeDemoDebugAssets
+:app:generateDemoDebugResValues
+:app:generateDemoDebugResources
+:app:mergeDemoDebugResources
+:app:processDemoDebugManifest
+:app:processDemoDebugResources
+:app:generateDemoDebugSources
+:app:compileDemoDebugJavaWithJavac
+:app:compileDemoDebugNdk UP-TO-DATE
+:app:compileDemoDebugSources
+:app:transformClassesWithDexForDemoDebug
+:app:mergeDemoDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDemoDebug
+:app:processDemoDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDemoDebug
+:app:validateDebugSigning
+:app:packageDemoDebug
+:app:zipalignDemoDebug
+:app:assembleDemoDebug
+:app:checkFullDebugManifest
+:app:prepareFullDebugDependencies
+:app:compileFullDebugAidl
+:app:compileFullDebugRenderscript
+:app:generateFullDebugBuildConfig
+:app:generateFullDebugAssets UP-TO-DATE
+:app:mergeFullDebugAssets
+:app:generateFullDebugResValues
+:app:generateFullDebugResources
+:app:mergeFullDebugResources
+:app:processFullDebugManifest
+:app:processFullDebugResources
+:app:generateFullDebugSources
+:app:compileFullDebugJavaWithJavac
+:app:compileFullDebugNdk UP-TO-DATE
+:app:compileFullDebugSources
+:app:transformClassesWithDexForFullDebug
+:app:mergeFullDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForFullDebug
+:app:processFullDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForFullDebug
+:app:packageFullDebug
+:app:zipalignFullDebug
+:app:assembleFullDebug
+:app:assembleDebug
+:app:checkDemoReleaseManifest
+:app:prepareDemoReleaseDependencies
+:app:compileDemoReleaseAidl
+:app:compileDemoReleaseRenderscript
+:app:generateDemoReleaseBuildConfig
+:app:generateDemoReleaseAssets UP-TO-DATE
+:app:mergeDemoReleaseAssets
+:app:generateDemoReleaseResValues
+:app:generateDemoReleaseResources
+:app:mergeDemoReleaseResources
+:app:processDemoReleaseManifest
+:app:processDemoReleaseResources
+:app:generateDemoReleaseSources
+:app:compileDemoReleaseJavaWithJavac
+:app:compileDemoReleaseNdk UP-TO-DATE
+:app:compileDemoReleaseSources
+:app:lintVitalDemoRelease
+:app:transformClassesWithDexForDemoRelease
+:app:mergeDemoReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDemoRelease
+:app:processDemoReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDemoRelease
+:app:packageDemoRelease
+:app:assembleDemoRelease
+:app:checkFullReleaseManifest
+:app:prepareFullReleaseDependencies
+:app:compileFullReleaseAidl
+:app:compileFullReleaseRenderscript
+:app:generateFullReleaseBuildConfig
+:app:generateFullReleaseAssets UP-TO-DATE
+:app:mergeFullReleaseAssets
+:app:generateFullReleaseResValues
+:app:generateFullReleaseResources
+:app:mergeFullReleaseResources
+:app:processFullReleaseManifest
+:app:processFullReleaseResources
+:app:generateFullReleaseSources
+:app:compileFullReleaseJavaWithJavac
+:app:compileFullReleaseNdk UP-TO-DATE
+:app:compileFullReleaseSources
+:app:lintVitalFullRelease
+:app:transformClassesWithDexForFullRelease
+:app:mergeFullReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForFullRelease
+:app:processFullReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForFullRelease
+:app:packageFullRelease
+:app:assembleFullRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.766 secs
+
+2018-04-03 18:39:31,430 INFO  FullProcessService - Found APK file: /tmp/rdisk/2148/src/examples/HelloWorld/app/build/outputs/apk/app-full-release-unsigned.apk

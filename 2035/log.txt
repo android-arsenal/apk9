@@ -1,0 +1,48 @@
+2018-04-03 22:29:32,823 INFO  DownloadService - Downloading "https://github.com/alexvasilkov/GradleAndroidSignPlugin/archive/master.zip", attempt 3
+2018-04-03 22:30:33,294 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 22:30:34,173 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 22:30:34,173 INFO  DownloadService - Downloading "https://github.com/alexvasilkov/GradleAndroidSignPlugin/archive/master.zip", attempt 3
+2018-04-03 22:31:35,554 DEBUG FullProcessService - Repository https://github.com/alexvasilkov/GradleAndroidSignPlugin available: true
+2018-04-03 22:31:35,555 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 22:31:35,555 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/alexvasilkov/GradleAndroidSignPlugin, /tmp/rdisk/2035/src]
+2018-04-03 22:31:36,999 INFO  SysUtils - 
+2018-04-03 22:31:37,005 INFO  GitService - Deleted "/tmp/rdisk/2035/src/.git": true
+2018-04-03 22:31:37,006 INFO  FullProcessService - Size of directory with sources: 82 KB
+2018-04-03 22:31:37,006 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2035/src]
+2018-04-03 22:31:37,010 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2035/src/.git/
+
+2018-04-03 22:31:37,012 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2035/src/gradlew
+2018-04-03 22:31:37,013 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2035/src/build.gradle
+2018-04-03 22:31:37,014 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2035/src/gradle/scripts/gradle-plugin-mvn-push.gradle /tmp/rdisk/2035/src/build.gradle
+2018-04-03 22:31:37,014 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 22:31:37,014 INFO  ProjectFixService - Fixing project...
+2018-04-03 22:31:37,018 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2035/src/local.properties
+2018-04-03 22:31:37,018 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 22:31:37,018 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 22:31:37,020 INFO  ProjectFixService - Build info for "/tmp/rdisk/2035/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 22:31:37,020 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2035/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 22:31:37,020 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 22:31:37,020 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:31:37,020 INFO  SysUtils - Execute command: [/tmp/rdisk/2035/src/gradlew, -b, /tmp/rdisk/2035/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:31:44,924 INFO  ProjectTaskService - Detected possible tasks: 45
+2018-04-03 22:31:44,925 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-03 22:31:44,925 INFO  SysUtils - Execute command: [/tmp/rdisk/2035/src/gradlew, -b, /tmp/rdisk/2035/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-03 22:31:55,160 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJava UP-TO-DATE
+:compileGroovy
+:processResources
+:classes
+:jar
+:pluginGroovydoc
+:pluginGroovydocJar
+:pluginSourcesJar
+:signArchives SKIPPED
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.771 secs
+
+2018-04-03 22:31:55,163 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 22:31:55,166 ERROR FullProcessService - Could not find generated or existed APK file

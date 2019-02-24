@@ -1,0 +1,21 @@
+2018-04-03 22:53:08,207 INFO  DownloadService - Downloading "https://github.com/emil10001/Pind/archive/master.zip", attempt 3
+2018-04-03 22:54:08,666 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 22:54:09,358 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 22:54:09,358 INFO  DownloadService - Downloading "https://github.com/emil10001/Pind/archive/master.zip", attempt 3
+2018-04-03 22:55:10,599 DEBUG FullProcessService - Repository https://github.com/emil10001/Pind available: true
+2018-04-03 22:55:10,599 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 22:55:10,599 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/emil10001/Pind, /tmp/rdisk/2023/src]
+2018-04-03 22:55:12,684 INFO  SysUtils - 
+2018-04-03 22:55:12,688 INFO  GitService - Deleted "/tmp/rdisk/2023/src/.git": true
+2018-04-03 22:55:12,690 INFO  FullProcessService - Size of directory with sources: 916 KB
+2018-04-03 22:55:12,690 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2023/src]
+2018-04-03 22:55:12,695 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2023/src/.git/
+
+2018-04-03 22:55:12,697 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-03 22:55:12,697 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-03 22:55:12,699 INFO  ProjectBuildService - Build script(s): none
+2018-04-03 22:55:12,707 INFO  ProjectBuildService - All script(s): none
+2018-04-03 22:55:12,707 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 22:55:12,707 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-03 22:55:12,707 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 22:55:12,709 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,21 @@
+2018-04-03 17:56:20,015 INFO  DownloadService - Downloading "https://github.com/jenzz/Java-NoOp/archive/master.zip", attempt 3
+2018-04-03 17:57:20,742 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 17:57:21,628 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 17:57:21,628 INFO  DownloadService - Downloading "https://github.com/jenzz/Java-NoOp/archive/master.zip", attempt 3
+2018-04-03 17:58:22,919 DEBUG FullProcessService - Repository https://github.com/jenzz/Java-NoOp available: true
+2018-04-03 17:58:22,920 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 17:58:22,920 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jenzz/Java-NoOp, /tmp/rdisk/2163/src]
+2018-04-03 17:58:24,351 INFO  SysUtils - 
+2018-04-03 17:58:24,365 INFO  GitService - Deleted "/tmp/rdisk/2163/src/.git": true
+2018-04-03 17:58:24,367 INFO  FullProcessService - Size of directory with sources: 36 KB
+2018-04-03 17:58:24,367 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2163/src]
+2018-04-03 17:58:24,372 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2163/src/.git/
+
+2018-04-03 17:58:24,374 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-03 17:58:24,374 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-03 17:58:24,376 INFO  ProjectBuildService - Build script(s): none
+2018-04-03 17:58:24,377 INFO  ProjectBuildService - All script(s): none
+2018-04-03 17:58:24,377 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 17:58:24,377 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-03 17:58:24,377 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 17:58:24,379 ERROR FullProcessService - Could not find generated or existed APK file

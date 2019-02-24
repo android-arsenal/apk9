@@ -1,0 +1,134 @@
+2018-04-03 20:04:28,122 INFO  DownloadService - Downloading "https://github.com/lukaspili/Auto-Mortar/archive/master.zip", attempt 3
+2018-04-03 20:05:28,734 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 20:05:29,537 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 20:05:29,537 INFO  DownloadService - Downloading "https://github.com/lukaspili/Auto-Mortar/archive/master.zip", attempt 3
+2018-04-03 20:06:30,812 DEBUG FullProcessService - Repository https://github.com/lukaspili/Auto-Mortar available: true
+2018-04-03 20:06:30,812 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 20:06:30,812 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/lukaspili/Auto-Mortar, /tmp/rdisk/2096/src]
+2018-04-03 20:06:32,320 INFO  SysUtils - 
+2018-04-03 20:06:32,325 INFO  GitService - Deleted "/tmp/rdisk/2096/src/.git": true
+2018-04-03 20:06:32,328 INFO  FullProcessService - Size of directory with sources: 158 KB
+2018-04-03 20:06:32,328 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2096/src]
+2018-04-03 20:06:32,332 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2096/src/.git/
+
+2018-04-03 20:06:32,335 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2096/src/gradlew
+2018-04-03 20:06:32,338 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2096/src/sample/build.gradle /tmp/rdisk/2096/src/build.gradle /tmp/rdisk/2096/src/compiler/build.gradle /tmp/rdisk/2096/src/library/build.gradle
+2018-04-03 20:06:32,341 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2096/src/settings.gradle /tmp/rdisk/2096/src/sample/build.gradle /tmp/rdisk/2096/src/mvn-publish.gradle /tmp/rdisk/2096/src/library/build.gradle /tmp/rdisk/2096/src/compiler/build.gradle /tmp/rdisk/2096/src/build.gradle
+2018-04-03 20:06:32,341 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 20:06:32,341 INFO  ProjectFixService - Fixing project...
+2018-04-03 20:06:32,349 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2096/src/sample/local.properties
+2018-04-03 20:06:32,353 INFO  ProjectFixService - Build info for "/tmp/rdisk/2096/src/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 20:06:32,353 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2096/src/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 20:06:32,354 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2096/src/local.properties
+2018-04-03 20:06:32,354 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 20:06:32,354 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 20:06:32,358 INFO  ProjectFixService - Build info for "/tmp/rdisk/2096/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 20:06:32,358 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2096/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 20:06:32,358 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2096/src/compiler/local.properties
+2018-04-03 20:06:32,362 INFO  ProjectFixService - Build info for "/tmp/rdisk/2096/src/compiler/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 20:06:32,362 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2096/src/compiler/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 20:06:32,362 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2096/src/library/local.properties
+2018-04-03 20:06:32,366 INFO  ProjectFixService - Build info for "/tmp/rdisk/2096/src/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 20:06:32,366 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2096/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 20:06:32,366 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 20:06:32,366 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:06:32,366 INFO  SysUtils - Execute command: [/tmp/rdisk/2096/src/gradlew, -b, /tmp/rdisk/2096/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:07:35,378 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-03 20:07:35,378 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 20:07:35,379 INFO  SysUtils - Execute command: [/tmp/rdisk/2096/src/gradlew, -b, /tmp/rdisk/2096/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 20:08:20,602 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:library:processResources UP-TO-DATE
+:library:classes
+:library:jar
+:compiler:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:compiler:processResources UP-TO-DATE
+:compiler:classes
+:compiler:jar
+:library:javadoc/tmp/rdisk/2096/src/library/src/main/java/automortar/AutoScreen.java:9: error: package autodagger does not exist
+import autodagger.AutoComponent;
+                 ^
+/tmp/rdisk/2096/src/library/src/main/java/automortar/AutoScreen.java:18: error: cannot find symbol
+    AutoComponent component() default @AutoComponent;
+    ^
+  symbol:   class AutoComponent
+  location: @interface AutoScreen
+/tmp/rdisk/2096/src/library/src/main/java/automortar/AutoScreen.java:18: error: cannot find symbol
+    AutoComponent component() default @AutoComponent;
+                                       ^
+  symbol:   class AutoComponent
+  location: @interface AutoScreen
+
+3 warnings
+:compiler:javadoc
+:compiler:javadocJar
+:compiler:sourcesJar
+:library:javadocJar
+:library:sourcesJar
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportRecyclerviewV72200Library
+:sample:prepareComAndroidSupportSupportV42200Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 44.77 secs
+
+2018-04-03 20:08:20,616 INFO  FullProcessService - Found APK file: /tmp/rdisk/2096/src/sample/build/outputs/apk/sample-release-unsigned.apk

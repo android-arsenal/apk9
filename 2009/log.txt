@@ -1,0 +1,1240 @@
+2018-04-03 23:24:42,049 INFO  DownloadService - Downloading "https://github.com/shazam/android-aspects/archive/master.zip", attempt 3
+2018-04-03 23:25:42,540 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 23:25:43,216 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 23:25:43,216 INFO  DownloadService - Downloading "https://github.com/shazam/android-aspects/archive/master.zip", attempt 3
+2018-04-03 23:26:44,539 DEBUG FullProcessService - Repository https://github.com/shazam/android-aspects available: true
+2018-04-03 23:26:44,539 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 23:26:44,539 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/shazam/android-aspects, /tmp/rdisk/2009/src]
+2018-04-03 23:26:46,037 INFO  SysUtils - 
+2018-04-03 23:26:46,050 INFO  GitService - Deleted "/tmp/rdisk/2009/src/.git": true
+2018-04-03 23:26:46,053 INFO  FullProcessService - Size of directory with sources: 416 KB
+2018-04-03 23:26:46,053 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2009/src]
+2018-04-03 23:26:46,057 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2009/src/.git/
+
+2018-04-03 23:26:46,062 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2009/src/gradlew
+2018-04-03 23:26:46,064 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2009/src/aspects/build.gradle /tmp/rdisk/2009/src/build.gradle
+2018-04-03 23:26:46,066 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2009/src/settings.gradle /tmp/rdisk/2009/src/build.gradle /tmp/rdisk/2009/src/aspects/build.gradle /tmp/rdisk/2009/src/aspects/build-scripts/gradle-mvn-push.gradle
+2018-04-03 23:26:46,066 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 23:26:46,066 INFO  ProjectFixService - Fixing project...
+2018-04-03 23:26:46,072 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2009/src/aspects/local.properties
+2018-04-03 23:26:46,072 INFO  ProjectFixService - Build info for "/tmp/rdisk/2009/src/aspects/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-03 23:26:46,072 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2009/src/local.properties
+2018-04-03 23:26:46,072 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.13-all.zip
+2018-04-03 23:26:46,073 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.13-bin.zip)
+2018-04-03 23:26:46,073 INFO  ProjectFixService - Build info for "/tmp/rdisk/2009/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-03 23:26:46,073 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 23:26:46,073 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 23:26:46,074 INFO  SysUtils - Execute command: [/tmp/rdisk/2009/src/gradlew, -b, /tmp/rdisk/2009/src/aspects/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 23:26:57,059 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-03 23:26:57,059 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 23:26:57,060 INFO  SysUtils - Execute command: [/tmp/rdisk/2009/src/gradlew, -b, /tmp/rdisk/2009/src/aspects/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 23:27:16,300 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 23:27:16,301 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:aspects:preBuild UP-TO-DATE
+:aspects:preDebugBuild UP-TO-DATE
+:aspects:compileDebugNdk UP-TO-DATE
+:aspects:compileLint
+:aspects:copyDebugLint UP-TO-DATE
+:aspects:checkDebugManifest
+:aspects:preDebugAndroidTestBuild UP-TO-DATE
+:aspects:preDebugUnitTestBuild UP-TO-DATE
+:aspects:preReleaseBuild UP-TO-DATE
+:aspects:preReleaseUnitTestBuild UP-TO-DATE
+:aspects:prepareComAndroidSupportAnimatedVectorDrawable2330Library
+:aspects:prepareComAndroidSupportAppcompatV72330Library
+:aspects:prepareComAndroidSupportSupportV42330Library
+:aspects:prepareComAndroidSupportSupportVectorDrawable2330Library
+:aspects:prepareDebugDependencies
+:aspects:compileDebugAidl
+:aspects:compileDebugRenderscript
+:aspects:generateDebugBuildConfig
+:aspects:mergeDebugShaders
+:aspects:compileDebugShaders
+:aspects:generateDebugAssets
+:aspects:mergeDebugAssets
+:aspects:generateDebugResValues
+:aspects:generateDebugResources
+:aspects:mergeDebugResources
+:aspects:processDebugManifest
+:aspects:processDebugResources
+:aspects:generateDebugSources
+:aspects:incrementalDebugJavaCompilationSafeguard
+:aspects:compileDebugJavaWithJavac
+:aspects:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:aspects:extractDebugAnnotations
+:aspects:mergeDebugProguardFiles
+:aspects:packageDebugRenderscript UP-TO-DATE
+:aspects:packageDebugResources
+:aspects:processDebugJavaRes UP-TO-DATE
+:aspects:transformResourcesWithMergeJavaResForDebug
+:aspects:transformClassesAndResourcesWithSyncLibJarsForDebug
+:aspects:mergeDebugJniLibFolders
+:aspects:transformNative_libsWithMergeJniLibsForDebug
+:aspects:transformNative_libsWithSyncJniLibsForDebug
+:aspects:bundleDebug
+:aspects:compileDebugSources
+:aspects:assembleDebug
+:aspects:compileReleaseNdk UP-TO-DATE
+:aspects:copyReleaseLint UP-TO-DATE
+:aspects:checkReleaseManifest
+:aspects:prepareReleaseDependencies
+:aspects:compileReleaseAidl
+:aspects:compileReleaseRenderscript
+:aspects:generateReleaseBuildConfig
+:aspects:mergeReleaseShaders
+:aspects:compileReleaseShaders
+:aspects:generateReleaseAssets
+:aspects:mergeReleaseAssets
+:aspects:generateReleaseResValues
+:aspects:generateReleaseResources
+:aspects:mergeReleaseResources
+:aspects:processReleaseManifest
+:aspects:processReleaseResources
+:aspects:generateReleaseSources
+:aspects:incrementalReleaseJavaCompilationSafeguard
+:aspects:compileReleaseJavaWithJavac
+:aspects:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:aspects:extractReleaseAnnotations
+:aspects:mergeReleaseProguardFiles
+:aspects:packageReleaseRenderscript UP-TO-DATE
+:aspects:packageReleaseResources
+:aspects:processReleaseJavaRes UP-TO-DATE
+:aspects:transformResourcesWithMergeJavaResForRelease
+:aspects:transformClassesAndResourcesWithSyncLibJarsForRelease
+:aspects:mergeReleaseJniLibFolders
+:aspects:transformNative_libsWithMergeJniLibsForRelease
+:aspects:transformNative_libsWithSyncJniLibsForRelease
+:aspects:bundleRelease
+:aspects:compileReleaseSources
+:aspects:assembleRelease
+:aspects:debugJavadoc/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/base/activity/AspectFragmentActivity.java:51: error: cannot access ActivityCompatApi23
+public class AspectFragmentActivity extends FragmentActivity {
+       ^
+  class file for android.support.v4.app.ActivityCompatApi23 not found
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/base/activity/AspectAppCompatActivity.java:50: error: cannot access DrawerLayoutImpl
+public class AspectAppCompatActivity extends AppCompatActivity {
+       ^
+  class file for android.support.v4.widget.DrawerLayoutImpl not found
+javadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:53: warning: no @param for activity
+    void onSaveInstanceState(@NonNull AspectActivity activity, Bundle outState, PersistableBundle outPersistentState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:53: warning: no @param for outState
+    void onSaveInstanceState(@NonNull AspectActivity activity, Bundle outState, PersistableBundle outPersistentState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:53: warning: no @param for outPersistentState
+    void onSaveInstanceState(@NonNull AspectActivity activity, Bundle outState, PersistableBundle outPersistentState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for activity
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for requestCode
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for resultCode
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for data
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for activity
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for theme
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for resid
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for first
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:68: warning: no @param for activity
+    void onChildTitleChanged(@NonNull AspectActivity activity, Activity childActivity, CharSequence title);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:68: warning: no @param for childActivity
+    void onChildTitleChanged(@NonNull AspectActivity activity, Activity childActivity, CharSequence title);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:68: warning: no @param for title
+    void onChildTitleChanged(@NonNull AspectActivity activity, Activity childActivity, CharSequence title);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:73: warning: no @param for activity
+    void onCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:73: warning: no @param for savedInstanceState
+    void onCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:78: warning: no @param for activity
+    void onDestroy(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:83: warning: no @param for activity
+    void onNewIntent(@NonNull AspectActivity activity, Intent intent);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:83: warning: no @param for intent
+    void onNewIntent(@NonNull AspectActivity activity, Intent intent);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:88: warning: no @param for activity
+    void onPause(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:93: warning: no @param for activity
+    void onPostCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:93: warning: no @param for savedInstanceState
+    void onPostCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:98: warning: no @param for activity
+    void onPostResume(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:103: warning: no @param for activity
+    void onRestart(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:108: warning: no @param for activity
+    void onRestoreInstanceState(@NonNull AspectActivity activity, @NonNull Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:108: warning: no @param for savedInstanceState
+    void onRestoreInstanceState(@NonNull AspectActivity activity, @NonNull Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:113: warning: no @param for activity
+    void onResume(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:118: warning: no @param for activity
+    void onSaveInstanceState(@NonNull AspectActivity activity, @NonNull Bundle outState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:118: warning: no @param for outState
+    void onSaveInstanceState(@NonNull AspectActivity activity, @NonNull Bundle outState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:123: warning: no @param for activity
+    void onStart(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:128: warning: no @param for activity
+    void onStop(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:133: warning: no @param for activity
+    void onTitleChanged(@NonNull AspectActivity activity, CharSequence title, int color);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:133: warning: no @param for title
+    void onTitleChanged(@NonNull AspectActivity activity, CharSequence title, int color);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:133: warning: no @param for color
+    void onTitleChanged(@NonNull AspectActivity activity, CharSequence title, int color);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:138: warning: no @param for activity
+    void onUserLeaveHint(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:144: warning: no @param for activity
+    ActionMode onWindowStartingActionMode(@NonNull AspectActivity activity, ActionMode.Callback callback);
+               ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:144: warning: no @param for callback
+    ActionMode onWindowStartingActionMode(@NonNull AspectActivity activity, ActionMode.Callback callback);
+               ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:144: warning: no @return
+    ActionMode onWindowStartingActionMode(@NonNull AspectActivity activity, ActionMode.Callback callback);
+               ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:149: warning: no @param for activity
+    boolean onContextItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:149: warning: no @param for item
+    boolean onContextItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:149: warning: no @return
+    boolean onContextItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:154: warning: no @param for activity
+    boolean onCreateOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:154: warning: no @param for menu
+    boolean onCreateOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:154: warning: no @return
+    boolean onCreateOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @param for activity
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @param for featureId
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @param for menu
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @return
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @param for activity
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @param for outBitmap
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @param for canvas
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @return
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:169: warning: no @param for activity
+    boolean onGenericMotionEvent(@NonNull AspectActivity activity, MotionEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:169: warning: no @param for event
+    boolean onGenericMotionEvent(@NonNull AspectActivity activity, MotionEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:169: warning: no @return
+    boolean onGenericMotionEvent(@NonNull AspectActivity activity, MotionEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @param for activity
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @param for keyCode
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @param for event
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @return
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @param for activity
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @param for keyCode
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @param for event
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @return
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for activity
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for keyCode
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for repeatCount
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for event
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @return
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @param for activity
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @param for keyCode
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @param for event
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @return
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @param for activity
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @param for keyCode
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @param for event
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @return
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @param for activity
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @param for featureId
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @param for item
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @return
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @param for activity
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @param for featureId
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @param for menu
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @return
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:209: warning: no @param for activity
+    boolean onNavigateUp(@NonNull AspectActivity activity);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:209: warning: no @return
+    boolean onNavigateUp(@NonNull AspectActivity activity);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:214: warning: no @param for activity
+    boolean onNavigateUpFromChild(@NonNull AspectActivity activity, Activity child);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:214: warning: no @param for child
+    boolean onNavigateUpFromChild(@NonNull AspectActivity activity, Activity child);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:214: warning: no @return
+    boolean onNavigateUpFromChild(@NonNull AspectActivity activity, Activity child);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:219: warning: no @param for activity
+    boolean onOptionsItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:219: warning: no @param for item
+    boolean onOptionsItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:219: warning: no @return
+    boolean onOptionsItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:224: warning: no @param for activity
+    boolean onPrepareOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:224: warning: no @param for menu
+    boolean onPrepareOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:224: warning: no @return
+    boolean onPrepareOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:229: warning: no @param for activity
+    boolean onPreparePanel(@NonNull AspectActivity activity, int featureId, View view, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:229: warning: no @param for featureId
+    boolean onPreparePanel(@NonNull AspectActivity activity, int featureId, View view, Menu menu);
+            ^
+com.sun.tools.javac.code.Symbol$CompletionFailure: class file for android.support.v4.app.BaseFragmentActivityHoneycomb not found
+javadoc: error - class file for android.support.v4.app.BaseFragmentActivityHoneycomb not found
+
+1 error
+100 warnings
+:aspects:debugJavadoc FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':aspects:debugJavadoc'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/2009/src/aspects/build/tmp/debugJavadoc/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':aspects:debugJavadoc'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:68)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:66)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:81)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:46)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:241)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:214)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:207)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:55)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:36)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/2009/src/aspects/build/tmp/debugJavadoc/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:58)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:143)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:131)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:228)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:221)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:210)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:367)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:53)
+	... 71 more
+
+
+BUILD FAILED
+
+Total time: 18.804 secs
+
+2018-04-03 23:27:16,364 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 23:27:16,365 INFO  SysUtils - Execute command: [/tmp/rdisk/2009/src/gradlew, -b, /tmp/rdisk/2009/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 23:27:24,087 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-03 23:27:24,088 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 23:27:24,088 INFO  SysUtils - Execute command: [/tmp/rdisk/2009/src/gradlew, -b, /tmp/rdisk/2009/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 23:27:40,757 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:aspects:preBuild UP-TO-DATE
+:aspects:preDebugBuild UP-TO-DATE
+:aspects:compileDebugNdk UP-TO-DATE
+:aspects:compileLint
+:aspects:copyDebugLint UP-TO-DATE
+:aspects:checkDebugManifest
+:aspects:preDebugAndroidTestBuild UP-TO-DATE
+:aspects:preDebugUnitTestBuild UP-TO-DATE
+:aspects:preReleaseBuild UP-TO-DATE
+:aspects:preReleaseUnitTestBuild UP-TO-DATE
+:aspects:prepareComAndroidSupportAnimatedVectorDrawable2330Library UP-TO-DATE
+:aspects:prepareComAndroidSupportAppcompatV72330Library UP-TO-DATE
+:aspects:prepareComAndroidSupportSupportV42330Library UP-TO-DATE
+:aspects:prepareComAndroidSupportSupportVectorDrawable2330Library UP-TO-DATE
+:aspects:prepareDebugDependencies
+:aspects:compileDebugAidl UP-TO-DATE
+:aspects:compileDebugRenderscript UP-TO-DATE
+:aspects:generateDebugBuildConfig UP-TO-DATE
+:aspects:mergeDebugShaders UP-TO-DATE
+:aspects:compileDebugShaders UP-TO-DATE
+:aspects:generateDebugAssets UP-TO-DATE
+:aspects:mergeDebugAssets UP-TO-DATE
+:aspects:generateDebugResValues UP-TO-DATE
+:aspects:generateDebugResources UP-TO-DATE
+:aspects:mergeDebugResources UP-TO-DATE
+:aspects:processDebugManifest UP-TO-DATE
+:aspects:processDebugResources UP-TO-DATE
+:aspects:generateDebugSources UP-TO-DATE
+:aspects:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:aspects:compileDebugJavaWithJavac UP-TO-DATE
+:aspects:extractDebugAnnotations UP-TO-DATE
+:aspects:mergeDebugProguardFiles UP-TO-DATE
+:aspects:packageDebugRenderscript UP-TO-DATE
+:aspects:packageDebugResources UP-TO-DATE
+:aspects:processDebugJavaRes UP-TO-DATE
+:aspects:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:aspects:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:aspects:mergeDebugJniLibFolders UP-TO-DATE
+:aspects:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:aspects:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:aspects:bundleDebug UP-TO-DATE
+:aspects:compileDebugSources UP-TO-DATE
+:aspects:assembleDebug UP-TO-DATE
+:aspects:compileReleaseNdk UP-TO-DATE
+:aspects:copyReleaseLint UP-TO-DATE
+:aspects:checkReleaseManifest
+:aspects:prepareReleaseDependencies
+:aspects:compileReleaseAidl UP-TO-DATE
+:aspects:compileReleaseRenderscript UP-TO-DATE
+:aspects:generateReleaseBuildConfig UP-TO-DATE
+:aspects:mergeReleaseShaders UP-TO-DATE
+:aspects:compileReleaseShaders UP-TO-DATE
+:aspects:generateReleaseAssets UP-TO-DATE
+:aspects:mergeReleaseAssets UP-TO-DATE
+:aspects:generateReleaseResValues UP-TO-DATE
+:aspects:generateReleaseResources UP-TO-DATE
+:aspects:mergeReleaseResources UP-TO-DATE
+:aspects:processReleaseManifest UP-TO-DATE
+:aspects:processReleaseResources UP-TO-DATE
+:aspects:generateReleaseSources UP-TO-DATE
+:aspects:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:aspects:compileReleaseJavaWithJavac UP-TO-DATE
+:aspects:extractReleaseAnnotations UP-TO-DATE
+:aspects:mergeReleaseProguardFiles UP-TO-DATE
+:aspects:packageReleaseRenderscript UP-TO-DATE
+:aspects:packageReleaseResources UP-TO-DATE
+:aspects:processReleaseJavaRes UP-TO-DATE
+:aspects:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:aspects:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:aspects:mergeReleaseJniLibFolders UP-TO-DATE
+:aspects:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:aspects:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:aspects:bundleRelease UP-TO-DATE
+:aspects:compileReleaseSources UP-TO-DATE
+:aspects:assembleRelease UP-TO-DATE
+:aspects:debugJavadocjavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:53: warning: no @param for activity
+    void onSaveInstanceState(@NonNull AspectActivity activity, Bundle outState, PersistableBundle outPersistentState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:53: warning: no @param for outState
+    void onSaveInstanceState(@NonNull AspectActivity activity, Bundle outState, PersistableBundle outPersistentState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:53: warning: no @param for outPersistentState
+    void onSaveInstanceState(@NonNull AspectActivity activity, Bundle outState, PersistableBundle outPersistentState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for activity
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for requestCode
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for resultCode
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for data
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for activity
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for theme
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for resid
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for first
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:68: warning: no @param for activity
+    void onChildTitleChanged(@NonNull AspectActivity activity, Activity childActivity, CharSequence title);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:68: warning: no @param for childActivity
+    void onChildTitleChanged(@NonNull AspectActivity activity, Activity childActivity, CharSequence title);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:68: warning: no @param for title
+    void onChildTitleChanged(@NonNull AspectActivity activity, Activity childActivity, CharSequence title);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:73: warning: no @param for activity
+    void onCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:73: warning: no @param for savedInstanceState
+    void onCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:78: warning: no @param for activity
+    void onDestroy(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:83: warning: no @param for activity
+    void onNewIntent(@NonNull AspectActivity activity, Intent intent);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:83: warning: no @param for intent
+    void onNewIntent(@NonNull AspectActivity activity, Intent intent);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:88: warning: no @param for activity
+    void onPause(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:93: warning: no @param for activity
+    void onPostCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:93: warning: no @param for savedInstanceState
+    void onPostCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:98: warning: no @param for activity
+    void onPostResume(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:103: warning: no @param for activity
+    void onRestart(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:108: warning: no @param for activity
+    void onRestoreInstanceState(@NonNull AspectActivity activity, @NonNull Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:108: warning: no @param for savedInstanceState
+    void onRestoreInstanceState(@NonNull AspectActivity activity, @NonNull Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:113: warning: no @param for activity
+    void onResume(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:118: warning: no @param for activity
+    void onSaveInstanceState(@NonNull AspectActivity activity, @NonNull Bundle outState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:118: warning: no @param for outState
+    void onSaveInstanceState(@NonNull AspectActivity activity, @NonNull Bundle outState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:123: warning: no @param for activity
+    void onStart(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:128: warning: no @param for activity
+    void onStop(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:133: warning: no @param for activity
+    void onTitleChanged(@NonNull AspectActivity activity, CharSequence title, int color);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:133: warning: no @param for title
+    void onTitleChanged(@NonNull AspectActivity activity, CharSequence title, int color);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:133: warning: no @param for color
+    void onTitleChanged(@NonNull AspectActivity activity, CharSequence title, int color);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:138: warning: no @param for activity
+    void onUserLeaveHint(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:144: warning: no @param for activity
+    ActionMode onWindowStartingActionMode(@NonNull AspectActivity activity, ActionMode.Callback callback);
+               ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:144: warning: no @param for callback
+    ActionMode onWindowStartingActionMode(@NonNull AspectActivity activity, ActionMode.Callback callback);
+               ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:144: warning: no @return
+    ActionMode onWindowStartingActionMode(@NonNull AspectActivity activity, ActionMode.Callback callback);
+               ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:149: warning: no @param for activity
+    boolean onContextItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:149: warning: no @param for item
+    boolean onContextItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:149: warning: no @return
+    boolean onContextItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:154: warning: no @param for activity
+    boolean onCreateOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:154: warning: no @param for menu
+    boolean onCreateOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:154: warning: no @return
+    boolean onCreateOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @param for activity
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @param for featureId
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @param for menu
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @return
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @param for activity
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @param for outBitmap
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @param for canvas
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @return
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:169: warning: no @param for activity
+    boolean onGenericMotionEvent(@NonNull AspectActivity activity, MotionEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:169: warning: no @param for event
+    boolean onGenericMotionEvent(@NonNull AspectActivity activity, MotionEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:169: warning: no @return
+    boolean onGenericMotionEvent(@NonNull AspectActivity activity, MotionEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @param for activity
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @param for keyCode
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @param for event
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @return
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @param for activity
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @param for keyCode
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @param for event
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @return
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for activity
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for keyCode
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for repeatCount
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for event
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @return
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @param for activity
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @param for keyCode
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @param for event
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @return
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @param for activity
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @param for keyCode
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @param for event
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @return
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @param for activity
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @param for featureId
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @param for item
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @return
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @param for activity
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @param for featureId
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @param for menu
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @return
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:209: warning: no @param for activity
+    boolean onNavigateUp(@NonNull AspectActivity activity);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:209: warning: no @return
+    boolean onNavigateUp(@NonNull AspectActivity activity);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:214: warning: no @param for activity
+    boolean onNavigateUpFromChild(@NonNull AspectActivity activity, Activity child);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:214: warning: no @param for child
+    boolean onNavigateUpFromChild(@NonNull AspectActivity activity, Activity child);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:214: warning: no @return
+    boolean onNavigateUpFromChild(@NonNull AspectActivity activity, Activity child);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:219: warning: no @param for activity
+    boolean onOptionsItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:219: warning: no @param for item
+    boolean onOptionsItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:219: warning: no @return
+    boolean onOptionsItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:224: warning: no @param for activity
+    boolean onPrepareOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:224: warning: no @param for menu
+    boolean onPrepareOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:224: warning: no @return
+    boolean onPrepareOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:229: warning: no @param for activity
+    boolean onPreparePanel(@NonNull AspectActivity activity, int featureId, View view, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:229: warning: no @param for featureId
+    boolean onPreparePanel(@NonNull AspectActivity activity, int featureId, View view, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:229: warning: no @param for view
+    boolean onPreparePanel(@NonNull AspectActivity activity, int featureId, View view, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:229: warning: no @param for menu
+    boolean onPreparePanel(@NonNull AspectActivity activity, int featureId, View view, Menu menu);
+            ^
+
+100 warnings
+:aspects:debugJavadocJar
+:aspects:releaseJavadocjavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:53: warning: no @param for activity
+    void onSaveInstanceState(@NonNull AspectActivity activity, Bundle outState, PersistableBundle outPersistentState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:53: warning: no @param for outState
+    void onSaveInstanceState(@NonNull AspectActivity activity, Bundle outState, PersistableBundle outPersistentState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:53: warning: no @param for outPersistentState
+    void onSaveInstanceState(@NonNull AspectActivity activity, Bundle outState, PersistableBundle outPersistentState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for activity
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for requestCode
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for resultCode
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:58: warning: no @param for data
+    void onActivityResult(@NonNull AspectActivity activity, int requestCode, int resultCode, Intent data);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for activity
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for theme
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for resid
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:63: warning: no @param for first
+    void onApplyThemeResource(@NonNull AspectActivity activity, @NonNull Resources.Theme theme, int resid, boolean first);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:68: warning: no @param for activity
+    void onChildTitleChanged(@NonNull AspectActivity activity, Activity childActivity, CharSequence title);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:68: warning: no @param for childActivity
+    void onChildTitleChanged(@NonNull AspectActivity activity, Activity childActivity, CharSequence title);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:68: warning: no @param for title
+    void onChildTitleChanged(@NonNull AspectActivity activity, Activity childActivity, CharSequence title);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:73: warning: no @param for activity
+    void onCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:73: warning: no @param for savedInstanceState
+    void onCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:78: warning: no @param for activity
+    void onDestroy(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:83: warning: no @param for activity
+    void onNewIntent(@NonNull AspectActivity activity, Intent intent);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:83: warning: no @param for intent
+    void onNewIntent(@NonNull AspectActivity activity, Intent intent);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:88: warning: no @param for activity
+    void onPause(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:93: warning: no @param for activity
+    void onPostCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:93: warning: no @param for savedInstanceState
+    void onPostCreate(@NonNull AspectActivity activity, Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:98: warning: no @param for activity
+    void onPostResume(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:103: warning: no @param for activity
+    void onRestart(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:108: warning: no @param for activity
+    void onRestoreInstanceState(@NonNull AspectActivity activity, @NonNull Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:108: warning: no @param for savedInstanceState
+    void onRestoreInstanceState(@NonNull AspectActivity activity, @NonNull Bundle savedInstanceState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:113: warning: no @param for activity
+    void onResume(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:118: warning: no @param for activity
+    void onSaveInstanceState(@NonNull AspectActivity activity, @NonNull Bundle outState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:118: warning: no @param for outState
+    void onSaveInstanceState(@NonNull AspectActivity activity, @NonNull Bundle outState);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:123: warning: no @param for activity
+    void onStart(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:128: warning: no @param for activity
+    void onStop(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:133: warning: no @param for activity
+    void onTitleChanged(@NonNull AspectActivity activity, CharSequence title, int color);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:133: warning: no @param for title
+    void onTitleChanged(@NonNull AspectActivity activity, CharSequence title, int color);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:133: warning: no @param for color
+    void onTitleChanged(@NonNull AspectActivity activity, CharSequence title, int color);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:138: warning: no @param for activity
+    void onUserLeaveHint(@NonNull AspectActivity activity);
+         ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:144: warning: no @param for activity
+    ActionMode onWindowStartingActionMode(@NonNull AspectActivity activity, ActionMode.Callback callback);
+               ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:144: warning: no @param for callback
+    ActionMode onWindowStartingActionMode(@NonNull AspectActivity activity, ActionMode.Callback callback);
+               ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:144: warning: no @return
+    ActionMode onWindowStartingActionMode(@NonNull AspectActivity activity, ActionMode.Callback callback);
+               ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:149: warning: no @param for activity
+    boolean onContextItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:149: warning: no @param for item
+    boolean onContextItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:149: warning: no @return
+    boolean onContextItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:154: warning: no @param for activity
+    boolean onCreateOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:154: warning: no @param for menu
+    boolean onCreateOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:154: warning: no @return
+    boolean onCreateOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @param for activity
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @param for featureId
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @param for menu
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:159: warning: no @return
+    boolean onCreatePanelMenu(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @param for activity
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @param for outBitmap
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @param for canvas
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:164: warning: no @return
+    boolean onCreateThumbnail(@NonNull AspectActivity activity, Bitmap outBitmap, Canvas canvas);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:169: warning: no @param for activity
+    boolean onGenericMotionEvent(@NonNull AspectActivity activity, MotionEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:169: warning: no @param for event
+    boolean onGenericMotionEvent(@NonNull AspectActivity activity, MotionEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:169: warning: no @return
+    boolean onGenericMotionEvent(@NonNull AspectActivity activity, MotionEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @param for activity
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @param for keyCode
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @param for event
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:174: warning: no @return
+    boolean onKeyDown(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @param for activity
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @param for keyCode
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @param for event
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:179: warning: no @return
+    boolean onKeyLongPress(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for activity
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for keyCode
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for repeatCount
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @param for event
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:184: warning: no @return
+    boolean onKeyMultiple(@NonNull AspectActivity activity, int keyCode, int repeatCount, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @param for activity
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @param for keyCode
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @param for event
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:189: warning: no @return
+    boolean onKeyShortcut(@NonNull AspectActivity activity, int keyCode, KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @param for activity
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @param for keyCode
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @param for event
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:194: warning: no @return
+    boolean onKeyUp(@NonNull AspectActivity activity, int keyCode, @NonNull KeyEvent event);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @param for activity
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @param for featureId
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @param for item
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:199: warning: no @return
+    boolean onMenuItemSelected(@NonNull AspectActivity activity, int featureId, @NonNull MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @param for activity
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @param for featureId
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @param for menu
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:204: warning: no @return
+    boolean onMenuOpened(@NonNull AspectActivity activity, int featureId, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:209: warning: no @param for activity
+    boolean onNavigateUp(@NonNull AspectActivity activity);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:209: warning: no @return
+    boolean onNavigateUp(@NonNull AspectActivity activity);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:214: warning: no @param for activity
+    boolean onNavigateUpFromChild(@NonNull AspectActivity activity, Activity child);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:214: warning: no @param for child
+    boolean onNavigateUpFromChild(@NonNull AspectActivity activity, Activity child);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:214: warning: no @return
+    boolean onNavigateUpFromChild(@NonNull AspectActivity activity, Activity child);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:219: warning: no @param for activity
+    boolean onOptionsItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:219: warning: no @param for item
+    boolean onOptionsItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:219: warning: no @return
+    boolean onOptionsItemSelected(@NonNull AspectActivity activity, MenuItem item);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:224: warning: no @param for activity
+    boolean onPrepareOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:224: warning: no @param for menu
+    boolean onPrepareOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:224: warning: no @return
+    boolean onPrepareOptionsMenu(@NonNull AspectActivity activity, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:229: warning: no @param for activity
+    boolean onPreparePanel(@NonNull AspectActivity activity, int featureId, View view, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:229: warning: no @param for featureId
+    boolean onPreparePanel(@NonNull AspectActivity activity, int featureId, View view, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:229: warning: no @param for view
+    boolean onPreparePanel(@NonNull AspectActivity activity, int featureId, View view, Menu menu);
+            ^
+/tmp/rdisk/2009/src/aspects/src/main/java/com/shazam/android/aspects/aspects/activity/ActivityAspect.java:229: warning: no @param for menu
+    boolean onPreparePanel(@NonNull AspectActivity activity, int featureId, View view, Menu menu);
+            ^
+
+100 warnings
+:aspects:releaseJavadocJar
+:aspects:signArchives SKIPPED
+:aspects:assemble
+:aspects:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.246 secs
+
+2018-04-03 23:27:40,824 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 23:27:40,886 ERROR FullProcessService - Could not find generated or existed APK file

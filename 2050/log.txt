@@ -1,0 +1,21 @@
+2018-04-03 21:53:56,606 INFO  DownloadService - Downloading "https://github.com/nuptboyzhb/TreeRecyclerView/archive/master.zip", attempt 3
+2018-04-03 21:54:57,274 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 21:54:58,095 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 21:54:58,095 INFO  DownloadService - Downloading "https://github.com/nuptboyzhb/TreeRecyclerView/archive/master.zip", attempt 3
+2018-04-03 21:55:59,400 DEBUG FullProcessService - Repository https://github.com/nuptboyzhb/TreeRecyclerView available: true
+2018-04-03 21:55:59,400 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 21:55:59,400 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/nuptboyzhb/TreeRecyclerView, /tmp/rdisk/2050/src]
+2018-04-03 21:56:01,542 INFO  SysUtils - 
+2018-04-03 21:56:01,552 INFO  GitService - Deleted "/tmp/rdisk/2050/src/.git": true
+2018-04-03 21:56:01,553 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-03 21:56:01,553 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2050/src]
+2018-04-03 21:56:01,564 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2050/src/.git/
+
+2018-04-03 21:56:01,565 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-03 21:56:01,565 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-03 21:56:01,566 INFO  ProjectBuildService - Build script(s): none
+2018-04-03 21:56:01,568 INFO  ProjectBuildService - All script(s): none
+2018-04-03 21:56:01,568 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 21:56:01,568 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-03 21:56:01,568 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 21:56:01,569 ERROR FullProcessService - Could not find generated or existed APK file

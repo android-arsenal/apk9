@@ -1,0 +1,7 @@
+{
+  "com.golshadi.orientationSensor" : [ "BuildConfig", "R", "R$attr", "R$drawable", "R$layout", "R$string", "TestActivity" ],
+  "com.golshadi.orientationSensor.math" : [ "Matrix3x3" ],
+  "com.golshadi.orientationSensor.responseProvider" : [ "orientationResponseProvider" ],
+  "com.golshadi.orientationSensor.sensors" : [ "Isensor", "Orientation", "Orientation$1", "Orientation$calculateFusedOrientationTask", "accelerometer", "gyroscope", "magnetic" ],
+  "com.golshadi.orientationSensor.utils" : [ "AppConstants", "OrientationSensorInterface" ]
+}

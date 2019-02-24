@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.stanfy.enroscar.goro.sample",
+    "label" : "Goro",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 2,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 71,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"2\" android:versionName=\"1.0\" package=\"com.stanfy.enroscar.goro.sample\" platformBuildVersionCode=\"27\" platformBuildVersionName=\"8.1.0\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"27\" />\n\t<application android:label=\"Goro\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"false\">\n\t\t<activity android:name=\"com.stanfy.enroscar.goro.sample.GoroActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<service android:name=\"com.stanfy.enroscar.goro.GoroService\" android:enabled=\"false\" android:exported=\"false\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 61525,
+  "crc32" : 3954684949,
+  "sha256" : "af30ca23b235f1434a5849a56cd618bbc3e47a30d383189ef9a17dc2ffde582f",
+  "buildTime" : 1522781197000
+}

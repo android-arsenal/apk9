@@ -1,0 +1,222 @@
+2018-05-11 11:38:02,457 INFO  DownloadService - Downloading "https://github.com/kaichunlin/android-transition/archive/master.zip", attempt 3
+2018-05-11 11:38:03,803 INFO  DownloadService - Downloaded https://github.com/kaichunlin/android-transition/archive/master.zip, attempt 3
+2018-05-11 11:38:03,804 INFO  DownloadService - Size of file "/tmp/rdisk/2013/master.zip": 5 MB
+2018-05-11 11:38:03,804 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:38:03,804 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2013/master.zip: true
+2018-05-11 11:38:03,804 DEBUG ZipUtil - Extracting '/tmp/rdisk/2013/master.zip' into '/tmp/rdisk/2013/src'.
+2018-05-11 11:38:03,874 INFO  FullProcessService - Size of directory with sources: 6 MB
+2018-05-11 11:38:03,874 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2013/src]
+2018-05-11 11:38:03,879 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2013/src/.git/
+
+2018-05-11 11:38:03,883 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2013/src/android-transition-master/gradlew
+2018-05-11 11:38:03,888 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2013/src/android-transition-master/app/build.gradle /tmp/rdisk/2013/src/android-transition-master/core/build.gradle /tmp/rdisk/2013/src/android-transition-master/observablescrollview/build.gradle /tmp/rdisk/2013/src/android-transition-master/slidinguppanel/build.gradle /tmp/rdisk/2013/src/android-transition-master/build.gradle
+2018-05-11 11:38:03,892 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2013/src/android-transition-master/upload.gradle /tmp/rdisk/2013/src/android-transition-master/slidinguppanel/build.gradle /tmp/rdisk/2013/src/android-transition-master/settings.gradle /tmp/rdisk/2013/src/android-transition-master/observablescrollview/build.gradle /tmp/rdisk/2013/src/android-transition-master/core/build.gradle /tmp/rdisk/2013/src/android-transition-master/build.gradle /tmp/rdisk/2013/src/android-transition-master/app/build.gradle
+2018-05-11 11:38:03,893 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:38:03,893 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:38:03,902 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2013/src/android-transition-master/app/local.properties
+2018-05-11 11:38:03,903 INFO  ProjectFixService - Build info for "/tmp/rdisk/2013/src/android-transition-master/app/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=21]
+2018-05-11 11:38:03,903 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2013/src/android-transition-master/core/local.properties
+2018-05-11 11:38:03,903 INFO  ProjectFixService - Build info for "/tmp/rdisk/2013/src/android-transition-master/core/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=23]
+2018-05-11 11:38:03,904 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2013/src/android-transition-master/observablescrollview/local.properties
+2018-05-11 11:38:03,904 INFO  ProjectFixService - Build info for "/tmp/rdisk/2013/src/android-transition-master/observablescrollview/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=22]
+2018-05-11 11:38:03,904 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2013/src/android-transition-master/slidinguppanel/local.properties
+2018-05-11 11:38:03,905 INFO  ProjectFixService - Build info for "/tmp/rdisk/2013/src/android-transition-master/slidinguppanel/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=22]
+2018-05-11 11:38:03,905 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2013/src/android-transition-master/local.properties
+2018-05-11 11:38:03,905 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-05-11 11:38:03,905 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-05-11 11:38:03,907 INFO  ProjectFixService - Build info for "/tmp/rdisk/2013/src/android-transition-master/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=11,targetSdkVersion=22]
+2018-05-11 11:38:03,907 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:38:03,907 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:38:03,908 INFO  SysUtils - Execute command: [/tmp/rdisk/2013/src/android-transition-master/gradlew, -b, /tmp/rdisk/2013/src/android-transition-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:38:12,975 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-11 11:38:12,975 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 11:38:12,975 INFO  SysUtils - Execute command: [/tmp/rdisk/2013/src/android-transition-master/gradlew, -b, /tmp/rdisk/2013/src/android-transition-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 11:38:44,856 INFO  SysUtils - Configuration on demand is an incubating feature.
+WARNING: The `android.dexOptions.incremental` property is deprecated and it has no effect on the build process.
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:app:prepareComAndroidSupportAppcompatV72531Library
+:app:prepareComAndroidSupportRecyclerviewV72340Library
+:app:prepareComAndroidSupportSupportCompat2531Library
+:app:prepareComAndroidSupportSupportCoreUi2531Library
+:app:prepareComAndroidSupportSupportCoreUtils2531Library
+:app:prepareComAndroidSupportSupportFragment2531Library
+:app:prepareComAndroidSupportSupportMediaCompat2531Library
+:app:prepareComAndroidSupportSupportV42531Library
+:app:prepareComAndroidSupportSupportVectorDrawable2531Library
+:app:prepareComSothreeSlidinguppanelLibrary331Library
+:core:preBuild UP-TO-DATE
+:core:preReleaseBuild UP-TO-DATE
+:core:checkReleaseManifest
+:core:preDebugAndroidTestBuild UP-TO-DATE
+:core:preDebugBuild UP-TO-DATE
+:core:preDebugUnitTestBuild UP-TO-DATE
+:core:preReleaseUnitTestBuild UP-TO-DATE
+:core:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:core:prepareComAndroidSupportAppcompatV72531Library
+:core:prepareComAndroidSupportSupportCompat2531Library
+:core:prepareComAndroidSupportSupportCoreUi2531Library
+:core:prepareComAndroidSupportSupportCoreUtils2531Library
+:core:prepareComAndroidSupportSupportFragment2531Library
+:core:prepareComAndroidSupportSupportMediaCompat2531Library
+:core:prepareComAndroidSupportSupportV42531Library
+:core:prepareComAndroidSupportSupportVectorDrawable2531Library
+:core:prepareReleaseDependencies
+:core:compileReleaseAidl
+:core:compileReleaseNdk UP-TO-DATE
+:core:compileLint
+:core:copyReleaseLint UP-TO-DATE
+:core:compileReleaseRenderscript
+:core:generateReleaseBuildConfig
+:core:generateReleaseResValues
+:core:generateReleaseResources
+:core:mergeReleaseResources
+:core:processReleaseManifest
+:core:processReleaseResources
+:core:generateReleaseSources
+:core:incrementalReleaseJavaCompilationSafeguard
+:core:javaPreCompileRelease
+:core:compileReleaseJavaWithJavac
+:core:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:core:extractReleaseAnnotations
+:core:mergeReleaseShaders
+:core:compileReleaseShaders
+:core:generateReleaseAssets
+:core:mergeReleaseAssets
+:core:mergeReleaseProguardFiles
+:core:packageReleaseRenderscript UP-TO-DATE
+:core:packageReleaseResources
+:core:processReleaseJavaRes UP-TO-DATE
+:core:transformResourcesWithMergeJavaResForRelease
+:core:transformClassesAndResourcesWithSyncLibJarsForRelease
+:core:mergeReleaseJniLibFolders
+:core:transformNativeLibsWithMergeJniLibsForRelease
+:core:transformNativeLibsWithStripDebugSymbolForRelease
+:core:transformNativeLibsWithSyncJniLibsForRelease
+:core:bundleRelease
+:slidinguppanel:preBuild UP-TO-DATE
+:slidinguppanel:preReleaseBuild UP-TO-DATE
+:slidinguppanel:checkReleaseManifest
+:slidinguppanel:preDebugAndroidTestBuild UP-TO-DATE
+:slidinguppanel:preDebugBuild UP-TO-DATE
+:slidinguppanel:preDebugUnitTestBuild UP-TO-DATE
+:slidinguppanel:preReleaseUnitTestBuild UP-TO-DATE
+:slidinguppanel:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:slidinguppanel:prepareComAndroidSupportAppcompatV72531Library
+:slidinguppanel:prepareComAndroidSupportRecyclerviewV72340Library
+:slidinguppanel:prepareComAndroidSupportSupportCompat2531Library
+:slidinguppanel:prepareComAndroidSupportSupportCoreUi2531Library
+:slidinguppanel:prepareComAndroidSupportSupportCoreUtils2531Library
+:slidinguppanel:prepareComAndroidSupportSupportFragment2531Library
+:slidinguppanel:prepareComAndroidSupportSupportMediaCompat2531Library
+:slidinguppanel:prepareComAndroidSupportSupportV42531Library
+:slidinguppanel:prepareComAndroidSupportSupportVectorDrawable2531Library
+:slidinguppanel:prepareComSothreeSlidinguppanelLibrary331Library
+:slidinguppanel:prepareReleaseDependencies
+:slidinguppanel:compileReleaseAidl
+:slidinguppanel:compileReleaseNdk UP-TO-DATE
+:slidinguppanel:compileLint
+:slidinguppanel:copyReleaseLint UP-TO-DATE
+:slidinguppanel:compileReleaseRenderscript
+:slidinguppanel:generateReleaseBuildConfig
+:slidinguppanel:generateReleaseResValues
+:slidinguppanel:generateReleaseResources
+:slidinguppanel:mergeReleaseResources
+:slidinguppanel:processReleaseManifest
+:slidinguppanel:processReleaseResources
+:slidinguppanel:generateReleaseSources
+:slidinguppanel:incrementalReleaseJavaCompilationSafeguard
+:slidinguppanel:javaPreCompileRelease
+:slidinguppanel:compileReleaseJavaWithJavac
+:slidinguppanel:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:slidinguppanel:extractReleaseAnnotations
+:slidinguppanel:mergeReleaseShaders
+:slidinguppanel:compileReleaseShaders
+:slidinguppanel:generateReleaseAssets
+:slidinguppanel:mergeReleaseAssets
+:slidinguppanel:mergeReleaseProguardFiles
+:slidinguppanel:packageReleaseRenderscript UP-TO-DATE
+:slidinguppanel:packageReleaseResources
+:slidinguppanel:processReleaseJavaRes UP-TO-DATE
+:slidinguppanel:transformResourcesWithMergeJavaResForRelease
+:slidinguppanel:transformClassesAndResourcesWithSyncLibJarsForRelease
+:slidinguppanel:mergeReleaseJniLibFolders
+:slidinguppanel:transformNativeLibsWithMergeJniLibsForRelease
+:slidinguppanel:transformNativeLibsWithStripDebugSymbolForRelease
+:slidinguppanel:transformNativeLibsWithSyncJniLibsForRelease
+:slidinguppanel:bundleRelease
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 31.604 secs
+
+2018-05-11 11:38:44,948 INFO  FullProcessService - Found APK file: /tmp/rdisk/2013/src/android-transition-master/app/build/outputs/apk/app-debug.apk

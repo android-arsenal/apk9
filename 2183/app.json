@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "android.lib.verticalmarqueetextview",
+    "label" : "Vertical Marquee TextView Example",
+    "icon" : null,
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 15,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"android.lib.verticalmarqueetextview\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"23\" />\n\t<application android:label=\"Vertical Marquee TextView Example\" android:icon=\"resourceId:0x1080093\" android:debuggable=\"true\">\n\t\t<activity android:name=\"android.lib.widget.verticalmarqueetextview.demo.ExampleActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 12884,
+  "crc32" : 3222257415,
+  "sha256" : "dc127b984b558482aaeb2aaad2603e8c271847b1b4b0b7dca36f4be8938285b1",
+  "buildTime" : 1496784474000
+}

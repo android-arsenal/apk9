@@ -1,0 +1,9 @@
+2018-04-03 18:54:58,866 INFO  DownloadService - Downloading "https://github.com/jaydeepw/android-utils/archive/master.zip", attempt 3
+2018-04-03 18:54:58,866 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:54:59,281 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:54:59,281 INFO  DownloadService - Downloading "https://github.com/jaydeepw/android-utils/archive/master.zip", attempt 3
+2018-04-03 18:54:59,282 DEBUG FullProcessService - Repository https://github.com/jaydeepw/android-utils available: false
+2018-04-03 18:54:59,282 ERROR FullProcessService - Could not find directory with sources
+2018-04-03 18:54:59,282 ERROR FullProcessService - Project will not be processed
+2018-04-03 18:54:59,282 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 18:54:59,283 ERROR FullProcessService - Could not find generated or existed APK file

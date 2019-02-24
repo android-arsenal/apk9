@@ -1,0 +1,112 @@
+2018-04-03 20:16:48,627 INFO  DownloadService - Downloading "https://github.com/desertjim/ascent/archive/master.zip", attempt 3
+2018-04-03 20:17:49,105 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 20:17:49,743 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 20:17:49,743 INFO  DownloadService - Downloading "https://github.com/desertjim/ascent/archive/master.zip", attempt 3
+2018-04-03 20:18:51,087 DEBUG FullProcessService - Repository https://github.com/desertjim/ascent available: true
+2018-04-03 20:18:51,087 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 20:18:51,087 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/desertjim/ascent, /tmp/rdisk/2092/src]
+2018-04-03 20:18:52,819 INFO  SysUtils - 
+2018-04-03 20:18:52,824 INFO  GitService - Deleted "/tmp/rdisk/2092/src/.git": true
+2018-04-03 20:18:52,828 INFO  FullProcessService - Size of directory with sources: 580 KB
+2018-04-03 20:18:52,828 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2092/src]
+2018-04-03 20:18:52,832 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2092/src/.git/
+
+2018-04-03 20:18:52,836 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2092/src/gradlew
+2018-04-03 20:18:52,840 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2092/src/demo/build.gradle /tmp/rdisk/2092/src/simple-demo/build.gradle /tmp/rdisk/2092/src/build.gradle /tmp/rdisk/2092/src/ascent-processor/build.gradle /tmp/rdisk/2092/src/ascent/build.gradle
+2018-04-03 20:18:52,844 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2092/src/simple-demo/build.gradle /tmp/rdisk/2092/src/settings.gradle /tmp/rdisk/2092/src/demo/build.gradle /tmp/rdisk/2092/src/build.gradle /tmp/rdisk/2092/src/ascent/build.gradle /tmp/rdisk/2092/src/ascent-processor/build.gradle
+2018-04-03 20:18:52,844 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 20:18:52,844 INFO  ProjectFixService - Fixing project...
+2018-04-03 20:18:52,852 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2092/src/demo/local.properties
+2018-04-03 20:18:52,853 INFO  ProjectFixService - Build info for "/tmp/rdisk/2092/src/demo/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=8]
+2018-04-03 20:18:52,853 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2092/src/simple-demo/local.properties
+2018-04-03 20:18:52,853 INFO  ProjectFixService - Build info for "/tmp/rdisk/2092/src/simple-demo/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=14]
+2018-04-03 20:18:52,854 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2092/src/local.properties
+2018-04-03 20:18:52,854 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-03 20:18:52,854 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-03 20:18:52,854 INFO  ProjectFixService - Build info for "/tmp/rdisk/2092/src/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=14]
+2018-04-03 20:18:52,855 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2092/src/ascent-processor/local.properties
+2018-04-03 20:18:52,855 INFO  ProjectFixService - Build info for "/tmp/rdisk/2092/src/ascent-processor/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=14]
+2018-04-03 20:18:52,855 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2092/src/ascent/local.properties
+2018-04-03 20:18:52,856 INFO  ProjectFixService - Build info for "/tmp/rdisk/2092/src/ascent/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=14]
+2018-04-03 20:18:52,856 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 20:18:52,856 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:18:52,856 INFO  SysUtils - Execute command: [/tmp/rdisk/2092/src/gradlew, -b, /tmp/rdisk/2092/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:19:13,259 INFO  ProjectTaskService - Detected possible tasks: 51
+2018-04-03 20:19:13,260 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 20:19:13,260 INFO  SysUtils - Execute command: [/tmp/rdisk/2092/src/gradlew, -b, /tmp/rdisk/2092/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 20:19:53,099 INFO  SysUtils - Configuration on demand is an incubating feature.
+The ConfigurationContainer.add() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use the create() method instead.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:demo:preBuild
+:demo:compileDebugNdk
+:ascent:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:ascent:processResources UP-TO-DATE
+:ascent:classes
+:ascent:jar
+:ascent-processor:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+
+:ascent-processor:processResources
+:ascent-processor:classes
+:ascent-processor:jar
+:demo:preDebugBuild
+:demo:checkDebugManifest
+:demo:preReleaseBuild
+:demo:prepareComAndroidSupportAppcompatV72000Library
+:demo:prepareComAndroidSupportSupportV42000Library
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:compileDebugJavaNote: AscentProcessor took 42 milliseconds
+Note: AscentProcessor took 0 milliseconds
+Note: AscentProcessor took 0 milliseconds
+
+:demo:preDexDebug
+:demo:dexDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:compileReleaseJavaNote: AscentProcessor took 45 milliseconds
+Note: AscentProcessor took 0 milliseconds
+Note: AscentProcessor took 0 milliseconds
+
+:demo:lintVitalRelease
+:demo:compileReleaseNdk
+:demo:preDexRelease
+:demo:dexRelease
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 39.358 secs
+
+2018-04-03 20:19:53,136 INFO  FullProcessService - Found APK file: /tmp/rdisk/2092/src/demo/build/outputs/apk/demo-release-unsigned.apk

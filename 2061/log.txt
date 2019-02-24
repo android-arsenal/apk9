@@ -1,0 +1,151 @@
+2018-04-03 21:31:19,942 INFO  DownloadService - Downloading "https://github.com/CyberAgent/aeromock/archive/master.zip", attempt 3
+2018-04-03 21:32:20,381 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 21:32:21,041 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 21:32:21,041 INFO  DownloadService - Downloading "https://github.com/CyberAgent/aeromock/archive/master.zip", attempt 3
+2018-04-03 21:33:22,446 DEBUG FullProcessService - Repository https://github.com/CyberAgent/aeromock available: true
+2018-04-03 21:33:22,447 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 21:33:22,447 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/CyberAgent/aeromock, /tmp/rdisk/2061/src]
+2018-04-03 21:33:24,167 INFO  SysUtils - 
+2018-04-03 21:33:24,185 INFO  GitService - Deleted "/tmp/rdisk/2061/src/.git": true
+2018-04-03 21:33:24,209 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-03 21:33:24,209 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2061/src]
+2018-04-03 21:33:24,214 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2061/src/.git/
+
+2018-04-03 21:33:24,232 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2061/src/aeromock-dsl/gradlew
+2018-04-03 21:33:24,250 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2061/src/aeromock-dsl/build.gradle
+2018-04-03 21:33:24,268 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2061/src/aeromock-dsl/build.gradle
+2018-04-03 21:33:24,269 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 21:33:24,269 INFO  ProjectFixService - Fixing project...
+2018-04-03 21:33:24,309 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2061/src/aeromock-dsl/local.properties
+2018-04-03 21:33:24,310 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-1.10-bin.zip
+2018-04-03 21:33:24,311 INFO  ProjectFixService - Build info for "/tmp/rdisk/2061/src/aeromock-dsl/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 21:33:24,311 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2061/src/aeromock-dsl/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 21:33:24,312 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 21:33:24,312 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 21:33:24,312 INFO  SysUtils - Execute command: [/tmp/rdisk/2061/src/aeromock-dsl/gradlew, -b, /tmp/rdisk/2061/src/aeromock-dsl/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 21:33:36,981 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-03 21:33:36,981 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-03 21:33:36,981 INFO  SysUtils - Execute command: [/tmp/rdisk/2061/src/aeromock-dsl/gradlew, -b, /tmp/rdisk/2061/src/aeromock-dsl/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-03 21:33:47,689 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 21:33:47,689 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJava UP-TO-DATE
+:compileGroovy
+Download http://repo1.maven.org/maven2/org/codehaus/groovy/groovy-all/2.2.0/groovy-all-2.2.0.pom
+Download http://repo1.maven.org/maven2/org/codehaus/groovy/groovy-all/2.2.0/groovy-all-2.2.0.jar
+:processResources UP-TO-DATE
+:classes
+:groovydoc
+:groovydocJar
+:jar
+:sourcesJar
+:signArchives FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':signArchives'.
+> Cannot perform signing task ':signArchives' because it has no configured signatory
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':signArchives'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:289)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$1.run(DefaultTaskPlanExecutor.java:33)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:198)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:266)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.longRunningOperation(DefaultPersistentDirectoryStore.java:135)
+	at org.gradle.api.internal.changedetection.state.DefaultTaskArtifactStateCacheAccess.longRunningOperation(DefaultTaskArtifactStateCacheAccess.java:95)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:31)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:86)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:67)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:54)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:166)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.InvalidUserDataException: Cannot perform signing task ':signArchives' because it has no configured signatory
+	at org.gradle.plugins.signing.Sign.generate(Sign.groovy:162)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:212)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:201)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:533)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:516)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 52 more
+
+
+BUILD FAILED
+
+Total time: 10.247 secs
+
+2018-04-03 21:33:47,708 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 21:33:47,727 ERROR FullProcessService - Could not find generated or existed APK file

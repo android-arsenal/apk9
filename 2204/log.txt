@@ -1,0 +1,129 @@
+2018-04-03 11:54:54,436 INFO  DownloadService - Downloading "https://github.com/AutSoft/CircularTools/archive/master.zip", attempt 3
+2018-04-03 11:55:55,024 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 11:55:55,920 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 11:55:55,921 INFO  DownloadService - Downloading "https://github.com/AutSoft/CircularTools/archive/master.zip", attempt 3
+2018-04-03 11:56:57,172 DEBUG FullProcessService - Repository https://github.com/AutSoft/CircularTools available: true
+2018-04-03 11:56:57,173 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 11:56:57,173 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/AutSoft/CircularTools, /tmp/rdisk/2204/src]
+2018-04-03 11:56:58,912 INFO  SysUtils - 
+2018-04-03 11:56:58,917 INFO  GitService - Deleted "/tmp/rdisk/2204/src/.git": true
+2018-04-03 11:56:58,920 INFO  FullProcessService - Size of directory with sources: 296 KB
+2018-04-03 11:56:58,920 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2204/src]
+2018-04-03 11:56:58,925 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2204/src/.git/
+
+2018-04-03 11:56:58,927 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2204/src/gradlew
+2018-04-03 11:56:58,930 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2204/src/circulardemo/build.gradle /tmp/rdisk/2204/src/circulartools/build.gradle /tmp/rdisk/2204/src/build.gradle
+2018-04-03 11:56:58,933 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2204/src/settings.gradle /tmp/rdisk/2204/src/circulartools/build.gradle /tmp/rdisk/2204/src/circulardemo/build.gradle /tmp/rdisk/2204/src/build.gradle
+2018-04-03 11:56:58,933 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 11:56:58,933 INFO  ProjectFixService - Fixing project...
+2018-04-03 11:56:58,939 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2204/src/circulardemo/local.properties
+2018-04-03 11:56:58,940 INFO  ProjectFixService - Build info for "/tmp/rdisk/2204/src/circulardemo/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=11,targetSdkVersion=22]
+2018-04-03 11:56:58,940 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2204/src/circulartools/local.properties
+2018-04-03 11:56:58,940 INFO  ProjectFixService - Build info for "/tmp/rdisk/2204/src/circulartools/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=11,targetSdkVersion=22]
+2018-04-03 11:56:58,940 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2204/src/local.properties
+2018-04-03 11:56:58,941 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 11:56:58,941 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 11:56:58,942 INFO  ProjectFixService - Build info for "/tmp/rdisk/2204/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=11,targetSdkVersion=22]
+2018-04-03 11:56:58,942 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 11:56:58,942 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:56:58,943 INFO  SysUtils - Execute command: [/tmp/rdisk/2204/src/gradlew, -b, /tmp/rdisk/2204/src/circulardemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:57:07,583 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-03 11:57:07,584 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 11:57:07,584 INFO  SysUtils - Execute command: [/tmp/rdisk/2204/src/gradlew, -b, /tmp/rdisk/2204/src/circulardemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 11:57:33,928 INFO  SysUtils - Configuration on demand is an incubating feature.
+:circulardemo:preBuild
+:circulardemo:compileDebugNdk
+:circulardemo:preDebugBuild
+:circulardemo:checkDebugManifest
+:circulardemo:preReleaseBuild
+:circulartools:compileLint
+:circulartools:copyReleaseLint UP-TO-DATE
+:circulartools:preBuild
+:circulartools:preReleaseBuild
+:circulartools:checkReleaseManifest
+:circulartools:prepareReleaseDependencies
+:circulartools:compileReleaseAidl
+:circulartools:compileReleaseRenderscript
+:circulartools:generateReleaseBuildConfig
+:circulartools:generateReleaseAssets UP-TO-DATE
+:circulartools:mergeReleaseAssets
+:circulartools:generateReleaseResValues
+:circulartools:generateReleaseResources
+:circulartools:packageReleaseResources
+:circulartools:processReleaseManifest
+:circulartools:processReleaseResources
+:circulartools:generateReleaseSources
+:circulartools:compileReleaseJava
+:circulartools:extractReleaseAnnotations
+:circulartools:mergeReleaseProguardFiles
+:circulartools:processReleaseJavaRes UP-TO-DATE
+:circulartools:packageReleaseJar
+:circulartools:compileReleaseNdk
+:circulartools:packageReleaseJniLibs UP-TO-DATE
+:circulartools:packageReleaseLocalJar UP-TO-DATE
+:circulartools:packageReleaseRenderscript UP-TO-DATE
+:circulartools:bundleRelease
+:circulardemo:prepareComAndroidSupportAppcompatV72220Library
+:circulardemo:prepareComAndroidSupportCardviewV72220Library
+:circulardemo:prepareComAndroidSupportDesign2220Library
+:circulardemo:prepareComAndroidSupportSupportV42220Library
+:circulardemo:prepareSrcCirculartoolsUnspecifiedLibrary
+:circulardemo:prepareDebugDependencies
+:circulardemo:compileDebugAidl
+:circulardemo:compileDebugRenderscript
+:circulardemo:generateDebugBuildConfig
+:circulardemo:generateDebugAssets UP-TO-DATE
+:circulardemo:mergeDebugAssets
+:circulardemo:generateDebugResValues
+:circulardemo:generateDebugResources
+:circulardemo:mergeDebugResources/tmp/rdisk/2204/src/circulardemo/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/2204/src/circulardemo/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/2204/src/circulardemo/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:circulardemo:processDebugManifest
+:circulardemo:processDebugResources
+:circulardemo:generateDebugSources
+:circulardemo:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:circulardemo:preDexDebug
+:circulardemo:dexDebug
+:circulardemo:processDebugJavaRes UP-TO-DATE
+:circulardemo:validateDebugSigning
+:circulardemo:packageDebug
+:circulardemo:zipalignDebug
+:circulardemo:assembleDebug
+:circulardemo:checkReleaseManifest
+:circulardemo:prepareReleaseDependencies
+:circulardemo:compileReleaseAidl
+:circulardemo:compileReleaseRenderscript
+:circulardemo:generateReleaseBuildConfig
+:circulardemo:generateReleaseAssets UP-TO-DATE
+:circulardemo:mergeReleaseAssets
+:circulardemo:generateReleaseResValues
+:circulardemo:generateReleaseResources
+:circulardemo:mergeReleaseResources/tmp/rdisk/2204/src/circulardemo/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/2204/src/circulardemo/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+/tmp/rdisk/2204/src/circulardemo/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+:circulardemo:processReleaseManifest
+:circulardemo:processReleaseResources
+:circulardemo:generateReleaseSources
+:circulardemo:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:circulardemo:lintVitalRelease
+:circulardemo:compileReleaseNdk
+:circulardemo:preDexRelease
+:circulardemo:dexRelease
+:circulardemo:processReleaseJavaRes UP-TO-DATE
+:circulardemo:packageRelease
+:circulardemo:assembleRelease
+:circulardemo:assemble
+:circulardemo:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.914 secs
+
+2018-04-03 11:57:33,968 INFO  FullProcessService - Found APK file: /tmp/rdisk/2204/src/circulardemo/build/outputs/apk/circulardemo-release-unsigned.apk

@@ -1,0 +1,517 @@
+2018-04-03 20:20:03,370 INFO  DownloadService - Downloading "https://github.com/donglua/PhotoPicker/archive/master.zip", attempt 3
+2018-04-03 20:21:04,206 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 20:21:05,028 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 20:21:05,029 INFO  DownloadService - Downloading "https://github.com/donglua/PhotoPicker/archive/master.zip", attempt 3
+2018-04-03 20:22:06,408 DEBUG FullProcessService - Repository https://github.com/donglua/PhotoPicker available: true
+2018-04-03 20:22:06,408 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 20:22:06,408 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/donglua/PhotoPicker, /tmp/rdisk/2091/src]
+2018-04-03 20:22:09,190 INFO  SysUtils - 
+2018-04-03 20:22:09,195 INFO  GitService - Deleted "/tmp/rdisk/2091/src/.git": true
+2018-04-03 20:22:09,200 INFO  FullProcessService - Size of directory with sources: 250 KB
+2018-04-03 20:22:09,200 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2091/src]
+2018-04-03 20:22:09,210 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2091/src/.git/
+
+2018-04-03 20:22:09,216 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2091/src/gradlew
+2018-04-03 20:22:09,220 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2091/src/PhotoPicker/build.gradle /tmp/rdisk/2091/src/photopickerdemo/build.gradle /tmp/rdisk/2091/src/build.gradle
+2018-04-03 20:22:09,223 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2091/src/settings.gradle /tmp/rdisk/2091/src/photopickerdemo/build.gradle /tmp/rdisk/2091/src/build.gradle /tmp/rdisk/2091/src/PhotoPicker/build.gradle
+2018-04-03 20:22:09,223 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 20:22:09,223 INFO  ProjectFixService - Fixing project...
+2018-04-03 20:22:09,232 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2091/src/PhotoPicker/local.properties
+2018-04-03 20:22:09,232 INFO  ProjectFixService - Build info for "/tmp/rdisk/2091/src/PhotoPicker/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-03 20:22:09,232 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2091/src/photopickerdemo/local.properties
+2018-04-03 20:22:09,233 INFO  ProjectFixService - Build info for "/tmp/rdisk/2091/src/photopickerdemo/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-03 20:22:09,233 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2091/src/local.properties
+2018-04-03 20:22:09,233 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.2-all.zip
+2018-04-03 20:22:09,233 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.2-bin.zip)
+2018-04-03 20:22:09,235 INFO  ProjectFixService - Build info for "/tmp/rdisk/2091/src/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-03 20:22:09,235 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 20:22:09,235 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:22:09,235 INFO  SysUtils - Execute command: [/tmp/rdisk/2091/src/gradlew, -b, /tmp/rdisk/2091/src/PhotoPicker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:22:21,373 INFO  ProjectTaskService - Detected possible tasks: 76
+2018-04-03 20:22:21,373 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 20:22:21,374 INFO  SysUtils - Execute command: [/tmp/rdisk/2091/src/gradlew, -b, /tmp/rdisk/2091/src/PhotoPicker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 20:22:42,800 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':PhotoPicker' is deprecated. Use 'implementation' instead.
+:PhotoPicker:preBuild UP-TO-DATE
+:PhotoPicker:preDebugBuild UP-TO-DATE
+:PhotoPicker:compileDebugAidl
+:PhotoPicker:compileDebugNdk NO-SOURCE
+:PhotoPicker:compileDebugRenderscript
+:PhotoPicker:checkDebugManifest
+:PhotoPicker:generateDebugBuildConfig
+:PhotoPicker:prepareLintJar
+:PhotoPicker:generateDebugResValues
+:PhotoPicker:generateDebugResources
+:PhotoPicker:packageDebugResources
+:PhotoPicker:platformAttrExtractor
+:PhotoPicker:processDebugManifest
+:PhotoPicker:javaPreCompileDebug
+:PhotoPicker:mergeDebugShaders
+:PhotoPicker:processDebugResources
+:PhotoPicker:generateDebugSources
+:PhotoPicker:compileDebugJavaWithJavac
+:PhotoPicker:extractDebugAnnotations
+:PhotoPicker:compileDebugShaders
+:PhotoPicker:generateDebugAssets
+:PhotoPicker:mergeDebugAssets
+:PhotoPicker:mergeDebugConsumerProguardFiles
+:PhotoPicker:packageDebugRenderscript NO-SOURCE
+:PhotoPicker:processDebugJavaRes NO-SOURCE
+:PhotoPicker:transformResourcesWithMergeJavaResForDebug
+:PhotoPicker:transformClassesAndResourcesWithSyncLibJarsForDebug
+:PhotoPicker:mergeDebugJniLibFolders
+:PhotoPicker:transformNativeLibsWithMergeJniLibsForDebug
+:PhotoPicker:transformNativeLibsWithStripDebugSymbolForDebug
+:PhotoPicker:transformNativeLibsWithSyncJniLibsForDebug
+:PhotoPicker:bundleDebug
+:PhotoPicker:compileDebugSources
+:PhotoPicker:assembleDebug
+:PhotoPicker:preReleaseBuild UP-TO-DATE
+:PhotoPicker:compileReleaseAidl
+:PhotoPicker:compileReleaseNdk NO-SOURCE
+:PhotoPicker:compileReleaseRenderscript
+:PhotoPicker:checkReleaseManifest
+:PhotoPicker:generateReleaseBuildConfig
+:PhotoPicker:generateReleaseResValues
+:PhotoPicker:generateReleaseResources
+:PhotoPicker:packageReleaseResources
+:PhotoPicker:processReleaseManifest
+:PhotoPicker:processReleaseResources
+:PhotoPicker:generateReleaseSources
+:PhotoPicker:javaPreCompileRelease
+:PhotoPicker:compileReleaseJavaWithJavac
+:PhotoPicker:extractReleaseAnnotations
+:PhotoPicker:mergeReleaseShaders
+:PhotoPicker:compileReleaseShaders
+:PhotoPicker:generateReleaseAssets
+:PhotoPicker:mergeReleaseAssets
+:PhotoPicker:mergeReleaseConsumerProguardFiles
+:PhotoPicker:packageReleaseRenderscript NO-SOURCE
+:PhotoPicker:processReleaseJavaRes NO-SOURCE
+:PhotoPicker:transformResourcesWithMergeJavaResForRelease
+:PhotoPicker:transformClassesAndResourcesWithSyncLibJarsForRelease
+:PhotoPicker:mergeReleaseJniLibFolders
+:PhotoPicker:transformNativeLibsWithMergeJniLibsForRelease
+:PhotoPicker:transformNativeLibsWithStripDebugSymbolForRelease
+:PhotoPicker:transformNativeLibsWithSyncJniLibsForRelease
+:PhotoPicker:bundleRelease
+:PhotoPicker:compileReleaseSources
+:PhotoPicker:mergeReleaseResources
+:PhotoPicker:verifyReleaseResources
+:PhotoPicker:assembleRelease
+:PhotoPicker:assemble
+:PhotoPicker:build
+
+BUILD SUCCESSFUL in 20s
+48 actionable tasks: 48 executed
+
+2018-04-03 20:22:42,844 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:22:42,844 INFO  SysUtils - Execute command: [/tmp/rdisk/2091/src/gradlew, -b, /tmp/rdisk/2091/src/photopickerdemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:22:51,084 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-03 20:22:51,084 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 20:22:51,084 INFO  SysUtils - Execute command: [/tmp/rdisk/2091/src/gradlew, -b, /tmp/rdisk/2091/src/photopickerdemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 20:23:39,556 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':photopickerdemo' is deprecated. Use 'implementation' instead.
+The Task.leftShift(Closure) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use Task.doLast(Action) instead.
+	at org.gradle.api.internal.AbstractTask.leftShift(AbstractTask.java:597)
+	at org.gradle.api.Task$leftShift$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.crashlytics.tools.gradle.tasks.FabricTaskBuilder.pluginGenerateResources(FabricTaskBuilder.groovy:114)
+	at com.crashlytics.tools.gradle.tasks.FabricTaskBuilder$pluginGenerateResources.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+	at com.crashlytics.tools.gradle.CrashlyticsPlugin.attachPreCompileTasks(CrashlyticsPlugin.groovy:387)
+	at com.crashlytics.tools.gradle.CrashlyticsPlugin.this$2$attachPreCompileTasks(CrashlyticsPlugin.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at com.crashlytics.tools.gradle.CrashlyticsPlugin.addPluginTasks(CrashlyticsPlugin.groovy:222)
+	at com.crashlytics.tools.gradle.CrashlyticsPlugin.this$2$addPluginTasks(CrashlyticsPlugin.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.gradle.internal.metaobject.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:479)
+	at org.gradle.internal.metaobject.BeanDynamicObject.tryInvokeMethod(BeanDynamicObject.java:191)
+	at org.gradle.internal.metaobject.ConfigureDelegate.invokeMethod(ConfigureDelegate.java:80)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:430)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:369)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at com.crashlytics.tools.gradle.CrashlyticsPlugin$_addPluginTasksToApplicationVariantsIn_closure1.doCall(CrashlyticsPlugin.groovy:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:71)
+	at org.gradle.util.ConfigureUtil.configureTarget(ConfigureUtil.java:160)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:106)
+	at org.gradle.util.ConfigureUtil$1.execute(ConfigureUtil.java:123)
+	at org.gradle.internal.ImmutableActionSet$SingletonSet.execute(ImmutableActionSet.java:155)
+	at org.gradle.internal.MutableActionSet.execute(MutableActionSet.java:35)
+	at org.gradle.api.internal.DefaultDomainObjectCollection.doAdd(DefaultDomainObjectCollection.java:204)
+	at org.gradle.api.internal.DefaultDomainObjectCollection.add(DefaultDomainObjectCollection.java:198)
+	at com.android.build.gradle.AppExtension.addVariant(AppExtension.java:80)
+	at com.android.build.gradle.internal.ApiObjectFactory.create(ApiObjectFactory.java:137)
+	at com.android.build.gradle.BasePlugin.lambda$createAndroidTasks$5(BasePlugin.java:651)
+	at com.android.builder.profile.ThreadRecorder.record(ThreadRecorder.java:81)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.java:636)
+	at com.android.build.gradle.BasePlugin.lambda$null$3(BasePlugin.java:555)
+	at com.android.builder.profile.ThreadRecorder.record(ThreadRecorder.java:81)
+	at com.android.build.gradle.BasePlugin.lambda$createTasks$4(BasePlugin.java:551)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:91)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:80)
+	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:42)
+	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:230)
+	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:149)
+	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:58)
+	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:324)
+	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:234)
+	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:140)
+	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:37)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy23.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:76)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.doConfigure(LifecycleProjectEvaluator.java:70)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.access$100(LifecycleProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$ConfigureProject.run(LifecycleProjectEvaluator.java:110)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:50)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:656)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:135)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:59)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$CalculateTaskGraph.run(DefaultGradleLauncher.java:268)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.initialization.DefaultGradleLauncher.constructTaskGraph(DefaultGradleLauncher.java:175)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:130)
+	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:109)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:78)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:75)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:100)
+	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:75)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$1.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:40)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:57)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:64)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:45)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:280)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:253)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:246)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:182)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+registerResGeneratingTask is deprecated, use registerGeneratedFolders(FileCollection)
+registerResGeneratingTask is deprecated, use registerGeneratedFolders(FileCollection)
+Configuration 'compile' in project ':PhotoPicker' is deprecated. Use 'implementation' instead.
+:PhotoPicker:preBuild UP-TO-DATE
+:PhotoPicker:preDebugBuild UP-TO-DATE
+:PhotoPicker:compileDebugAidl UP-TO-DATE
+:PhotoPicker:compileDebugRenderscript UP-TO-DATE
+:PhotoPicker:checkDebugManifest UP-TO-DATE
+:PhotoPicker:generateDebugBuildConfig UP-TO-DATE
+:PhotoPicker:prepareLintJar UP-TO-DATE
+:PhotoPicker:generateDebugResValues UP-TO-DATE
+:PhotoPicker:generateDebugResources UP-TO-DATE
+:PhotoPicker:packageDebugResources UP-TO-DATE
+:PhotoPicker:platformAttrExtractor UP-TO-DATE
+:PhotoPicker:processDebugManifest UP-TO-DATE
+:PhotoPicker:processDebugResources UP-TO-DATE
+:PhotoPicker:generateDebugSources UP-TO-DATE
+:PhotoPicker:javaPreCompileDebug UP-TO-DATE
+:PhotoPicker:compileDebugJavaWithJavac UP-TO-DATE
+:PhotoPicker:processDebugJavaRes NO-SOURCE
+:PhotoPicker:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:photopickerdemo:preBuild UP-TO-DATE
+:photopickerdemo:preDebugBuild
+:photopickerdemo:compileDebugAidl
+:PhotoPicker:packageDebugRenderscript NO-SOURCE
+:photopickerdemo:compileDebugRenderscript
+:photopickerdemo:checkDebugManifest
+:photopickerdemo:generateDebugBuildConfig
+:photopickerdemo:prepareLintJar
+:PhotoPicker:mergeDebugShaders UP-TO-DATE
+:PhotoPicker:compileDebugShaders UP-TO-DATE
+:PhotoPicker:generateDebugAssets UP-TO-DATE
+:PhotoPicker:mergeDebugAssets UP-TO-DATE
+:photopickerdemo:mergeDebugShaders
+:photopickerdemo:compileDebugShaders
+:photopickerdemo:generateDebugAssets
+:photopickerdemo:mergeDebugAssets
+:photopickerdemo:createDebugCompatibleScreenManifests
+:photopickerdemo:processDebugManifest
+:photopickerdemo:fabricGenerateResourcesDebug
+:photopickerdemo:generateDebugResValues
+:photopickerdemo:generateDebugResources
+:photopickerdemo:mergeDebugResources
+:photopickerdemo:splitsDiscoveryTaskDebug
+:photopickerdemo:processDebugResources
+:photopickerdemo:generateDebugSources
+:photopickerdemo:javaPreCompileDebug
+:photopickerdemo:compileDebugJavaWithJavac
+:photopickerdemo:compileDebugNdk NO-SOURCE
+:photopickerdemo:compileDebugSources
+:photopickerdemo:transformClassesWithDexBuilderForDebug
+:photopickerdemo:transformDexArchiveWithExternalLibsDexMergerForDebug
+:photopickerdemo:transformDexArchiveWithDexMergerForDebug
+:PhotoPicker:compileDebugNdk NO-SOURCE
+:PhotoPicker:mergeDebugJniLibFolders UP-TO-DATE
+:PhotoPicker:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:PhotoPicker:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:PhotoPicker:transformNativeLibsWithIntermediateJniLibsForDebug
+:photopickerdemo:mergeDebugJniLibFolders
+:photopickerdemo:transformNativeLibsWithMergeJniLibsForDebug
+:photopickerdemo:transformNativeLibsWithStripDebugSymbolForDebug
+:photopickerdemo:processDebugJavaRes NO-SOURCE
+:photopickerdemo:transformResourcesWithMergeJavaResForDebug
+:photopickerdemo:validateSigningDebug
+:photopickerdemo:packageDebug
+:photopickerdemo:assembleDebug
+:PhotoPicker:preReleaseBuild UP-TO-DATE
+:PhotoPicker:compileReleaseAidl UP-TO-DATE
+:PhotoPicker:compileReleaseRenderscript UP-TO-DATE
+:PhotoPicker:checkReleaseManifest UP-TO-DATE
+:PhotoPicker:generateReleaseBuildConfig UP-TO-DATE
+:PhotoPicker:generateReleaseResValues UP-TO-DATE
+:PhotoPicker:generateReleaseResources UP-TO-DATE
+:PhotoPicker:packageReleaseResources UP-TO-DATE
+:PhotoPicker:processReleaseManifest UP-TO-DATE
+:PhotoPicker:processReleaseResources UP-TO-DATE
+:PhotoPicker:generateReleaseSources UP-TO-DATE
+:PhotoPicker:javaPreCompileRelease UP-TO-DATE
+:PhotoPicker:compileReleaseJavaWithJavac UP-TO-DATE
+:PhotoPicker:processReleaseJavaRes NO-SOURCE
+:PhotoPicker:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:photopickerdemo:extractProguardFiles
+:photopickerdemo:preReleaseBuild
+:photopickerdemo:compileReleaseAidl
+:PhotoPicker:packageReleaseRenderscript NO-SOURCE
+:photopickerdemo:compileReleaseRenderscript
+:photopickerdemo:checkReleaseManifest
+:photopickerdemo:generateReleaseBuildConfig
+:PhotoPicker:mergeReleaseShaders UP-TO-DATE
+:PhotoPicker:compileReleaseShaders UP-TO-DATE
+:PhotoPicker:generateReleaseAssets UP-TO-DATE
+:PhotoPicker:mergeReleaseAssets UP-TO-DATE
+:photopickerdemo:mergeReleaseShaders
+:photopickerdemo:compileReleaseShaders
+:photopickerdemo:generateReleaseAssets
+:photopickerdemo:mergeReleaseAssets
+:photopickerdemo:createReleaseCompatibleScreenManifests
+:photopickerdemo:processReleaseManifest
+:photopickerdemo:fabricGenerateResourcesRelease
+:photopickerdemo:generateReleaseResValues
+:photopickerdemo:generateReleaseResources
+:photopickerdemo:mergeReleaseResources
+:photopickerdemo:splitsDiscoveryTaskRelease
+:photopickerdemo:processReleaseResources
+:photopickerdemo:generateReleaseSources
+:photopickerdemo:javaPreCompileRelease
+:photopickerdemo:compileReleaseJavaWithJavac
+:photopickerdemo:compileReleaseNdk NO-SOURCE
+:photopickerdemo:compileReleaseSources
+:photopickerdemo:lintVitalRelease
+:PhotoPicker:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:photopickerdemo:processReleaseJavaRes NO-SOURCE
+:photopickerdemo:transformResourcesWithMergeJavaResForRelease
+:photopickerdemo:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/crashlytics-2.6.5.aar/368cf767551d7b768d069d51f611212f/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/af5309dddfcee5ea24bb8c6ef20c13e0/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/3f68365d1523902045c0265a7bf2d552/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/3a4ed30156ae5ebca64ee8fcaad74ad8/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c9ee403ee70d4f8b6f22d58860efb65e/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/b75c9dc732ef74579271a77818b62bda/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/30fc6e3145224b872adf8ac592634556/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/52ab2777c12fb813d5cc1f951c63b922/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/d21e2b0ffb22be1bbb40d176dd518aa1/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/52e14d6638f83548019462d0ef71cd69/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/2483e1a4a9ec89cca2d0ff8c5ddf1840/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/31b84822a0842783fdb19beebff447fd/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/345a75661402dffe4c940753d93b27dc/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.1.1/5cf10dddd902443677b1614579f1183f952f3666/glide-4.1.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/gifdecoder/4.1.1/df97c1211882e43d08911e0b82eb6e1b25b3d311/gifdecoder-4.1.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/beta-1.2.2.aar/a5eacec205ef31daf5c9672f1153471e/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.3.14.aar/39996dd3f4f5ef39c4cd448e543c9962/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/answers-1.3.10.aar/30e81970bdff341621db5c4e08338caf/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/fabric-1.3.14.aar/24cd1096000326b53c022e7a07cc8ac5/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/disklrucache/4.1.1/d02b9bad9380a7f98248e58ec9df65023226259e/disklrucache-4.1.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/annotations/4.1.1/e336eaee0493d7a441c8e7adbaf38d1d78e58596/annotations-4.1.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/61e734981674912a089d119b401a3889/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/2091/src/PhotoPicker/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/2091/src/photopickerdemo/build/intermediates/classes/release] (filtered)
+Reading program jar [/tmp/rdisk/2091/src/photopickerdemo/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-26/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-26/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: the configuration refers to the unknown class 'com.google.android.gms.common.GooglePlayServicesUtil'
+Note: the configuration refers to the unknown class 'com.google.android.gms.ads.identifier.AdvertisingIdClient'
+Note: the configuration refers to the unknown class 'com.google.android.gms.ads.identifier.AdvertisingIdClient$Info'
+Note: com.bumptech.glide.Glide: can't find dynamically referenced class com.bumptech.glide.GeneratedAppGlideModuleImpl
+Note: io.fabric.sdk.android.services.common.AdvertisingInfoReflectionStrategy: can't find dynamically referenced class com.google.android.gms.common.GooglePlayServicesUtil
+Note: io.fabric.sdk.android.services.common.AdvertisingInfoReflectionStrategy: can't find dynamically referenced class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info
+Note: io.fabric.sdk.android.services.common.AdvertisingInfoReflectionStrategy: can't find dynamically referenced class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info
+Note: io.fabric.sdk.android.services.common.AdvertisingInfoReflectionStrategy: can't find dynamically referenced class com.google.android.gms.ads.identifier.AdvertisingIdClient
+Note: the configuration keeps the entry point 'me.iwf.photopicker.widget.TouchImageView { void setOnTouchImageViewListener(me.iwf.photopicker.widget.TouchImageView$OnTouchImageViewListener); }', but not the descriptor class 'me.iwf.photopicker.widget.TouchImageView$OnTouchImageViewListener'
+Note: the configuration keeps the entry point 'me.iwf.photopicker.widget.TouchImageView { void setState(me.iwf.photopicker.widget.TouchImageView$State); }', but not the descriptor class 'me.iwf.photopicker.widget.TouchImageView$State'
+Note: there were 3 references to unknown classes.
+      You should check your configuration for typos.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#unknownclass)
+Note: there were 2 unkept descriptor classes in kept class members.
+      You should consider explicitly keeping the mentioned classes
+      (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+Note: there were 5 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Ignoring unused library classes...
+  Original number of library classes: 4590
+  Final number of library classes:    1259
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/2091/src/photopickerdemo/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 3074
+  Final number of program classes:    2023
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [/tmp/rdisk/2091/src/photopickerdemo/build/outputs/mapping/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/2091/src/photopickerdemo/build/intermediates/transforms/proguard/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/crashlytics-2.6.5.aar/368cf767551d7b768d069d51f611212f/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/af5309dddfcee5ea24bb8c6ef20c13e0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/3f68365d1523902045c0265a7bf2d552/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/3a4ed30156ae5ebca64ee8fcaad74ad8/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c9ee403ee70d4f8b6f22d58860efb65e/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/b75c9dc732ef74579271a77818b62bda/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/30fc6e3145224b872adf8ac592634556/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/52ab2777c12fb813d5cc1f951c63b922/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/d21e2b0ffb22be1bbb40d176dd518aa1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/52e14d6638f83548019462d0ef71cd69/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/2483e1a4a9ec89cca2d0ff8c5ddf1840/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/31b84822a0842783fdb19beebff447fd/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/345a75661402dffe4c940753d93b27dc/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.1.1/5cf10dddd902443677b1614579f1183f952f3666/glide-4.1.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/gifdecoder/4.1.1/df97c1211882e43d08911e0b82eb6e1b25b3d311/gifdecoder-4.1.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/beta-1.2.2.aar/a5eacec205ef31daf5c9672f1153471e/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.3.14.aar/39996dd3f4f5ef39c4cd448e543c9962/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/answers-1.3.10.aar/30e81970bdff341621db5c4e08338caf/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/fabric-1.3.14.aar/24cd1096000326b53c022e7a07cc8ac5/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/disklrucache/4.1.1/d02b9bad9380a7f98248e58ec9df65023226259e/disklrucache-4.1.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/annotations/4.1.1/e336eaee0493d7a441c8e7adbaf38d1d78e58596/annotations-4.1.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/61e734981674912a089d119b401a3889/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2091/src/PhotoPicker/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2091/src/photopickerdemo/build/intermediates/classes/release] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2091/src/photopickerdemo/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/2091/src/photopickerdemo/build/outputs/mapping/release/dump.txt]...
+:photopickerdemo:transformClassesWithDexForRelease
+:PhotoPicker:compileReleaseNdk NO-SOURCE
+:PhotoPicker:mergeReleaseJniLibFolders UP-TO-DATE
+:PhotoPicker:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:PhotoPicker:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:PhotoPicker:transformNativeLibsWithIntermediateJniLibsForRelease
+:photopickerdemo:mergeReleaseJniLibFolders
+:photopickerdemo:transformNativeLibsWithMergeJniLibsForRelease
+:photopickerdemo:transformNativeLibsWithStripDebugSymbolForRelease
+:photopickerdemo:packageRelease
+:photopickerdemo:assembleRelease
+:photopickerdemo:assemble
+:photopickerdemo:build
+
+BUILD SUCCESSFUL in 48s
+92 actionable tasks: 57 executed, 35 up-to-date
+
+2018-04-03 20:23:39,653 INFO  FullProcessService - Found APK file: /tmp/rdisk/2091/src/photopickerdemo/build/outputs/apk/release/photopickerdemo-release-unsigned.apk

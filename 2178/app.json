@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.gordonwong.materialsheetfab.sample",
+    "label" : "MaterialSheetFab",
+    "icon" : "res/mipmap-xhdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-xhdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1698,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.gordonwong.materialsheetfab.sample\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"22\" />\n\t<application android:theme=\"resourceId:0x7f080074\" android:label=\"MaterialSheetFab\" android:icon=\"res/mipmap-xhdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"com.gordonwong.materialsheetfab.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1379640,
+  "crc32" : 3325973847,
+  "sha256" : "ff02690c0c8a53a33824c845e6853458defa98a1a600708c2ba1195d4b510baa",
+  "buildTime" : 1526038107000
+}

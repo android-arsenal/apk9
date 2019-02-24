@@ -1,0 +1,1490 @@
+2018-04-03 18:06:28,649 INFO  DownloadService - Downloading "https://github.com/StylingAndroid/Prism/archive/master.zip", attempt 3
+2018-04-03 18:07:29,114 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:07:29,893 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:07:29,893 INFO  DownloadService - Downloading "https://github.com/StylingAndroid/Prism/archive/master.zip", attempt 3
+2018-04-03 18:08:31,194 DEBUG FullProcessService - Repository https://github.com/StylingAndroid/Prism available: true
+2018-04-03 18:08:31,194 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 18:08:31,194 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/StylingAndroid/Prism, /tmp/rdisk/2159/src]
+2018-04-03 18:08:32,829 INFO  SysUtils - 
+2018-04-03 18:08:32,839 INFO  GitService - Deleted "/tmp/rdisk/2159/src/.git": true
+2018-04-03 18:08:32,849 INFO  FullProcessService - Size of directory with sources: 318 KB
+2018-04-03 18:08:32,849 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2159/src]
+2018-04-03 18:08:32,853 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2159/src/.git/
+
+2018-04-03 18:08:32,861 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2159/src/gradlew
+2018-04-03 18:08:32,868 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2159/src/prism-palette/build.gradle /tmp/rdisk/2159/src/prism-viewpager/build.gradle /tmp/rdisk/2159/src/prism/build.gradle /tmp/rdisk/2159/src/sample-palette/build.gradle /tmp/rdisk/2159/src/sample-viewpager/build.gradle /tmp/rdisk/2159/src/sample/build.gradle /tmp/rdisk/2159/src/build.gradle /tmp/rdisk/2159/src/test-lib/build.gradle
+2018-04-03 18:08:32,875 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2159/src/test-lib/build.gradle /tmp/rdisk/2159/src/settings.gradle /tmp/rdisk/2159/src/sample/build.gradle /tmp/rdisk/2159/src/sample-viewpager/build.gradle /tmp/rdisk/2159/src/sample-palette/build.gradle /tmp/rdisk/2159/src/prism/build.gradle /tmp/rdisk/2159/src/prism-viewpager/build.gradle /tmp/rdisk/2159/src/prism-palette/build.gradle /tmp/rdisk/2159/src/config/static_analysis.gradle /tmp/rdisk/2159/src/config/maven.gradle /tmp/rdisk/2159/src/config/jacoco.gradle /tmp/rdisk/2159/src/config/bintray.gradle /tmp/rdisk/2159/src/build.gradle
+2018-04-03 18:08:32,876 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 18:08:32,876 INFO  ProjectFixService - Fixing project...
+2018-04-03 18:08:32,905 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2159/src/prism-palette/local.properties
+2018-04-03 18:08:32,906 INFO  ProjectFixService - Build info for "/tmp/rdisk/2159/src/prism-palette/build.gradle": [buildToolsVersion=23.0.0 rc3,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:08:32,909 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2159/src/prism-palette/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:08:32,909 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2159/src/prism-viewpager/local.properties
+2018-04-03 18:08:32,910 INFO  ProjectFixService - Build info for "/tmp/rdisk/2159/src/prism-viewpager/build.gradle": [buildToolsVersion=23.0.0 rc3,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:08:32,914 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2159/src/prism-viewpager/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:08:32,916 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2159/src/prism/local.properties
+2018-04-03 18:08:32,929 INFO  ProjectFixService - Build info for "/tmp/rdisk/2159/src/prism/build.gradle": [buildToolsVersion=23.0.0 rc3,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:08:32,929 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2159/src/prism/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:08:32,930 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2159/src/sample-palette/local.properties
+2018-04-03 18:08:32,930 INFO  ProjectFixService - Build info for "/tmp/rdisk/2159/src/sample-palette/build.gradle": [buildToolsVersion=23.0.0 rc3,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:08:32,930 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2159/src/sample-palette/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:08:32,931 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2159/src/sample-viewpager/local.properties
+2018-04-03 18:08:32,931 INFO  ProjectFixService - Build info for "/tmp/rdisk/2159/src/sample-viewpager/build.gradle": [buildToolsVersion=23.0.0 rc3,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:08:32,931 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2159/src/sample-viewpager/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:08:32,931 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2159/src/sample/local.properties
+2018-04-03 18:08:32,932 INFO  ProjectFixService - Build info for "/tmp/rdisk/2159/src/sample/build.gradle": [buildToolsVersion=23.0.0 rc3,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-03 18:08:32,932 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2159/src/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-03 18:08:32,932 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2159/src/local.properties
+2018-04-03 18:08:32,937 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.5-all.zip
+2018-04-03 18:08:32,937 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.5-bin.zip)
+2018-04-03 18:08:32,938 INFO  ProjectFixService - Build info for "/tmp/rdisk/2159/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-03 18:08:32,938 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2159/src/test-lib/local.properties
+2018-04-03 18:08:32,939 INFO  ProjectFixService - Build info for "/tmp/rdisk/2159/src/test-lib/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-03 18:08:32,939 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 18:08:32,939 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:08:32,939 INFO  SysUtils - Execute command: [/tmp/rdisk/2159/src/gradlew, -b, /tmp/rdisk/2159/src/prism-palette/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:08:51,594 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 18:08:51,595 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 18:08:51,595 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 18:08:51,595 INFO  SysUtils - Execute command: [/tmp/rdisk/2159/src/gradlew, -b, /tmp/rdisk/2159/src/prism-palette/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 18:09:28,443 INFO  SysUtils - Configuration on demand is an incubating feature.
+:prism-palette:compileLint
+:prism-palette:copyDebugLint UP-TO-DATE
+:prism:compileLint
+:prism:copyReleaseLint UP-TO-DATE
+:prism:preBuild UP-TO-DATE
+:prism:preReleaseBuild UP-TO-DATE
+:prism:checkReleaseManifest
+:prism:prepareReleaseDependencies
+:prism:compileReleaseAidl
+:prism:compileReleaseRenderscript
+:prism:generateReleaseBuildConfig
+:prism:generateReleaseAssets UP-TO-DATE
+:prism:mergeReleaseAssets
+:prism:generateReleaseResValues
+:prism:generateReleaseResources
+:prism:packageReleaseResources
+:prism:processReleaseManifest
+:prism:processReleaseResources
+:prism:generateReleaseSources
+:prism:processReleaseJavaRes UP-TO-DATE
+:prism:compileReleaseJava
+:prism:extractReleaseAnnotations
+:prism:mergeReleaseProguardFiles
+:prism:packageReleaseJar
+:prism:compileReleaseNdk UP-TO-DATE
+:prism:packageReleaseJniLibs UP-TO-DATE
+:prism:packageReleaseLocalJar UP-TO-DATE
+:prism:packageReleaseRenderscript UP-TO-DATE
+:prism:bundleRelease
+:prism-palette:preBuild UP-TO-DATE
+:prism-palette:preDebugBuild UP-TO-DATE
+:prism-palette:checkDebugManifest
+:prism-palette:preDebugAndroidTestBuild UP-TO-DATE
+:prism-palette:preDebugUnitTestBuild UP-TO-DATE
+:prism-palette:preReleaseBuild UP-TO-DATE
+:prism-palette:preReleaseUnitTestBuild UP-TO-DATE
+:test-lib:compileJava
+:test-lib:processResources UP-TO-DATE
+:test-lib:classes
+:test-lib:jar
+:prism-palette:prepareComAndroidSupportPaletteV72220Library
+:prism-palette:prepareComAndroidSupportSupportV42220Library
+:prism-palette:prepareComStylingandroidPrismPrism101Library
+:prism-palette:prepareDebugDependencies
+:prism-palette:compileDebugAidl
+:prism-palette:compileDebugRenderscript
+:prism-palette:generateDebugBuildConfig
+:prism-palette:generateDebugAssets UP-TO-DATE
+:prism-palette:mergeDebugAssets
+:prism-palette:generateDebugResValues
+:prism-palette:generateDebugResources
+:prism-palette:mergeDebugResources
+:prism-palette:processDebugManifest
+:prism-palette:processDebugResources
+:prism-palette:generateDebugSources
+:prism-palette:processDebugJavaRes UP-TO-DATE
+:prism-palette:compileDebugJava
+:prism-palette:extractDebugAnnotations
+:prism-palette:mergeDebugProguardFiles
+:prism-palette:unzipJacocoAgent
+:prism-palette:instrumentDebug
+:prism-palette:packageDebugJar
+:prism-palette:compileDebugNdk UP-TO-DATE
+:prism-palette:packageDebugJniLibs UP-TO-DATE
+:prism-palette:packageDebugLocalJar
+:prism-palette:packageDebugRenderscript UP-TO-DATE
+:prism-palette:packageDebugResources
+:prism-palette:bundleDebug
+:prism-palette:compileDebugSources
+:prism-palette:assembleDebug
+:prism-palette:copyReleaseLint UP-TO-DATE
+:prism-palette:checkReleaseManifest
+:prism-palette:prepareReleaseDependencies
+:prism-palette:compileReleaseAidl
+:prism-palette:compileReleaseRenderscript
+:prism-palette:generateReleaseBuildConfig
+:prism-palette:generateReleaseAssets UP-TO-DATE
+:prism-palette:mergeReleaseAssets
+:prism-palette:generateReleaseResValues
+:prism-palette:generateReleaseResources
+:prism-palette:mergeReleaseResources
+:prism-palette:processReleaseManifest
+:prism-palette:processReleaseResources
+:prism-palette:generateReleaseSources
+:prism-palette:processReleaseJavaRes UP-TO-DATE
+:prism-palette:compileReleaseJava
+:prism-palette:extractReleaseAnnotations
+:prism-palette:mergeReleaseProguardFiles
+:prism-palette:packageReleaseJar
+:prism-palette:compileReleaseNdk UP-TO-DATE
+:prism-palette:packageReleaseJniLibs UP-TO-DATE
+:prism-palette:packageReleaseLocalJar UP-TO-DATE
+:prism-palette:packageReleaseRenderscript UP-TO-DATE
+:prism-palette:packageReleaseResources
+:prism-palette:bundleRelease
+:prism-palette:compileReleaseSources
+:prism-palette:assembleRelease
+:prism-palette:javadoc/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:5: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:6: error: package android.support.v7.graphics does not exist
+import android.support.v7.graphics.Palette;
+                                  ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:8: error: cannot find symbol
+import com.stylingandroid.prism.BaseTrigger;
+                               ^
+  symbol:   class BaseTrigger
+  location: package com.stylingandroid.prism
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:9: error: cannot find symbol
+import com.stylingandroid.prism.filter.Filter;
+                                      ^
+  symbol:   class Filter
+  location: package com.stylingandroid.prism.filter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:10: error: cannot find symbol
+import com.stylingandroid.prism.filter.CompoundFilter;
+                                      ^
+  symbol:   class CompoundFilter
+  location: package com.stylingandroid.prism.filter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:11: error: cannot find symbol
+import com.stylingandroid.prism.filter.GenericFilter;
+                                      ^
+  symbol:   class GenericFilter
+  location: package com.stylingandroid.prism.filter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:15: error: cannot find symbol
+public class PaletteTrigger extends BaseTrigger {
+                                    ^
+  symbol: class BaseTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:16: error: cannot find symbol
+    private Palette palette;
+            ^
+  symbol:   class Palette
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:25: error: cannot find symbol
+    public Filter getVibrantFilter() {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:29: error: cannot find symbol
+    public Filter getVibrantFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                   ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:29: error: package Palette does not exist
+    public Filter getVibrantFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                                        ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:29: error: cannot find symbol
+    public Filter getVibrantFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:33: error: cannot find symbol
+    public Filter getLightVibrantFilter() {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:37: error: cannot find symbol
+    public Filter getLightVibrantFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                        ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:37: error: package Palette does not exist
+    public Filter getLightVibrantFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                                             ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:37: error: cannot find symbol
+    public Filter getLightVibrantFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:41: error: cannot find symbol
+    public Filter getDarkVibrantFilter() {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:45: error: cannot find symbol
+    public Filter getDarkVibrantFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                       ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:45: error: package Palette does not exist
+    public Filter getDarkVibrantFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                                            ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:45: error: cannot find symbol
+    public Filter getDarkVibrantFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:49: error: cannot find symbol
+    public Filter getMutedFilter() {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:53: error: cannot find symbol
+    public Filter getMutedFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                 ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:53: error: package Palette does not exist
+    public Filter getMutedFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                                      ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:53: error: cannot find symbol
+    public Filter getMutedFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:57: error: cannot find symbol
+    public Filter getLightMutedFilter() {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:61: error: cannot find symbol
+    public Filter getLightMutedFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                      ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:61: error: package Palette does not exist
+    public Filter getLightMutedFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                                           ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:61: error: cannot find symbol
+    public Filter getLightMutedFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:65: error: cannot find symbol
+    public Filter getDarkMutedFilter() {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:69: error: cannot find symbol
+    public Filter getDarkMutedFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                     ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:69: error: package Palette does not exist
+    public Filter getDarkMutedFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+                                                          ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:69: error: cannot find symbol
+    public Filter getDarkMutedFilter(GenericFilter<Palette.Swatch, Integer> nextFilter) {
+           ^
+  symbol:   class Filter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:73: error: cannot find symbol
+    public GenericFilter<Palette.Swatch, Integer> getColour() {
+           ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:73: error: package Palette does not exist
+    public GenericFilter<Palette.Swatch, Integer> getColour() {
+                                ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:77: error: cannot find symbol
+    public GenericFilter<Palette.Swatch, Integer> getColor() {
+           ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:77: error: package Palette does not exist
+    public GenericFilter<Palette.Swatch, Integer> getColor() {
+                                ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:81: error: cannot find symbol
+    public GenericFilter<Palette.Swatch, Integer> getTitleTextColour() {
+           ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:81: error: package Palette does not exist
+    public GenericFilter<Palette.Swatch, Integer> getTitleTextColour() {
+                                ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:85: error: cannot find symbol
+    public GenericFilter<Palette.Swatch, Integer> getTitleTextColor() {
+           ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:85: error: package Palette does not exist
+    public GenericFilter<Palette.Swatch, Integer> getTitleTextColor() {
+                                ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:89: error: cannot find symbol
+    public GenericFilter<Palette.Swatch, Integer> getBodyTextColour() {
+           ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:89: error: package Palette does not exist
+    public GenericFilter<Palette.Swatch, Integer> getBodyTextColour() {
+                                ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:93: error: cannot find symbol
+    public GenericFilter<Palette.Swatch, Integer> getBodyTextColor() {
+           ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:93: error: package Palette does not exist
+    public GenericFilter<Palette.Swatch, Integer> getBodyTextColor() {
+                                ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:97: error: package Palette does not exist
+    private Palette.PaletteAsyncListener listener = new Palette.PaletteAsyncListener() {
+                   ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:197: error: cannot find symbol
+    private GenericFilter<Palette.Swatch, Integer> rgbColour = new GenericFilter<Palette.Swatch, Integer>() {
+            ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:197: error: package Palette does not exist
+    private GenericFilter<Palette.Swatch, Integer> rgbColour = new GenericFilter<Palette.Swatch, Integer>() {
+                                 ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:207: error: cannot find symbol
+    private GenericFilter<Palette.Swatch, Integer> titleTextColour = new GenericFilter<Palette.Swatch, Integer>() {
+            ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:207: error: package Palette does not exist
+    private GenericFilter<Palette.Swatch, Integer> titleTextColour = new GenericFilter<Palette.Swatch, Integer>() {
+                                 ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:217: error: cannot find symbol
+    private GenericFilter<Palette.Swatch, Integer> bodyTextColour = new GenericFilter<Palette.Swatch, Integer>() {
+            ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:217: error: package Palette does not exist
+    private GenericFilter<Palette.Swatch, Integer> bodyTextColour = new GenericFilter<Palette.Swatch, Integer>() {
+                                 ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:227: error: cannot find symbol
+    Palette getPalette() {
+    ^
+  symbol:   class Palette
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:231: error: cannot find symbol
+    void setPalette(Palette palette) {
+                    ^
+  symbol:   class Palette
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:104: error: cannot find symbol
+    private abstract static class BasePaletteFilter implements GenericFilter<Integer, Palette.Swatch> {
+                                                               ^
+  symbol:   class GenericFilter
+  location: class PaletteTrigger
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:104: error: package Palette does not exist
+    private abstract static class BasePaletteFilter implements GenericFilter<Integer, Palette.Swatch> {
+                                                                                             ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:112: error: package Palette does not exist
+        public Palette.Swatch filter(Integer noValue) {
+                      ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:120: error: cannot find symbol
+        protected abstract Palette.Swatch doFilter(Palette palette);
+                                                   ^
+  symbol:   class Palette
+  location: class BasePaletteFilter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:120: error: package Palette does not exist
+        protected abstract Palette.Swatch doFilter(Palette palette);
+                                  ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:122: error: cannot find symbol
+        protected Palette getPalette() {
+                  ^
+  symbol:   class Palette
+  location: class BasePaletteFilter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:137: error: cannot find symbol
+        protected Palette.Swatch doFilter(Palette palette) {
+                                          ^
+  symbol:   class Palette
+  location: class VibrantFilter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:137: error: package Palette does not exist
+        protected Palette.Swatch doFilter(Palette palette) {
+                         ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:148: error: cannot find symbol
+        protected Palette.Swatch doFilter(Palette palette) {
+                                          ^
+  symbol:   class Palette
+  location: class LightVibrantFilter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:148: error: package Palette does not exist
+        protected Palette.Swatch doFilter(Palette palette) {
+                         ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:159: error: cannot find symbol
+        protected Palette.Swatch doFilter(Palette palette) {
+                                          ^
+  symbol:   class Palette
+  location: class DarkVibrantFilter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:159: error: package Palette does not exist
+        protected Palette.Swatch doFilter(Palette palette) {
+                         ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:170: error: cannot find symbol
+        protected Palette.Swatch doFilter(Palette palette) {
+                                          ^
+  symbol:   class Palette
+  location: class MutedFilter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:170: error: package Palette does not exist
+        protected Palette.Swatch doFilter(Palette palette) {
+                         ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:181: error: cannot find symbol
+        protected Palette.Swatch doFilter(Palette palette) {
+                                          ^
+  symbol:   class Palette
+  location: class LightMutedFilter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:181: error: package Palette does not exist
+        protected Palette.Swatch doFilter(Palette palette) {
+                         ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:192: error: package android.support.v7.graphics does not exist
+        protected Palette.Swatch doFilter(android.support.v7.graphics.Palette palette) {
+                                                                     ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:192: error: package Palette does not exist
+        protected Palette.Swatch doFilter(android.support.v7.graphics.Palette palette) {
+                         ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/filter/PaletteFilter.java:3: error: package android.support.v7.graphics does not exist
+import android.support.v7.graphics.Palette;
+                                  ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/filter/PaletteFilter.java:5: error: cannot find symbol
+public class PaletteFilter extends CompoundFilter<Palette.Swatch> {
+                                   ^
+  symbol: class CompoundFilter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/filter/PaletteFilter.java:5: error: package Palette does not exist
+public class PaletteFilter extends CompoundFilter<Palette.Swatch> {
+                                                         ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/filter/PaletteFilter.java:7: error: cannot find symbol
+    public PaletteFilter(GenericFilter<Integer, Palette.Swatch> firstFilter, GenericFilter<Palette.Swatch, Integer> secondFilter) {
+                         ^
+  symbol:   class GenericFilter
+  location: class PaletteFilter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/filter/PaletteFilter.java:7: error: package Palette does not exist
+    public PaletteFilter(GenericFilter<Integer, Palette.Swatch> firstFilter, GenericFilter<Palette.Swatch, Integer> secondFilter) {
+                                                       ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/filter/PaletteFilter.java:7: error: cannot find symbol
+    public PaletteFilter(GenericFilter<Integer, Palette.Swatch> firstFilter, GenericFilter<Palette.Swatch, Integer> secondFilter) {
+                                                                             ^
+  symbol:   class GenericFilter
+  location: class PaletteFilter
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/filter/PaletteFilter.java:7: error: package Palette does not exist
+    public PaletteFilter(GenericFilter<Integer, Palette.Swatch> firstFilter, GenericFilter<Palette.Swatch, Integer> secondFilter) {
+                                                                                                  ^
+/tmp/rdisk/2159/src/prism-palette/src/main/java/com/stylingandroid/prism/palette/PaletteTrigger.java:21: error: cannot find symbol
+    public void setBitmap(@NonNull Bitmap bitmap) {
+                           ^
+  symbol:   class NonNull
+  location: class PaletteTrigger
+javadoc: warning - Class NonNull not found.
+
+80 warnings
+:prism-palette:javadocJar
+:prism-palette:sourcesJar
+:prism-palette:assemble
+:prism-palette:checkstyle
+:prism-palette:findbugs
+:prism-palette:lint
+Ran lint on variant debug: 1 issues found
+Ran lint on variant release: 1 issues found
+Wrote HTML report to file:/tmp/rdisk/2159/src/prism-palette/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2159/src/prism-palette/build/outputs/lint-results.xml
+:prism-palette:pmd
+:prism-palette:preCompileDebugUnitTestJava
+:prism-palette:prepareDebugUnitTestDependencies
+:prism-palette:processDebugUnitTestJavaRes UP-TO-DATE
+:prism-palette:compileDebugUnitTestJava
+:prism-palette:compileDebugUnitTestSources
+:prism-palette:mockableAndroidJar
+:prism-palette:assembleDebugUnitTest
+:prism-palette:testDebug
+:prism-palette:preCompileReleaseUnitTestJava
+:prism-palette:prepareReleaseUnitTestDependencies
+:prism-palette:processReleaseUnitTestJavaRes UP-TO-DATE
+:prism-palette:compileReleaseUnitTestJava
+:prism-palette:compileReleaseUnitTestSources
+:prism-palette:assembleReleaseUnitTest
+:prism-palette:testRelease
+:prism-palette:test
+:prism-palette:check
+:prism-palette:build
+
+BUILD SUCCESSFUL
+
+Total time: 36.426 secs
+
+2018-04-03 18:09:28,463 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:09:28,463 INFO  SysUtils - Execute command: [/tmp/rdisk/2159/src/gradlew, -b, /tmp/rdisk/2159/src/prism-viewpager/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:09:37,431 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 18:09:37,432 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 18:09:37,432 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 18:09:37,432 INFO  SysUtils - Execute command: [/tmp/rdisk/2159/src/gradlew, -b, /tmp/rdisk/2159/src/prism-viewpager/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 18:10:05,978 INFO  SysUtils - Configuration on demand is an incubating feature.
+:prism-viewpager:compileLint
+:prism-viewpager:copyDebugLint UP-TO-DATE
+:prism:compileLint
+:prism:copyReleaseLint UP-TO-DATE
+:prism:preBuild UP-TO-DATE
+:prism:preReleaseBuild UP-TO-DATE
+:prism:checkReleaseManifest
+:prism:prepareReleaseDependencies
+:prism:compileReleaseAidl UP-TO-DATE
+:prism:compileReleaseRenderscript UP-TO-DATE
+:prism:generateReleaseBuildConfig UP-TO-DATE
+:prism:generateReleaseAssets UP-TO-DATE
+:prism:mergeReleaseAssets UP-TO-DATE
+:prism:generateReleaseResValues UP-TO-DATE
+:prism:generateReleaseResources UP-TO-DATE
+:prism:packageReleaseResources UP-TO-DATE
+:prism:processReleaseManifest UP-TO-DATE
+:prism:processReleaseResources UP-TO-DATE
+:prism:generateReleaseSources UP-TO-DATE
+:prism:processReleaseJavaRes UP-TO-DATE
+:prism:compileReleaseJava UP-TO-DATE
+:prism:extractReleaseAnnotations UP-TO-DATE
+:prism:mergeReleaseProguardFiles UP-TO-DATE
+:prism:packageReleaseJar UP-TO-DATE
+:prism:compileReleaseNdk UP-TO-DATE
+:prism:packageReleaseJniLibs UP-TO-DATE
+:prism:packageReleaseLocalJar UP-TO-DATE
+:prism:packageReleaseRenderscript UP-TO-DATE
+:prism:bundleRelease UP-TO-DATE
+:prism-viewpager:preBuild UP-TO-DATE
+:prism-viewpager:preDebugBuild UP-TO-DATE
+:prism-viewpager:checkDebugManifest
+:prism-viewpager:preDebugAndroidTestBuild UP-TO-DATE
+:prism-viewpager:preDebugUnitTestBuild UP-TO-DATE
+:prism-viewpager:preReleaseBuild UP-TO-DATE
+:prism-viewpager:preReleaseUnitTestBuild UP-TO-DATE
+:prism-viewpager:prepareComAndroidSupportSupportV42220Library
+:prism-viewpager:prepareComStylingandroidPrismPrism101Library
+:prism-viewpager:prepareDebugDependencies
+:prism-viewpager:compileDebugAidl
+:prism-viewpager:compileDebugRenderscript
+:prism-viewpager:generateDebugBuildConfig
+:prism-viewpager:generateDebugAssets UP-TO-DATE
+:prism-viewpager:mergeDebugAssets
+:prism-viewpager:generateDebugResValues
+:prism-viewpager:generateDebugResources
+:prism-viewpager:mergeDebugResources
+:prism-viewpager:processDebugManifest
+:prism-viewpager:processDebugResources
+:prism-viewpager:generateDebugSources
+:prism-viewpager:processDebugJavaRes UP-TO-DATE
+:prism-viewpager:compileDebugJava
+:prism-viewpager:extractDebugAnnotations
+:prism-viewpager:mergeDebugProguardFiles
+:prism-viewpager:unzipJacocoAgent
+:prism-viewpager:instrumentDebug
+:prism-viewpager:packageDebugJar
+:prism-viewpager:compileDebugNdk UP-TO-DATE
+:prism-viewpager:packageDebugJniLibs UP-TO-DATE
+:prism-viewpager:packageDebugLocalJar
+:prism-viewpager:packageDebugRenderscript UP-TO-DATE
+:prism-viewpager:packageDebugResources
+:prism-viewpager:bundleDebug
+:prism-viewpager:compileDebugSources
+:prism-viewpager:assembleDebug
+:prism-viewpager:copyReleaseLint UP-TO-DATE
+:prism-viewpager:checkReleaseManifest
+:prism-viewpager:prepareReleaseDependencies
+:prism-viewpager:compileReleaseAidl
+:prism-viewpager:compileReleaseRenderscript
+:prism-viewpager:generateReleaseBuildConfig
+:prism-viewpager:generateReleaseAssets UP-TO-DATE
+:prism-viewpager:mergeReleaseAssets
+:prism-viewpager:generateReleaseResValues
+:prism-viewpager:generateReleaseResources
+:prism-viewpager:mergeReleaseResources
+:prism-viewpager:processReleaseManifest
+:prism-viewpager:processReleaseResources
+:prism-viewpager:generateReleaseSources
+:prism-viewpager:processReleaseJavaRes UP-TO-DATE
+:prism-viewpager:compileReleaseJava
+:prism-viewpager:extractReleaseAnnotations
+:prism-viewpager:mergeReleaseProguardFiles
+:prism-viewpager:packageReleaseJar
+:prism-viewpager:compileReleaseNdk UP-TO-DATE
+:prism-viewpager:packageReleaseJniLibs UP-TO-DATE
+:prism-viewpager:packageReleaseLocalJar UP-TO-DATE
+:prism-viewpager:packageReleaseRenderscript UP-TO-DATE
+:prism-viewpager:packageReleaseResources
+:prism-viewpager:bundleRelease
+:prism-viewpager:compileReleaseSources
+:prism-viewpager:assembleRelease
+:prism-viewpager:javadoc/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ViewPagerTrigger.java:3: error: package android.support.v4.view does not exist
+import android.support.v4.view.ViewPager;
+                              ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ViewPagerTrigger.java:5: error: cannot find symbol
+import com.stylingandroid.prism.BaseTrigger;
+                               ^
+  symbol:   class BaseTrigger
+  location: package com.stylingandroid.prism
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ViewPagerTrigger.java:6: error: cannot find symbol
+import com.stylingandroid.prism.Setter;
+                               ^
+  symbol:   class Setter
+  location: package com.stylingandroid.prism
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ViewPagerTrigger.java:9: error: cannot find symbol
+public class ViewPagerTrigger extends BaseTrigger implements ViewPager.OnPageChangeListener {
+                                      ^
+  symbol: class BaseTrigger
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ViewPagerTrigger.java:9: error: package ViewPager does not exist
+public class ViewPagerTrigger extends BaseTrigger implements ViewPager.OnPageChangeListener {
+                                                                      ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ColourProvider.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ViewPagerTrigger.java:14: error: cannot find symbol
+    public static ViewPagerTrigger newInstance(ViewPager viewPager, ColorProvider colorProvider) {
+                                               ^
+  symbol:   class ViewPager
+  location: class ViewPagerTrigger
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ColorProvider.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ViewPagerTrigger.java:19: error: cannot find symbol
+    public static ViewPagerTrigger newInstance(ViewPager viewPager, ColourProvider colourProvider) {
+                                               ^
+  symbol:   class ViewPager
+  location: class ViewPagerTrigger
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ViewPagerTrigger.java:85: error: cannot find symbol
+    public void addSetter(Setter setter) {
+                          ^
+  symbol:   class Setter
+  location: class ViewPagerTrigger
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ViewPagerTrigger.java:96: error: cannot find symbol
+    public void removeSetter(Setter setter) {
+                             ^
+  symbol:   class Setter
+  location: class ViewPagerTrigger
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ColorProviderAdapter.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerSetterFactory.java:3: error: package android.support.v4.view does not exist
+import android.support.v4.view.ViewPager;
+                              ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerSetterFactory.java:6: error: cannot find symbol
+import com.stylingandroid.prism.Setter;
+                               ^
+  symbol:   class Setter
+  location: package com.stylingandroid.prism
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerSetterFactory.java:7: error: package com.stylingandroid.prism.filter does not exist
+import com.stylingandroid.prism.filter.Filter;
+                                      ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerSetterFactory.java:9: error: cannot find symbol
+public class ViewPagerSetterFactory implements SetterFactory {
+                                               ^
+  symbol: class SetterFactory
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerSetterFactory.java:21: error: cannot find symbol
+    public Setter getColourSetter(View view, Filter filter) {
+                                             ^
+  symbol:   class Filter
+  location: class ViewPagerSetterFactory
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerSetterFactory.java:21: error: cannot find symbol
+    public Setter getColourSetter(View view, Filter filter) {
+           ^
+  symbol:   class Setter
+  location: class ViewPagerSetterFactory
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetterLegacy.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetterLegacy.java:5: error: package com.stylingandroid.prism.filter does not exist
+import com.stylingandroid.prism.filter.Filter;
+                                      ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:7: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:8: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:9: error: package android.support.v4.view does not exist
+import android.support.v4.view.ViewPager;
+                              ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:10: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.EdgeEffectCompat;
+                                ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:13: error: package com.stylingandroid.prism.filter does not exist
+import com.stylingandroid.prism.filter.Filter;
+                                      ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:14: error: package com.stylingandroid.prism.filter does not exist
+import com.stylingandroid.prism.filter.IdentityFilter;
+                                      ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:16: error: cannot find symbol
+public abstract class ViewPagerGlowSetter extends BaseSetter {
+                                                  ^
+  symbol: class BaseSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetterLegacy.java:9: error: cannot find symbol
+    ViewPagerGlowSetterLegacy(Filter filter) {
+                              ^
+  symbol:   class Filter
+  location: class ViewPagerGlowSetterLegacy
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:17: error: cannot find symbol
+    private static final IdentityFilter IDENTITY_FILTER = new IdentityFilter();
+                         ^
+  symbol:   class IdentityFilter
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:26: error: cannot find symbol
+    ViewPagerGlowSetter(Filter filter) {
+                        ^
+  symbol:   class Filter
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:30: error: cannot find symbol
+    public static ViewPagerGlowSetter newInstance(@NonNull ViewPager view) {
+                                                           ^
+  symbol:   class ViewPager
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:34: error: cannot find symbol
+    public static ViewPagerGlowSetter newInstance(@NonNull ViewPager view, @Nullable Filter filter) {
+                                                           ^
+  symbol:   class ViewPager
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:34: error: cannot find symbol
+    public static ViewPagerGlowSetter newInstance(@NonNull ViewPager view, @Nullable Filter filter) {
+                                                                                     ^
+  symbol:   class Filter
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:45: error: cannot find symbol
+    private static ViewPagerGlowSetter newInstanceLollipop(ViewPager view, Filter filter) {
+                                                           ^
+  symbol:   class ViewPager
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:45: error: cannot find symbol
+    private static ViewPagerGlowSetter newInstanceLollipop(ViewPager view, Filter filter) {
+                                                                           ^
+  symbol:   class Filter
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:52: error: cannot find symbol
+    private static EdgeEffect getEdgeEffect(ViewPager viewPager, String edgeFieldName) {
+                                            ^
+  symbol:   class ViewPager
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:59: error: cannot find symbol
+    private static ViewPagerGlowSetter newInstanceIcs(ViewPager viewPager, Filter filter) {
+                                                      ^
+  symbol:   class ViewPager
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:59: error: cannot find symbol
+    private static ViewPagerGlowSetter newInstanceIcs(ViewPager viewPager, Filter filter) {
+                                                                           ^
+  symbol:   class Filter
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:72: error: cannot find symbol
+    static FieldAccessor<Drawable> getDrawableAccessor(EdgeEffect edgeEffect, String fieldName) {
+           ^
+  symbol:   class FieldAccessor
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterLollipop.java:5: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterLollipop.java:8: error: package com.stylingandroid.prism.filter does not exist
+import com.stylingandroid.prism.filter.Filter;
+                                      ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterLollipop.java:15: error: cannot find symbol
+    public GlowSetterLollipop(Filter filter, EdgeEffect leftEdgeEffect, EdgeEffect rightEdgeEffect) {
+                              ^
+  symbol:   class Filter
+  location: class GlowSetterLollipop
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:14: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:15: error: package android.support.annotation does not exist
+import android.support.annotation.DrawableRes;
+                                 ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:18: error: package com.stylingandroid.prism.filter does not exist
+import com.stylingandroid.prism.filter.Filter;
+                                      ^
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:31: error: cannot find symbol
+    GlowSetterIcs(Filter filter, Resources resources, int glowId, int edgeId, EdgeEffect leftEdgeEffect, EdgeEffect rightEdgeEffect) {
+                  ^
+  symbol:   class Filter
+  location: class GlowSetterIcs
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:46: error: cannot find symbol
+    private void setDrawableColour(FieldAccessor<Drawable> drawableFieldAccessor, @DrawableRes int drawableId, @ColorInt int colour) {
+                                   ^
+  symbol:   class FieldAccessor
+  location: class GlowSetterIcs
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:73: error: cannot find symbol
+        private final FieldAccessor<Drawable> glowAccessor;
+                      ^
+  symbol:   class FieldAccessor
+  location: class GlowSetterIcs.Setter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:74: error: cannot find symbol
+        private final FieldAccessor<Drawable> edgeAccessor;
+                      ^
+  symbol:   class FieldAccessor
+  location: class GlowSetterIcs.Setter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ColourProvider.java:6: error: cannot find symbol
+    @ColorInt int getColour(int position);
+     ^
+  symbol:   class ColorInt
+  location: interface ColourProvider
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ColorProvider.java:6: error: cannot find symbol
+    @ColorInt int getColor(int position);
+     ^
+  symbol:   class ColorInt
+  location: interface ColorProvider
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/viewpager/ColorProviderAdapter.java:8: error: cannot find symbol
+    public ColorProviderAdapter(@NonNull ColorProvider colorProvider) {
+                                 ^
+  symbol:   class NonNull
+  location: class ColorProviderAdapter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetterLegacy.java:14: error: cannot find symbol
+    public void onSetColour(@ColorInt int colour) {
+                             ^
+  symbol:   class ColorInt
+  location: class ViewPagerGlowSetterLegacy
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:30: error: cannot find symbol
+    public static ViewPagerGlowSetter newInstance(@NonNull ViewPager view) {
+                                                   ^
+  symbol:   class NonNull
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:34: error: cannot find symbol
+    public static ViewPagerGlowSetter newInstance(@NonNull ViewPager view, @Nullable Filter filter) {
+                                                   ^
+  symbol:   class NonNull
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/ViewPagerGlowSetter.java:34: error: cannot find symbol
+    public static ViewPagerGlowSetter newInstance(@NonNull ViewPager view, @Nullable Filter filter) {
+                                                                            ^
+  symbol:   class Nullable
+  location: class ViewPagerGlowSetter
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterLollipop.java:22: error: cannot find symbol
+    public void onSetColour(@ColorInt int colour) {
+                             ^
+  symbol:   class ColorInt
+  location: class GlowSetterLollipop
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:41: error: cannot find symbol
+    public void onSetColour(@ColorInt int colour) {
+                             ^
+  symbol:   class ColorInt
+  location: class GlowSetterIcs
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:46: error: cannot find symbol
+    private void setDrawableColour(FieldAccessor<Drawable> drawableFieldAccessor, @DrawableRes int drawableId, @ColorInt int colour) {
+                                                                                   ^
+  symbol:   class DrawableRes
+  location: class GlowSetterIcs
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:46: error: cannot find symbol
+    private void setDrawableColour(FieldAccessor<Drawable> drawableFieldAccessor, @DrawableRes int drawableId, @ColorInt int colour) {
+                                                                                                                ^
+  symbol:   class ColorInt
+  location: class GlowSetterIcs
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:62: error: cannot find symbol
+    private Bitmap colourise(Bitmap bitmap, @ColorInt int colour) {
+                                             ^
+  symbol:   class ColorInt
+  location: class GlowSetterIcs
+/tmp/rdisk/2159/src/prism-viewpager/src/main/java/com/stylingandroid/prism/setter/GlowSetterIcs.java:81: error: cannot find symbol
+        public void setColour(@ColorInt int colour) {
+                               ^
+  symbol:   class ColorInt
+  location: class GlowSetterIcs.Setter
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+
+77 warnings
+:prism-viewpager:javadocJar
+:prism-viewpager:sourcesJar
+:prism-viewpager:assemble
+:prism-viewpager:checkstyle
+:prism-viewpager:findbugs
+:prism-viewpager:lint
+Ran lint on variant release: 2 issues found
+Ran lint on variant debug: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/2159/src/prism-viewpager/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2159/src/prism-viewpager/build/outputs/lint-results.xml
+:prism-viewpager:pmd
+:prism-viewpager:preCompileDebugUnitTestJava
+:prism-viewpager:prepareDebugUnitTestDependencies
+:prism-viewpager:processDebugUnitTestJavaRes UP-TO-DATE
+:prism-viewpager:compileDebugUnitTestJava
+:prism-viewpager:compileDebugUnitTestSources
+:prism-viewpager:mockableAndroidJar
+:prism-viewpager:assembleDebugUnitTest
+:prism-viewpager:testDebug
+:prism-viewpager:preCompileReleaseUnitTestJava
+:prism-viewpager:prepareReleaseUnitTestDependencies
+:prism-viewpager:processReleaseUnitTestJavaRes UP-TO-DATE
+:prism-viewpager:compileReleaseUnitTestJava
+:prism-viewpager:compileReleaseUnitTestSources
+:prism-viewpager:assembleReleaseUnitTest
+:prism-viewpager:testRelease
+:prism-viewpager:test
+:prism-viewpager:check
+:prism-viewpager:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.082 secs
+
+2018-04-03 18:10:06,006 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:10:06,006 INFO  SysUtils - Execute command: [/tmp/rdisk/2159/src/gradlew, -b, /tmp/rdisk/2159/src/prism/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:10:14,640 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 18:10:14,640 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 18:10:14,640 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 18:10:14,641 INFO  SysUtils - Execute command: [/tmp/rdisk/2159/src/gradlew, -b, /tmp/rdisk/2159/src/prism/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 18:10:53,483 INFO  SysUtils - Configuration on demand is an incubating feature.
+:prism:compileLint
+:prism:copyDebugLint UP-TO-DATE
+:prism:preBuild UP-TO-DATE
+:prism:preDebugBuild UP-TO-DATE
+:prism:checkDebugManifest
+:prism:prepareDebugDependencies
+:prism:compileDebugAidl
+:prism:compileDebugRenderscript
+:prism:generateDebugBuildConfig
+:prism:generateDebugAssets UP-TO-DATE
+:prism:mergeDebugAssets
+:prism:generateDebugResValues
+:prism:generateDebugResources
+:prism:packageDebugResources
+:prism:processDebugManifest
+:prism:processDebugResources
+:prism:generateDebugSources
+:prism:processDebugJavaRes UP-TO-DATE
+:prism:compileDebugJava
+:prism:extractDebugAnnotations
+:prism:mergeDebugProguardFiles
+:prism:unzipJacocoAgent
+:prism:instrumentDebug
+:prism:packageDebugJar
+:prism:compileDebugNdk UP-TO-DATE
+:prism:packageDebugJniLibs UP-TO-DATE
+:prism:packageDebugLocalJar
+:prism:packageDebugRenderscript UP-TO-DATE
+:prism:bundleDebug
+:prism:compileDebugSources
+:prism:assembleDebug
+:prism:copyReleaseLint UP-TO-DATE
+:prism:preReleaseBuild UP-TO-DATE
+:prism:checkReleaseManifest
+:prism:prepareReleaseDependencies
+:prism:compileReleaseAidl UP-TO-DATE
+:prism:compileReleaseRenderscript UP-TO-DATE
+:prism:generateReleaseBuildConfig UP-TO-DATE
+:prism:generateReleaseAssets UP-TO-DATE
+:prism:mergeReleaseAssets UP-TO-DATE
+:prism:generateReleaseResValues UP-TO-DATE
+:prism:generateReleaseResources UP-TO-DATE
+:prism:packageReleaseResources UP-TO-DATE
+:prism:processReleaseManifest UP-TO-DATE
+:prism:processReleaseResources UP-TO-DATE
+:prism:generateReleaseSources UP-TO-DATE
+:prism:processReleaseJavaRes UP-TO-DATE
+:prism:compileReleaseJava UP-TO-DATE
+:prism:extractReleaseAnnotations UP-TO-DATE
+:prism:mergeReleaseProguardFiles UP-TO-DATE
+:prism:packageReleaseJar UP-TO-DATE
+:prism:compileReleaseNdk UP-TO-DATE
+:prism:packageReleaseJniLibs UP-TO-DATE
+:prism:packageReleaseLocalJar UP-TO-DATE
+:prism:packageReleaseRenderscript UP-TO-DATE
+:prism:bundleRelease UP-TO-DATE
+:prism:compileReleaseSources UP-TO-DATE
+:prism:assembleRelease UP-TO-DATE
+:prism:javadoc/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Setter.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/SetterAdapter.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/ColorSetter.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/BaseTrigger.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/ViewBackgroundSetter.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/BaseSetter.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/TextSetter.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/SystemChromeSetter.java:5: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/ReflectiveCache.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/FabSetter.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Setter.java:6: error: cannot find symbol
+    void setColour(@ColorInt int colour);
+                    ^
+  symbol:   class ColorInt
+  location: interface Setter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Setter.java:8: error: cannot find symbol
+    void setTransientColour(@ColorInt int colour);
+                             ^
+  symbol:   class ColorInt
+  location: interface Setter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/SetterAdapter.java:13: error: cannot find symbol
+    public void setColour(@ColorInt int colour) {
+                           ^
+  symbol:   class ColorInt
+  location: class SetterAdapter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/SetterAdapter.java:18: error: cannot find symbol
+    public void setTransientColour(@ColorInt int colour) {
+                                    ^
+  symbol:   class ColorInt
+  location: class SetterAdapter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/ColorSetter.java:6: error: cannot find symbol
+    void setColor(@ColorInt int color);
+                   ^
+  symbol:   class ColorInt
+  location: interface ColorSetter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/ColorSetter.java:8: error: cannot find symbol
+    void setTransientColor(@ColorInt int color);
+                            ^
+  symbol:   class ColorInt
+  location: interface ColorSetter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:26: error: cannot find symbol
+    public void setColour(@ColorInt int colour) {
+                           ^
+  symbol:   class ColorInt
+  location: class Prism
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:33: error: cannot find symbol
+    public void setTransientColour(@ColorInt int colour) {
+                                    ^
+  symbol:   class ColorInt
+  location: class Prism
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:40: error: cannot find symbol
+    public void setColor(@ColorInt int color) {
+                          ^
+  symbol:   class ColorInt
+  location: class Prism
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:45: error: cannot find symbol
+    public void setTransientColor(@ColorInt int color) {
+                                   ^
+  symbol:   class ColorInt
+  location: class Prism
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:77: error: cannot find symbol
+        private Builder(@NonNull List<Trigger> triggers, @NonNull List<Setter> setters) {
+                         ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:77: error: cannot find symbol
+        private Builder(@NonNull List<Trigger> triggers, @NonNull List<Setter> setters) {
+                                                          ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:82: error: cannot find symbol
+        public Builder background(@NonNull View view) {
+                                   ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:86: error: cannot find symbol
+        public Builder background(@NonNull View view, @NonNull Filter filter) {
+                                   ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:86: error: cannot find symbol
+        public Builder background(@NonNull View view, @NonNull Filter filter) {
+                                                       ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:90: error: cannot find symbol
+        public Builder background(@NonNull Window window) {
+                                   ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:94: error: cannot find symbol
+        public Builder background(@NonNull Window window, @NonNull Filter filter) {
+                                   ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:94: error: cannot find symbol
+        public Builder background(@NonNull Window window, @NonNull Filter filter) {
+                                                           ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:98: error: cannot find symbol
+        public Builder add(@NonNull Setter setter) {
+                            ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:105: error: cannot find symbol
+        public Builder add(@NonNull ColorSetter setter) {
+                            ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:112: error: cannot find symbol
+        public Builder add(@NonNull Trigger trigger) {
+                            ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:119: error: cannot find symbol
+        public Builder text(@NonNull TextView view) {
+                             ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:123: error: cannot find symbol
+        public Builder text(@NonNull TextView view, @NonNull Filter filter) {
+                             ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:123: error: cannot find symbol
+        public Builder text(@NonNull TextView view, @NonNull Filter filter) {
+                                                     ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:127: error: cannot find symbol
+        public Builder colour(@NonNull View view) {
+                               ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:131: error: cannot find symbol
+        public Builder colour(@NonNull View view, @NonNull Filter filter) {
+                               ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:131: error: cannot find symbol
+        public Builder colour(@NonNull View view, @NonNull Filter filter) {
+                                                   ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:135: error: cannot find symbol
+        public Builder color(@NonNull View view) {
+                              ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:139: error: cannot find symbol
+        public Builder color(@NonNull View view, @NonNull Filter filter) {
+                              ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/Prism.java:139: error: cannot find symbol
+        public Builder color(@NonNull View view, @NonNull Filter filter) {
+                                                  ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/BaseTrigger.java:25: error: cannot find symbol
+    protected void setColour(@ColorInt int colour) {
+                              ^
+  symbol:   class ColorInt
+  location: class BaseTrigger
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/BaseTrigger.java:31: error: cannot find symbol
+    protected void setTransientColour(@ColorInt int colour) {
+                                       ^
+  symbol:   class ColorInt
+  location: class BaseTrigger
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/ViewBackgroundSetter.java:17: error: cannot find symbol
+    public void onSetColour(@ColorInt int colour) {
+                             ^
+  symbol:   class ColorInt
+  location: class ViewBackgroundSetter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/BaseSetter.java:23: error: cannot find symbol
+    public final void setColour(@ColorInt int colour) {
+                                 ^
+  symbol:   class ColorInt
+  location: class BaseSetter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/BaseSetter.java:31: error: cannot find symbol
+    public final void setTransientColour(@ColorInt int colour) {
+                                          ^
+  symbol:   class ColorInt
+  location: class BaseSetter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/BaseSetter.java:37: error: cannot find symbol
+    public abstract void onSetColour(@ColorInt int colour);
+                                      ^
+  symbol:   class ColorInt
+  location: class BaseSetter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/TextSetter.java:17: error: cannot find symbol
+    public void onSetColour(@ColorInt int colour) {
+                             ^
+  symbol:   class ColorInt
+  location: class TextSetter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/SystemChromeSetter.java:25: error: cannot find symbol
+    public void onSetColour(@ColorInt int colour) {
+                             ^
+  symbol:   class ColorInt
+  location: class SystemChromeSetter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/SystemChromeSetter.java:33: error: cannot find symbol
+    public void setStatusBarColour(@ColorInt int colour) {
+                                    ^
+  symbol:   class ColorInt
+  location: class SystemChromeSetter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/SystemChromeSetter.java:38: error: cannot find symbol
+    public void setNavigationBarColour(@ColorInt int colour) {
+                                        ^
+  symbol:   class ColorInt
+  location: class SystemChromeSetter
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/ReflectiveCache.java:72: error: cannot find symbol
+        private Signature(@NonNull Class<?> clazz, @NonNull String name, @NonNull Class<?>... params) {
+                           ^
+  symbol:   class NonNull
+  location: class Signature
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/ReflectiveCache.java:72: error: cannot find symbol
+        private Signature(@NonNull Class<?> clazz, @NonNull String name, @NonNull Class<?>... params) {
+                                                    ^
+  symbol:   class NonNull
+  location: class Signature
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/ReflectiveCache.java:72: error: cannot find symbol
+        private Signature(@NonNull Class<?> clazz, @NonNull String name, @NonNull Class<?>... params) {
+                                                                          ^
+  symbol:   class NonNull
+  location: class Signature
+/tmp/rdisk/2159/src/prism/src/main/java/com/stylingandroid/prism/setter/FabSetter.java:30: error: cannot find symbol
+    public void onSetColour(@ColorInt int colour) {
+                             ^
+  symbol:   class ColorInt
+  location: class FabSetter
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+
+90 warnings
+:prism:javadocJar
+:prism:sourcesJar
+:prism:assemble
+:prism:checkstyle
+:prism:findbugs
+:prism:lint
+Ran lint on variant debug: 1 issues found
+Ran lint on variant release: 1 issues found
+Wrote HTML report to file:/tmp/rdisk/2159/src/prism/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2159/src/prism/build/outputs/lint-results.xml
+:prism:pmd
+:prism:preCompileDebugUnitTestJava
+:prism:preDebugUnitTestBuild UP-TO-DATE
+:prism:prepareDebugUnitTestDependencies
+:prism:processDebugUnitTestJavaRes UP-TO-DATE
+:test-lib:compileJava UP-TO-DATE
+:test-lib:processResources UP-TO-DATE
+:test-lib:classes UP-TO-DATE
+:test-lib:jar UP-TO-DATE
+:prism:compileDebugUnitTestJava
+:prism:compileDebugUnitTestSources
+:prism:mockableAndroidJar
+:prism:assembleDebugUnitTest
+:prism:testDebug
+:prism:preCompileReleaseUnitTestJava
+:prism:preReleaseUnitTestBuild UP-TO-DATE
+:prism:prepareReleaseUnitTestDependencies
+:prism:processReleaseUnitTestJavaRes UP-TO-DATE
+:prism:compileReleaseUnitTestJava
+:prism:compileReleaseUnitTestSources
+:prism:assembleReleaseUnitTest
+:prism:testRelease
+:prism:test
+:prism:check
+:prism:build
+
+BUILD SUCCESSFUL
+
+Total time: 38.428 secs
+
+2018-04-03 18:10:53,515 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:10:53,515 INFO  SysUtils - Execute command: [/tmp/rdisk/2159/src/gradlew, -b, /tmp/rdisk/2159/src/sample-palette/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:11:02,403 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 18:11:02,403 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 18:11:02,403 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 18:11:02,403 INFO  SysUtils - Execute command: [/tmp/rdisk/2159/src/gradlew, -b, /tmp/rdisk/2159/src/sample-palette/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 18:11:42,214 INFO  SysUtils - Configuration on demand is an incubating feature.
+:prism:compileLint
+:prism:copyReleaseLint UP-TO-DATE
+:prism:preBuild UP-TO-DATE
+:prism:preReleaseBuild UP-TO-DATE
+:prism:checkReleaseManifest
+:prism:prepareReleaseDependencies
+:prism:compileReleaseAidl UP-TO-DATE
+:prism:compileReleaseRenderscript UP-TO-DATE
+:prism:generateReleaseBuildConfig UP-TO-DATE
+:prism:generateReleaseAssets UP-TO-DATE
+:prism:mergeReleaseAssets UP-TO-DATE
+:prism:generateReleaseResValues UP-TO-DATE
+:prism:generateReleaseResources UP-TO-DATE
+:prism:packageReleaseResources UP-TO-DATE
+:prism:processReleaseManifest UP-TO-DATE
+:prism:processReleaseResources UP-TO-DATE
+:prism:generateReleaseSources UP-TO-DATE
+:prism:processReleaseJavaRes UP-TO-DATE
+:prism:compileReleaseJava UP-TO-DATE
+:prism:extractReleaseAnnotations UP-TO-DATE
+:prism:mergeReleaseProguardFiles UP-TO-DATE
+:prism:packageReleaseJar UP-TO-DATE
+:prism:compileReleaseNdk UP-TO-DATE
+:prism:packageReleaseJniLibs UP-TO-DATE
+:prism:packageReleaseLocalJar UP-TO-DATE
+:prism:packageReleaseRenderscript UP-TO-DATE
+:prism:bundleRelease UP-TO-DATE
+:prism-palette:compileLint
+:prism-palette:copyReleaseLint UP-TO-DATE
+:prism-palette:preBuild UP-TO-DATE
+:prism-palette:preReleaseBuild UP-TO-DATE
+:prism-palette:checkReleaseManifest
+:prism-palette:preDebugAndroidTestBuild UP-TO-DATE
+:prism-palette:preDebugBuild UP-TO-DATE
+:prism-palette:preDebugUnitTestBuild UP-TO-DATE
+:prism-palette:preReleaseUnitTestBuild UP-TO-DATE
+:test-lib:compileJava UP-TO-DATE
+:test-lib:processResources UP-TO-DATE
+:test-lib:classes UP-TO-DATE
+:test-lib:jar UP-TO-DATE
+:prism-palette:prepareComAndroidSupportPaletteV72220Library UP-TO-DATE
+:prism-palette:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:prism-palette:prepareComStylingandroidPrismPrism101Library UP-TO-DATE
+:prism-palette:prepareReleaseDependencies
+:prism-palette:compileReleaseAidl UP-TO-DATE
+:prism-palette:compileReleaseRenderscript UP-TO-DATE
+:prism-palette:generateReleaseBuildConfig UP-TO-DATE
+:prism-palette:generateReleaseAssets UP-TO-DATE
+:prism-palette:mergeReleaseAssets UP-TO-DATE
+:prism-palette:generateReleaseResValues UP-TO-DATE
+:prism-palette:generateReleaseResources UP-TO-DATE
+:prism-palette:mergeReleaseResources UP-TO-DATE
+:prism-palette:processReleaseManifest UP-TO-DATE
+:prism-palette:processReleaseResources UP-TO-DATE
+:prism-palette:generateReleaseSources UP-TO-DATE
+:prism-palette:processReleaseJavaRes UP-TO-DATE
+:prism-palette:compileReleaseJava UP-TO-DATE
+:prism-palette:extractReleaseAnnotations UP-TO-DATE
+:prism-palette:mergeReleaseProguardFiles UP-TO-DATE
+:prism-palette:packageReleaseJar UP-TO-DATE
+:prism-palette:compileReleaseNdk UP-TO-DATE
+:prism-palette:packageReleaseJniLibs UP-TO-DATE
+:prism-palette:packageReleaseLocalJar UP-TO-DATE
+:prism-palette:packageReleaseRenderscript UP-TO-DATE
+:prism-palette:packageReleaseResources UP-TO-DATE
+:prism-palette:bundleRelease UP-TO-DATE
+:sample-palette:preBuild UP-TO-DATE
+:sample-palette:preDebugBuild UP-TO-DATE
+:sample-palette:checkDebugManifest
+:sample-palette:preReleaseBuild UP-TO-DATE
+:sample-palette:prepareComAndroidSupportAppcompatV72220Library
+:sample-palette:prepareComAndroidSupportDesign2220Library
+:sample-palette:prepareComAndroidSupportPaletteV72220Library
+:sample-palette:prepareComAndroidSupportSupportV42220Library
+:sample-palette:prepareComStylingandroidPrismPrism101Library
+:sample-palette:prepareComStylingandroidPrismPrismPalette101Library
+:sample-palette:prepareDebugDependencies
+:sample-palette:compileDebugAidl
+:sample-palette:compileDebugRenderscript
+:sample-palette:generateDebugBuildConfig
+:sample-palette:generateDebugAssets UP-TO-DATE
+:sample-palette:mergeDebugAssets
+:sample-palette:generateDebugResValues
+:sample-palette:generateDebugResources
+:sample-palette:mergeDebugResources
+:sample-palette:processDebugManifest
+:sample-palette:processDebugResources
+:sample-palette:generateDebugSources
+:sample-palette:processDebugJavaRes UP-TO-DATE
+:sample-palette:compileDebugJava
+:sample-palette:compileDebugNdk UP-TO-DATE
+:sample-palette:compileDebugSources
+:sample-palette:preDexDebug
+:sample-palette:dexDebug
+:sample-palette:validateDebugSigning
+:sample-palette:packageDebug
+:sample-palette:zipalignDebug
+:sample-palette:assembleDebug
+:sample-palette:checkReleaseManifest
+:sample-palette:prepareReleaseDependencies
+:sample-palette:compileReleaseAidl
+:sample-palette:compileReleaseRenderscript
+:sample-palette:generateReleaseBuildConfig
+:sample-palette:generateReleaseAssets UP-TO-DATE
+:sample-palette:mergeReleaseAssets
+:sample-palette:generateReleaseResValues
+:sample-palette:generateReleaseResources
+:sample-palette:mergeReleaseResources
+:sample-palette:processReleaseManifest
+:sample-palette:processReleaseResources
+:sample-palette:generateReleaseSources
+:sample-palette:processReleaseJavaRes UP-TO-DATE
+:sample-palette:compileReleaseJava
+:sample-palette:compileReleaseNdk UP-TO-DATE
+:sample-palette:compileReleaseSources
+:sample-palette:lintVitalRelease SKIPPED
+:sample-palette:preDexRelease
+:sample-palette:dexRelease
+:sample-palette:packageRelease
+:sample-palette:assembleRelease
+:sample-palette:assemble
+:sample-palette:checkstyle
+:sample-palette:findbugs
+:sample-palette:compileLint
+:sample-palette:lint
+Ran lint on variant release: 3 issues found
+Ran lint on variant debug: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/2159/src/sample-palette/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2159/src/sample-palette/build/outputs/lint-results.xml
+:sample-palette:pmd
+:sample-palette:preCompileDebugUnitTestJava
+:sample-palette:preDebugUnitTestBuild UP-TO-DATE
+:sample-palette:prepareDebugUnitTestDependencies
+:sample-palette:processDebugUnitTestJavaRes UP-TO-DATE
+:sample-palette:compileDebugUnitTestJava UP-TO-DATE
+:sample-palette:compileDebugUnitTestSources UP-TO-DATE
+:sample-palette:mockableAndroidJar
+:sample-palette:assembleDebugUnitTest
+:sample-palette:testDebug
+:sample-palette:preCompileReleaseUnitTestJava
+:sample-palette:preReleaseUnitTestBuild UP-TO-DATE
+:sample-palette:prepareReleaseUnitTestDependencies
+:sample-palette:processReleaseUnitTestJavaRes UP-TO-DATE
+:sample-palette:compileReleaseUnitTestJava UP-TO-DATE
+:sample-palette:compileReleaseUnitTestSources UP-TO-DATE
+:sample-palette:assembleReleaseUnitTest
+:sample-palette:testRelease
+:sample-palette:test
+:sample-palette:check
+:sample-palette:build
+
+BUILD SUCCESSFUL
+
+Total time: 39.358 secs
+
+2018-04-03 18:11:42,279 INFO  FullProcessService - Found APK file: /tmp/rdisk/2159/src/sample-palette/build/outputs/apk/sample-palette-release-unsigned.apk

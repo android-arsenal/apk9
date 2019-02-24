@@ -1,0 +1,4 @@
+{
+  "com.facebook.device.yearclass" : [ "BuildConfig", "DeviceInfo", "DeviceInfo$1", "R", "YearClass" ],
+  "com.facebook.device.yearclass.sample" : [ "BuildConfig", "MainActivity", "MainActivity$1", "MainActivity$GetOrComputeYearClass", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$string" ]
+}

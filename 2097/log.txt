@@ -1,0 +1,696 @@
+2018-04-03 20:01:34,765 INFO  DownloadService - Downloading "https://github.com/lukaspili/Volley-Ball/archive/master.zip", attempt 3
+2018-04-03 20:02:35,414 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 20:02:36,266 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 20:02:36,266 INFO  DownloadService - Downloading "https://github.com/lukaspili/Volley-Ball/archive/master.zip", attempt 3
+2018-04-03 20:03:37,642 DEBUG FullProcessService - Repository https://github.com/lukaspili/Volley-Ball available: true
+2018-04-03 20:03:37,642 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 20:03:37,642 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/lukaspili/Volley-Ball, /tmp/rdisk/2097/src]
+2018-04-03 20:03:39,293 INFO  SysUtils - 
+2018-04-03 20:03:39,298 INFO  GitService - Deleted "/tmp/rdisk/2097/src/.git": true
+2018-04-03 20:03:39,303 INFO  FullProcessService - Size of directory with sources: 395 KB
+2018-04-03 20:03:39,303 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2097/src]
+2018-04-03 20:03:39,308 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2097/src/.git/
+
+2018-04-03 20:03:39,311 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2097/src/gradlew
+2018-04-03 20:03:39,316 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2097/src/library/build.gradle /tmp/rdisk/2097/src/samples/build.gradle /tmp/rdisk/2097/src/build.gradle /tmp/rdisk/2097/src/test/build.gradle
+2018-04-03 20:03:39,319 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2097/src/test/build.gradle /tmp/rdisk/2097/src/settings.gradle /tmp/rdisk/2097/src/samples/build.gradle /tmp/rdisk/2097/src/library/build.gradle /tmp/rdisk/2097/src/build.gradle
+2018-04-03 20:03:39,320 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 20:03:39,320 INFO  ProjectFixService - Fixing project...
+2018-04-03 20:03:39,329 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2097/src/library/local.properties
+2018-04-03 20:03:39,330 INFO  ProjectFixService - Build info for "/tmp/rdisk/2097/src/library/build.gradle": [buildToolsVersion=19.0.0,compileSdkVersion=18,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 20:03:39,330 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2097/src/library/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 20:03:39,331 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2097/src/samples/local.properties
+2018-04-03 20:03:39,332 INFO  ProjectFixService - Build info for "/tmp/rdisk/2097/src/samples/build.gradle": [buildToolsVersion=18.0.1,compileSdkVersion=18,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 20:03:39,332 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2097/src/samples/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 20:03:39,332 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2097/src/local.properties
+2018-04-03 20:03:39,333 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.8-bin.zip
+2018-04-03 20:03:39,334 INFO  ProjectFixService - Build info for "/tmp/rdisk/2097/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 20:03:39,334 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2097/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 20:03:39,334 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2097/src/test/local.properties
+2018-04-03 20:03:39,336 INFO  ProjectFixService - Build info for "/tmp/rdisk/2097/src/test/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 20:03:39,336 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2097/src/test/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 20:03:39,336 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 20:03:39,336 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:03:39,336 INFO  SysUtils - Execute command: [/tmp/rdisk/2097/src/gradlew, -b, /tmp/rdisk/2097/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:03:49,045 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 20:03:49,045 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 20:03:49,045 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 20:03:49,045 INFO  SysUtils - Execute command: [/tmp/rdisk/2097/src/gradlew, -b, /tmp/rdisk/2097/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 20:03:54,343 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 20:03:54,343 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':library'.
+> Failed to notify project evaluation listener.
+   > Could not resolve all dependencies for configuration ':library:_DebugCompile'.
+      > Could not find com.google.volley:volley:1.0.0-SNAPSHOT.
+        Required by:
+            volleyball:library:unspecified
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':library'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:468)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:76)
+	at org.gradle.execution.TaskPathProjectEvaluator.evaluateByPath(TaskPathProjectEvaluator.java:41)
+	at org.gradle.execution.ProjectEvaluatingAction.configure(ProjectEvaluatingAction.java:50)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:155)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.api.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: org.gradle.listener.ListenerNotificationException: Failed to notify project evaluation listener.
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:90)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:30)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy15.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 32 more
+Caused by: org.gradle.api.artifacts.ResolveException: Could not resolve all dependencies for configuration ':library:_DebugCompile'.
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration.rethrowFailure(DefaultLenientConfiguration.java:52)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.rethrowFailure(DefaultResolvedConfiguration.java:36)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.getResolvedArtifacts(DefaultResolvedConfiguration.java:59)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver$FilesAggregatingResolvedConfiguration.getResolvedArtifacts(SelfResolvingDependencyResolver.java:86)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver$ErrorHandlingResolvedConfiguration.getResolvedArtifacts(ErrorHandlingArtifactDependencyResolver.java:208)
+	at com.android.build.gradle.BasePlugin.collectArtifacts(BasePlugin.groovy:1522)
+	at com.android.build.gradle.BasePlugin$collectArtifacts.callStatic(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencyForConfig(BasePlugin.groovy:1447)
+	at com.android.build.gradle.BasePlugin$resolveDependencyForConfig.callCurrent(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencies(BasePlugin.groovy:1395)
+	at com.android.build.gradle.BasePlugin$resolveDependencies.callCurrent(Unknown Source)
+	at com.android.build.gradle.LibraryPlugin.createLibraryVariant(LibraryPlugin.groovy:189)
+	at com.android.build.gradle.LibraryPlugin.this$3$createLibraryVariant(LibraryPlugin.groovy)
+	at com.android.build.gradle.LibraryPlugin$this$3$createLibraryVariant.callCurrent(Unknown Source)
+	at com.android.build.gradle.LibraryPlugin.doCreateAndroidTasks(LibraryPlugin.groovy:136)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.groovy:272)
+	at com.android.build.gradle.BasePlugin$_apply_closure1.doCall(BasePlugin.groovy:215)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:81)
+	... 36 more
+Caused by: org.gradle.api.internal.artifacts.ivyservice.ModuleVersionNotFoundException: Could not find com.google.volley:volley:1.0.0-SNAPSHOT.
+Required by:
+    volleyball:library:unspecified
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.LazyDependencyToModuleResolver$StaticVersionResolveResult.notFound(LazyDependencyToModuleResolver.java:148)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.LazyDependencyToModuleResolver$AbstractVersionResolveResult.resolve(LazyDependencyToModuleResolver.java:89)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$ModuleVersionResolveState.resolve(DependencyGraphBuilder.java:655)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$ModuleVersionResolveState.getMetaData(DependencyGraphBuilder.java:666)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$DependencyEdge.calculateTargetConfigurations(DependencyGraphBuilder.java:339)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$DependencyEdge.attachToTargetConfigurations(DependencyGraphBuilder.java:313)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder.traverseGraph(DependencyGraphBuilder.java:128)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder.resolve(DependencyGraphBuilder.java:68)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.transform(DefaultDependencyResolver.java:101)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.transform(DefaultDependencyResolver.java:71)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultIvyContextManager.withIvy(DefaultIvyContextManager.java:61)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver.resolve(DefaultDependencyResolver.java:71)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.create(CacheLockingArtifactDependencyResolver.java:39)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.create(CacheLockingArtifactDependencyResolver.java:37)
+	at org.gradle.cache.internal.DefaultCacheAccess.useCache(DefaultCacheAccess.java:143)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.useCache(DefaultPersistentDirectoryStore.java:130)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultCacheLockingManager.useCache(DefaultCacheLockingManager.java:54)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver.resolve(CacheLockingArtifactDependencyResolver.java:37)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver.resolve(SelfResolvingDependencyResolver.java:41)
+	at org.gradle.api.internal.artifacts.ivyservice.ShortcircuitEmptyConfigsArtifactDependencyResolver.resolve(ShortcircuitEmptyConfigsArtifactDependencyResolver.java:46)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver.resolve(ErrorHandlingArtifactDependencyResolver.java:44)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultConfigurationResolver.resolve(DefaultConfigurationResolver.java:42)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveNow(DefaultConfiguration.java:240)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.getResolvedConfiguration(DefaultConfiguration.java:230)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getResolvedConfiguration(Unknown Source)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.getProperty(BeanDynamicObject.java:158)
+	at org.gradle.api.internal.BeanDynamicObject.getProperty(BeanDynamicObject.java:112)
+	at org.gradle.api.internal.CompositeDynamicObject.getProperty(CompositeDynamicObject.java:78)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getProperty(Unknown Source)
+	... 51 more
+
+
+BUILD FAILED
+
+Total time: 4.873 secs
+
+2018-04-03 20:03:54,347 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:03:54,347 INFO  SysUtils - Execute command: [/tmp/rdisk/2097/src/gradlew, -b, /tmp/rdisk/2097/src/samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:04:01,188 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 20:04:01,189 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 20:04:01,189 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 20:04:01,189 INFO  SysUtils - Execute command: [/tmp/rdisk/2097/src/gradlew, -b, /tmp/rdisk/2097/src/samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 20:04:06,559 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 20:04:06,560 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':samples'.
+> Failed to notify project evaluation listener.
+   > A problem occurred configuring project ':library'.
+      > Failed to notify project evaluation listener.
+         > Could not resolve all dependencies for configuration ':library:_DebugCompile'.
+            > Could not find com.google.volley:volley:1.0.0-SNAPSHOT.
+              Required by:
+                  volleyball:library:unspecified
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':samples'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:468)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:76)
+	at org.gradle.execution.TaskPathProjectEvaluator.evaluateByPath(TaskPathProjectEvaluator.java:41)
+	at org.gradle.execution.ProjectEvaluatingAction.configure(ProjectEvaluatingAction.java:50)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:155)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.api.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: org.gradle.listener.ListenerNotificationException: Failed to notify project evaluation listener.
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:90)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:30)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy15.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 32 more
+Caused by: org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':library'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:468)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOn(AbstractProject.java:572)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOn(AbstractProject.java:564)
+	at org.gradle.api.Project$evaluationDependsOn.call(Unknown Source)
+	at com.android.build.gradle.BasePlugin$_ensureConfigured_closure96.doCall(BasePlugin.groovy:1510)
+	at com.android.build.gradle.BasePlugin.ensureConfigured(BasePlugin.groovy:1509)
+	at com.android.build.gradle.BasePlugin$ensureConfigured.callCurrent(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencyForConfig(BasePlugin.groovy:1437)
+	at com.android.build.gradle.BasePlugin$resolveDependencyForConfig.callCurrent(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencies(BasePlugin.groovy:1395)
+	at com.android.build.gradle.BasePlugin$resolveDependencies.callCurrent(Unknown Source)
+	at com.android.build.gradle.AppPlugin.createTasksForDefaultBuild(AppPlugin.groovy:337)
+	at com.android.build.gradle.AppPlugin.doCreateAndroidTasks(AppPlugin.groovy:199)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.groovy:272)
+	at com.android.build.gradle.BasePlugin$_apply_closure1.doCall(BasePlugin.groovy:215)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:81)
+	... 36 more
+Caused by: org.gradle.listener.ListenerNotificationException: Failed to notify project evaluation listener.
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:90)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:30)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy15.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 55 more
+Caused by: org.gradle.api.artifacts.ResolveException: Could not resolve all dependencies for configuration ':library:_DebugCompile'.
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration.rethrowFailure(DefaultLenientConfiguration.java:52)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.rethrowFailure(DefaultResolvedConfiguration.java:36)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.getResolvedArtifacts(DefaultResolvedConfiguration.java:59)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver$FilesAggregatingResolvedConfiguration.getResolvedArtifacts(SelfResolvingDependencyResolver.java:86)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver$ErrorHandlingResolvedConfiguration.getResolvedArtifacts(ErrorHandlingArtifactDependencyResolver.java:208)
+	at com.android.build.gradle.BasePlugin.collectArtifacts(BasePlugin.groovy:1522)
+	at com.android.build.gradle.BasePlugin$collectArtifacts.callStatic(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencyForConfig(BasePlugin.groovy:1447)
+	at com.android.build.gradle.BasePlugin$resolveDependencyForConfig.callCurrent(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencies(BasePlugin.groovy:1395)
+	at com.android.build.gradle.BasePlugin$resolveDependencies.callCurrent(Unknown Source)
+	at com.android.build.gradle.LibraryPlugin.createLibraryVariant(LibraryPlugin.groovy:189)
+	at com.android.build.gradle.LibraryPlugin.this$3$createLibraryVariant(LibraryPlugin.groovy)
+	at com.android.build.gradle.LibraryPlugin$this$3$createLibraryVariant.callCurrent(Unknown Source)
+	at com.android.build.gradle.LibraryPlugin.doCreateAndroidTasks(LibraryPlugin.groovy:136)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.groovy:272)
+	at com.android.build.gradle.BasePlugin$_apply_closure1.doCall(BasePlugin.groovy:215)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:81)
+	... 59 more
+Caused by: org.gradle.api.internal.artifacts.ivyservice.ModuleVersionNotFoundException: Could not find com.google.volley:volley:1.0.0-SNAPSHOT.
+Required by:
+    volleyball:library:unspecified
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.LazyDependencyToModuleResolver$StaticVersionResolveResult.notFound(LazyDependencyToModuleResolver.java:148)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.LazyDependencyToModuleResolver$AbstractVersionResolveResult.resolve(LazyDependencyToModuleResolver.java:89)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$ModuleVersionResolveState.resolve(DependencyGraphBuilder.java:655)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$ModuleVersionResolveState.getMetaData(DependencyGraphBuilder.java:666)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$DependencyEdge.calculateTargetConfigurations(DependencyGraphBuilder.java:339)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$DependencyEdge.attachToTargetConfigurations(DependencyGraphBuilder.java:313)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder.traverseGraph(DependencyGraphBuilder.java:128)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder.resolve(DependencyGraphBuilder.java:68)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.transform(DefaultDependencyResolver.java:101)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.transform(DefaultDependencyResolver.java:71)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultIvyContextManager.withIvy(DefaultIvyContextManager.java:61)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver.resolve(DefaultDependencyResolver.java:71)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.create(CacheLockingArtifactDependencyResolver.java:39)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.create(CacheLockingArtifactDependencyResolver.java:37)
+	at org.gradle.cache.internal.DefaultCacheAccess.useCache(DefaultCacheAccess.java:143)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.useCache(DefaultPersistentDirectoryStore.java:130)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultCacheLockingManager.useCache(DefaultCacheLockingManager.java:54)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver.resolve(CacheLockingArtifactDependencyResolver.java:37)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver.resolve(SelfResolvingDependencyResolver.java:41)
+	at org.gradle.api.internal.artifacts.ivyservice.ShortcircuitEmptyConfigsArtifactDependencyResolver.resolve(ShortcircuitEmptyConfigsArtifactDependencyResolver.java:46)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver.resolve(ErrorHandlingArtifactDependencyResolver.java:44)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultConfigurationResolver.resolve(DefaultConfigurationResolver.java:42)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveNow(DefaultConfiguration.java:240)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.getResolvedConfiguration(DefaultConfiguration.java:230)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getResolvedConfiguration(Unknown Source)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.getProperty(BeanDynamicObject.java:158)
+	at org.gradle.api.internal.BeanDynamicObject.getProperty(BeanDynamicObject.java:112)
+	at org.gradle.api.internal.CompositeDynamicObject.getProperty(CompositeDynamicObject.java:78)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getProperty(Unknown Source)
+	... 74 more
+
+
+BUILD FAILED
+
+Total time: 4.928 secs
+
+2018-04-03 20:04:06,564 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:04:06,564 INFO  SysUtils - Execute command: [/tmp/rdisk/2097/src/gradlew, -b, /tmp/rdisk/2097/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:04:11,318 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 20:04:11,318 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 20:04:11,318 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 20:04:11,318 INFO  SysUtils - Execute command: [/tmp/rdisk/2097/src/gradlew, -b, /tmp/rdisk/2097/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 20:04:16,035 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 20:04:16,036 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':library'.
+> Failed to notify project evaluation listener.
+   > Could not resolve all dependencies for configuration ':library:_DebugCompile'.
+      > Could not find com.google.volley:volley:1.0.0-SNAPSHOT.
+        Required by:
+            volleyball:library:unspecified
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':library'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:468)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:76)
+	at org.gradle.execution.TaskPathProjectEvaluator.evaluateByPath(TaskPathProjectEvaluator.java:43)
+	at org.gradle.execution.ProjectEvaluatingAction.configure(ProjectEvaluatingAction.java:50)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:155)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.api.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: org.gradle.listener.ListenerNotificationException: Failed to notify project evaluation listener.
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:90)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:30)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy15.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 32 more
+Caused by: org.gradle.api.artifacts.ResolveException: Could not resolve all dependencies for configuration ':library:_DebugCompile'.
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration.rethrowFailure(DefaultLenientConfiguration.java:52)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.rethrowFailure(DefaultResolvedConfiguration.java:36)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.getResolvedArtifacts(DefaultResolvedConfiguration.java:59)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver$FilesAggregatingResolvedConfiguration.getResolvedArtifacts(SelfResolvingDependencyResolver.java:86)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver$ErrorHandlingResolvedConfiguration.getResolvedArtifacts(ErrorHandlingArtifactDependencyResolver.java:208)
+	at com.android.build.gradle.BasePlugin.collectArtifacts(BasePlugin.groovy:1522)
+	at com.android.build.gradle.BasePlugin$collectArtifacts.callStatic(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencyForConfig(BasePlugin.groovy:1447)
+	at com.android.build.gradle.BasePlugin$resolveDependencyForConfig.callCurrent(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencies(BasePlugin.groovy:1395)
+	at com.android.build.gradle.BasePlugin$resolveDependencies.callCurrent(Unknown Source)
+	at com.android.build.gradle.LibraryPlugin.createLibraryVariant(LibraryPlugin.groovy:189)
+	at com.android.build.gradle.LibraryPlugin.this$3$createLibraryVariant(LibraryPlugin.groovy)
+	at com.android.build.gradle.LibraryPlugin$this$3$createLibraryVariant.callCurrent(Unknown Source)
+	at com.android.build.gradle.LibraryPlugin.doCreateAndroidTasks(LibraryPlugin.groovy:136)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.groovy:272)
+	at com.android.build.gradle.BasePlugin$_apply_closure1.doCall(BasePlugin.groovy:215)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:81)
+	... 36 more
+Caused by: org.gradle.api.internal.artifacts.ivyservice.ModuleVersionNotFoundException: Could not find com.google.volley:volley:1.0.0-SNAPSHOT.
+Required by:
+    volleyball:library:unspecified
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.LazyDependencyToModuleResolver$StaticVersionResolveResult.notFound(LazyDependencyToModuleResolver.java:148)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.LazyDependencyToModuleResolver$AbstractVersionResolveResult.resolve(LazyDependencyToModuleResolver.java:89)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$ModuleVersionResolveState.resolve(DependencyGraphBuilder.java:655)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$ModuleVersionResolveState.getMetaData(DependencyGraphBuilder.java:666)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$DependencyEdge.calculateTargetConfigurations(DependencyGraphBuilder.java:339)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$DependencyEdge.attachToTargetConfigurations(DependencyGraphBuilder.java:313)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder.traverseGraph(DependencyGraphBuilder.java:128)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder.resolve(DependencyGraphBuilder.java:68)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.transform(DefaultDependencyResolver.java:101)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.transform(DefaultDependencyResolver.java:71)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultIvyContextManager.withIvy(DefaultIvyContextManager.java:61)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver.resolve(DefaultDependencyResolver.java:71)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.create(CacheLockingArtifactDependencyResolver.java:39)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.create(CacheLockingArtifactDependencyResolver.java:37)
+	at org.gradle.cache.internal.DefaultCacheAccess.useCache(DefaultCacheAccess.java:143)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.useCache(DefaultPersistentDirectoryStore.java:130)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultCacheLockingManager.useCache(DefaultCacheLockingManager.java:54)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver.resolve(CacheLockingArtifactDependencyResolver.java:37)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver.resolve(SelfResolvingDependencyResolver.java:41)
+	at org.gradle.api.internal.artifacts.ivyservice.ShortcircuitEmptyConfigsArtifactDependencyResolver.resolve(ShortcircuitEmptyConfigsArtifactDependencyResolver.java:46)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver.resolve(ErrorHandlingArtifactDependencyResolver.java:44)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultConfigurationResolver.resolve(DefaultConfigurationResolver.java:42)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveNow(DefaultConfiguration.java:240)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.getResolvedConfiguration(DefaultConfiguration.java:230)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getResolvedConfiguration(Unknown Source)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.getProperty(BeanDynamicObject.java:158)
+	at org.gradle.api.internal.BeanDynamicObject.getProperty(BeanDynamicObject.java:112)
+	at org.gradle.api.internal.CompositeDynamicObject.getProperty(CompositeDynamicObject.java:78)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getProperty(Unknown Source)
+	... 51 more
+
+
+BUILD FAILED
+
+Total time: 4.277 secs
+
+2018-04-03 20:04:16,040 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:04:16,040 INFO  SysUtils - Execute command: [/tmp/rdisk/2097/src/gradlew, -b, /tmp/rdisk/2097/src/test/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:04:23,259 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 20:04:23,260 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 20:04:23,260 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 20:04:23,260 INFO  SysUtils - Execute command: [/tmp/rdisk/2097/src/gradlew, -b, /tmp/rdisk/2097/src/test/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 20:04:28,096 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 20:04:28,096 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':library'.
+> Failed to notify project evaluation listener.
+   > Could not resolve all dependencies for configuration ':library:_DebugCompile'.
+      > Could not find com.google.volley:volley:1.0.0-SNAPSHOT.
+        Required by:
+            volleyball:library:unspecified
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':library'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:468)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:76)
+	at org.gradle.api.internal.project.DefaultProjectAccessListener.beforeResolvingProjectDependency(DefaultProjectAccessListener.java:28)
+	at org.gradle.api.internal.artifacts.dependencies.DefaultProjectDependency$TaskDependencyImpl.resolve(DefaultProjectDependency.java:162)
+	at org.gradle.api.internal.tasks.CachingTaskDependencyResolveContext$TaskGraphImpl.getNodeValues(CachingTaskDependencyResolveContext.java:86)
+	at org.gradle.internal.graph.CachingDirectedGraphWalker$GraphWithEmpyEdges.getNodeValues(CachingDirectedGraphWalker.java:200)
+	at org.gradle.internal.graph.CachingDirectedGraphWalker.doSearch(CachingDirectedGraphWalker.java:112)
+	at org.gradle.internal.graph.CachingDirectedGraphWalker.findValues(CachingDirectedGraphWalker.java:64)
+	at org.gradle.api.internal.tasks.CachingTaskDependencyResolveContext.doResolve(CachingTaskDependencyResolveContext.java:74)
+	at org.gradle.api.internal.tasks.CachingTaskDependencyResolveContext.resolve(CachingTaskDependencyResolveContext.java:63)
+	at org.gradle.api.internal.tasks.CachingTaskDependencyResolveContext.getDependencies(CachingTaskDependencyResolveContext.java:53)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.addToTaskGraph(DefaultTaskExecutionPlan.java:99)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.addTasks(DefaultTaskGraphExecuter.java:74)
+	at org.gradle.execution.TaskNameResolvingBuildConfigurationAction.configure(TaskNameResolvingBuildConfigurationAction.java:51)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:46)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:38)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.ProjectEvaluatingAction.configure(ProjectEvaluatingAction.java:52)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:155)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.api.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: org.gradle.listener.ListenerNotificationException: Failed to notify project evaluation listener.
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:90)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:30)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy15.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 54 more
+Caused by: org.gradle.api.artifacts.ResolveException: Could not resolve all dependencies for configuration ':library:_DebugCompile'.
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration.rethrowFailure(DefaultLenientConfiguration.java:52)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.rethrowFailure(DefaultResolvedConfiguration.java:36)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.getResolvedArtifacts(DefaultResolvedConfiguration.java:59)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver$FilesAggregatingResolvedConfiguration.getResolvedArtifacts(SelfResolvingDependencyResolver.java:86)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver$ErrorHandlingResolvedConfiguration.getResolvedArtifacts(ErrorHandlingArtifactDependencyResolver.java:208)
+	at com.android.build.gradle.BasePlugin.collectArtifacts(BasePlugin.groovy:1522)
+	at com.android.build.gradle.BasePlugin$collectArtifacts.callStatic(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencyForConfig(BasePlugin.groovy:1447)
+	at com.android.build.gradle.BasePlugin$resolveDependencyForConfig.callCurrent(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencies(BasePlugin.groovy:1395)
+	at com.android.build.gradle.BasePlugin$resolveDependencies.callCurrent(Unknown Source)
+	at com.android.build.gradle.LibraryPlugin.createLibraryVariant(LibraryPlugin.groovy:189)
+	at com.android.build.gradle.LibraryPlugin.this$3$createLibraryVariant(LibraryPlugin.groovy)
+	at com.android.build.gradle.LibraryPlugin$this$3$createLibraryVariant.callCurrent(Unknown Source)
+	at com.android.build.gradle.LibraryPlugin.doCreateAndroidTasks(LibraryPlugin.groovy:136)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.groovy:272)
+	at com.android.build.gradle.BasePlugin$_apply_closure1.doCall(BasePlugin.groovy:215)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:81)
+	... 58 more
+Caused by: org.gradle.api.internal.artifacts.ivyservice.ModuleVersionNotFoundException: Could not find com.google.volley:volley:1.0.0-SNAPSHOT.
+Required by:
+    volleyball:library:unspecified
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.LazyDependencyToModuleResolver$StaticVersionResolveResult.notFound(LazyDependencyToModuleResolver.java:148)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.LazyDependencyToModuleResolver$AbstractVersionResolveResult.resolve(LazyDependencyToModuleResolver.java:89)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$ModuleVersionResolveState.resolve(DependencyGraphBuilder.java:655)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$ModuleVersionResolveState.getMetaData(DependencyGraphBuilder.java:666)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$DependencyEdge.calculateTargetConfigurations(DependencyGraphBuilder.java:339)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$DependencyEdge.attachToTargetConfigurations(DependencyGraphBuilder.java:313)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder.traverseGraph(DependencyGraphBuilder.java:128)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder.resolve(DependencyGraphBuilder.java:68)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.transform(DefaultDependencyResolver.java:101)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.transform(DefaultDependencyResolver.java:71)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultIvyContextManager.withIvy(DefaultIvyContextManager.java:61)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver.resolve(DefaultDependencyResolver.java:71)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.create(CacheLockingArtifactDependencyResolver.java:39)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.create(CacheLockingArtifactDependencyResolver.java:37)
+	at org.gradle.cache.internal.DefaultCacheAccess.useCache(DefaultCacheAccess.java:143)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.useCache(DefaultPersistentDirectoryStore.java:130)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultCacheLockingManager.useCache(DefaultCacheLockingManager.java:54)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver.resolve(CacheLockingArtifactDependencyResolver.java:37)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver.resolve(SelfResolvingDependencyResolver.java:41)
+	at org.gradle.api.internal.artifacts.ivyservice.ShortcircuitEmptyConfigsArtifactDependencyResolver.resolve(ShortcircuitEmptyConfigsArtifactDependencyResolver.java:46)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver.resolve(ErrorHandlingArtifactDependencyResolver.java:44)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultConfigurationResolver.resolve(DefaultConfigurationResolver.java:42)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveNow(DefaultConfiguration.java:240)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.getResolvedConfiguration(DefaultConfiguration.java:230)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getResolvedConfiguration(Unknown Source)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.getProperty(BeanDynamicObject.java:158)
+	at org.gradle.api.internal.BeanDynamicObject.getProperty(BeanDynamicObject.java:112)
+	at org.gradle.api.internal.CompositeDynamicObject.getProperty(CompositeDynamicObject.java:78)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getProperty(Unknown Source)
+	... 73 more
+
+
+BUILD FAILED
+
+Total time: 4.402 secs
+
+2018-04-03 20:04:28,101 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 20:04:28,104 ERROR FullProcessService - Could not find generated or existed APK file

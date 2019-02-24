@@ -1,0 +1,127 @@
+2018-04-03 22:43:52,071 INFO  DownloadService - Downloading "https://github.com/jeffdcamp/dbtools-gen/archive/master.zip", attempt 3
+2018-04-03 22:44:52,541 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 22:44:53,277 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 22:44:53,277 INFO  DownloadService - Downloading "https://github.com/jeffdcamp/dbtools-gen/archive/master.zip", attempt 3
+2018-04-03 22:45:54,595 DEBUG FullProcessService - Repository https://github.com/jeffdcamp/dbtools-gen available: true
+2018-04-03 22:45:54,595 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 22:45:54,595 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jeffdcamp/dbtools-gen, /tmp/rdisk/2026/src]
+2018-04-03 22:45:56,251 INFO  SysUtils - 
+2018-04-03 22:45:56,257 INFO  GitService - Deleted "/tmp/rdisk/2026/src/.git": true
+2018-04-03 22:45:56,262 INFO  FullProcessService - Size of directory with sources: 807 KB
+2018-04-03 22:45:56,262 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2026/src]
+2018-04-03 22:45:56,266 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2026/src/.git/
+
+2018-04-03 22:45:56,271 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2026/src/gradlew
+2018-04-03 22:45:56,275 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2026/src/build.gradle /tmp/rdisk/2026/src/dbtools-gen/build.gradle /tmp/rdisk/2026/src/plugin-gradle/build.gradle
+2018-04-03 22:45:56,279 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2026/src/settings.gradle /tmp/rdisk/2026/src/plugin-gradle/build.gradle /tmp/rdisk/2026/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2026/src/dbtools-gen/build.gradle /tmp/rdisk/2026/src/build.gradle
+2018-04-03 22:45:56,279 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 22:45:56,279 INFO  ProjectFixService - Fixing project...
+2018-04-03 22:45:56,290 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2026/src/local.properties
+2018-04-03 22:45:56,290 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.6-all.zip
+2018-04-03 22:45:56,290 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.6-bin.zip)
+2018-04-03 22:45:56,294 INFO  ProjectFixService - Build info for "/tmp/rdisk/2026/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 22:45:56,294 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2026/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 22:45:56,295 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2026/src/dbtools-gen/local.properties
+2018-04-03 22:45:56,298 INFO  ProjectFixService - Build info for "/tmp/rdisk/2026/src/dbtools-gen/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 22:45:56,298 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2026/src/dbtools-gen/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 22:45:56,299 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2026/src/plugin-gradle/local.properties
+2018-04-03 22:45:56,303 INFO  ProjectFixService - Build info for "/tmp/rdisk/2026/src/plugin-gradle/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-03 22:45:56,303 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2026/src/plugin-gradle/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-03 22:45:56,303 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 22:45:56,303 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:45:56,303 INFO  SysUtils - Execute command: [/tmp/rdisk/2026/src/gradlew, -b, /tmp/rdisk/2026/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:46:02,971 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-03 22:46:02,972 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-03 22:46:02,972 INFO  SysUtils - Execute command: [/tmp/rdisk/2026/src/gradlew, -b, /tmp/rdisk/2026/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-03 22:46:35,685 INFO  SysUtils - Configuration on demand is an incubating feature.
+:dbtools-gen:compileKotlin
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/codegen/kotlin/KotlinClass.kt: (437, 17): Name shadowed: defaultValue
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/codegen/kotlin/KotlinClass.kt: (438, 35): Variable 'newDefaultValue' initializer is redundant
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/codegen/kotlin/KotlinClass.kt: (537, 31): Variable 'packageName' initializer is redundant
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/codegen/kotlin/KotlinSourceUtil.kt: (37, 27): Variable 'replaceText' initializer is redundant
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlin/KotlinAndroidBaseManagerRenderer.kt: (59, 15): Enum argument can be null in Java, but exhaustive when contains no null branch
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlin/KotlinAndroidManagerRenderer.kt: (70, 9): 'when' expression on enum is recommended to be exhaustive, add 'TABLE' branch or 'else' branch instead
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinAndroidRoomDBObjectBuilder.kt: (59, 13): Variable 'daoFile' is never used
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinAndroidRoomDaoRenderer.kt: (35, 27): Parameter 'entity' is never used
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinAndroidRoomDaoRenderer.kt: (35, 49): Parameter 'packageName' is never used
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinAndroidRoomDaoRenderer.kt: (35, 70): Parameter 'recordClassName' is never used
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinAndroidRoomDaoRenderer.kt: (35, 95): Parameter 'generatedEntityInfo' is never used
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinAndroidRoomEntityRenderer.kt: (28, 87): Parameter 'databaseMapping' is never used
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinAndroidRoomEntityRenderer.kt: (31, 13): Variable 'enumTable' is never used
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinAndroidRoomEntityRenderer.kt: (51, 17): Variable 'notNullField' is never used
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinAndroidRoomEntityRenderer.kt: (52, 17): Variable 'primitiveField' is never used
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinAndroidRoomEntityRenderer.kt: (53, 17): Variable 'dateTypeField' is never used
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinDatabaseRoomManagersHolderRenderer.kt: (18, 44): Parameter 'packageBase' is never used
+w: /tmp/rdisk/2026/src/dbtools-gen/src/main/kotlin/org/dbtools/gen/android/kotlinroom/KotlinDatabaseRoomManagersHolderRenderer.kt: (63, 39): Parameter 'initContent' is never used
+:dbtools-gen:compileJavaNote: /tmp/rdisk/2026/src/dbtools-gen/src/main/java/org/dbtools/gen/DBObjectsBuilder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:dbtools-gen:processResources
+:dbtools-gen:classes
+:dbtools-gen:jar
+:dbtools-gen:javadocJar
+:dbtools-gen:sourcesJar
+:dbtools-gen:signArchives SKIPPED
+:dbtools-gen:assemble
+:dbtools-gen:build
+:plugin-gradle:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:plugin-gradle:processResources
+:plugin-gradle:classes
+:plugin-gradle:jar
+:plugin-gradle:javadocJar
+:plugin-gradle:sourcesJar
+:plugin-gradle:signArchives SKIPPED
+:plugin-gradle:assemble
+:plugin-gradle:build
+
+BUILD SUCCESSFUL in 32s
+11 actionable tasks: 11 executed
+
+2018-04-03 22:46:35,695 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:46:35,695 INFO  SysUtils - Execute command: [/tmp/rdisk/2026/src/gradlew, -b, /tmp/rdisk/2026/src/dbtools-gen/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:46:41,067 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-03 22:46:41,067 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-03 22:46:41,067 INFO  SysUtils - Execute command: [/tmp/rdisk/2026/src/gradlew, -b, /tmp/rdisk/2026/src/dbtools-gen/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-03 22:46:47,258 INFO  SysUtils - Configuration on demand is an incubating feature.
+:dbtools-gen:compileKotlin UP-TO-DATE
+:dbtools-gen:compileJava UP-TO-DATE
+:dbtools-gen:processResources UP-TO-DATE
+:dbtools-gen:classes UP-TO-DATE
+:dbtools-gen:jar UP-TO-DATE
+:dbtools-gen:javadocJar UP-TO-DATE
+:dbtools-gen:sourcesJar UP-TO-DATE
+:dbtools-gen:signArchives SKIPPED
+:dbtools-gen:assemble UP-TO-DATE
+:dbtools-gen:build
+
+BUILD SUCCESSFUL in 6s
+6 actionable tasks: 6 up-to-date
+
+2018-04-03 22:46:47,267 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:46:47,267 INFO  SysUtils - Execute command: [/tmp/rdisk/2026/src/gradlew, -b, /tmp/rdisk/2026/src/plugin-gradle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:46:52,217 INFO  ProjectTaskService - Detected possible tasks: 43
+2018-04-03 22:46:52,217 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-03 22:46:52,217 INFO  SysUtils - Execute command: [/tmp/rdisk/2026/src/gradlew, -b, /tmp/rdisk/2026/src/plugin-gradle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-03 22:46:58,503 INFO  SysUtils - Configuration on demand is an incubating feature.
+:dbtools-gen:compileKotlin UP-TO-DATE
+:dbtools-gen:compileJava UP-TO-DATE
+:dbtools-gen:processResources UP-TO-DATE
+:dbtools-gen:classes UP-TO-DATE
+:dbtools-gen:jar UP-TO-DATE
+:plugin-gradle:compileJava UP-TO-DATE
+:plugin-gradle:processResources UP-TO-DATE
+:plugin-gradle:classes UP-TO-DATE
+:plugin-gradle:jar UP-TO-DATE
+:plugin-gradle:javadocJar UP-TO-DATE
+:plugin-gradle:sourcesJar UP-TO-DATE
+:plugin-gradle:signArchives SKIPPED
+:plugin-gradle:assemble UP-TO-DATE
+:plugin-gradle:build
+
+BUILD SUCCESSFUL in 6s
+9 actionable tasks: 9 up-to-date
+
+2018-04-03 22:46:58,513 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 22:46:58,522 ERROR FullProcessService - Could not find generated or existed APK file

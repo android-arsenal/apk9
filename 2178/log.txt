@@ -1,0 +1,388 @@
+2018-05-11 11:28:26,451 INFO  DownloadService - Downloading "https://github.com/gowong/material-sheet-fab/archive/master.zip", attempt 3
+2018-05-11 11:28:27,660 INFO  DownloadService - Downloaded https://github.com/gowong/material-sheet-fab/archive/master.zip, attempt 3
+2018-05-11 11:28:27,661 INFO  DownloadService - Size of file "/tmp/rdisk/2178/master.zip": 5 MB
+2018-05-11 11:28:27,661 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:28:27,661 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2178/master.zip: true
+2018-05-11 11:28:27,661 DEBUG ZipUtil - Extracting '/tmp/rdisk/2178/master.zip' into '/tmp/rdisk/2178/src'.
+2018-05-11 11:28:27,718 INFO  FullProcessService - Size of directory with sources: 6 MB
+2018-05-11 11:28:27,719 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2178/src]
+2018-05-11 11:28:27,725 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2178/src/.git/
+
+2018-05-11 11:28:27,728 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2178/src/material-sheet-fab-master/gradlew
+2018-05-11 11:28:27,731 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/build.gradle /tmp/rdisk/2178/src/material-sheet-fab-master/sample/build.gradle /tmp/rdisk/2178/src/material-sheet-fab-master/build.gradle
+2018-05-11 11:28:27,734 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2178/src/material-sheet-fab-master/settings.gradle /tmp/rdisk/2178/src/material-sheet-fab-master/sample/build.gradle /tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/maven.gradle /tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/build.gradle /tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/bintray.gradle /tmp/rdisk/2178/src/material-sheet-fab-master/build.gradle
+2018-05-11 11:28:27,735 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:28:27,735 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:28:27,742 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/local.properties
+2018-05-11 11:28:27,742 INFO  ProjectFixService - Build info for "/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 11:28:27,743 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2178/src/material-sheet-fab-master/sample/local.properties
+2018-05-11 11:28:27,745 INFO  ProjectFixService - Build info for "/tmp/rdisk/2178/src/material-sheet-fab-master/sample/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 11:28:27,745 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2178/src/material-sheet-fab-master/local.properties
+2018-05-11 11:28:27,746 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-11 11:28:27,746 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-11 11:28:27,747 INFO  ProjectFixService - Build info for "/tmp/rdisk/2178/src/material-sheet-fab-master/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 11:28:27,747 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:28:27,747 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:28:27,748 INFO  SysUtils - Execute command: [/tmp/rdisk/2178/src/material-sheet-fab-master/gradlew, -b, /tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:28:35,316 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-11 11:28:35,316 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-11 11:28:35,316 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-11 11:28:35,316 INFO  SysUtils - Execute command: [/tmp/rdisk/2178/src/material-sheet-fab-master/gradlew, -b, /tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-11 11:28:46,344 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-11 11:28:46,345 INFO  SysUtils - Configuration on demand is an incubating feature.
+:material-sheet-fab:compileLint
+:material-sheet-fab:copyDebugLint UP-TO-DATE
+:material-sheet-fab:mergeDebugProguardFiles
+:material-sheet-fab:preBuild UP-TO-DATE
+:material-sheet-fab:preDebugBuild UP-TO-DATE
+:material-sheet-fab:checkDebugManifest
+:material-sheet-fab:preDebugAndroidTestBuild UP-TO-DATE
+:material-sheet-fab:preDebugUnitTestBuild UP-TO-DATE
+:material-sheet-fab:preReleaseBuild UP-TO-DATE
+:material-sheet-fab:preReleaseUnitTestBuild UP-TO-DATE
+:material-sheet-fab:prepareComGithubAsylAnimationArcanimator100Library
+:material-sheet-fab:prepareDebugDependencies
+:material-sheet-fab:compileDebugAidl
+:material-sheet-fab:compileDebugRenderscript
+:material-sheet-fab:generateDebugBuildConfig
+:material-sheet-fab:generateDebugAssets UP-TO-DATE
+:material-sheet-fab:mergeDebugAssets
+:material-sheet-fab:generateDebugResValues
+:material-sheet-fab:generateDebugResources
+:material-sheet-fab:mergeDebugResources
+:material-sheet-fab:processDebugManifest
+:material-sheet-fab:processDebugResources
+:material-sheet-fab:generateDebugSources
+:material-sheet-fab:processDebugJavaRes UP-TO-DATE
+:material-sheet-fab:compileDebugJavaNote: /tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:material-sheet-fab:packageDebugJar
+:material-sheet-fab:compileDebugNdk UP-TO-DATE
+:material-sheet-fab:packageDebugJniLibs UP-TO-DATE
+:material-sheet-fab:packageDebugLocalJar UP-TO-DATE
+:material-sheet-fab:packageDebugRenderscript UP-TO-DATE
+:material-sheet-fab:packageDebugResources
+:material-sheet-fab:bundleDebug
+:material-sheet-fab:compileDebugSources
+:material-sheet-fab:assembleDebug
+:material-sheet-fab:copyReleaseLint UP-TO-DATE
+:material-sheet-fab:mergeReleaseProguardFiles
+:material-sheet-fab:checkReleaseManifest
+:material-sheet-fab:prepareReleaseDependencies
+:material-sheet-fab:compileReleaseAidl
+:material-sheet-fab:compileReleaseRenderscript
+:material-sheet-fab:generateReleaseBuildConfig
+:material-sheet-fab:generateReleaseAssets UP-TO-DATE
+:material-sheet-fab:mergeReleaseAssets
+:material-sheet-fab:generateReleaseResValues
+:material-sheet-fab:generateReleaseResources
+:material-sheet-fab:mergeReleaseResources
+:material-sheet-fab:processReleaseManifest
+:material-sheet-fab:processReleaseResources
+:material-sheet-fab:generateReleaseSources
+:material-sheet-fab:processReleaseJavaRes UP-TO-DATE
+:material-sheet-fab:compileReleaseJavaNote: /tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:material-sheet-fab:packageReleaseJar
+:material-sheet-fab:compileReleaseNdk UP-TO-DATE
+:material-sheet-fab:packageReleaseJniLibs UP-TO-DATE
+:material-sheet-fab:packageReleaseLocalJar UP-TO-DATE
+:material-sheet-fab:packageReleaseRenderscript UP-TO-DATE
+:material-sheet-fab:packageReleaseResources
+:material-sheet-fab:bundleRelease
+:material-sheet-fab:compileReleaseSources
+:material-sheet-fab:assembleRelease
+:material-sheet-fab:javadoc/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java:8: error: package com.nineoldandroids.animation does not exist
+import com.nineoldandroids.animation.Animator;
+                                    ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java:9: error: package com.nineoldandroids.util does not exist
+import com.nineoldandroids.util.FloatProperty;
+                               ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java:8: error: package com.nineoldandroids.animation does not exist
+import com.nineoldandroids.animation.Animator;
+                                    ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java:9: error: package com.nineoldandroids.animation does not exist
+import com.nineoldandroids.animation.ObjectAnimator;
+                                    ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java:10: error: package com.nineoldandroids.view does not exist
+import com.nineoldandroids.view.ViewHelper;
+                               ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java:11: error: package com.nineoldandroids.view does not exist
+import com.nineoldandroids.view.ViewPropertyAnimator;
+                               ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java:151: error: package Animator does not exist
+    static class SimpleAnimationListener implements Animator.AnimatorListener{
+                                                            ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java:169: error: cannot find symbol
+    class RevealRadius extends FloatProperty<RevealAnimator> {
+                               ^
+  symbol:   class FloatProperty
+  location: interface RevealAnimator
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java:70: error: package Animator does not exist
+    private static Animator.AnimatorListener getRevealFinishListener(RevealAnimator target){
+                           ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java:154: error: cannot find symbol
+        public void onAnimationStart(Animator animation) {
+                                     ^
+  symbol:   class Animator
+  location: class SimpleAnimationListener
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java:159: error: cannot find symbol
+        public void onAnimationEnd(Animator animation) {
+                                   ^
+  symbol:   class Animator
+  location: class SimpleAnimationListener
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java:164: error: cannot find symbol
+        public void onAnimationCancel(Animator animation) {
+                                      ^
+  symbol:   class Animator
+  location: class SimpleAnimationListener
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java:169: error: cannot find symbol
+        public void onAnimationRepeat(Animator animation) {
+                                      ^
+  symbol:   class Animator
+  location: class SimpleAnimationListener
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/SupportAnimatorPreL.java:5: error: package com.nineoldandroids.animation does not exist
+import com.nineoldandroids.animation.Animator;
+                                    ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/SupportAnimatorPreL.java:11: error: cannot find symbol
+    WeakReference<Animator> mAnimator;
+                  ^
+  symbol:   class Animator
+  location: class SupportAnimatorPreL
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/SupportAnimatorPreL.java:13: error: cannot find symbol
+    SupportAnimatorPreL(Animator animator, RevealAnimator target) {
+                        ^
+  symbol:   class Animator
+  location: class SupportAnimatorPreL
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java:110: error: cannot find symbol
+        public void onAnimationStart(Animator animation) {
+                                     ^
+  symbol:   class Animator
+  location: class RevealFinishedGingerbread
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java:116: error: cannot find symbol
+        public void onAnimationCancel(Animator animation) {
+                                      ^
+  symbol:   class Animator
+  location: class RevealFinishedGingerbread
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java:122: error: cannot find symbol
+        public void onAnimationEnd(Animator animation) {
+                                   ^
+  symbol:   class Animator
+  location: class RevealFinishedGingerbread
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java:141: error: cannot find symbol
+        public void onAnimationCancel(Animator animation) {
+                                      ^
+  symbol:   class Animator
+  location: class RevealFinishedIceCreamSandwich
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java:147: error: cannot find symbol
+        public void onAnimationStart(Animator animation) {
+                                     ^
+  symbol:   class Animator
+  location: class RevealFinishedIceCreamSandwich
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java:153: error: cannot find symbol
+        public void onAnimationEnd(Animator animation) {
+                                   ^
+  symbol:   class Animator
+  location: class RevealFinishedIceCreamSandwich
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java:16: error: package io.codetail.animation.arcanimator does not exist
+import io.codetail.animation.arcanimator.Side;
+                                        ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java:6: error: package com.nineoldandroids.animation does not exist
+import com.nineoldandroids.animation.Animator;
+                                    ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java:7: error: package com.nineoldandroids.animation does not exist
+import com.nineoldandroids.animation.AnimatorListenerAdapter;
+                                    ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java:9: error: package io.codetail.animation.arcanimator does not exist
+import io.codetail.animation.arcanimator.ArcAnimator;
+                                        ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java:10: error: package io.codetail.animation.arcanimator does not exist
+import io.codetail.animation.arcanimator.Side;
+                                        ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java:317: error: cannot find symbol
+	private Side getFabArcSide(RevealXDirection revealXDirection) {
+	        ^
+  symbol:   class Side
+  location: class MaterialSheetFab<FAB>
+  where FAB is a type-variable:
+    FAB extends View,AnimatedFab declared in class MaterialSheetFab
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java:38: error: cannot find symbol
+	public void morphIntoSheet(int endX, int endY, Side side, int arcDegrees, float scaleFactor,
+	                                               ^
+  symbol:   class Side
+  location: class FabAnimation
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java:54: error: cannot find symbol
+	public void morphFromSheet(int endX, int endY, Side side, int arcDegrees, float scaleFactor,
+	                                               ^
+  symbol:   class Side
+  location: class FabAnimation
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java:60: error: cannot find symbol
+	protected void morph(float endX, float endY, Side side, float arcDegrees, float scaleFactor,
+	                                             ^
+  symbol:   class Side
+  location: class FabAnimation
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java:70: error: cannot find symbol
+	protected void startArcAnim(View view, float endX, float endY, float degrees, Side side,
+	                                                                              ^
+  symbol:   class Side
+  location: class FabAnimation
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java:70: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java:16: error: unknown tag: hide
+ * @hide
+   ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/SupportAnimator.java:24: error: reference not found
+     * {@link android.animation.Animator} otherwise {@link com.nineoldandroids.animation.Animator}
+                                                           ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/SupportAnimator.java:129: warning: no @return
+    public SupportAnimator reverse() {
+                           ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java:46: warning: no @return
+    public static SupportAnimator createCircularReveal(View view,
+                                  ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/widget/RevealFrameLayout.java:55: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/widget/RevealFrameLayout.java:66: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/widget/RevealFrameLayout.java:74: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/widget/RevealFrameLayout.java:83: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/widget/RevealLinearLayout.java:55: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/widget/RevealLinearLayout.java:66: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/widget/RevealLinearLayout.java:74: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/io/codetail/widget/RevealLinearLayout.java:83: error: unknown tag: hide
+     * @hide
+       ^
+/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java:309: warning: no @param for fab
+	public int getSheetRevealCenterY(View fab) {
+	           ^
+
+11 errors
+35 warnings
+:material-sheet-fab:javadoc FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':material-sheet-fab:javadoc'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/build/tmp/javadoc/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':material-sheet-fab:javadoc'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/2178/src/material-sheet-fab-master/material-sheet-fab/build/tmp/javadoc/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:55)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:140)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:128)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 10.614 secs
+
+2018-05-11 11:28:46,355 INFO  FullProcessService - Found APK file: /tmp/rdisk/2178/src/material-sheet-fab-master/sample-apks/sample-release-1-0.apk

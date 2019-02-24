@@ -1,0 +1,175 @@
+2018-04-03 20:27:00,157 INFO  DownloadService - Downloading "https://github.com/jansenfelipe/androidmask/archive/master.zip", attempt 3
+2018-04-03 20:28:00,798 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 20:28:01,686 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 20:28:01,686 INFO  DownloadService - Downloading "https://github.com/jansenfelipe/androidmask/archive/master.zip", attempt 3
+2018-04-03 20:29:02,992 DEBUG FullProcessService - Repository https://github.com/jansenfelipe/androidmask available: true
+2018-04-03 20:29:02,992 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 20:29:02,992 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jansenfelipe/androidmask, /tmp/rdisk/2089/src]
+2018-04-03 20:29:06,719 INFO  SysUtils - 
+2018-04-03 20:29:06,727 INFO  GitService - Deleted "/tmp/rdisk/2089/src/.git": true
+2018-04-03 20:29:06,729 INFO  FullProcessService - Size of directory with sources: 68 KB
+2018-04-03 20:29:06,729 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2089/src]
+2018-04-03 20:29:06,733 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2089/src/.git/
+
+2018-04-03 20:29:06,734 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2089/src/gradlew
+2018-04-03 20:29:06,736 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2089/src/app/build.gradle /tmp/rdisk/2089/src/build.gradle
+2018-04-03 20:29:06,737 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2089/src/settings.gradle /tmp/rdisk/2089/src/build.gradle /tmp/rdisk/2089/src/app/build.gradle
+2018-04-03 20:29:06,737 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-03 20:29:07,683 INFO  DownloadService - Downloaded https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-04-03 20:29:07,683 INFO  ProjectBuildService - Remote scripts: https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle
+2018-04-03 20:29:07,683 INFO  ProjectFixService - Fixing project...
+2018-04-03 20:29:07,688 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2089/src/app/local.properties
+2018-04-03 20:29:07,688 INFO  ProjectFixService - Build info for "/tmp/rdisk/2089/src/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 20:29:07,688 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2089/src/local.properties
+2018-04-03 20:29:07,689 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 20:29:07,689 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 20:29:07,690 INFO  ProjectFixService - Build info for "/tmp/rdisk/2089/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-03 20:29:07,690 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 20:29:07,690 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:29:07,690 INFO  SysUtils - Execute command: [/tmp/rdisk/2089/src/gradlew, -b, /tmp/rdisk/2089/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:29:17,061 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-03 20:29:17,061 INFO  ProjectTaskService - Excluded tasks (11): lintDebug androidJavadocs deviceCheck lint androidSourcesJar connectedCheck uninstallAll androidJavadocsJar check connectedAndroidTest lintRelease
+2018-04-03 20:29:17,062 INFO  SysUtils - Execute command: [/tmp/rdisk/2089/src/gradlew, -b, /tmp/rdisk/2089/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 20:29:27,231 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:preBuild
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preDebugTestBuild
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:extractDebugAnnotations
+:app:mergeDebugProguardFiles
+:app:processDebugJavaRes UP-TO-DATE
+:app:packageDebugJar
+:app:compileDebugNdk
+:app:packageDebugJniLibs UP-TO-DATE
+:app:packageDebugLocalJar UP-TO-DATE
+:app:packageDebugRenderscript UP-TO-DATE
+:app:packageDebugResources
+:app:bundleDebug
+:app:assembleDebug
+:app:copyReleaseLint UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:extractReleaseAnnotations
+:app:mergeReleaseProguardFiles
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageReleaseJar
+:app:compileReleaseNdk
+:app:packageReleaseJniLibs UP-TO-DATE
+:app:packageReleaseLocalJar UP-TO-DATE
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:packageReleaseResources
+:app:bundleRelease
+:app:assembleRelease
+:app:signArchives SKIPPED
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.759 secs
+
+2018-04-03 20:29:27,260 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:29:27,260 INFO  SysUtils - Execute command: [/tmp/rdisk/2089/src/gradlew, -b, /tmp/rdisk/2089/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:29:34,168 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-03 20:29:34,169 INFO  ProjectTaskService - Excluded tasks (11): lintDebug androidJavadocs deviceCheck lint androidSourcesJar connectedCheck uninstallAll androidJavadocsJar check connectedAndroidTest lintRelease
+2018-04-03 20:29:34,169 INFO  SysUtils - Execute command: [/tmp/rdisk/2089/src/gradlew, -b, /tmp/rdisk/2089/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 20:29:41,234 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:preBuild
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preDebugTestBuild
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV72103Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42103Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:extractDebugAnnotations UP-TO-DATE
+:app:mergeDebugProguardFiles UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:packageDebugJar UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:packageDebugJniLibs UP-TO-DATE
+:app:packageDebugLocalJar UP-TO-DATE
+:app:packageDebugRenderscript UP-TO-DATE
+:app:packageDebugResources UP-TO-DATE
+:app:bundleDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:copyReleaseLint UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:mergeReleaseResources UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseResources UP-TO-DATE
+:app:generateReleaseSources UP-TO-DATE
+:app:compileReleaseJava UP-TO-DATE
+:app:extractReleaseAnnotations UP-TO-DATE
+:app:mergeReleaseProguardFiles UP-TO-DATE
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageReleaseJar UP-TO-DATE
+:app:compileReleaseNdk UP-TO-DATE
+:app:packageReleaseJniLibs UP-TO-DATE
+:app:packageReleaseLocalJar UP-TO-DATE
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:packageReleaseResources UP-TO-DATE
+:app:bundleRelease UP-TO-DATE
+:app:assembleRelease UP-TO-DATE
+:app:signArchives SKIPPED
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.633 secs
+
+2018-04-03 20:29:41,263 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 20:29:41,291 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,350 @@
+2018-04-03 19:48:45,050 INFO  DownloadService - Downloading "https://github.com/vRallev/ECC-25519/archive/master.zip", attempt 3
+2018-04-03 19:49:45,676 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 19:49:46,537 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 19:49:46,537 INFO  DownloadService - Downloading "https://github.com/vRallev/ECC-25519/archive/master.zip", attempt 3
+2018-04-03 19:50:47,805 DEBUG FullProcessService - Repository https://github.com/vRallev/ECC-25519 available: true
+2018-04-03 19:50:47,806 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 19:50:47,806 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/vRallev/ECC-25519, /tmp/rdisk/2103/src]
+2018-04-03 19:50:49,351 INFO  SysUtils - 
+2018-04-03 19:50:49,356 INFO  GitService - Deleted "/tmp/rdisk/2103/src/.git": true
+2018-04-03 19:50:49,360 INFO  FullProcessService - Size of directory with sources: 504 KB
+2018-04-03 19:50:49,360 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2103/src]
+2018-04-03 19:50:49,364 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2103/src/.git/
+
+2018-04-03 19:50:49,380 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2103/src/ECC-25519-Java/gradlew /tmp/rdisk/2103/src/ECC-25519-Android/gradlew /tmp/rdisk/2103/src/ECC-25519-Android-Facade/gradlew
+2018-04-03 19:50:49,388 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2103/src/ECC-25519-Android/ecc-25519/build.gradle /tmp/rdisk/2103/src/ECC-25519-Android-Facade/build.gradle /tmp/rdisk/2103/src/ECC-25519-Android/build.gradle /tmp/rdisk/2103/src/ECC-25519-Java/build.gradle
+2018-04-03 19:50:49,396 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2103/src/build-config/gradle-quality.gradle /tmp/rdisk/2103/src/build-config/gradle-push.gradle /tmp/rdisk/2103/src/build-config/gradle-push-java.gradle /tmp/rdisk/2103/src/ECC-25519-Java/settings.gradle /tmp/rdisk/2103/src/ECC-25519-Java/build.gradle /tmp/rdisk/2103/src/ECC-25519-Android/settings.gradle /tmp/rdisk/2103/src/ECC-25519-Android/ecc-25519/build.gradle /tmp/rdisk/2103/src/ECC-25519-Android/build.gradle /tmp/rdisk/2103/src/ECC-25519-Android-Facade/settings.gradle /tmp/rdisk/2103/src/ECC-25519-Android-Facade/build.gradle
+2018-04-03 19:50:49,396 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 19:50:49,396 INFO  ProjectFixService - Fixing project...
+2018-04-03 19:50:49,419 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2103/src/ECC-25519-Android/ecc-25519/local.properties
+2018-04-03 19:50:49,433 INFO  ProjectFixService - Build info for "/tmp/rdisk/2103/src/ECC-25519-Android/ecc-25519/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 19:50:49,433 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2103/src/ECC-25519-Android/ecc-25519/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 19:50:49,434 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2103/src/ECC-25519-Android-Facade/local.properties
+2018-04-03 19:50:49,434 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.13-all.zip
+2018-04-03 19:50:49,434 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.13-bin.zip)
+2018-04-03 19:50:49,440 INFO  ProjectFixService - Build info for "/tmp/rdisk/2103/src/ECC-25519-Android-Facade/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 19:50:49,440 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2103/src/ECC-25519-Android-Facade/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 19:50:49,440 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2103/src/ECC-25519-Android/local.properties
+2018-04-03 19:50:49,445 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-03 19:50:49,445 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-03 19:50:49,446 INFO  ProjectFixService - Build info for "/tmp/rdisk/2103/src/ECC-25519-Android/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 19:50:49,447 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2103/src/ECC-25519-Android/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 19:50:49,447 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2103/src/ECC-25519-Java/local.properties
+2018-04-03 19:50:49,447 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.13-all.zip
+2018-04-03 19:50:49,447 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.13-bin.zip)
+2018-04-03 19:50:49,453 INFO  ProjectFixService - Build info for "/tmp/rdisk/2103/src/ECC-25519-Java/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-03 19:50:49,453 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2103/src/ECC-25519-Java/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=27]
+2018-04-03 19:50:49,453 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 19:50:49,453 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:50:49,454 INFO  SysUtils - Execute command: [/tmp/rdisk/2103/src/ECC-25519-Android/gradlew, -b, /tmp/rdisk/2103/src/ECC-25519-Android/ecc-25519/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:50:58,002 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:50:58,002 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:50:58,002 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:50:58,003 INFO  SysUtils - Execute command: [/tmp/rdisk/2103/src/ECC-25519-Android/gradlew, -b, /tmp/rdisk/2103/src/ECC-25519-Android/ecc-25519/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:51:03,247 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 19:51:03,247 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':ecc-25519'.
+> Exception thrown while executing model rule: NdkComponentModelPlugin.Rules#checkNdkDir
+   > NDK location not found. Define location with ndk.dir in the local.properties file or with an ANDROID_NDK_HOME environment variable.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':ecc-25519'.
+	at org.gradle.execution.TaskNameResolver.selfClosedTasksNode(TaskNameResolver.java:111)
+	at org.gradle.execution.TaskNameResolver.hasTask(TaskNameResolver.java:123)
+	at org.gradle.execution.TaskNameResolver.access$100(TaskNameResolver.java:38)
+	at org.gradle.execution.TaskNameResolver$MultiProjectTaskSelectionResult.collect(TaskNameResolver.java:190)
+	at org.gradle.execution.TaskNameResolver$MultiProjectTaskSelectionResult.collectTasks(TaskNameResolver.java:186)
+	at org.gradle.execution.TaskNameResolver.selectWithName(TaskNameResolver.java:61)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:87)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:75)
+	at org.gradle.execution.commandline.CommandLineTaskParser.parseTasks(CommandLineTaskParser.java:42)
+	at org.gradle.execution.TaskNameResolvingBuildConfigurationAction.configure(TaskNameResolvingBuildConfigurationAction.java:44)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.access$000(DefaultBuildConfigurationActionExecuter.java:25)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter$1.proceed(DefaultBuildConfigurationActionExecuter.java:54)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.access$000(DefaultBuildConfigurationActionExecuter.java:25)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter$1.proceed(DefaultBuildConfigurationActionExecuter.java:54)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:47)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$3.run(DefaultGradleLauncher.java:143)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:140)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:78)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:48)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: org.gradle.model.internal.core.ModelRuleExecutionException: Exception thrown while executing model rule: NdkComponentModelPlugin.Rules#checkNdkDir
+	at org.gradle.model.internal.registry.DefaultModelRegistry.fireAction(DefaultModelRegistry.java:488)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.access$1400(DefaultModelRegistry.java:44)
+	at org.gradle.model.internal.registry.DefaultModelRegistry$RunModelAction.apply(DefaultModelRegistry.java:1511)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.transitionTo(DefaultModelRegistry.java:379)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.transition(DefaultModelRegistry.java:457)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.atStateOrMaybeLater(DefaultModelRegistry.java:191)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.atStateOrLater(DefaultModelRegistry.java:178)
+	at org.gradle.execution.TaskNameResolver.selfClose(TaskNameResolver.java:101)
+	at org.gradle.execution.TaskNameResolver.selfClosedTasksNode(TaskNameResolver.java:109)
+	... 58 more
+Caused by: org.gradle.api.InvalidUserDataException: NDK location not found. Define location with ndk.dir in the local.properties file or with an ANDROID_NDK_HOME environment variable.
+	at com.android.build.gradle.model.NdkComponentModelPlugin$Rules.checkNdkDir(NdkComponentModelPlugin.java:170)
+	at org.gradle.model.internal.method.WeaklyTypeReferencingMethod.invoke(WeaklyTypeReferencingMethod.java:96)
+	at org.gradle.model.internal.inspect.DefaultModelRuleInvoker.invoke(DefaultModelRuleInvoker.java:37)
+	at org.gradle.model.internal.inspect.MethodBackedModelAction.execute(MethodBackedModelAction.java:43)
+	at org.gradle.model.internal.core.AbstractModelActionWithView.execute(AbstractModelActionWithView.java:46)
+	at org.gradle.model.internal.registry.DefaultModelRegistry$2.run(DefaultModelRegistry.java:483)
+	at org.gradle.model.internal.registry.RuleContext.run(RuleContext.java:59)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.fireAction(DefaultModelRegistry.java:480)
+	... 66 more
+
+
+BUILD FAILED
+
+Total time: 4.775 secs
+
+2018-04-03 19:51:03,251 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:51:03,251 INFO  SysUtils - Execute command: [/tmp/rdisk/2103/src/ECC-25519-Android-Facade/gradlew, -b, /tmp/rdisk/2103/src/ECC-25519-Android-Facade/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:51:07,609 INFO  ProjectTaskService - Detected possible tasks: 46
+2018-04-03 19:51:07,610 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-03 19:51:07,610 INFO  SysUtils - Execute command: [/tmp/rdisk/2103/src/ECC-25519-Android-Facade/gradlew, -b, /tmp/rdisk/2103/src/ECC-25519-Android-Facade/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-03 19:51:13,890 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:processResources UP-TO-DATE
+:classes
+:jar
+:javadocJar
+:sourcesJar
+:signArchives SKIPPED
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.599 secs
+
+2018-04-03 19:51:13,895 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:51:13,895 INFO  SysUtils - Execute command: [/tmp/rdisk/2103/src/ECC-25519-Android/gradlew, -b, /tmp/rdisk/2103/src/ECC-25519-Android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:51:19,390 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 19:51:19,390 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-03 19:51:19,390 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-03 19:51:19,390 INFO  SysUtils - Execute command: [/tmp/rdisk/2103/src/ECC-25519-Android/gradlew, -b, /tmp/rdisk/2103/src/ECC-25519-Android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 19:51:24,535 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 19:51:24,535 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':ecc-25519'.
+> Exception thrown while executing model rule: NdkComponentModelPlugin.Rules#checkNdkDir
+   > NDK location not found. Define location with ndk.dir in the local.properties file or with an ANDROID_NDK_HOME environment variable.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':ecc-25519'.
+	at org.gradle.execution.TaskNameResolver.selfClosedTasksNode(TaskNameResolver.java:111)
+	at org.gradle.execution.TaskNameResolver.hasTask(TaskNameResolver.java:123)
+	at org.gradle.execution.TaskNameResolver.access$100(TaskNameResolver.java:38)
+	at org.gradle.execution.TaskNameResolver$MultiProjectTaskSelectionResult.collect(TaskNameResolver.java:190)
+	at org.gradle.execution.TaskNameResolver$MultiProjectTaskSelectionResult.collect(TaskNameResolver.java:198)
+	at org.gradle.execution.TaskNameResolver$MultiProjectTaskSelectionResult.collectTasks(TaskNameResolver.java:186)
+	at org.gradle.execution.TaskNameResolver.selectWithName(TaskNameResolver.java:61)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:87)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:75)
+	at org.gradle.execution.commandline.CommandLineTaskParser.parseTasks(CommandLineTaskParser.java:42)
+	at org.gradle.execution.TaskNameResolvingBuildConfigurationAction.configure(TaskNameResolvingBuildConfigurationAction.java:44)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.access$000(DefaultBuildConfigurationActionExecuter.java:25)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter$1.proceed(DefaultBuildConfigurationActionExecuter.java:54)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.access$000(DefaultBuildConfigurationActionExecuter.java:25)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter$1.proceed(DefaultBuildConfigurationActionExecuter.java:54)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:47)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$3.run(DefaultGradleLauncher.java:143)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:140)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:78)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:48)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: org.gradle.model.internal.core.ModelRuleExecutionException: Exception thrown while executing model rule: NdkComponentModelPlugin.Rules#checkNdkDir
+	at org.gradle.model.internal.registry.DefaultModelRegistry.fireAction(DefaultModelRegistry.java:488)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.access$1400(DefaultModelRegistry.java:44)
+	at org.gradle.model.internal.registry.DefaultModelRegistry$RunModelAction.apply(DefaultModelRegistry.java:1511)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.transitionTo(DefaultModelRegistry.java:379)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.transition(DefaultModelRegistry.java:457)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.atStateOrMaybeLater(DefaultModelRegistry.java:191)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.atStateOrLater(DefaultModelRegistry.java:178)
+	at org.gradle.execution.TaskNameResolver.selfClose(TaskNameResolver.java:101)
+	at org.gradle.execution.TaskNameResolver.selfClosedTasksNode(TaskNameResolver.java:109)
+	... 59 more
+Caused by: org.gradle.api.InvalidUserDataException: NDK location not found. Define location with ndk.dir in the local.properties file or with an ANDROID_NDK_HOME environment variable.
+	at com.android.build.gradle.model.NdkComponentModelPlugin$Rules.checkNdkDir(NdkComponentModelPlugin.java:170)
+	at org.gradle.model.internal.method.WeaklyTypeReferencingMethod.invoke(WeaklyTypeReferencingMethod.java:96)
+	at org.gradle.model.internal.inspect.DefaultModelRuleInvoker.invoke(DefaultModelRuleInvoker.java:37)
+	at org.gradle.model.internal.inspect.MethodBackedModelAction.execute(MethodBackedModelAction.java:43)
+	at org.gradle.model.internal.core.AbstractModelActionWithView.execute(AbstractModelActionWithView.java:46)
+	at org.gradle.model.internal.registry.DefaultModelRegistry$2.run(DefaultModelRegistry.java:483)
+	at org.gradle.model.internal.registry.RuleContext.run(RuleContext.java:59)
+	at org.gradle.model.internal.registry.DefaultModelRegistry.fireAction(DefaultModelRegistry.java:480)
+	... 67 more
+
+
+BUILD FAILED
+
+Total time: 4.679 secs
+
+2018-04-03 19:51:24,540 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 19:51:24,540 INFO  SysUtils - Execute command: [/tmp/rdisk/2103/src/ECC-25519-Java/gradlew, -b, /tmp/rdisk/2103/src/ECC-25519-Java/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 19:51:28,759 INFO  ProjectTaskService - Detected possible tasks: 46
+2018-04-03 19:51:28,759 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-03 19:51:28,759 INFO  SysUtils - Execute command: [/tmp/rdisk/2103/src/ECC-25519-Java/gradlew, -b, /tmp/rdisk/2103/src/ECC-25519-Java/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-03 19:51:34,821 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:processResources UP-TO-DATE
+:classes
+:jar
+:javadocJar
+:sourcesJar
+:signArchives SKIPPED
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.542 secs
+
+2018-04-03 19:51:34,827 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 19:51:34,832 ERROR FullProcessService - Could not find generated or existed APK file

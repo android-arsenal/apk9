@@ -1,0 +1,298 @@
+2018-04-03 22:46:58,569 INFO  DownloadService - Downloading "https://github.com/jeffdcamp/dbtools-android/archive/master.zip", attempt 3
+2018-04-03 22:47:59,152 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 22:47:59,819 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 22:47:59,819 INFO  DownloadService - Downloading "https://github.com/jeffdcamp/dbtools-android/archive/master.zip", attempt 3
+2018-04-03 22:49:01,144 DEBUG FullProcessService - Repository https://github.com/jeffdcamp/dbtools-android available: true
+2018-04-03 22:49:01,144 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 22:49:01,144 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jeffdcamp/dbtools-android, /tmp/rdisk/2025/src]
+2018-04-03 22:49:05,161 INFO  SysUtils - 
+2018-04-03 22:49:05,171 INFO  GitService - Deleted "/tmp/rdisk/2025/src/.git": true
+2018-04-03 22:49:05,184 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-03 22:49:05,185 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2025/src]
+2018-04-03 22:49:05,189 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2025/src/.git/
+
+2018-04-03 22:49:05,198 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2025/src/gradlew
+2018-04-03 22:49:05,208 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2025/src/library/build.gradle /tmp/rdisk/2025/src/sample-basic-java/build.gradle /tmp/rdisk/2025/src/sample-basic-kotlin/build.gradle /tmp/rdisk/2025/src/sample-rxjava-kotlin/build.gradle /tmp/rdisk/2025/src/sample-rxjava/build.gradle /tmp/rdisk/2025/src/build.gradle
+2018-04-03 22:49:05,217 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2025/src/settings.gradle /tmp/rdisk/2025/src/sample-rxjava/build.gradle /tmp/rdisk/2025/src/sample-rxjava-kotlin/build.gradle /tmp/rdisk/2025/src/sample-basic-kotlin/build.gradle /tmp/rdisk/2025/src/sample-basic-java/build.gradle /tmp/rdisk/2025/src/library/build.gradle /tmp/rdisk/2025/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2025/src/build.gradle
+2018-04-03 22:49:05,218 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 22:49:05,218 INFO  ProjectFixService - Fixing project...
+2018-04-03 22:49:05,244 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2025/src/library/local.properties
+2018-04-03 22:49:05,245 INFO  ProjectFixService - Build info for "/tmp/rdisk/2025/src/library/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-04-03 22:49:05,245 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2025/src/sample-basic-java/local.properties
+2018-04-03 22:49:05,245 INFO  ProjectFixService - Build info for "/tmp/rdisk/2025/src/sample-basic-java/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-04-03 22:49:05,245 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2025/src/sample-basic-kotlin/local.properties
+2018-04-03 22:49:05,246 INFO  ProjectFixService - Build info for "/tmp/rdisk/2025/src/sample-basic-kotlin/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-04-03 22:49:05,246 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2025/src/sample-rxjava-kotlin/local.properties
+2018-04-03 22:49:05,246 INFO  ProjectFixService - Build info for "/tmp/rdisk/2025/src/sample-rxjava-kotlin/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-04-03 22:49:05,246 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2025/src/sample-rxjava/local.properties
+2018-04-03 22:49:05,247 INFO  ProjectFixService - Build info for "/tmp/rdisk/2025/src/sample-rxjava/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-04-03 22:49:05,247 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2025/src/local.properties
+2018-04-03 22:49:05,247 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.6-all.zip
+2018-04-03 22:49:05,247 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.6-bin.zip)
+2018-04-03 22:49:05,248 INFO  ProjectFixService - Build info for "/tmp/rdisk/2025/src/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-04-03 22:49:05,248 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 22:49:05,248 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:49:05,248 INFO  SysUtils - Execute command: [/tmp/rdisk/2025/src/gradlew, -b, /tmp/rdisk/2025/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:49:15,372 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-03 22:49:15,372 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll createDebugCoverageReport test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 22:49:15,372 INFO  SysUtils - Execute command: [/tmp/rdisk/2025/src/gradlew, -b, /tmp/rdisk/2025/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, createDebugCoverageReport, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 22:50:01,273 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':library' is deprecated. Use 'implementation' instead.
+Configuration 'provided' in project ':library' is deprecated. Use 'compileOnly' instead.
+Configuration 'testCompile' in project ':library' is deprecated. Use 'testImplementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:library:androidSourcesJar
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugAidl
+:library:compileDebugNdk NO-SOURCE
+:library:compileDebugRenderscript
+:library:checkDebugManifest
+:library:generateDebugBuildConfig
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:platformAttrExtractor
+:library:processDebugManifest
+:library:prepareLintJar
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:mergeDebugAssets
+:library:mergeDebugConsumerProguardFiles
+:library:packageDebugRenderscript NO-SOURCE
+:library:processDebugJavaRes NO-SOURCE
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithSyncJniLibsForDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseAidl
+:library:compileReleaseNdk NO-SOURCE
+:library:compileReleaseRenderscript
+:library:checkReleaseManifest
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseConsumerProguardFiles
+:library:packageReleaseRenderscript NO-SOURCE
+:library:processReleaseJavaRes NO-SOURCE
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithSyncJniLibsForRelease
+:library:mergeReleaseResources
+:library:verifyReleaseResources
+:library:processDebugResources
+:library:compileDebugKotlin
+w: /tmp/rdisk/2025/src/library/src/main/kotlin/org/dbtools/android/domain/DBToolsTiledDataSource.kt: (5, 28): 'TiledDataSource<T : Any!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2025/src/library/src/main/kotlin/org/dbtools/android/domain/DBToolsTiledDataSource.kt: (8, 46): 'TiledDataSource<T : Any!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2025/src/library/src/main/kotlin/org/dbtools/android/domain/KotlinAndroidBaseManager.kt: (289, 74): Unchecked cast: Any! to I
+w: /tmp/rdisk/2025/src/library/src/main/kotlin/org/dbtools/android/domain/KotlinAndroidBaseManager.kt: (345, 74): Unchecked cast: Any! to I
+:library:generateDebugSources
+:library:javaPreCompileDebug
+:library:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractDebugAnnotations
+:library:transformClassesWithJacocoForDebug
+:library:transformResourcesWithMergeJavaResForDebug
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:processReleaseResources
+:library:compileReleaseKotlin
+w: /tmp/rdisk/2025/src/library/src/main/kotlin/org/dbtools/android/domain/DBToolsTiledDataSource.kt: (5, 28): 'TiledDataSource<T : Any!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2025/src/library/src/main/kotlin/org/dbtools/android/domain/DBToolsTiledDataSource.kt: (8, 46): 'TiledDataSource<T : Any!>' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2025/src/library/src/main/kotlin/org/dbtools/android/domain/KotlinAndroidBaseManager.kt: (289, 74): Unchecked cast: Any! to I
+w: /tmp/rdisk/2025/src/library/src/main/kotlin/org/dbtools/android/domain/KotlinAndroidBaseManager.kt: (345, 74): Unchecked cast: Any! to I
+:library:generateReleaseSources
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractReleaseAnnotations
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL in 45s
+52 actionable tasks: 52 executed
+
+2018-04-03 22:50:01,300 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:50:01,300 INFO  SysUtils - Execute command: [/tmp/rdisk/2025/src/gradlew, -b, /tmp/rdisk/2025/src/sample-basic-java/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:50:09,496 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-03 22:50:09,496 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 22:50:09,496 INFO  SysUtils - Execute command: [/tmp/rdisk/2025/src/gradlew, -b, /tmp/rdisk/2025/src/sample-basic-java/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 22:50:51,148 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':sample-basic-java' is deprecated. Use 'implementation' instead.
+Configuration 'testCompile' in project ':sample-basic-java' is deprecated. Use 'testImplementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Configuration 'compile' in project ':library' is deprecated. Use 'implementation' instead.
+Configuration 'provided' in project ':library' is deprecated. Use 'compileOnly' instead.
+Configuration 'testCompile' in project ':library' is deprecated. Use 'testImplementation' instead.
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:checkDebugManifest UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:platformAttrExtractor UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:compileDebugKotlin UP-TO-DATE
+:library:prepareLintJar UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:javaPreCompileDebug UP-TO-DATE
+:library:compileDebugJavaWithJavac UP-TO-DATE
+:library:processDebugJavaRes NO-SOURCE
+:library:transformClassesWithJacocoForDebug UP-TO-DATE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:sample-basic-java:preBuild UP-TO-DATE
+:sample-basic-java:preDebugBuild
+:sample-basic-java:compileDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:sample-basic-java:compileDebugRenderscript
+:sample-basic-java:checkDebugManifest
+:sample-basic-java:generateDebugBuildConfig
+:sample-basic-java:prepareLintJar
+:sample-basic-java:generateDebugResValues
+:sample-basic-java:generateDebugResources
+:sample-basic-java:mergeDebugResources
+:sample-basic-java:createDebugCompatibleScreenManifests
+:sample-basic-java:processDebugManifest
+:sample-basic-java:splitsDiscoveryTaskDebug
+:sample-basic-java:processDebugResources
+:sample-basic-java:generateDebugSources
+:sample-basic-java:javaPreCompileDebug
+:sample-basic-java:compileDebugJavaWithJavacNote: /tmp/rdisk/2025/src/sample-basic-java/src/main/java/org/dbtools/sample/model/database/DatabaseBaseManager.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample-basic-java:compileDebugNdk NO-SOURCE
+:sample-basic-java:compileDebugSources
+:library:mergeDebugShaders UP-TO-DATE
+:library:compileDebugShaders UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:sample-basic-java:mergeDebugShaders
+:sample-basic-java:compileDebugShaders
+:sample-basic-java:generateDebugAssets
+:sample-basic-java:mergeDebugAssets
+:sample-basic-java:extractTryWithResourcesSupportJarDebug
+:sample-basic-java:transformClassesWithStackFramesFixerForDebug
+:sample-basic-java:transformClassesWithDesugarForDebug
+:sample-basic-java:transformClassesWithDexBuilderForDebug
+:sample-basic-java:transformDexArchiveWithExternalLibsDexMergerForDebug
+:sample-basic-java:transformDexArchiveWithDexMergerForDebug
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:sample-basic-java:mergeDebugJniLibFolders
+:sample-basic-java:transformNativeLibsWithMergeJniLibsForDebug
+:sample-basic-java:transformNativeLibsWithStripDebugSymbolForDebug
+:sample-basic-java:processDebugJavaRes NO-SOURCE
+:sample-basic-java:transformResourcesWithMergeJavaResForDebug
+:sample-basic-java:validateSigningDebug
+:sample-basic-java:packageDebug
+:sample-basic-java:assembleDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:checkReleaseManifest UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:compileReleaseKotlin UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:javaPreCompileRelease UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:sample-basic-java:preReleaseBuild
+:sample-basic-java:compileReleaseAidl
+:library:packageReleaseRenderscript NO-SOURCE
+:sample-basic-java:compileReleaseRenderscript
+:sample-basic-java:checkReleaseManifest
+:sample-basic-java:generateReleaseBuildConfig
+:sample-basic-java:generateReleaseResValues
+:sample-basic-java:generateReleaseResources
+:sample-basic-java:mergeReleaseResources
+:sample-basic-java:createReleaseCompatibleScreenManifests
+:sample-basic-java:processReleaseManifest
+:sample-basic-java:splitsDiscoveryTaskRelease
+:sample-basic-java:processReleaseResources
+:sample-basic-java:generateReleaseSources
+:sample-basic-java:javaPreCompileRelease
+:sample-basic-java:compileReleaseJavaWithJavacNote: /tmp/rdisk/2025/src/sample-basic-java/src/main/java/org/dbtools/sample/model/database/DatabaseBaseManager.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample-basic-java:compileReleaseNdk NO-SOURCE
+:sample-basic-java:compileReleaseSources
+:sample-basic-java:lintVitalRelease
+:library:mergeReleaseShaders UP-TO-DATE
+:library:compileReleaseShaders UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:sample-basic-java:mergeReleaseShaders
+:sample-basic-java:compileReleaseShaders
+:sample-basic-java:generateReleaseAssets
+:sample-basic-java:mergeReleaseAssets
+:sample-basic-java:extractTryWithResourcesSupportJarRelease
+:sample-basic-java:transformClassesWithStackFramesFixerForRelease
+:sample-basic-java:transformClassesWithDesugarForRelease
+:sample-basic-java:transformClassesWithPreDexForRelease
+:sample-basic-java:transformDexWithDexForRelease
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:sample-basic-java:mergeReleaseJniLibFolders
+:sample-basic-java:transformNativeLibsWithMergeJniLibsForRelease
+:sample-basic-java:transformNativeLibsWithStripDebugSymbolForRelease
+:sample-basic-java:processReleaseJavaRes NO-SOURCE
+:sample-basic-java:transformResourcesWithMergeJavaResForRelease
+:sample-basic-java:packageRelease
+:sample-basic-java:assembleRelease
+:sample-basic-java:assemble
+:sample-basic-java:build
+
+BUILD SUCCESSFUL in 40s
+97 actionable tasks: 60 executed, 37 up-to-date
+Exception in thread "Thread-17" java.lang.NoClassDefFoundError: com/android/utils/PathUtils$1
+	at com.android.utils.PathUtils.deleteIfExists(PathUtils.java:47)
+	at com.android.utils.PathUtils.lambda$addRemovePathHook$0(PathUtils.java:125)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: com.android.utils.PathUtils$1
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 3 more
+
+2018-04-03 22:50:51,221 INFO  FullProcessService - Found APK file: /tmp/rdisk/2025/src/sample-basic-java/build/outputs/apk/release/sample-basic-java-release-unsigned.apk

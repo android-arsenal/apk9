@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.evernote.android.demo",
+    "label" : "Evernote SDK Demo",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "2.0.0-RC4",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.READ_EXTERNAL_STORAGE", "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2743,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"2.0.0-RC4\" package=\"com.evernote.android.demo\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:label=\"Evernote SDK Demo\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"com.evernote.android.demo.DemoApp\" android:allowBackup=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f090037\" android:label=\"Evernote SDK Demo\" android:name=\"com.evernote.android.demo.activity.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"resourceId:0x7f090104\" android:label=\"User Info\" android:name=\"com.evernote.android.demo.activity.UserInfoActivity\" />\n\t\t<activity android:theme=\"resourceId:0x7f090104\" android:label=\"Login\" android:name=\"com.evernote.android.demo.activity.LoginActivity\" />\n\t\t<activity android:theme=\"resourceId:0x7f090104\" android:name=\"com.evernote.android.demo.activity.NotesActivity\" />\n\t\t<activity android:theme=\"resourceId:0x7f090104\" android:name=\"com.evernote.android.demo.activity.ViewHtmlActivity\" android:configChanges=\"0x4a0\" />\n\t\t<activity android:name=\"com.evernote.client.android.EvernoteOAuthActivity\" />\n\t\t<activity android:name=\"com.evernote.client.android.login.EvernoteLoginActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2106947,
+  "crc32" : 4292392820,
+  "sha256" : "2b8a9ed37505055fb0cfcc7b04c2d3c85ad3838a6aa72e9508721e21b11179f7",
+  "buildTime" : 1522799722000
+}

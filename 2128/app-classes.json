@@ -1,0 +1,6 @@
+{
+  "butterknife" : [ "Bind", "BindBool", "BindColor", "BindDimen", "BindDrawable", "BindInt", "BindString", "ButterKnife", "ButterKnife$1", "ButterKnife$Action", "ButterKnife$Finder", "ButterKnife$Finder$1", "ButterKnife$Finder$2", "ButterKnife$Finder$3", "ButterKnife$Setter", "ButterKnife$ViewBinder", "ImmutableList", "OnCheckedChanged", "OnClick", "OnEditorAction", "OnFocusChange", "OnItemClick", "OnItemLongClick", "OnItemSelected", "OnItemSelected$Callback", "OnLongClick", "OnPageChange", "OnPageChange$Callback", "OnTextChanged", "OnTextChanged$Callback", "OnTouch" ],
+  "butterknife.internal" : [ "BindingClass", "BindingClass$1", "ButterKnifeProcessor", "DebouncingOnClickListener", "DebouncingOnClickListener$1", "FieldCollectionViewBinding", "FieldCollectionViewBinding$Kind", "FieldResourceBinding", "FieldViewBinding", "ListenerClass", "ListenerClass$NONE", "ListenerMethod", "MethodViewBinding", "Parameter", "ViewBinding", "ViewBindings" ],
+  "com.jakewharton.processphoenix" : [ "ProcessPhoenix" ],
+  "com.jakewharton.processphoenix.sample" : [ "BuildConfig", "MainActivity", "MainActivity$$ViewBinder", "MainActivity$$ViewBinder$1", "MainActivity$$ViewBinder$2", "R", "R$attr", "R$id", "R$layout" ]
+}

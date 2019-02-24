@@ -1,0 +1,482 @@
+2018-04-03 18:39:35,502 INFO  DownloadService - Downloading "https://github.com/florent37/GlidePalette/archive/master.zip", attempt 3
+2018-04-03 18:40:36,206 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:40:36,910 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:40:36,911 INFO  DownloadService - Downloading "https://github.com/florent37/GlidePalette/archive/master.zip", attempt 3
+2018-04-03 18:41:38,207 DEBUG FullProcessService - Repository https://github.com/florent37/GlidePalette available: true
+2018-04-03 18:41:38,208 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 18:41:38,208 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/florent37/GlidePalette, /tmp/rdisk/2147/src]
+2018-04-03 18:41:40,994 INFO  SysUtils - 
+2018-04-03 18:41:41,007 INFO  GitService - Deleted "/tmp/rdisk/2147/src/.git": true
+2018-04-03 18:41:41,011 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-03 18:41:41,011 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2147/src]
+2018-04-03 18:41:41,015 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2147/src/.git/
+
+2018-04-03 18:41:41,018 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2147/src/gradlew
+2018-04-03 18:41:41,020 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2147/src/glidepalette/build.gradle /tmp/rdisk/2147/src/sample/build.gradle /tmp/rdisk/2147/src/build.gradle
+2018-04-03 18:41:41,022 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2147/src/settings.gradle /tmp/rdisk/2147/src/sample/build.gradle /tmp/rdisk/2147/src/gradle/install-v1.gradle /tmp/rdisk/2147/src/gradle/bintray-java-v1.gradle /tmp/rdisk/2147/src/gradle/bintray-android-v1.gradle /tmp/rdisk/2147/src/glidepalette/build.gradle /tmp/rdisk/2147/src/build.gradle
+2018-04-03 18:41:41,022 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 18:41:41,023 INFO  ProjectFixService - Fixing project...
+2018-04-03 18:41:41,028 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2147/src/glidepalette/local.properties
+2018-04-03 18:41:41,032 INFO  ProjectFixService - Build info for "/tmp/rdisk/2147/src/glidepalette/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-04-03 18:41:41,032 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2147/src/glidepalette/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-04-03 18:41:41,033 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2147/src/sample/local.properties
+2018-04-03 18:41:41,036 INFO  ProjectFixService - Build info for "/tmp/rdisk/2147/src/sample/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-04-03 18:41:41,036 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2147/src/sample/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-04-03 18:41:41,037 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2147/src/local.properties
+2018-04-03 18:41:41,037 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-03 18:41:41,037 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-03 18:41:41,039 INFO  ProjectFixService - Build info for "/tmp/rdisk/2147/src/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-04-03 18:41:41,039 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2147/src/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-04-03 18:41:41,039 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 18:41:41,039 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:41:41,040 INFO  SysUtils - Execute command: [/tmp/rdisk/2147/src/gradlew, -b, /tmp/rdisk/2147/src/glidepalette/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:41:50,562 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-03 18:41:50,562 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 18:41:50,562 INFO  SysUtils - Execute command: [/tmp/rdisk/2147/src/gradlew, -b, /tmp/rdisk/2147/src/glidepalette/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 18:42:10,762 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':glidepalette' is deprecated. Use 'implementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:glidepalette:preBuild UP-TO-DATE
+:glidepalette:preDebugBuild UP-TO-DATE
+:glidepalette:compileDebugAidl
+:glidepalette:compileDebugNdk NO-SOURCE
+:glidepalette:compileDebugRenderscript
+:glidepalette:checkDebugManifest
+:glidepalette:generateDebugBuildConfig
+:glidepalette:prepareLintJar
+:glidepalette:generateDebugResValues
+:glidepalette:generateDebugResources
+:glidepalette:packageDebugResources
+:glidepalette:platformAttrExtractor
+:glidepalette:processDebugManifest
+:glidepalette:javaPreCompileDebug
+:glidepalette:mergeDebugShaders
+:glidepalette:compileDebugShaders
+:glidepalette:generateDebugAssets
+:glidepalette:mergeDebugAssets
+:glidepalette:mergeDebugConsumerProguardFiles
+:glidepalette:packageDebugRenderscript NO-SOURCE
+:glidepalette:processDebugJavaRes NO-SOURCE
+:glidepalette:mergeDebugJniLibFolders
+:glidepalette:transformNativeLibsWithMergeJniLibsForDebug
+:glidepalette:transformNativeLibsWithStripDebugSymbolForDebug
+:glidepalette:transformNativeLibsWithSyncJniLibsForDebug
+:glidepalette:preReleaseBuild UP-TO-DATE
+:glidepalette:compileReleaseAidl
+:glidepalette:compileReleaseNdk NO-SOURCE
+:glidepalette:compileReleaseRenderscript
+:glidepalette:checkReleaseManifest
+:glidepalette:generateReleaseBuildConfig
+:glidepalette:generateReleaseResValues
+:glidepalette:generateReleaseResources
+:glidepalette:packageReleaseResources
+:glidepalette:processReleaseManifest
+:glidepalette:javaPreCompileRelease
+:glidepalette:mergeReleaseShaders
+:glidepalette:compileReleaseShaders
+:glidepalette:generateReleaseAssets
+:glidepalette:mergeReleaseAssets
+:glidepalette:mergeReleaseConsumerProguardFiles
+:glidepalette:packageReleaseRenderscript NO-SOURCE
+:glidepalette:processReleaseJavaRes NO-SOURCE
+:glidepalette:mergeReleaseJniLibFolders
+:glidepalette:transformNativeLibsWithMergeJniLibsForRelease
+:glidepalette:transformNativeLibsWithStripDebugSymbolForRelease
+:glidepalette:transformNativeLibsWithSyncJniLibsForRelease
+:glidepalette:mergeReleaseResources
+:glidepalette:verifyReleaseResources
+:glidepalette:javadoc/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/PaletteTarget.java:3: error: package android.support.v4.util does not exist
+import android.support.v4.util.Pair;
+                              ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/PaletteTarget.java:14: error: cannot find symbol
+    protected ArrayList<Pair<View, Integer>> targetsBackground = new ArrayList<>();
+                        ^
+  symbol:   class Pair
+  location: class PaletteTarget
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/PaletteTarget.java:15: error: cannot find symbol
+    protected ArrayList<Pair<TextView, Integer>> targetsText = new ArrayList<>();
+                        ^
+  symbol:   class Pair
+  location: class PaletteTarget
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:6: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:10: error: package com.bumptech.glide.load does not exist
+import com.bumptech.glide.load.DataSource;
+                              ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:11: error: package com.bumptech.glide.load.engine does not exist
+import com.bumptech.glide.load.engine.GlideException;
+                                     ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:12: error: package com.bumptech.glide.load.resource.gif does not exist
+import com.bumptech.glide.load.resource.gif.GifDrawable;
+                                           ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:13: error: package com.bumptech.glide.request does not exist
+import com.bumptech.glide.request.RequestListener;
+                                 ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:14: error: package com.bumptech.glide.request.target does not exist
+import com.bumptech.glide.request.target.Target;
+                                        ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:8: error: package android.support.annotation does not exist
+import android.support.annotation.IntDef;
+                                 ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:9: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:10: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:11: error: package android.support.v4.util does not exist
+import android.support.v4.util.LruCache;
+                              ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:12: error: package android.support.v4.util does not exist
+import android.support.v4.util.Pair;
+                              ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:13: error: package android.support.v7.graphics does not exist
+import android.support.v7.graphics.Palette;
+                                  ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:16: error: cannot find symbol
+public class GlidePalette<TranscodeType> extends BitmapPalette implements RequestListener<TranscodeType> {
+                                                                          ^
+  symbol: class RequestListener
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:18: error: cannot find symbol
+    protected RequestListener<TranscodeType> callback;
+              ^
+  symbol:   class RequestListener
+  location: class GlidePalette<TranscodeType>
+  where TranscodeType is a type-variable:
+    TranscodeType extends Object declared in class GlidePalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:30: error: cannot find symbol
+    public GlidePalette<GifDrawable> asGif() {
+                        ^
+  symbol:   class GifDrawable
+  location: class GlidePalette<TranscodeType>
+  where TranscodeType is a type-variable:
+    TranscodeType extends Object declared in class GlidePalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:71: error: cannot find symbol
+    public GlidePalette<TranscodeType> setGlideListener(RequestListener<TranscodeType> listener) {
+                                                        ^
+  symbol:   class RequestListener
+  location: class GlidePalette<TranscodeType>
+  where TranscodeType is a type-variable:
+    TranscodeType extends Object declared in class GlidePalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:94: error: cannot find symbol
+    @Override public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<TranscodeType> target, boolean isFirstResource) {
+                                                    ^
+  symbol:   class GlideException
+  location: class GlidePalette<TranscodeType>
+  where TranscodeType is a type-variable:
+    TranscodeType extends Object declared in class GlidePalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:94: error: cannot find symbol
+    @Override public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<TranscodeType> target, boolean isFirstResource) {
+                                                                                    ^
+  symbol:   class Target
+  location: class GlidePalette<TranscodeType>
+  where TranscodeType is a type-variable:
+    TranscodeType extends Object declared in class GlidePalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:98: error: cannot find symbol
+    @Override public boolean onResourceReady(TranscodeType resource, Object model, Target<TranscodeType> target, DataSource dataSource, boolean isFirstResource) {
+                                                                                   ^
+  symbol:   class Target
+  location: class GlidePalette<TranscodeType>
+  where TranscodeType is a type-variable:
+    TranscodeType extends Object declared in class GlidePalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:98: error: cannot find symbol
+    @Override public boolean onResourceReady(TranscodeType resource, Object model, Target<TranscodeType> target, DataSource dataSource, boolean isFirstResource) {
+                                                                                                                 ^
+  symbol:   class DataSource
+  location: class GlidePalette<TranscodeType>
+  where TranscodeType is a type-variable:
+    TranscodeType extends Object declared in class GlidePalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:56: error: cannot find symbol
+    private static final LruCache<String, Palette> CACHE = new LruCache<>(40);
+                         ^
+  symbol:   class LruCache
+  location: class BitmapPalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:56: error: cannot find symbol
+    private static final LruCache<String, Palette> CACHE = new LruCache<>(40);
+                                          ^
+  symbol:   class Palette
+  location: class BitmapPalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:126: error: cannot find symbol
+    protected void apply(Palette palette, boolean cacheHit) {
+                         ^
+  symbol:   class Palette
+  location: class BitmapPalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:185: error: cannot find symbol
+    private void crossfadeTargetBackground(PaletteTarget target, Pair<View, Integer> t, int newColor) {
+                                                                 ^
+  symbol:   class Pair
+  location: class BitmapPalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:203: error: package Palette does not exist
+    protected static int getColor(Palette.Swatch swatch, @Swatch int paletteSwatch) {
+                                         ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:28: error: cannot find symbol
+        void onPaletteLoaded(@Nullable Palette palette);
+                                       ^
+  symbol:   class Palette
+  location: interface CallBack
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:33: error: package Palette does not exist
+        Palette.Builder intercept(Palette.Builder builder);
+                                         ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:33: error: package Palette does not exist
+        Palette.Builder intercept(Palette.Builder builder);
+               ^
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:36: error: cannot find symbol
+    @IntDef({Profile.VIBRANT, Profile.VIBRANT_DARK, Profile.VIBRANT_LIGHT,
+     ^
+  symbol:   class IntDef
+  location: class BitmapPalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:48: error: cannot find symbol
+    @IntDef({Swatch.RGB, Swatch.TITLE_TEXT_COLOR, Swatch.BODY_TEXT_COLOR})
+     ^
+  symbol:   class IntDef
+  location: class BitmapPalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:94: error: cannot find symbol
+    @Override public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<TranscodeType> target, boolean isFirstResource) {
+                                           ^
+  symbol:   class Nullable
+  location: class GlidePalette<TranscodeType>
+  where TranscodeType is a type-variable:
+    TranscodeType extends Object declared in class GlidePalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:219: error: cannot find symbol
+    protected void start(@NonNull final Bitmap bitmap) {
+                          ^
+  symbol:   class NonNull
+  location: class BitmapPalette
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:28: error: cannot find symbol
+        void onPaletteLoaded(@Nullable Palette palette);
+                              ^
+  symbol:   class Nullable
+  location: interface CallBack
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java:32: error: cannot find symbol
+        @NonNull
+         ^
+  symbol:   class NonNull
+  location: interface PaletteBuilderInterceptor
+/tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/GlidePalette.java:118: error: cannot find symbol
+        @Nullable
+         ^
+  symbol:   class Nullable
+  location: interface BitmapHolder
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+
+92 warnings
+:glidepalette:javadocJar
+:glidepalette:sourcesJar
+:glidepalette:processDebugResources
+:glidepalette:generateDebugSources
+:glidepalette:compileDebugJavaWithJavacNote: /tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:glidepalette:extractDebugAnnotations
+:glidepalette:transformResourcesWithMergeJavaResForDebug
+:glidepalette:transformClassesAndResourcesWithSyncLibJarsForDebug
+:glidepalette:bundleDebug
+:glidepalette:compileDebugSources
+:glidepalette:assembleDebug
+:glidepalette:processReleaseResources
+:glidepalette:generateReleaseSources
+:glidepalette:compileReleaseJavaWithJavacNote: /tmp/rdisk/2147/src/glidepalette/src/main/java/com/github/florent37/glidepalette/BitmapPalette.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:glidepalette:extractReleaseAnnotations
+:glidepalette:transformResourcesWithMergeJavaResForRelease
+:glidepalette:transformClassesAndResourcesWithSyncLibJarsForRelease
+:glidepalette:bundleRelease
+:glidepalette:compileReleaseSources
+:glidepalette:assembleRelease
+:glidepalette:assemble
+:glidepalette:build
+
+BUILD SUCCESSFUL in 19s
+51 actionable tasks: 51 executed
+
+2018-04-03 18:42:10,787 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:42:10,788 INFO  SysUtils - Execute command: [/tmp/rdisk/2147/src/gradlew, -b, /tmp/rdisk/2147/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:42:18,040 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-03 18:42:18,040 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 18:42:18,040 INFO  SysUtils - Execute command: [/tmp/rdisk/2147/src/gradlew, -b, /tmp/rdisk/2147/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 18:42:53,667 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':sample' is deprecated. Use 'implementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Configuration 'compile' in project ':glidepalette' is deprecated. Use 'implementation' instead.
+:glidepalette:preBuild UP-TO-DATE
+:glidepalette:preDebugBuild UP-TO-DATE
+:glidepalette:compileDebugAidl UP-TO-DATE
+:glidepalette:compileDebugRenderscript UP-TO-DATE
+:glidepalette:checkDebugManifest UP-TO-DATE
+:glidepalette:generateDebugBuildConfig UP-TO-DATE
+:glidepalette:prepareLintJar UP-TO-DATE
+:glidepalette:generateDebugResValues UP-TO-DATE
+:glidepalette:generateDebugResources UP-TO-DATE
+:glidepalette:packageDebugResources UP-TO-DATE
+:glidepalette:platformAttrExtractor UP-TO-DATE
+:glidepalette:processDebugManifest UP-TO-DATE
+:glidepalette:processDebugResources UP-TO-DATE
+:glidepalette:generateDebugSources UP-TO-DATE
+:glidepalette:javaPreCompileDebug UP-TO-DATE
+:glidepalette:compileDebugJavaWithJavac UP-TO-DATE
+:glidepalette:processDebugJavaRes NO-SOURCE
+:glidepalette:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild
+:sample:compileDebugAidl
+:glidepalette:packageDebugRenderscript NO-SOURCE
+:sample:compileDebugRenderscript
+:sample:checkDebugManifest
+:sample:generateDebugBuildConfig
+:sample:prepareLintJar
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:createDebugCompatibleScreenManifests
+:sample:processDebugManifest
+:sample:splitsDiscoveryTaskDebug
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:javaPreCompileDebug
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk NO-SOURCE
+:sample:compileDebugSources
+:glidepalette:mergeDebugShaders UP-TO-DATE
+:glidepalette:compileDebugShaders UP-TO-DATE
+:glidepalette:generateDebugAssets UP-TO-DATE
+:glidepalette:mergeDebugAssets UP-TO-DATE
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:transformClassesWithDexBuilderForDebug
+:sample:transformDexArchiveWithExternalLibsDexMergerForDebug
+:sample:transformDexArchiveWithDexMergerForDebug
+:glidepalette:compileDebugNdk NO-SOURCE
+:glidepalette:mergeDebugJniLibFolders UP-TO-DATE
+:glidepalette:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:glidepalette:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:glidepalette:transformNativeLibsWithIntermediateJniLibsForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForDebug
+:sample:transformNativeLibsWithStripDebugSymbolForDebug
+:sample:processDebugJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateSigningDebug
+:sample:packageDebug
+:sample:assembleDebug
+:glidepalette:preReleaseBuild UP-TO-DATE
+:glidepalette:compileReleaseAidl UP-TO-DATE
+:glidepalette:compileReleaseRenderscript UP-TO-DATE
+:glidepalette:checkReleaseManifest UP-TO-DATE
+:glidepalette:generateReleaseBuildConfig UP-TO-DATE
+:glidepalette:generateReleaseResValues UP-TO-DATE
+:glidepalette:generateReleaseResources UP-TO-DATE
+:glidepalette:packageReleaseResources UP-TO-DATE
+:glidepalette:processReleaseManifest UP-TO-DATE
+:glidepalette:processReleaseResources UP-TO-DATE
+:glidepalette:generateReleaseSources UP-TO-DATE
+:glidepalette:javaPreCompileRelease UP-TO-DATE
+:glidepalette:compileReleaseJavaWithJavac UP-TO-DATE
+:glidepalette:processReleaseJavaRes NO-SOURCE
+:glidepalette:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:sample:preReleaseBuild
+:sample:compileReleaseAidl
+:glidepalette:packageReleaseRenderscript NO-SOURCE
+:sample:compileReleaseRenderscript
+:sample:checkReleaseManifest
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:createReleaseCompatibleScreenManifests
+:sample:processReleaseManifest
+:sample:splitsDiscoveryTaskRelease
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:javaPreCompileRelease
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk NO-SOURCE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:glidepalette:mergeReleaseShaders UP-TO-DATE
+:glidepalette:compileReleaseShaders UP-TO-DATE
+:glidepalette:generateReleaseAssets UP-TO-DATE
+:glidepalette:mergeReleaseAssets UP-TO-DATE
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:sample:transformClassesWithPreDexForRelease
+:sample:transformDexWithDexForRelease
+:glidepalette:compileReleaseNdk NO-SOURCE
+:glidepalette:mergeReleaseJniLibFolders UP-TO-DATE
+:glidepalette:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:glidepalette:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:glidepalette:transformNativeLibsWithIntermediateJniLibsForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForRelease
+:sample:transformNativeLibsWithStripDebugSymbolForRelease
+:sample:processReleaseJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL in 34s
+88 actionable tasks: 54 executed, 34 up-to-date
+
+2018-04-03 18:42:53,734 INFO  FullProcessService - Found APK file: /tmp/rdisk/2147/src/sample/build/outputs/apk/release/sample-release-unsigned.apk

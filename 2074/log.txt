@@ -1,0 +1,21 @@
+2018-04-03 21:04:57,750 INFO  DownloadService - Downloading "https://github.com/hotchemi/m-permissions-checker/archive/master.zip", attempt 3
+2018-04-03 21:05:58,327 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 21:05:59,141 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 21:05:59,141 INFO  DownloadService - Downloading "https://github.com/hotchemi/m-permissions-checker/archive/master.zip", attempt 3
+2018-04-03 21:07:00,455 DEBUG FullProcessService - Repository https://github.com/hotchemi/m-permissions-checker available: true
+2018-04-03 21:07:00,455 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 21:07:00,455 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/hotchemi/m-permissions-checker, /tmp/rdisk/2074/src]
+2018-04-03 21:07:03,694 INFO  SysUtils - 
+2018-04-03 21:07:03,698 INFO  GitService - Deleted "/tmp/rdisk/2074/src/.git": true
+2018-04-03 21:07:03,698 INFO  FullProcessService - Size of directory with sources: 15 KB
+2018-04-03 21:07:03,698 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2074/src]
+2018-04-03 21:07:03,702 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2074/src/.git/
+
+2018-04-03 21:07:03,703 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-03 21:07:03,703 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-03 21:07:03,704 INFO  ProjectBuildService - Build script(s): none
+2018-04-03 21:07:03,704 INFO  ProjectBuildService - All script(s): none
+2018-04-03 21:07:03,704 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 21:07:03,704 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-03 21:07:03,704 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 21:07:03,705 ERROR FullProcessService - Could not find generated or existed APK file

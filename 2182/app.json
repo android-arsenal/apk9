@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "at.grabner.example.circleprogressview",
+    "label" : "Circle-Progress-View",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.1",
+    "versionCode" : 2,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEkklEQVR42u1ZXWwUVRSm/AhqeEeftEjLrri01LJFQAgmJFjjC+FNjU8kPmoJDxqT+oCJQiAGaHc62921pZJUDQFiH5jZNsX607CxPkBoijuzWxMwMcZN793tztypl3O3bSLo3ntndmbhoTc5abLNbr7vzjnn+86ZVatWzsp59IdSujqds3dopv2+ZtgDmkF+hr853SCFSBw7W2LoL4hbzQq+ElZQd2sKv3ZkmD7xyIGnZ8ub9Sz5DMDOAmj6f9GsIPp8z3/jhRgqhBTc354sttcduJ4vN+qGPQgASTXgIgL/jq0K0qKpYlvgwMcoXavnyIcArCQC7oYAi8Ye5IQUdO7gAH06GPAm3QQ5PS4L3C2B5YBauR1NoLCv4LWcFdINx3QL3guBSn30okJrHL3qG3gA8ocX8F4JsNjci4qtCbTPh7TxdvO1Elh+Ep7TqVKwHnIeYgZIx+G7XWnDebstgd6D4vwopMwNNsdQ3i0JqInpNy//udF9q1zsNrKgCbTVFBMzELUGjuI1dAyUooxMYy9yZEmE+1DMdZ930Sp/GTXs7W4vqD2JW5piaEqyxS5Ek6UOeQKLIiUEnzbtIaiTDV5rbH+Sbgj1oa9kSIDYjUvbAxmFZeCZB6q1y3V309VhFQ3JkOhIze0W337F24jTppabf/gcGqHrmxSUkaiFC0JXyTNmywXrJedFJ/oljkBhE25b7cH46FX6VPX0YZZYcPus2wTltbYqOCF6CjsSxTeqq26W+XlB7gPJoAjsHMTbxWk0d7I6gcVhhCtS3D7vw4HWOs0jAMqucwiwSYqXPk48aMseUpEqIJDnPYEcnwDpCppAWMFdAgIWR8BIgZv/4G0CJ6DitwSqTB9rAi+q+B2Bzaa8FOJqAIjcB4E/gT58zHMKAcgbfAJOrA4EkjwC4J2qFzHzN9w2miW3Al4wNTTFsCGwE1r1GjDJcYEO/KPnrXBQ+NmsIBKySD/+nDNC2h1iF+r0BKYBfeiiiMCeCxwrMUzpGgB5T0CirGfLTX6DZxs6NrgICrjYneGYuaVW+oWEnf4+k6Hr/ALPlllgIW6Kbr8lgYckxkkrDAAXxK7UOe+HL9o/RtfCzV6SGCtp59fze+WmMpN8KzcPO2fZ9qKWrbY6ZZ95KY6F01hrf3FC+sKWllmWDAkQt9Exc/45t+Cv5+gz8P3L7DfUKYv1d576LnReLL3ibjNhkk9drFVKUDunZIhcm6XPAulPtIdsy/mMVXUJtjOFVNePd+QOXQ8kMi6XWgtA5Cc2V4Movjuac15nwTwUfH4C4jpvYXB60mLvDR4Avy2OZ45P0I2ecpTdaC17US9x4odyxbAttc3C4W9wpLb9aNZ+GX7473qS+Hi8XOn5h4bRAX/eyGTt9jo/icLJyfkDvirl4msl8msdwM/ohhUJxKv8+Dt9knUbmc2dh4AG4KgT0x4L1l1x2y3QaUaYO/UDfNogE3qO7Kr728rRvN2mm06/JhhFq0SRzR/wRPcGvaqR0gy4xYOs12sm+U4znd8AIFpa0bNA7E0P/P8a0wjQhs7MXYGrXDkrpz7nPteKOEYhbOiQAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 2146,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"2\" android:versionName=\"1.1\" package=\"at.grabner.example.circleprogressview\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"25\" />\n\t<application android:theme=\"resourceId:0x7f090040\" android:label=\"Circle-Progress-View\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Circle-Progress-View\" android:name=\"at.grabner.example.circleprogressview.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1738407,
+  "crc32" : 276151616,
+  "sha256" : "3b639679991c3118a56d260704aacbcf61d24c0c7a553d89e4e75990010022ab",
+  "buildTime" : 1519494634000
+}

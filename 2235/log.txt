@@ -1,0 +1,130 @@
+2018-04-02 15:53:05,473 INFO  DownloadService - Downloading "https://github.com/tosslife/FoldingTabBar.Android/archive/master.zip", attempt 3
+2018-04-02 15:54:05,966 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 15:54:06,664 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 15:54:06,665 INFO  DownloadService - Downloading "https://github.com/tosslife/FoldingTabBar.Android/archive/master.zip", attempt 3
+2018-04-02 15:55:08,045 DEBUG FullProcessService - Repository https://github.com/tosslife/FoldingTabBar.Android available: true
+2018-04-02 15:55:08,045 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 15:55:08,046 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/tosslife/FoldingTabBar.Android, /tmp/rdisk/2235/src]
+2018-04-02 15:55:11,923 INFO  SysUtils - 
+2018-04-02 15:55:11,928 INFO  GitService - Deleted "/tmp/rdisk/2235/src/.git": true
+2018-04-02 15:55:11,931 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-02 15:55:11,931 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2235/src]
+2018-04-02 15:55:11,939 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2235/src/.git/
+
+2018-04-02 15:55:11,942 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2235/src/gradlew
+2018-04-02 15:55:11,944 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2235/src/app/build.gradle /tmp/rdisk/2235/src/foldingtabbar/build.gradle /tmp/rdisk/2235/src/build.gradle
+2018-04-02 15:55:11,947 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2235/src/settings.gradle /tmp/rdisk/2235/src/foldingtabbar/build.gradle /tmp/rdisk/2235/src/build.gradle /tmp/rdisk/2235/src/app/build.gradle
+2018-04-02 15:55:11,947 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 15:55:11,947 INFO  ProjectFixService - Fixing project...
+2018-04-02 15:55:11,955 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2235/src/app/local.properties
+2018-04-02 15:55:11,955 INFO  ProjectFixService - Build info for "/tmp/rdisk/2235/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 15:55:11,955 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2235/src/foldingtabbar/local.properties
+2018-04-02 15:55:11,956 INFO  ProjectFixService - Build info for "/tmp/rdisk/2235/src/foldingtabbar/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 15:55:11,956 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2235/src/local.properties
+2018-04-02 15:55:11,956 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 15:55:11,956 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 15:55:11,957 INFO  ProjectFixService - Build info for "/tmp/rdisk/2235/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 15:55:11,957 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 15:55:11,957 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:55:11,958 INFO  SysUtils - Execute command: [/tmp/rdisk/2235/src/gradlew, -b, /tmp/rdisk/2235/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:55:18,981 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-02 15:55:18,982 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 15:55:18,982 INFO  SysUtils - Execute command: [/tmp/rdisk/2235/src/gradlew, -b, /tmp/rdisk/2235/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 15:55:44,000 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:foldingtabbar:compileLint
+:foldingtabbar:copyReleaseLint UP-TO-DATE
+:foldingtabbar:preBuild UP-TO-DATE
+:foldingtabbar:preReleaseBuild UP-TO-DATE
+:foldingtabbar:checkReleaseManifest
+:foldingtabbar:preDebugAndroidTestBuild UP-TO-DATE
+:foldingtabbar:preDebugBuild UP-TO-DATE
+:foldingtabbar:preDebugUnitTestBuild UP-TO-DATE
+:foldingtabbar:preReleaseUnitTestBuild UP-TO-DATE
+:foldingtabbar:prepareComAndroidSupportAppcompatV72220Library
+:foldingtabbar:prepareComAndroidSupportSupportV42220Library
+:foldingtabbar:prepareReleaseDependencies
+:foldingtabbar:compileReleaseAidl
+:foldingtabbar:compileReleaseRenderscript
+:foldingtabbar:generateReleaseBuildConfig
+:foldingtabbar:generateReleaseAssets UP-TO-DATE
+:foldingtabbar:mergeReleaseAssets
+:foldingtabbar:generateReleaseResValues
+:foldingtabbar:generateReleaseResources
+:foldingtabbar:mergeReleaseResources
+:foldingtabbar:processReleaseManifest
+:foldingtabbar:processReleaseResources
+:foldingtabbar:generateReleaseSources
+:foldingtabbar:processReleaseJavaRes UP-TO-DATE
+:foldingtabbar:compileReleaseJava
+:foldingtabbar:extractReleaseAnnotations
+:foldingtabbar:mergeReleaseProguardFiles
+:foldingtabbar:packageReleaseJar
+:foldingtabbar:compileReleaseNdk UP-TO-DATE
+:foldingtabbar:packageReleaseJniLibs UP-TO-DATE
+:foldingtabbar:packageReleaseLocalJar UP-TO-DATE
+:foldingtabbar:packageReleaseRenderscript UP-TO-DATE
+:foldingtabbar:packageReleaseResources
+:foldingtabbar:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareComGithubTosslifeFoldingtabbar100Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaNote: /tmp/rdisk/2235/src/app/src/main/java/com/sanrenx/simple/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: /tmp/rdisk/2235/src/app/src/main/java/com/sanrenx/simple/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.596 secs
+
+2018-04-02 15:55:44,054 INFO  FullProcessService - Found APK file: /tmp/rdisk/2235/src/app/build/outputs/apk/app-debug.apk

@@ -1,0 +1,428 @@
+2018-04-03 22:38:46,481 INFO  DownloadService - Downloading "https://github.com/quemb/QMBForm/archive/master.zip", attempt 3
+2018-04-03 22:39:46,930 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 22:39:47,595 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 22:39:47,595 INFO  DownloadService - Downloading "https://github.com/quemb/QMBForm/archive/master.zip", attempt 3
+2018-04-03 22:40:48,817 DEBUG FullProcessService - Repository https://github.com/quemb/QMBForm available: true
+2018-04-03 22:40:48,817 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 22:40:48,817 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/quemb/QMBForm, /tmp/rdisk/2028/src]
+2018-04-03 22:40:50,814 INFO  SysUtils - 
+2018-04-03 22:40:50,820 INFO  GitService - Deleted "/tmp/rdisk/2028/src/.git": true
+2018-04-03 22:40:50,825 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-03 22:40:50,825 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2028/src]
+2018-04-03 22:40:50,829 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2028/src/.git/
+
+2018-04-03 22:40:50,833 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2028/src/gradlew
+2018-04-03 22:40:50,838 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2028/src/app/build.gradle /tmp/rdisk/2028/src/lib/QMBForm/build.gradle /tmp/rdisk/2028/src/build.gradle
+2018-04-03 22:40:50,842 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2028/src/settings.gradle /tmp/rdisk/2028/src/lib/QMBForm/build.gradle /tmp/rdisk/2028/src/build.gradle /tmp/rdisk/2028/src/app/build.gradle
+2018-04-03 22:40:50,842 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 22:40:50,842 INFO  ProjectFixService - Fixing project...
+2018-04-03 22:40:50,851 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2028/src/app/local.properties
+2018-04-03 22:40:50,851 INFO  ProjectFixService - Build info for "/tmp/rdisk/2028/src/app/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-03 22:40:50,852 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2028/src/lib/QMBForm/local.properties
+2018-04-03 22:40:50,852 INFO  ProjectFixService - Build info for "/tmp/rdisk/2028/src/lib/QMBForm/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-03 22:40:50,852 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2028/src/local.properties
+2018-04-03 22:40:50,852 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-03 22:40:50,853 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-03 22:40:50,854 INFO  ProjectFixService - Build info for "/tmp/rdisk/2028/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-03 22:40:50,854 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 22:40:50,854 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 22:40:50,854 INFO  SysUtils - Execute command: [/tmp/rdisk/2028/src/gradlew, -b, /tmp/rdisk/2028/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 22:41:02,088 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-03 22:41:02,088 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 22:41:02,088 INFO  SysUtils - Execute command: [/tmp/rdisk/2028/src/gradlew, -b, /tmp/rdisk/2028/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 22:41:27,710 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2520Library
+:app:prepareComAndroidSupportAppcompatV72520Library
+:app:prepareComAndroidSupportSupportCompat2520Library
+:app:prepareComAndroidSupportSupportCoreUi2520Library
+:app:prepareComAndroidSupportSupportCoreUtils2520Library
+:app:prepareComAndroidSupportSupportFragment2520Library
+:app:prepareComAndroidSupportSupportMediaCompat2520Library
+:app:prepareComAndroidSupportSupportV42520Library
+:app:prepareComAndroidSupportSupportVectorDrawable2520Library
+:lib:QMBForm:preBuild UP-TO-DATE
+:lib:QMBForm:preReleaseBuild UP-TO-DATE
+:lib:QMBForm:checkReleaseManifest
+:lib:QMBForm:preDebugAndroidTestBuild UP-TO-DATE
+:lib:QMBForm:preDebugBuild UP-TO-DATE
+:lib:QMBForm:preDebugUnitTestBuild UP-TO-DATE
+:lib:QMBForm:preReleaseUnitTestBuild UP-TO-DATE
+:lib:QMBForm:prepareComAndroidSupportAnimatedVectorDrawable2520Library
+:lib:QMBForm:prepareComAndroidSupportAppcompatV72520Library
+:lib:QMBForm:prepareComAndroidSupportSupportCompat2520Library
+:lib:QMBForm:prepareComAndroidSupportSupportCoreUi2520Library
+:lib:QMBForm:prepareComAndroidSupportSupportCoreUtils2520Library
+:lib:QMBForm:prepareComAndroidSupportSupportFragment2520Library
+:lib:QMBForm:prepareComAndroidSupportSupportMediaCompat2520Library
+:lib:QMBForm:prepareComAndroidSupportSupportV42520Library
+:lib:QMBForm:prepareComAndroidSupportSupportVectorDrawable2520Library
+:lib:QMBForm:prepareReleaseDependencies
+:lib:QMBForm:compileReleaseAidl
+:lib:QMBForm:compileReleaseNdk UP-TO-DATE
+:lib:QMBForm:compileLint
+:lib:QMBForm:copyReleaseLint UP-TO-DATE
+:lib:QMBForm:compileReleaseRenderscript
+:lib:QMBForm:generateReleaseBuildConfig
+:lib:QMBForm:generateReleaseResValues
+:lib:QMBForm:generateReleaseResources
+:lib:QMBForm:mergeReleaseResources
+:lib:QMBForm:processReleaseManifest
+:lib:QMBForm:processReleaseResources
+:lib:QMBForm:generateReleaseSources
+:lib:QMBForm:incrementalReleaseJavaCompilationSafeguard
+:lib:QMBForm:javaPreCompileRelease
+:lib:QMBForm:compileReleaseJavaWithJavac
+:lib:QMBForm:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/view/FormBaseCell.java:160: warning: [unchecked] unchecked call to setValue(Value<T>) as a member of the raw type RowDescriptor
+            row.setValue(newValue);
+                        ^
+  where T is a type-variable:
+    T extends Object declared in class RowDescriptor
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/annotation/FormDescriptorAnnotationFactory.java:141: warning: [unchecked] unchecked call to setValue(Value<T>) as a member of the raw type RowDescriptor
+                                rowDescriptor.setValue(new Value<Object>(item));
+                                                      ^
+  where T is a type-variable:
+    T extends Object declared in class RowDescriptor
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/annotation/FormDescriptorAnnotationFactory.java:160: warning: [unchecked] unchecked call to setSelectorOptions(List<FormOptionsObject>) as a member of the raw type RowDescriptor
+                        rowDescriptor.setSelectorOptions(convertFormOptionsAnnotation(
+                                                        ^
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/annotation/FormDescriptorAnnotationFactory.java:188: warning: [unchecked] unchecked call to getConstructor(Class<?>...) as a member of the raw type Class
+                rowDescriptor.addValidator((FormValidator) validator.getConstructor().newInstance());
+                                                                                   ^
+  where T is a type-variable:
+    T extends Object declared in class Class
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/descriptor/RowDescriptor.java:118: warning: [unchecked] unchecked call to setValue(Value<T>) as a member of the raw type RowDescriptor
+        descriptor.setValue(value);
+                           ^
+  where T is a type-variable:
+    T extends Object declared in class RowDescriptor
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/descriptor/RowDescriptor.java:119: warning: [unchecked] unchecked assignment to variable mValidators as member of raw type RowDescriptor
+        descriptor.mValidators = new ArrayList<FormValidator>();
+                  ^
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/descriptor/RowDescriptor.java:135: warning: [unchecked] unchecked call to setSelectorOptions(List<FormOptionsObject>) as a member of the raw type RowDescriptor
+        rowDescriptor.setSelectorOptions(convertFormOptionsAnnotation(
+                                        ^
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/descriptor/RowDescriptor.java:270: warning: [unchecked] unchecked call to setDataSource(DataSource<T>) as a member of the raw type RowDescriptor
+        newInstance.setDataSource(rowDescriptor.getDataSource());
+                                 ^
+  where T is a type-variable:
+    T extends Object declared in class RowDescriptor
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/descriptor/FormDescriptor.java:138: warning: [unchecked] unchecked method invocation: method addAll in interface List is applied to given types
+                    formValidation.getRowValidationErrors().addAll(rowDescriptor.getValidationErrors());
+                                                                  ^
+  required: Collection<? extends E>
+  found: List
+  where E is a type-variable:
+    E extends Object declared in interface List
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/descriptor/FormDescriptor.java:138: warning: [unchecked] unchecked conversion
+                    formValidation.getRowValidationErrors().addAll(rowDescriptor.getValidationErrors());
+                                                                                                    ^
+  required: Collection<? extends E>
+  found:    List
+  where E is a type-variable:
+    E extends Object declared in interface List
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/view/FormTextPickerDialogFieldCell.java:66: warning: [unchecked] unchecked call to ArrayAdapter(Context,int,List<T>) as a member of the raw type ArrayAdapter
+                        final ArrayAdapter adapter = new ArrayAdapter(getContext(), android.R.layout.simple_selectable_list_item, list);
+                                                     ^
+  where T is a type-variable:
+    T extends Object declared in class ArrayAdapter
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/view/FormSpinnerFieldCell.java:45: warning: [unchecked] unchecked conversion
+        List<FormOptionsObject> selectorOptions = getRowDescriptor().getSelectorOptions();
+                                                                                       ^
+  required: List<FormOptionsObject>
+  found:    List
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/view/FormSpinnerFieldCell.java:71: warning: [unchecked] unchecked call to Value(T) as a member of the raw type Value
+                onValueChanged(new Value(selectedOption.getValue()));
+                               ^
+  where T is a type-variable:
+    T extends Object declared in class Value
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/view/FormPickerDialogFieldCell.java:48: warning: [unchecked] unchecked call to ArrayAdapter(Context,int,List<T>) as a member of the raw type ArrayAdapter
+                        final ArrayAdapter adapter = new ArrayAdapter(getContext(), android.R.layout.simple_selectable_list_item, list);
+                                                     ^
+  where T is a type-variable:
+    T extends Object declared in class ArrayAdapter
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/view/FormMultipleDialogFieldCell.java:41: warning: [unchecked] unchecked cast
+                    final ArrayList<String> selectedItems = new ArrayList((ArrayList<String>) getRowDescriptor().getValue().getValue());
+                                                                                                                                    ^
+  required: ArrayList<String>
+  found:    Object
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/view/FormMultipleDialogFieldCell.java:41: warning: [unchecked] unchecked call to ArrayList(Collection<? extends E>) as a member of the raw type ArrayList
+                    final ArrayList<String> selectedItems = new ArrayList((ArrayList<String>) getRowDescriptor().getValue().getValue());
+                                                            ^
+  where E is a type-variable:
+    E extends Object declared in class ArrayList
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/view/FormMultipleDialogFieldCell.java:41: warning: [unchecked] unchecked conversion
+                    final ArrayList<String> selectedItems = new ArrayList((ArrayList<String>) getRowDescriptor().getValue().getValue());
+                                                            ^
+  required: ArrayList<String>
+  found:    ArrayList
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/view/FormMultipleDialogFieldCell.java:44: warning: [unchecked] unchecked call to ArrayAdapter(Context,int,List<T>) as a member of the raw type ArrayAdapter
+                        final ArrayAdapter adapter = new ArrayAdapter(getContext(), android.R.layout.simple_selectable_list_item, list);
+                                                     ^
+  where T is a type-variable:
+    T extends Object declared in class ArrayAdapter
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/view/FormMultipleDialogFieldCell.java:45: warning: [unchecked] unchecked call to <T>toArray(T[]) as a member of the raw type List
+                        final CharSequence[] charSequence = (CharSequence[]) list.toArray(new CharSequence[list.size()]);
+                                                                                         ^
+  where T is a type-variable:
+    T extends Object declared in method <T>toArray(T[])
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/CellViewFactory.java:71: warning: [unchecked] unchecked method invocation: method put in class HashMap is applied to given types
+        getInstance().mViewRowTypeMap.put(descriptorName, descriptorClass);
+                                         ^
+  required: K,V
+  found: String,Class
+  where K,V are type-variables:
+    K extends Object declared in class HashMap
+    V extends Object declared in class HashMap
+/tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/CellViewFactory.java:71: warning: [unchecked] unchecked conversion
+        getInstance().mViewRowTypeMap.put(descriptorName, descriptorClass);
+                                                          ^
+  required: V
+  found:    Class
+  where V is a type-variable:
+    V extends Object declared in class HashMap
+Note: /tmp/rdisk/2028/src/lib/QMBForm/src/main/java/com/quemb/qmbform/view/FormEditHTMLTextViewFieldCell.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+21 warnings
+:lib:QMBForm:extractReleaseAnnotations
+:lib:QMBForm:mergeReleaseShaders
+:lib:QMBForm:compileReleaseShaders
+:lib:QMBForm:generateReleaseAssets
+:lib:QMBForm:mergeReleaseAssets
+:lib:QMBForm:mergeReleaseProguardFiles
+:lib:QMBForm:packageReleaseRenderscript UP-TO-DATE
+:lib:QMBForm:packageReleaseResources
+:lib:QMBForm:processReleaseJavaRes UP-TO-DATE
+:lib:QMBForm:transformResourcesWithMergeJavaResForRelease
+:lib:QMBForm:transformClassesAndResourcesWithSyncLibJarsForRelease
+:lib:QMBForm:mergeReleaseJniLibFolders
+:lib:QMBForm:transformNativeLibsWithMergeJniLibsForRelease
+:lib:QMBForm:transformNativeLibsWithStripDebugSymbolForRelease
+:lib:QMBForm:transformNativeLibsWithSyncJniLibsForRelease
+:lib:QMBForm:bundleRelease
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleMultivalueSectionFormFragment.java:124: warning: [unchecked] unchecked call to onDataSourceLoaded(List<T>) as a member of the raw type DataSourceListener
+                listener.onDataSourceLoaded(values);
+                                           ^
+  where T is a type-variable:
+    T extends Object declared in interface DataSourceListener
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleMultivalueSectionFormFragment.java:119: warning: [unchecked] unchecked call to setDataSource(DataSource<T>) as a member of the raw type RowDescriptor
+        pickerDescriptor2.setDataSource(new DataSource() {
+                                       ^
+  where T is a type-variable:
+    T extends Object declared in class RowDescriptor
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleMultivalueSectionFormFragment.java:140: warning: [unchecked] unchecked call to onDataSourceLoaded(List<T>) as a member of the raw type DataSourceListener
+                listener.onDataSourceLoaded(values);
+                                           ^
+  where T is a type-variable:
+    T extends Object declared in interface DataSourceListener
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleMultivalueSectionFormFragment.java:135: warning: [unchecked] unchecked call to setDataSource(DataSource<T>) as a member of the raw type RowDescriptor
+        pickerDescriptor3.setDataSource(new DataSource() {
+                                       ^
+  where T is a type-variable:
+    T extends Object declared in class RowDescriptor
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleMultivalueSectionFormFragment.java:247: warning: [unchecked] unchecked call to onDataSourceLoaded(List<T>) as a member of the raw type DataSourceListener
+            mListener.onDataSourceLoaded(strings);
+                                        ^
+  where T is a type-variable:
+    T extends Object declared in interface DataSourceListener
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleFormFragment.java:171: warning: [unchecked] unchecked call to setDataSource(DataSource<T>) as a member of the raw type RowDescriptor
+        pickerDescriptor.setDataSource(new DataSource()
+                                      ^
+  where T is a type-variable:
+    T extends Object declared in class RowDescriptor
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleFormFragment.java:221: warning: [unchecked] unchecked call to setValue(T) as a member of the raw type Value
+                integerRow.getValue().setValue(100);
+                                              ^
+  where T is a type-variable:
+    T extends Object declared in class Value
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleFormFragment.java:376: warning: [unchecked] unchecked call to onDataSourceLoaded(List<T>) as a member of the raw type DataSourceListener
+            mListener.onDataSourceLoaded(strings);
+                                        ^
+  where T is a type-variable:
+    T extends Object declared in interface DataSourceListener
+8 warnings
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleMultivalueSectionFormFragment.java:124: warning: [unchecked] unchecked call to onDataSourceLoaded(List<T>) as a member of the raw type DataSourceListener
+                listener.onDataSourceLoaded(values);
+                                           ^
+  where T is a type-variable:
+    T extends Object declared in interface DataSourceListener
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleMultivalueSectionFormFragment.java:119: warning: [unchecked] unchecked call to setDataSource(DataSource<T>) as a member of the raw type RowDescriptor
+        pickerDescriptor2.setDataSource(new DataSource() {
+                                       ^
+  where T is a type-variable:
+    T extends Object declared in class RowDescriptor
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleMultivalueSectionFormFragment.java:140: warning: [unchecked] unchecked call to onDataSourceLoaded(List<T>) as a member of the raw type DataSourceListener
+                listener.onDataSourceLoaded(values);
+                                           ^
+  where T is a type-variable:
+    T extends Object declared in interface DataSourceListener
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleMultivalueSectionFormFragment.java:135: warning: [unchecked] unchecked call to setDataSource(DataSource<T>) as a member of the raw type RowDescriptor
+        pickerDescriptor3.setDataSource(new DataSource() {
+                                       ^
+  where T is a type-variable:
+    T extends Object declared in class RowDescriptor
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleMultivalueSectionFormFragment.java:247: warning: [unchecked] unchecked call to onDataSourceLoaded(List<T>) as a member of the raw type DataSourceListener
+            mListener.onDataSourceLoaded(strings);
+                                        ^
+  where T is a type-variable:
+    T extends Object declared in interface DataSourceListener
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleFormFragment.java:171: warning: [unchecked] unchecked call to setDataSource(DataSource<T>) as a member of the raw type RowDescriptor
+        pickerDescriptor.setDataSource(new DataSource()
+                                      ^
+  where T is a type-variable:
+    T extends Object declared in class RowDescriptor
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleFormFragment.java:221: warning: [unchecked] unchecked call to setValue(T) as a member of the raw type Value
+                integerRow.getValue().setValue(100);
+                                              ^
+  where T is a type-variable:
+    T extends Object declared in class Value
+/tmp/rdisk/2028/src/app/src/main/java/com/quemb/qmbform/sample/controller/SampleFormFragment.java:376: warning: [unchecked] unchecked call to onDataSourceLoaded(List<T>) as a member of the raw type DataSourceListener
+            mListener.onDataSourceLoaded(strings);
+                                        ^
+  where T is a type-variable:
+    T extends Object declared in interface DataSourceListener
+8 warnings
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:5: Error: "hello_world" is not translated in "de" (German) [MissingTranslation]
+    <string name="hello_world">Hello world!</string>
+            ~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:6: Error: "action_settings" is not translated in "de" (German) [MissingTranslation]
+    <string name="action_settings">Settings</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:7: Error: "action_save" is not translated in "de" (German) [MissingTranslation]
+ <string name="action_save">Save</string>
+         ~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:8: Error: "lb_title" is not translated in "de" (German) [MissingTranslation]
+ <string name="lb_title">Title</string>
+         ~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:9: Error: "section_general" is not translated in "de" (German) [MissingTranslation]
+ <string name="section_general">General</string>
+         ~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:10: Error: "lb_description" is not translated in "de" (German) [MissingTranslation]
+ <string name="lb_description">Description</string>
+         ~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:11: Error: "section_date" is not translated in "de" (German) [MissingTranslation]
+ <string name="section_date">Date</string>
+         ~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:12: Error: "lb_date" is not translated in "de" (German) [MissingTranslation]
+ <string name="lb_date">Date</string>
+         ~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:13: Error: "lb_date_dialog" is not translated in "de" (German) [MissingTranslation]
+ <string name="lb_date_dialog">Date Dialog</string>
+         ~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:14: Error: "lb_date_inline" is not translated in "de" (German) [MissingTranslation]
+ <string name="lb_date_inline">Date Inline</string>
+         ~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:15: Error: "section_boolean" is not translated in "de" (German) [MissingTranslation]
+    <string name="section_boolean">Boolean</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:16: Error: "lb_boolean_check" is not translated in "de" (German) [MissingTranslation]
+    <string name="lb_boolean_check">Check</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:17: Error: "lb_multi_value" is not translated in "de" (German) [MissingTranslation]
+    <string name="lb_multi_value">Multiple Value</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:18: Error: "section_multiValue" is not translated in "de" (German) [MissingTranslation]
+    <string name="section_multiValue">Multiple Value</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:19: Error: "lb_add_new_tag" is not translated in "de" (German) [MissingTranslation]
+    <string name="lb_add_new_tag">Add new tag</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+/tmp/rdisk/2028/src/app/src/main/res/values/strings.xml:20: Error: "lb_display" is not translated in "de" (German) [MissingTranslation]
+    <string name="lb_display">Display</string>
+            ~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "MissingTranslation":
+   If an application has more than one locale, then all the strings declared
+   in one language should also be translated in all other languages.
+
+   If the string should not be translated, you can add the attribute
+   translatable="false" on the <string> element, or you can define all your
+   non-translatable strings in a resource file called donottranslate.xml. Or,
+   you can ignore the issue with a tools:ignore="MissingTranslation"
+   attribute.
+
+   By default this detector allows regions of a language to just provide a
+   subset of the strings and fall back to the standard language strings. You
+   can require all regions to provide a full translation by setting the
+   environment variable ANDROID_LINT_COMPLETE_REGIONS.
+
+   You can tell lint (and other tools) which language is the default language
+   in your res/values/ folder by specifying tools:locale="languageCode" for
+   the root <resources> element in your resource file. (The tools prefix
+   refers to the namespace declaration http://schemas.android.com/tools.)
+
+16 errors, 0 warnings
+
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.347 secs
+
+2018-04-03 22:41:27,783 INFO  FullProcessService - Found APK file: /tmp/rdisk/2028/src/app/build/outputs/apk/app-debug.apk

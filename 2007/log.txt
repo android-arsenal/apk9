@@ -1,0 +1,322 @@
+2018-04-03 23:30:24,231 INFO  DownloadService - Downloading "https://github.com/yongjhih/RetroFacebook/archive/master.zip", attempt 3
+2018-04-03 23:31:24,691 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 23:31:25,356 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 23:31:25,356 INFO  DownloadService - Downloading "https://github.com/yongjhih/RetroFacebook/archive/master.zip", attempt 3
+2018-04-03 23:32:26,548 DEBUG FullProcessService - Repository https://github.com/yongjhih/RetroFacebook available: true
+2018-04-03 23:32:26,548 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 23:32:26,548 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/yongjhih/RetroFacebook, /tmp/rdisk/2007/src]
+2018-04-03 23:32:28,858 INFO  SysUtils - 
+2018-04-03 23:32:28,866 INFO  GitService - Deleted "/tmp/rdisk/2007/src/.git": true
+2018-04-03 23:32:28,875 INFO  FullProcessService - Size of directory with sources: 4 MB
+2018-04-03 23:32:28,875 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2007/src]
+2018-04-03 23:32:28,878 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2007/src/.git/
+
+2018-04-03 23:32:28,885 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2007/src/gradlew
+2018-04-03 23:32:28,891 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2007/src/retrofacebook-app/build.gradle /tmp/rdisk/2007/src/retrofacebook-v3/build.gradle /tmp/rdisk/2007/src/retrofacebook/build.gradle /tmp/rdisk/2007/src/build.gradle /tmp/rdisk/2007/src/retrofacebook-annotation/build.gradle /tmp/rdisk/2007/src/retrofacebook-processor-v3/build.gradle /tmp/rdisk/2007/src/retrofacebook-processor/build.gradle
+2018-04-03 23:32:28,897 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2007/src/settings.gradle /tmp/rdisk/2007/src/retrofacebook/deploy.gradle /tmp/rdisk/2007/src/retrofacebook/build.gradle /tmp/rdisk/2007/src/retrofacebook/android-javadoc.gradle /tmp/rdisk/2007/src/retrofacebook-v3/deploy.gradle /tmp/rdisk/2007/src/retrofacebook-v3/build.gradle /tmp/rdisk/2007/src/retrofacebook-processor/deploy.gradle /tmp/rdisk/2007/src/retrofacebook-processor/build.gradle /tmp/rdisk/2007/src/retrofacebook-processor-v3/deploy.gradle /tmp/rdisk/2007/src/retrofacebook-processor-v3/build.gradle /tmp/rdisk/2007/src/retrofacebook-app/build.gradle /tmp/rdisk/2007/src/retrofacebook-annotation/deploy.gradle /tmp/rdisk/2007/src/retrofacebook-annotation/build.gradle /tmp/rdisk/2007/src/build.gradle
+2018-04-03 23:32:28,898 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 23:32:28,898 INFO  ProjectFixService - Fixing project...
+2018-04-03 23:32:28,917 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2007/src/retrofacebook-app/local.properties
+2018-04-03 23:32:28,918 INFO  ProjectFixService - Build info for "/tmp/rdisk/2007/src/retrofacebook-app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 23:32:28,918 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2007/src/retrofacebook-v3/local.properties
+2018-04-03 23:32:28,918 INFO  ProjectFixService - Build info for "/tmp/rdisk/2007/src/retrofacebook-v3/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 23:32:28,918 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2007/src/retrofacebook/local.properties
+2018-04-03 23:32:28,919 INFO  ProjectFixService - Build info for "/tmp/rdisk/2007/src/retrofacebook/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 23:32:28,919 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2007/src/local.properties
+2018-04-03 23:32:28,919 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-03 23:32:28,919 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-03 23:32:28,921 INFO  ProjectFixService - Build info for "/tmp/rdisk/2007/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 23:32:28,921 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2007/src/retrofacebook-annotation/local.properties
+2018-04-03 23:32:28,923 INFO  ProjectFixService - Build info for "/tmp/rdisk/2007/src/retrofacebook-annotation/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 23:32:28,923 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2007/src/retrofacebook-processor-v3/local.properties
+2018-04-03 23:32:28,926 INFO  ProjectFixService - Build info for "/tmp/rdisk/2007/src/retrofacebook-processor-v3/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 23:32:28,926 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2007/src/retrofacebook-processor/local.properties
+2018-04-03 23:32:28,928 INFO  ProjectFixService - Build info for "/tmp/rdisk/2007/src/retrofacebook-processor/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-03 23:32:28,928 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 23:32:28,928 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 23:32:28,928 INFO  SysUtils - Execute command: [/tmp/rdisk/2007/src/gradlew, -b, /tmp/rdisk/2007/src/retrofacebook-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 23:33:14,294 INFO  ProjectTaskService - Detected possible tasks: 99
+2018-04-03 23:33:14,294 INFO  ProjectTaskService - Excluded tasks (9): mockableAndroidJar deviceCheck lint deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest
+2018-04-03 23:33:14,294 INFO  SysUtils - Execute command: [/tmp/rdisk/2007/src/gradlew, -b, /tmp/rdisk/2007/src/retrofacebook-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, build]
+2018-04-03 23:34:23,002 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 23:34:23,002 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+WARNING: Conflict with dependency 'com.android.support:support-annotations'. Resolved versions for app (23.1.1) and test app (20.0.0) differ. See http://g.co/androidstudio/app-test-app-conflict for details.
+WARNING: Conflict with dependency 'com.android.support:support-annotations'. Resolved versions for app (23.1.1) and test app (20.0.0) differ. See http://g.co/androidstudio/app-test-app-conflict for details.
+:retrofacebook-app:preBuild UP-TO-DATE
+:retrofacebook-app:preV3DebugBuild UP-TO-DATE
+:retrofacebook-app:checkV3DebugManifest
+:retrofacebook:preBuild UP-TO-DATE
+:retrofacebook:preReleaseBuild UP-TO-DATE
+:retrofacebook:compileReleaseNdk UP-TO-DATE
+:retrofacebook:compileLint
+:retrofacebook:copyReleaseLint UP-TO-DATE
+:retrofacebook:checkReleaseManifest
+:retrofacebook:preDebugAndroidTestBuild UP-TO-DATE
+:retrofacebook:preDebugBuild UP-TO-DATE
+:retrofacebook:preDebugUnitTestBuild UP-TO-DATE
+:retrofacebook:preReleaseUnitTestBuild UP-TO-DATE
+:retrofacebook:prepareComAndroidSupportSupportV42221Library
+:retrofacebook:prepareComFacebookAndroidFacebookAndroidSdk420Library
+:retrofacebook:prepareReleaseDependencies
+:retrofacebook:compileReleaseAidl
+:retrofacebook:compileReleaseRenderscript
+:retrofacebook:generateReleaseBuildConfig
+:retrofacebook:generateReleaseAssets UP-TO-DATE
+:retrofacebook:mergeReleaseAssets
+:retrofacebook:generateReleaseResValues
+:retrofacebook:generateReleaseResources
+:retrofacebook:mergeReleaseResources
+:retrofacebook:processReleaseManifest
+:retrofacebook:processReleaseResources
+:retrofacebook:generateReleaseSources
+:retrofacebook:compileReleaseJavaWithJavacNote: /tmp/rdisk/2007/src/retrofacebook/build/generated/source/apt/release/retrofacebook/RetroFacebook_Facebook.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:retrofacebook:extractReleaseAnnotations
+:retrofacebook:mergeReleaseProguardFiles
+:retrofacebook:packageReleaseRenderscript UP-TO-DATE
+:retrofacebook:packageReleaseResources
+:retrofacebook:processReleaseJavaRes UP-TO-DATE
+:retrofacebook:transformResourcesWithMergeJavaResForRelease
+:retrofacebook:transformClassesAndResourcesWithSyncLibJarsForRelease
+:retrofacebook:mergeReleaseJniLibFolders
+:retrofacebook:transformNative_libsWithMergeJniLibsForRelease
+:retrofacebook:transformNative_libsWithSyncJniLibsForRelease
+:retrofacebook:bundleRelease
+:retrofacebook-app:preV3ReleaseBuild UP-TO-DATE
+:retrofacebook-app:preV4DebugBuild UP-TO-DATE
+:retrofacebook-app:preV4ReleaseBuild UP-TO-DATE
+:retrofacebook-v3:preBuild UP-TO-DATE
+:retrofacebook-v3:preReleaseBuild UP-TO-DATE
+:retrofacebook-v3:compileReleaseNdk UP-TO-DATE
+:retrofacebook-v3:compileLint
+:retrofacebook-v3:copyReleaseLint UP-TO-DATE
+:retrofacebook-v3:checkReleaseManifest
+:retrofacebook-v3:preDebugAndroidTestBuild UP-TO-DATE
+:retrofacebook-v3:preDebugBuild UP-TO-DATE
+:retrofacebook-v3:preDebugUnitTestBuild UP-TO-DATE
+:retrofacebook-v3:preReleaseUnitTestBuild UP-TO-DATE
+:retrofacebook-v3:prepareComAndroidSupportSupportV42000Library
+:retrofacebook-v3:prepareComFacebookAndroidFacebookAndroidSdk3200Library
+:retrofacebook-v3:prepareReleaseDependencies
+:retrofacebook-v3:compileReleaseAidl
+:retrofacebook-v3:compileReleaseRenderscript
+:retrofacebook-v3:generateReleaseBuildConfig
+:retrofacebook-v3:generateReleaseAssets UP-TO-DATE
+:retrofacebook-v3:mergeReleaseAssets
+:retrofacebook-v3:generateReleaseResValues
+:retrofacebook-v3:generateReleaseResources
+:retrofacebook-v3:mergeReleaseResources
+:retrofacebook-v3:processReleaseManifest
+:retrofacebook-v3:processReleaseResources
+:retrofacebook-v3:generateReleaseSources
+:retrofacebook-v3:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:retrofacebook-v3:extractReleaseAnnotations
+:retrofacebook-v3:mergeReleaseProguardFiles
+:retrofacebook-v3:packageReleaseRenderscript UP-TO-DATE
+:retrofacebook-v3:packageReleaseResources
+:retrofacebook-v3:processReleaseJavaRes UP-TO-DATE
+:retrofacebook-v3:transformResourcesWithMergeJavaResForRelease
+:retrofacebook-v3:transformClassesAndResourcesWithSyncLibJarsForRelease
+:retrofacebook-v3:mergeReleaseJniLibFolders
+:retrofacebook-v3:transformNative_libsWithMergeJniLibsForRelease
+:retrofacebook-v3:transformNative_libsWithSyncJniLibsForRelease
+:retrofacebook-v3:bundleRelease
+:retrofacebook-app:prepareComAndroidSupportAppcompatV72311Library
+:retrofacebook-app:prepareComAndroidSupportCardviewV72311Library
+:retrofacebook-app:prepareComAndroidSupportDesign2311Library
+:retrofacebook-app:prepareComAndroidSupportRecyclerviewV72311Library
+:retrofacebook-app:prepareComAndroidSupportSupportV42311Library
+:retrofacebook-app:prepareComFacebookAndroidFacebookAndroidSdk3200Library
+:retrofacebook-app:prepareComFacebookFrescoDrawee040Library
+:retrofacebook-app:prepareComFacebookFrescoFbcore040Library
+:retrofacebook-app:prepareComFacebookFrescoFresco040Library
+:retrofacebook-app:prepareComFacebookFrescoImagepipeline040Library
+:retrofacebook-app:prepareComInfstoryProguardSnippets100Library
+:retrofacebook-app:prepareComJakewhartonHugoHugoRuntime121Library
+:retrofacebook-app:prepareDeHdodenhofCircleimageview130Library
+:retrofacebook-app:prepareSrcRetrofacebookV3UnspecifiedLibrary
+:retrofacebook-app:prepareV3DebugDependencies
+:retrofacebook-app:compileV3DebugAidl
+:retrofacebook-app:compileV3DebugRenderscript
+:retrofacebook-app:generateV3DebugBuildConfig
+:retrofacebook-app:generateV3DebugAssets UP-TO-DATE
+:retrofacebook-app:mergeV3DebugAssets
+:retrofacebook-app:generateV3DebugResValues
+:retrofacebook-app:generateV3DebugResources
+:retrofacebook-app:mergeV3DebugResources
+:retrofacebook-app:processV3DebugManifest
+:retrofacebook-app:processV3DebugResources
+:retrofacebook-app:generateV3DebugSources
+:retrofacebook-app:compileV3DebugJavaWithJavacwarning: @AutoParcel classes cannot have abstract methods other than property getters and Builder converters
+warning: @AutoParcel classes cannot have abstract methods other than property getters and Builder converters
+2 warnings
+
+advice defined in hugo.weaving.internal.Hugo has not been applied [Xlint:adviceDidNotMatch]
+:retrofacebook-app:compileRetrolambdaV3Debug
+:retrofacebook-app:compileV3DebugNdk UP-TO-DATE
+:retrofacebook-app:compileV3DebugSources
+:retrofacebook-app:prePackageMarkerForV3Debug
+:retrofacebook-app:transformClassesWithDexForV3Debug
+:retrofacebook-app:mergeV3DebugJniLibFolders
+:retrofacebook-app:transformNative_libsWithMergeJniLibsForV3Debug
+:retrofacebook-app:processV3DebugJavaRes UP-TO-DATE
+:retrofacebook-app:transformResourcesWithMergeJavaResForV3Debug
+:retrofacebook-app:validateDebugSigning
+:retrofacebook-app:packageV3Debug
+:retrofacebook-app:zipalignV3Debug
+:retrofacebook-app:assembleV3Debug
+:retrofacebook-app:checkV4DebugManifest
+:retrofacebook-app:prepareComFacebookAndroidFacebookAndroidSdk420Library
+:retrofacebook-app:prepareSrcRetrofacebookUnspecifiedLibrary
+:retrofacebook-app:prepareV4DebugDependencies
+:retrofacebook-app:compileV4DebugAidl
+:retrofacebook-app:compileV4DebugRenderscript
+:retrofacebook-app:generateV4DebugBuildConfig
+:retrofacebook-app:generateV4DebugAssets UP-TO-DATE
+:retrofacebook-app:mergeV4DebugAssets
+:retrofacebook-app:generateV4DebugResValues
+:retrofacebook-app:generateV4DebugResources
+:retrofacebook-app:mergeV4DebugResources
+:retrofacebook-app:processV4DebugManifest
+:retrofacebook-app:processV4DebugResources
+:retrofacebook-app:generateV4DebugSources
+:retrofacebook-app:compileV4DebugJavaWithJavacwarning: @AutoParcel classes cannot have abstract methods other than property getters and Builder converters
+warning: @AutoParcel classes cannot have abstract methods other than property getters and Builder converters
+/tmp/rdisk/2007/src/retrofacebook-app/src/main/java/retrofacebook/app/MainActivity.java:56: error: package com.facebook.widget does not exist
+import com.facebook.widget.FacebookDialog;
+                          ^
+1 error
+2 warnings
+ FAILED
+:retrofacebook-app:compileRetrolambdaV4Debug
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':retrofacebook-app:compileV4DebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':retrofacebook-app:compileV4DebugJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:66)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:78)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:48)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:47)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:33)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:101)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:157)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:139)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:93)
+	at com.android.build.gradle.tasks.factory.AndroidJavaCompile.compile(AndroidJavaCompile.java:39)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:244)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:220)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:231)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:209)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+
+
+BUILD FAILED
+
+Total time: 1 mins 8.238 secs
+
+2018-04-03 23:34:23,107 INFO  FullProcessService - Found APK file: /tmp/rdisk/2007/src/retrofacebook-app/build/outputs/apk/retrofacebook-app-v3-debug.apk

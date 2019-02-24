@@ -1,0 +1,21 @@
+2018-04-03 21:29:16,044 INFO  DownloadService - Downloading "https://github.com/google/adb-sync/archive/master.zip", attempt 3
+2018-04-03 21:30:16,510 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 21:30:17,208 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 21:30:17,208 INFO  DownloadService - Downloading "https://github.com/google/adb-sync/archive/master.zip", attempt 3
+2018-04-03 21:31:18,520 DEBUG FullProcessService - Repository https://github.com/google/adb-sync available: true
+2018-04-03 21:31:18,520 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 21:31:18,520 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/google/adb-sync, /tmp/rdisk/2062/src]
+2018-04-03 21:31:19,918 INFO  SysUtils - 
+2018-04-03 21:31:19,922 INFO  GitService - Deleted "/tmp/rdisk/2062/src/.git": true
+2018-04-03 21:31:19,922 INFO  FullProcessService - Size of directory with sources: 43 KB
+2018-04-03 21:31:19,922 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2062/src]
+2018-04-03 21:31:19,926 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2062/src/.git/
+
+2018-04-03 21:31:19,927 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-03 21:31:19,927 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-03 21:31:19,928 INFO  ProjectBuildService - Build script(s): none
+2018-04-03 21:31:19,928 INFO  ProjectBuildService - All script(s): none
+2018-04-03 21:31:19,928 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 21:31:19,928 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-03 21:31:19,928 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 21:31:19,929 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "jp.co.cyberagent.stf",
+    "label" : "STFService",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "2.2.0",
+    "versionCode" : 5,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.DISABLE_KEYGUARD", "android.permission.READ_PHONE_STATE", "android.permission.WAKE_LOCK", "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.GET_ACCOUNTS", "android.permission.MANAGE_ACCOUNTS", "android.permission.CHANGE_WIFI_STATE", "android.permission.ACCESS_WIFI_STATE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAD/klEQVRo3u1ZS0ibQRD2opdavYhFoeKh5yi+3w/UoojGd/Xmq9qLXhTEKIKoREFFaaVGgq1QKbGQxlYoSG1LwepFSittbKlUI1pDxKCNpr4y3Rn80xgTwQfx/20WPv7M7OwyX3Zn/tn9XVyczdkurhUUFNwrLy9fq6ioAD6C+fYrLy+v0J7/bjk5Obrw8HAIDg7mJSIjIyErK+sH89XVFgH3sLAw3jrPISIiYp35es0WAY+goCDeE2BAAtdtEfAUEAGPcxOor6+HyclJUKvVMDExAYWFhaRPT0+HsbExm8jOziabhoaGY31dXV2OI1BXVwcmkwmwGQwG2N/fh+bmZuorKioCe620tJRshoeHSd7d3YXt7W3C+Pi44whMTU2RAwqFAqKjoyE3N9e8ApjFUlNTCaurq7C3twcs9ZHMAvAIge7uboiJiSFghnEYgeXlZTg4OIC0tLQT7VZWVohAQkLCET1HoKOj43JiQKPR0BZiOVmYBDBosSmVSggJCREegeLiYtja2iIn+vr6zkwAs09TUxOBy1AOS6OYiXZ2dmgrdXZ2nomAZWtra3MsAURjYyM5iOmwsrLy1ARGR0fpj0BkZmY6ngCip6eHnJmZmRFODFgiNjYWNjc3wWg0Uj4XHAHE0tISxUJKSoowCOTn59M/j79LSkropYbOhoaGCoMApk6tVkslxcbGBjkzNDQknBioqakBvV5PTmAqValUEBcXd8xubm4OdDodxMfHH9HL5XIa39LScnkxwBVx1vteMOcBwR9oeE8gMTER2tvbzwWs9xHnnScqKupyViA5OZkg2C3kJOAkwMDuI6l04FBdXX1EtqWrqqqiJ7trJVjqTjNPWVnZ+Qmw+9JjdZCt2uikMRc5j5OAYAjgbYNEIoGBgQG6lEId7mcsxHCvcna1tbWky8jIIFksFtMYLPgsiz/UYR/KaItjcKz1PJyNrXlORSApKQn+vFDCWsldkEqlpFMMycHQI4avz2VmO/3PETB9uk1HS5T7+/thTXMHNN8fmG3Uix/g1bdu6uOOoeK3rdA5PWK2uT+rhejX62YbfOqznsHiw8mzEcD0Z3zyCLTJafQ6JwKPB2CzUQRfnv67hdDPD4Jp+hb09vaSLJPJQDsfAYvqVrPN7MI7UHyWUB/KaCt6WQWS94Nmm5aPWrih0plt8LkWIIcF6Zv/lIDgtxAXxOi8ZRDjalgHMeosgxhl6yBGnWUQo2wdxJY2tua5+ueBgIAA3hMIDAzU2yPg4efn9xtJ4ErwESKRCPz9/VftfeRz9/Hx6fX29jZ6eXkBH8F8M/j6+jbb+8zqxnCTIYQhliGOZ4hhCGbwtfehmyPhfrjHPHkGj0PfXF2uUvsLbXgGtVyz7K4AAAAASUVORK5CYII="
+  },
+  "dexClasses" : 2043,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"5\" android:versionName=\"2.2.0\" package=\"jp.co.cyberagent.stf\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.DISABLE_KEYGUARD\" />\n\t<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />\n\t<uses-permission android:name=\"android.permission.WAKE_LOCK\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />\n\t<uses-permission android:name=\"android.permission.MANAGE_ACCOUNTS\" />\n\t<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:label=\"STFService\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:persistent=\"true\" android:allowBackup=\"true\">\n\t\t<meta-data android:name=\"android.max_aspect\" android:value=\"{4:1077936128}\" />\n\t\t<service android:name=\"jp.co.cyberagent.stf.Service\" android:exported=\"true\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"jp.co.cyberagent.stf.ACTION_START\" />\n\t\t\t\t<action android:name=\"jp.co.cyberagent.stf.ACTION_STOP\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t</intent-filter>\n\t\t</service>\n\t\t<activity android:name=\"jp.co.cyberagent.stf.IdentityActivity\" android:exported=\"true\" android:finishOnTaskLaunch=\"true\" android:stateNotNeeded=\"true\" android:excludeFromRecents=\"true\" android:noHistory=\"true\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"jp.co.cyberagent.stf.ACTION_IDENTIFY\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"jp.co.cyberagent.stf.IconActivity\" android:exported=\"true\" android:finishOnTaskLaunch=\"true\" android:stateNotNeeded=\"true\" android:excludeFromRecents=\"true\" android:noHistory=\"true\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"jp.co.cyberagent.stf.ACTION_ICON\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t\t<data android:scheme=\"package\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1575988,
+  "crc32" : 1066129533,
+  "sha256" : "7865efa86120204bc6d2b4dd4536e1ed63149f18d826f56a4b163ca55184b744",
+  "buildTime" : 1522789097000
+}

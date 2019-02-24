@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.jakewharton.threetenabp.sample",
+    "label" : "ThreeTenABP",
+    "icon" : null,
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 209,
+  "locales" : [ ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.jakewharton.threetenabp.sample\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"27\" />\n\t<application android:label=\"ThreeTenABP\" android:name=\"com.jakewharton.threetenabp.sample.ExamplesApp\">\n\t\t<activity android:name=\"com.jakewharton.threetenabp.sample.Examples\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 200073,
+  "crc32" : 1292671163,
+  "sha256" : "5d79eec189db6f6a5ed76072c2664707bd7a14e743ef3d9409d2845c38c15c4a",
+  "buildTime" : 1526038377000
+}

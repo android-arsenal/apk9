@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "eu.davidea.examples.flexibleadapter",
+    "label" : "Flexible Adapter",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "5.0.0-b8 built on 2016.10.13",
+    "versionCode" : 18,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "24",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADHklEQVR42mNgIAAaGBqYQJiBzoAq9iIbkG22RzjNZrdclt1OWVpikB0gu7C5gSzHpxlv5sqw2jEtzWrbs3TL7W/Srba+BtO0wDCzrbc9B9sJtJtsT8A9YLl1RrrVtv9pA4ATzdbOBjqBkWQPhIauYoaGvgjQAy9BhqVabPmZZrHlb6rVlj+0xGA7gHalgz2w5pWfeqcUspuIC32H/SwgOspghmqa5ZZ34BABGgymLbf9g4cSMptcDDIDZg6MBtoF8kCS2br3ntoNWpDAnMlKsgcC9XvV0iw3gz0ADh10y2jhASAG2QXxwNr3bpolOhR6YAvCA8gWonuEXIzFTIQH1lHPAzRNQuhspCREmxigluPRHU4LD/z+/fvd379///8BAhANxP+gNC3wP6hdf//9+/f/48ePox4YPh7ozjj6p9x/3/8yv33/QDQMr5xwdWh4oDps/x9smXd+84Wh4YFnDz79eXTrw38g/gelwfjN86+jeYCmHujJOfauP+/E/77c439AdH/uyX9gmhYYanZf7sm//fkn/3dk7qdhRUYLTNeaeKh44Ni2R++O73jy/9i2J39A9IkdT/6BaFpgmNkntj3+e2LH0//7198azcTDxwO7Vtz7s3HWjf8bZ938B6Eh+Oy+Z0PDA1Uh+7Bm4sUdl4aGBzbNu/0H1O5ZNfHqPxANw6f2PB3NAzT1wJAvRkdr4oH2wJBvzI3WxIPFA6+fffnz8vHn/0D8D0qD8Ye330f7xHTxQEfqkT8l3nv+F3vv/QeiYXhF35XRPDDqgWE9uDs8h9eH1gTH4JhigrmJJA8E6/ZoDPQkn4tGuS7JMQCb0vRUaZBJsdz8Kn1Aplm3/483W/XaSjZNGeQWB4cG4mMAaaKbI9Jo3qpUy83/QQbSE6dYbPofpDtxHdANnJTM1DNL8GhpB+lN2BhnsuxNgtnqD0D8PsFs1QfaYJDZqz+A7ArQ6dkkzq0BSj7MoQyhzAzkAKgnOIFYUU7Y1EVb3NVPQ9zJFxmriDtiiBGLsekF2SHHb+oCspPs0Ef3hDaDNhuQyQ3EfHTC3CA7iQl5ANOVAqkvb9psAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 2754,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"18\" android:versionName=\"5.0.0-b8 built on 2016.10.13\" package=\"eu.davidea.examples.flexibleadapter\" platformBuildVersionCode=\"24\" platformBuildVersionName=\"7.0\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"24\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f090039\" android:label=\"Flexible Adapter\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f090084\" android:name=\"eu.davidea.samples.flexibleadapter.SplashActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"eu.davidea.samples.flexibleadapter.MainActivity\">\n\t\t\t<meta-data android:name=\"android.app.searchable\" android:resource=\"res/xml/searchable.xml\" />\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.SEARCH\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 2270407,
+  "crc32" : 799760587,
+  "sha256" : "844318e48c5b784e908024e18dc4f332894f3e7babed6d430306e9bb1122b936",
+  "buildTime" : 1496784474000
+}

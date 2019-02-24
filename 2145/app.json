@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.stanfy.helium.sample.android",
+    "label" : "Helium Android Sample",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : null,
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 312,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"com.stanfy.helium.sample.android\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"21\" />\n\t<application android:label=\"Helium Android Sample\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"false\">\n\t\t<activity android:name=\"com.stanfy.helium.sample.android.SampleActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 144866,
+  "crc32" : 452232372,
+  "sha256" : "a10ec9d53b29d4f99a7f0873a147165861dbe1083c6b3006d267cdc85aaa9313",
+  "buildTime" : 1522781365000
+}

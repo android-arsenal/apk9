@@ -1,0 +1,695 @@
+2018-04-03 20:53:33,439 INFO  DownloadService - Downloading "https://github.com/THEONE10211024/WaterDropListView/archive/master.zip", attempt 3
+2018-04-03 20:54:34,052 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 20:54:34,876 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 20:54:34,877 INFO  DownloadService - Downloading "https://github.com/THEONE10211024/WaterDropListView/archive/master.zip", attempt 3
+2018-04-03 20:55:36,228 DEBUG FullProcessService - Repository https://github.com/THEONE10211024/WaterDropListView available: true
+2018-04-03 20:55:36,228 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 20:55:36,228 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/THEONE10211024/WaterDropListView, /tmp/rdisk/2078/src]
+2018-04-03 20:55:38,223 INFO  SysUtils - 
+2018-04-03 20:55:38,227 INFO  GitService - Deleted "/tmp/rdisk/2078/src/.git": true
+2018-04-03 20:55:38,230 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-03 20:55:38,230 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2078/src]
+2018-04-03 20:55:38,235 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2078/src/.git/
+
+2018-04-03 20:55:38,239 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2078/src/gradlew
+2018-04-03 20:55:38,241 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2078/src/app/build.gradle /tmp/rdisk/2078/src/build.gradle
+2018-04-03 20:55:38,244 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2078/src/settings.gradle /tmp/rdisk/2078/src/build.gradle /tmp/rdisk/2078/src/app/build.gradle
+2018-04-03 20:55:38,245 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 20:55:38,245 INFO  ProjectFixService - Fixing project...
+2018-04-03 20:55:38,251 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2078/src/app/local.properties
+2018-04-03 20:55:38,251 INFO  ProjectFixService - Build info for "/tmp/rdisk/2078/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=11,targetSdkVersion=22]
+2018-04-03 20:55:38,258 INFO  LocalPropertiesFixService - Updated fake /tmp/rdisk/2078/src/local.properties
+2018-04-03 20:55:38,265 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 20:55:38,265 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 20:55:38,266 INFO  ProjectFixService - Build info for "/tmp/rdisk/2078/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=11,targetSdkVersion=22]
+2018-04-03 20:55:38,266 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 20:55:38,267 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:55:38,267 INFO  SysUtils - Execute command: [/tmp/rdisk/2078/src/gradlew, -b, /tmp/rdisk/2078/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:55:45,709 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-03 20:55:45,709 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 20:55:45,709 INFO  SysUtils - Execute command: [/tmp/rdisk/2078/src/gradlew, -b, /tmp/rdisk/2078/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 20:56:08,036 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library
+:app:prepareComAndroidSupportSupportV42200Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/2078/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+    ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+     ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+            ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:33: error: unmappable character for encoding UTF-8
+    private float mMaxCircleRadius;//Բ�뾶���ֵ
+                                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:33: error: unmappable character for encoding UTF-8
+    private float mMaxCircleRadius;//Բ�뾶���ֵ
+                                        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:33: error: unmappable character for encoding UTF-8
+    private float mMaxCircleRadius;//Բ�뾶���ֵ
+                                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:33: error: unmappable character for encoding UTF-8
+    private float mMaxCircleRadius;//Բ�뾶���ֵ
+                                          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:34: error: unmappable character for encoding UTF-8
+    private float mMinCircleRaidus;//Բ�뾶��Сֵ
+                                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:34: error: unmappable character for encoding UTF-8
+    private float mMinCircleRaidus;//Բ�뾶��Сֵ
+                                        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:34: error: unmappable character for encoding UTF-8
+    private float mMinCircleRaidus;//Բ�뾶��Сֵ
+                                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:35: error: unmappable character for encoding UTF-8
+    private Bitmap arrowBitmap;//��ͷ
+                                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:35: error: unmappable character for encoding UTF-8
+    private Bitmap arrowBitmap;//��ͷ
+                                  ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:37: error: unmappable character for encoding UTF-8
+    private final static float STROKE_WIDTH = 2;//���߿��
+                                                  ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:37: error: unmappable character for encoding UTF-8
+    private final static float STROKE_WIDTH = 2;//���߿��
+                                                   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:37: error: unmappable character for encoding UTF-8
+    private final static float STROKE_WIDTH = 2;//���߿��
+                                                    ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:37: error: unmappable character for encoding UTF-8
+    private final static float STROKE_WIDTH = 2;//���߿��
+                                                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:37: error: unmappable character for encoding UTF-8
+    private final static float STROKE_WIDTH = 2;//���߿��
+                                                       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+           ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+               ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                  ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                    ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                            ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+               ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+           ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                  ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                    ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                     ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                                   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+           ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+            ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+               ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                  ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                    ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+           ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+               ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:191: error: unmappable character for encoding UTF-8
+     * ��Բ�뾶���ٻָ������뾶
+       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:191: error: unmappable character for encoding UTF-8
+     * ��Բ�뾶���ٻָ������뾶
+        ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/2078/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+    ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+     ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+            ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:24: error: unmappable character for encoding UTF-8
+ * ����ͷ�м�ġ�ˮ�Ρ�
+                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:33: error: unmappable character for encoding UTF-8
+    private float mMaxCircleRadius;//Բ�뾶���ֵ
+                                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:33: error: unmappable character for encoding UTF-8
+    private float mMaxCircleRadius;//Բ�뾶���ֵ
+                                        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:33: error: unmappable character for encoding UTF-8
+    private float mMaxCircleRadius;//Բ�뾶���ֵ
+                                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:33: error: unmappable character for encoding UTF-8
+    private float mMaxCircleRadius;//Բ�뾶���ֵ
+                                          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:34: error: unmappable character for encoding UTF-8
+    private float mMinCircleRaidus;//Բ�뾶��Сֵ
+                                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:34: error: unmappable character for encoding UTF-8
+    private float mMinCircleRaidus;//Բ�뾶��Сֵ
+                                        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:34: error: unmappable character for encoding UTF-8
+    private float mMinCircleRaidus;//Բ�뾶��Сֵ
+                                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:35: error: unmappable character for encoding UTF-8
+    private Bitmap arrowBitmap;//��ͷ
+                                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:35: error: unmappable character for encoding UTF-8
+    private Bitmap arrowBitmap;//��ͷ
+                                  ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:37: error: unmappable character for encoding UTF-8
+    private final static float STROKE_WIDTH = 2;//���߿��
+                                                  ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:37: error: unmappable character for encoding UTF-8
+    private final static float STROKE_WIDTH = 2;//���߿��
+                                                   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:37: error: unmappable character for encoding UTF-8
+    private final static float STROKE_WIDTH = 2;//���߿��
+                                                    ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:37: error: unmappable character for encoding UTF-8
+    private final static float STROKE_WIDTH = 2;//���߿��
+                                                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:37: error: unmappable character for encoding UTF-8
+    private final static float STROKE_WIDTH = 2;//���߿��
+                                                       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+           ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+               ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                  ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                    ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                            ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:117: error: unmappable character for encoding UTF-8
+        //��ȣ���Բ����Բ�����ֱ��
+                             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+               ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:119: error: unmappable character for encoding UTF-8
+        //�߶ȣ���Բ�뾶 + Բ�ľ� + ��Բ�뾶
+                                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+           ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                  ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                    ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                     ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:144: error: unmappable character for encoding UTF-8
+        //��ȡ��Բ�����������γɵ��ĸ��е�
+                                   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+           ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+            ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+               ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                  ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                   ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                    ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                      ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:178: error: unmappable character for encoding UTF-8
+     * �������Բ������Բ�����ߵļн�
+                              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+        ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+         ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+          ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+           ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+             ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+              ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+               ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+                ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:190: error: unmappable character for encoding UTF-8
+     * �����ص�����
+                 ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:191: error: unmappable character for encoding UTF-8
+     * ��Բ�뾶���ٻָ������뾶
+       ^
+/tmp/rdisk/2078/src/app/src/main/java/medusa/theone/waterdroplistview/view/WaterDropView.java:191: error: unmappable character for encoding UTF-8
+     * ��Բ�뾶���ٻָ������뾶
+        ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.895 secs
+
+2018-04-03 20:56:08,069 INFO  FullProcessService - Found APK file: /tmp/rdisk/2078/src/app/build/outputs/apk/app-debug.apk

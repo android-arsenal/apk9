@@ -1,0 +1,165 @@
+2018-04-03 11:14:50,374 INFO  DownloadService - Downloading "https://github.com/rockerhieu/rv-adapter-endless/archive/master.zip", attempt 3
+2018-04-03 11:15:50,963 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 11:15:51,775 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 11:15:51,775 INFO  DownloadService - Downloading "https://github.com/rockerhieu/rv-adapter-endless/archive/master.zip", attempt 3
+2018-04-03 11:16:53,014 DEBUG FullProcessService - Repository https://github.com/rockerhieu/rv-adapter-endless available: true
+2018-04-03 11:16:53,014 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 11:16:53,014 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/rockerhieu/rv-adapter-endless, /tmp/rdisk/2218/src]
+2018-04-03 11:16:54,493 INFO  SysUtils - 
+2018-04-03 11:16:54,508 INFO  GitService - Deleted "/tmp/rdisk/2218/src/.git": true
+2018-04-03 11:16:54,511 INFO  FullProcessService - Size of directory with sources: 116 KB
+2018-04-03 11:16:54,511 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2218/src]
+2018-04-03 11:16:54,516 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2218/src/.git/
+
+2018-04-03 11:16:54,519 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2218/src/gradlew
+2018-04-03 11:16:54,522 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2218/src/example/build.gradle /tmp/rdisk/2218/src/library/build.gradle /tmp/rdisk/2218/src/build.gradle
+2018-04-03 11:16:54,524 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2218/src/settings.gradle /tmp/rdisk/2218/src/library/gradle-mvn-push.gradle /tmp/rdisk/2218/src/library/build.gradle /tmp/rdisk/2218/src/example/build.gradle /tmp/rdisk/2218/src/build.gradle
+2018-04-03 11:16:54,524 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 11:16:54,524 INFO  ProjectFixService - Fixing project...
+2018-04-03 11:16:54,531 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2218/src/example/local.properties
+2018-04-03 11:16:54,531 INFO  ProjectFixService - Build info for "/tmp/rdisk/2218/src/example/build.gradle": [buildToolsVersion=24.0.3,compileSdkVersion=24,minSdkVersion=9,targetSdkVersion=24]
+2018-04-03 11:16:54,532 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2218/src/library/local.properties
+2018-04-03 11:16:54,532 INFO  ProjectFixService - Build info for "/tmp/rdisk/2218/src/library/build.gradle": [buildToolsVersion=24.0.3,compileSdkVersion=24,minSdkVersion=9,targetSdkVersion=24]
+2018-04-03 11:16:54,532 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2218/src/local.properties
+2018-04-03 11:16:54,533 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-03 11:16:54,534 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-03 11:16:54,536 INFO  ProjectFixService - Build info for "/tmp/rdisk/2218/src/build.gradle": [buildToolsVersion=24.0.3,compileSdkVersion=24,minSdkVersion=9,targetSdkVersion=24]
+2018-04-03 11:16:54,536 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 11:16:54,536 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 11:16:54,537 INFO  SysUtils - Execute command: [/tmp/rdisk/2218/src/gradlew, -b, /tmp/rdisk/2218/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 11:17:04,872 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-03 11:17:04,872 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-03 11:17:04,872 INFO  SysUtils - Execute command: [/tmp/rdisk/2218/src/gradlew, -b, /tmp/rdisk/2218/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-03 11:17:31,085 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:example:preBuild UP-TO-DATE
+:example:preDebugBuild UP-TO-DATE
+:example:checkDebugManifest
+:example:preReleaseBuild UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportRecyclerviewV72421Library
+:library:prepareComAndroidSupportSupportCompat2421Library
+:library:prepareComAndroidSupportSupportCoreUi2421Library
+:library:prepareComRockerhieuRvAdapter10Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:incrementalReleaseJavaCompilationSafeguard
+:library:compileReleaseJavaWithJavac
+:library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:library:extractReleaseAnnotations
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForRelease
+:library:transformNative_libsWithSyncJniLibsForRelease
+:library:bundleRelease
+:example:prepareComAndroidSupportAnimatedVectorDrawable2421Library
+:example:prepareComAndroidSupportAppcompatV72421Library
+:example:prepareComAndroidSupportRecyclerviewV72421Library
+:example:prepareComAndroidSupportSupportCompat2421Library
+:example:prepareComAndroidSupportSupportCoreUi2421Library
+:example:prepareComAndroidSupportSupportCoreUtils2421Library
+:example:prepareComAndroidSupportSupportFragment2421Library
+:example:prepareComAndroidSupportSupportMediaCompat2421Library
+:example:prepareComAndroidSupportSupportV42421Library
+:example:prepareComAndroidSupportSupportVectorDrawable2421Library
+:example:prepareComRockerhieuRvAdapter10Library
+:example:prepareSrcLibraryUnspecifiedLibrary
+:example:prepareDebugDependencies
+:example:compileDebugAidl
+:example:compileDebugRenderscript
+:example:generateDebugBuildConfig
+:example:generateDebugResValues
+:example:generateDebugResources
+:example:mergeDebugResources
+:example:processDebugManifest
+:example:processDebugResources
+:example:generateDebugSources
+:example:incrementalDebugJavaCompilationSafeguard
+:example:compileDebugJavaWithJavac
+:example:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2218/src/example/src/main/java/com/rockerhieu/rvadapter/endless/example/decorator/DividerItemDecoration.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2218/src/example/src/main/java/com/rockerhieu/rvadapter/endless/example/MainActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:example:compileDebugNdk UP-TO-DATE
+:example:compileDebugSources
+:example:mergeDebugShaders
+:example:compileDebugShaders
+:example:generateDebugAssets
+:example:mergeDebugAssets
+:example:transformClassesWithDexForDebug
+:example:mergeDebugJniLibFolders
+:example:transformNative_libsWithMergeJniLibsForDebug
+:example:processDebugJavaRes UP-TO-DATE
+:example:transformResourcesWithMergeJavaResForDebug
+:example:validateSigningDebug
+:example:packageDebug
+:example:assembleDebug
+:example:checkReleaseManifest
+:example:prepareReleaseDependencies
+:example:compileReleaseAidl
+:example:compileReleaseRenderscript
+:example:generateReleaseBuildConfig
+:example:generateReleaseResValues
+:example:generateReleaseResources
+:example:mergeReleaseResources
+:example:processReleaseManifest
+:example:processReleaseResources
+:example:generateReleaseSources
+:example:incrementalReleaseJavaCompilationSafeguard
+:example:compileReleaseJavaWithJavac
+:example:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2218/src/example/src/main/java/com/rockerhieu/rvadapter/endless/example/decorator/DividerItemDecoration.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2218/src/example/src/main/java/com/rockerhieu/rvadapter/endless/example/MainActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:example:compileReleaseNdk UP-TO-DATE
+:example:compileReleaseSources
+:example:lintVitalRelease
+:example:mergeReleaseShaders
+:example:compileReleaseShaders
+:example:generateReleaseAssets
+:example:mergeReleaseAssets
+:example:transformClassesWithDexForRelease
+:example:mergeReleaseJniLibFolders
+:example:transformNative_libsWithMergeJniLibsForRelease
+:example:processReleaseJavaRes UP-TO-DATE
+:example:transformResourcesWithMergeJavaResForRelease
+:example:packageRelease
+:example:assembleRelease
+:example:assemble
+:example:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.549 secs
+
+2018-04-03 11:17:31,148 INFO  FullProcessService - Found APK file: /tmp/rdisk/2218/src/example/build/outputs/apk/example-release-unsigned.apk

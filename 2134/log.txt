@@ -1,0 +1,120 @@
+2018-05-20 23:30:23,952 INFO  DownloadService - Downloading "https://github.com/hongyangAndroid/android-percent-support-extend/archive/master.zip", attempt 3
+2018-05-20 23:31:24,618 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 23:31:25,321 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 23:31:25,321 INFO  DownloadService - Downloading "https://github.com/hongyangAndroid/android-percent-support-extend/archive/master.zip", attempt 3
+2018-05-20 23:32:26,834 DEBUG FullProcessService - Repository https://github.com/hongyangAndroid/android-percent-support-extend available: true
+2018-05-20 23:32:26,834 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 23:32:26,834 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/hongyangAndroid/android-percent-support-extend, /tmp/rdisk/2134/src]
+2018-05-20 23:32:29,029 INFO  SysUtils - 
+2018-05-20 23:32:29,035 INFO  GitService - Deleted "/tmp/rdisk/2134/src/.git": true
+2018-05-20 23:32:29,039 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-20 23:32:29,039 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2134/src]
+2018-05-20 23:32:29,044 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2134/src/.git/
+
+2018-05-20 23:32:29,048 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2134/src/gradlew
+2018-05-20 23:32:29,052 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2134/src/app/build.gradle /tmp/rdisk/2134/src/percent-support-extends-sample/build.gradle /tmp/rdisk/2134/src/percent-support-extends/build.gradle /tmp/rdisk/2134/src/build.gradle
+2018-05-20 23:32:29,056 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2134/src/settings.gradle /tmp/rdisk/2134/src/percent-support-extends/build.gradle /tmp/rdisk/2134/src/percent-support-extends-sample/build.gradle /tmp/rdisk/2134/src/build.gradle /tmp/rdisk/2134/src/app/build.gradle
+2018-05-20 23:32:29,056 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 23:32:29,056 INFO  ProjectFixService - Fixing project...
+2018-05-20 23:32:29,065 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2134/src/app/local.properties
+2018-05-20 23:32:29,065 INFO  ProjectFixService - Build info for "/tmp/rdisk/2134/src/app/build.gradle": [buildToolsVersion=23.0.0 rc3,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-05-20 23:32:29,065 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2134/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=21,minSdkVersion=10,targetSdkVersion=21]
+2018-05-20 23:32:29,066 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2134/src/percent-support-extends-sample/local.properties
+2018-05-20 23:32:29,066 INFO  ProjectFixService - Build info for "/tmp/rdisk/2134/src/percent-support-extends-sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-05-20 23:32:29,066 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2134/src/percent-support-extends/local.properties
+2018-05-20 23:32:29,066 INFO  ProjectFixService - Build info for "/tmp/rdisk/2134/src/percent-support-extends/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-05-20 23:32:29,066 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2134/src/local.properties
+2018-05-20 23:32:29,067 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-20 23:32:29,067 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-20 23:32:29,068 INFO  ProjectFixService - Build info for "/tmp/rdisk/2134/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-05-20 23:32:29,068 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 23:32:29,068 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:32:29,069 INFO  SysUtils - Execute command: [/tmp/rdisk/2134/src/gradlew, -b, /tmp/rdisk/2134/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:32:38,546 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-20 23:32:38,546 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-20 23:32:38,546 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-20 23:32:38,547 INFO  SysUtils - Execute command: [/tmp/rdisk/2134/src/gradlew, -b, /tmp/rdisk/2134/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-20 23:33:07,177 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72221Library
+:app:prepareComAndroidSupportSupportV42221Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease SKIPPED
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:compileLint
+:app:lint
+Ran lint on variant debug: 2 issues found
+Ran lint on variant release: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/2134/src/app/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2134/src/app/build/outputs/lint-results.xml
+:app:preCompileDebugUnitTestJava
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:prepareDebugUnitTestDependencies
+:app:processDebugUnitTestJavaRes UP-TO-DATE
+:app:compileDebugUnitTestJava UP-TO-DATE
+:app:compileDebugUnitTestSources UP-TO-DATE
+:app:mockableAndroidJar
+:app:assembleDebugUnitTest
+:app:testDebug
+:app:preCompileReleaseUnitTestJava
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:prepareReleaseUnitTestDependencies
+:app:processReleaseUnitTestJavaRes UP-TO-DATE
+:app:compileReleaseUnitTestJava UP-TO-DATE
+:app:compileReleaseUnitTestSources UP-TO-DATE
+:app:assembleReleaseUnitTest
+:app:testRelease
+:app:test
+:app:check
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.198 secs
+
+2018-05-20 23:33:07,214 INFO  FullProcessService - Found APK file: /tmp/rdisk/2134/src/app/build/outputs/apk/app-debug.apk

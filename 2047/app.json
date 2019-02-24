@@ -1,0 +1,40 @@
+{
+  "meta" : {
+    "packageName" : "com.readystatesoftware.ghostlog",
+    "label" : "Ghost Log",
+    "icon" : "res/drawable-mdpi/ic_launcher.png",
+    "versionName" : "1.0.3",
+    "versionCode" : 3,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.READ_LOGS", "android.permission.SYSTEM_ALERT_WINDOW", "android.permission.GET_TASKS", "android.permission.ACCESS_SUPERUSER", "com.readystatesoftware.ghostlog.permission.READ_LOGS" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ {
+      "name" : "com.readystatesoftware.ghostlog.permission.READ_LOGS",
+      "label" : "read logcat output for Ghost Log integrated apps",
+      "icon" : null,
+      "description" : "Allows an application to read the logcat output for Ghost Log integrated apps. This allows it to discover general information about integrated apps that is being written to the log.",
+      "group" : null,
+      "protectionLevel" : null
+    } ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAACW1BMVEUAAACZmZns7Ozw8PDn5+cAAADn5+fs7OyAgICMjIzV1dXq6urt7e23t7e4uLiLi4sAAAA1NTWRkZHp6enl5eUAAADo6Ojt7e3s7Ozm5ubm5uaRkZEvLy8AAABycnLLy8vr6+vg4ODr6+vt7e3u7u7v7+/u7u7t7e3t7e3r6+ve3t7KyspwcHAAAAAPDw+/v7/t7e3s7Ozr6+u8vLwPDw+np6fe3t7c3NydnZ3i4uLt7e3u7u7d3d3c3Nzu7u7t7e3d3d3R0dHs7Ozb29udnZ3JycnIyMicnJzc3Nzs7OzMzMyenp7q6uqoqKhsbGyGhoaFhYVtbW2pqanp6emPj4/Z2dm4uLgAAACGhoaDg4O5ubnZ2dmPj4/q6uro6OjX19fk5OTq6uqJiYm+vr67u7vY2NjW1tYAAADm5ubm5uYAAAC4uLi5ubmJiYmGhoatra2ioqIAAAAAAADo6Oi+vr6/v7/m5ubk5OShoaFvb2+qqqqysrJvb2+Pj4/n5+eOjo5ubm61tbWvr69vb28AAABxcXG9vb1xcXEFBQVoaGiNjY2Xl5dpaWkJCQlycnK8vLyrq6tycnIHBwcAAAAGBgZycnJzc3MVFRUAAAAAAABoaGiOjo6kpKRtbW0UFBRycnLAwMCrq6t2dnZzc3MRERFycnLR0dFzc3MrKysAAAAAAAAAAABpaWmxsbFwcHAAAAAcHBxxcXEAAABCQkIvLy90dHTExMR3d3c7OzsAAABwcHAHBwcAAAAAAAAzMzNAQEBsbGxOTk5vb28VFRUAAAAAAAAAAAAAAAAAAAApbRlBAAAAyXRSTlMABb/5iwGNvgRS///5PD1PAh3t/7wDCx0bCr7sGw6Y//5zisTq/f/pw4l1/5YGItr////ZITHPzi9Q7uxMXvj3WkP2////////9EEV4vGz4+Ky8uAQmqkucG+qlCDy6H/M8BqJhMbCCu/rDf//zdFnbgcP///////93P//3fz/+97//7g4xf/POJr8/pk60//wyycWKtLbMRUilfz+qDLZ//HE2S7d/+Y8EAkglv+6IzbfCDY25v/tSRLNJgsRN0zkW9gwEyUEHAUj+/CUAAACCklEQVRIx2NgGOSAkYmZhRVZgJWNmZ0DjwZOLm4eXmQBPh5uLn7c6gUEhYS5RUSBLDFxCUkgJSrFLSwtI4BTA6usnDy3gqKSsoqqmpqquoamlgK3to4sHifp6ulzcxsYGnGDgZGhATe3sYkuHg2spmbcaMDcghWPBksrI3QNRtY2uNXb2gFVCCMrB3HsHXCpd3QCSju7uCLUu7l7AElPL+zqvX1Aanz9/OF2CAcEBoHo4BCskRAKVhQWHoGwITI8CkxHY4uKmFiwXFx8AkJDQnwcmE5MwmJBMlSRAVJAGRlAGSmYYaubyo0HpGHGXnoGPg2Z6RgasrJz8IDsLAwNsrl5eEAuZgpMzy/AA/IxnVRoaIAHGBZi+kEYn6eFMf1QhF9D0aiGUQ1DXENxCUyXcGkZTG15qTAuDcIVlVUQHcLVNbVQHXX1DY3CWDU4Czc1t7Q2gnW0tXd0dpWDWMXdPb19/cIemBpkJ/RPnDR5ytRSUKE9bfqMmbNmA+0QnjN35uR58xcsxNSQtWjxkixR2elLXYWXLV+xUnTV6jVd5cJr161PF125YeMizDy9afOWIgEGgZUrtm7bvmOnKAPrqtWzunJ27d7DyiC6d9/mTZiF8ap0UJkuunP/gYMzQDUvSMehw1mgUlg0fRXuqlf0yNEZxyA15Krj64sECDcfRAtFYXXqiUIBypsjAIF0zhK907swAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1232,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"3\" android:versionName=\"1.0.3\" package=\"com.readystatesoftware.ghostlog\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"19\" />\n\t<permission android:label=\"read logcat output for Ghost Log integrated apps\" android:name=\"com.readystatesoftware.ghostlog.permission.READ_LOGS\" android:protectionLevel=\"0x0\" android:description=\"Allows an application to read the logcat output for Ghost Log integrated apps. This allows it to discover general information about integrated apps that is being written to the log.\" />\n\t<uses-permission android:name=\"android.permission.READ_LOGS\" />\n\t<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\" />\n\t<uses-permission android:name=\"android.permission.GET_TASKS\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_SUPERUSER\" />\n\t<uses-permission android:name=\"com.readystatesoftware.ghostlog.permission.READ_LOGS\" />\n\t<application android:theme=\"resourceId:0x7f080000\" android:label=\"Ghost Log\" android:icon=\"res/drawable-mdpi/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Ghost Log\" android:name=\"com.readystatesoftware.ghostlog.MainActivity\" android:launchMode=\"singleTask\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"Tag Filter\" android:name=\"com.readystatesoftware.ghostlog.TagFilterListActivity\" android:parentActivityName=\"com.readystatesoftware.ghostlog.MainActivity\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\"com.readystatesoftware.ghostlog.MainActivity\" />\n\t\t</activity>\n\t\t<activity android:name=\"com.readystatesoftware.ghostlog.ShareActivity\" />\n\t\t<service android:name=\"com.readystatesoftware.ghostlog.LogService\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 605680,
+  "crc32" : 3838255565,
+  "sha256" : "3327fbd6656cd0f990f15e32a143485ccae7b3a074c700cdf1fe2b340ebf704f",
+  "buildTime" : 1522793083000
+}

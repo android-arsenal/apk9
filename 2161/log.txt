@@ -1,0 +1,285 @@
+2018-05-11 11:28:51,486 INFO  DownloadService - Downloading "https://github.com/gotev/android-upload-service/archive/master.zip", attempt 3
+2018-05-11 11:28:51,944 INFO  DownloadService - Downloaded https://github.com/gotev/android-upload-service/archive/master.zip, attempt 3
+2018-05-11 11:28:51,944 INFO  DownloadService - Size of file "/tmp/rdisk/2161/master.zip": 540 KB
+2018-05-11 11:28:51,944 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:28:51,945 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2161/master.zip: true
+2018-05-11 11:28:51,945 DEBUG ZipUtil - Extracting '/tmp/rdisk/2161/master.zip' into '/tmp/rdisk/2161/src'.
+2018-05-11 11:28:52,007 INFO  FullProcessService - Size of directory with sources: 750 KB
+2018-05-11 11:28:52,008 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2161/src]
+2018-05-11 11:28:52,014 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2161/src/.git/
+
+2018-05-11 11:28:52,020 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2161/src/android-upload-service-master/uploadservice-ftp/gradlew /tmp/rdisk/2161/src/android-upload-service-master/gradlew /tmp/rdisk/2161/src/android-upload-service-master/examples/app/gradlew /tmp/rdisk/2161/src/android-upload-service-master/examples/app/demoapp/gradlew
+2018-05-11 11:28:52,026 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2161/src/android-upload-service-master/examples/app/demoapp/build.gradle /tmp/rdisk/2161/src/android-upload-service-master/uploadservice-ftp/build.gradle /tmp/rdisk/2161/src/android-upload-service-master/uploadservice-okhttp/build.gradle /tmp/rdisk/2161/src/android-upload-service-master/uploadservice/build.gradle /tmp/rdisk/2161/src/android-upload-service-master/build.gradle /tmp/rdisk/2161/src/android-upload-service-master/examples/app/build.gradle
+2018-05-11 11:28:52,032 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2161/src/android-upload-service-master/uploadservice/build.gradle /tmp/rdisk/2161/src/android-upload-service-master/uploadservice-okhttp/build.gradle /tmp/rdisk/2161/src/android-upload-service-master/uploadservice-ftp/build.gradle /tmp/rdisk/2161/src/android-upload-service-master/settings.gradle /tmp/rdisk/2161/src/android-upload-service-master/examples/app/settings.gradle /tmp/rdisk/2161/src/android-upload-service-master/examples/app/demoapp/build.gradle /tmp/rdisk/2161/src/android-upload-service-master/examples/app/build.gradle /tmp/rdisk/2161/src/android-upload-service-master/build.gradle
+2018-05-11 11:28:52,033 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:28:52,033 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:28:52,048 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2161/src/android-upload-service-master/examples/app/demoapp/local.properties
+2018-05-11 11:28:52,048 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-05-11 11:28:52,048 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-05-11 11:28:52,051 INFO  ProjectFixService - Build info for "/tmp/rdisk/2161/src/android-upload-service-master/examples/app/demoapp/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-05-11 11:28:52,051 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2161/src/android-upload-service-master/examples/app/demoapp/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-11 11:28:52,052 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2161/src/android-upload-service-master/uploadservice-ftp/local.properties
+2018-05-11 11:28:52,052 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-05-11 11:28:52,052 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-05-11 11:28:52,055 INFO  ProjectFixService - Build info for "/tmp/rdisk/2161/src/android-upload-service-master/uploadservice-ftp/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 11:28:52,055 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2161/src/android-upload-service-master/uploadservice-ftp/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 11:28:52,056 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2161/src/android-upload-service-master/uploadservice-okhttp/local.properties
+2018-05-11 11:28:52,058 INFO  ProjectFixService - Build info for "/tmp/rdisk/2161/src/android-upload-service-master/uploadservice-okhttp/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 11:28:52,058 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2161/src/android-upload-service-master/uploadservice-okhttp/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 11:28:52,059 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2161/src/android-upload-service-master/uploadservice/local.properties
+2018-05-11 11:28:52,062 INFO  ProjectFixService - Build info for "/tmp/rdisk/2161/src/android-upload-service-master/uploadservice/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 11:28:52,062 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2161/src/android-upload-service-master/uploadservice/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 11:28:52,063 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2161/src/android-upload-service-master/local.properties
+2018-05-11 11:28:52,063 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-05-11 11:28:52,063 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-05-11 11:28:52,066 INFO  ProjectFixService - Build info for "/tmp/rdisk/2161/src/android-upload-service-master/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 11:28:52,066 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2161/src/android-upload-service-master/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 11:28:52,066 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2161/src/android-upload-service-master/examples/app/local.properties
+2018-05-11 11:28:52,067 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-05-11 11:28:52,067 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-05-11 11:28:52,070 INFO  ProjectFixService - Build info for "/tmp/rdisk/2161/src/android-upload-service-master/examples/app/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 11:28:52,070 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2161/src/android-upload-service-master/examples/app/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 11:28:52,070 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:28:52,070 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:28:52,070 INFO  SysUtils - Execute command: [/tmp/rdisk/2161/src/android-upload-service-master/examples/app/demoapp/gradlew, -b, /tmp/rdisk/2161/src/android-upload-service-master/examples/app/demoapp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:29:01,397 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-05-11 11:29:01,397 INFO  ProjectTaskService - Excluded tasks (21): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test countDebugDexMethods check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug countReleaseDexMethods
+2018-05-11 11:29:01,397 INFO  SysUtils - Execute command: [/tmp/rdisk/2161/src/android-upload-service-master/examples/app/demoapp/gradlew, -b, /tmp/rdisk/2161/src/android-upload-service-master/examples/app/demoapp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, countDebugDexMethods, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, -x, countReleaseDexMethods, build]
+2018-05-11 11:30:05,862 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':demoapp' is deprecated. Use 'implementation' instead.
+Configuration 'debugCompile' in project ':demoapp' is deprecated. Use 'debugImplementation' instead.
+Configuration 'releaseCompile' in project ':demoapp' is deprecated. Use 'releaseImplementation' instead.
+Configuration 'compile' in project ':uploadservice' is deprecated. Use 'implementation' instead.
+Configuration 'compile' in project ':uploadservice-okhttp' is deprecated. Use 'implementation' instead.
+Configuration 'compile' in project ':uploadservice-ftp' is deprecated. Use 'implementation' instead.
+:demoapp:preBuild UP-TO-DATE
+:uploadservice:preBuild UP-TO-DATE
+:uploadservice:preDebugBuild UP-TO-DATE
+:uploadservice:checkDebugManifest
+:uploadservice:processDebugManifest
+:uploadservice-ftp:preBuild UP-TO-DATE
+:uploadservice-ftp:preDebugBuild UP-TO-DATE
+:uploadservice-ftp:checkDebugManifest
+:uploadservice-ftp:processDebugManifest
+:uploadservice-okhttp:preBuild UP-TO-DATE
+:uploadservice-okhttp:preDebugBuild UP-TO-DATE
+:uploadservice-okhttp:checkDebugManifest
+:uploadservice-okhttp:processDebugManifest
+:demoapp:preDebugBuild
+:uploadservice:compileDebugAidl
+:uploadservice-ftp:compileDebugAidl
+:uploadservice-okhttp:compileDebugAidl
+:demoapp:compileDebugAidl
+:uploadservice:packageDebugRenderscript NO-SOURCE
+:uploadservice-ftp:packageDebugRenderscript NO-SOURCE
+:uploadservice-okhttp:packageDebugRenderscript NO-SOURCE
+:demoapp:compileDebugRenderscript
+:demoapp:checkDebugManifest
+:demoapp:generateDebugBuildConfig
+:demoapp:prepareLintJar
+:demoapp:generateDebugResValues
+:demoapp:generateDebugResources
+:uploadservice:compileDebugRenderscript
+:uploadservice:generateDebugResValues
+:uploadservice:generateDebugResources
+:uploadservice:packageDebugResources
+:uploadservice-ftp:compileDebugRenderscript
+:uploadservice-ftp:generateDebugResValues
+:uploadservice-ftp:generateDebugResources
+:uploadservice-ftp:packageDebugResources
+:uploadservice-okhttp:compileDebugRenderscript
+:uploadservice-okhttp:generateDebugResValues
+:uploadservice-okhttp:generateDebugResources
+:uploadservice-okhttp:packageDebugResources
+:demoapp:mergeDebugResources
+:demoapp:createDebugCompatibleScreenManifests
+:demoapp:processDebugManifest
+:demoapp:splitsDiscoveryTaskDebug
+:uploadservice:platformAttrExtractor
+:uploadservice-ftp:platformAttrExtractor
+:uploadservice-okhttp:platformAttrExtractor
+:uploadservice:generateDebugBuildConfig
+:uploadservice:prepareLintJar
+:uploadservice:javaPreCompileDebug
+:uploadservice:processDebugJavaRes NO-SOURCE
+:uploadservice-ftp:generateDebugBuildConfig
+:uploadservice-ftp:prepareLintJar
+:uploadservice-ftp:processDebugJavaRes NO-SOURCE
+:uploadservice-okhttp:generateDebugBuildConfig
+:uploadservice-okhttp:prepareLintJar
+:uploadservice-okhttp:processDebugJavaRes NO-SOURCE
+:demoapp:compileDebugNdk NO-SOURCE
+:demoapp:mergeDebugShaders
+:uploadservice:processDebugResources
+:uploadservice-ftp:processDebugResources
+:uploadservice:generateDebugSources
+:uploadservice-okhttp:processDebugResources
+:demoapp:processDebugResources
+:demoapp:generateDebugSources
+:uploadservice:compileDebugJavaWithJavac
+:uploadservice:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:uploadservice-ftp:generateDebugSources
+:uploadservice-ftp:javaPreCompileDebug
+:uploadservice-ftp:compileDebugJavaWithJavac
+:uploadservice-ftp:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:uploadservice-okhttp:generateDebugSources
+:uploadservice-okhttp:javaPreCompileDebug
+:uploadservice-okhttp:compileDebugJavaWithJavac
+:uploadservice-okhttp:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:demoapp:javaPreCompileDebug
+:demoapp:compileDebugJavaWithJavac
+:demoapp:compileDebugSources
+:demoapp:compileDebugShaders
+:demoapp:generateDebugAssets
+:uploadservice:mergeDebugShaders
+:uploadservice:compileDebugShaders
+:uploadservice:generateDebugAssets
+:uploadservice:mergeDebugAssets
+:uploadservice-ftp:mergeDebugShaders
+:uploadservice-ftp:compileDebugShaders
+:uploadservice-ftp:generateDebugAssets
+:uploadservice-ftp:mergeDebugAssets
+:uploadservice-okhttp:mergeDebugShaders
+:uploadservice-okhttp:compileDebugShaders
+:uploadservice-okhttp:generateDebugAssets
+:uploadservice-okhttp:mergeDebugAssets
+:demoapp:mergeDebugAssets
+:demoapp:transformClassesWithDexBuilderForDebug
+:demoapp:transformDexArchiveWithExternalLibsDexMergerForDebug
+:demoapp:transformDexArchiveWithDexMergerForDebug
+:demoapp:mergeDebugJniLibFolders
+:uploadservice:compileDebugNdk NO-SOURCE
+:uploadservice:mergeDebugJniLibFolders
+:uploadservice:transformNativeLibsWithMergeJniLibsForDebug
+:uploadservice:transformNativeLibsWithStripDebugSymbolForDebug
+:uploadservice:transformNativeLibsWithIntermediateJniLibsForDebug
+:uploadservice-ftp:compileDebugNdk NO-SOURCE
+:uploadservice-ftp:mergeDebugJniLibFolders
+:uploadservice-ftp:transformNativeLibsWithMergeJniLibsForDebug
+:uploadservice-ftp:transformNativeLibsWithStripDebugSymbolForDebug
+:uploadservice-ftp:transformNativeLibsWithIntermediateJniLibsForDebug
+:uploadservice-okhttp:compileDebugNdk NO-SOURCE
+:uploadservice-okhttp:mergeDebugJniLibFolders
+:uploadservice-okhttp:transformNativeLibsWithMergeJniLibsForDebug
+:uploadservice-okhttp:transformNativeLibsWithStripDebugSymbolForDebug
+:uploadservice-okhttp:transformNativeLibsWithIntermediateJniLibsForDebug
+:demoapp:transformNativeLibsWithMergeJniLibsForDebug
+:demoapp:transformNativeLibsWithStripDebugSymbolForDebug
+:demoapp:processDebugJavaRes NO-SOURCE
+:demoapp:transformResourcesWithMergeJavaResForDebug
+:demoapp:validateSigningDebug
+:demoapp:packageDebug
+:demoapp:assembleDebug
+:uploadservice:preReleaseBuild UP-TO-DATE
+:uploadservice:checkReleaseManifest
+:uploadservice:processReleaseManifest
+:uploadservice-ftp:preReleaseBuild UP-TO-DATE
+:uploadservice-ftp:checkReleaseManifest
+:uploadservice-ftp:processReleaseManifest
+:uploadservice-okhttp:preReleaseBuild UP-TO-DATE
+:uploadservice-okhttp:checkReleaseManifest
+:uploadservice-okhttp:processReleaseManifest
+:demoapp:preReleaseBuild
+:uploadservice:compileReleaseAidl
+:uploadservice-ftp:compileReleaseAidl
+:uploadservice-okhttp:compileReleaseAidl
+:demoapp:compileReleaseAidl
+:uploadservice:packageReleaseRenderscript NO-SOURCE
+:uploadservice-ftp:packageReleaseRenderscript NO-SOURCE
+:uploadservice-okhttp:packageReleaseRenderscript NO-SOURCE
+:demoapp:compileReleaseRenderscript
+:demoapp:checkReleaseManifest
+:demoapp:generateReleaseBuildConfig
+:demoapp:generateReleaseResValues
+:demoapp:generateReleaseResources
+:uploadservice:compileReleaseRenderscript
+:uploadservice:generateReleaseResValues
+:uploadservice:generateReleaseResources
+:uploadservice:packageReleaseResources
+:uploadservice-ftp:compileReleaseRenderscript
+:uploadservice-ftp:generateReleaseResValues
+:uploadservice-ftp:generateReleaseResources
+:uploadservice-ftp:packageReleaseResources
+:uploadservice-okhttp:compileReleaseRenderscript
+:uploadservice-okhttp:generateReleaseResValues
+:uploadservice-okhttp:generateReleaseResources
+:uploadservice-okhttp:packageReleaseResources
+:demoapp:mergeReleaseResources
+:demoapp:createReleaseCompatibleScreenManifests
+:demoapp:processReleaseManifest
+:demoapp:splitsDiscoveryTaskRelease
+:uploadservice:processReleaseResources
+:uploadservice-ftp:processReleaseResources
+:uploadservice-okhttp:processReleaseResources
+:demoapp:processReleaseResources
+:demoapp:generateReleaseSources
+:uploadservice:generateReleaseBuildConfig
+:uploadservice:generateReleaseSources
+:uploadservice:javaPreCompileRelease
+:uploadservice:compileReleaseJavaWithJavac
+:uploadservice:processReleaseJavaRes NO-SOURCE
+:uploadservice:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:uploadservice-ftp:generateReleaseBuildConfig
+:uploadservice-ftp:generateReleaseSources
+:uploadservice-ftp:javaPreCompileRelease
+:uploadservice-ftp:compileReleaseJavaWithJavac
+:uploadservice-ftp:processReleaseJavaRes NO-SOURCE
+:uploadservice-ftp:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:uploadservice-okhttp:generateReleaseBuildConfig
+:uploadservice-okhttp:generateReleaseSources
+:uploadservice-okhttp:javaPreCompileRelease
+:uploadservice-okhttp:compileReleaseJavaWithJavac
+:uploadservice-okhttp:processReleaseJavaRes NO-SOURCE
+:uploadservice-okhttp:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:demoapp:javaPreCompileRelease
+:demoapp:compileReleaseJavaWithJavac
+:demoapp:compileReleaseNdk NO-SOURCE
+:demoapp:compileReleaseSources
+:demoapp:lintVitalRelease
+:demoapp:mergeReleaseShaders
+:demoapp:compileReleaseShaders
+:demoapp:generateReleaseAssets
+:uploadservice:mergeReleaseShaders
+:uploadservice:compileReleaseShaders
+:uploadservice:generateReleaseAssets
+:uploadservice:mergeReleaseAssets
+:uploadservice-ftp:mergeReleaseShaders
+:uploadservice-ftp:compileReleaseShaders
+:uploadservice-ftp:generateReleaseAssets
+:uploadservice-ftp:mergeReleaseAssets
+:uploadservice-okhttp:mergeReleaseShaders
+:uploadservice-okhttp:compileReleaseShaders
+:uploadservice-okhttp:generateReleaseAssets
+:uploadservice-okhttp:mergeReleaseAssets
+:demoapp:mergeReleaseAssets
+:demoapp:transformClassesWithPreDexForRelease
+:demoapp:transformDexWithDexForRelease
+:demoapp:mergeReleaseJniLibFolders
+:uploadservice:compileReleaseNdk NO-SOURCE
+:uploadservice:mergeReleaseJniLibFolders
+:uploadservice:transformNativeLibsWithMergeJniLibsForRelease
+:uploadservice:transformNativeLibsWithStripDebugSymbolForRelease
+:uploadservice:transformNativeLibsWithIntermediateJniLibsForRelease
+:uploadservice-ftp:compileReleaseNdk NO-SOURCE
+:uploadservice-ftp:mergeReleaseJniLibFolders
+:uploadservice-ftp:transformNativeLibsWithMergeJniLibsForRelease
+:uploadservice-ftp:transformNativeLibsWithStripDebugSymbolForRelease
+:uploadservice-ftp:transformNativeLibsWithIntermediateJniLibsForRelease
+:uploadservice-okhttp:compileReleaseNdk NO-SOURCE
+:uploadservice-okhttp:mergeReleaseJniLibFolders
+:uploadservice-okhttp:transformNativeLibsWithMergeJniLibsForRelease
+:uploadservice-okhttp:transformNativeLibsWithStripDebugSymbolForRelease
+:uploadservice-okhttp:transformNativeLibsWithIntermediateJniLibsForRelease
+:demoapp:transformNativeLibsWithMergeJniLibsForRelease
+:demoapp:transformNativeLibsWithStripDebugSymbolForRelease
+:demoapp:processReleaseJavaRes NO-SOURCE
+:demoapp:transformResourcesWithMergeJavaResForRelease
+:demoapp:packageRelease
+:demoapp:assembleRelease
+:demoapp:assemble
+:demoapp:build
+
+BUILD SUCCESSFUL in 1m 3s
+164 actionable tasks: 164 executed
+
+2018-05-11 11:30:05,956 INFO  FullProcessService - Found APK file: /tmp/rdisk/2161/src/android-upload-service-master/examples/app/demoapp/build/outputs/apk/release/demoapp-release-unsigned.apk

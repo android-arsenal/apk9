@@ -1,0 +1,165 @@
+2018-04-03 20:29:41,364 INFO  DownloadService - Downloading "https://github.com/quentin7b/android-location-tracker/archive/master.zip", attempt 3
+2018-04-03 20:30:41,953 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 20:30:43,067 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 20:30:43,068 INFO  DownloadService - Downloading "https://github.com/quentin7b/android-location-tracker/archive/master.zip", attempt 3
+2018-04-03 20:31:44,300 DEBUG FullProcessService - Repository https://github.com/quentin7b/android-location-tracker available: true
+2018-04-03 20:31:44,300 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 20:31:44,300 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/quentin7b/android-location-tracker, /tmp/rdisk/2088/src]
+2018-04-03 20:31:45,685 INFO  SysUtils - 
+2018-04-03 20:31:45,692 INFO  GitService - Deleted "/tmp/rdisk/2088/src/.git": true
+2018-04-03 20:31:45,693 INFO  FullProcessService - Size of directory with sources: 86 KB
+2018-04-03 20:31:45,693 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2088/src]
+2018-04-03 20:31:45,697 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2088/src/.git/
+
+2018-04-03 20:31:45,698 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2088/src/simple-location-tracker/gradlew
+2018-04-03 20:31:45,700 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2088/src/simple-location-tracker/slt/build.gradle /tmp/rdisk/2088/src/simple-location-tracker/build.gradle
+2018-04-03 20:31:45,701 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2088/src/simple-location-tracker/slt/build.gradle /tmp/rdisk/2088/src/simple-location-tracker/settings.gradle /tmp/rdisk/2088/src/simple-location-tracker/build.gradle
+2018-04-03 20:31:45,701 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 20:31:45,701 INFO  ProjectFixService - Fixing project...
+2018-04-03 20:31:45,704 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2088/src/simple-location-tracker/slt/local.properties
+2018-04-03 20:31:45,704 INFO  ProjectFixService - Build info for "/tmp/rdisk/2088/src/simple-location-tracker/slt/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-03 20:31:45,704 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2088/src/simple-location-tracker/local.properties
+2018-04-03 20:31:45,704 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 20:31:45,705 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 20:31:45,705 INFO  ProjectFixService - Build info for "/tmp/rdisk/2088/src/simple-location-tracker/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-03 20:31:45,705 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 20:31:45,705 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:31:45,705 INFO  SysUtils - Execute command: [/tmp/rdisk/2088/src/simple-location-tracker/gradlew, -b, /tmp/rdisk/2088/src/simple-location-tracker/slt/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:31:53,309 INFO  ProjectTaskService - Detected possible tasks: 62
+2018-04-03 20:31:53,310 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-03 20:31:53,310 INFO  SysUtils - Execute command: [/tmp/rdisk/2088/src/simple-location-tracker/gradlew, -b, /tmp/rdisk/2088/src/simple-location-tracker/slt/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-03 20:32:00,598 INFO  SysUtils - Configuration on demand is an incubating feature.
+:slt:compileLint
+:slt:copyDebugLint UP-TO-DATE
+:slt:preBuild UP-TO-DATE
+:slt:preDebugBuild UP-TO-DATE
+:slt:checkDebugManifest
+:slt:prepareDebugDependencies
+:slt:compileDebugAidl
+:slt:compileDebugRenderscript
+:slt:generateDebugBuildConfig
+:slt:generateDebugAssets UP-TO-DATE
+:slt:mergeDebugAssets
+:slt:generateDebugResValues
+:slt:generateDebugResources
+:slt:packageDebugResources
+:slt:processDebugManifest
+:slt:processDebugResources
+:slt:generateDebugSources
+:slt:processDebugJavaRes UP-TO-DATE
+:slt:compileDebugJava
+:slt:extractDebugAnnotations
+:slt:mergeDebugProguardFiles
+:slt:packageDebugJar
+:slt:compileDebugNdk UP-TO-DATE
+:slt:packageDebugJniLibs UP-TO-DATE
+:slt:packageDebugLocalJar UP-TO-DATE
+:slt:packageDebugRenderscript UP-TO-DATE
+:slt:bundleDebug
+:slt:compileDebugSources
+:slt:assembleDebug
+:slt:copyReleaseLint UP-TO-DATE
+:slt:preReleaseBuild UP-TO-DATE
+:slt:checkReleaseManifest
+:slt:prepareReleaseDependencies
+:slt:compileReleaseAidl
+:slt:compileReleaseRenderscript
+:slt:generateReleaseBuildConfig
+:slt:generateReleaseAssets UP-TO-DATE
+:slt:mergeReleaseAssets
+:slt:generateReleaseResValues
+:slt:generateReleaseResources
+:slt:packageReleaseResources
+:slt:processReleaseManifest
+:slt:processReleaseResources
+:slt:generateReleaseSources
+:slt:processReleaseJavaRes UP-TO-DATE
+:slt:compileReleaseJava
+:slt:extractReleaseAnnotations
+:slt:mergeReleaseProguardFiles
+:slt:packageReleaseJar
+:slt:compileReleaseNdk UP-TO-DATE
+:slt:packageReleaseJniLibs UP-TO-DATE
+:slt:packageReleaseLocalJar UP-TO-DATE
+:slt:packageReleaseRenderscript UP-TO-DATE
+:slt:bundleRelease
+:slt:compileReleaseSources
+:slt:assembleRelease
+:slt:assemble
+:slt:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.878 secs
+
+2018-04-03 20:32:00,603 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:32:00,604 INFO  SysUtils - Execute command: [/tmp/rdisk/2088/src/simple-location-tracker/gradlew, -b, /tmp/rdisk/2088/src/simple-location-tracker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:32:06,565 INFO  ProjectTaskService - Detected possible tasks: 62
+2018-04-03 20:32:06,565 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-03 20:32:06,565 INFO  SysUtils - Execute command: [/tmp/rdisk/2088/src/simple-location-tracker/gradlew, -b, /tmp/rdisk/2088/src/simple-location-tracker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-03 20:32:12,475 INFO  SysUtils - Configuration on demand is an incubating feature.
+:slt:compileLint
+:slt:copyDebugLint UP-TO-DATE
+:slt:preBuild UP-TO-DATE
+:slt:preDebugBuild UP-TO-DATE
+:slt:checkDebugManifest
+:slt:prepareDebugDependencies
+:slt:compileDebugAidl UP-TO-DATE
+:slt:compileDebugRenderscript UP-TO-DATE
+:slt:generateDebugBuildConfig UP-TO-DATE
+:slt:generateDebugAssets UP-TO-DATE
+:slt:mergeDebugAssets UP-TO-DATE
+:slt:generateDebugResValues UP-TO-DATE
+:slt:generateDebugResources UP-TO-DATE
+:slt:packageDebugResources UP-TO-DATE
+:slt:processDebugManifest UP-TO-DATE
+:slt:processDebugResources UP-TO-DATE
+:slt:generateDebugSources UP-TO-DATE
+:slt:processDebugJavaRes UP-TO-DATE
+:slt:compileDebugJava UP-TO-DATE
+:slt:extractDebugAnnotations UP-TO-DATE
+:slt:mergeDebugProguardFiles UP-TO-DATE
+:slt:packageDebugJar UP-TO-DATE
+:slt:compileDebugNdk UP-TO-DATE
+:slt:packageDebugJniLibs UP-TO-DATE
+:slt:packageDebugLocalJar UP-TO-DATE
+:slt:packageDebugRenderscript UP-TO-DATE
+:slt:bundleDebug UP-TO-DATE
+:slt:compileDebugSources UP-TO-DATE
+:slt:assembleDebug UP-TO-DATE
+:slt:copyReleaseLint UP-TO-DATE
+:slt:preReleaseBuild UP-TO-DATE
+:slt:checkReleaseManifest
+:slt:prepareReleaseDependencies
+:slt:compileReleaseAidl UP-TO-DATE
+:slt:compileReleaseRenderscript UP-TO-DATE
+:slt:generateReleaseBuildConfig UP-TO-DATE
+:slt:generateReleaseAssets UP-TO-DATE
+:slt:mergeReleaseAssets UP-TO-DATE
+:slt:generateReleaseResValues UP-TO-DATE
+:slt:generateReleaseResources UP-TO-DATE
+:slt:packageReleaseResources UP-TO-DATE
+:slt:processReleaseManifest UP-TO-DATE
+:slt:processReleaseResources UP-TO-DATE
+:slt:generateReleaseSources UP-TO-DATE
+:slt:processReleaseJavaRes UP-TO-DATE
+:slt:compileReleaseJava UP-TO-DATE
+:slt:extractReleaseAnnotations UP-TO-DATE
+:slt:mergeReleaseProguardFiles UP-TO-DATE
+:slt:packageReleaseJar UP-TO-DATE
+:slt:compileReleaseNdk UP-TO-DATE
+:slt:packageReleaseJniLibs UP-TO-DATE
+:slt:packageReleaseLocalJar UP-TO-DATE
+:slt:packageReleaseRenderscript UP-TO-DATE
+:slt:bundleRelease UP-TO-DATE
+:slt:compileReleaseSources UP-TO-DATE
+:slt:assembleRelease UP-TO-DATE
+:slt:assemble UP-TO-DATE
+:slt:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.507 secs
+
+2018-04-03 20:32:12,480 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 20:32:12,484 ERROR FullProcessService - Could not find generated or existed APK file

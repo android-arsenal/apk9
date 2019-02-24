@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.hkm.advancedtoolbar.example",
+    "label" : "Tool Bar Library Demo",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.5a",
+    "versionCode" : 4,
+    "installLocation" : null,
+    "minSdkVersion" : "17",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAACH1BMVEUAAAD//////////////////////////////f/+/f7+/f79/P38+vz+/f79/P3w7vAAAAD8+/z8+/z9/P39/P3y8fLIyMjW1tb7+vvy8fKwsLDIyMj7+vuqqqr6+frr6uv49/j5+Pn7+vvx8PHZ2NkAAAC3trfFxMXJyMnc29wCAQI1NDW2tbYEAwSysbJ1dHWkoqSjoqOBgIEMCwwqKCr8+/y0s7SMi4zh4OF3dncBAAHn5udZV1l6eXpfXl9WVVZ5eHk8OzzDwsMaGRokIyQcGxwZFxkjISMiISKzsrPt7O1BQEESERL39vesq6y1tLV/fn8DAgNhYGGIh4hmZWYFBAVDQkMQDxDOzc7b2tu8u7zNzM3f3t8TEhNUU1TT0dPi4eJ4d3iYl5jS0dKSkZKPjo/19PXQz9CEg4TKycq5uLno5+ilpKWUk5SJiInY19iCgYLAv8Da2drw7/CGhYbMy8yop6iGhIaKiYqHhoerqquWlZbm5ebq6erU09Sko6SEgoSFhIWamZp7envPzs9eXV6RkJFoZ2jRz9F+fH6Ylpju7e6OjY66ubqioKKBf4HW1daQjpDz8vPg3+C+vb6xsLGXlpfLy8usrKytra36+fr//v/v7u+Hh4eqqqoAAADb2dvLyssAAAA3NzfLycvr6evv7u/u7u7s6+zHxcc0NDQAAAAAAABGRkZgYGBcXFxbW1tmZmYAAAAAAAC/v7+1wpuEAAAAtXRSTlMAAwQCEx4dCpbo7JaY//+aAer5/fzqFyXv7yol7ir/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Jysc7P/sIgMIqa0DKrDt8O/tsSwJIEJNS0wFCw4EcF0YyAAAAgBJREFUSMdjYKAXYGQiABhRlDMzEzYSWQ2QycLKhhewsoCVwdSzc3ByEQCc3OxwHcwMPLx8hAG/AFQDIwOLIJ+QsAheICzEKyrGAPE5E4O4BJ8IIfNFeCWlgEohGqRliNIgi9AgQRcNcvLyClBJRXl5RT4leShQxqFBRVVVDapBXVVVg09TFQq0tHVI06CqqqtHpAZ9AyAwNDJWNTElToMZhGuuqmpBkgYzVVUVkjRYqlpZY9dgYwsBdlAN9g4gYK+l6ojD00gAJZSsnHBocHaBAFeoBjd3IPAwVlW1JDJYPcE8L29VH19SNPD5qapqkqTBn+hghWoIUA2UJ05DUDAIhISqhpGY+MIjsGmI9PGJgmrQ8PGJ5ouJhQLnuPgByqIJiUnJKUmpaYbpGQGZWSnB2Tm5efmGfAkFfIVF2HNcRnpxCV9pWTmfuhmfEV9xRaVFVFU5X3VqTVUEdg2JUbUlfHX1YA0NfIqNlU3NLeVKrRltODREtid1dHYFdPfwafTy9aX0T5g4aXJOj9MUvvKpAdO6CXpa0XSASz5SC+PpxNkwA6qBkWHmLF7CFcrsOXMZ5kGrrPkL5GbzzsYLeGcrLpwPr+MWLV6ydNnyZXjA8mUrVq5ahKhGV69Zu279+vUbcACg1Lq1a1YjV9QbN20mADZtRK38520hAObRrRUDAAH2J/NC407vAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1708,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"4\" android:versionName=\"1.5a\" package=\"com.hkm.advancedtoolbar.example\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"17\" android:targetSdkVersion=\"22\" />\n\t<application android:theme=\"resourceId:0x7f09008a\" android:label=\"Tool Bar Library Demo\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f09008c\" android:label=\"Tool Bar Library Demo\" android:name=\"com.hkm.toolbarlib.iOSActionBarWorkerExample\" />\n\t\t<activity android:theme=\"resourceId:0x7f09008c\" android:label=\"Tool Bar Library Demo\" android:name=\"com.hkm.toolbarlib.TopBarManagerExample\" />\n\t\t<activity android:theme=\"resourceId:0x7f09008c\" android:label=\"Tool Bar Library Demo\" android:name=\"com.hkm.toolbarlib.TopBarManagerExampleFull\" />\n\t\t<activity android:theme=\"resourceId:0x7f09008c\" android:label=\"Tool Bar Library Demo\" android:name=\"com.hkm.toolbarlib.TestOfCandyBar\" />\n\t\t<activity android:theme=\"resourceId:0x7f09008c\" android:label=\"Tool Bar Library Demo\" android:name=\"com.hkm.toolbarlib.TestOfCandyBar2Icons\" />\n\t\t<activity android:theme=\"resourceId:0x7f09008c\" android:label=\"Tool Bar Library Demo\" android:name=\"com.hkm.toolbarlib.BeastBarDemo_v1\" />\n\t\t<activity android:theme=\"resourceId:0x7f09008c\" android:label=\"Tool Bar Library Demo\" android:name=\"com.hkm.toolbarlib._mainMenu\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"resourceId:0x7f09008b\" android:name=\"com.hkm.toolbarlib.CustomActionBar\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1743041,
+  "crc32" : 4102582164,
+  "sha256" : "6d0c3f17bfc42b6a89ccb779b6da1169b659c1c11927d5af7abd9478585c3f92",
+  "buildTime" : 1496784474000
+}

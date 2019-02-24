@@ -1,0 +1,206 @@
+2018-04-03 20:11:39,475 INFO  DownloadService - Downloading "https://github.com/jd-alexander/flender/archive/master.zip", attempt 3
+2018-04-03 20:12:40,132 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 20:12:40,949 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 20:12:40,949 INFO  DownloadService - Downloading "https://github.com/jd-alexander/flender/archive/master.zip", attempt 3
+2018-04-03 20:13:42,331 DEBUG FullProcessService - Repository https://github.com/jd-alexander/flender available: true
+2018-04-03 20:13:42,331 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 20:13:42,331 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jd-alexander/flender, /tmp/rdisk/2094/src]
+2018-04-03 20:13:43,860 INFO  SysUtils - 
+2018-04-03 20:13:43,874 INFO  GitService - Deleted "/tmp/rdisk/2094/src/.git": true
+2018-04-03 20:13:43,876 INFO  FullProcessService - Size of directory with sources: 112 KB
+2018-04-03 20:13:43,876 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2094/src]
+2018-04-03 20:13:43,881 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2094/src/.git/
+
+2018-04-03 20:13:43,883 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2094/src/gradlew
+2018-04-03 20:13:43,886 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2094/src/flender-example/build.gradle /tmp/rdisk/2094/src/flender-runtime/build.gradle /tmp/rdisk/2094/src/build.gradle /tmp/rdisk/2094/src/flender-plugin/build.gradle
+2018-04-03 20:13:43,888 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2094/src/settings.gradle /tmp/rdisk/2094/src/flender-runtime/build.gradle /tmp/rdisk/2094/src/flender-plugin/build.gradle /tmp/rdisk/2094/src/flender-example/build.gradle /tmp/rdisk/2094/src/build.gradle
+2018-04-03 20:13:43,888 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-03 20:13:46,206 INFO  DownloadService - Downloaded https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-04-03 20:13:46,206 INFO  ProjectBuildService - Remote scripts: https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle
+2018-04-03 20:13:46,206 INFO  ProjectFixService - Fixing project...
+2018-04-03 20:13:46,216 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2094/src/flender-example/local.properties
+2018-04-03 20:13:46,217 INFO  ProjectFixService - Build info for "/tmp/rdisk/2094/src/flender-example/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-03 20:13:46,217 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2094/src/flender-runtime/local.properties
+2018-04-03 20:13:46,217 INFO  ProjectFixService - Build info for "/tmp/rdisk/2094/src/flender-runtime/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 20:13:46,218 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2094/src/local.properties
+2018-04-03 20:13:46,218 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 20:13:46,218 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 20:13:46,219 INFO  ProjectFixService - Build info for "/tmp/rdisk/2094/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 20:13:46,219 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2094/src/flender-plugin/local.properties
+2018-04-03 20:13:46,221 INFO  ProjectFixService - Build info for "/tmp/rdisk/2094/src/flender-plugin/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 20:13:46,221 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 20:13:46,221 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:13:46,221 INFO  SysUtils - Execute command: [/tmp/rdisk/2094/src/gradlew, -b, /tmp/rdisk/2094/src/flender-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:14:02,776 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-03 20:14:02,776 INFO  ProjectTaskService - Detected possible tasks: 4
+2018-04-03 20:14:02,776 INFO  ProjectTaskService - Excluded tasks (3): androidJavadocsJar androidJavadocs androidSourcesJar
+2018-04-03 20:14:02,776 INFO  SysUtils - Execute command: [/tmp/rdisk/2094/src/gradlew, -b, /tmp/rdisk/2094/src/flender-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, androidJavadocsJar, -x, androidJavadocs, -x, androidSourcesJar, build]
+2018-04-03 20:14:08,344 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-03 20:14:08,345 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'androidJavadocsJar' not found in project ':flender-example'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'androidJavadocsJar' not found in project ':flender-example'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:101)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:64)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+
+BUILD FAILED
+
+Total time: 5.084 secs
+
+2018-04-03 20:14:08,345 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-03 20:14:08,345 INFO  SysUtils - Execute command: [/tmp/rdisk/2094/src/gradlew, -b, /tmp/rdisk/2094/src/flender-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-03 20:14:39,765 INFO  SysUtils - Configuration on demand is an incubating feature.
+:flender-example:preBuild UP-TO-DATE
+:flender-example:preDebugBuild UP-TO-DATE
+:flender-example:checkDebugManifest
+:flender-example:preReleaseBuild UP-TO-DATE
+:flender-example:prepareComAndroidSupportAppcompatV72220Library
+:flender-example:prepareComAndroidSupportSupportV42220Library
+:flender-example:prepareComGithubJdAlexanderFlenderRuntime10Library
+:flender-example:prepareDebugDependencies
+:flender-example:compileDebugAidl
+:flender-example:compileDebugRenderscript
+:flender-example:generateDebugBuildConfig
+:flender-example:generateDebugAssets UP-TO-DATE
+:flender-example:mergeDebugAssets
+:flender-example:generateDebugResValues
+:flender-example:generateDebugResources
+:flender-example:mergeDebugResources
+:flender-example:processDebugManifest
+:flender-example:processDebugResources
+:flender-example:generateDebugSources
+:flender-example:processDebugJavaRes UP-TO-DATE
+:flender-example:compileDebugJava
+:flender-example:compileDebugNdk UP-TO-DATE
+:flender-example:compileDebugSources
+:flender-example:preDexDebug
+:flender-example:dexDebug
+advice defined in com.flender.weaving.FlenderAspect has not been applied [Xlint:adviceDidNotMatch]
+:flender-example:validateDebugSigning
+:flender-example:packageDebug
+:flender-example:zipalignDebug
+:flender-example:assembleDebug
+:flender-example:checkReleaseManifest
+:flender-example:prepareReleaseDependencies
+:flender-example:compileReleaseAidl
+:flender-example:compileReleaseRenderscript
+:flender-example:generateReleaseBuildConfig
+:flender-example:generateReleaseAssets UP-TO-DATE
+:flender-example:mergeReleaseAssets
+:flender-example:generateReleaseResValues
+:flender-example:generateReleaseResources
+:flender-example:mergeReleaseResources
+:flender-example:processReleaseManifest
+:flender-example:processReleaseResources
+:flender-example:generateReleaseSources
+:flender-example:processReleaseJavaRes UP-TO-DATE
+:flender-example:compileReleaseJava
+:flender-example:compileReleaseNdk UP-TO-DATE
+:flender-example:compileReleaseSources
+:flender-example:lintVitalRelease SKIPPED
+:flender-example:preDexRelease
+:flender-example:dexRelease
+advice defined in com.flender.weaving.FlenderAspect has not been applied [Xlint:adviceDidNotMatch]
+:flender-example:packageRelease
+:flender-example:assembleRelease
+:flender-example:assemble
+:flender-example:compileLint
+:flender-example:lint
+Ran lint on variant debug: 3 issues found
+Ran lint on variant release: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/2094/src/flender-example/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2094/src/flender-example/build/outputs/lint-results.xml
+:flender-example:preCompileDebugUnitTestJava
+:flender-example:preDebugUnitTestBuild UP-TO-DATE
+:flender-example:prepareDebugUnitTestDependencies
+:flender-example:processDebugUnitTestJavaRes UP-TO-DATE
+:flender-example:compileDebugUnitTestJava UP-TO-DATE
+:flender-example:compileDebugUnitTestSources UP-TO-DATE
+:flender-example:mockableAndroidJar
+:flender-example:assembleDebugUnitTest
+:flender-example:testDebug
+:flender-example:preCompileReleaseUnitTestJava
+:flender-example:preReleaseUnitTestBuild UP-TO-DATE
+:flender-example:prepareReleaseUnitTestDependencies
+:flender-example:processReleaseUnitTestJavaRes UP-TO-DATE
+:flender-example:compileReleaseUnitTestJava UP-TO-DATE
+:flender-example:compileReleaseUnitTestSources UP-TO-DATE
+:flender-example:assembleReleaseUnitTest
+:flender-example:testRelease
+:flender-example:test
+:flender-example:check
+:flender-example:build
+
+BUILD SUCCESSFUL
+
+Total time: 30.989 secs
+
+2018-04-03 20:14:39,798 INFO  FullProcessService - Found APK file: /tmp/rdisk/2094/src/flender-example/build/outputs/apk/flender-example-release-unsigned.apk

@@ -1,0 +1,193 @@
+2018-04-03 12:08:57,657 INFO  DownloadService - Downloading "https://github.com/bonnyfone/brdcompat/archive/master.zip", attempt 3
+2018-04-03 12:09:58,275 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 12:09:59,058 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 12:09:59,058 INFO  DownloadService - Downloading "https://github.com/bonnyfone/brdcompat/archive/master.zip", attempt 3
+2018-04-03 12:11:00,286 DEBUG FullProcessService - Repository https://github.com/bonnyfone/brdcompat available: true
+2018-04-03 12:11:00,287 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 12:11:00,287 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/bonnyfone/brdcompat, /tmp/rdisk/2199/src]
+2018-04-03 12:11:03,249 INFO  SysUtils - 
+2018-04-03 12:11:03,256 INFO  GitService - Deleted "/tmp/rdisk/2199/src/.git": true
+2018-04-03 12:11:03,257 INFO  FullProcessService - Size of directory with sources: 90 KB
+2018-04-03 12:11:03,257 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2199/src]
+2018-04-03 12:11:03,262 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2199/src/.git/
+
+2018-04-03 12:11:03,263 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2199/src/gradlew
+2018-04-03 12:11:03,264 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2199/src/brdcompat/build.gradle /tmp/rdisk/2199/src/build.gradle
+2018-04-03 12:11:03,265 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2199/src/settings.gradle /tmp/rdisk/2199/src/build.gradle /tmp/rdisk/2199/src/brdcompat/build.gradle
+2018-04-03 12:11:03,265 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 12:11:03,265 INFO  ProjectFixService - Fixing project...
+2018-04-03 12:11:03,268 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2199/src/brdcompat/local.properties
+2018-04-03 12:11:03,269 INFO  ProjectFixService - Build info for "/tmp/rdisk/2199/src/brdcompat/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=25,minSdkVersion=8,targetSdkVersion=25]
+2018-04-03 12:11:03,269 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2199/src/local.properties
+2018-04-03 12:11:03,269 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-03 12:11:03,269 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-03 12:11:03,270 INFO  ProjectFixService - Build info for "/tmp/rdisk/2199/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=25,minSdkVersion=8,targetSdkVersion=25]
+2018-04-03 12:11:03,270 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 12:11:03,270 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:11:03,270 INFO  SysUtils - Execute command: [/tmp/rdisk/2199/src/gradlew, -b, /tmp/rdisk/2199/src/brdcompat/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:11:11,662 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-03 12:11:11,663 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 12:11:11,663 INFO  SysUtils - Execute command: [/tmp/rdisk/2199/src/gradlew, -b, /tmp/rdisk/2199/src/brdcompat/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 12:11:19,873 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:brdcompat:preBuild UP-TO-DATE
+:brdcompat:preDebugBuild UP-TO-DATE
+:brdcompat:checkDebugManifest
+:brdcompat:prepareDebugDependencies
+:brdcompat:compileDebugAidl
+:brdcompat:compileDebugNdk UP-TO-DATE
+:brdcompat:compileLint
+:brdcompat:copyDebugLint UP-TO-DATE
+:brdcompat:mergeDebugShaders
+:brdcompat:compileDebugShaders
+:brdcompat:generateDebugAssets
+:brdcompat:mergeDebugAssets
+:brdcompat:mergeDebugProguardFiles
+:brdcompat:packageDebugRenderscript UP-TO-DATE
+:brdcompat:compileDebugRenderscript
+:brdcompat:generateDebugResValues
+:brdcompat:generateDebugResources
+:brdcompat:packageDebugResources
+:brdcompat:processDebugManifest
+:brdcompat:generateDebugBuildConfig
+:brdcompat:processDebugResources
+:brdcompat:generateDebugSources
+:brdcompat:incrementalDebugJavaCompilationSafeguard
+:brdcompat:compileDebugJavaWithJavac
+:brdcompat:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2199/src/brdcompat/src/main/java/org/bonnyfone/brdcompat/BitmapRegionDecoderGinger.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:brdcompat:processDebugJavaRes UP-TO-DATE
+:brdcompat:transformResourcesWithMergeJavaResForDebug
+:brdcompat:transformClassesAndResourcesWithSyncLibJarsForDebug
+:brdcompat:mergeDebugJniLibFolders
+:brdcompat:transformNative_libsWithMergeJniLibsForDebug
+:brdcompat:transformNative_libsWithSyncJniLibsForDebug
+:brdcompat:bundleDebug
+:brdcompat:compileDebugSources
+:brdcompat:assembleDebug
+:brdcompat:preReleaseBuild UP-TO-DATE
+:brdcompat:checkReleaseManifest
+:brdcompat:prepareReleaseDependencies
+:brdcompat:compileReleaseAidl
+:brdcompat:compileReleaseNdk UP-TO-DATE
+:brdcompat:copyReleaseLint UP-TO-DATE
+:brdcompat:mergeReleaseShaders
+:brdcompat:compileReleaseShaders
+:brdcompat:generateReleaseAssets
+:brdcompat:mergeReleaseAssets
+:brdcompat:mergeReleaseProguardFiles
+:brdcompat:packageReleaseRenderscript UP-TO-DATE
+:brdcompat:compileReleaseRenderscript
+:brdcompat:generateReleaseResValues
+:brdcompat:generateReleaseResources
+:brdcompat:packageReleaseResources
+:brdcompat:processReleaseManifest
+:brdcompat:generateReleaseBuildConfig
+:brdcompat:processReleaseResources
+:brdcompat:generateReleaseSources
+:brdcompat:incrementalReleaseJavaCompilationSafeguard
+:brdcompat:compileReleaseJavaWithJavac
+:brdcompat:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2199/src/brdcompat/src/main/java/org/bonnyfone/brdcompat/BitmapRegionDecoderGinger.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:brdcompat:processReleaseJavaRes UP-TO-DATE
+:brdcompat:transformResourcesWithMergeJavaResForRelease
+:brdcompat:transformClassesAndResourcesWithSyncLibJarsForRelease
+:brdcompat:mergeReleaseJniLibFolders
+:brdcompat:transformNative_libsWithMergeJniLibsForRelease
+:brdcompat:transformNative_libsWithSyncJniLibsForRelease
+:brdcompat:bundleRelease
+:brdcompat:compileReleaseSources
+:brdcompat:assembleRelease
+:brdcompat:assemble
+:brdcompat:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.688 secs
+
+2018-04-03 12:11:19,880 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 12:11:19,880 INFO  SysUtils - Execute command: [/tmp/rdisk/2199/src/gradlew, -b, /tmp/rdisk/2199/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 12:11:26,998 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-03 12:11:26,998 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-03 12:11:26,998 INFO  SysUtils - Execute command: [/tmp/rdisk/2199/src/gradlew, -b, /tmp/rdisk/2199/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-03 12:11:34,023 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:brdcompat:preBuild UP-TO-DATE
+:brdcompat:preDebugBuild UP-TO-DATE
+:brdcompat:checkDebugManifest
+:brdcompat:prepareDebugDependencies
+:brdcompat:compileDebugAidl UP-TO-DATE
+:brdcompat:compileDebugNdk UP-TO-DATE
+:brdcompat:compileLint UP-TO-DATE
+:brdcompat:copyDebugLint UP-TO-DATE
+:brdcompat:mergeDebugShaders UP-TO-DATE
+:brdcompat:compileDebugShaders UP-TO-DATE
+:brdcompat:generateDebugAssets UP-TO-DATE
+:brdcompat:mergeDebugAssets UP-TO-DATE
+:brdcompat:mergeDebugProguardFiles UP-TO-DATE
+:brdcompat:packageDebugRenderscript UP-TO-DATE
+:brdcompat:compileDebugRenderscript UP-TO-DATE
+:brdcompat:generateDebugResValues UP-TO-DATE
+:brdcompat:generateDebugResources UP-TO-DATE
+:brdcompat:packageDebugResources UP-TO-DATE
+:brdcompat:processDebugManifest UP-TO-DATE
+:brdcompat:generateDebugBuildConfig UP-TO-DATE
+:brdcompat:processDebugResources UP-TO-DATE
+:brdcompat:generateDebugSources UP-TO-DATE
+:brdcompat:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:brdcompat:compileDebugJavaWithJavac UP-TO-DATE
+:brdcompat:processDebugJavaRes UP-TO-DATE
+:brdcompat:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:brdcompat:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:brdcompat:mergeDebugJniLibFolders UP-TO-DATE
+:brdcompat:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:brdcompat:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:brdcompat:bundleDebug UP-TO-DATE
+:brdcompat:compileDebugSources UP-TO-DATE
+:brdcompat:assembleDebug UP-TO-DATE
+:brdcompat:preReleaseBuild UP-TO-DATE
+:brdcompat:checkReleaseManifest
+:brdcompat:prepareReleaseDependencies
+:brdcompat:compileReleaseAidl UP-TO-DATE
+:brdcompat:compileReleaseNdk UP-TO-DATE
+:brdcompat:copyReleaseLint UP-TO-DATE
+:brdcompat:mergeReleaseShaders UP-TO-DATE
+:brdcompat:compileReleaseShaders UP-TO-DATE
+:brdcompat:generateReleaseAssets UP-TO-DATE
+:brdcompat:mergeReleaseAssets UP-TO-DATE
+:brdcompat:mergeReleaseProguardFiles UP-TO-DATE
+:brdcompat:packageReleaseRenderscript UP-TO-DATE
+:brdcompat:compileReleaseRenderscript UP-TO-DATE
+:brdcompat:generateReleaseResValues UP-TO-DATE
+:brdcompat:generateReleaseResources UP-TO-DATE
+:brdcompat:packageReleaseResources UP-TO-DATE
+:brdcompat:processReleaseManifest UP-TO-DATE
+:brdcompat:generateReleaseBuildConfig UP-TO-DATE
+:brdcompat:processReleaseResources UP-TO-DATE
+:brdcompat:generateReleaseSources UP-TO-DATE
+:brdcompat:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:brdcompat:compileReleaseJavaWithJavac UP-TO-DATE
+:brdcompat:processReleaseJavaRes UP-TO-DATE
+:brdcompat:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:brdcompat:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:brdcompat:mergeReleaseJniLibFolders UP-TO-DATE
+:brdcompat:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:brdcompat:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:brdcompat:bundleRelease UP-TO-DATE
+:brdcompat:compileReleaseSources UP-TO-DATE
+:brdcompat:assembleRelease UP-TO-DATE
+:brdcompat:assemble UP-TO-DATE
+:brdcompat:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.449 secs
+
+2018-04-03 12:11:34,029 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 12:11:34,037 ERROR FullProcessService - Could not find generated or existed APK file

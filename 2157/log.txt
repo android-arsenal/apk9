@@ -1,0 +1,181 @@
+2018-04-03 18:14:25,243 INFO  DownloadService - Downloading "https://github.com/yongjhih/RxMediaStore/archive/master.zip", attempt 3
+2018-04-03 18:15:25,847 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:15:26,486 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:15:26,486 INFO  DownloadService - Downloading "https://github.com/yongjhih/RxMediaStore/archive/master.zip", attempt 3
+2018-04-03 18:16:27,766 DEBUG FullProcessService - Repository https://github.com/yongjhih/RxMediaStore available: true
+2018-04-03 18:16:27,766 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 18:16:27,766 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/yongjhih/RxMediaStore, /tmp/rdisk/2157/src]
+2018-04-03 18:16:29,231 INFO  SysUtils - 
+2018-04-03 18:16:29,238 INFO  GitService - Deleted "/tmp/rdisk/2157/src/.git": true
+2018-04-03 18:16:29,239 INFO  FullProcessService - Size of directory with sources: 94 KB
+2018-04-03 18:16:29,239 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2157/src]
+2018-04-03 18:16:29,243 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2157/src/.git/
+
+2018-04-03 18:16:29,245 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2157/src/gradlew
+2018-04-03 18:16:29,246 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2157/src/rx-media-store/build.gradle /tmp/rdisk/2157/src/build.gradle
+2018-04-03 18:16:29,247 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2157/src/settings.gradle /tmp/rdisk/2157/src/rx-media-store/mvn-push.gradle /tmp/rdisk/2157/src/rx-media-store/build.gradle /tmp/rdisk/2157/src/build.gradle
+2018-04-03 18:16:29,248 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 18:16:29,248 INFO  ProjectFixService - Fixing project...
+2018-04-03 18:16:29,252 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2157/src/rx-media-store/local.properties
+2018-04-03 18:16:29,253 INFO  ProjectFixService - Build info for "/tmp/rdisk/2157/src/rx-media-store/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:16:29,253 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2157/src/local.properties
+2018-04-03 18:16:29,254 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 18:16:29,254 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 18:16:29,256 INFO  ProjectFixService - Build info for "/tmp/rdisk/2157/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-03 18:16:29,256 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 18:16:29,256 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:16:29,256 INFO  SysUtils - Execute command: [/tmp/rdisk/2157/src/gradlew, -b, /tmp/rdisk/2157/src/rx-media-store/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:16:51,810 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-03 18:16:51,811 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-03 18:16:51,811 INFO  SysUtils - Execute command: [/tmp/rdisk/2157/src/gradlew, -b, /tmp/rdisk/2157/src/rx-media-store/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-03 18:17:05,676 INFO  SysUtils - Configuration on demand is an incubating feature.
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+:rx-media-store:androidJavadocs
+:rx-media-store:androidJavadocsJar
+:rx-media-store:androidSourcesJar
+:rx-media-store:compileLint
+:rx-media-store:copyDebugLint UP-TO-DATE
+:rx-media-store:preBuild UP-TO-DATE
+:rx-media-store:preDebugBuild UP-TO-DATE
+:rx-media-store:checkDebugManifest
+:rx-media-store:prepareDebugDependencies
+:rx-media-store:compileDebugAidl
+:rx-media-store:compileDebugRenderscript
+:rx-media-store:generateDebugBuildConfig
+:rx-media-store:generateDebugAssets UP-TO-DATE
+:rx-media-store:mergeDebugAssets
+:rx-media-store:generateDebugResValues
+:rx-media-store:generateDebugResources
+:rx-media-store:packageDebugResources
+:rx-media-store:processDebugManifest
+:rx-media-store:processDebugResources
+:rx-media-store:generateDebugSources
+:rx-media-store:processDebugJavaRes UP-TO-DATE
+:rx-media-store:compileDebugJava
+:rx-media-store:compileRetrolambdaDebug
+:rx-media-store:extractDebugAnnotations
+:rx-media-store:mergeDebugProguardFiles
+:rx-media-store:packageDebugJar
+:rx-media-store:compileDebugNdk UP-TO-DATE
+:rx-media-store:packageDebugJniLibs UP-TO-DATE
+:rx-media-store:packageDebugLocalJar UP-TO-DATE
+:rx-media-store:packageDebugRenderscript UP-TO-DATE
+:rx-media-store:bundleDebug
+:rx-media-store:compileDebugSources
+:rx-media-store:assembleDebug
+:rx-media-store:copyReleaseLint UP-TO-DATE
+:rx-media-store:preReleaseBuild UP-TO-DATE
+:rx-media-store:checkReleaseManifest
+:rx-media-store:prepareReleaseDependencies
+:rx-media-store:compileReleaseAidl
+:rx-media-store:compileReleaseRenderscript
+:rx-media-store:generateReleaseBuildConfig
+:rx-media-store:generateReleaseAssets UP-TO-DATE
+:rx-media-store:mergeReleaseAssets
+:rx-media-store:generateReleaseResValues
+:rx-media-store:generateReleaseResources
+:rx-media-store:packageReleaseResources
+:rx-media-store:processReleaseManifest
+:rx-media-store:processReleaseResources
+:rx-media-store:generateReleaseSources
+:rx-media-store:processReleaseJavaRes UP-TO-DATE
+:rx-media-store:compileReleaseJava
+:rx-media-store:compileRetrolambdaRelease
+:rx-media-store:extractReleaseAnnotations
+:rx-media-store:mergeReleaseProguardFiles
+:rx-media-store:packageReleaseJar
+:rx-media-store:compileReleaseNdk UP-TO-DATE
+:rx-media-store:packageReleaseJniLibs UP-TO-DATE
+:rx-media-store:packageReleaseLocalJar UP-TO-DATE
+:rx-media-store:packageReleaseRenderscript UP-TO-DATE
+:rx-media-store:bundleRelease
+:rx-media-store:compileReleaseSources
+:rx-media-store:assembleRelease
+:rx-media-store:signArchives SKIPPED
+:rx-media-store:assemble
+:rx-media-store:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.437 secs
+
+2018-04-03 18:17:05,683 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:17:05,683 INFO  SysUtils - Execute command: [/tmp/rdisk/2157/src/gradlew, -b, /tmp/rdisk/2157/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:17:12,473 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-03 18:17:12,473 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-03 18:17:12,473 INFO  SysUtils - Execute command: [/tmp/rdisk/2157/src/gradlew, -b, /tmp/rdisk/2157/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-03 18:17:19,131 INFO  SysUtils - Configuration on demand is an incubating feature.
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+:rx-media-store:androidJavadocs UP-TO-DATE
+:rx-media-store:androidJavadocsJar UP-TO-DATE
+:rx-media-store:androidSourcesJar UP-TO-DATE
+:rx-media-store:compileLint
+:rx-media-store:copyDebugLint UP-TO-DATE
+:rx-media-store:preBuild UP-TO-DATE
+:rx-media-store:preDebugBuild UP-TO-DATE
+:rx-media-store:checkDebugManifest
+:rx-media-store:prepareDebugDependencies
+:rx-media-store:compileDebugAidl UP-TO-DATE
+:rx-media-store:compileDebugRenderscript UP-TO-DATE
+:rx-media-store:generateDebugBuildConfig UP-TO-DATE
+:rx-media-store:generateDebugAssets UP-TO-DATE
+:rx-media-store:mergeDebugAssets UP-TO-DATE
+:rx-media-store:generateDebugResValues UP-TO-DATE
+:rx-media-store:generateDebugResources UP-TO-DATE
+:rx-media-store:packageDebugResources UP-TO-DATE
+:rx-media-store:processDebugManifest UP-TO-DATE
+:rx-media-store:processDebugResources UP-TO-DATE
+:rx-media-store:generateDebugSources UP-TO-DATE
+:rx-media-store:processDebugJavaRes UP-TO-DATE
+:rx-media-store:compileDebugJava UP-TO-DATE
+:rx-media-store:compileRetrolambdaDebug UP-TO-DATE
+:rx-media-store:extractDebugAnnotations UP-TO-DATE
+:rx-media-store:mergeDebugProguardFiles UP-TO-DATE
+:rx-media-store:packageDebugJar UP-TO-DATE
+:rx-media-store:compileDebugNdk UP-TO-DATE
+:rx-media-store:packageDebugJniLibs UP-TO-DATE
+:rx-media-store:packageDebugLocalJar UP-TO-DATE
+:rx-media-store:packageDebugRenderscript UP-TO-DATE
+:rx-media-store:bundleDebug UP-TO-DATE
+:rx-media-store:compileDebugSources UP-TO-DATE
+:rx-media-store:assembleDebug UP-TO-DATE
+:rx-media-store:copyReleaseLint UP-TO-DATE
+:rx-media-store:preReleaseBuild UP-TO-DATE
+:rx-media-store:checkReleaseManifest
+:rx-media-store:prepareReleaseDependencies
+:rx-media-store:compileReleaseAidl UP-TO-DATE
+:rx-media-store:compileReleaseRenderscript UP-TO-DATE
+:rx-media-store:generateReleaseBuildConfig UP-TO-DATE
+:rx-media-store:generateReleaseAssets UP-TO-DATE
+:rx-media-store:mergeReleaseAssets UP-TO-DATE
+:rx-media-store:generateReleaseResValues UP-TO-DATE
+:rx-media-store:generateReleaseResources UP-TO-DATE
+:rx-media-store:packageReleaseResources UP-TO-DATE
+:rx-media-store:processReleaseManifest UP-TO-DATE
+:rx-media-store:processReleaseResources UP-TO-DATE
+:rx-media-store:generateReleaseSources UP-TO-DATE
+:rx-media-store:processReleaseJavaRes UP-TO-DATE
+:rx-media-store:compileReleaseJava UP-TO-DATE
+:rx-media-store:compileRetrolambdaRelease UP-TO-DATE
+:rx-media-store:extractReleaseAnnotations UP-TO-DATE
+:rx-media-store:mergeReleaseProguardFiles UP-TO-DATE
+:rx-media-store:packageReleaseJar UP-TO-DATE
+:rx-media-store:compileReleaseNdk UP-TO-DATE
+:rx-media-store:packageReleaseJniLibs UP-TO-DATE
+:rx-media-store:packageReleaseLocalJar UP-TO-DATE
+:rx-media-store:packageReleaseRenderscript UP-TO-DATE
+:rx-media-store:bundleRelease UP-TO-DATE
+:rx-media-store:compileReleaseSources UP-TO-DATE
+:rx-media-store:assembleRelease UP-TO-DATE
+:rx-media-store:signArchives SKIPPED
+:rx-media-store:assemble UP-TO-DATE
+:rx-media-store:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.231 secs
+
+2018-04-03 18:17:19,138 ERROR FullProcessService - Project build has not produced APK file
+2018-04-03 18:17:19,144 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,45 @@
+2018-05-15 04:09:06,354 INFO  DownloadService - Downloading "https://github.com/hrldcpr/pcollections/archive/master.zip", attempt 3
+2018-05-15 04:09:06,756 INFO  DownloadService - Downloaded https://github.com/hrldcpr/pcollections/archive/master.zip, attempt 3
+2018-05-15 04:09:06,756 INFO  DownloadService - Size of file "/tmp/rdisk/2071/master.zip": 100 KB
+2018-05-15 04:09:06,756 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-15 04:09:06,757 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2071/master.zip: true
+2018-05-15 04:09:06,757 DEBUG ZipUtil - Extracting '/tmp/rdisk/2071/master.zip' into '/tmp/rdisk/2071/src'.
+2018-05-15 04:09:06,765 INFO  FullProcessService - Size of directory with sources: 179 KB
+2018-05-15 04:09:06,765 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2071/src]
+2018-05-15 04:09:06,770 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2071/src/.git/
+
+2018-05-15 04:09:06,772 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2071/src/pcollections-master/gradlew
+2018-05-15 04:09:06,775 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2071/src/pcollections-master/build.gradle
+2018-05-15 04:09:06,777 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2071/src/pcollections-master/settings.gradle /tmp/rdisk/2071/src/pcollections-master/build.gradle
+2018-05-15 04:09:06,777 INFO  ProjectBuildService - Remote scripts: none
+2018-05-15 04:09:06,777 INFO  ProjectFixService - Fixing project...
+2018-05-15 04:09:06,781 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2071/src/pcollections-master/local.properties
+2018-05-15 04:09:06,782 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.7-all.zip
+2018-05-15 04:09:06,782 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.7-bin.zip)
+2018-05-15 04:09:06,783 INFO  ProjectFixService - Build info for "/tmp/rdisk/2071/src/pcollections-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-15 04:09:06,783 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2071/src/pcollections-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 04:09:06,783 INFO  ProjectFixService - Project was maybe fixed
+2018-05-15 04:09:06,784 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 04:09:06,784 INFO  SysUtils - Execute command: [/tmp/rdisk/2071/src/pcollections-master/gradlew, -b, /tmp/rdisk/2071/src/pcollections-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 04:09:18,966 INFO  ProjectTaskService - Detected possible tasks: 50
+2018-05-15 04:09:18,967 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-05-15 04:09:18,967 INFO  SysUtils - Execute command: [/tmp/rdisk/2071/src/pcollections-master/gradlew, -b, /tmp/rdisk/2071/src/pcollections-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-05-15 04:09:24,780 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+> Task :compileJava
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :build
+
+BUILD SUCCESSFUL in 5s
+2 actionable tasks: 2 executed
+
+2018-05-15 04:09:24,783 ERROR FullProcessService - Project build has not produced APK file
+2018-05-15 04:09:24,786 ERROR FullProcessService - Could not find generated or existed APK file

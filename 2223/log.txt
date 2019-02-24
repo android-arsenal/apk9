@@ -1,0 +1,453 @@
+2018-04-02 16:24:36,577 INFO  DownloadService - Downloading "https://github.com/Mithrandir21/GoogleCloudStorage/archive/master.zip", attempt 3
+2018-04-02 16:25:37,203 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 16:25:37,970 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 16:25:37,970 INFO  DownloadService - Downloading "https://github.com/Mithrandir21/GoogleCloudStorage/archive/master.zip", attempt 3
+2018-04-02 16:26:39,357 DEBUG FullProcessService - Repository https://github.com/Mithrandir21/GoogleCloudStorage available: true
+2018-04-02 16:26:39,357 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 16:26:39,358 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Mithrandir21/GoogleCloudStorage, /tmp/rdisk/2223/src]
+2018-04-02 16:26:40,832 INFO  SysUtils - 
+2018-04-02 16:26:40,840 INFO  GitService - Deleted "/tmp/rdisk/2223/src/.git": true
+2018-04-02 16:26:40,841 INFO  FullProcessService - Size of directory with sources: 130 KB
+2018-04-02 16:26:40,841 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2223/src]
+2018-04-02 16:26:40,845 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2223/src/.git/
+
+2018-04-02 16:26:40,847 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2223/src/gradlew
+2018-04-02 16:26:40,848 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2223/src/gcs/build.gradle /tmp/rdisk/2223/src/build.gradle
+2018-04-02 16:26:40,850 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2223/src/settings.gradle /tmp/rdisk/2223/src/gcs/build.gradle /tmp/rdisk/2223/src/build.gradle
+2018-04-02 16:26:40,850 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 16:26:40,850 INFO  ProjectFixService - Fixing project...
+2018-04-02 16:26:40,853 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2223/src/gcs/local.properties
+2018-04-02 16:26:40,854 INFO  ProjectFixService - Build info for "/tmp/rdisk/2223/src/gcs/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-02 16:26:40,854 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2223/src/gcs/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-02 16:26:40,855 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2223/src/local.properties
+2018-04-02 16:26:40,855 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-02 16:26:40,855 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-02 16:26:40,856 INFO  ProjectFixService - Build info for "/tmp/rdisk/2223/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-02 16:26:40,856 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2223/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-02 16:26:40,856 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 16:26:40,856 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 16:26:40,856 INFO  SysUtils - Execute command: [/tmp/rdisk/2223/src/gradlew, -b, /tmp/rdisk/2223/src/gcs/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 16:26:50,057 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-02 16:26:50,057 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 16:26:50,057 INFO  SysUtils - Execute command: [/tmp/rdisk/2223/src/gradlew, -b, /tmp/rdisk/2223/src/gcs/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 16:27:06,451 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:gcs:preBuild UP-TO-DATE
+:gcs:preDebugBuild UP-TO-DATE
+:gcs:compileDebugAidl
+:gcs:compileDebugNdk NO-SOURCE
+:gcs:compileDebugRenderscript
+:gcs:checkDebugManifest
+:gcs:generateDebugBuildConfig
+:gcs:prepareLintJar
+:gcs:generateDebugResValues
+:gcs:generateDebugResources
+:gcs:packageDebugResources
+:gcs:platformAttrExtractor
+:gcs:processDebugManifest
+:gcs:javaPreCompileDebug
+:gcs:processDebugResources
+:gcs:generateDebugSources
+:gcs:compileDebugJavaWithJavac
+:gcs:extractDebugAnnotations
+:gcs:mergeDebugShaders
+:gcs:compileDebugShaders
+:gcs:generateDebugAssets
+:gcs:mergeDebugAssets
+:gcs:mergeDebugConsumerProguardFiles
+:gcs:packageDebugRenderscript NO-SOURCE
+:gcs:processDebugJavaRes NO-SOURCE
+:gcs:transformResourcesWithMergeJavaResForDebug
+:gcs:transformClassesAndResourcesWithSyncLibJarsForDebug
+:gcs:mergeDebugJniLibFolders
+:gcs:transformNativeLibsWithMergeJniLibsForDebug
+:gcs:transformNativeLibsWithStripDebugSymbolForDebug
+:gcs:transformNativeLibsWithSyncJniLibsForDebug
+:gcs:bundleDebug
+:gcs:compileDebugSources
+:gcs:assembleDebug
+:gcs:preReleaseBuild UP-TO-DATE
+:gcs:compileReleaseAidl
+:gcs:compileReleaseNdk NO-SOURCE
+:gcs:compileReleaseRenderscript
+:gcs:checkReleaseManifest
+:gcs:generateReleaseBuildConfig
+:gcs:generateReleaseResValues
+:gcs:generateReleaseResources
+:gcs:packageReleaseResources
+:gcs:processReleaseManifest
+:gcs:processReleaseResources
+:gcs:generateReleaseSources
+:gcs:javaPreCompileRelease
+:gcs:compileReleaseJavaWithJavac
+:gcs:extractReleaseAnnotations
+:gcs:mergeReleaseShaders
+:gcs:compileReleaseShaders
+:gcs:generateReleaseAssets
+:gcs:mergeReleaseAssets
+:gcs:mergeReleaseConsumerProguardFiles
+:gcs:packageReleaseRenderscript NO-SOURCE
+:gcs:processReleaseJavaRes NO-SOURCE
+:gcs:transformResourcesWithMergeJavaResForRelease
+:gcs:transformClassesAndResourcesWithSyncLibJarsForRelease
+:gcs:mergeReleaseJniLibFolders
+:gcs:transformNativeLibsWithMergeJniLibsForRelease
+:gcs:transformNativeLibsWithStripDebugSymbolForRelease
+:gcs:transformNativeLibsWithSyncJniLibsForRelease
+:gcs:bundleRelease
+:gcs:compileReleaseSources
+:gcs:mergeReleaseResources
+:gcs:verifyReleaseResources
+:gcs:assembleRelease
+:gcs:javadoc/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:3: error: package com.google.api.client.auth.oauth2 does not exist
+import com.google.api.client.auth.oauth2.Credential;
+                                        ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:4: error: package com.google.api.client.http does not exist
+import com.google.api.client.http.HttpTransport;
+                                 ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:5: error: package com.google.api.client.http.apache does not exist
+import com.google.api.client.http.apache.ApacheHttpTransport;
+                                        ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:6: error: package com.google.api.client.json does not exist
+import com.google.api.client.json.JsonFactory;
+                                 ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:7: error: package com.google.api.client.json.jackson2 does not exist
+import com.google.api.client.json.jackson2.JacksonFactory;
+                                          ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:8: error: package com.google.api.services.storage does not exist
+import com.google.api.services.storage.Storage;
+                                      ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:27: error: cannot find symbol
+    private static Storage storage;
+                   ^
+  symbol:   class Storage
+  location: class GoogleStorage
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:39: error: cannot find symbol
+    private GoogleStorage(String bucketName, Credential credential) {
+                                             ^
+  symbol:   class Credential
+  location: class GoogleStorage
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:67: error: cannot find symbol
+    public static synchronized GoogleStorage build(String bucketName, Credential credential) {
+                                                                      ^
+  symbol:   class Credential
+  location: class GoogleStorage
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:95: error: cannot find symbol
+    private static void setupStorage(String bucketName, Credential credential) {
+                                                        ^
+  symbol:   class Credential
+  location: class GoogleStorage
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:123: error: cannot find symbol
+    public Storage getStorage() {
+           ^
+  symbol:   class Storage
+  location: class GoogleStorage
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:6: error: package com.google.api.client.auth.oauth2 does not exist
+import com.google.api.client.auth.oauth2.Credential;
+                                        ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:7: error: package com.google.api.client.googleapis.auth.oauth2 does not exist
+import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
+                                                   ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:8: error: package com.google.api.client.http does not exist
+import com.google.api.client.http.HttpTransport;
+                                 ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:9: error: package com.google.api.client.http.apache does not exist
+import com.google.api.client.http.apache.ApacheHttpTransport;
+                                        ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:10: error: package com.google.api.client.json does not exist
+import com.google.api.client.json.JsonFactory;
+                                 ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:11: error: package com.google.api.client.json.jackson2 does not exist
+import com.google.api.client.json.jackson2.JacksonFactory;
+                                          ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:12: error: package com.google.api.services.storage does not exist
+import com.google.api.services.storage.StorageScopes;
+                                      ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:32: error: cannot find symbol
+    private HttpTransport httpTransport;
+            ^
+  symbol:   class HttpTransport
+  location: class CredentialBuilder
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:33: error: cannot find symbol
+    private JsonFactory jsonFactory;
+            ^
+  symbol:   class JsonFactory
+  location: class CredentialBuilder
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:91: error: cannot find symbol
+    public CredentialBuilder transporter(HttpTransport httpTransport) {
+                                         ^
+  symbol:   class HttpTransport
+  location: class CredentialBuilder
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:112: error: cannot find symbol
+    public CredentialBuilder jsonFactory(JsonFactory factory) {
+                                         ^
+  symbol:   class JsonFactory
+  location: class CredentialBuilder
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:181: error: cannot find symbol
+    public Credential build() throws IOException, GeneralSecurityException {
+           ^
+  symbol:   class Credential
+  location: class CredentialBuilder
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:9: error: package com.google.api.client.http does not exist
+import com.google.api.client.http.InputStreamContent;
+                                 ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:10: error: package com.google.api.services.storage does not exist
+import com.google.api.services.storage.Storage;
+                                      ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:11: error: package com.google.api.services.storage.model does not exist
+import com.google.api.services.storage.model.StorageObject;
+                                            ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:29: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:33: warning: no description for @param
+     * @param googleStorage
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:34: warning: no description for @param
+     * @param imageFullPath
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:35: warning: no description for @param
+     * @param image
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:36: warning: no description for @param
+     * @param format
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:38: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:39: warning: no description for @throws
+     * @throws IOException
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:92: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:96: warning: no description for @param
+     * @param context
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:97: warning: no description for @param
+     * @param googleStorage
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:98: warning: no description for @param
+     * @param imageFullPath
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:100: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:101: warning: no description for @throws
+     * @throws IOException
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:171: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:174: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:176: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:180: warning: no description for @param
+     * @param googleStorage
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:181: warning: no description for @param
+     * @param imageFullPath
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:182: warning: no description for @param
+     * @param newImage
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:183: warning: no description for @param
+     * @param format
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:185: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:186: warning: no description for @throws
+     * @throws IOException
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:219: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:223: warning: no description for @param
+     * @param googleStorage
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:224: warning: no description for @param
+     * @param imageFullPath
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:226: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CloudImageCRUD.java:227: warning: no description for @throws
+     * @throws IOException
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:71: warning: no description for @param
+     * @param context
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:72: warning: no description for @param
+     * @param key_resource_ID
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:73: warning: no description for @param
+     * @param accountID
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:75: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:89: warning: no description for @param
+     * @param httpTransport
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:91: warning: no @return
+    public CredentialBuilder transporter(HttpTransport httpTransport) {
+                             ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:110: warning: no description for @param
+     * @param factory
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:112: warning: no @return
+    public CredentialBuilder jsonFactory(JsonFactory factory) {
+                             ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:129: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:135: warning: no description for @param
+     * @param scope
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:137: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:177: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:178: warning: no description for @throws
+     * @throws IOException
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/CredentialBuilder.java:179: warning: no description for @throws
+     * @throws GeneralSecurityException
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:56: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:58: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:63: warning: no description for @param
+     * @param credential
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:65: warning: no description for @return
+     * @return
+       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:11: error: reference not found
+ * This class functions as a simple wrapper around the a single {@link Storage} instance, used
+                                                                       ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:13: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:14: error: reference not found
+ * The main purpose of this class is to make the use of the {@link Storage} reference easier, while
+                                                                   ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:15: error: reference not found
+ * also providing an easier way to use the mandatory {@link Credential} necessary for the building
+                                                            ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:16: error: reference not found
+ * of the {@link Storage} instance.
+                 ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:17: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2223/src/gcs/src/main/java/duopoints/com/gcs/core/GoogleStorage.java:20: error: self-closing element not allowed
+ * <p/>
+   ^
+
+16 errors
+62 warnings
+:gcs:javadocJar
+:gcs:sourcesJar
+:gcs:assemble
+:gcs:build
+
+BUILD SUCCESSFUL in 15s
+51 actionable tasks: 51 executed
+
+2018-04-02 16:27:06,460 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 16:27:06,461 INFO  SysUtils - Execute command: [/tmp/rdisk/2223/src/gradlew, -b, /tmp/rdisk/2223/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 16:27:14,340 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-02 16:27:14,340 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 16:27:14,340 INFO  SysUtils - Execute command: [/tmp/rdisk/2223/src/gradlew, -b, /tmp/rdisk/2223/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 16:27:22,881 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:gcs:preBuild UP-TO-DATE
+:gcs:preDebugBuild UP-TO-DATE
+:gcs:compileDebugAidl UP-TO-DATE
+:gcs:compileDebugNdk NO-SOURCE
+:gcs:compileDebugRenderscript UP-TO-DATE
+:gcs:checkDebugManifest UP-TO-DATE
+:gcs:generateDebugBuildConfig UP-TO-DATE
+:gcs:prepareLintJar UP-TO-DATE
+:gcs:generateDebugResValues UP-TO-DATE
+:gcs:generateDebugResources UP-TO-DATE
+:gcs:packageDebugResources UP-TO-DATE
+:gcs:platformAttrExtractor UP-TO-DATE
+:gcs:processDebugManifest UP-TO-DATE
+:gcs:processDebugResources UP-TO-DATE
+:gcs:generateDebugSources UP-TO-DATE
+:gcs:javaPreCompileDebug UP-TO-DATE
+:gcs:compileDebugJavaWithJavac UP-TO-DATE
+:gcs:extractDebugAnnotations UP-TO-DATE
+:gcs:mergeDebugShaders UP-TO-DATE
+:gcs:compileDebugShaders UP-TO-DATE
+:gcs:generateDebugAssets UP-TO-DATE
+:gcs:mergeDebugAssets UP-TO-DATE
+:gcs:mergeDebugConsumerProguardFiles UP-TO-DATE
+:gcs:packageDebugRenderscript NO-SOURCE
+:gcs:processDebugJavaRes NO-SOURCE
+:gcs:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:gcs:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:gcs:mergeDebugJniLibFolders UP-TO-DATE
+:gcs:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:gcs:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:gcs:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:gcs:bundleDebug UP-TO-DATE
+:gcs:compileDebugSources UP-TO-DATE
+:gcs:assembleDebug UP-TO-DATE
+:gcs:preReleaseBuild UP-TO-DATE
+:gcs:compileReleaseAidl UP-TO-DATE
+:gcs:compileReleaseNdk NO-SOURCE
+:gcs:compileReleaseRenderscript UP-TO-DATE
+:gcs:checkReleaseManifest UP-TO-DATE
+:gcs:generateReleaseBuildConfig UP-TO-DATE
+:gcs:generateReleaseResValues UP-TO-DATE
+:gcs:generateReleaseResources UP-TO-DATE
+:gcs:packageReleaseResources UP-TO-DATE
+:gcs:processReleaseManifest UP-TO-DATE
+:gcs:processReleaseResources UP-TO-DATE
+:gcs:generateReleaseSources UP-TO-DATE
+:gcs:javaPreCompileRelease UP-TO-DATE
+:gcs:compileReleaseJavaWithJavac UP-TO-DATE
+:gcs:extractReleaseAnnotations UP-TO-DATE
+:gcs:mergeReleaseShaders UP-TO-DATE
+:gcs:compileReleaseShaders UP-TO-DATE
+:gcs:generateReleaseAssets UP-TO-DATE
+:gcs:mergeReleaseAssets UP-TO-DATE
+:gcs:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:gcs:packageReleaseRenderscript NO-SOURCE
+:gcs:processReleaseJavaRes NO-SOURCE
+:gcs:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:gcs:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:gcs:mergeReleaseJniLibFolders UP-TO-DATE
+:gcs:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:gcs:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:gcs:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:gcs:bundleRelease UP-TO-DATE
+:gcs:compileReleaseSources UP-TO-DATE
+:gcs:mergeReleaseResources UP-TO-DATE
+:gcs:verifyReleaseResources UP-TO-DATE
+:gcs:assembleRelease UP-TO-DATE
+:gcs:javadoc UP-TO-DATE
+:gcs:javadocJar UP-TO-DATE
+:gcs:sourcesJar UP-TO-DATE
+:gcs:assemble UP-TO-DATE
+:gcs:build
+
+BUILD SUCCESSFUL in 8s
+51 actionable tasks: 51 up-to-date
+
+2018-04-02 16:27:22,890 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 16:27:22,898 ERROR FullProcessService - Could not find generated or existed APK file

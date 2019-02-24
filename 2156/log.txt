@@ -1,0 +1,158 @@
+2018-04-03 18:17:19,170 INFO  DownloadService - Downloading "https://github.com/yongjhih/auto-parse/archive/master.zip", attempt 3
+2018-04-03 18:18:19,766 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 18:18:20,595 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-03 18:18:20,595 INFO  DownloadService - Downloading "https://github.com/yongjhih/auto-parse/archive/master.zip", attempt 3
+2018-04-03 18:19:22,080 DEBUG FullProcessService - Repository https://github.com/yongjhih/auto-parse available: true
+2018-04-03 18:19:22,081 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 18:19:22,081 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/yongjhih/auto-parse, /tmp/rdisk/2156/src]
+2018-04-03 18:19:23,694 INFO  SysUtils - 
+2018-04-03 18:19:23,710 INFO  GitService - Deleted "/tmp/rdisk/2156/src/.git": true
+2018-04-03 18:19:23,712 INFO  FullProcessService - Size of directory with sources: 295 KB
+2018-04-03 18:19:23,712 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2156/src]
+2018-04-03 18:19:23,717 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2156/src/.git/
+
+2018-04-03 18:19:23,720 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2156/src/gradlew
+2018-04-03 18:19:23,723 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2156/src/sample/build.gradle /tmp/rdisk/2156/src/build.gradle /tmp/rdisk/2156/src/auto-parse-processor/build.gradle /tmp/rdisk/2156/src/auto-parse/build.gradle
+2018-04-03 18:19:23,725 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2156/src/settings.gradle /tmp/rdisk/2156/src/sample/build.gradle /tmp/rdisk/2156/src/build.gradle /tmp/rdisk/2156/src/auto-parse/deploy.gradle /tmp/rdisk/2156/src/auto-parse/build.gradle /tmp/rdisk/2156/src/auto-parse-processor/deploy.gradle /tmp/rdisk/2156/src/auto-parse-processor/build.gradle
+2018-04-03 18:19:23,726 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 18:19:23,726 INFO  ProjectFixService - Fixing project...
+2018-04-03 18:19:23,735 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2156/src/sample/local.properties
+2018-04-03 18:19:23,735 INFO  ProjectFixService - Build info for "/tmp/rdisk/2156/src/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 18:19:23,736 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2156/src/local.properties
+2018-04-03 18:19:23,736 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 18:19:23,736 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 18:19:23,737 INFO  ProjectFixService - Build info for "/tmp/rdisk/2156/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 18:19:23,738 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2156/src/auto-parse-processor/local.properties
+2018-04-03 18:19:23,739 INFO  ProjectFixService - Build info for "/tmp/rdisk/2156/src/auto-parse-processor/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 18:19:23,739 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2156/src/auto-parse/local.properties
+2018-04-03 18:19:23,740 INFO  ProjectFixService - Build info for "/tmp/rdisk/2156/src/auto-parse/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-03 18:19:23,740 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 18:19:23,740 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 18:19:23,740 INFO  SysUtils - Execute command: [/tmp/rdisk/2156/src/gradlew, -b, /tmp/rdisk/2156/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 18:19:46,449 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-03 18:19:46,449 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-03 18:19:46,449 INFO  SysUtils - Execute command: [/tmp/rdisk/2156/src/gradlew, -b, /tmp/rdisk/2156/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-03 18:20:13,986 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-parse:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:auto-parse:processResources UP-TO-DATE
+:auto-parse:classes
+:auto-parse:jar
+:auto-parse:javadoc/tmp/rdisk/2156/src/auto-parse/src/main/java/auto/parse/AutoParse.java:51: warning: no @return
+  boolean cacheHashCode() default false;
+          ^
+
+1 warning
+:auto-parse:javadocsJar
+:auto-parse:sourcesJar
+:auto-parse-processor:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+
+:auto-parse-processor:processResources UP-TO-DATE
+:auto-parse-processor:classes
+:auto-parse-processor:jar
+:auto-parse-processor:javadoc
+:auto-parse-processor:javadocsJar
+:auto-parse-processor:sourcesJar
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportSupportV42000Library
+:sample:prepareComFacebookAndroidFacebookAndroidSdk3200Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-ldpi-v4/com_facebook_close.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xhdpi-v4/com_facebook_button_like_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable/com_facebook_button_like_background_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xxhdpi-v4/com_facebook_button_like_background_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable/com_facebook_button_like_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xxhdpi-v4/com_facebook_button_like_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable/com_facebook_button_like_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-hdpi-v4/com_facebook_close.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xhdpi-v4/com_facebook_button_like_background_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xhdpi-v4/com_facebook_close.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable/com_facebook_button_like_icon_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xxhdpi-v4/com_facebook_button_like_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-hdpi-v4/com_facebook_button_like_background_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-hdpi-v4/com_facebook_button_like_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(706968370) : No Delegate set : lost message:/tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-hdpi-v4/com_facebook_button_like_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(1643636021) : No Delegate set : lost message:/tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xhdpi-v4/com_facebook_button_like_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable/com_facebook_close.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xhdpi-v4/com_facebook_button_like_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xxhdpi-v4/com_facebook_button_like_background_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-ldpi-v4/com_facebook_close.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable/com_facebook_button_like_background_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xhdpi-v4/com_facebook_close.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-hdpi-v4/com_facebook_close.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable/com_facebook_button_like_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable/com_facebook_button_like_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xhdpi-v4/com_facebook_button_like_background_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xhdpi-v4/com_facebook_button_like_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(588182276) : No Delegate set : lost message:/tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable/com_facebook_button_like_icon_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-hdpi-v4/com_facebook_button_like_background_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xxhdpi-v4/com_facebook_button_like_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-hdpi-v4/com_facebook_button_like_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-hdpi-v4/com_facebook_button_like_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xxhdpi-v4/com_facebook_button_like_background.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable/com_facebook_close.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2156/src/sample/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.085 secs
+
+2018-04-03 18:20:14,005 INFO  FullProcessService - Found APK file: /tmp/rdisk/2156/src/sample/build/outputs/apk/sample-release-unsigned.apk

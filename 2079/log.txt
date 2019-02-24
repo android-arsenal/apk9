@@ -1,0 +1,198 @@
+2018-04-03 20:51:52,418 INFO  DownloadService - Downloading "https://github.com/mrwonderman/driveimageview/archive/master.zip", attempt 3
+2018-04-03 20:52:53,039 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-03 20:52:53,089 INFO  GithubDownloadService - Default branch of this repository: null
+2018-04-03 20:52:53,090 ERROR GithubDownloadService - Could not detect default branch for Github repository
+2018-04-03 20:52:53,902 DEBUG FullProcessService - Repository https://github.com/mrwonderman/driveimageview available: true
+2018-04-03 20:52:53,902 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-03 20:52:53,902 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/mrwonderman/driveimageview, /tmp/rdisk/2079/src]
+2018-04-03 20:52:56,106 INFO  SysUtils - 
+2018-04-03 20:52:56,120 INFO  GitService - Deleted "/tmp/rdisk/2079/src/.git": true
+2018-04-03 20:52:56,122 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-03 20:52:56,122 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2079/src]
+2018-04-03 20:52:56,125 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2079/src/.git/
+
+2018-04-03 20:52:56,128 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2079/src/gradlew
+2018-04-03 20:52:56,130 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2079/src/driveimageview/build.gradle /tmp/rdisk/2079/src/exampleapp/build.gradle /tmp/rdisk/2079/src/build.gradle
+2018-04-03 20:52:56,132 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2079/src/settings.gradle /tmp/rdisk/2079/src/exampleapp/build.gradle /tmp/rdisk/2079/src/driveimageview/build.gradle /tmp/rdisk/2079/src/build.gradle
+2018-04-03 20:52:56,132 INFO  ProjectBuildService - Remote scripts: none
+2018-04-03 20:52:56,132 INFO  ProjectFixService - Fixing project...
+2018-04-03 20:52:56,137 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2079/src/driveimageview/local.properties
+2018-04-03 20:52:56,138 INFO  ProjectFixService - Build info for "/tmp/rdisk/2079/src/driveimageview/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=17,minSdkVersion=14,targetSdkVersion=17]
+2018-04-03 20:52:56,138 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2079/src/exampleapp/local.properties
+2018-04-03 20:52:56,138 INFO  ProjectFixService - Build info for "/tmp/rdisk/2079/src/exampleapp/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=17,minSdkVersion=14,targetSdkVersion=17]
+2018-04-03 20:52:56,139 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2079/src/local.properties
+2018-04-03 20:52:56,139 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-03 20:52:56,139 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-03 20:52:56,140 INFO  ProjectFixService - Build info for "/tmp/rdisk/2079/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=17,minSdkVersion=14,targetSdkVersion=17]
+2018-04-03 20:52:56,140 INFO  ProjectFixService - Project was maybe fixed
+2018-04-03 20:52:56,140 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:52:56,142 INFO  SysUtils - Execute command: [/tmp/rdisk/2079/src/gradlew, -b, /tmp/rdisk/2079/src/driveimageview/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:53:05,014 INFO  ProjectTaskService - Detected possible tasks: 61
+2018-04-03 20:53:05,014 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-03 20:53:05,014 INFO  SysUtils - Execute command: [/tmp/rdisk/2079/src/gradlew, -b, /tmp/rdisk/2079/src/driveimageview/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-03 20:53:14,335 INFO  SysUtils - Configuration on demand is an incubating feature.
+:driveimageview:compileLint
+:driveimageview:copyDebugLint UP-TO-DATE
+:driveimageview:mergeDebugProguardFiles
+:driveimageview:preBuild UP-TO-DATE
+:driveimageview:preDebugBuild UP-TO-DATE
+:driveimageview:checkDebugManifest
+:driveimageview:prepareDebugDependencies
+:driveimageview:compileDebugAidl
+:driveimageview:compileDebugRenderscript
+:driveimageview:generateDebugBuildConfig
+:driveimageview:generateDebugAssets UP-TO-DATE
+:driveimageview:mergeDebugAssets
+:driveimageview:generateDebugResValues
+:driveimageview:generateDebugResources
+:driveimageview:packageDebugResources
+:driveimageview:processDebugManifest
+:driveimageview:processDebugResources
+:driveimageview:generateDebugSources
+:driveimageview:compileDebugJava
+:driveimageview:processDebugJavaRes UP-TO-DATE
+:driveimageview:packageDebugJar
+:driveimageview:compileDebugNdk UP-TO-DATE
+:driveimageview:packageDebugJniLibs UP-TO-DATE
+:driveimageview:packageDebugLocalJar UP-TO-DATE
+:driveimageview:packageDebugRenderscript UP-TO-DATE
+:driveimageview:bundleDebug
+:driveimageview:assembleDebug
+:driveimageview:copyReleaseLint UP-TO-DATE
+:driveimageview:mergeReleaseProguardFiles
+:driveimageview:preReleaseBuild UP-TO-DATE
+:driveimageview:checkReleaseManifest
+:driveimageview:prepareReleaseDependencies
+:driveimageview:compileReleaseAidl
+:driveimageview:compileReleaseRenderscript
+:driveimageview:generateReleaseBuildConfig
+:driveimageview:generateReleaseAssets UP-TO-DATE
+:driveimageview:mergeReleaseAssets
+:driveimageview:generateReleaseResValues
+:driveimageview:generateReleaseResources
+:driveimageview:packageReleaseResources
+:driveimageview:processReleaseManifest
+:driveimageview:processReleaseResources
+:driveimageview:generateReleaseSources
+:driveimageview:compileReleaseJava
+:driveimageview:processReleaseJavaRes UP-TO-DATE
+:driveimageview:packageReleaseJar
+:driveimageview:compileReleaseNdk UP-TO-DATE
+:driveimageview:packageReleaseJniLibs UP-TO-DATE
+:driveimageview:packageReleaseLocalJar UP-TO-DATE
+:driveimageview:packageReleaseRenderscript UP-TO-DATE
+:driveimageview:bundleRelease
+:driveimageview:assembleRelease
+:driveimageview:javadoc
+:driveimageview:javadocJar
+:driveimageview:sourcesJar
+:driveimageview:assemble
+:driveimageview:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.901 secs
+
+2018-04-03 20:53:14,341 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-03 20:53:14,341 INFO  SysUtils - Execute command: [/tmp/rdisk/2079/src/gradlew, -b, /tmp/rdisk/2079/src/exampleapp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-03 20:53:20,765 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-03 20:53:20,765 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-03 20:53:20,765 INFO  SysUtils - Execute command: [/tmp/rdisk/2079/src/gradlew, -b, /tmp/rdisk/2079/src/exampleapp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-03 20:53:31,951 INFO  SysUtils - Configuration on demand is an incubating feature.
+:exampleapp:preBuild UP-TO-DATE
+:exampleapp:preDebugBuild UP-TO-DATE
+:exampleapp:compileDebugNdk UP-TO-DATE
+:driveimageview:compileLint
+:driveimageview:copyReleaseLint UP-TO-DATE
+:driveimageview:mergeReleaseProguardFiles UP-TO-DATE
+:driveimageview:preBuild UP-TO-DATE
+:driveimageview:preReleaseBuild UP-TO-DATE
+:driveimageview:checkReleaseManifest
+:driveimageview:prepareReleaseDependencies
+:driveimageview:compileReleaseAidl UP-TO-DATE
+:driveimageview:compileReleaseRenderscript UP-TO-DATE
+:driveimageview:generateReleaseBuildConfig UP-TO-DATE
+:driveimageview:generateReleaseAssets UP-TO-DATE
+:driveimageview:mergeReleaseAssets UP-TO-DATE
+:driveimageview:generateReleaseResValues UP-TO-DATE
+:driveimageview:generateReleaseResources UP-TO-DATE
+:driveimageview:packageReleaseResources UP-TO-DATE
+:driveimageview:processReleaseManifest UP-TO-DATE
+:driveimageview:processReleaseResources UP-TO-DATE
+:driveimageview:generateReleaseSources UP-TO-DATE
+:driveimageview:compileReleaseJava UP-TO-DATE
+:driveimageview:processReleaseJavaRes UP-TO-DATE
+:driveimageview:packageReleaseJar UP-TO-DATE
+:driveimageview:compileReleaseNdk UP-TO-DATE
+:driveimageview:packageReleaseJniLibs UP-TO-DATE
+:driveimageview:packageReleaseLocalJar UP-TO-DATE
+:driveimageview:packageReleaseRenderscript UP-TO-DATE
+:driveimageview:bundleRelease UP-TO-DATE
+:exampleapp:checkDebugManifest
+:exampleapp:preReleaseBuild UP-TO-DATE
+:exampleapp:prepareChHalcyonDriveimageview100Library
+:exampleapp:prepareDebugDependencies
+:exampleapp:compileDebugAidl
+:exampleapp:compileDebugRenderscript
+:exampleapp:generateDebugBuildConfig
+:exampleapp:generateDebugAssets UP-TO-DATE
+:exampleapp:mergeDebugAssets
+:exampleapp:generateDebugResValues
+:exampleapp:generateDebugResources
+:exampleapp:mergeDebugResources
+:exampleapp:processDebugManifest
+Warning: /tmp/rdisk/2079/src/exampleapp/AndroidManifest.xml:12:5 Warning:
+	application@android:icon was tagged at AndroidManifest.xml:12 to replace other declarations but no other declaration present
+Warning: /tmp/rdisk/2079/src/exampleapp/AndroidManifest.xml:12:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:12 to replace other declarations but no other declaration present
+/tmp/rdisk/2079/src/exampleapp/AndroidManifest.xml:12:5 Warning:
+	application@android:icon was tagged at AndroidManifest.xml:12 to replace other declarations but no other declaration present
+/tmp/rdisk/2079/src/exampleapp/AndroidManifest.xml:12:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:12 to replace other declarations but no other declaration present
+:exampleapp:processDebugResources
+:exampleapp:generateDebugSources
+:exampleapp:compileDebugJava
+:exampleapp:preDexDebug
+:exampleapp:dexDebug
+:exampleapp:processDebugJavaRes UP-TO-DATE
+:exampleapp:validateDebugSigning
+:exampleapp:packageDebug
+:exampleapp:zipalignDebug
+:exampleapp:assembleDebug
+:exampleapp:checkReleaseManifest
+:exampleapp:prepareReleaseDependencies
+:exampleapp:compileReleaseAidl
+:exampleapp:compileReleaseRenderscript
+:exampleapp:generateReleaseBuildConfig
+:exampleapp:generateReleaseAssets UP-TO-DATE
+:exampleapp:mergeReleaseAssets
+:exampleapp:generateReleaseResValues
+:exampleapp:generateReleaseResources
+:exampleapp:mergeReleaseResources
+:exampleapp:processReleaseManifest
+Warning: /tmp/rdisk/2079/src/exampleapp/AndroidManifest.xml:12:5 Warning:
+	application@android:icon was tagged at AndroidManifest.xml:12 to replace other declarations but no other declaration present
+Warning: /tmp/rdisk/2079/src/exampleapp/AndroidManifest.xml:12:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:12 to replace other declarations but no other declaration present
+/tmp/rdisk/2079/src/exampleapp/AndroidManifest.xml:12:5 Warning:
+	application@android:icon was tagged at AndroidManifest.xml:12 to replace other declarations but no other declaration present
+/tmp/rdisk/2079/src/exampleapp/AndroidManifest.xml:12:5 Warning:
+	application@android:label was tagged at AndroidManifest.xml:12 to replace other declarations but no other declaration present
+:exampleapp:processReleaseResources
+:exampleapp:generateReleaseSources
+:exampleapp:compileReleaseJava
+:exampleapp:lintVitalRelease
+:exampleapp:compileReleaseNdk UP-TO-DATE
+:exampleapp:preDexRelease
+:exampleapp:dexRelease
+:exampleapp:processReleaseJavaRes UP-TO-DATE
+:exampleapp:packageRelease
+:exampleapp:assembleRelease
+:exampleapp:assemble
+:exampleapp:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.774 secs
+
+2018-04-03 20:53:31,963 INFO  FullProcessService - Found APK file: /tmp/rdisk/2079/src/exampleapp/build/outputs/apk/exampleapp-release-unsigned.apk

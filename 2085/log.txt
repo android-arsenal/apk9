@@ -1,0 +1,86 @@
+2018-05-11 11:32:59,726 INFO  DownloadService - Downloading "https://github.com/sharish/BitmapMerger/archive/master.zip", attempt 3
+2018-05-11 11:33:00,145 INFO  DownloadService - Downloaded https://github.com/sharish/BitmapMerger/archive/master.zip, attempt 3
+2018-05-11 11:33:00,146 INFO  DownloadService - Size of file "/tmp/rdisk/2085/master.zip": 98 KB
+2018-05-11 11:33:00,146 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:33:00,146 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2085/master.zip: true
+2018-05-11 11:33:00,146 DEBUG ZipUtil - Extracting '/tmp/rdisk/2085/master.zip' into '/tmp/rdisk/2085/src'.
+2018-05-11 11:33:00,154 INFO  FullProcessService - Size of directory with sources: 151 KB
+2018-05-11 11:33:00,154 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2085/src]
+2018-05-11 11:33:00,159 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2085/src/.git/
+
+2018-05-11 11:33:00,161 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2085/src/BitmapMerger-master/gradlew
+2018-05-11 11:33:00,163 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2085/src/BitmapMerger-master/app/build.gradle /tmp/rdisk/2085/src/BitmapMerger-master/build.gradle
+2018-05-11 11:33:00,165 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2085/src/BitmapMerger-master/settings.gradle /tmp/rdisk/2085/src/BitmapMerger-master/build.gradle /tmp/rdisk/2085/src/BitmapMerger-master/app/build.gradle
+2018-05-11 11:33:00,166 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:33:00,166 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:33:00,170 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2085/src/BitmapMerger-master/app/local.properties
+2018-05-11 11:33:00,171 INFO  ProjectFixService - Build info for "/tmp/rdisk/2085/src/BitmapMerger-master/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-05-11 11:33:00,171 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2085/src/BitmapMerger-master/local.properties
+2018-05-11 11:33:00,172 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-11 11:33:00,172 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-11 11:33:00,173 INFO  ProjectFixService - Build info for "/tmp/rdisk/2085/src/BitmapMerger-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-05-11 11:33:00,173 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:33:00,173 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:33:00,173 INFO  SysUtils - Execute command: [/tmp/rdisk/2085/src/BitmapMerger-master/gradlew, -b, /tmp/rdisk/2085/src/BitmapMerger-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:33:09,255 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-05-11 11:33:09,255 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-05-11 11:33:09,256 INFO  SysUtils - Execute command: [/tmp/rdisk/2085/src/BitmapMerger-master/gradlew, -b, /tmp/rdisk/2085/src/BitmapMerger-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-05-11 11:33:31,174 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72211Library
+:app:prepareComAndroidSupportSupportV42211Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.482 secs
+
+2018-05-11 11:33:31,206 INFO  FullProcessService - Found APK file: /tmp/rdisk/2085/src/BitmapMerger-master/app/build/outputs/apk/app-debug.apk
